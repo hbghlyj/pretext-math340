@@ -84,37 +84,88 @@ local function dedent_block(text)
   return table.concat(lines, "\n")
 end
 
+local function strip_outer_list_markup(block, tag)
+  block = block:gsub("^<" .. tag .. ">", "", 1)
+  block = block:gsub("</" .. tag .. ">$", "", 1)
+  return block
+end
+
+local function extract_outermost_list(source, tag)
+  local open_tag = "<" .. tag .. ">"
+  local close_tag = "</" .. tag .. ">"
+  local start = source:find(open_tag, 1, true)
+  if not start then
+    return nil
+  end
+  local depth = 1
+  local pos = start + #open_tag
+  while depth > 0 do
+    local next_open = source:find(open_tag, pos, true)
+    local next_close = source:find(close_tag, pos, true)
+    if not next_close then
+      return nil
+    end
+    if next_open and next_open < next_close then
+      depth = depth + 1
+      pos = next_open + #open_tag
+    else
+      depth = depth - 1
+      pos = next_close + #close_tag
+    end
+  end
+  local before = source:sub(1, start - 1)
+  local block = source:sub(start, pos - 1)
+  local after = source:sub(pos)
+  return before, block, after
+end
+
 local function parse_blocks(block_str)
   local blocks = {}
   local rest = block_str or ""
   while rest do
     rest = rest:gsub("^%s+", "")
     if rest == "" then break end
-    local tag, list_content, remainder = rest:match("^<p><(ol)>(.-)</ol></p>(.*)$")
-    if not tag then
-      tag, list_content, remainder = rest:match("^<(ol)>(.-)</ol>(.*)$")
-    end
-    if tag then
-      table.insert(blocks, {type = "list", tag = tag, content = list_content})
-      rest = remainder
-    else
-      tag, list_content, remainder = rest:match("^<p><(ul)>(.-)</ul></p>(.*)$")
-      if not tag then
-        tag, list_content, remainder = rest:match("^<(ul)>(.-)</ul>(.*)$")
+
+    local handled = false
+
+    if rest:sub(1,3) == "<p>" then
+      local para_content, remainder = rest:match("^<p>(.-)</p>(.*)$")
+      if para_content then
+        local inner_tag = para_content:match("^%s*<(ol)>") or para_content:match("^%s*<(ul)>")
+        if inner_tag then
+          local before, block, after = extract_outermost_list(para_content, inner_tag)
+          if before and trim(before) == "" and trim(after) == "" then
+            table.insert(blocks, {type = "list", tag = inner_tag, content = strip_outer_list_markup(block, inner_tag)})
+            rest = remainder
+            handled = true
+          end
+        end
       end
-      if tag then
-        table.insert(blocks, {type = "list", tag = tag, content = list_content})
+    end
+
+    if not handled then
+      local direct_tag = rest:match("^<(ol)>") or rest:match("^<(ul)>")
+      if direct_tag then
+        local before, block, remainder = extract_outermost_list(rest, direct_tag)
+        if before and trim(before) ~= "" then
+          table.insert(blocks, {type = "p", content = trim(before)})
+        end
+        if block then
+          table.insert(blocks, {type = "list", tag = direct_tag, content = strip_outer_list_markup(block, direct_tag)})
+        end
+        rest = remainder
+        handled = true
+      end
+    end
+
+    if not handled then
+      local para_content, remainder = rest:match("^<p>%s*(.-)%s*</p>(.*)$")
+      if para_content then
+        table.insert(blocks, {type = "p", content = para_content})
         rest = remainder
       else
-        local para_content
-        para_content, remainder = rest:match("^<p>%s*(.-)%s*</p>(.*)$")
-        if para_content then
-          table.insert(blocks, {type = "p", content = para_content})
-          rest = remainder
-        else
-          table.insert(blocks, {type = "raw", content = rest})
-          break
-        end
+        table.insert(blocks, {type = "raw", content = rest})
+        break
       end
     end
   end
