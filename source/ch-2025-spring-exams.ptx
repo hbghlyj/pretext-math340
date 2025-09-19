@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pretext xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="./docinfo.ptx" />
+  <article xml:id="sec-section-name" >
+    <title>2025 Spring Exams</title>
+    <xi:include href="./ch-2025-spring-exams/Math340Sp25-Midterm1.ptx"/>
+  </article>
+</pretext>
