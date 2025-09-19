@@ -1,0 +1,64 @@
+DEBUG   : Could not read `requirements.txt`:
+DEBUG   : [Errno 2] No such file or directory: 'D:\\340\\requirements.txt'
+WARNING : Project's CLI version could not be detected from `requirements.txt`.
+WARNING : Try `pretext init --refresh` to produce a compatible file.
+INFO    : Since no target was supplied, we will use "print".
+
+INFO    : Building target print
+DEBUG   : XML syntax appears well formed.
+DEBUG   : PreTeXt document did not pass schema validation; unexpected output may result. See .error_schema.log for hints.  Continuing with build.
+DEBUG   : converting D:\340\source\ch-2025-spring-exams.ptx to enhanced (pre-processed) PreTeXt source for internal use
+INFO    : XSL conversion of D:\340\source\ch-2025-spring-exams.ptx by C:\Users\15063\.ptx\2.29.2\core\xsl\utilities\pretext-enhanced-source.xsl
+DEBUG   : XSL conversion via C:\Users\15063\.ptx\2.29.2\core\xsl\utilities\pretext-enhanced-source.xsl of D:\340\source\ch-2025-spring-exams.ptx to None and/or into directory None with parameters {'cli.version': '2.29', 'publisher': 'D:/340/publication/publication-nosoln.ptx', 'assembly.version-only': 'yes'}
+INFO    : successful application of C:\Users\15063\.ptx\2.29.2\core\xsl\utilities\pretext-enhanced-source.xsl
+DEBUG   : Source does not contain webwork problems
+INFO    : Generating any needed assets.
+DEBUG   : Using cached assets in D:\340\.cache where possible.
+DEBUG   : Ensuring webwork representations file is present.
+DEBUG   : Ensuring MyOpenMath XML files are present.
+DEBUG   : Source does not contain myopenmath problems
+DEBUG   : Assets generation requested for: ['webwork', 'latex-image', 'sageplot', 'asymptote', 'prefigure', 'youtube', 'codelens', 'datafile', 'interactive', 'qrcode', 'mermaid', 'myopenmath', 'dynamic-subs', 'references', 'stack'].
+DEBUG   : Based on format Format.PDF, assets to be generated are: ['webwork', 'sageplot', 'asymptote', 'prefigure', 'youtube', 'codelens', 'datafile', 'interactive', 'qrcode', 'mermaid', 'myopenmath', 'dynamic-subs'].
+DEBUG   : Based on what is in your source, the assets that will be considered are [].
+DEBUG   : Assets to be generated: []
+DEBUG   : Temporary directories left behind for inspection: []
+DEBUG   : Updated these assets successfully: []
+INFO    : Finished generating assets.
+
+DEBUG   : Ensuring output directory for print: D:\340\output\print
+INFO    : Preparing to build into D:\340\output\print.
+INFO    : discovering source file's directory name: D:\340\source
+INFO    : verifying and expanding input directory: D:\340\source\../generated-assets
+INFO    : input directory expanded to absolute path: D:\340\generated-assets
+INFO    : verifying and expanding input directory: D:\340\source\../assets
+INFO    : input directory expanded to absolute path: D:\340\assets
+DEBUG   : parsing the publisher file variables
+DEBUG   : temporary directory for publisher variables: C:\Users\15063\AppData\Local\Temp\ptx-60jbmg72
+DEBUG   : file of publisher variables: C:\Users\15063\AppData\Local\Temp\ptx-60jbmg72\pub_var.txt
+INFO    : XSL conversion of D:\340\source\ch-2025-spring-exams.ptx by C:\Users\15063\.ptx\2.29.2\core\xsl\utilities\report-publisher-variables.xsl
+DEBUG   : XSL conversion via C:\Users\15063\.ptx\2.29.2\core\xsl\utilities\report-publisher-variables.xsl of D:\340\source\ch-2025-spring-exams.ptx to C:\Users\15063\AppData\Local\Temp\ptx-60jbmg72\pub_var.txt and/or into directory None with parameters {'cli.version': '2.29', 'publisher': 'D:/340/publication/publication-nosoln.ptx', 'assembly.version-only': 'yes'}
+INFO    : successful application of C:\Users\15063\.ptx\2.29.2\core\xsl\utilities\report-publisher-variables.xsl
+DEBUG   : determining value of publisher variable 'journal-name'
+DEBUG   : determining value of publisher variable 'latex-style'
+INFO    : converting D:\340\source\ch-2025-spring-exams.ptx to LaTeX as C:\Users\15063\AppData\Local\Temp\ptx-_jmtik7q\ch-2025-spring-exams.tex
+INFO    : XSL conversion of D:\340\source\ch-2025-spring-exams.ptx by C:\Users\15063\.ptx\2.29.2\core\xsl\pretext-latex.xsl
+DEBUG   : XSL conversion via C:\Users\15063\.ptx\2.29.2\core\xsl\pretext-latex.xsl of D:\340\source\ch-2025-spring-exams.ptx to C:\Users\15063\AppData\Local\Temp\ptx-_jmtik7q\ch-2025-spring-exams.tex and/or into directory None with parameters {'cli.version': '2.29', 'publisher': 'D:/340/publication/publication-nosoln.ptx'}
+INFO    : messages from the log for XSL processing:
+INFO    : * PTX:INFO:   checking all deprecated elements.
+INFO    : successful application of C:\Users\15063\.ptx\2.29.2\core\xsl\pretext-latex.xsl
+DEBUG   : temporary directory for publisher variables: C:\Users\15063\AppData\Local\Temp\ptx-sy6jhjcl
+DEBUG   : file of publisher variables: C:\Users\15063\AppData\Local\Temp\ptx-sy6jhjcl\pub_var.txt
+DEBUG   : XSL conversion via C:\Users\15063\.ptx\2.29.2\core\xsl\utilities\report-publisher-variables.xsl of D:\340\source\ch-2025-spring-exams.ptx to C:\Users\15063\AppData\Local\Temp\ptx-sy6jhjcl\pub_var.txt and/or into directory None with parameters {'cli.version': '2.29', 'publisher': 'D:/340/publication/publication-nosoln.ptx', 'assembly.version-only': 'yes'}
+DEBUG   : Now working in directory C:\Users\15063\AppData\Local\Temp\ptx-_jmtik7q
+DEBUG   : locating "LatexEngine.XELATEX" in [executables] section of configuration file
+DEBUG   : LatexEngine.XELATEX executable: c:\PROGRA~1\tectonic.exe, options: 
+DEBUG   : Successfully changed directory back to D:\340
+DEBUG   : Temporary directories left behind for inspection: ['C:\\Users\\15063\\AppData\\Local\\Temp\\ptx-_jmtik7q', 'C:\\Users\\15063\\AppData\\Local\\Temp\\ptx-60jbmg72', 'C:\\Users\\15063\\AppData\\Local\\Temp\\ptx-sy6jhjcl']
+INFO    : 
+Finished build for target print. The output is in D:\340\output\print.
+
+INFO    : 
+Success!  Built requested target(s) without errors.
+
+DEBUG   : Completed without errors.
+INFO    : 

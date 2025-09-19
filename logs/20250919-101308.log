@@ -1,0 +1,35 @@
+INFO    : Since no target was supplied, we will use "print".
+
+INFO    : Building target print
+INFO    : XSL conversion of D:\340\source\ch-2025-spring-exams.ptx by C:\Users\15063\.ptx\2.29.2\core\xsl\utilities\pretext-enhanced-source.xsl
+INFO    : successful application of C:\Users\15063\.ptx\2.29.2\core\xsl\utilities\pretext-enhanced-source.xsl
+INFO    : Generating any needed assets.
+INFO    : Finished generating assets.
+
+INFO    : Preparing to build into D:\340\output\print.
+INFO    : discovering source file's directory name: D:\340\source
+INFO    : verifying and expanding input directory: D:\340\source\../generated-assets
+INFO    : input directory expanded to absolute path: D:\340\generated-assets
+INFO    : verifying and expanding input directory: D:\340\source\../assets
+INFO    : input directory expanded to absolute path: D:\340\assets
+INFO    : XSL conversion of D:\340\source\ch-2025-spring-exams.ptx by C:\Users\15063\.ptx\2.29.2\core\xsl\utilities\report-publisher-variables.xsl
+INFO    : successful application of C:\Users\15063\.ptx\2.29.2\core\xsl\utilities\report-publisher-variables.xsl
+INFO    : converting D:\340\source\ch-2025-spring-exams.ptx to LaTeX as C:\Users\15063\AppData\Local\Temp\ptx-_q_9_07t\ch-2025-spring-exams.tex
+INFO    : XSL conversion of D:\340\source\ch-2025-spring-exams.ptx by C:\Users\15063\.ptx\2.29.2\core\xsl\pretext-latex.xsl
+INFO    : messages from the log for XSL processing:
+INFO    : * PTX:INFO:   checking all deprecated elements.
+INFO    : successful application of C:\Users\15063\.ptx\2.29.2\core\xsl\pretext-latex.xsl
+INFO    : Removing temporary directory C:\Users\15063\AppData\Local\Temp\ptx-_q_9_07t
+ERROR   : Unable to release temporary directories.  Please report this error to pretext-support
+INFO    : 
+Finished build for target print. The output is in D:\340\output\print.
+
+CRITICAL: There were errors during the build.  See above.
+INFO    : ------------------------
+CRITICAL: Failed to build without errors.  Exiting...
+INFO    : 
+----------------------------------------------------
+INFO    : While running pretext, the following errors occurred:
+
+INFO    : (see log messages above or in the 'logs' folder for more information)
+INFO    : ----------------------------------------------------

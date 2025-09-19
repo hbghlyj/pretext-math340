@@ -1,0 +1,9 @@
+WARNING : Project's CLI version could not be detected from `requirements.txt`.
+WARNING : Try `pretext init --refresh` to produce a compatible file.
+WARNING : The `pretext init --refresh` command will be deprecated in a future version.  You can use `pretext update --force` instead.
+INFO    : Generated resource file project.ptx.
+INFO    : Generated resource file codechat_config.yaml.
+INFO    : Generated resource file requirements.txt.
+INFO    : Success! Your project files have been refreshed. If you manage any of these
+INFO    : manually, be sure to compare these new versions with your old .bak files.
+INFO    : 

@@ -1,0 +1,40 @@
+DEBUG   : CLI version 2.29.2 matches requirements.txt 2.29.2.
+INFO    : Since no target was supplied, we will use "web".
+
+INFO    : Building target web
+CRITICAL: The file D:\340\source\main.ptx does not exist
+DEBUG   : Exception info:
+------------------------
+Traceback (most recent call last):
+  File "C:\Users\15063\AppData\Local\Programs\Python\Python312\Lib\site-packages\pretext\utils.py", line 183, in xml_syntax_is_valid
+    source_xml = ET.parse(xmlfile)
+                 ^^^^^^^^^^^^^^^^^
+  File "src\\lxml\\etree.pyx", line 3590, in lxml.etree.parse
+  File "src\\lxml\\parser.pxi", line 1958, in lxml.etree._parseDocument
+  File "src\\lxml\\parser.pxi", line 1984, in lxml.etree._parseDocumentFromURL
+  File "src\\lxml\\parser.pxi", line 1887, in lxml.etree._parseDocFromFile
+  File "src\\lxml\\parser.pxi", line 1200, in lxml.etree._BaseParser._parseDocFromFile
+  File "src\\lxml\\parser.pxi", line 633, in lxml.etree._ParserContext._handleParseResultDoc
+  File "src\\lxml\\parser.pxi", line 743, in lxml.etree._handleParseResult
+  File "src\\lxml\\parser.pxi", line 670, in lxml.etree._raiseParseError
+OSError: Error reading file 'D:\340\source\main.ptx': failed to load external entity "file:/D:/340/source/main.ptx"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\15063\AppData\Local\Programs\Python\Python312\Lib\site-packages\pretext\cli.py", line 629, in build
+    t.build(
+  File "C:\Users\15063\AppData\Local\Programs\Python\Python312\Lib\site-packages\pretext\project\__init__.py", line 673, in build
+    if not utils.xml_syntax_is_valid(self.source_abspath()):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\15063\AppData\Local\Programs\Python\Python312\Lib\site-packages\pretext\utils.py", line 193, in xml_syntax_is_valid
+    raise IOError(f"The file {xmlfile} does not exist")
+OSError: The file D:\340\source\main.ptx does not exist
+INFO    : ------------------------
+CRITICAL: Failed to build without errors.  Exiting...
+INFO    : 
+----------------------------------------------------
+INFO    : While running pretext, the following errors occurred:
+
+INFO    : (see log messages above or in the 'logs' folder for more information)
+INFO    : ----------------------------------------------------

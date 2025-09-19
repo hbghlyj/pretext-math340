@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project ptx-version="2">
+  <targets>
+    <target name="print" format="pdf" source="ch-2025-spring-exams.ptx"
+            output-filename="ch-2025-spring-exams.pdf" publication="publication-nosoln.ptx" />
+    <target name="web" format="html" source="ch-2025-spring-exams.ptx"
+            publication="publication-nosoln.ptx" deploy-dir="worksheets" />
+  </targets>
+</project>

@@ -1,0 +1,15 @@
+INFO    : Since no target was supplied, we will use "print".
+
+INFO    : Building target print
+ERROR   : XInclude Error caused build to fail:
+ERROR   : <string>:0:0:WARNING:IO:IO_LOAD_ERROR: failed to load external entity "file:/D:/340/source/ch-2025-spring-exams/Math340Sp25-Final.ptx"
+file:/D:/340/source/ch-2025-spring-exams.ptx:8:0:ERROR:XINCLUDE:XINCLUDE_NO_FALLBACK: could not load file:/D:/340/source/ch-2025-spring-exams/Math340Sp25-Final.ptx, and no fallback was found
+CRITICAL: XML syntax for source file is invalid
+INFO    : ------------------------
+CRITICAL: Failed to build without errors.  Exiting...
+INFO    : 
+----------------------------------------------------
+INFO    : While running pretext, the following errors occurred:
+
+INFO    : (see log messages above or in the 'logs' folder for more information)
+INFO    : ----------------------------------------------------

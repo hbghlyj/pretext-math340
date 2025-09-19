@@ -1,0 +1,203 @@
+\parindent 0em
+\parskip0em
+\topmargin -2.0 truecm
+\textheight 24 truecm
+\textwidth 17.5 truecm
+\oddsidemargin -1 truecm
+\evensidemargin -1 truecm
+\usepackage{times,mathptmx}
+\usepackage{amsmath, amssymb}
+\usepackage{arydshln}
+\usepackage{enumerate}
+\usepackage{fancyhdr}
+\usepackage{color}
+\usepackage{framed}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{pgf,tikz,pgfplots}
+\usepackage{stmaryrd}
+\usetikzlibrary{arrows, shapes.geometric, matrix, turtle, plotmarks}
+\usepackage{url}
+
+\pagestyle{fancy}
+
+\renewcommand{\headrulewidth}{0pt}
+\lhead{\tiny Math 340: Spring 2025, copyright: Phillipson}
+
+\usepackage{epsfig}
+
+\newcommand\fillin[1]{\underline{\phantom{\Large #1}}}
+
+\newcommand\displayspace[1]{\begin{multline*}
+    \shoveright {#1}
+    \end{multline*}}
+
+\newcommand{\ruleone}{\rule{1in}{0.0005in}}
+\newcommand{\ruleonepfive}{\rule{1.5in}{0.0005in}}
+\newcommand{\ruletwo}{\rule{2in}{0.0005in}}
+
+\newcommand{\hspaceone}{\hspace{1in}}
+
+\newcommand{\bbR}{\mathbb{R}}
+
+
+
+\newcommand{\calF}{{\mathcal{F}}}
+\newcommand{\inv}{{^{-1}}}
+\newcommand{\Ainv}{{A^{-1}}}
+\newcommand{\by}{{\times}}
+
+\DeclareMathOperator{\adj}{adj}
+\DeclareMathOperator{\spn}{span}
+\DeclareMathOperator{\rank}{rank}
+\DeclareMathOperator{\nullity}{nullity}
+\DeclareMathOperator{\Tr}{tr}
+\DeclareMathOperator{\range}{range}
+\DeclareMathOperator{\minor}{minor}
+\DeclareMathOperator{\cof}{cof}
+\DeclareMathOperator{\im}{im}
+
+
+
+
+\newcommand\ola[1]{\textcolor{magenta}{O: #1}}
+\newcommand\peti[1]{\textcolor{teal}{P: #1}}
+\newcommand\rub[1]{\textcolor{teal}{#1}}
+\newcommand\points[1]{\textcolor{blue}{\textrm{+#1}}}
+
+%%%%%%%%%%%%%%%%%%%
+%%%headings etc.
+%%%%%%%%%%%%%%%%%%%
+
+\newcommand\example{\textbf{Example:} }
+\newcommand\theorem{\textbf{Theorem:} }
+\newcommand\corollary{\textbf{Corollary:} }
+\newcommand\lemma{\textbf{Lemma:} }
+\newcommand\fact{\textbf{Fact:} }
+\newcommand\warning{\textbf{Warning:} }
+\newcommand\definition{\textit{Definition:} }
+\newcommand\remark{\textit{Remark:} }
+\newcommand\question{\textit{Question:} }
+\newcommand\proof{\textit{Proof:} }
+\newcommand\idea{\textit{Idea:} }
+\newcommand\topic[1]{\underline{\textbf{#1}}}\bigskip 
+
+
+% by Peti
+\newcommand\sectiontitle[2]{{\large\textbf{Section #1: #2}}\par
+\bigskip\noindent\hrule height1.5pt\bigskip
+}
+
+%matrix entries 
+\newcommand{\aaa}[2]{{a_{#1#2}}}
+\newcommand{\aij}{{a_{ij}}}
+\newcommand{\bbb}[2]{{b_{#1#2}}}
+\newcommand{\bij}{{b_{ij}}}
+\newcommand{\ccc}[2]{{c_{#1#2}}}
+\newcommand{\cij}{{c_{ij}}}
+
+%matrix minors and cofactors 
+\newcommand{\Aij}{{A_{ij}}}
+\newcommand{\Mij}{{M_{ij}}}
+
+
+%dimension shortcuts 
+\newcommand{\mbyn}{{m \times n}}
+\newcommand{\nbyn}{{n \times n}}
+
+%vectors 
+\newcommand{\veca}{{\vec{a}}}
+\newcommand{\bmata}{{\left[ \begin{array}{r} a_1 \\ a_2 \\ \ldots \\ a_n \end{array} \right] }}
+\newcommand{\bmatb}{{\left[ \begin{array}{r} b_1 \\ b_2 \\ \ldots \\ b_n \end{array} \right] }}
+\newcommand{\bmatx}{{\left[ \begin{array}{r} x_1 \\ x_2 \\ \ldots \\ x_n \end{bmatrix}{r} \right]}}
+
+\newcommand{\colvec}[1]{{\left[ \begin{array}{r} #1 \end{array} \right]}}
+\newcommand{\ccolvec}[1]{{\left[ \begin{array}{c} #1 \end{array} \right]}}
+\newcommand{\twovec}[2]{{\left[ \begin{array}{r} #1 \\ #2 \end{array} \right]}}
+\newcommand{\threevec}[3]{{\left[ \begin{array}{r} #1 \\ #2 \\ #3 \end{array} \right]}}
+\newcommand{\fourvec}[4]{{\left[ \begin{array}{r} #1 \\ #2 \\ #3 \\ #4 \end{array} \right]}}
+
+\newcommand{\colvecb}{{\left[ \begin{array}{c} b_1 \\ b_2 \\ \vdots \\ b_n \end{array} \right]}}
+\newcommand{\colvecbm}{{\left[ \begin{array}{c} b_1 \\ b_2 \\ \vdots \\ b_m \end{array} \right]}}
+\newcommand{\colvecc}{{\left[ \begin{array}{c} c_1 \\ c_2 \\ \vdots \\ c_n \end{array} \right]}}
+\newcommand{\colvecx}{{\left[ \begin{array}{c} x_1 \\ x_2 \\ \vdots \\ x_n \end{array} \right]}}
+
+\newcommand{\threerowvec}[3]{{\left[ \begin{array}{rrr} #1 & #2 & #3 \end{array} \right]}}
+\newcommand{\fourrowvec}[4]{{\left[ \begin{array}{rrr} #1 & #2 & #3 & #4 \end{array} \right]}}
+
+%matrix commands 
+\newcommand{\twobytwo}[4]{{\left[ \begin{array}{rr} #1 & #2 \\ #3 & #4 \end{array} \right]}}
+\newcommand{\cIthree}[1]{{\left[ \begin{array}{rrr} #1 & 0 & 0 \\ 0 & #1 & 0 \\ 0 & 0 & #1 \end{array} \right]}}
+\newcommand{\barray}[2]{{\left[ \begin{array}{#1} #2 \end{array} \right]}}
+\newcommand{\Amn}{{\left[ \begin{array}{cccc} 
+a_{11} & a_{12} & \cdots & a_{1n} \\ 
+a_{21} & a_{22} & \cdots & a_{2n} \\ 
+\vdots & \vdots & \ddots & \vdots \\ 
+a_{m1} & a_{m2} & \cdots & a_{mn}
+\end{array} \right]}}
+\newcommand{\Ann}{{\left[ \begin{array}{cccc} 
+a_{11} & a_{12} & \cdots & a_{1n} \\ 
+a_{21} & a_{22} & \cdots & a_{2n} \\ 
+\vdots & \vdots & \ddots & \vdots \\ 
+a_{n1} & a_{n2} & \cdots & a_{nn}
+\end{array} \right]}}
+\newcommand{\Amnb}{{\left[ \begin{array}{cccc;{4pt/3pt}c} 
+a_{11} & a_{12} & \cdots & a_{1n} & b_1 \\ 
+a_{21} & a_{22} & \cdots & a_{2n} & b_2 \\ 
+\vdots & \vdots & & \vdots & \vdots \\ 
+a_{m1} & a_{m2} & \cdots & a_{mn} & b_m
+\end{array} \right]}}
+
+%math boldface
+
+\newcommand{\bfa}{{\mathbf{a}}}
+\newcommand{\bfb}{{\mathbf{b}}}
+\newcommand{\bfc}{{\mathbf{c}}}
+\newcommand{\bfd}{{\mathbf{d}}}
+\newcommand{\bfe}{{\mathbf{e}}}
+\newcommand{\bfi}{{\mathbf{i}}}
+\newcommand{\bfj}{{\mathbf{j}}}
+\newcommand{\bfk}{{\mathbf{k}}}
+\newcommand{\bfu}{{\mathbf{u}}}
+\newcommand{\bfv}{{\mathbf{v}}}
+\newcommand{\bfw}{{\mathbf{w}}}
+\newcommand{\bfx}{{\mathbf{x}}}
+\newcommand{\bfy}{{\mathbf{y}}}
+\newcommand{\bfzero}{{\mathbf{0}}}
+\newcommand{\bfone}{{\mathbf{1}}}
+
+
+%%%%%%%%%%%%%%%%%%%%
+%%%DASH LINE COMMAND
+%%%%%%%%%%%%%%%%%%%%
+
+\makeatletter
+\newcommand*\dashline{\rotatebox[origin=c]{90}{$\dabar@\dabar@\dabar@$}}
+\makeatother
+
+%%%%%%%%%%%%%%%%%%%%
+%%%INTEGRAL
+%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\ddd}{\mathrm{d}}
+
+%%%%%%%%%%%%%%%%%%%
+%%%%  TIKZ %%%%%%%%
+%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\coordsys}[4]{
+\foreach \x in {#1,...,#3}
+\draw[line width=.6pt,color=black!15,dashed] (\x,#2-.2) -- (\x,#4+.2);
+\foreach \y in {#2,...,#4}
+\draw[line width=.6pt,color=black!15,dashed] (#1-.2,\y) -- (#3+.2,\y);
+\draw[->] (#1-.2,0) -- (#3+.2,0) node[right] {$x$};
+\draw[->] (0,#2-.2) -- (0,#4+.2) node[above] {$y$};
+\foreach \x in {#1,...,-1}
+\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+\foreach \x in {1,...,#3}
+\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+\foreach \y in {#2,...,-1}
+\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
+\foreach \y in {1,...,#4}
+\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
+}
