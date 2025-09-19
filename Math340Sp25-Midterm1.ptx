@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="utf-8"?>
+<worksheet xml:id="Math340Sp25-Midterm1" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Spring 2025 Midterm 1</title>
+	<introduction>
+		<p>
+			<em>Notation:</em> <m>\mathbf{0}</m> denotes the zero vector, <m>O</m> denotes the zero matrix, and <m>I_{n}</m> denotes the <m>n\times n</m> identity matrix.
+		</p>
+	</introduction>
+	<exercise points="8">
+		<introduction>
+			<p>
+				Let <m>T:\mathbb{R}^{3}\to\mathbb{R}^{3}</m> by <m>T\left(\begin{bmatrix}x_{1}\\ x_{2}\\x_{3}\end{bmatrix}\right)=\begin{bmatrix}3x_{1}-x_{2}+2x_{3}\\ 2x_{1}\\ 2x_{1}+4x_{3}\end{bmatrix}</m>.
+			</p>
+		</introduction>
+		<task workspace="1.5in" points="2">
+			<statement>
+				<p>
+					Evaluate <m>T\left(\begin{bmatrix}3 \\1 \\2\end{bmatrix}\right)</m>.
+				</p>
+			</statement>
+		</task>
+		<task workspace="1.5in" points="2">
+			<statement>
+				<p>
+					Find the (induced) matrix <m>A</m> such that <m>T(\mathbf{x})=A\mathbf{x}</m> for all <m>\mathbf{x}</m> in <m>\mathbb{R}^{3}</m>.
+				</p>
+		</statement>
+	</task>
+	<task workspace="3in" points="4">
+		<statement>
+			<p>
+				Is there a <em>nonzero</em> vector <m>\mathbf{x}</m> in <m>\mathbb{R}^{3}</m> such that <m>T(\mathbf{x})=\begin{bmatrix}0\\ 0\\ 0\end{bmatrix}</m>? Fully justify your answer.
+			</p>
+		</statement>
+	</task>
+</exercise>
+<exercise points="8">
+	<introduction>
+		<p>
+			Suppose <m>A</m> is a <m>3\times 3</m> matrix and <m>\mathbf{u}=\begin{bmatrix}1 \\ -1\\1\end{bmatrix}</m> is an eigenvector of <m>A</m> corresponding to eigenvalue <m>-2</m>, and <m>\mathbf{v}=\begin{bmatrix}2 \\ 1 \\ 1\end{bmatrix}</m> is an eigenvector of <m>A</m> corresponding to eigenvalue <m>3</m>.
+			Compute each of the following (note: your final answers will be vectors in <m>\mathbb{R}^{3}</m>).
+			Show all work.
+		</p>
+	</introduction>
+	<task workspace="1in">
+		<statement>
+			<p>
+				<m>A\begin{bmatrix}4 \\ 2 \\ 2\end{bmatrix}=</m>
+			</p>
+		</statement>
+	</task>
+	<task workspace="1in">
+		<statement>
+			<p>
+				<m>A^{3}\begin{bmatrix}1\\ -1 \\ 1\end{bmatrix}=</m>
+			</p>
+		</statement>
+	</task>
+	<task workspace="1in">
+		<statement>
+			<p>
+				<m>A\begin{bmatrix}-1\\ -5 \\ 1\end{bmatrix}=</m>
+			</p>
+		</statement>
+		<hint>
+			<p>
+				Can you write this vector as a linear combination of <m>\mathbf{u}</m> and <m>\mathbf{v}</m>?
+			</p>
+		</hint>
+	</task>
+</exercise>
+<exercise points="8">
+	<introduction>
+		<p>
+			Clearly mark the correct answer for each of the following by <em>completely</em> filling in the appropriate bubble.
+			<em>No justification is needed.</em>
+		</p>
+	</introduction>
+	<task workspace="2cm" points="1">
+		<statement>
+			<p>
+				<em>(True/False)</em> If <m>A</m> and <m>B</m> are both <m>3\times 3</m> matrices, then <m>(A+B)^{2}=A^{2}+2AB+B^{2}</m>.
+			</p>
+		</statement>
+		<choices multiple-correct="no">
+			<choice>
+				<statement>
+					<p>
+						True.
+					</p>
+				</statement>
+			</choice>
+			<choice>
+				<statement>
+					<p>
+						False.
+					</p>
+				</statement>
+			</choice>
+		</choices>
+	</task>
+	<task workspace="2cm" points="1">
+		<statement>
+			<p>
+				<em>(True/False)</em> <m>T:\mathbb{R}^{2}\to \mathbb{R}^{2}</m> by <m>T\left(\begin{bmatrix}x\\ y\end{bmatrix}\right)=\begin{bmatrix}xy \\ 0\end{bmatrix}</m> is a linear transformation.
+		</p>
+		</statement>
+		<choices multiple-correct="no">
+			<choice>
+				<statement>
+					<p>
+						True.
+					</p>
+				</statement>
+			</choice>
+			<choice>
+				<statement>
+					<p>
+						False.
+					</p>
+				</statement>
+			</choice>
+		</choices>
+	</task>
+	<task workspace="2cm" points="1">
+		<statement>
+			<p>
+				<em>(True/False)</em> The matrix <m>A=\left[\begin{array}{ccc}1 &#x26; 0 &#x26; 3 \\ 0 &#x26; 1 &#x26; 1 \\ 0 &#x26; 0 &#x26; 0\end{array}\right]</m> is a reduced row echelon form matrix.
+			</p>
+		</statement>
+		<choices multiple-correct="no">
+			<choice>
+				<statement>
+					<p>
+						True.
+					</p>
+				</statement>
+			</choice>
+			<choice>
+				<statement>
+					<p>
+						False.
+					</p>
+				</statement>
+			</choice>
+		</choices>
+	</task>
+	<task workspace="2cm" points="1">
+		<statement>
+			<p>
+				<em>(True/False)</em> If <m>A</m> is a <m>2\times 2</m> matrix such that for every <m>2\times 2</m> matrix <m>B</m>, we have <m>AB=BA</m>, then <m>A</m> must be <m>I_{2}</m>.
+			</p>
+		</statement>
+		<choices multiple-correct="no">
+			<choice>
+				<statement>
+					<p>
+					True.
+					</p>
+				</statement>
+			</choice>
+			<choice>
+				<statement>
+					<p>
+					False.
+					</p>
+				</statement>
+			</choice>
+		</choices>
+	</task>
+	<task workspace="2cm" points="1">
+		<statement>
+			<p>
+				<em>(True/False)</em> If <m>T:\mathbb{R}^{5}\to\mathbb{R}^{4}</m> is a matrix transformation defined by <m>T(\mathbf{x})=A\mathbf{x}</m>, then <m>A</m> is a <m>5\times 4</m> matrix.
+			</p>
+		</statement>
+		<choices multiple-correct="no">
+			<choice>
+				<statement>
+					<p>
+						True.
+					</p>
+				</statement>
+			</choice>
+			<choice>
+				<statement>
+					<p>
+						False.
+					</p>
+				</statement>
+			</choice>
+		</choices>
+	</task>	
+	<task workspace="2cm" points="1">
+		<statement>
+			<p>
+				<em>(Multiple Choice - choose one)</em> For <m>M = \left[ \begin{array}{ccc} 2 &#x26; 3 &#x26; 1 \\ -3 &#x26; c &#x26; 2 \\ 1 &#x26; 0 &#x26; 2 \end{array} \right]</m>For which value(s) of <m>c</m> would <m>M</m> be <em>not invertible</em>?
+			</p>
+		</statement>
+		<choices multiple-correct="yes">
+			<choice>
+				<statement>
+					<p>
+						<m>c = \frac{12}{5}</m>
+					</p>
+				</statement>
+			</choice>
+			<choice>
+				<statement>
+					<p>
+						<m>c = -8</m>
+					</p>
+				</statement>
+			</choice>
+			<choice>
+				<statement>
+					<p>
+						All values of <m>c</m> except <m>c = -8</m>
+					</p>
+				</statement>
+			</choice>
+			<choice>
+				<statement>
+					<p>
+						<m>c = 0</m>
+					</p>
+				</statement>
+			</choice>
+			<choice>
+				<statement>
+					<p>
+						None of the above.
+					</p>
+				</statement>
+			</choice>
+		</choices>
+	</task>
+	<task workspace="2cm" points="1">
+		<statement>
+			<p>
+				<em>(Multiple Choice - choose one)</em> What are the eigenvalues of the matrix <m>A=\begin{bmatrix}-2 &#x26; 1 \\ 3 &#x26; 0\end{bmatrix}</m>?
+			</p>
+		</statement>
+		<choices multiple-correct="yes">
+			<choice>
+				<statement>
+					<p>
+						<m>\lambda=0,2</m>
+					</p>
+				</statement>
+			</choice>
+			<choice>
+				<statement>
+					<p>
+						<m>\lambda=1,3</m>
+					</p>
+				</statement>
+			</choice>
+			<choice>
+				<statement>
+					<p>
+						<m>\lambda=-1,3</m>
+					</p>
+				</statement>
+			</choice>
+			<choice>
+				<statement>
+					<p>
+						<m>\lambda=-3,1</m>
+					</p>
+				</statement>
+			</choice>
+			<choice>
+				<statement>
+					<p>
+						None of the above.
+					</p>
+				</statement>
+			</choice>
+		</choices>
+	</task>
+	<task workspace="2cm" points="1">
+		<statement>
+			<p>
+				<em>(Multiple Choice - choose one)</em> For which <m>s</m> and <m>t</m> is the matrix <m>M=\begin{bmatrix}0&#x26;t&#x26;s\\ 3t&#x26;0&#x26;s+t \\ 4&#x26;4&#x26;t\end{bmatrix}</m> <em>symmetric</em>?
+			</p>
+		</statement>
+		<choices multiple-correct="yes">
+			<choice>
+				<statement>
+					<p>
+						<m>s=0, t=0</m>
+					</p>
+				</statement>
+			</choice>
+			<choice>
+				<statement>
+					<p>
+						<m>s=-4, t=0</m>
+					</p>
+				</statement>
+			</choice>
+			<choice>
+				<statement>
+					<p>
+						<m>s=4, t=0</m>
+					</p>
+				</statement>
+			</choice>
+			<choice>
+				<statement>
+					<p>
+						<m>s=0</m>, <m>t</m> can be any value.
+					</p>
+				</statement>
+			</choice>
+			<choice>
+				<statement>
+					<p>
+						None of the above.
+					</p>
+				</statement>
+			</choice>
+		</choices>
+	</task>
+</exercise>
+<exercise points="8">
+	<task workspace="3in" points="4">
+		<statement>
+			<p>
+				Suppose <m>A</m> and <m>B</m> are <m>4\times 4</m> matrices with <m>2A^{T}B^{-1}+I_{4}=O</m>.
+				If <m>\det(A)=10</m>, find the determinant of <m>B</m>.
+			</p>
+		</statement>
+	</task>
+	<task workspace="3in" points="4">
+		<statement>
+			<p>
+				Suppose <m>C,D</m> are <m>4\times 4</m> matrices, and <m>D</m> is obtained from <m>C</m> by the following elementary row operations:
+			</p>
+			<dl>
+				<li>
+					<p>
+						Add <m>3r_{2}</m> to <m>r_{4}</m> (and replace <m>r_{4}</m>)
+					</p>
+				</li>
+				
+				<li>
+					<p>
+						Multiply <m>r_{3}</m> by <m>k</m> (for some unknown scalar <m>k</m>)
+					</p>
+				</li>
+				
+				<li>
+					<p>
+						Swap <m>r_{3}</m> and <m>r_{4}</m>
+					</p>
+				</li>
+				
+				<li>
+					<p>
+						Add <m>-r_{1}</m> to <m>r_{2}</m> (and replace <m>r_{2}</m>)
+					</p>
+				</li>
+				
+				<li>
+					<p>
+						Multiply <m>r_{2}</m> by <m>5</m>
+					</p>
+				</li>
+			</dl>
+			<p>
+				If <m>\det(C)=10</m> and <m>\det(D)=-4</m>, find the scalar <m>k</m>.
+				Show all work.
+			</p>
+		</statement>
+	</task>
+</exercise>
+<exercise points="6">
+	<introduction>
+		<p>
+			Suppose a system of three equations in four unknowns (<m>x_{1},x_{2},x_{3},x_{4})</m> is represented by the follow augmented matrix:
+		</p>
+		
+		<p>
+			<me>
+				\left[\begin{array}{cccc:c}1 &#x26; 2 &#x26; 1 &#x26; -1 &#x26; 3 \\ -1 &#x26; -2 &#x26; 1 &#x26; -3 &#x26; 5 \\ 2 &#x26; 4 &#x26; 2 &#x26; -2 &#x26; 6\end{array}\right]
+			</me>
+		</p>
+	</introduction>
+	<task workspace="2in" points="2">
+		<p>
+			Write out the system of linear equations corresponding to this augmented matrix.
+		</p>
+	</task>
+	<task workspace="3in" points="4">
+		<p>
+			Through elementary row operations, we have the following reduction to reduced row echelon form:
+		</p>
+		
+		<p>
+			<me>
+				\left[\begin{array}{cccc:c}1 &#x26; 2 &#x26; 1 &#x26; -1 &#x26; 3 \\ -1 &#x26; -2 &#x26; 1 &#x26; -3 &#x26; 5 \\ 2 &#x26; 4 &#x26; 2 &#x26; -2 &#x26; 6\end{array}\right]\to \left[\begin{array}{cccc:c}1 &#x26; 2 &#x26; 0 &#x26; 1 &#x26; -1 \\ 0 &#x26; 0 &#x26; 1 &#x26; -2 &#x26; 4 \\ 0 &#x26; 0 &#x26; 0 &#x26; 0 &#x26; 0\end{array}\right]
+			</me>
+		</p>
+		
+		<p>
+			Using the reduced row echelon form, write out the parametrized solution for <m>x_{1}, x_{2}, x_{3}, x_{4}</m> for this linear system.
+		</p>
+	</task>
+</exercise>
+<exercise points="8">
+	<introduction>
+		<p>
+			Consider <m>2\times 2</m> matrices <m>A,B,C,D</m>, where <m>B=\begin{bmatrix}2 &#x26; -1 \\ 1 &#x26; 3\end{bmatrix}</m>, <m>C=\begin{bmatrix}3&#x26; 1 \\ 2 &#x26; -1\end{bmatrix}</m>, and <m>D=\begin{bmatrix}3&#x26; 4 \\ -1 &#x26; -1\end{bmatrix}</m>.
+		</p>
+	</introduction>
+	<task workspace="3in" points="3">
+		<statement>
+			<p>
+				Find <m>D^{-1}</m>.
+				Show all work.
+			</p>
+		</statement>
+	</task>
+	<task workspace="3in" points="5">
+		<statement>
+			<p>
+				If <m>(2A+B)^{-1}C=D</m>, find <m>A</m>.
+				Show all work.
+			</p>
+		</statement>
+		<hint>
+			<p>
+				You can use your answer to part (a).
+			</p>
+		</hint>
+	</task>
+</exercise>
+<exercise points="4">
+	<introduction>
+		<p>
+			Suppose <m>A</m> is a <m>4\times 4</m> matrix that is row-equivalent to the matrix <m>B=\left[\begin{array}{cccc}1 &#x26; 2 &#x26; 3 &#x26; 4 \\ 0 &#x26; 1 &#x26; 3 &#x26; 0 \\ 0 &#x26; 0 &#x26; 1 &#x26; -4 \\ 0 &#x26; 0 &#x26; 0 &#x26; 0\end{array}\right].</m>
+		</p>
+
+		<p>
+			Answer each of the following questions about the matrix <m>A</m>, if possible.
+			Justification is not required.
+		</p>
+
+		<p>
+			(Another reminder: You are answering questions about <m>A</m>, not <m>B</m>).
+		</p>
+	</introduction>
+	<task workspace="2cm">
+		<statement>
+			<p>
+				<em>(Multiple Choice - choose one)</em> Is <m>A</m> invertible?
+			</p>
+		</statement>
+		<choices multiple-correct="yes">
+			<choice>
+				<statement>
+					<p>
+						Yes
+					</p>
+				</statement>
+			</choice>
+			<choice>
+				<statement>
+					<p>
+						No
+					</p>
+				</statement>
+			</choice>
+			<choice>
+				<statement>
+					<p>
+						Not enough information to answer.
+					</p>
+				</statement>
+			</choice>
+		</choices>
+	</task>
+	<task workspace="2cm">
+		<statement>
+			<p>
+				<em>(Multiple Choice - choose one)</em> What is the rank of <m>A</m>?
+			</p>
+		</statement>
+		<choices multiple-correct="yes">
+			<choice>
+			<statement>
+				<p>
+					<m>0</m>
+				</p>
+			</statement>
+		</choice>
+		<choice>
+			<statement>
+				<p>
+					<m>1</m>
+				</p>
+			</statement>
+		</choice>
+		<choice>
+			<statement>
+				<p>
+					<m>2</m>
+				</p>
+			</statement>
+		</choice>
+		<choice>
+			<statement>
+				<p>
+					<m>3</m>
+				</p>
+			</statement>
+		</choice>
+		<choice>
+			<statement>
+				<p>
+					<m>4</m>
+				</p>
+			</statement>
+		</choice>
+		<choice>
+			<statement>
+				<p>
+					Not enough information to answer.
+				</p>
+			</statement>
+		</choice>
+	</choices>
+</task>
+<task workspace="2cm">
+	<statement>
+		<p>
+			<em>(Multiple Choice - choose one)</em> For <m>\mathbf{b}=\begin{bmatrix} 1 \\ 2\\ -1 \\ 3\end{bmatrix}</m>, does the linear system <m>A\mathbf{x}=\mathbf{b}</m> have...
+		</p>
+	</statement>
+	<choices multiple-correct="yes">
+		<choice>
+			<statement>
+				<p>
+					No solutions
+				</p>
+			</statement>
+		</choice>
+		<choice>
+			<statement>
+				<p>
+					One solution
+				</p>
+			</statement>
+		</choice>
+		<choice>
+			<statement>
+				<p>
+					Infinitely many solutions
+				</p>
+			</statement>
+		</choice>
+		<choice>
+			<statement>
+				<p>
+					Not enough information to answer.
+				</p>
+			</statement>
+		</choice>
+	</choices>
+</task>
+<task workspace="2cm">
+	<statement>
+		<p>
+			<em>(Multiple Choice - choose one)</em> For <m>\mathbf{b}=\begin{bmatrix} 0 \\ 0\\ 0 \\ 0\end{bmatrix}</m>, does the linear system <m>A\mathbf{x}=\mathbf{b}</m> have...
+		</p>
+	</statement>
+	<choices multiple-correct="yes">
+		<choice>
+			<statement>
+				<p>
+					No solutions
+				</p>
+			</statement>
+		</choice>
+		<choice>
+			<statement>
+				<p>
+					One solution
+				</p>
+			</statement>
+		</choice>
+		<choice>
+			<statement>
+				<p>
+					Infinitely many solutions
+				</p>
+			</statement>
+		</choice>
+		<choice>
+			<statement>
+				<p>
+					Not enough information to answer.
+				</p>
+			</statement>
+		</choice>
+	</choices>
+</task>
+</exercise>
+</worksheet>

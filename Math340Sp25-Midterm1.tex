@@ -1,0 +1,402 @@
+\documentclass[12pt]{extarticle}
+
+\include{preamble}
+
+\usepackage{framed,amssymb,amsmath,wasysym,arydshln}
+\usepackage{enumitem}
+
+%Choose one option (circles)
+\newcommand{\chooseone}{{\Large$\Circle$\ \ }}
+% Choose multiple options (squares)
+\newcommand{\choosemany}{{\Large$\Square$\ \ }}
+
+%\renewcommand{\familydefault}{\sfdefault} %For students who need sans serif font
+
+\begin{document}
+%\vspace*{.15in}
+\LARGE{Math 340: Elementary Matrix and Linear Algebra}
+
+\bigskip
+
+\Huge{MIDTERM ONE} \normalsize
+
+\bigskip
+
+Thursday, Feburary 27th, 2024, 7:30pm-9:00pm
+\vspace{.12in}
+
+\textbf{Circle your Instructor and your TA:}
+
+\begin{table}[h]\centering \small
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+Dr. Lars Niedorf &  Dr. Jose Rodriguez & Dr. Yassine Tissaoui & Dr. Ruhui Jin & Dr. Timur Yastrzhembskiy \\ \hline
+Karthik Ravishankar & Kanav Madhura & Ankit Raheja & Joey Yu Luo & Yiyu Wang\\ \hline
+Zaidan Wu & Dylan Jamner & Yijie He & Peter Wei & Tu Cao\\ \hline
+
+\end{tabular}
+\end{table}
+
+
+
+
+
+
+\vspace{-.2in}
+
+READ THE FOLLOWING INFORMATION.
+\begin{itemize}
+    \item This is a 90-minute exam. It consists of seven problems for a total of 50 points; the exam is six sheets of paper, including this cover sheet. It is your responsibility to make sure that you have a complete exam.
+    \item Books, notes, calculators, and other aids are not allowed.\vspace{-.1in}
+    \item Problems are spaced out to allow ample room for work. You may use the last page for scratch work, but it will not be graded. Do not unstaple or remove pages as they can be lost in the grading process.  \textbf{An incomplete exam packet will result in an automatic zero.}  \vspace{-.1in}
+    \item Only complete, well written, and neat solutions will be awarded full credit. Remember that all claims must be supported. Responses which do not meet these qualifications may be awarded some partial credit.\vspace{-.1in}
+ \item  If making multiple attempts at a solution, indicate clearly which attempt you'd like to be graded by crossing out the other answers. Multiple attempts will not be graded.
+ 
+ \vspace{-0.2cm} 
+\item When doing multiple choice and true/false questions, make sure to fully fill in the chosen bubble.
+
+
+ \vspace{-0.2cm} 
+ 
+  \item \textbf{Notation:} $\mathbf{0}$ denotes the zero vector, $O$ denotes the zero matrix, and $I_n$ denotes the $n\times n$ identity matrix.
+\end{itemize}
+
+\bigskip
+
+\textbf{DO NOT BEGIN THIS EXAM UNTIL SIGNALED TO DO SO.}
+
+
+
+\newpage
+
+
+
+\begin{enumerate}
+
+\item (8 points total) Let $T:\mathbb{R}^3\to\mathbb{R}^3$ by $T\left(\begin{bmatrix} x_1\\ x_2\\x_3\end{bmatrix}\right)=\begin{bmatrix} 3x_1-x_2+2x_3\\ 2x_1\\ 2x_1+4x_3\end{bmatrix}$.
+
+    
+     \begin{itemize} 
+     \item[a.] (2 points) Evaluate $T\left(\begin{bmatrix} 3 \\1 \\2 \end{bmatrix}\right)$.
+
+     \vspace{1.5in}
+
+     
+     \item[b.] (2 points) Find the (induced) matrix $A$ such that $T(\mathbf{x})=A\mathbf{x}$ for all $\mathbf{x}$ in $\mathbb{R}^3$. 
+
+\vspace{1.5in}
+     \item[c.] (4 points) Is there a \textbf{nonzero} vector $\mathbf{x}$ in $\mathbb{R}^3$ such that $T(\mathbf{x})=\begin{bmatrix} 0\\ 0\\ 0\end{bmatrix}$? Fully justify your answer. 
+
+     \vspace{3in}
+
+\end{itemize}
+
+\newpage
+
+\item (8 points total) Suppose $A$ is a $3\times 3$ matrix and $\mathbf{u}=\begin{bmatrix} 1 \\ -1\\1 \end{bmatrix}$ is an eigenvector of $A$ corresponding to eigenvalue $-2$, and $\mathbf{v}=\begin{bmatrix} 2 \\ 1 \\ 1\end{bmatrix}$ is an eigenvector of $A$ corresponding to eigenvalue $3$.  Compute each of the following (note: your final answers will be vectors in $\mathbb{R}^3$). Show all work.
+
+\begin{enumerate}[label=\alph*.]
+\item (2 points) 
+\medskip
+
+$A\begin{bmatrix} 4 \\ 2 \\ 2\end{bmatrix}=$
+
+\vspace{1in}
+
+\item (2 points) 
+\medskip
+
+$A^3\begin{bmatrix} 1\\ -1 \\ 1\end{bmatrix}=$
+
+\vspace{1in}
+
+\item (4 points) 
+\medskip
+
+$A\begin{bmatrix} -1\\ -5 \\ 1\end{bmatrix}=$
+
+\vspace{0.25in}
+
+(hint: Can you write this vector as a linear combination of $\mathbf{u}$ and $\mathbf{v}$?)
+\vspace{1in}
+\end{enumerate}
+
+\newpage
+
+
+
+
+  \item (8 points, 1 point each)  Clearly mark the correct answer for each of the following by \textbf{completely} filling in the appropriate bubble.  \textbf{No justification is needed.}
+\begin{enumerate}[label=\alph*.]
+\item \textbf{(True/False)} If $A$ and $B$ are both $3\times 3$ matrices, then $(A+B)^2=A^2+2AB+B^2$. %-Lars
+\begin{itemize}[label={}]
+\item \chooseone True
+\item \chooseone False
+\end{itemize}
+
+\vspace{2cm}
+\item \textbf{(True/False)} $T:\mathbb{R}^2\to \mathbb{R}^2$ by $T\left(\begin{bmatrix} x\\ y\end{bmatrix}\right)=\begin{bmatrix} xy \\ 0\end{bmatrix}$ is a linear transformation.
+
+\begin{itemize}[label={}] 
+\item \chooseone True
+\item \chooseone False
+\end{itemize}
+\vspace{2cm}
+
+\item \textbf{(True/False)} The matrix $A=\left[\begin{array}{ccc}
+1 & 0 & 3
+\\
+ 0 & 1 & 1
+\\
+ 0 & 0 & 0 
+\end{array}\right]
+$ is a reduced row echelon form matrix.
+\begin{itemize}[label={}] 
+\item \chooseone True
+\item \chooseone False
+\end{itemize}
+\vspace{2cm}
+
+\item \textbf{(True/False)} If $A$ is a $2\times 2$ matrix such that for every $2\times 2$ matrix $B$, we have $AB=BA$, then $A$ must be $I_2$.
+\begin{itemize}[label={}] 
+\item \chooseone True
+\item \chooseone False
+\end{itemize}
+\vspace{2cm}
+
+\item  \textbf{(True/False)} If $T:\mathbb{R}^5\to\mathbb{R}^4$ is a matrix transformation defined by $T(\mathbf{x})=A\mathbf{x}$, then $A$ is a $5\times 4$ matrix.
+
+\begin{itemize}[label={}]
+\item \chooseone True
+\item \chooseone False
+\end{itemize}
+
+
+\newpage
+
+\item \textbf{(Multiple Choice-choose one)} For $M= \left[ \begin {array}{ccc} 2&3&1\\ \noalign{\medskip}-3&c&2
+\\ \noalign{\medskip}1&0&2\end {array} \right]$, for which values(s) of $c$ would $M$ be \textbf{not invertible}?
+\begin{itemize}[label={}]
+\item \chooseone $c=\frac{12}{5}$
+\item \chooseone $c=-8$
+\item \chooseone All values of $c$ except $c=-8$
+\item \chooseone  $c=0$
+\item \chooseone None of the above.
+\end{itemize}
+
+\vspace{2cm}
+
+
+\item \textbf{(Multiple Choice-choose one)} What are the eigenvalues of the matrix $A=\begin{bmatrix} -2 & 1 \\ 3 & 0\end{bmatrix}$?
+\begin{itemize}[label={}]
+\item \chooseone $\lambda=0,2$
+\item \chooseone $\lambda=1,3$
+\item \chooseone $\lambda=-1,3$
+\item \chooseone $\lambda=-3,1$
+\item \chooseone None of the above.
+\end{itemize}
+\vspace{2cm}
+
+
+\item \textbf{(Multiple Choice-choose one)} 
+
+For which $s$ and $t$ is the matrix $M=\begin{bmatrix} 0 & t & s\\ 3t & 0 & s+t \\ 4 & 4 & t\end{bmatrix} $ 
+\textbf{symmetric}?
+\begin{itemize}[label={}]
+\item \chooseone $s=0, t=0$
+\item \chooseone $s=-4, t=0$
+\item \chooseone $s=4, t=0$
+\item \chooseone $s=0$, $t$ can be any value.
+\item \chooseone None of the above.
+\end{itemize}
+
+\end{enumerate}
+
+
+
+
+\newpage
+
+\item (8 points total)
+\begin{itemize}
+  \item[a.](4 points) Suppose $A$ and $B$ are $4\times 4$ matrices with $2A^TB^{-1}+I_4=O$. If $\det(A)=10$, find the determinant of $B$.
+
+\vspace{3in}
+
+\item[b.] (4 points) Suppose $C,D$ are $4\times 4$ matrices, and $D$ is obtained from $C$ by the following elementary row operations:
+
+  
+  \begin{itemize}
+  \item[]  Add $3r_2$ to $r_4$ (and replace $r_4$)
+    \item[]  Multiply $r_3$ by $k$ (for some unknown scalar $k$)
+    \item[]  Swap $r_3$ and $r_4$
+  \item[] Add $-r_1$ to $r_2$ (and replace $r_2$)
+  \item[]  Multiply $r_2$ by $5$
+  \end{itemize}
+
+If $\det(C)=10$ and $\det(D)=-4$, find the scalar $k$. Show all work.
+\end{itemize}
+
+ 
+    \newpage
+
+
+
+
+
+
+\item (6 points total) Suppose a system of three equations in four unknowns ($x_1,x_2,x_3,x_4)$ is represented by the follow augmented matrix:
+
+\[\left[\begin{array}{cccc:c}
+1 & 2 & 1 & -1 & 3 
+\\
+ -1 & -2 & 1 & -3 & 5 
+\\
+ 2 & 4 & 2 & -2 & 6 
+\end{array}\right]\]
+  
+ \begin{itemize}
+        \item[a.] (2 points) Write out the system of linear equations corresponding to this augmented matrix.
+
+  \vspace{2in}
+  
+  \item[b.] (4 points) Through elementary row operations, we have the following reduction to reduced row echelon form:
+
+  \[\left[\begin{array}{cccc:c}
+1 & 2 & 1 & -1 & 3 
+\\
+ -1 & -2 & 1 & -3 & 5 
+\\
+ 2 & 4 & 2 & -2 & 6 
+\end{array}\right]\to \left[\begin{array}{cccc:c}
+1 & 2 & 0 & 1 & -1 
+\\
+ 0 & 0 & 1 & -2 & 4 
+\\
+ 0 & 0 & 0 & 0 & 0 
+\end{array}\right]
+\]
+
+Using the reduced row echelon form, write out the parametrized solution for $x_1, x_2, x_3, x_4$ for this linear system.
+\end{itemize}        
+     
+
+               \vspace{3in} 
+
+
+\newpage
+
+
+    \item (8 points total) 
+    
+    Consider $2\times 2$ matrices $A,B,C,D$, where $B=\begin{bmatrix}2 & -1 \\ 1 & 3\end{bmatrix}$, $C=\begin{bmatrix}3& 1 \\ 2 & -1\end{bmatrix}$, and $D=\begin{bmatrix}3& 4 \\ -1 & -1\end{bmatrix}$.
+\begin{enumerate}[label=\alph*.]
+\item (3 points) Find $D^{-1}$. Show all work.
+\vfill
+\item (5 points) If $(2A+B)^{-1}C=D$, find $A$. Show all work. (Hint: You can use your answer to part (a)).
+\end{enumerate}
+\vfill
+
+
+ 
+ \newpage
+
+%%not enough info?
+
+\item (4 points total) Suppose $A$ is a $4\times 4$ matrix that is row-equivalent to the matrix $B=\left[\begin{array}{cccc}
+1 & 2 & 3 & 4 
+\\
+ 0 & 1 & 3 & 0 
+\\
+ 0 & 0 & 1 & -4 
+\\
+ 0 & 0 & 0 & 0 
+\end{array}\right].$
+
+Answer each of the following questions about the matrix $A$, if possible. Justification is not required.
+
+(Another reminder: You are answering questions about $A$, not $B$).
+
+
+\begin{itemize}
+   \item[a.]  \textbf{(Multiple Choice-choose one)} Is $A$ invertible?
+\begin{itemize}[label={}]
+\item \chooseone Yes
+\item \chooseone No
+\item \chooseone Not enough information to answer.
+\end{itemize}    
+
+
+     \vfill
+
+     \item[b.] \textbf{(Multiple Choice-choose one)}  What is the rank of $A$?
+\begin{itemize}[label={}]
+\item \chooseone $0$
+\item \chooseone $1$
+\item \chooseone $2$
+\item \chooseone $3$
+\item \chooseone $4$
+\item \chooseone Not enough information to answer.
+\end{itemize}  
+     \vfill
+
+
+     \item[c.] \textbf{(Multiple Choice-choose one)} For $\mathbf{b}=\begin{bmatrix} 1 \\ 2\\ -1 \\ 3\end{bmatrix}$, does the linear system $A\mathbf{x}=\mathbf{b}$ have...
+\begin{itemize}[label={}]
+\item \chooseone No solutions
+\item \chooseone One solution
+\item \chooseone Infinitely many solutions
+\item \chooseone Not enough information to answer.
+\end{itemize}    
+     
+     \vfill
+
+
+\item[d.] \textbf{(Multiple Choice-choose one)} For $\mathbf{b}=\begin{bmatrix} 0 \\ 0\\ 0 \\ 0\end{bmatrix}$, does the linear system $A\mathbf{x}=\mathbf{b}$ have...
+\begin{itemize}[label={}]
+\item \chooseone No solutions
+\item \chooseone One solution
+\item \chooseone Infinitely many solutions
+\item \chooseone Not enough information to answer.
+\end{itemize}    
+\end{itemize}
+
+
+    
+    
+
+
+
+
+
+    
+
+
+\newpage
+
+
+    
+
+
+    
+
+    
+    
+    
+        \newpage
+\end{enumerate}
+
+\newpage
+Scratch paper page!!
+
+
+\newpage
+
+
+Another Scratch paper page!!
+
+\newpage
+
+Back of scratch paper page!!
+
+\end{document}
