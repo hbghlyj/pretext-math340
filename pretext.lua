@@ -84,6 +84,116 @@ local function dedent_block(text)
   return table.concat(lines, "\n")
 end
 
+local workspace_lookup = {}
+
+local function read_file_contents(path)
+  local file = io.open(path, "r")
+  if not file then
+    return nil
+  end
+  local contents = file:read("*a")
+  file:close()
+  return contents
+end
+
+local function build_workspace_lookup(source)
+  local lookup = {}
+  local stack = {}
+  local current_exercise = 0
+  local last_task = nil
+
+  local function push(env)
+    table.insert(stack, env)
+  end
+
+  local function pop(env)
+    for index = #stack, 1, -1 do
+      local current = stack[index]
+      table.remove(stack)
+      if current == env then
+        break
+      end
+    end
+    if #stack < 2 then
+      last_task = nil
+    end
+  end
+
+  local function record_workspace(line)
+    if not last_task then
+      return
+    end
+    local amount = line:match([[\vspace%*?%{%s*([^}]+)%s*%}]])
+    if amount then
+      amount = amount:gsub("%s+", "")
+      local tasks = lookup[last_task.exercise]
+      if tasks then
+        tasks[last_task.index] = amount
+      end
+      last_task = nil
+    end
+  end
+
+  for line in (source .. "\n"):gmatch("(.-)\n") do
+    for env in line:gmatch([[\begin%s*{%s*([%w%*]+)%s*}]]) do
+      if env == "enumerate" or env == "itemize" then
+        push(env)
+      end
+    end
+    for env in line:gmatch([[\end%s*{%s*([%w%*]+)%s*}]]) do
+      if env == "enumerate" or env == "itemize" then
+        pop(env)
+      end
+    end
+
+    local search_pos = 1
+    while true do
+      local start_idx, end_idx = line:find([[\item]], search_pos)
+      if not start_idx then break end
+      local next_char = line:sub(end_idx + 1, end_idx + 1)
+      if next_char ~= "i" then
+        local top = stack[#stack]
+        if top == "enumerate" then
+          if #stack == 1 then
+            current_exercise = current_exercise + 1
+            lookup[current_exercise] = {}
+            last_task = nil
+          elseif #stack == 2 then
+            local tasks = lookup[current_exercise]
+            if tasks then
+              table.insert(tasks, "")
+              last_task = {exercise = current_exercise, index = #tasks}
+            end
+          end
+        elseif top == "itemize" then
+          if #stack == 2 and stack[1] == "enumerate" then
+            local tasks = lookup[current_exercise]
+            if tasks then
+              table.insert(tasks, "")
+              last_task = {exercise = current_exercise, index = #tasks}
+            end
+          end
+        end
+      end
+      search_pos = end_idx + 1
+    end
+
+    record_workspace(line)
+  end
+
+  return lookup
+end
+
+local function lookup_workspace(exercise_index, task_index)
+  if exercise_index and task_index and workspace_lookup then
+    local entries = workspace_lookup[exercise_index]
+    if entries then
+      return entries[task_index]
+    end
+  end
+  return nil
+end
+
 local function strip_outer_list_markup(block, tag)
   block = block:gsub("^<" .. tag .. ">", "", 1)
   block = block:gsub("</" .. tag .. ">$", "", 1)
@@ -153,6 +263,15 @@ local function parse_blocks(block_str)
         if block then
           table.insert(blocks, {type = "list", tag = direct_tag, content = strip_outer_list_markup(block, direct_tag)})
         end
+        rest = remainder
+        handled = true
+      end
+    end
+
+    if not handled then
+      local amount, remainder = rest:match("^<workspace%s+amount=\"([^\"]+)\"%s*/>(.*)$")
+      if amount then
+        table.insert(blocks, {type = "workspace", amount = trim(amount)})
         rest = remainder
         handled = true
       end
@@ -319,12 +438,13 @@ local function extract_outermost_ol(source)
   return nil
 end
 
-local function convert_task(entry, indent)
+local function convert_task(entry, indent, exercise_index, task_index)
   local blocks = parse_blocks(entry)
   local points
   local statement_parts = {}
   local hint_parts = {}
   local choices_markup = nil
+  local workspace
   for index, block in ipairs(blocks) do
     if block.type == "p" then
       local content = block.content
@@ -347,12 +467,26 @@ local function convert_task(entry, indent)
       else
         table.insert(statement_parts, {type = "list", tag = block.tag, content = block.content})
       end
+    elseif block.type == "workspace" then
+      if not workspace or workspace == "" then
+        workspace = block.amount
+      end
+    end
+  end
+
+  if (not workspace or workspace == "") and exercise_index and task_index then
+    local from_source = lookup_workspace(exercise_index, task_index)
+    if from_source and from_source ~= "" then
+      workspace = from_source
     end
   end
 
   local attr = ""
   if points then
     attr = attr .. ' points="' .. points .. '"'
+  end
+  if workspace and workspace ~= "" then
+    attr = attr .. ' workspace="' .. workspace .. '"'
   end
   local lines = {}
   table.insert(lines, indent_line("<task" .. attr .. ">", indent))
@@ -381,7 +515,7 @@ local function convert_task(entry, indent)
   return table.concat(lines, "\n")
 end
 
-local function convert_exercise(item, indent)
+local function convert_exercise(item, indent, exercise_index)
   local blocks = parse_blocks(item)
   local intro_blocks = {}
   local task_blocks = {}
@@ -412,8 +546,8 @@ local function convert_exercise(item, indent)
     end
     table.insert(lines, indent_line("</introduction>", indent + 1))
   end
-  for _, entry in ipairs(task_blocks) do
-    table.insert(lines, convert_task(entry, indent + 1))
+  for idx, entry in ipairs(task_blocks) do
+    table.insert(lines, convert_task(entry, indent + 1, exercise_index, idx))
   end
   table.insert(lines, indent_line("</exercise>", indent))
   return table.concat(lines, "\n")
@@ -448,6 +582,14 @@ function Doc(body, metadata, variables)
     doc_id = "document"
   end
 
+  workspace_lookup = {}
+  if PANDOC_STATE and PANDOC_STATE.input_files and #PANDOC_STATE.input_files > 0 then
+    local source = read_file_contents(PANDOC_STATE.input_files[1])
+    if source then
+      workspace_lookup = build_workspace_lookup(source)
+    end
+  end
+
   body = trim(body)
   local before, ol_block, after = extract_outermost_ol(body)
   local exercises_str = ""
@@ -455,8 +597,10 @@ function Doc(body, metadata, variables)
     local inner = ol_block:match("^%s*<ol>%s*(.*)%s*</ol>%s*$")
     if inner then
       local exercise_parts = {}
+      local exercise_index = 0
       for _, item in ipairs(parse_list_items(inner)) do
-        table.insert(exercise_parts, convert_exercise(item, 1))
+        exercise_index = exercise_index + 1
+        table.insert(exercise_parts, convert_exercise(item, 1, exercise_index))
       end
       exercises_str = table.concat(exercise_parts, "\n")
     end
@@ -806,6 +950,13 @@ function Table(caption, aligns, widths, headers, rows)
 end
 
 function RawBlock(format, str)
+  if format == "latex" then
+    local workspace = str:match("\\vspace%*?%{%s*([^}]+)%s*%}")
+    if workspace then
+      workspace = workspace:gsub("%s+", "")
+      return '<workspace amount="' .. escape(workspace, true) .. '"/>'
+    end
+  end
   return "<cd>\n" .. str .. "\n</cd>"
 end
 
