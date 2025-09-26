@@ -13,8 +13,8 @@ on:
     pull_request:
         branches: ["*"]
     ## Runs on pushes to main
-    #push:
-    #    branches: ["main"]
+    push:
+        branches: ["master"]
     # Runs on demand
     workflow_dispatch:
 
@@ -33,7 +33,7 @@ jobs:
             - name: Install LaTeX dependencies
               run: |
                 apt-get update
-                apt-get install -y texlive-arydshln
+                apt-get install -y texlive-latex-extra
 
             - name: set up node
               uses: actions/setup-node@v4
