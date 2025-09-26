@@ -397,7 +397,9 @@
 		<task points="3" workspace="2in">
 			<statement>
 				<p>
-					Find the zero vector <m>\mathbf{0}</m> for this vector addition <m>\oplus</m>. You must justify that<!-- linebreak --><m>\mathbf{v}\oplus\mathbf{0}=\mathbf{v}=\mathbf{0}\oplus\mathbf{v}</m> for all <m>\mathbf{v}</m> in <m>\mathbb{R}^2</m>.
+					Find the zero vector <m>\mathbf{0}</m> for this vector addition <m>\oplus</m>. You must justify that
+					<me>\mathbf{v}\oplus\mathbf{0}=\mathbf{v}=\mathbf{0}\oplus\mathbf{v}</me>
+						for all <m>\mathbf{v}</m> in <m>\mathbb{R}^2</m>.
 				</p>
 			</statement>
 		</task>

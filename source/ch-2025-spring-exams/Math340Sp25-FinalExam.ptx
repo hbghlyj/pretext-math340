@@ -423,11 +423,13 @@
 	<exercise points="16">
 		<introduction>
 			<p>
-				Let <m>T:P_1\to P_1</m> be a linear transformation with<!-- linebreak --><m>M_B(T)=\left[\begin{array}{cc}
+				Let <m>T:P_1\to P_1</m> be a linear transformation with
+				<me>M_B(T)=\left[\begin{array}{cc}
 							6 &amp; 2 
 							\\
-							 -2 &amp; 10 
-							\end{array}\right]</m> with respect to the ordered basis <m>B=(x+1,x-3)</m>.
+							 -2 &amp; 10
+							\end{array}\right]</me>
+				with respect to the ordered basis <m>B=(x+1,x-3)</m>.
 			</p>
 		</introduction>
 		<task points="4" workspace="3in">
@@ -443,11 +445,13 @@
 					Is <m>T</m> diagonalizable? Justify your answer.
 				</p>
 				<p>
-					Again, let <m>T:P_1\to P_1</m> be a linear transformation with<!-- linebreak --><m>M_B(T)=\left[\begin{array}{cc}
+					Again, let <m>T:P_1\to P_1</m> be a linear transformation with
+					<me>M_B(T)=\left[\begin{array}{cc}
 											6 &amp; 2 
 											\\
 											 -2 &amp; 10 
-											\end{array}\right]</m> with respect to the ordered basis <m>B=(x+1,x-3)</m>.
+											\end{array}\right]</me>
+					with respect to the ordered basis <m>B=(x+1,x-3)</m>.
 				</p>
 			</statement>
 		</task>
