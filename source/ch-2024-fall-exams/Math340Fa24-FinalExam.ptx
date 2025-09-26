@@ -378,9 +378,6 @@
 	<exercise points="22">
 		<introduction>
 			<p>
-				(This problem continues onto the next page)
-			</p>
-			<p>
 				Let <m>T:P_1\to P_1</m> be a linear transformation with <m>M_B(T)=\begin{bmatrix} 1 &amp; -3\\ -2 &amp; 6\end{bmatrix}</m> with respect to the ordered basis <m>B=(x+3,x-1)</m>. (NOTE: <m>B</m> is NOT the standard basis for <m>P_1</m>).
 			</p>
 		</introduction>
@@ -404,7 +401,7 @@
 					Is <m>T</m> diagonalizable? Justify your answer.
 				</p>
 				<p>
-					(Problem 5 continued) Again, let <m>T:P_1\to P_1</m> be a linear transformation with<!-- linebreak --><m>M_B(T)=\begin{bmatrix} 1 &amp; -3\\ -2 &amp; 6\end{bmatrix}</m> with respect to the ordered basis <m>B=(x+3,x-1)</m>.
+					Again, let <m>T:P_1\to P_1</m> be a linear transformation with<!-- linebreak --><m>M_B(T)=\begin{bmatrix} 1 &amp; -3\\ -2 &amp; 6\end{bmatrix}</m> with respect to the ordered basis <m>B=(x+3,x-1)</m>.
 				</p>
 			</statement>
 		</task>

@@ -447,13 +447,7 @@
 	<exercise points="8">
 		<introduction>
 			<p>
-				(this problem has overflow room on the next page)
-			</p>
-			<p>
 				Let <m>T:\mathbb{R}^2\to\mathbb{R}^3</m> by <m>T\left(\begin{bmatrix} x_1\\ x_2\end{bmatrix}\right)=\begin{bmatrix} x_1+2x_2\\ 2x_2\\ 2x_1-x_2\end{bmatrix}</m>.
-			</p>
-			<p>
-				(Overflow room for Problem 6, if needed)
 			</p>
 		</introduction>
 		<task points="2" workspace="1.5in">

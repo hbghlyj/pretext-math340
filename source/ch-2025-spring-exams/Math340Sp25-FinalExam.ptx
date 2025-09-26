@@ -443,9 +443,6 @@
 					Is <m>T</m> diagonalizable? Justify your answer.
 				</p>
 				<p>
-					(Problem 5 continued)
-				</p>
-				<p>
 					Again, let <m>T:P_1\to P_1</m> be a linear transformation with<!-- linebreak --><m>M_B(T)=\left[\begin{array}{cc}
 											6 &amp; 2 
 											\\
