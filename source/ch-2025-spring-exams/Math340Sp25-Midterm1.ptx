@@ -443,9 +443,14 @@
 		<task points="5">
 			<statement>
 				<p>
-					If <m>(2A+B)^{-1}C=D</m>, find <m>A</m>. Show all work. (Hint: You can use your answer to part (a)).
+					If <m>(2A+B)^{-1}C=D</m>, find <m>A</m>. Show all work.
 				</p>
 			</statement>
+			<hint>
+				<p>
+					You can use your answer to part (a)
+				</p>
+			</hint>
 		</task>
 	</exercise>
 	<exercise points="4">

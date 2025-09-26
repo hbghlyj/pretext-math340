@@ -370,9 +370,14 @@
 		<task points="3" workspace="3in">
 			<statement>
 				<p>
-					Find all the eigenvalues of <m>A</m>. Show all work. (Hint: One of the eigenvalues is 5).
+					Find all the eigenvalues of <m>A</m>. Show all work.
 				</p>
 			</statement>
+			<hint>
+				<p>
+					One of the eigenvalues is 5
+				</p>
+			</hint>
 		</task>
 		<task points="3">
 			<statement>

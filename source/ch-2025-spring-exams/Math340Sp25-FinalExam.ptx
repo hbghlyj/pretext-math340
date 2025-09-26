@@ -461,9 +461,14 @@
 		<task points="4">
 			<statement>
 				<p>
-					For the same basis <m>D</m> as in part (c), use the Similarity Theorem find <m>M_D(T)</m>.<!-- linebreak -->(Hint: You do NOT need to know <m>D</m> to solve this problem). Show all work.
+					For the same basis <m>D</m> as in part (c), use the Similarity Theorem find <m>M_D(T)</m>.
 				</p>
 			</statement>
+			<hint>
+				<p>
+					You do NOT need to know <m>D</m> to solve this problem
+				</p>
+			</hint>
 		</task>
 	</exercise>
 	<exercise points="8">
