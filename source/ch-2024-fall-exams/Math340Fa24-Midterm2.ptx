@@ -430,13 +430,21 @@
 							 -3 &amp; -3 &amp; -2 
 							\end{array}\right]</m>:
 			</p>
-			<p>
-				a.) (4 points) Find a basis for the eigenspace associated to the eigenvalue <m>\lambda=4</m> (in other words, find a set of basic eigenvectors associated to <m>\lambda=4</m>). Show all work.
-			</p>
-			<p>
-				b.) (2 points) Given that <m>\lambda=1</m> is the only other eigenvalue of <m>A</m>, and a basis for the eigenspace of <m>\lambda=1</m> is <m>\left\{\begin{bmatrix} -2 \\ 1 \\ 1\end{bmatrix}\right\}</m>, answer the following: Is <m>A</m> diagonalizable? Fully justify your answer using complete sentences.
-			</p>
 		</introduction>
+		<task points="4" workspace="2in">
+			<statement>
+				<p>
+					Find a basis for the eigenspace associated to the eigenvalue <m>\lambda=4</m> (in other words, find a set of basic eigenvectors associated to <m>\lambda=4</m>). Show all work.
+				</p>
+			</statement>
+		</task>
+		<task points="2" workspace="2in">
+			<statement>
+				<p>
+					Given that <m>\lambda=1</m> is the only other eigenvalue of <m>A</m>, and a basis for the eigenspace of <m>\lambda=1</m> is <m>\left\{\begin{bmatrix} -2 \\ 1 \\ 1\end{bmatrix}\right\}</m>, answer the following: Is <m>A</m> diagonalizable? Fully justify your answer using complete sentences.
+				</p>
+			</statement>
+		</task>
 	</exercise>
 	<exercise points="4">
 		<introduction>
