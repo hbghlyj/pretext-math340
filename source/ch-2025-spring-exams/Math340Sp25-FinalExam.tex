@@ -1,0 +1,425 @@
+\documentclass[12pt]{extarticle}
+
+\include{preamble}
+
+\usepackage{wasysym}
+\usepackage{enumitem}
+
+%Choose one option (circles)
+\newcommand{\chooseone}{{\Large$\Circle$\ \ }}
+% Choose multiple options (squares)
+\newcommand{\choosemany}{{\Large$\Square$\ \ }}
+
+%\renewcommand{\familydefault}{\sfdefault} %For students who need sans serif font
+
+\begin{document}
+\vspace{-.25in}
+
+\LARGE{Math 340: Elementary Matrix and Linear Algebra}
+
+\bigskip
+
+\Huge{Final Exam} \normalsize
+
+\bigskip
+
+Monday, May 5th, 7:25pm-9:25pm
+\vspace{.12in}
+
+\textbf{Circle your Instructor and your TA:}
+
+\begin{table}[h]\centering \small
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+Dr. Lars Niedorf &  Dr. Jose Rodriguez & Dr. Yassine Tissaoui & Dr. Ruhui Jin & Dr. Timur Yastrzhembskiy \\ \hline
+Karthik Ravishankar & Kanav Madhura & Ankit Raheja & Joey Yu Luo & Yiyu Wang\\ \hline
+Zaidan Wu & Dylan Jamner & Yijie He & Peter Wei & Tu Cao\\ \hline
+
+\end{tabular}
+\end{table}
+
+
+
+
+
+
+\vspace{-.25in}
+
+\begin{framed}
+\vspace*{.2in}
+Name: \fillin{aaaaaaaaaaaaaaaaaaaaaaaaaaa}  Wisc email: \fillin{nnnnnnnnnnnnnnnnnnnn} \vspace*{-.2in} \\
+I pledge that the work on this exam is entirely my own. I understand that the penalties for cheating may include an F in the course and referral to my dean for further action.
+ \vspace*{.3in} \\
+Student Signature: \fillin{aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa}
+\end{framed}
+ \vspace{-0.2cm} 
+READ THE FOLLOWING INFORMATION.
+\begin{itemize}
+    \item This is a 120-minute exam. It consists of 9 problems for a total of 100 points; the exam is 7 sheets of paper, including this cover sheet. It is your responsibility to make sure that you have a complete exam.\vspace{-.1in}
+    \item Books, notes, calculators, phones, and other aids are not allowed.\vspace{-.1in}
+    \item Problems are spaced out to allow ample room for work. You may use the last page for scratch work, but it will not be graded. Do not unstaple or remove pages as they can be lost in the grading process.  \textbf{An incomplete exam packet will result in an automatic zero.}  \vspace{-.1in}
+    \item Only complete, well written, and neat solutions will be awarded full credit. Remember that all claims must be supported. Responses which do not meet these qualifications may be awarded some partial credit.\vspace{-.1in}
+ \item  If making multiple attempts at a solution, indicate clearly which attempt you'd like to be graded by crossing out the other answers. Multiple attempts will not be graded.
+ 
+ \vspace{-0.2cm} 
+\item When doing multiple choice and true/false questions, make sure to fully fill in the chosen bubble.
+ 
+ \vspace{-0.2cm} 
+  \item Vector space notation reminders: $M_{mn}$ is the vector space of $m\times n$ real matrices with standard matrix addition and scalar multiplication, $P_d$ is the vector space of polynomials (in $x$) of degree at most $d$ with standard polynomial addition and scalar multiplication, $\mathbf{0}$ denotes the zero vector in a vector space $V$. $\mathbb{R}^n$ uses the standard vector addition/scalar multiplication and dot product unless otherwise noted. \vspace{-0.2cm} 
+ \item Matrix notation reminders: $O$ denotes the zero matrix, and $I_n$ denotes the $n\times n$ identity matrix. $\text{tr}(A)$ denotes the trace of a matrix $A$.  \vspace{-0.2cm} 
+ \item Additional notation reminders: $M_{DB}(T)$ denotes the matrix representation of the linear transformation $T:V\to W$ using ordered bases $B$ for $V$ and $D$ for $W$. $M_B(T)$ denotes the matrix representation of the linear operator $T$ with respect to the ordered basis $B$. $C_B(\bfv)$ denotes the coordinate representation of the vector $\bfv$ with respect to the ordered basis $B$. 
+
+  
+\end{itemize}
+
+\bigskip
+
+\textbf{DO NOT BEGIN THIS EXAM UNTIL SIGNALED TO DO SO.}
+
+
+
+\newpage
+
+
+
+\begin{enumerate}
+
+  
+
+\item (7 points) Given $A= \left[ \begin {array}{ccc} 2&3&0\\ \noalign{\medskip}0&-2&4
+\\ \noalign{\medskip}1&2&-1\end {array} \right] 
+$, $C^{-1}= \left[ \begin {array}{ccc} 2&4&1\\ \noalign{\medskip}2&6&4
+\\ \noalign{\medskip}1&2&2\end {array} \right] 
+$, and $D= \left[ \begin {array}{ccc} 2&4&1\\ \noalign{\medskip}0&1&4
+\\ \noalign{\medskip}3&2&9\end {array} \right] 
+$, find $B$ if $A+BC=D$. Show all work. %%adjust so that A-D is more sparse.
+
+\newpage
+
+\item (13 points total) Let $W$ be the vector space of $2\times 2$ symmetric matrices (using standard matrix addition/scalar multiplication), and define $T:P_2\to W$ by $T(p(x))=\begin{bmatrix} p'(0) & p(0)\\ p(0) & 0\end{bmatrix}$. You can assume (without proof) that $T$ is a linear transformation.
+
+\begin{itemize}
+\item[a.] (8 points) Using ordered basis $B=(4x+1, x^2,x^2-2)$ for $P_2$ and ordered basis 
+
+$D=\left(\begin{bmatrix} 1& 0\\ 0 &0\end{bmatrix}, \begin{bmatrix} 0& 0\\ 0 &1\end{bmatrix}, \begin{bmatrix} 0& 1\\ 1 &0\end{bmatrix}\right)$ for $W$, find the matrix representation $M_{DB}(T)$. Show all work.
+
+\vfill
+
+\item[b.] (5 points) Is $T$ an isomorphism? Justify your answer. 
+
+\vspace{2in}
+\end{itemize}
+
+
+
+\newpage
+
+
+
+
+  \item (20 points, 2 points each)  Clearly mark the correct answer for each of the following by \textbf{completely} filling in the appropriate bubble.  \textbf{No justification is needed.}
+\begin{enumerate}[label=\alph*.]
+\item \textbf{(True/False)} If $\mathbf{v}$ is a $3\times 1$ vector, and $A$ is a $3\times 3$ matrix, then $\mathbf{v}A$ is a $3\times 1$ vector.
+\begin{itemize}[label={}]
+\item \chooseone True
+\item \chooseone False
+\end{itemize}
+
+
+\vfill
+
+% another idea
+\item \textbf{(True/False)} If $A$ is a $4\times 4$ matrix with $\mathrm{tr}(A)=0$, then $A$ is invertible.
+\begin{itemize}[label={}] 
+\item \chooseone True
+\item \chooseone False
+\end{itemize}
+\vfill
+
+\item \textbf{(True/False)} The subspace $W=\left\{p\; \text{in}\; P_{10}\middle|\displaystyle \int_0^1  p(x)dx=0\right\}$ of $P_{10}$ is finite-dimensional.
+\begin{itemize}[label={}] 
+\item \chooseone True
+\item \chooseone False
+\end{itemize}
+\vfill
+
+\item \textbf{(True/False)} The function $F:\mathbb{R}\to\mathbb{R}$ by $F(x)=2x+1$ is an isomorphism.
+\begin{itemize}[label={}] 
+\item \chooseone True
+\item \chooseone False
+\end{itemize}
+\vfill
+
+\item  \textbf{(True/False)} Suppose $A$ is a $3\times3$ matrix with $A=A^{-1}$. Then $\det(A)=1$ or $\det(A)=-1$.
+
+\begin{itemize}[label={}]
+\item \chooseone True
+\item \chooseone False
+\end{itemize}
+\vfill
+
+
+\item  \textbf{(True/False)} If $\mathbf{x}$ and $\mathbf{y}$ are orthogonal vectors in an inner product space, then $\mathbf{x}$ and $\mathbf{x}+\mathbf{y}$ must also be orthogonal.
+\begin{itemize}[label={}]
+\item \chooseone True
+\item \chooseone False
+\end{itemize}
+
+\vfill
+
+
+\item \textbf{(Multiple Choice-choose one)} Which vector space is isomorphic to $P_3$?
+\begin{itemize}[label={}]
+\item \chooseone $\mathbb{R}^4$\medskip
+\item \chooseone The nullspace of $A=\begin{bmatrix} 1 & 2 & 4 & 3 & -1\\2 & 4 & 8 & 6 & -2\end{bmatrix}$\medskip
+\item \chooseone $M_{22}$\medskip
+\item \chooseone All of the above.
+\end{itemize}
+\vfill
+
+\newpage
+
+
+\item \textbf{(Multiple Choice-choose one)} Suppose $A$ is a $3\times 3$ matrix which is row-equivalent to 
+
+$B=\begin{bmatrix} 1 & -2 & 1\\ 0 & 1 & 3\\ 0 & 0 & 0\end{bmatrix}$. Which of the following must be true about $A$?
+\begin{itemize}[label={}]
+\item \chooseone $A\mathbf{x}=\begin{bmatrix} 0 \\ 1 \\1\end{bmatrix}$ has no solutions.\medskip
+\item \chooseone $\lambda=1$ is an eigenvalue of $A$. \medskip
+\item \chooseone $\lambda=0$ is an eigenvalue of $A$. \medskip
+\item \chooseone The columns of $A$ must be linearly independent.
+\item \chooseone All of the above.
+\item \chooseone None of the above.
+\end{itemize}
+
+\vfill
+
+\vfill
+
+
+\item \textbf{(Multiple Choice-choose one)} Suppose $\{\bfu,\,\bfv\}$ is a basis for a vector space $V$. Which of the following is also a basis for $V$?
+\begin{itemize}[label={}]
+\item \chooseone $\{\bfu+\bfv\}$\medskip
+\item \chooseone $\{\bfu+\bfv,\,2\bfu-\bfv\}$\medskip
+\item \chooseone $\{\bfu-\bfv,\,\bfv-\bfu\}$\medskip
+\item \chooseone $\{\bfu+\bfv,\,\bfu+2\bfv,\,\bfv\}$\medskip
+\item \chooseone All of the above.\medskip
+\item \chooseone None of the above.
+\end{itemize}
+\vfill
+
+
+\item \textbf{(Multiple Choice-choose one)} Let $V$ be $\mathbb{R}^2$ with the following vector addition $\oplus$ and scalar multiplication $\odot$:
+    $$\begin{bmatrix} x_1 \\ y_1 \end{bmatrix}\oplus \begin{bmatrix} x_2 \\ y_2 \end{bmatrix}=\begin{bmatrix} x_1+x_2+3 \\ y_1+y_2 \end{bmatrix}, \quad c\odot\begin{bmatrix} x_1 \\ y_1 \end{bmatrix}=\begin{bmatrix} cx_1+3c-3 \\ cy_1\\\end{bmatrix}$$
+
+ Which of the following is the zero vector $\mathbf{0}$ for this vector addition $\oplus$?
+\begin{itemize}[label={}]
+\item \chooseone $\begin{bmatrix} 0\\0\end{bmatrix}$\medskip
+\item \chooseone $\begin{bmatrix} 3\\0\end{bmatrix}$\medskip
+\item \chooseone $\begin{bmatrix} -3\\0\end{bmatrix}$\medskip
+\item \chooseone $\begin{bmatrix} 3\\3\end{bmatrix}$\medskip
+\item \chooseone None of the above.
+\end{itemize}
+
+\end{enumerate}
+
+
+
+
+\newpage
+
+
+\item (12 points total) Consider the vector space $P_1$, and define the function
+
+$$\langle p(x),q(x)\rangle=\int_0^1p(x)q(x) dx$$
+
+for $p(x),q(x) $ in $P_1$.
+
+You can assume that $\langle p(x),q(x)\rangle$ is an inner product for $P_1$.
+
+
+\begin{itemize}
+\item[a.] (4 points) With respect to this inner product, $\langle p(x),q(x)\rangle$, find the distance between $3x+1$ and $x-3$. Show all work, but you do not need to simplify your final numerical answer.
+
+\vfill
+\item[b.] (4 points) With respect to this inner product, $\langle p(x),q(x)\rangle$, show that the polynomials 
+
+$p=3-3x$ and $q=6x-2$ are orthogonal. Show all work.
+
+
+\vfill
+
+
+\item[c.] (4 points) With respect to this inner product,$\langle p(x),q(x)\rangle$, using $p=3-3x$ and $q=6x-2$, create an orthonormal basis for $P_1$. Show all work.
+
+\vfill
+
+
+
+\end{itemize}
+
+\newpage  
+
+\item (16 points total) Let $T:P_1\to P_1$ be a linear transformation with \\$M_B(T)=\left[\begin{array}{cc}
+6 & 2 
+\\
+ -2 & 10 
+\end{array}\right]$ with respect to the ordered basis $B=(x+1,x-3)$.
+
+\begin{itemize}
+
+\item[a.] (4 points) Compute $T(2x-1)$. Show all work.
+\vspace{3in}
+
+\item[b.] (5 points) Is $T$ diagonalizable? Justify your answer.
+
+
+\vfill
+
+
+\newpage (Problem 5 continued)
+
+Again, let $T:P_1\to P_1$ be a linear transformation with \\$M_B(T)=\left[\begin{array}{cc}
+6 & 2 
+\\
+ -2 & 10 
+\end{array}\right]$ with respect to the ordered basis $B=(x+1,x-3)$.
+
+\item[c.] (3 points) Suppose $P_{B\leftarrow D}=\begin{bmatrix} 2 & 1 \\ 3 & 1\end{bmatrix}$ is the change matrix from unknown basis $D=(p_1,p_2)$ to $B$. Find $p_1$ and $p_2$.
+
+\vspace{2.5in}
+
+\item[d.] (4 points) For the same basis $D$  as in part (c), use the Similarity Theorem find $M_D(T)$.\\ (Hint: You do NOT need to know $D$ to solve this problem). Show all work.
+
+ \end{itemize}
+
+ \newpage
+
+\item (8 points) Consider the vector space $\mathbb{R}^3$, and consider the set $U$ of vectors $\begin{bmatrix} x_1\\x_2\\x_3\end{bmatrix}$ where $x_1+3x_2=x_3$ and $x_1x_2\geq 0$, i.e. $U=\left\{\begin{bmatrix} x_1 \\ x_2\\x_3\end{bmatrix}\middle|\, x_1+3x_2=x_3, \, x_1x_2\geq 0\right\}.$ Is $U$ a subspace of $\mathbb{R}^3$? Fully justify your answer.
+%Consider the vector space $M_{22}$, and consider the set of matrices $U$ with zero trace, i.e. $U=\{A\; \text{in}\; M_{22}|\text{tr}(A)=0\}$. Is $U$ a subspace of $M_{22}$? Fully justify your answer.
+
+
+
+%Consider the vector space $P_2$ and consider the set $U$ of polynomials $p(x)$ where $p(0)=p(1)$, i.e. 
+ %$U=\{p(x)\; \text{in}\; P_2|p(0)=p(1)\}$. Is $U$ a subspace of $P_2$? Fully justify your answer.
+
+
+
+ 
+\newpage
+
+\item (9 points total)
+ Consider $\bfu=\begin{bmatrix} u_1 \\ u_2\end{bmatrix}$, $\bfv=\begin{bmatrix} v_1 \\ v_2\end{bmatrix}$ in $\mathbb{R}^2$, and define the function
+
+$$\langle \bfu,\bfv\rangle =2u_1v_1+3u_2v_2.$$
+
+\begin{itemize}
+\item[a.] (4 points) Verify the following inner product property for $\langle \bfu,\bfv\rangle $:
+
+$\langle \bfu,\bfv\rangle =\langle \bfv,\bfu\rangle $ for all $\bfu,\bfv$ in $\mathbb{R}^2$.
+
+    \vfill
+ For part (b), assume the remaining inner product properties are true for 
+ 
+$\langle \bfu,\bfv\rangle =2u_1v_1+3u_2v_2.$
+
+\item[b.] (5 points) With respect to this inner product  $\langle \bfu,\bfv\rangle$, find a basis for $W$, where $W$ is the subspace of $\mathbb{R}^2$ of vectors orthogonal to $\begin{bmatrix}5\\-4\end{bmatrix}$. Show all work.
+
+    \vfill
+
+    \vspace{2in}
+\end{itemize}
+ 
+    \newpage
+    \item (5 points) Let $A=\left[ \begin {array}{ccc} 0&2&1\\ \noalign{\medskip}2&4&3
+\\ \noalign{\medskip}0&1&1\end {array} \right]$ and $B=\left[ \begin {array}{ccc} 5&-1&1\\ \noalign{\medskip}3&-3&1
+\\ \noalign{\medskip}c&-10&3\end {array} \right].$ If $A$ and $B$ are similar matrices, find $c$. Show all work.
+ 
+ \newpage
+
+
+\item (10 points total, 2 points each) Suppose $A$ is a $3\times 7$ matrix with $\rank(A)=3.$ Answer the following questions about $A$, if possible. Justification is not required.
+
+
+
+\begin{itemize}
+   \item[a.]  \textbf{(Multiple Choice-choose one)} What is the $\dim(\text{null}\ A)$?
+\begin{itemize}[label={}]
+\item \chooseone $0$
+\item \chooseone $1$
+\item \chooseone $2$
+\item \chooseone $3$
+\item \chooseone $4$
+\item \chooseone Not enough information to answer.
+\end{itemize}    
+
+
+     \vfill
+
+     \item[b.] \textbf{(Multiple Choice-choose one)}  Is $\begin{bmatrix} 1 \\ 0 \\ 0\end{bmatrix}$ in the column space of $A$?
+\begin{itemize}[label={}]
+\item \chooseone Yes
+\item \chooseone No
+\item \chooseone Not enough information to answer.
+\end{itemize}  
+     \vfill
+
+    \item[c.] \textbf{(Multiple Choice-choose one)}  Does the linear system $A\mathbf{x}=\begin{bmatrix} 0 \\0 \\1\end{bmatrix}$ have...
+\begin{itemize}[label={}]
+\item \chooseone No solution
+\item \chooseone One solution
+\item \chooseone Infinitely many solutions
+\item \chooseone Not enough information to answer.
+\end{itemize}  
+     \vfill
+
+
+     \item[d.] \textbf{(Multiple Choice-choose one)} For $T:\mathbb{R}^7\to\mathbb{R}^3$ defined by $T(\mathbf{x})=A\mathbf{x}$, is $T$ onto?
+\begin{itemize}[label={}]
+\item \chooseone Yes
+\item \chooseone No
+\item \chooseone Not enough information to answer.
+\end{itemize}     
+     
+     \vfill
+
+
+\item[e.] \textbf{(Multiple Choice-choose one)} For $T:\mathbb{R}^7\to\mathbb{R}^3$ defined by $T(\mathbf{x})=A\mathbf{x}$, is $T$ one-to-one (also called injective)?
+\begin{itemize}[label={}]
+\item \chooseone Yes
+\item \chooseone No
+\item \chooseone Not enough information to answer.
+\end{itemize}   
+
+
+
+
+\end{itemize}
+
+
+    
+    
+
+
+
+
+
+    
+
+
+\newpage
+
+
+    
+
+
+    
+
+    
+    
+    
+        \newpage
+\end{enumerate}
+
+
+\end{document}

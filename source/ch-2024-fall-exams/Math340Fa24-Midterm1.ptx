@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8"?>
+<worksheet xml:id="Math340Fa24-Midterm1" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Math340Fa24-Midterm1</title>
+	<introduction>
+		<p>
+			<term>Notation:</term> <m>\mathbf{0}</m> denotes the zero vector, <m>O</m> denotes the zero matrix, and <m>I_n</m> denotes the <m>n\times n</m> identity matrix.
+		</p>
+	</introduction>
+	<exercise points="8">
+		<introduction>
+			<p>
+				Clearly mark the correct answer(s) for each of the following by completely filling in the appropriate bubble. <term>No justification is needed.</term>
+			</p>
+		</introduction>
+		<task workspace="2cm">
+			<statement>
+				<p>
+					<term>(True/False)</term> <m>\left[\begin{array}{cccc}
+											1 &amp; 2 &amp; 4 &amp; 3 
+											\\
+											 0 &amp; 1 &amp; 0 &amp; -1 
+											\\
+											 0 &amp; 0 &amp; 0 &amp; 0 
+											\end{array}\right]</m> is a row echelon matrix.
+				</p>
+			</statement>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								True
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								False
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
+		<task workspace="2cm">
+			<statement>
+				<p>
+					<term>(True/False)</term> If <m>A</m> is an <m>3\times 3</m> matrix such that <m>A^2=O</m>, then <m>A=O</m>.
+				</p>
+			</statement>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								True
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								False
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
+		<task workspace="2cm">
+			<statement>
+				<p>
+					<term>(True/False)</term> If two square matrices <m>A</m> and <m>B</m> are row equivalent, then <m>\det(A) = \det(B)</m>.
+				</p>
+			</statement>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								True
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								False
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
+		<task workspace="2cm">
+			<statement>
+				<p>
+					<term>(True/False)</term> If <m>A</m> is a <m>3\times 3</m> matrix with <m>\det(A)=6</m>, then <m>\det(3A)=18</m>.
+				</p>
+			</statement>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								True
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								False
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<term>(True/False)</term> <m>\left[\begin{array}{ccc}
+											1 &amp; 0 &amp; -5 
+											\\
+											 0 &amp; 1 &amp; 4 
+											\\
+											 0 &amp; 0 &amp; 0 
+											\end{array}\right]</m> and <m>\left[\begin{array}{ccc}
+											1 &amp; 2 &amp; 0 
+											\\
+											 0 &amp; 1 &amp; 3 
+											\\
+											 0 &amp; 0 &amp; 4 
+											\end{array}\right]</m> are row equivalent.
+				</p>
+			</statement>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								True
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								False
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
+		<task workspace="2cm">
+			<statement>
+				<p>
+					<term>(Multiple Choice-choose one)</term> Suppose <m>A</m> is a <m>5\times 5</m> matrix. If the rank of <m>A</m> is 3, then the homogeneous system <m>A\mathbf{x}=\mathbf{0}</m> will have...
+				</p>
+			</statement>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								No solutions.
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								Exactly one solution.
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								Exactly two solutions.
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								Exactly three solutions.
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								Infinitely many solutions.
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
+		<task workspace="2cm">
+			<statement>
+				<p>
+					<term>(Multiple Choice-choose one)</term> If <m>A</m> is <m>2\times 3</m>, <m>B</m> is <m>4\times 4</m>, and <m>C</m> is <m>4\times 3</m>, then what is the size of the matrix <m>AC^{T}B</m>?
+				</p>
+			</statement>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								<m>4\times 4</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								<m>2\times 3</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								<m>3\times 4</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								<m>4\times 3</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								None of the above.
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<term>(Multiple Choice-choose one)</term> Suppose <m>A</m> is a <m>3\times 3</m> skew-symmetric matrix. Consider the following statements:
+				</p>
+				<ul>
+					<li>
+						<p>
+							<m>A+A^T = O</m>
+						</p>
+					</li>
+					<li>
+						<p>
+							<m>A^T-A = O</m>
+						</p>
+					</li>
+					<li>
+						<p>
+							<m>A+I_3 = I_3+A</m>
+						</p>
+					</li>
+					<li>
+						<p>
+							<m>A{\mathbf{x}}=-A^T{\mathbf{x}}</m> for all <m>{\mathbf{x}}</m> in <m>\mathbb{R}^3</m>.
+						</p>
+					</li>
+					<li>
+						<p>
+							<m>A{\mathbf{x}}= \mathbf{0}</m> for all <m>{\mathbf{x}}</m> in <m>\mathbb{R}^3</m>.
+						</p>
+					</li>
+				</ul>
+				<p>
+					Which of these statements is true about <m>A</m>?
+				</p>
+			</statement>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								(a), (b), and (d)
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								(a), (c), and (d)
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								(b) and (c)
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								(a) and (e)
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								None of the above.
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
+	</exercise>
+	<exercise points="7">
+		<introduction>
+		</introduction>
+		<task points="3" workspace="3in">
+			<statement>
+				<p>
+					Suppose <m>A,B</m> are <m>4\times 4</m> matrices, and <m>B</m> is obtained from <m>A</m> by the following elementary row operations:
+				</p>
+				<ul>
+					<li>
+						<p>
+							Multiply <m>r_3</m> by <m>\frac{1}{6}</m>
+						</p>
+					</li>
+					<li>
+						<p>
+							Add <m>7r_1</m> to <m>r_2</m> (and replace <m>r_2</m>)
+						</p>
+					</li>
+					<li>
+						<p>
+							Swap <m>r_2</m> and <m>r_4</m>
+						</p>
+					</li>
+					<li>
+						<p>
+							Add <m>-r_3</m> to <m>r_4</m> (and replace <m>r_4</m>)
+						</p>
+					</li>
+					<li>
+						<p>
+							Multiply <m>r_3</m> by <m>10</m>
+						</p>
+					</li>
+				</ul>
+				<p>
+					If <m>\det(B)=-4</m>, find <m>\det(A)</m>. Show all work.
+				</p>
+			</statement>
+		</task>
+		<task points="4">
+			<statement>
+				<p>
+					Suppose <m>C,D,E</m> are <m>3 \times 3</m> matrices, where <m>\det(C)=5</m> and <m>\det(D)=-2</m>. If <m>C^{-1}D^{T}E=I_3</m>, find <m>\det(E)</m>. Show all work.
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise points="6">
+		<introduction>
+			<p>
+				Let <m>A=\left[\begin{array}{ccc}
+							3 &amp; 1 
+							\\
+							2 &amp;4 
+							 
+							\end{array}\right]</m>.
+			</p>
+		</introduction>
+		<task points="3" workspace="3in">
+			<statement>
+				<p>
+					Find all the eigenvalues of <m>A</m>. Show all work. (Hint: One of the eigenvalues is 5).
+				</p>
+			</statement>
+		</task>
+		<task points="3">
+			<statement>
+				<p>
+					Find an eigenvector of <m>A</m> corresponding to <m>\lambda=5</m>. Show all work.
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise points="6">
+		<introduction>
+			<p>
+				Suppose <m>A,B,C,D</m> are <m>2\times 2</m> matrices, where <m>D^{-1}=\begin{bmatrix} 2 &amp; -1 \\ 3 &amp; 1\end{bmatrix}</m>, <m>B=\begin{bmatrix} -3 &amp; 2\\ 1 &amp; -1\end{bmatrix}</m>, <m>A=\begin{bmatrix} 1 &amp; -3 \\ 2 &amp; 2\end{bmatrix}</m>, and <m>D(B+C)=A</m>.
+			</p>
+		</introduction>
+		<task points="2" workspace="0.2in">
+			<statement>
+				<p>
+					Which of the following is a correct expression for <m>C</m>? (Choose one. No justification is required).
+				</p>
+			</statement>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								<m>C=AD^{-1}-B</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								<m>C=D^{-1}A-B</m>
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
+		<task points="4">
+			<statement>
+				<p>
+					Using your answer from part (a), calculate matrix <m>C</m>. Show all work.
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise points="6">
+		<introduction>
+			<p>
+				Suppose a linear system of 3 equations and 3 unknowns (<m>x,y,z</m>) reduces to the following form via elementary row operations:
+			</p>
+			<p>
+				<me>{\left[ \begin{array}{rrr;{4pt/3pt}r} 
+							1 &amp; 3 &amp; 0 &amp; 2 \\ 0 &amp; 1 &amp; 2 &amp; 2 \\ 0&amp; 0 &amp; (k-3)&amp; (k+1) \end{array} \right]}</me>
+			</p>
+		</introduction>
+		<task points="2" workspace="1.5in">
+			<statement>
+				<p>
+					For what value(s) of <m>k</m> (if any) will the system have <term>no solutions</term>? Briefly explain your answer.
+				</p>
+			</statement>
+		</task>
+		<task points="4" workspace="3in">
+			<statement>
+				<p>
+					If <m>k=5</m>, finish reducing the augmented matrix to <term>reduced row echelon form</term>, then solve for <m>x,y,z</m>. Show all work.
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise points="8">
+		<introduction>
+			<p>
+				(this problem has overflow room on the next page)
+			</p>
+			<p>
+				Let <m>T:\mathbb{R}^2\to\mathbb{R}^3</m> by <m>T\left(\begin{bmatrix} x_1\\ x_2\end{bmatrix}\right)=\begin{bmatrix} x_1+2x_2\\ 2x_2\\ 2x_1-x_2\end{bmatrix}</m>.
+			</p>
+			<p>
+				(Overflow room for Problem 6, if needed)
+			</p>
+		</introduction>
+		<task points="2" workspace="1.5in">
+			<statement>
+				<p>
+					Evaluate <m>T\left(\begin{bmatrix} 2 \\3  \end{bmatrix}\right)</m>.
+				</p>
+			</statement>
+		</task>
+		<task points="2" workspace="1.5in">
+			<statement>
+				<p>
+					Find the matrix <m>A</m> such that <m>T(\mathbf{x})=A\mathbf{x}</m>.
+				</p>
+			</statement>
+		</task>
+		<task points="4" workspace="3in">
+			<statement>
+				<p>
+					Is there an <m>{\mathbf{x}}</m> in <m>\mathbb{R}^2</m> such that <m>T({\mathbf{x}})=\begin{bmatrix} -2\\ -6\\ 11\end{bmatrix}</m>? Fully justify your answer.
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise points="5">
+		<introduction>
+			<p>
+				Find <m>A</m>, if <m>(I_2+4A)^{-1}=\begin{bmatrix} 1 &amp; 0 \\ 3 &amp; 1\end{bmatrix}</m>. Show all work.
+			</p>
+		</introduction>
+	</exercise>
+	<exercise points="4">
+		<introduction>
+			<p>
+				For which value(s) of <m>c</m> does <m>A=\left[\begin{array}{ccc}
+							3 &amp; 0 &amp; 1 
+							\\
+							 c  &amp; 0 &amp; 3 
+							\\
+							 -1 &amp; 2 &amp; 1 
+							\end{array}\right]</m> have a <term>nontrivial</term> solution for <m>A\mathbf{x}=\mathbf{0}</m>? Show all work, and justify your answer.
+			</p>
+		</introduction>
+	</exercise>
+</worksheet>

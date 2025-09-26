@@ -1,0 +1,346 @@
+\documentclass[12pt]{extarticle}
+
+\include{preamble}
+
+\usepackage{wasysym}
+\usepackage{enumitem}
+\newcommand{\chooseone}{{\Large$\Circle$\ \ }}
+% Choose multiple options (squares)
+\newcommand{\choosemany}{{\Large$\Square$\ \ }}
+
+%\renewcommand{\familydefault}{\sfdefault} %For students who need sans serif font
+
+\begin{document}
+%\vspace*{.15in}
+\LARGE{Math 340: Elementary Matrix and Linear Algebra}
+
+\bigskip
+
+\Huge{MIDTERM ONE} \normalsize
+
+\bigskip
+
+Thursday, October 10th, 2024, 7:30pm-9:00pm
+\vspace{.12in}
+
+\textbf{Circle your Instructor and your TA:}
+
+\begin{table}[h]\centering \small
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+Dr. Lars Niedorf &  Dr. Jose Rodriguez & Dr. Yayi Fu & Dr. Hyukpyo Hong & Dr. Timur Yastrzhembskiy \\ \hline
+Zaidan Wu & Dewei Yu & Elizabeth Hankins & Jiaqi Hou & Amelia Stokolosa \\ \hline
+Dionel Jaime & Will Huang & & Dylan Jamner & \\ \hline
+Inbo Gottlieb Fenves & & & Chenghuang Chen & \\ \hline
+ Abhinav Arabelly & & & & \\ \hline
+\end{tabular}
+\end{table}
+
+
+
+
+
+
+\vspace{-.2in}
+
+\begin{framed}
+\vspace*{.2in}
+Name: \fillin{aaaaaaaaaaaaaaaaaaaaaaaaaaa}  Wisc email: \fillin{nnnnnnnnnnnnnnnnnnnn} \vspace*{.2in} \\
+I pledge that the work on this exam is entirely my own. I understand that the penalties for cheating may include an F in the course and referral to my dean for further action.
+ \vspace*{.3in} \\
+Student Signature: \fillin{aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa}
+\end{framed}
+READ THE FOLLOWING INFORMATION.
+\begin{itemize}
+    \item This is a 90-minute exam. It consists of eight problems for a total of 50 points; the exam is seven sheets of paper, including this cover sheet. It is your responsibility to make sure that you have a complete exam.
+
+    \item Books, notes, calculators, and other aids are not allowed.
+    \item Problems are spaced out to allow ample room for work. You may use the last page for scratch work, but it will not be graded. Do not unstaple or remove pages as they can be lost in the grading process.  \textbf{An incomplete exam packet will result in an automatic zero.}  
+    \item Only complete, well written, and neat solutions will be awarded full credit. Remember that all claims must be supported. Responses which do not meet these qualifications may be awarded some partial credit.
+  \item \textbf{Notation:} $\mathbf{0}$ denotes the zero vector, $O$ denotes the zero matrix, and $I_n$ denotes the $n\times n$ identity matrix.
+\end{itemize}
+
+\bigskip
+
+\textbf{DO NOT BEGIN THIS EXAM UNTIL SIGNALED TO DO SO.}
+
+
+
+\newpage
+
+
+
+\begin{enumerate}
+
+  \item (8 points, 1 point each)  Clearly mark the correct answer(s) for each of the following by completely filling in the appropriate bubble.  \textbf{No justification is needed.}
+\begin{itemize}
+\item[a.)] \textbf{(True/False)} $\left[\begin{array}{cccc}
+1 & 2 & 4 & 3 
+\\
+ 0 & 1 & 0 & -1 
+\\
+ 0 & 0 & 0 & 0 
+\end{array}\right]$ is a row echelon matrix. %Yayi A true row echelon form matrix.
+\begin{itemize}[label={}]
+\item \chooseone True
+\item \chooseone False
+\end{itemize}
+
+\vspace{2cm}
+\item[b.)]  \textbf{(True/False)} If $A$ is an $3\times 3$ matrix such that $A^2=O$, then $A=O$. % Lars
+\begin{itemize}[label={}] 
+\item \chooseone True
+\item \chooseone False
+\end{itemize}
+\vspace{2cm}
+
+\item[c.)]  \textbf{(True/False)} If two square matrices $A$ and $B$ are row equivalent, then $\det(A) = \det(B)$. %Hyukpyo
+\begin{itemize}[label={}] 
+\item \chooseone True
+\item \chooseone False
+\end{itemize}
+\vspace{2cm}
+
+\item[d.) ]  \textbf{(True/False)} If $A$ is a $3\times 3$ matrix with $\det(A)=6$, then $\det(3A)=18$.
+\begin{itemize}[label={}] 
+\item \chooseone True
+\item \chooseone False
+\end{itemize}
+\vspace{2cm}
+
+\item[e.) ]  \textbf{(True/False)} $\left[\begin{array}{ccc}
+1 & 0 & -5 
+\\
+ 0 & 1 & 4 
+\\
+ 0 & 0 & 0 
+\end{array}\right]$  and $ \left[\begin{array}{ccc}
+1 & 2 & 0 
+\\
+ 0 & 1 & 3 
+\\
+ 0 & 0 & 4 
+\end{array}\right]$ are row equivalent. %Timur
+
+\begin{itemize}[label={}]
+\item \chooseone True
+\item \chooseone False
+\end{itemize}
+
+
+\newpage
+
+\item[f.) ]  \textbf{(Multiple Choice-choose one)} Suppose $A$ is a $5\times 5$ matrix. If the rank of $A$ is 3, then the homogeneous system $A\mathbf{x}=\mathbf{0}$ will have...
+\begin{itemize}[label={}]
+\item \chooseone No solutions.
+\item \chooseone Exactly one solution.
+\item \chooseone Exactly two solutions.
+\item \chooseone Exactly three solutions.
+\item \chooseone Infinitely many solutions.
+\end{itemize}
+
+\vspace{2cm}
+
+
+\item[g.) ]\textbf{(Multiple Choice-choose one)} If $A$ is $2\times 3$, $B$ is $4\times 4$, and $C$ is $4\times 3$, then what is the size of the matrix $AC^{T}B$?
+\begin{itemize}[label={}]
+\item \chooseone $4\times 4$
+\item \chooseone $2\times 3$
+\item \chooseone $3\times 4$
+\item \chooseone $4\times 3$
+\item \chooseone None of the above.
+\end{itemize}
+\vspace{2cm}
+
+
+\item[h.) ]\textbf{(Multiple Choice-choose one)} Suppose $A$ is a $3\times 3$ skew-symmetric matrix. Consider the following statements: %Jose-change to a multiple choice.
+\begin{itemize}
+\item[a.]	$A+A^T = O$
+\item[b.] $A^T-A = O$
+\item[c.]	$A+I_3 = I_3+A$
+\item[d.] $A\bfx =-A^T\bfx$ for all $\bfx$ in $\mathbb{R}^3$.
+\item[e.] $A\bfx = \mathbf{0}$ for all $\bfx$ in $\mathbb{R}^3$.
+\end{itemize}
+Which of these statements is true about $A$?
+\begin{itemize}[label={}]
+\item \chooseone (a), (b), and (d)
+\item \chooseone (a), (c), and (d)
+\item \chooseone (b) and (c)
+\item \chooseone (a) and (e)
+\item \chooseone None of the above.
+\end{itemize}
+
+\end{itemize}
+
+
+
+
+\newpage
+
+\item (7 points total)
+\begin{itemize}
+  \item[a.](3 points) Suppose $A,B$ are $4\times 4$ matrices, and $B$ is obtained from $A$ by the following elementary row operations:
+
+  
+  \begin{itemize}
+  \item[]  Multiply $r_3$ by $\frac{1}{6}$
+  \item[]  Add $7r_1$ to $r_2$ (and replace $r_2$)
+    \item[]  Swap $r_2$ and $r_4$
+  \item[] Add $-r_3$ to $r_4$ (and replace $r_4$)
+  \item[]  Multiply $r_3$ by $10$
+  \end{itemize}
+
+If $\det(B)=-4$, find $\det(A)$. Show all work.
+
+\vspace{3in}
+
+\item[b.] (4 points) Suppose $C,D,E$ are $3 \times 3$ matrices, where $\det(C)=5$ and $\det(D)=-2$.
+If $C^{-1}D^{T}E=I_3$, find $\det(E)$. Show all work.
+\end{itemize}
+
+ 
+    \newpage
+
+
+
+
+
+\newpage
+
+%%Make the 3x3 matrix have two zeros. KP will fiddle.
+
+    \item (6 points) Let $A=\left[\begin{array}{ccc}
+3 & 1 
+\\
+2 &4 
+ 
+\end{array}\right]$. 
+
+\begin{itemize} \item[a.](3 points) Find all the eigenvalues of $A$. Show all work. (Hint: One of the eigenvalues is 5).
+
+\vspace{3in}
+
+\item[b.] (3 points) Find an eigenvector of $A$ corresponding to $\lambda=5$.  Show all work.
+
+\end{itemize}
+ \newpage
+
+
+
+   
+    \item  (6 points total) Suppose $A,B,C,D$ are $2\times 2$ matrices, where $D^{-1}=\begin{bmatrix} 2 & -1 \\ 3 & 1\end{bmatrix}$, $B=\begin{bmatrix} -3 & 2\\ 1 & -1\end{bmatrix}$, $A=\begin{bmatrix} 1 & -3 \\ 2 & 2\end{bmatrix}$, and $D(B+C)=A$. 
+  
+\begin{itemize}
+\item[a.] (2 point)  Which of the following is a correct expression for $C$? (Choose one. No justification is required).
+\begin{itemize}[label={}]
+\item \chooseone $C=AD^{-1}-B$
+\item \chooseone $C=D^{-1}A-B$
+\end{itemize} %%Just change to two options.
+\vspace{0.2in}
+
+\item[b.] (4 points) Using your answer from part (a), calculate matrix $C$. Show all work.
+
+\end{itemize}
+
+    \newpage
+
+  \item (6 points total)  Suppose a linear system of 3 equations and 3 unknowns ($x,y,z$) reduces to the following form via elementary row operations:
+ 
+        \[ 
+\barray{rrr;{4pt/3pt}r}{
+1 & 3 & 0 & 2 \\ 0 & 1 & 2 & 2 \\ 0& 0 & (k-3)& (k+1)} 
+\]   
+  
+  
+  
+  
+    \begin{enumerate}
+        \item (2 points)  For what value(s) of $k$ (if any) will the system have \textbf{no solutions}? Briefly explain your answer.
+        \vspace{1.5in}
+        
+        \item (4 points) If $k=5$, finish reducing the augmented matrix to \textbf{reduced row echelon form},  then solve for $x,y,z$. Show all work.
+
+               \vspace{3in} 
+
+
+
+\end{enumerate}
+
+    \newpage
+    
+    
+    
+
+\vspace{2in}
+
+
+    
+
+
+\newpage
+
+
+    
+
+      \item (8 points total) (this problem has overflow room on the next page)
+     
+     Let $T:\mathbb{R}^2\to\mathbb{R}^3$ by $T\left(\begin{bmatrix} x_1\\ x_2\end{bmatrix}\right)=\begin{bmatrix} x_1+2x_2\\ 2x_2\\ 2x_1-x_2\end{bmatrix}$. %Choose a different matrix that's easier to solve.
+
+    
+     \begin{itemize} 
+     \item[a.] (2 points) Evaluate $T\left(\begin{bmatrix} 2 \\3  \end{bmatrix}\right)$.
+
+     \vspace{1.5in}
+
+     
+     \item[b.] (2 points) Find the matrix $A$ such that $T(\mathbf{x})=A\mathbf{x}$.  %A is not invertible
+
+\vspace{1.5in}
+
+     \item[c.] (4 points) Is there an $\bfx$ in $\mathbb{R}^2$ such that $T(\bfx)=\begin{bmatrix} -2\\ -6\\ 11\end{bmatrix}$? Fully justify your answer. %or should this not be in image?
+
+     \vspace{3in}
+
+\end{itemize}
+
+
+\newpage
+
+(Overflow room for Problem 6, if needed)
+
+\newpage
+
+
+\item (5 points) Find $A$, if $(I_2+4A)^{-1}=\begin{bmatrix} 1 & 0 \\ 3 & 1\end{bmatrix}$. Show all work.    
+    
+
+    
+    
+    
+        \newpage
+%check what happens if they row reduce?
+    \item (4 points)  For which value(s) of $c$ does $A=\left[\begin{array}{ccc}
+3 & 0 & 1 
+\\
+ c  & 0 & 3 
+\\
+ -1 & 2 & 1 
+\end{array}\right]
+$ have a \textbf{nontrivial} solution for $A\mathbf{x}=\mathbf{0}$? Show all work, and justify your answer.
+
+\end{enumerate}
+
+\newpage
+Scratch paper page!!
+
+
+\newpage
+
+
+Another Scratch paper page!!
+
+\newpage
+
+Back of scratch paper page!!
+
+\end{document}

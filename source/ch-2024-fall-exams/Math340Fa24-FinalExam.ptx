@@ -1,0 +1,711 @@
+<?xml version="1.0" encoding="utf-8"?>
+<worksheet xml:id="Math340Fa24-FinalExam" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Math340Fa24-FinalExam</title>
+	<introduction>
+		<p>
+			Notation reminders: <m>M_{mn}</m> is the vector space of <m>m\times n</m> real matrices with standard matrix addition and scalar multiplication, <m>P_d</m> is the vector space of polynomials (in <m>x</m>) of degree at most <m>d</m> with standard polynomial addition and scalar multiplication, <m>\mathbf{0}</m> denotes the zero vector in a vector space <m>V</m>. <m>\mathbb{R}^n</m> uses the standard vector addition/scalar multiplication and dot product unless otherwise noted.
+		</p>
+		<p>
+			Additional notation reminders: <m>O</m> denotes the zero matrix, and <m>I_n</m> denotes the <m>n\times n</m> identity matrix. <m>\text{tr}(A)</m> denotes the trace of a matrix <m>A</m>.
+		</p>
+	</introduction>
+	<exercise points="7">
+		<introduction>
+			<p>
+				Consider <m>T:P_2\to P_1</m> by <m>T(p(x))=p(0)+2p'(x)</m>. You can assume that <m>T</m> is a linear transformation.
+			</p>
+			<p>
+				Find <m>M_{DB}(T)</m>, where <m>B=(5,x^2+3,x)</m> and <m>D=(1,x)</m>. Show all work.<!-- linebreak -->(Hint: your final matrix will be <m>2\times 3</m>).
+			</p>
+		</introduction>
+	</exercise>
+	<exercise points="7">
+		<introduction>
+			<p>
+				Consider the subspace <m>W</m> of <m>\mathbb{R}^4</m> spanned by the set
+			</p>
+			<p>
+				<me>\left\{\begin{bmatrix} 1\\ 0 \\3 \\0\end{bmatrix}, \begin{bmatrix} 0 \\ 0 \\0 \\ 2\end{bmatrix}, \begin{bmatrix} 0\\ 0 \\ 1 \\ 0\end{bmatrix}, \begin{bmatrix} 0\\ 0 \\ 2\\ 6\end{bmatrix}\right\}</me>
+			</p>
+		</introduction>
+		<task points="3">
+			<statement>
+				<p>
+					What is the dimension of <m>W</m>? Show your work, and briefly justify your answer.
+				</p>
+			</statement>
+		</task>
+		<task points="2" workspace="1.5in">
+			<statement>
+				<p>
+					For which <m>d</m> is <m>W</m> isomorphic to <m>P_d</m>? Justify your answer in one sentence.
+				</p>
+			</statement>
+		</task>
+		<task points="2" workspace="1.5in">
+			<statement>
+				<p>
+					Is <m>W</m> isomorphic to <m>M_{22}</m>? Justify your answer in one sentence.
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise points="20">
+		<introduction>
+			<p>
+				Fill in the bubble next to the correct answer. Justification is not necessary.
+			</p>
+		</introduction>
+		<task workspace="1.5cm">
+			<statement>
+				<p>
+					Let <m>A</m> be an <m>n\times n</m> matrix with <m>\text{rank}(A)=n</m>. If <m>\{\mathbf v_1,\dots,\mathbf v_k\}</m> is a set of linearly independent vectors in <m>\mathbb R^n</m>, then <m>\{A\mathbf v_1,\dots,A\mathbf v_k\}</m> is a set of linearly independent vectors in <m>\mathbb R^n</m>.
+				</p>
+			</statement>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								True
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								False
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
+		<task workspace="1.5cm">
+			<statement>
+				<p>
+					Let <m>A</m> be an <m>n\times n</m> matrix. If <m>A^2</m> is invertible, then <m>A</m> is invertible.
+				</p>
+			</statement>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								True
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								False
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
+		<task workspace="1.5cm">
+			<statement>
+				<p>
+					Let <m>V</m> be a finite-dimensional vector space where <m>\dim(V)=n</m>. Let <m>B</m> and <m>D</m> be ordered bases for <m>V</m>, and let <m>T:V\to V</m> be a linear operator on <m>V</m>. Then <m>\det(M_B(T))=\det(M_D(T))</m>.
+				</p>
+			</statement>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								True
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								False
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
+		<task workspace="1.5cm">
+			<statement>
+				<p>
+					Consider <m>P_1</m> with the following inner product: <m>\displaystyle \langle p(x), q(x)\rangle = \int\limits_0^1 p(x)q(x)\mathrm{d}x.</m> Using this inner product, <m>x</m> is a unit vector.
+				</p>
+			</statement>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								True
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								False
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
+		<task workspace="1.5cm">
+			<statement>
+				<p>
+					Suppose <m>A</m> and <m>B</m> are <m>3\times 3</m> matrices. Then <m>\mathop{\mathrm{rank}}(AB) = \mathop{\mathrm{rank}}(A)</m>.
+				</p>
+			</statement>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								True
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								False
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
+		<task workspace="1.5cm">
+			<statement>
+				<p>
+					If <m>\mathbf{u} , \mathbf{v}</m> are linearly dependent vectors in <m>\mathbb{R}^2</m>, then <m>\left| \langle {\mathbf{u}}, {\mathbf{v}}\rangle  \right| = \left\Vert {\mathbf{u}}\right\Vert \left\Vert{\mathbf{v}}\right\Vert</m>.
+				</p>
+			</statement>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								True
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								False
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<term>(Multiple Choice-choose one)</term> If <m>T:P_2\to\mathbb{R}^3</m> is an isomorphism, which of the following is true?
+				</p>
+			</statement>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								<m>\ker(T) = P_2</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								<m>\mathop{\mathrm{im}}(T)=P_2</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								<m>T</m> is onto
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								The inverse of <m>T</m> does not exist.
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								None of the above.
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<term>(Multiple Choice-choose one)</term> Consider <m>\mathbb{R}^3</m> with the standard inner product, and consider the subspace <m>W</m> of vectors in <m>\mathbb{R}^3</m> which are orthogonal to both <m>\mathbf{v}=\begin{bmatrix} 1 \\ 0\\ -3\end{bmatrix}</m> and <m>\mathbf{w}=\begin{bmatrix} -2 \\ 0\\ 6\end{bmatrix}</m>. What is the dimension of <m>W</m>?
+				</p>
+			</statement>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								<m>\dim(W)=0</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								<m>\dim(W)=1</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								<m>\dim(W)=2</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								<m>\dim(W)=3</m>
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<term>(Multiple Choice-choose one)</term> Suppose <m>A</m> is a <m>3\times 3</m> matrix with eigenvalue 2 and eigenvalue 3. Which of the following is true?
+				</p>
+			</statement>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								If <m>\mathbf{v}</m> is in both the eigenspace of <m>\lambda=2</m> and the eigenspace of <m>\lambda=3</m>, then <m>\mathbf{v}=\mathbf{0}</m>.
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								If <m>\mathbf{w}</m> is an eigenvector of <m>A</m> associated to <m>\lambda=2</m>, then <m>-\mathbf{w}</m> is an eigenvector of <m>A</m> associated to <m>\lambda=-2</m>.
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								<m>A</m> is not diagonalizable.
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								<m>A</m> is similar to <m>I_3</m>.
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								All of the above.
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<term>(Multiple Choice-choose one)</term> Suppose <m>A=\left[\begin{array}{cc}
+											-1 &amp; x  
+											\\
+											 -2 &amp; y  
+											\end{array}\right],</m> and you know that <m>A</m> is similar to <m>\begin{bmatrix} -3 &amp; -2\\12&amp; 8\end{bmatrix}</m>. Find <m>x</m> and <m>y</m>.
+				</p>
+			</statement>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								<m>x=6</m>, <m>y=3</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								<m>x=-4</m>, <m>y=22</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								<m>x=12</m>, <m>y=24</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								<m>x=3</m>, <m>y=6</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								None of the above.
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
+	</exercise>
+	<exercise points="5">
+		<introduction>
+			<p>
+				Given <m>A=\begin{bmatrix} 3 &amp; 0 \\ -2 &amp; 1\end{bmatrix}</m>, <m>C^{-1}=\begin{bmatrix} 2 &amp; 3 \\ 1 &amp; 4\end{bmatrix}</m>, and <m>D=\begin{bmatrix} 4 &amp; 2 \\ 0 &amp; 3\end{bmatrix}</m>, find <m>B</m> if <m>(A+B)C=D</m>. Show all work.
+			</p>
+		</introduction>
+	</exercise>
+	<exercise points="22">
+		<introduction>
+			<p>
+				(This problem continues onto the next page)
+			</p>
+			<p>
+				Let <m>T:P_1\to P_1</m> be a linear transformation with <m>M_B(T)=\begin{bmatrix} 1 &amp; -3\\ -2 &amp; 6\end{bmatrix}</m> with respect to the ordered basis <m>B=(x+3,x-1)</m>. (NOTE: <m>B</m> is NOT the standard basis for <m>P_1</m>).
+			</p>
+		</introduction>
+		<task points="4" workspace="3in">
+			<statement>
+				<p>
+					Compute <m>T(9-x)</m>. Show all work. (Note: your final answer should be in <m>P_1</m>).
+				</p>
+			</statement>
+		</task>
+		<task points="4" workspace="2.5in">
+			<statement>
+				<p>
+					Find a basis for the kernel of <m>T</m>. (Note: your final answer should be in <m>P_1</m>).
+				</p>
+			</statement>
+		</task>
+		<task points="4" workspace="2in">
+			<statement>
+				<p>
+					Is <m>T</m> diagonalizable? Justify your answer.
+				</p>
+				<p>
+					(Problem 5 continued) Again, let <m>T:P_1\to P_1</m> be a linear transformation with<!-- linebreak --><m>M_B(T)=\begin{bmatrix} 1 &amp; -3\\ -2 &amp; 6\end{bmatrix}</m> with respect to the ordered basis <m>B=(x+3,x-1)</m>.
+				</p>
+			</statement>
+		</task>
+		<task points="3" workspace="1.5in">
+			<statement>
+				<p>
+					Is <m>T</m> an isomorphism? Justify your answer.
+				</p>
+			</statement>
+		</task>
+		<task points="3" workspace="2in">
+			<statement>
+				<p>
+					Suppose <m>P_{B\leftarrow D}=\begin{bmatrix} 1 &amp; 3 \\ 1 &amp; 2\end{bmatrix}</m> is the change matrix from unknown basis <m>D=(p_1,p_2)</m> to <m>B</m>. Find <m>p_1</m> and <m>p_2</m>.
+				</p>
+			</statement>
+		</task>
+		<task points="4">
+			<statement>
+				<p>
+					For the same basis <m>D</m> as in part (e), find <m>M_D(T)</m>.<!-- linebreak -->(Hint: You do NOT need to know <m>D</m> to solve this problem).
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise points="7">
+		<introduction>
+			<p>
+				Consider the vector space <m>P_1</m>, and define the function
+			</p>
+			<p>
+				<me>\langle p(x),q(x)\rangle=\int_0^1p(x)q(x) dx</me>
+			</p>
+			<p>
+				for <m>p(x),q(x)</m> in <m>P_1</m>.
+			</p>
+			<p>
+				You can assume that <m>\langle p(x),q(x)\rangle</m> is an inner product for <m>P_1</m>.
+			</p>
+		</introduction>
+		<task points="4">
+			<statement>
+				<p>
+					Using this inner product <m>\langle p(x),q(x)\rangle</m>, find the distance between <m>2x+3</m> and <m>x-4</m>. Show all work. You do not need to simplify your final numerical answer.
+				</p>
+			</statement>
+		</task>
+		<task points="3">
+			<statement>
+				<p>
+					Still using this inner product <m>\langle p(x),q(x)\rangle</m>, for which <m>c</m> is <m>cx+2</m>, <m>2x-2</m> orthogonal? Show all work.
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise points="7">
+		<introduction>
+			<p>
+				Is <m>W=\left\{\begin{bmatrix} x_1 \\x_2\\ x_3\end{bmatrix}\middle|\; x_2=2x_1+3x_3,\;  x_1x_3\geq 0\right\}</m> a subspace of <m>\mathbb{R}^3</m>? If it is a subspace, prove it using the subspace test. If it is not a subspace, provide an explicit counterexample showing which of the subspace criteria is violated. Fully justify your answer.
+			</p>
+		</introduction>
+	</exercise>
+	<exercise points="8">
+		<introduction>
+			<p>
+				Consider <m>M_{22}</m>, and let <m>A,B</m> be matrices in <m>M_{22}</m>. Let <m>\langle A,B\rangle=\mathop{\mathrm{tr}}(AB^T).</m> You can assume this is an inner product for <m>M_{22}</m>.
+			</p>
+			<p>
+				Consider <m>M=\left[\begin{array}{cc}
+							6 &amp; 1 
+							\\
+							 2 &amp; 4 
+							\end{array}\right]</m> and <m>N=\left[\begin{array}{cc}
+							-1 &amp; 2 
+							\\
+							 2 &amp; 0 
+							\end{array}\right]</m>. Consider <m>W=\mathop{\mathrm{span}}\{M, N\}</m>.
+			</p>
+		</introduction>
+		<task points="4">
+			<statement>
+				<p>
+					Verify that <m>M</m> and <m>N</m> are orthogonal using this inner product. Show all work.
+				</p>
+			</statement>
+		</task>
+		<task points="4">
+			<statement>
+				<p>
+					Assuming that <m>\{M,N\}</m> is a basis for <m>W</m>, use <m>M</m> and <m>N</m> to build an orthonormal basis for <m>W</m> using this inner product. Show all work.
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise points="7">
+		<introduction>
+			<p>
+				Suppose a linear system of 3 equations and 3 unknowns (<m>x,y,z</m>) reduces to the following form via elementary row operations:
+			</p>
+			<p>
+				<me>{\left[ \begin{array}{rrr;{4pt/3pt}r} 
+							1 &amp; 0 &amp; 0 &amp; 3 \\ 0 &amp; 1 &amp; -2 &amp; 5 \\ 0&amp; 0 &amp; (a^2-9)&amp; (a+3) \end{array} \right]}</me>
+			</p>
+		</introduction>
+		<task points="2" workspace="1.5in">
+			<statement>
+				<p>
+					For which value(s) of <m>a</m> will the system have <term>no solutions</term>? Briefly explain your answer.
+				</p>
+			</statement>
+		</task>
+		<task points="2" workspace="1.5in">
+			<statement>
+				<p>
+					For which value(s) of <m>a</m> will the system have <term>infinitely many solutions</term>? Briefly explain your answer.
+				</p>
+			</statement>
+		</task>
+		<task points="3" workspace="3in">
+			<statement>
+				<p>
+					If <m>a=2</m>, finish reducing the augmented matrix to <term>reduced row echelon form</term>, then solve for <m>x,y,z</m>. Show all work.
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise points="10">
+		<introduction>
+			<p>
+				Suppose <m>A</m> is a <m>5\times 5</m> matrix with <me>RREF(A)=\left[\begin{array}{ccccc}
+							1 &amp; 0 &amp; -2 &amp; 0 &amp; 2
+							\\
+							 0 &amp; 1 &amp; 3 &amp; 0 &amp; 1
+							\\
+							 0 &amp; 0 &amp; 0 &amp; 1 &amp; -3
+							\\
+							 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+							  0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+							\end{array}\right]</me>
+			</p>
+			<p>
+				This is the reduced row echelon form of <m>A</m>, not <m>A</m>. Answer each question. Justification is not required.
+			</p>
+		</introduction>
+		<task points="2" workspace="0.2in">
+			<statement>
+				<p>
+					Is <m>A</m> invertible?
+				</p>
+			</statement>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								Yes
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								No
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								Not enough information to determine.
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
+		<task points="2" workspace="0.2in">
+			<statement>
+				<p>
+					<m>\left\{\begin{bmatrix}j\\ -1\\0\\3\\1\end{bmatrix},\begin{bmatrix} 2 \\ k\\ 1 \\ 0 \\0\end{bmatrix}\right\}</m> is a basis for the nullspace of <m>A</m>. Find <m>j</m> and <m>k</m>. Write your answers in the provided boxes.
+				</p>
+				<p>
+					<m>j=\boxed{\Large\phantom{Mqqqq}}</m> <m>k=\boxed{\Large\phantom{Mqqqq}}</m>
+				</p>
+			</statement>
+		</task>
+		<task points="2" workspace="0.2in">
+			<statement>
+				<p>
+					Is <m>0</m> an eigenvalue of <m>A</m>?
+				</p>
+			</statement>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								Yes
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								No
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								Not enough information to determine.
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
+		<task points="2" workspace="0.2in">
+			<statement>
+				<p>
+					Is <m>1</m> an eigenvalue of <m>A</m>?
+				</p>
+			</statement>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								Yes
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								No
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								Not enough information to determine.
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
+		<task points="2">
+			<statement>
+				<p>
+					If <m>T:\mathbb{R}^5\to \mathbb{R}^5</m> is the linear transformation given by <m>T(\mathbf{x})=A\mathbf{x}</m>, what is the dimension of the image of <m>T</m>?
+				</p>
+			</statement>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								0
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								1
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								2
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								3
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								4
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								5
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								Not enough information to determine.
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
+	</exercise>
+</worksheet>

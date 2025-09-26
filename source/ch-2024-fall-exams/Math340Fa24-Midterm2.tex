@@ -1,0 +1,421 @@
+\documentclass[12pt]{extarticle}
+
+\include{preamble}
+
+\usepackage{wasysym}
+\usepackage{enumitem}
+\newcommand{\chooseone}{{\Large$\Circle$\ \ }}
+\newcommand{\choosemany}{{\Large$\Square$\ \ }}
+
+
+
+%\renewcommand{\familydefault}{\sfdefault} %For students who need sans serif font
+
+\begin{document}
+%\vspace*{.15in}
+\LARGE{Math 340: Elementary Matrix and Linear Algebra}
+
+\bigskip
+
+\Huge{MIDTERM TWO} \normalsize
+
+\bigskip
+
+Thursday, November 14th, 2024, 7:30pm-9:00pm
+
+\vspace{.12in}
+
+\textbf{Circle your Instructor and your TA:}
+
+\begin{table}[h]\centering \small
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+Dr. Lars Niedorf &  Dr. Jose Rodriguez & Dr. Yayi Fu & Dr. Hyukpyo Hong & Dr. Timur Yastrzhembskiy \\ \hline
+Zaidan Wu & Dewei Yu & Elizabeth Hankins & Jiaqi Hou & Amelia Stokolosa \\ \hline
+Dionel Jaime & Will Huang & & Dylan Jamner & \\ \hline
+Inbo Gottlieb Fenves & & & Chenghuang Chen & \\ \hline
+ Abhinav Arabelly & & & & \\ \hline
+\end{tabular}
+\end{table}
+
+
+
+
+
+\vspace{-.3in}
+
+\begin{framed}
+\vspace*{.2in}
+Name: \fillin{aaaaaaaaaaaaaaaaaaaaaaaaaaa}  Wisc email: \fillin{nnnnnnnnnnnnnnnnnnnn} \vspace*{.05in} \\
+I pledge that the work on this exam is entirely my own. I understand that the penalties for cheating may include an F in the course and referral to my dean for further action.
+ \vspace*{.2in} \\
+Student Signature: \fillin{aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa}
+\end{framed}
+READ THE FOLLOWING INFORMATION.
+\begin{itemize}
+    \item This is a 90-minute exam. It consists of eight problems for a total of 50 points; the exam is six sheets of paper, including this cover sheet. It is your responsibility to make sure that you have a complete exam.\vspace{-0.2cm}
+
+    \item Books, notes, calculators, and other aids are not allowed.\vspace{-0.2cm}
+    \item Problems are spaced out to allow ample room for work. You may use the last page for scratch work, but it will not be graded. Do not unstaple or remove pages as they can be lost in the grading process.  \textbf{An incomplete exam packet will result in an automatic zero.}  \vspace{-0.2cm}
+    \item Only complete, well written, and neat solutions will be awarded full credit. Remember that all claims must be supported. Responses which do not meet these qualifications may be awarded some partial credit.\vspace{-0.2cm}
+    \item  If making multiple attempts at a solution, indicate clearly which attempt you'd like to be graded by crossing out the other answers. Multiple attempts will not be graded.
+ \vspace{-0.2cm} 
+        \item Notation reminders: $M_{mn}$ is the vector space of $m\times n$ real matrices with standard matrix addition and scalar multiplication, $P_d$ is the vector space of polynomials (with single variable $x$) of degree at most $d$ with standard polynomial addition and scalar multiplication, $\mathbf{0}$ denotes the zero vector in a vector space $V$. $\mathbb{R}^n$ uses the standard vector addition/scalar multiplication unless otherwise noted.
+        \item Additional notation reminders: $O$ denotes the zero matrix, and $I_n$ denotes the $n\times n$ identity matrix. $\text{tr}(A)$ denotes the trace of a matrix $A$.
+ %%add trace to notation
+\end{itemize}
+
+\bigskip
+
+\textbf{DO NOT BEGIN THIS EXAM UNTIL SIGNALED TO DO SO.}
+
+
+
+\newpage
+
+
+
+\begin{enumerate}
+
+%% is the point count correct?
+  \item (8 points, 1 point each)  Clearly mark the correct answer(s) for each of the following by completely filling in the appropriate bubble.  \textbf{No justification is needed.}
+\begin{itemize}
+
+\item[a.)] %Lars
+Let $A$ be an $n\times m$ matrix. If $\{\mathbf v_1,\dots,\mathbf v_n\}$ is a set of linearly independent vectors in $\mathbb R^m$, then $\{A\mathbf v_1,\dots,A\mathbf v_n\}$ is a set of linearly independent vectors in $\mathbb R^n$. 
+\begin{itemize}[label={}] 
+\item \chooseone True
+\item \chooseone False
+\end{itemize}
+
+\vspace{2cm}
+
+\item[b.)] For the matrix $A=\begin{bmatrix} 1 & -1 \\ 3 & -3 \end{bmatrix}$, the image of $A$, $\text{im}\, A$, is a subspace of $\mathbb{R}^2$ with $\dim(\text{im}\, A)=2$. 
+
+\begin{itemize}[label={}]
+\item \chooseone True
+\item \chooseone False
+\end{itemize}
+\vspace{2cm}
+
+\item[c.)] If $A$ is $5\times 5$ diagonalizable matrix, then $A$ must have 5 distinct eigenvalues.
+\begin{itemize}[label={}]
+\item \chooseone True
+\item \chooseone False
+\end{itemize}
+\vspace{2cm}
+
+\item[d.)] Let $V$ be a vector space, and $W=\text{span}\{\mathbf{v}_1,\mathbf{v}_2,\ldots,\mathbf{v}_k\}$ be a subspace of $V$. If $\mathbf{v}$ is a vector in $V$ which is not in $W$, then $\mathbf{v}$ is not a linear combination of $\{\mathbf{v}_1,\mathbf{v}_2,\ldots,\mathbf{v}_k\}$.
+\begin{itemize}[label={}] 
+\item \chooseone True
+\item \chooseone False
+\end{itemize}
+\vspace{2cm}
+
+\item[e.) ] In $P_2$, the vectors $4x^2-2x+1$ and $2x^2-x+3$ are linearly dependent.
+
+\begin{itemize}[label={}] 
+\item \chooseone True
+\item \chooseone False
+\end{itemize}
+
+
+\newpage
+
+\item[f.)] \textbf{(Multiple Choice-choose one)} Suppose $A$ is a $2\times 2$ matrix where $AP=PD$ for $P= \left[ \begin {array}{cc} 1&3\\ \noalign{\medskip}1&2\end {array}
+ \right]$ and $D= \left[ \begin {array}{cc} a&0\\ \noalign{\medskip}0&b\end {array}
+ \right]$. Note that $ P^{-1}=\left[ \begin {array}{cc} -2&3\\ \noalign{\medskip}1&-1\end {array}
+ \right]$.  What is $A^{10}$?
+\begin{itemize}[label={}] 
+\item \chooseone $\left[ \begin {array}{cc} -2\,{a}^{10}+3\,{b}^{10}&3\,{a}^{10}-3\,{b}^{10}\\ \noalign{\medskip}-2\,{a}^{10}+2\,{b}^{10}&3\,{a}^{10}-2\,{b}^{10}\end {array} \right]$\vspace{0.1cm}
+\item \chooseone $\left[ \begin {array}{cc} -2\,{a}^{10}+3\,{b}^{10}&-6\,{a}^{10}+6\,{b}^{10}\\ \noalign{\medskip}{a}^{10}-{b}^{10}&3\,{a}^{10}-2\,{b}^{10}\end {array} \right]$\vspace{0.1cm}
+\item  \chooseone $\left[ \begin {array}{cc} {a}^{10}&0\\ \noalign{\medskip}0&{b}^{10}\end {array} \right]$\vspace{0.1cm}
+\item \chooseone  None of the above.
+\end{itemize}
+   
+
+\vfill
+
+\item[g.)]  \textbf{(Multiple Choice-choose one)} Consider a set $S=\{p_1, p_2, p_3, p_4, p_5\}$ of $5$ polynomials in $P_3$. Which of the following is true?
+
+\begin{itemize}[label={}]
+\item \chooseone $S$ spans $P_3$.
+\item \chooseone $S$ is a linearly independent set.
+\item \chooseone $S$ is a basis for $P_3$.
+\item \chooseone At least one of the polynomials in $S$ is a linear combination of the others.
+\item \chooseone None of the above.
+\end{itemize}
+
+\vfill
+
+\item[h.)] \textbf{(Multiple Choice-choose one)}  For what value(s) of $c$ do the vectors $\begin{bmatrix} 3 \\ 0 \\ c\\\end{bmatrix},\begin{bmatrix} 1 \\ 1 \\ -2\\\end{bmatrix},\begin{bmatrix} 2 \\ 1 \\ 1\\\end{bmatrix} $ form a basis for $\mathbb{R}^3$?
+\begin{itemize}[label={}]
+\item \chooseone $c=9$
+\item \chooseone All values of $c$ except $c=9$
+\item \chooseone No values of $c$ make this a basis.
+\item \chooseone All values of $c$ make this a basis.
+\item \chooseone None of the above.
+\end{itemize}
+\vfill
+
+  
+\end{itemize}
+
+   %%Swap out 
+
+
+    \newpage
+    
+
+
+\item (4 points total, 1 point each) Suppose $A$ is a $6\times 4$ matrix of rank 4, and consider the linear transformation $T:\mathbb{R}^4\to \mathbb{R}^6$ by $T(\mathbf{x})=A\mathbf{x}$. Answer each of the following questions. Justification is not required.
+
+\begin{itemize}
+\item[a.]  What is the dimension of the kernel of $T$? Fill in the blank below.
+
+  \vspace{0.5in}
+  
+$\dim \ker(T)= \boxed{\Huge\phantom{qqqqqqM}} $
+
+  \vspace{0.5in}
+
+\item[b.] \textbf{(Multiple Choice-choose one)}   Is $T$ one-to-one?
+\begin{itemize}[label={}]
+\item \chooseone Yes
+\item \chooseone No
+\item \chooseone Not enough information to answer.
+\end{itemize}    
+
+\bigskip
+
+\item[c.]   What is the dimension of the image of $T$? Fill in the blank below.
+
+  \vspace{0.5in}
+  
+$\dim \text{im}(T)= \boxed{\Huge\phantom{qqqqqqM}} $
+
+  \vspace{0.5in}
+
+\item[d.] \textbf{(Multiple Choice-choose one)}  Is $T$ onto?
+\begin{itemize}[label={}]
+\item \chooseone Yes
+\item \chooseone No
+\item \chooseone Not enough information to answer.
+\end{itemize}   
+
+ \end{itemize}
+    
+  
+
+
+
+\newpage
+
+
+\item (5 points) 
+
+Suppose $T:P_1\to M_{22}$ is a linear transformation with 
+$T(4x+3)=\begin{bmatrix} 1 & 3 \\ -2 & 2\end{bmatrix}, T(x+1)=\begin{bmatrix} 2 & 2 \\ 1 & 0\end{bmatrix}$. Find $T(1)$. Show all work.
+
+\newpage
+
+
+%%scaffolded problem.--move to middle.
+\item (6 points total) Consider $A=\begin{bmatrix} 2 & -2 \\0 & 1\end{bmatrix}$, and let $W=\{ X \;\text{in}\; M_{22}|\; AX=XA\}$.
+
+\begin{itemize}
+    \item[a.] (1 point) Show that $W$ is nonempty.
+
+    \vspace{1in}
+
+    \item[b.] (3 points) Is $W$ closed under addition? Fully justify your answer using complete sentences.
+\vfill
+
+ \item[c.] (2 points) Is $W$ closed under scalar multiplication? Fully justify your answer using complete sentences.
+
+\vfill    
+\end{itemize}
+
+
+       
+
+
+
+
+    \newpage
+
+    
+    \item (11 points total) Let $V$ be $\mathbb{R}^2$ with the following vector addition $\oplus$ and scalar multiplication $\odot$:
+    $$\begin{bmatrix} x_1 \\ y_1 \end{bmatrix}\oplus \begin{bmatrix} x_2 \\ y_2 \end{bmatrix}=\begin{bmatrix} x_1+x_2+4 \\ y_1+y_2-5 \end{bmatrix}, \quad c\odot\begin{bmatrix} x_1 \\ y_1 \end{bmatrix}=\begin{bmatrix} cx_1+4c-4 \\ cy_1-5c+5\\\end{bmatrix}$$
+
+    \begin{itemize}
+\item[a.)] (2 point) Compute $\begin{bmatrix} 2 \\ 4\end{bmatrix}\oplus \begin{bmatrix} 0 \\ -1\end{bmatrix}$.
+\vspace{1in}
+
+\item[b.)](3 points) Find the zero vector $\mathbf{0}$ for this vector addition $\oplus$. You must justify that  \\ $\mathbf{v}\oplus\mathbf{0}=\mathbf{v}=\mathbf{0}\oplus\mathbf{v}$ for all $\mathbf{v}$ in $\mathbb{R}^2$.  
+\vspace{2in}
+
+\item[c.)] (3 points) For $\mathbf{v}=\begin{bmatrix} x\\ y \end{bmatrix}$, find the additive inverse of $\mathbf{v}$ (i.e. find $\bfu$ such that $\bfu\oplus\bfv=\mathbf{0}=\bfv\oplus \bfu$). Fully justify your answer.
+
+\vspace{2in}
+
+\item[d.)](3 points) Show the following vector space property holds: 
+
+$1\odot\mathbf{u}=\mathbf{u}$ for all $\mathbf{u}$ in $\mathbb{R}^2$.
+    
+    \end{itemize}
+
+    \newpage
+
+    
+
+
+
+
+
+
+    
+    
+    
+        \newpage
+
+
+
+
+\item (6 points total) 
+  For $A=\left[\begin{array}{ccc}
+10 & 6 & 12 
+\\
+ -3 & 1 & -6 
+\\
+ -3 & -3 & -2 
+\end{array}\right]
+$: 
+
+a.) (4 points) Find a basis for the eigenspace associated to the eigenvalue $\lambda=4$ (in other words, find a set of basic eigenvectors associated to $\lambda=4$). Show all work.
+
+%add in askign them about algebraic/geometric multiplictiy-give them the characteristic polynomial.
+
+\vfill
+
+b.) (2 points) Given that $\lambda=1$ is the only other eigenvalue of $A$, and a basis for the eigenspace of $\lambda=1$ is $\left\{\begin{bmatrix} -2 \\ 1 \\ 1\end{bmatrix}\right\}$, answer the following: Is $A$ diagonalizable? Fully justify your answer using complete sentences.
+
+
+\vspace{2in}
+
+  
+        
+\newpage
+
+
+%similar to this        
+
+        
+\item (4 points total, 1 point each) For this problem, let $A$ be a $3\times 5$ matrix whose reduced row echelon form $RREF(A)$ is given as 
+$RREF(A)= \left[ \begin {array}{ccccc} 1&-2&0&3& 0\\ \noalign{\medskip}0&0&1&1& 2
+\\ \noalign{\medskip}0&0&0&0& 0\end {array} \right].$ Note: This is the \textbf{reduced row echelon form of $A$}, not $A$. Answer each of the following questions about the matrix $A$, if possible. Justification is not required.
+
+ %% JIR: If we are not asking for justification then I think these can be multiple choice. For example, the first question could have options (i) 0, (ii) infinity, (iii) 1 (iv) 2 (v) 3 (vi) 4 and (vii) 5 (viii) not enought information to determine the rank.
+ \begin{itemize}
+   \item[a.]  \textbf{(Multiple Choice-choose one)} What is the rank of $A$?
+\begin{itemize}[label={}]
+\item \chooseone $1$
+\item \chooseone $2$
+\item \chooseone $3$
+\item \chooseone $4$
+\item \chooseone $5$
+\item \chooseone Not enough information to answer.
+\end{itemize}    
+
+
+     \vspace{0.25in}
+
+     \item[b.] \textbf{(Multiple Choice-choose one)}  For which value of $c$ is $\begin{bmatrix} c \\ 0 \\ -1 \\ 1\\0\end{bmatrix}$ in the nullspace of $A$?
+\begin{itemize}[label={}]
+\item \chooseone $c=-3$
+\item \chooseone $c=0$
+\item \chooseone $c=1$
+\item \chooseone $c=3$
+\item \chooseone Not enough information to answer.
+\end{itemize}  
+
+
+     \item[c.] \textbf{(Multiple Choice-choose one)} Is $\begin{bmatrix} 0 \\ 0 \\ 1\end{bmatrix}$ in the column space of $A$?
+\begin{itemize}[label={}]
+\item \chooseone Yes
+\item \chooseone No
+\item \chooseone Not enough information to answer.
+\end{itemize}    
+     
+     \vspace{0.25in}
+
+\item[d.] \textbf{(Multiple Choice-choose one)} Are the (five) column vectors making up $A$ a linearly independent set in $\mathbb{R}^3$?
+\begin{itemize}[label={}]
+\item \chooseone Yes
+\item \chooseone No
+\item \chooseone Not enough information to answer.
+\end{itemize}    
+     
+     \vspace{0.5in}
+
+    \end{itemize} 
+%%I like this, I'll play with this concept.
+% JIR: If we think this midterm is too short, then how about making part d it's own question where we only tell the students the rank of $A$ and don't provide the entries of A? As a new part (6d), what about a multiple choice question where the select the correct statements from a list of incorrectly worded statements? E.g., "A solution to A is [0,0,0,0,0]^T."  
+
+\newpage
+
+
+
+
+   
+
+    
+
+
+
+
+
+
+
+\newpage
+
+\item (6 points total)  Each of the following statements is \textbf{false}. Show each statement is false by providing explicit counterexamples. You must fully justify your answers.
+
+\begin{itemize}
+\item[a.] (2 points) The function $F:M_{22}\to \mathbb{R}$ by $F(A)=(\text{tr}(A))^2$ is a linear transformation. 
+\vfill
+
+\item[b.] (2 points) The set of vectors $W=\left\{\begin{bmatrix} a\\ b\end{bmatrix}\middle|\; a+b\geq -1\right\}$ is  a subspace of $\mathbb{R}^2$.
+
+\vfill
+
+\item[c.] (2 points) Let $V$ be $\mathbb{R}^2$ with the operation $\begin{bmatrix} x_1\\ y_1\end{bmatrix}\oplus \begin{bmatrix} x_2\\ y_2\end{bmatrix} = \begin{bmatrix} x_1+x_2\\ y_1\end{bmatrix}$.  $\oplus$ satisfies the vector space property $\bfv\oplus \bfu=\bfu\oplus \bfv$.
+
+\vfill
+
+\end{itemize}
+
+
+ 
+ 
+
+
+    
+
+
+\newpage
+
+
+
+\end{enumerate}
+
+
+\newpage
+
+Scratch paper page!!
+
+\newpage
+
+Back of scratch paper page!
+
+\end{document}

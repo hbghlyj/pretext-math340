@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<pretext xml:lang="en-US" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <!-- we first include a file which contains the docinfo element: -->
+  <xi:include href="./docinfo.ptx" />
+
+  <book xml:id="previous-exams">
+    <title>Prior Math 340 Exams</title>
+
+    <introduction>
+      <p>
+        This collection of exam questions and solutions is intended to help you study for this semester's Math 340 courses.
+      </p>
+    </introduction>
+
+    <!-- Include chapters -->
+    <xi:include href="./ch-2025-spring-exams.ptx"/>
+    <xi:include href="./ch-2024-fall-exams.ptx"/>
+  </book>
+</pretext>

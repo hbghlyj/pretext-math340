@@ -1,0 +1,706 @@
+<?xml version="1.0" encoding="utf-8"?>
+<worksheet xml:id="Math340Sp25-FinalExam" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Math340Sp25-FinalExam</title>
+	<introduction>
+		<p>
+			Vector space notation reminders: <m>M_{mn}</m> is the vector space of <m>m\times n</m> real matrices with standard matrix addition and scalar multiplication, <m>P_d</m> is the vector space of polynomials (in <m>x</m>) of degree at most <m>d</m> with standard polynomial addition and scalar multiplication, <m>\mathbf{0}</m> denotes the zero vector in a vector space <m>V</m>. <m>\mathbb{R}^n</m> uses the standard vector addition/scalar multiplication and dot product unless otherwise noted.
+		</p>
+		<p>
+			Matrix notation reminders: <m>O</m> denotes the zero matrix, and <m>I_n</m> denotes the <m>n\times n</m> identity matrix. <m>\text{tr}(A)</m> denotes the trace of a matrix <m>A</m>.
+		</p>
+		<p>
+			Additional notation reminders: <m>M_{DB}(T)</m> denotes the matrix representation of the linear transformation <m>T:V\to W</m> using ordered bases <m>B</m> for <m>V</m> and <m>D</m> for <m>W</m>. <m>M_B(T)</m> denotes the matrix representation of the linear operator <m>T</m> with respect to the ordered basis <m>B</m>. <m>C_B({\mathbf{v}})</m> denotes the coordinate representation of the vector <m>{\mathbf{v}}</m> with respect to the ordered basis <m>B</m>.
+		</p>
+	</introduction>
+	<exercise points="7">
+		<introduction>
+			<p>
+				Given <m>A= \left[ \begin {array}{ccc} 2&amp;3&amp;0\\ \noalign{\medskip}0&amp;-2&amp;4
+							\\ \noalign{\medskip}1&amp;2&amp;-1\end {array} \right]</m>, <m>C^{-1}= \left[ \begin {array}{ccc} 2&amp;4&amp;1\\ \noalign{\medskip}2&amp;6&amp;4
+							\\ \noalign{\medskip}1&amp;2&amp;2\end {array} \right]</m>, and <m>D= \left[ \begin {array}{ccc} 2&amp;4&amp;1\\ \noalign{\medskip}0&amp;1&amp;4
+							\\ \noalign{\medskip}3&amp;2&amp;9\end {array} \right]</m>, find <m>B</m> if <m>A+BC=D</m>. Show all work.
+			</p>
+		</introduction>
+	</exercise>
+	<exercise points="13">
+		<introduction>
+			<p>
+				Let <m>W</m> be the vector space of <m>2\times 2</m> symmetric matrices (using standard matrix addition/scalar multiplication), and define <m>T:P_2\to W</m> by <m>T(p(x))=\begin{bmatrix} p'(0) &amp; p(0)\\ p(0) &amp; 0\end{bmatrix}</m>. You can assume (without proof) that <m>T</m> is a linear transformation.
+			</p>
+		</introduction>
+		<task points="8">
+			<statement>
+				<p>
+					Using ordered basis <m>B=(4x+1, x^2,x^2-2)</m> for <m>P_2</m> and ordered basis
+				</p>
+				<p>
+					<m>D=\left(\begin{bmatrix} 1&amp; 0\\ 0 &amp;0\end{bmatrix}, \begin{bmatrix} 0&amp; 0\\ 0 &amp;1\end{bmatrix}, \begin{bmatrix} 0&amp; 1\\ 1 &amp;0\end{bmatrix}\right)</m> for <m>W</m>, find the matrix representation <m>M_{DB}(T)</m>. Show all work.
+				</p>
+			</statement>
+		</task>
+		<task points="5" workspace="2in">
+			<statement>
+				<p>
+					Is <m>T</m> an isomorphism? Justify your answer.
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise points="20">
+		<introduction>
+			<p>
+				Clearly mark the correct answer for each of the following by <term>completely</term> filling in the appropriate bubble. <term>No justification is needed.</term>
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					<term>(True/False)</term> If <m>\mathbf{v}</m> is a <m>3\times 1</m> vector, and <m>A</m> is a <m>3\times 3</m> matrix, then <m>\mathbf{v}A</m> is a <m>3\times 1</m> vector.
+				</p>
+			</statement>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								True
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								False
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<term>(True/False)</term> If <m>A</m> is a <m>4\times 4</m> matrix with <m>\mathrm{tr}(A)=0</m>, then <m>A</m> is invertible.
+				</p>
+			</statement>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								True
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								False
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<term>(True/False)</term> The subspace <m>W=\left\{p\; \text{in}\; P_{10}\middle|\displaystyle \int_0^1  p(x)dx=0\right\}</m> of <m>P_{10}</m> is finite-dimensional.
+				</p>
+			</statement>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								True
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								False
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<term>(True/False)</term> The function <m>F:\mathbb{R}\to\mathbb{R}</m> by <m>F(x)=2x+1</m> is an isomorphism.
+				</p>
+			</statement>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								True
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								False
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<term>(True/False)</term> Suppose <m>A</m> is a <m>3\times3</m> matrix with <m>A=A^{-1}</m>. Then <m>\det(A)=1</m> or <m>\det(A)=-1</m>.
+				</p>
+			</statement>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								True
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								False
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<term>(True/False)</term> If <m>\mathbf{x}</m> and <m>\mathbf{y}</m> are orthogonal vectors in an inner product space, then <m>\mathbf{x}</m> and <m>\mathbf{x}+\mathbf{y}</m> must also be orthogonal.
+				</p>
+			</statement>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								True
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								False
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<term>(Multiple Choice-choose one)</term> Which vector space is isomorphic to <m>P_3</m>?
+				</p>
+			</statement>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								<m>\mathbb{R}^4</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								The nullspace of <m>A=\begin{bmatrix} 1 &amp; 2 &amp; 4 &amp; 3 &amp; -1\\2 &amp; 4 &amp; 8 &amp; 6 &amp; -2\end{bmatrix}</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								<m>M_{22}</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								All of the above.
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<term>(Multiple Choice-choose one)</term> Suppose <m>A</m> is a <m>3\times 3</m> matrix which is row-equivalent to
+				</p>
+				<p>
+					<m>B=\begin{bmatrix} 1 &amp; -2 &amp; 1\\ 0 &amp; 1 &amp; 3\\ 0 &amp; 0 &amp; 0\end{bmatrix}</m>. Which of the following must be true about <m>A</m>?
+				</p>
+			</statement>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								<m>A\mathbf{x}=\begin{bmatrix} 0 \\ 1 \\1\end{bmatrix}</m> has no solutions.
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								<m>\lambda=1</m> is an eigenvalue of <m>A</m>.
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								<m>\lambda=0</m> is an eigenvalue of <m>A</m>.
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								The columns of <m>A</m> must be linearly independent.
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								All of the above.
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								None of the above.
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<term>(Multiple Choice-choose one)</term> Suppose <m>\{{\mathbf{u}},\,{\mathbf{v}}\}</m> is a basis for a vector space <m>V</m>. Which of the following is also a basis for <m>V</m>?
+				</p>
+			</statement>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								<m>\{{\mathbf{u}}+{\mathbf{v}}\}</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								<m>\{{\mathbf{u}}+{\mathbf{v}},\,2{\mathbf{u}}-{\mathbf{v}}\}</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								<m>\{{\mathbf{u}}-{\mathbf{v}},\,{\mathbf{v}}-{\mathbf{u}}\}</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								<m>\{{\mathbf{u}}+{\mathbf{v}},\,{\mathbf{u}}+2{\mathbf{v}},\,{\mathbf{v}}\}</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								All of the above.
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								None of the above.
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<term>(Multiple Choice-choose one)</term> Let <m>V</m> be <m>\mathbb{R}^2</m> with the following vector addition <m>\oplus</m> and scalar multiplication <m>\odot</m>: <me>\begin{bmatrix} x_1 \\ y_1 \end{bmatrix}\oplus \begin{bmatrix} x_2 \\ y_2 \end{bmatrix}=\begin{bmatrix} x_1+x_2+3 \\ y_1+y_2 \end{bmatrix}, \quad c\odot\begin{bmatrix} x_1 \\ y_1 \end{bmatrix}=\begin{bmatrix} cx_1+3c-3 \\ cy_1\\\end{bmatrix}</me>
+				</p>
+				<p>
+					Which of the following is the zero vector <m>\mathbf{0}</m> for this vector addition <m>\oplus</m>?
+				</p>
+			</statement>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								<m>\begin{bmatrix} 0\\0\end{bmatrix}</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								<m>\begin{bmatrix} 3\\0\end{bmatrix}</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								<m>\begin{bmatrix} -3\\0\end{bmatrix}</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								<m>\begin{bmatrix} 3\\3\end{bmatrix}</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								None of the above.
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
+	</exercise>
+	<exercise points="12">
+		<introduction>
+			<p>
+				Consider the vector space <m>P_1</m>, and define the function
+			</p>
+			<p>
+				<me>\langle p(x),q(x)\rangle=\int_0^1p(x)q(x) dx</me>
+			</p>
+			<p>
+				for <m>p(x),q(x)</m> in <m>P_1</m>.
+			</p>
+			<p>
+				You can assume that <m>\langle p(x),q(x)\rangle</m> is an inner product for <m>P_1</m>.
+			</p>
+		</introduction>
+		<task points="4">
+			<statement>
+				<p>
+					With respect to this inner product, <m>\langle p(x),q(x)\rangle</m>, find the distance between <m>3x+1</m> and <m>x-3</m>. Show all work, but you do not need to simplify your final numerical answer.
+				</p>
+			</statement>
+		</task>
+		<task points="4">
+			<statement>
+				<p>
+					With respect to this inner product, <m>\langle p(x),q(x)\rangle</m>, show that the polynomials
+				</p>
+				<p>
+					<m>p=3-3x</m> and <m>q=6x-2</m> are orthogonal. Show all work.
+				</p>
+			</statement>
+		</task>
+		<task points="4">
+			<statement>
+				<p>
+					With respect to this inner product,<m>\langle p(x),q(x)\rangle</m>, using <m>p=3-3x</m> and <m>q=6x-2</m>, create an orthonormal basis for <m>P_1</m>. Show all work.
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise points="16">
+		<introduction>
+			<p>
+				Let <m>T:P_1\to P_1</m> be a linear transformation with<!-- linebreak --><m>M_B(T)=\left[\begin{array}{cc}
+							6 &amp; 2 
+							\\
+							 -2 &amp; 10 
+							\end{array}\right]</m> with respect to the ordered basis <m>B=(x+1,x-3)</m>.
+			</p>
+		</introduction>
+		<task points="4" workspace="3in">
+			<statement>
+				<p>
+					Compute <m>T(2x-1)</m>. Show all work.
+				</p>
+			</statement>
+		</task>
+		<task points="5">
+			<statement>
+				<p>
+					Is <m>T</m> diagonalizable? Justify your answer.
+				</p>
+				<p>
+					(Problem 5 continued)
+				</p>
+				<p>
+					Again, let <m>T:P_1\to P_1</m> be a linear transformation with<!-- linebreak --><m>M_B(T)=\left[\begin{array}{cc}
+											6 &amp; 2 
+											\\
+											 -2 &amp; 10 
+											\end{array}\right]</m> with respect to the ordered basis <m>B=(x+1,x-3)</m>.
+				</p>
+			</statement>
+		</task>
+		<task points="3" workspace="2.5in">
+			<statement>
+				<p>
+					Suppose <m>P_{B\leftarrow D}=\begin{bmatrix} 2 &amp; 1 \\ 3 &amp; 1\end{bmatrix}</m> is the change matrix from unknown basis <m>D=(p_1,p_2)</m> to <m>B</m>. Find <m>p_1</m> and <m>p_2</m>.
+				</p>
+			</statement>
+		</task>
+		<task points="4">
+			<statement>
+				<p>
+					For the same basis <m>D</m> as in part (c), use the Similarity Theorem find <m>M_D(T)</m>.<!-- linebreak -->(Hint: You do NOT need to know <m>D</m> to solve this problem). Show all work.
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise points="8">
+		<introduction>
+			<p>
+				Consider the vector space <m>\mathbb{R}^3</m>, and consider the set <m>U</m> of vectors <m>\begin{bmatrix} x_1\\x_2\\x_3\end{bmatrix}</m> where <m>x_1+3x_2=x_3</m> and <m>x_1x_2\geq 0</m>, i.e. <m>U=\left\{\begin{bmatrix} x_1 \\ x_2\\x_3\end{bmatrix}\middle|\, x_1+3x_2=x_3, \, x_1x_2\geq 0\right\}.</m> Is <m>U</m> a subspace of <m>\mathbb{R}^3</m>? Fully justify your answer.
+			</p>
+		</introduction>
+	</exercise>
+	<exercise points="9">
+		<introduction>
+			<p>
+				Consider <m>{\mathbf{u}}=\begin{bmatrix} u_1 \\ u_2\end{bmatrix}</m>, <m>{\mathbf{v}}=\begin{bmatrix} v_1 \\ v_2\end{bmatrix}</m> in <m>\mathbb{R}^2</m>, and define the function
+			</p>
+			<p>
+				<me>\langle {\mathbf{u}},{\mathbf{v}}\rangle =2u_1v_1+3u_2v_2.</me>
+			</p>
+		</introduction>
+		<task points="4">
+			<statement>
+				<p>
+					Verify the following inner product property for <m>\langle {\mathbf{u}},{\mathbf{v}}\rangle</m>:
+				</p>
+				<p>
+					<m>\langle {\mathbf{u}},{\mathbf{v}}\rangle =\langle {\mathbf{v}},{\mathbf{u}}\rangle</m> for all <m>{\mathbf{u}},{\mathbf{v}}</m> in <m>\mathbb{R}^2</m>.
+				</p>
+				<p>
+					For part (b), assume the remaining inner product properties are true for
+				</p>
+				<p>
+					<m>\langle {\mathbf{u}},{\mathbf{v}}\rangle =2u_1v_1+3u_2v_2.</m>
+				</p>
+			</statement>
+		</task>
+		<task points="5" workspace="2in">
+			<statement>
+				<p>
+					With respect to this inner product <m>\langle {\mathbf{u}},{\mathbf{v}}\rangle</m>, find a basis for <m>W</m>, where <m>W</m> is the subspace of <m>\mathbb{R}^2</m> of vectors orthogonal to <m>\begin{bmatrix}5\\-4\end{bmatrix}</m>. Show all work.
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise points="5">
+		<introduction>
+			<p>
+				Let <m>A=\left[ \begin {array}{ccc} 0&amp;2&amp;1\\ \noalign{\medskip}2&amp;4&amp;3
+							\\ \noalign{\medskip}0&amp;1&amp;1\end {array} \right]</m> and <m>B=\left[ \begin {array}{ccc} 5&amp;-1&amp;1\\ \noalign{\medskip}3&amp;-3&amp;1
+							\\ \noalign{\medskip}c&amp;-10&amp;3\end {array} \right].</m> If <m>A</m> and <m>B</m> are similar matrices, find <m>c</m>. Show all work.
+			</p>
+		</introduction>
+	</exercise>
+	<exercise points="10">
+		<introduction>
+			<p>
+				Suppose <m>A</m> is a <m>3\times 7</m> matrix with <m>\mathop{\mathrm{rank}}(A)=3.</m> Answer the following questions about <m>A</m>, if possible. Justification is not required.
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					<term>(Multiple Choice-choose one)</term> What is the <m>\dim(\text{null}\ A)</m>?
+				</p>
+			</statement>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								<m>0</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								<m>1</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								<m>2</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								<m>3</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								<m>4</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								Not enough information to answer.
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<term>(Multiple Choice-choose one)</term> Is <m>\begin{bmatrix} 1 \\ 0 \\ 0\end{bmatrix}</m> in the column space of <m>A</m>?
+				</p>
+			</statement>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								Yes
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								No
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								Not enough information to answer.
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<term>(Multiple Choice-choose one)</term> Does the linear system <m>A\mathbf{x}=\begin{bmatrix} 0 \\0 \\1\end{bmatrix}</m> have...
+				</p>
+			</statement>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								No solution
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								One solution
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								Infinitely many solutions
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								Not enough information to answer.
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<term>(Multiple Choice-choose one)</term> For <m>T:\mathbb{R}^7\to\mathbb{R}^3</m> defined by <m>T(\mathbf{x})=A\mathbf{x}</m>, is <m>T</m> onto?
+				</p>
+			</statement>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								Yes
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								No
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								Not enough information to answer.
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<term>(Multiple Choice-choose one)</term> For <m>T:\mathbb{R}^7\to\mathbb{R}^3</m> defined by <m>T(\mathbf{x})=A\mathbf{x}</m>, is <m>T</m> one-to-one (also called injective)?
+				</p>
+			</statement>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								Yes
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								No
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								Not enough information to answer.
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
+	</exercise>
+</worksheet>

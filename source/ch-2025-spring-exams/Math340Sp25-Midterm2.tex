@@ -1,0 +1,381 @@
+\documentclass[12pt]{extarticle}
+
+\include{preamble}
+
+\usepackage{wasysym}
+\usepackage{enumitem}
+
+%Choose one option (circles)
+\newcommand{\chooseone}{{\Large$\Circle$\ \ }}
+% Choose multiple options (squares)
+\newcommand{\choosemany}{{\Large$\Square$\ \ }}
+
+%\renewcommand{\familydefault}{\sfdefault} %For students who need sans serif font
+
+\begin{document}
+%\vspace*{.15in}
+\LARGE{Math 340: Elementary Matrix and Linear Algebra}
+
+\bigskip
+
+\Huge{MIDTERM TWO} \normalsize
+
+\bigskip
+
+Thursday, April 10th, 2025, 7:30pm-9:00pm
+\vspace{.12in}
+
+\textbf{Circle your Instructor and your TA:}
+
+\begin{table}[h]\centering \small
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+Dr. Lars Niedorf &  Dr. Jose Rodriguez & Dr. Yassine Tissaoui & Dr. Ruhui Jin & Dr. Timur Yastrzhembskiy \\ \hline
+Karthik Ravishankar & Kanav Madhura & Ankit Raheja & Joey Yu Luo & Yiyu Wang\\ \hline
+Zaidan Wu & Dylan Jamner & Yijie He & Peter Wei & Tu Cao\\ \hline
+
+\end{tabular}
+\end{table}
+
+
+
+
+
+
+\vspace{-.2in}
+
+\begin{framed}
+\vspace*{.2in}
+Name: \fillin{aaaaaaaaaaaaaaaaaaaaaaaaaaa}  Wisc email: \fillin{nnnnnnnnnnnnnnnnnnnn} \vspace*{.2in} \\
+I pledge that the work on this exam is entirely my own. I understand that the penalties for cheating may include an F in the course and referral to my dean for further action.
+ \vspace*{.3in} \\
+Student Signature: \fillin{aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa}
+\end{framed}
+READ THE FOLLOWING INFORMATION.
+\begin{itemize}
+    \item This is a 90-minute exam. It consists of eight problems for a total of 50 points; the exam is six sheets of paper, including this cover sheet. It is your responsibility to make sure that you have a complete exam.
+    \item Books, notes, calculators, and other aids are not allowed.\vspace{-.1in}
+    \item Problems are spaced out to allow ample room for work. You may use the last page for scratch work, but it will not be graded. Do not unstaple or remove pages as they can be lost in the grading process.  \textbf{An incomplete exam packet will result in an automatic zero.}  \vspace{-.1in}
+    \item Only complete, well written, and neat solutions will be awarded full credit. Remember that all claims must be supported. Responses which do not meet these qualifications may be awarded some partial credit.\vspace{-.1in}
+ \item  If making multiple attempts at a solution, indicate clearly which attempt you'd like to be graded by crossing out the other answers. Multiple attempts will not be graded.
+ 
+ \vspace{-0.2cm} 
+\item When doing multiple choice and true/false questions, make sure to fully fill in the chosen bubble.
+ 
+ \vspace{-0.2cm} 
+  \item \textbf{Notation reminders:} $M_{mn}$ is the vector space of $m\times n$ real matrices with standard matrix addition and scalar multiplication, $P_d$ is the vector space of polynomials (with single variable $x$) of degree at most $d$ with standard polynomial addition and scalar multiplication, $\mathbf{0}$ denotes the zero vector in a vector space $V$. $\mathbb{R}^n$ uses the standard vector addition/scalar multiplication unless otherwise noted.
+  \item \textbf{Additional notation reminders:} $O$ denotes the zero matrix, and $I_n$ denotes the $n\times n$ identity matrix.  $\text{tr}(A)$ denotes the trace of a matrix $A$.
+
+  
+\end{itemize}
+
+\bigskip
+
+\textbf{DO NOT BEGIN THIS EXAM UNTIL SIGNALED TO DO SO.}
+
+
+
+\newpage
+
+
+
+\begin{enumerate}
+
+\item (7 points total) Suppose $T:\mathbb{R}^3\to M_{22}$ is a linear transformation with $T\left(\begin{bmatrix} 1 \\ 1 \\ 0\end{bmatrix}\right)=\begin{bmatrix} 2 & 0 \\ -1 & 1\end{bmatrix} $, $T\left(\begin{bmatrix} 2 \\ -1 \\ 0\end{bmatrix}\right)=\begin{bmatrix} 3 & 1 \\ 4 & 0\end{bmatrix} $, and $T\left(\begin{bmatrix} 0 \\ 0 \\ 4\end{bmatrix}\right)=\begin{bmatrix} 0 & 1 \\ 0 & 1\end{bmatrix} $.
+
+\begin{itemize}
+
+\item[a.] (5 points) Compute $T\left(\begin{bmatrix}4\\ -5\\2\end{bmatrix}\right)$. Show all work. You do not need to simplify your final numerical answer. 
+
+    \vfill
+  
+\item[b.] (2 points) Is $T$ onto? Justify your answer.
+
+\vspace{1.5in}
+\end{itemize}
+
+
+
+\newpage
+
+\item (6 points total) Let  $A=\left[\begin{array}{ccc}
+8 & 0 & -5 
+\\
+ -20 & -2 & 10 
+\\
+ 10 & 0 & -7 
+\end{array}\right]$. You are given the following information about $A$: $A$ has exactly two eigenvalues $\lambda=-2$ and $\lambda=3$, and a basis for the eigenspace for $\lambda=-2$ is $\left\{\begin{bmatrix} 1 \\ 0 \\2\end{bmatrix},\begin{bmatrix} 0 \\ 1 \\0\end{bmatrix}\right\} $. 
+
+
+\begin{itemize}
+    \item[a.] (4 points) Find a basis for the eigenspace of $A$ for $\lambda=3$. Show all work.
+
+    \vfill
+
+    \item[b.] (2 points) Is $A$ diagonalizable? Justify your answer. 
+    \vspace{1.5in}
+\end{itemize}
+
+\newpage
+
+
+
+
+  \item (8 points, 1 point each)  Clearly mark the correct answer for each of the following by \textbf{completely} filling in the appropriate bubble.  \textbf{No justification is needed.}
+\begin{enumerate}[label=\alph*.]
+\item \textbf{(True/False)} If $U$ is a subspace of $V$ and $\bfu+\bfv$ is in $U$, then $\bfu$ and $\bfv$ are both in $U$.
+\begin{itemize}[label={}]
+\item \chooseone True
+\item \chooseone False
+\end{itemize}
+
+\vspace{2cm}
+\item \textbf{(True/False)} Suppose $A$ and $B$ are invertible $2\times 2$ matrices with $A+B=O$. Then $\{A,B\}$ is a linearly independent set. 
+\begin{itemize}[label={}] 
+\item \chooseone True
+\item \chooseone False
+\end{itemize}
+\vspace{2cm}
+
+\item \textbf{(True/False)} Suppose $A$ and $B$ are invertible $2\times 2$ matrices with $A+B=O$. Then the columns of $A$ is a linearly independent set, and the columns of $B$ is a linearly independent set. 
+\begin{itemize}[label={}] 
+\item \chooseone True
+\item \chooseone False
+\end{itemize}
+\vspace{2cm}
+
+\item \textbf{(True/False)} The set of noninvertible $3\times 3$ matrices is closed under scalar multiplication.
+\begin{itemize}[label={}] 
+\item \chooseone True
+\item \chooseone False
+\end{itemize}
+\vspace{2cm}
+
+\item  \textbf{(True/False)} Any set of $7$ matrices in $M_{23}$ must span $M_{23}$.
+
+\begin{itemize}[label={}]
+\item \chooseone True
+\item \chooseone False
+\end{itemize}
+
+
+\newpage
+
+\item \textbf{(Multiple Choice-choose one)} Suppose $A$ is similar to $B=\begin{bmatrix} -1 & 0 & 0 \\ 0 & 4 & 0\\ 0 & 0 & 10\end{bmatrix}$. Which of the following must be true about $A$?
+\begin{itemize}[label={}]
+\item \chooseone $A$ has trace $0$.
+\item \chooseone $A$ is diagonalizable.
+\item \chooseone The eigenvectors of $A$ are the same as the eigenvectors of $B$.
+\item \chooseone  $A$ is similar to $I_3$.
+\item \chooseone All of the above.
+\end{itemize}
+
+\vspace{2cm}
+
+
+\item \textbf{(Multiple Choice-choose one)} Suppose $\{\bfu,\bfv,\bfw\}$ is a basis for a vector space $V$. Which of the following is also a basis for $V$?
+\begin{itemize}[label={}]
+\item \chooseone $\{\bfu+\bfv,\bfv+\bfw\}$
+\item \chooseone $\{\bfu,\bfu+\bfv+\bfw,\bfv+\bfw\}$
+\item \chooseone $\{\bfu+\bfv,\bfv+\bfw,\bfw+\bfu,\bfv\}$
+\item \chooseone $\{\bfu-\bfv,\bfu+\bfv,\bfw\}$
+\item \chooseone All of the above.
+\item \chooseone None of the above.
+\end{itemize}
+\vspace{2cm}
+
+
+\item \textbf{(Multiple Choice-choose one)} Which vector space has the same dimension as $M_{24}$?
+\begin{itemize}[label={}]
+\item \chooseone $\mathbb{R}^6$
+\item \chooseone $P_8$
+\item \chooseone $M_{42}$
+\item \chooseone All of the above.
+\item \chooseone None of the above.
+\end{itemize}
+
+\end{enumerate}
+
+
+
+
+\newpage
+
+\item (6 points total) Consider $P_2$ and the following subset $W$ of polynomials:
+
+$$W=\{p(x) \; \text{in}\; P_2 \;|\; p'(0)=0\}.$$
+
+(Reminder: $p'(x)$ is the derivative of $p(x)$.)
+
+\begin{itemize}
+    \item[a.] (2 point) Show that $W$ is nonempty.
+
+    \vspace{1in}
+
+    \item[b.] (2 points) Show that for $p_1(x), p_2(x)$ in $W$, $p_1(x)+p_2(x)$ is in $W$. Fully justify your answer.
+\vfill
+
+ \item[c.] (2 points)  Show that for $p(x)$ in $W$ and $c$ in $\mathbb{R}$, $cp(x)$ is in $W$. Fully justify your answer.
+
+\vfill    
+
+
+\end{itemize}
+
+ 
+    \newpage
+
+
+
+
+%%KP is going to make this vectors in R^2 wiht the same operations.
+
+\item (8 points total) Let $V$ be the set of vectors of the form $\begin{bmatrix} x\\y\end{bmatrix}$ where $x$ and $y$ are both positive real numbers. 
+
+We define vector addition  $\oplus$ and scalar multiplication $\odot$ as:
+    $$\begin{bmatrix} x \\ y \end{bmatrix}\oplus \begin{bmatrix} w \\ z \end{bmatrix}=\begin{bmatrix} xw\\ yz \end{bmatrix}, \quad c\odot\begin{bmatrix} x \\ y \end{bmatrix}=\begin{bmatrix} x^c \\ y^c\\\end{bmatrix}$$
+
+
+
+\begin{itemize}
+\item[a.] (2 points) Find the zero vector $\mathbf{0}$ for this vector addition $\oplus$. Justify your answer.
+
+
+\vfill
+
+
+\item[b.]  (2 points) For $\bfv$ in $V$, find the additive inverse of $\bfv$ (Recall: the additive inverse of $\mathbf{v}$ is a vector $\bfu$ in $V$ such that $\bfu\oplus\bfv=\mathbf{0}=\bfv\oplus \bfu$). Fully justify your answer.
+
+\vfill
+
+\item[c.] (2 points) Show that the following vector space property is true for this vector addition and scalar multiplication: For any $c,d$ in $\mathbb{R}$ and any vector $\bfu$ in $V$, $(c + d) \odot \bfu=c\odot \bfu\oplus d\odot \bfu$ .
+
+\vfill 
+
+
+
+\item[d.] (2 points) For an arbitrary vector $\bfu$ in $V$, compute $0\odot \bfu$. Does the vector space property $0\odot \bfu=\mathbf{0}$ hold? %%or swap out with a computation.
+
+\vspace{1.25in}
+
+\end{itemize}
+
+
+\newpage
+
+\item (4 points) Consider the vector space $P_1$ and the set $S=\{2x+10,c^2-41-5x\}$. Find all values of $c$ so that the set $S$
+ is linearly dependent.
+
+\newpage
+
+
+    \item (6 points total, 2 points each)  Each of the following statements is \textbf{false}. Show each statement is false by providing explicit counterexamples. You must fully justify your answers.
+
+
+    \begin{itemize}
+\item[a.]  Let $V$ be $\mathbb{R}^2$ with the operation $\begin{bmatrix} x_1\\ y_1\end{bmatrix}\oplus \begin{bmatrix} x_2\\ y_2\end{bmatrix} = \begin{bmatrix} x_1-x_2\\ y_1+y_2\end{bmatrix}$.  Then $\oplus$ satisfies the vector space property $\bfv\oplus \bfu=\bfu\oplus \bfv$.
+
+\vfill
+
+\item[b.] $F:M_{22}\to \mathbb{R}$ by $F(A)=\det(A)+\text{tr}(A)$ is a linear transformation.
+
+\vfill
+
+\item[c.] $W=\left\{\begin{bmatrix} x \\ y\end{bmatrix} \;\text{in} \;\mathbb{R}^2 :\; |x|\geq |y|\right\}$ is a subspace of $\mathbb{R}^2$.
+
+\vfill
+    \end{itemize}
+    
+ 
+ \newpage
+
+
+\item (5 points total, 1 point each) Suppose $A$ is a $3\times 5$ matrix whose reduced row echelon form $RREF(A)$ is 
+
+$RREF(A)=\left[\begin{array}{ccccc}1 & 3 & -2 & 0 & 4 \\ 0 & 0 & 0 & 1 & -3 \\ 0 & 0 & 0 & 0 & 0 \end{array}\right]$.
+
+Answer each of the following questions about the matrix $A$, if possible. Justification is not required.
+
+
+
+\begin{itemize}
+   \item[a.]  \textbf{(Multiple Choice-choose one)} What is the $\dim(\text{null}\ A)$?
+\begin{itemize}[label={}]
+\item \chooseone $0$
+\item \chooseone $1$
+\item \chooseone $2$
+\item \chooseone $3$
+\item \chooseone $4$
+\item \chooseone Not enough information to answer.
+\end{itemize}    
+
+
+     \vfill
+
+     \item[b.] \textbf{(Multiple Choice-choose one)}  Is $\begin{bmatrix} 1 \\ 0 \\ 0\end{bmatrix}$ in the column space of $A$?
+\begin{itemize}[label={}]
+\item \chooseone Yes
+\item \chooseone No
+\item \chooseone Not enough information to answer.
+\end{itemize}  
+     \vfill
+
+
+     \item[c.] \textbf{(Multiple Choice-choose one)} For $T:\mathbb{R}^5\to\mathbb{R}^3$ defined by $T(\mathbf{x})=A\mathbf{x}$, what is the dimension of the image of $T$?
+\begin{itemize}[label={}]
+\item \chooseone $0$
+\item \chooseone $1$
+\item \chooseone $2$
+\item \chooseone $3$
+\item \chooseone $4$
+\item \chooseone $5$
+\item \chooseone Not enough information to answer.
+\end{itemize}     
+     
+     \vfill
+
+
+\item[d.] \textbf{(Multiple Choice-choose one)} For $T:\mathbb{R}^5\to\mathbb{R}^3$ defined by $T(\mathbf{x})=A\mathbf{x}$, is $T$ one-to-one (also called injective)?
+\begin{itemize}[label={}]
+\item \chooseone Yes
+\item \chooseone No
+\item \chooseone Not enough information to answer.
+\end{itemize}   
+
+
+\vfill
+\item[e.] \textbf{(Multiple Choice-choose one)}  Are the (five) column vectors making up $A$ a linearly independent set in $\mathbb{R}^3$?
+\begin{itemize}[label={}]
+\item \chooseone Yes
+\item \chooseone No
+\item \chooseone Not enough information to answer.
+\end{itemize}    
+
+\end{itemize}
+
+
+    
+    
+
+
+
+
+
+    
+
+
+\newpage
+
+
+    
+
+
+    
+
+    
+    
+    
+        \newpage
+\end{enumerate}
+
+\end{document}

@@ -1,0 +1,506 @@
+\documentclass[12pt]{extarticle}
+
+\include{preamble}
+
+
+\usepackage{wasysym}
+\usepackage{enumitem}
+\newcommand{\chooseone}{{\Large$\Circle$\ \ }}
+
+
+
+%\renewcommand{\familydefault}{\sfdefault} %For students who need sans serif font
+
+\begin{document}
+%\vspace*{.15in}
+\LARGE{Math 340: Elementary Matrix and Linear Algebra}
+
+\bigskip
+
+\Huge{FINAL EXAM} \normalsize
+
+\bigskip
+
+Tuesday, December 17th, 2024, 7:45am-9:45am
+\vspace{.08in}
+
+\textbf{Circle your Instructor and your TA:}
+
+\begin{table}[h]\centering \small
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+Dr. Lars Niedorf &  Dr. Jose Rodriguez & Dr. Yayi Fu & Dr. Hyukpyo Hong & Dr. Timur Yastrzhembskiy \\ \hline
+Zaidan Wu & Dewei Yu & Elizabeth Hankins & Jiaqi Hou & Amelia Stokolosa \\ \hline
+Dionel Jaime & Will Huang & & Dylan Jamner & \\ \hline
+Inbo Gottlieb Fenves & & & Chenghuang Chen & \\ \hline
+ Abhinav Arabelly & & & & \\ \hline
+\end{tabular}
+\end{table}
+
+
+
+
+\vspace{-.3in}
+
+\begin{framed}
+\vspace*{.2in}
+Name: \fillin{aaaaaaaaaaaaaaaaaaaaaaaaaaa}  Wisc email: \fillin{nnnnnnnnnnnnnnnnnnnn} \vspace*{.1in} \\
+I pledge that the work on this exam is entirely my own. I understand that the penalties for cheating may include an F in the course and referral to my dean for further action.
+ \vspace*{.3in} \\
+Student Signature: \fillin{aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa}
+\end{framed}
+READ THE FOLLOWING INFORMATION.
+\vspace{-.1in}
+
+\begin{itemize}
+    \item This is a 120-minute exam. It consists of 10 problems for a total of 100 points; the exam is 8 sheets of paper, including this cover sheet. It is your responsibility to make sure that you have a complete exam.\vspace{-.1in}
+
+
+    \item Books, notes, calculators, and other aids are not allowed.\vspace{-.1in}
+
+    \item Problems are spaced out to allow ample room for work. You may use the last page for scratch work, but it will not be graded. Do not unstaple or remove pages as they can be lost in the grading process.  \textbf{An incomplete exam packet will result in an automatic zero.}  \vspace{-.1in}
+
+    \item Only complete, well written, and neat solutions will be awarded full credit. Remember that all claims must be supported. Responses which do not meet these qualifications may be awarded some partial credit.\vspace{-.1in}
+ \item  If making multiple attempts at a solution, indicate clearly which attempt you'd like to be graded by crossing out the other answers. Multiple attempts will not be graded.
+ \vspace{-0.2cm} 
+        \item Notation reminders: $M_{mn}$ is the vector space of $m\times n$ real matrices with standard matrix addition and scalar multiplication, $P_d$ is the vector space of polynomials (in $x$) of degree at most $d$ with standard polynomial addition and scalar multiplication, $\mathbf{0}$ denotes the zero vector in a vector space $V$. $\mathbb{R}^n$ uses the standard vector addition/scalar multiplication and dot product unless otherwise noted.
+ \item Additional notation reminders: $O$ denotes the zero matrix, and $I_n$ denotes the $n\times n$ identity matrix. $\text{tr}(A)$ denotes the trace of a matrix $A$.
+ 
+\end{itemize}
+
+
+\textbf{DO NOT BEGIN THIS EXAM UNTIL SIGNALED TO DO SO.}
+
+
+\bigskip
+
+
+
+
+\newpage
+
+%%move T/F to number 4 or 5.
+%%Similarity with I_3 or something.
+\begin{enumerate}
+
+
+
+
+
+\newpage
+
+
+
+  %%Keep this 
+\item (7 points) Consider $T:P_2\to P_1$ by $T(p(x))=p(0)+2p'(x)$. You can assume that $T$ is a linear transformation.
+
+Find $M_{DB}(T)$, where $B=(5,x^2+3,x)$ and $D=(1,x)$. Show all work. \\(Hint: your final matrix will be $2\times 3$).
+
+
+\newpage
+
+
+\item  (7 points total)   
+Consider the subspace $W$ of $\mathbb{R}^4$ spanned by the set 
+
+
+$$\left\{\begin{bmatrix} 1\\ 0 \\3 \\0\end{bmatrix}, \begin{bmatrix} 0 \\ 0 \\0 \\ 2\end{bmatrix}, \begin{bmatrix} 0\\ 0 \\ 1 \\ 0\end{bmatrix}, \begin{bmatrix} 0\\ 0 \\ 2\\ 6\end{bmatrix}\right\} $$ %make first entry 1.
+
+
+\begin{itemize}\item[a.] (3 points)
+What is the dimension of $W$? Show your work, and briefly justify your answer. 
+
+\vfill
+
+
+\item[b.] (2 points) For which $d$ is $W$ isomorphic to $P_d$? Justify your answer in one sentence.
+
+\vspace{1.5in}
+
+\item[c.] (2 points) Is $W$ isomorphic to $M_{22}$? Justify your answer in one sentence.
+
+
+
+
+\vspace{1.5in}
+
+\end{itemize}
+
+
+    \newpage
+
+      \item (20 points, 2 points each)  Fill in the bubble next to the correct answer. Justification is not necessary.
+\begin{itemize}
+\item[a.)] Let $A$ be an $n\times n$ matrix with $\text{rank}(A)=n$. If $\{\mathbf v_1,\dots,\mathbf v_k\}$ is a set of linearly independent vectors in $\mathbb R^n$, then $\{A\mathbf v_1,\dots,A\mathbf v_k\}$ is a set of linearly independent vectors in $\mathbb R^n$. 
+\begin{itemize}[label={}]
+\item \chooseone True
+\item \chooseone False
+\end{itemize}
+
+\vspace{1.5cm}
+
+\item[b.)] Let $A$ be an $n\times n$ matrix. If $A^2$ is invertible, then $A$ is invertible.
+\begin{itemize}[label={}]
+\item \chooseone True
+\item \chooseone False
+\end{itemize}
+\vspace{1.5cm}
+
+\item[c.)] Let $V$ be a finite-dimensional vector space where $\dim(V)=n$. Let $B$ and $D$ be ordered bases for $V$, and let $T:V\to V$ be a linear operator on $V$. Then $\det(M_B(T))=\det(M_D(T))$.
+
+
+\begin{itemize}[label={}]
+\item \chooseone True
+\item \chooseone False
+\end{itemize}
+\vspace{1.5cm}
+
+\item[d.) ] Consider $P_1$ with the following inner product: $\displaystyle \langle p(x), q(x)\rangle = \int\limits_0^1 p(x)q(x)\ddd x.$
+Using this inner product, $x$ is a unit vector.
+\begin{itemize}[label={}]
+\item \chooseone True
+\item \chooseone False
+\end{itemize}
+\vspace{1.5cm}
+
+%%multiple choice
+
+\item[e.) ] Suppose $A$ and $B$ are  $3\times 3$ matrices. Then $\rank(AB) = \rank(A)$.
+
+\begin{itemize}[label={}]
+\item \chooseone True
+\item \chooseone False
+\end{itemize}
+\vspace{1.5cm}
+
+
+\item[f.) ]If $\mathbf{u} , \mathbf{v}$ are linearly dependent vectors  in $\mathbb{R}^2$, then $\left| \langle \bfu, \bfv\rangle  \right| = \left\Vert \bfu \right\Vert \left\Vert\bfv \right\Vert$.
+
+
+\begin{itemize}[label={}]
+\item \chooseone True
+\item \chooseone False
+\end{itemize}
+\vspace{1.5cm}
+
+\item[h.) ] \textbf{(Multiple Choice-choose one)} If $T:P_2\to\mathbb{R}^3$ is an isomorphism, which of the following is true?
+
+\begin{itemize}[label={}]
+\item \chooseone $\ker(T) = P_2$ 
+\item \chooseone $\im(T)=P_2$
+\item \chooseone $T$ is onto
+ \item \chooseone The inverse of $T$ does not exist.
+\item \chooseone None of the above.
+\end{itemize}
+\vfill
+
+
+
+\item[i.) ] \textbf{(Multiple Choice-choose one)} Consider $\mathbb{R}^3$ with the standard inner product, and consider the subspace $W$ of vectors in $\mathbb{R}^3$ which are orthogonal to both $\mathbf{v}=\begin{bmatrix} 1 \\ 0\\ -3\end{bmatrix}$ and $\mathbf{w}=\begin{bmatrix} -2 \\ 0\\ 6\end{bmatrix}$. What is the dimension of $W$?
+%make in R^3, make more sparse.
+\begin{itemize}[label={}]
+\item \chooseone $\dim(W)=0$
+\item \chooseone $\dim(W)=1$
+\item \chooseone $\dim(W)=2$
+\item \chooseone $\dim(W)=3$
+\end{itemize}
+\vfill
+
+
+
+\item[j.) ] \textbf{(Multiple Choice-choose one)} Suppose $A$ is a $3\times 3$ matrix with eigenvalue 2 and eigenvalue 3. Which of the following is true?
+
+\begin{itemize}[label={}]
+\item \chooseone If $\mathbf{v}$ is in both the eigenspace of $\lambda=2$ and the eigenspace of $\lambda=3$, then $\mathbf{v}=\mathbf{0}$.
+\item \chooseone If $\mathbf{w}$ is an eigenvector of $A$ associated to $\lambda=2$, then $-\mathbf{w}$ is an eigenvector of $A$ associated to $\lambda=-2$.
+\item \chooseone $A$ is not diagonalizable.
+\item \chooseone $A$ is similar to $I_3$.
+\item \chooseone All of the above.
+
+\end{itemize}
+
+\vfill
+
+\item[k.) ]\textbf{(Multiple Choice-choose one)} Suppose $A=\left[\begin{array}{cc}
+-1 & x  
+\\
+ -2 & y  
+\end{array}\right],$ and you know that $A$ is similar to $\begin{bmatrix} -3 & -2\\12& 8\end{bmatrix}$. Find $x$ and $y$.
+
+\begin{itemize}[label={}]
+\item \chooseone $x=6$, $y=3$
+\item \chooseone $x=-4$, $y=22$
+\item \chooseone $x=12$, $y=24$
+\item \chooseone $x=3$, $y=6$
+\item \chooseone None of the above.
+\end{itemize}
+\end{itemize}
+
+\newpage
+    
+   
+
+\item (5 points total) Given $A=\begin{bmatrix} 3 & 0 \\ -2 & 1\end{bmatrix}$, $C^{-1}=\begin{bmatrix} 2 & 3 \\ 1 & 4\end{bmatrix}$, and $D=\begin{bmatrix} 4 & 2 \\ 0 & 3\end{bmatrix}$, find $B$ if $(A+B)C=D$. Show all work.
+
+
+  
+    
+    \newpage
+
+    
+\item (22 points total) (This problem continues onto the next page) 
+
+Let $T:P_1\to P_1$ be a linear transformation with $M_B(T)=\begin{bmatrix} 1 & -3\\ -2 & 6\end{bmatrix}$ with respect to the ordered basis $B=(x+3,x-1)$. (NOTE: $B$ is NOT the standard basis for $P_1$).
+
+\begin{itemize}
+\item[a.] (4 points) Compute $T(9-x)$. Show all work. (Note: your final answer should be in $P_1$). 
+
+
+\vspace{3in}
+
+\item[b.] (4 points) Find a basis for the kernel of $T$. (Note: your final answer should be in $P_1$).  
+
+
+\vspace{2.5in}
+
+
+
+\item[c.] (4 points) Is $T$ diagonalizable? Justify your answer.
+
+\vspace{2in}
+
+\newpage
+
+(Problem 5 continued)  Again, let $T:P_1\to P_1$ be a linear transformation with \\$M_B(T)=\begin{bmatrix} 1 & -3\\ -2 & 6\end{bmatrix}$ with respect to the ordered basis $B=(x+3,x-1)$.
+
+\item[d.] (3 points) Is $T$ an isomorphism? Justify your answer. 
+\vspace{1.5in}
+
+\item[e.] (3 points) Suppose $P_{B\leftarrow D}=\begin{bmatrix} 1 & 3 \\ 1 & 2\end{bmatrix}$ is the change matrix from unknown basis $D=(p_1,p_2)$ to $B$. Find $p_1$ and $p_2$.
+
+\vspace{2in}
+
+\item[f.] (4 points) For the same basis $D$  as in part (e), find $M_D(T)$.\\ (Hint: You do NOT need to know $D$ to solve this problem).
+
+ \end{itemize}
+
+ \newpage
+ 
+
+\item (7 points total) Consider the vector space $P_1$, and define the function
+
+$$\langle p(x),q(x)\rangle=\int_0^1p(x)q(x) dx$$
+
+for $p(x),q(x) $ in $P_1$.
+
+You can assume that $\langle p(x),q(x)\rangle$ is an inner product for $P_1$.
+
+
+\begin{itemize}
+\item[a.] (4 points) Using this inner product $\langle p(x),q(x)\rangle$, find the distance between $2x+3$ and $x-4$. Show all work. You do not need to simplify your final numerical answer.
+
+\vfill
+\item[b.] (3 points) Still using this inner product $\langle p(x),q(x)\rangle$, for which $c$ is $cx+2$, $2x-2$ orthogonal?   Show all work.
+
+
+\vfill
+
+
+
+\end{itemize}
+
+
+
+\newpage
+
+    
+\item (7 points) Is $W=\left\{\begin{bmatrix} x_1 \\x_2\\ x_3\end{bmatrix}\middle|\; x_2=2x_1+3x_3,\;  x_1x_3\geq 0\right\}$ a subspace of $\mathbb{R}^3$? If it is a subspace, prove it using the subspace test. If it is not a subspace, provide an explicit counterexample showing which of the subspace criteria is violated. Fully justify your answer.
+
+
+\newpage
+
+
+
+
+
+
+
+\item (8 points total) Consider $M_{22}$, and let $A,B$ be matrices in $M_{22}$. Let
+$\langle A,B\rangle=\Tr(AB^T).$ You can assume this is an inner product for $M_{22}$.
+
+Consider $M=\left[\begin{array}{cc}
+6 & 1 
+\\
+ 2 & 4 
+\end{array}\right]$ and $N=\left[\begin{array}{cc}
+-1 & 2 
+\\
+ 2 & 0 
+\end{array}\right]$. Consider $W=\spn\{M, N\}$.
+
+\begin{itemize}
+\item[a.] (4 points) Verify that $M$ and $N$ are orthogonal using this inner product. Show all work.
+
+\vfill
+\item[b.] (4 points) Assuming that $\{M,N\}$ is a basis for $W$, use $M$ and $N$ to build an orthonormal basis for $W$ using this inner product. Show all work.
+% Do they need to show $M$ and $N$ are linearly independent?
+
+\vfill
+\end{itemize}
+
+\newpage
+
+
+\newpage
+
+
+
+
+\newpage
+
+\item (7 points)  Suppose a linear system of 3 equations and 3 unknowns ($x,y,z$) reduces to the following form via elementary row operations:
+ 
+        \[ 
+\barray{rrr;{4pt/3pt}r}{
+1 & 0 & 0 & 3 \\ 0 & 1 & -2 & 5 \\ 0& 0 & (a^2-9)& (a+3)} 
+\]   
+  
+  
+  
+  
+    \begin{enumerate}
+        \item (2 points)  For which value(s) of $a$ will the system have \textbf{no solutions}? Briefly explain your answer.
+        \vspace{1.5in}
+
+     \item (2 points)  For which value(s) of $a$ will the system have \textbf{infinitely many solutions}? Briefly explain your answer.
+        \vspace{1.5in}
+        
+        \item (3 points) If $a=2$, finish reducing the augmented matrix to \textbf{reduced row echelon form},  then solve for $x,y,z$. Show all work.
+
+               \vspace{3in} 
+ 
+    
+    \end{enumerate}
+
+
+\newpage
+
+
+\item (10 points)
+Suppose $A$ is a $5\times 5$ matrix with $$RREF(A)=\left[\begin{array}{ccccc}
+1 & 0 & -2 & 0 & 2
+\\
+ 0 & 1 & 3 & 0 & 1
+\\
+ 0 & 0 & 0 & 1 & -3
+\\
+ 0 & 0 & 0 & 0 & 0 \\
+  0 & 0 & 0 & 0 & 0 \\
+\end{array}\right]$$
+
+This is the reduced row echelon form of $A$, not $A$. Answer each question. Justification is not required.
+
+\begin{itemize}
+    \item[a.] (2 points) Is $A$ invertible?
+    \begin{itemize}[label={}]
+\item \chooseone Yes
+\item \chooseone No
+\item \chooseone Not enough information to determine.
+\end{itemize}
+
+\vspace{0.2in}
+
+\item[b.] (2 points) $\left\{\begin{bmatrix}j\\ -1\\0\\3\\1\end{bmatrix},\begin{bmatrix} 2 \\ k\\ 1 \\ 0 \\0\end{bmatrix}\right\}$ is a basis for the nullspace of $A$. Find $j$ and $k$. Write your answers in the provided boxes.
+
+\bigskip
+
+$j=\boxed{\Large\phantom{Mqqqq}}$  \qquad \qquad $k=\boxed{\Large\phantom{Mqqqq}}$ 
+
+
+\vspace{0.2in}
+
+\item[c.] (2 points)  Is $0$ an eigenvalue of $A$?
+\begin{itemize}[label={}]
+\item \chooseone Yes
+\item \chooseone No
+\item \chooseone Not enough information to determine.
+\end{itemize}
+
+
+\vspace{0.2in}
+
+\item[d.] (2 points)  Is $1$ an eigenvalue of $A$?
+\begin{itemize}[label={}]
+\item \chooseone Yes
+\item \chooseone No
+\item \chooseone Not enough information to determine.
+\end{itemize}
+
+
+\vspace{0.2in}
+
+\item[e.] (2 points) If $T:\mathbb{R}^5\to \mathbb{R}^5$ is the linear transformation given by $T(\mathbf{x})=A\mathbf{x}$, what is the dimension of the image of $T$?
+\begin{itemize}[label={}]
+\item \chooseone 0
+\item \chooseone 1
+\item \chooseone 2
+\item \chooseone 3
+\item \chooseone 4
+\item \chooseone 5
+\item \chooseone Not enough information to determine.
+\end{itemize}
+
+
+
+\end{itemize}
+
+
+\newpage
+
+%change
+
+
+
+%change numbers
+
+
+\newpage
+
+
+
+%%swap out matrix
+
+    
+
+\newpage
+
+
+
+
+
+
+\newpage
+
+
+
+
+
+
+
+\end{enumerate}
+
+
+\newpage
+
+Scratch paper page! (DO NOT REMOVE-MUST BE TURNED IN)
+
+\newpage
+
+Scratch paper page! (DO NOT REMOVE-MUST BE TURNED IN)
+
+\newpage
+
+Back of scratch paper page! (DO NOT REMOVE-MUST BE TURNED IN)
+
+
+\end{document}

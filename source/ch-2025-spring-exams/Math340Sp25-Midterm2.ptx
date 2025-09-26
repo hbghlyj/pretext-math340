@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="utf-8"?>
+<worksheet xml:id="Math340Sp25-Midterm2" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Math340Sp25-Midterm2</title>
+	<introduction>
+		<p>
+			<term>Notation reminders:</term> <m>M_{mn}</m> is the vector space of <m>m\times n</m> real matrices with standard matrix addition and scalar multiplication, <m>P_d</m> is the vector space of polynomials (with single variable <m>x</m>) of degree at most <m>d</m> with standard polynomial addition and scalar multiplication, <m>\mathbf{0}</m> denotes the zero vector in a vector space <m>V</m>. <m>\mathbb{R}^n</m> uses the standard vector addition/scalar multiplication unless otherwise noted.
+		</p>
+		<p>
+			<term>Additional notation reminders:</term> <m>O</m> denotes the zero matrix, and <m>I_n</m> denotes the <m>n\times n</m> identity matrix. <m>\text{tr}(A)</m> denotes the trace of a matrix <m>A</m>.
+		</p>
+	</introduction>
+	<exercise points="7">
+		<introduction>
+			<p>
+				Suppose <m>T:\mathbb{R}^3\to M_{22}</m> is a linear transformation with <m>T\left(\begin{bmatrix} 1 \\ 1 \\ 0\end{bmatrix}\right)=\begin{bmatrix} 2 &amp; 0 \\ -1 &amp; 1\end{bmatrix}</m>, <m>T\left(\begin{bmatrix} 2 \\ -1 \\ 0\end{bmatrix}\right)=\begin{bmatrix} 3 &amp; 1 \\ 4 &amp; 0\end{bmatrix}</m>, and <m>T\left(\begin{bmatrix} 0 \\ 0 \\ 4\end{bmatrix}\right)=\begin{bmatrix} 0 &amp; 1 \\ 0 &amp; 1\end{bmatrix}</m>.
+			</p>
+		</introduction>
+		<task points="5">
+			<statement>
+				<p>
+					Compute <m>T\left(\begin{bmatrix}4\\ -5\\2\end{bmatrix}\right)</m>. Show all work. You do not need to simplify your final numerical answer.
+				</p>
+			</statement>
+		</task>
+		<task points="2" workspace="1.5in">
+			<statement>
+				<p>
+					Is <m>T</m> onto? Justify your answer.
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise points="6">
+		<introduction>
+			<p>
+				Let <m>A=\left[\begin{array}{ccc}
+							8 &amp; 0 &amp; -5 
+							\\
+							 -20 &amp; -2 &amp; 10 
+							\\
+							 10 &amp; 0 &amp; -7 
+							\end{array}\right]</m>. You are given the following information about <m>A</m>: <m>A</m> has exactly two eigenvalues <m>\lambda=-2</m> and <m>\lambda=3</m>, and a basis for the eigenspace for <m>\lambda=-2</m> is <m>\left\{\begin{bmatrix} 1 \\ 0 \\2\end{bmatrix},\begin{bmatrix} 0 \\ 1 \\0\end{bmatrix}\right\}</m>.
+			</p>
+		</introduction>
+		<task points="4">
+			<statement>
+				<p>
+					Find a basis for the eigenspace of <m>A</m> for <m>\lambda=3</m>. Show all work.
+				</p>
+			</statement>
+		</task>
+		<task points="2" workspace="1.5in">
+			<statement>
+				<p>
+					Is <m>A</m> diagonalizable? Justify your answer.
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise points="8">
+		<introduction>
+			<p>
+				Clearly mark the correct answer for each of the following by <term>completely</term> filling in the appropriate bubble. <term>No justification is needed.</term>
+			</p>
+		</introduction>
+		<task workspace="2cm">
+			<statement>
+				<p>
+					<term>(True/False)</term> If <m>U</m> is a subspace of <m>V</m> and <m>{\mathbf{u}}+{\mathbf{v}}</m> is in <m>U</m>, then <m>{\mathbf{u}}</m> and <m>{\mathbf{v}}</m> are both in <m>U</m>.
+				</p>
+			</statement>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								True
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								False
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
+		<task workspace="2cm">
+			<statement>
+				<p>
+					<term>(True/False)</term> Suppose <m>A</m> and <m>B</m> are invertible <m>2\times 2</m> matrices with <m>A+B=O</m>. Then <m>\{A,B\}</m> is a linearly independent set.
+				</p>
+			</statement>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								True
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								False
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
+		<task workspace="2cm">
+			<statement>
+				<p>
+					<term>(True/False)</term> Suppose <m>A</m> and <m>B</m> are invertible <m>2\times 2</m> matrices with <m>A+B=O</m>. Then the columns of <m>A</m> is a linearly independent set, and the columns of <m>B</m> is a linearly independent set.
+				</p>
+			</statement>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								True
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								False
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
+		<task workspace="2cm">
+			<statement>
+				<p>
+					<term>(True/False)</term> The set of noninvertible <m>3\times 3</m> matrices is closed under scalar multiplication.
+				</p>
+			</statement>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								True
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								False
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<term>(True/False)</term> Any set of <m>7</m> matrices in <m>M_{23}</m> must span <m>M_{23}</m>.
+				</p>
+			</statement>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								True
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								False
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
+		<task workspace="2cm">
+			<statement>
+				<p>
+					<term>(Multiple Choice-choose one)</term> Suppose <m>A</m> is similar to <m>B=\begin{bmatrix} -1 &amp; 0 &amp; 0 \\ 0 &amp; 4 &amp; 0\\ 0 &amp; 0 &amp; 10\end{bmatrix}</m>. Which of the following must be true about <m>A</m>?
+				</p>
+			</statement>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								<m>A</m> has trace <m>0</m>.
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								<m>A</m> is diagonalizable.
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								The eigenvectors of <m>A</m> are the same as the eigenvectors of <m>B</m>.
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								<m>A</m> is similar to <m>I_3</m>.
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								All of the above.
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
+		<task workspace="2cm">
+			<statement>
+				<p>
+					<term>(Multiple Choice-choose one)</term> Suppose <m>\{{\mathbf{u}},{\mathbf{v}},{\mathbf{w}}\}</m> is a basis for a vector space <m>V</m>. Which of the following is also a basis for <m>V</m>?
+				</p>
+			</statement>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								<m>\{{\mathbf{u}}+{\mathbf{v}},{\mathbf{v}}+{\mathbf{w}}\}</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								<m>\{{\mathbf{u}},{\mathbf{u}}+{\mathbf{v}}+{\mathbf{w}},{\mathbf{v}}+{\mathbf{w}}\}</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								<m>\{{\mathbf{u}}+{\mathbf{v}},{\mathbf{v}}+{\mathbf{w}},{\mathbf{w}}+{\mathbf{u}},{\mathbf{v}}\}</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								<m>\{{\mathbf{u}}-{\mathbf{v}},{\mathbf{u}}+{\mathbf{v}},{\mathbf{w}}\}</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								All of the above.
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								None of the above.
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<term>(Multiple Choice-choose one)</term> Which vector space has the same dimension as <m>M_{24}</m>?
+				</p>
+			</statement>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								<m>\mathbb{R}^6</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								<m>P_8</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								<m>M_{42}</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								All of the above.
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								None of the above.
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
+	</exercise>
+	<exercise points="6">
+		<introduction>
+			<p>
+				Consider <m>P_2</m> and the following subset <m>W</m> of polynomials:
+			</p>
+			<p>
+				<me>W=\{p(x) \; \text{in}\; P_2 \;|\; p'(0)=0\}.</me>
+			</p>
+			<p>
+				(Reminder: <m>p'(x)</m> is the derivative of <m>p(x)</m>.)
+			</p>
+		</introduction>
+		<task points="2" workspace="1in">
+			<statement>
+				<p>
+					Show that <m>W</m> is nonempty.
+				</p>
+			</statement>
+		</task>
+		<task points="2">
+			<statement>
+				<p>
+					Show that for <m>p_1(x), p_2(x)</m> in <m>W</m>, <m>p_1(x)+p_2(x)</m> is in <m>W</m>. Fully justify your answer.
+				</p>
+			</statement>
+		</task>
+		<task points="2">
+			<statement>
+				<p>
+					Show that for <m>p(x)</m> in <m>W</m> and <m>c</m> in <m>\mathbb{R}</m>, <m>cp(x)</m> is in <m>W</m>. Fully justify your answer.
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise points="8">
+		<introduction>
+			<p>
+				Let <m>V</m> be the set of vectors of the form <m>\begin{bmatrix} x\\y\end{bmatrix}</m> where <m>x</m> and <m>y</m> are both positive real numbers.
+			</p>
+			<p>
+				We define vector addition <m>\oplus</m> and scalar multiplication <m>\odot</m> as: <me>\begin{bmatrix} x \\ y \end{bmatrix}\oplus \begin{bmatrix} w \\ z \end{bmatrix}=\begin{bmatrix} xw\\ yz \end{bmatrix}, \quad c\odot\begin{bmatrix} x \\ y \end{bmatrix}=\begin{bmatrix} x^c \\ y^c\\\end{bmatrix}</me>
+			</p>
+		</introduction>
+		<task points="2">
+			<statement>
+				<p>
+					Find the zero vector <m>\mathbf{0}</m> for this vector addition <m>\oplus</m>. Justify your answer.
+				</p>
+			</statement>
+		</task>
+		<task points="2">
+			<statement>
+				<p>
+					For <m>{\mathbf{v}}</m> in <m>V</m>, find the additive inverse of <m>{\mathbf{v}}</m> (Recall: the additive inverse of <m>\mathbf{v}</m> is a vector <m>{\mathbf{u}}</m> in <m>V</m> such that <m>{\mathbf{u}}\oplus{\mathbf{v}}=\mathbf{0}={\mathbf{v}}\oplus {\mathbf{u}}</m>). Fully justify your answer.
+				</p>
+			</statement>
+		</task>
+		<task points="2">
+			<statement>
+				<p>
+					Show that the following vector space property is true for this vector addition and scalar multiplication: For any <m>c,d</m> in <m>\mathbb{R}</m> and any vector <m>{\mathbf{u}}</m> in <m>V</m>, <m>(c + d) \odot {\mathbf{u}}=c\odot {\mathbf{u}}\oplus d\odot {\mathbf{u}}</m> .
+				</p>
+			</statement>
+		</task>
+		<task points="2" workspace="1.25in">
+			<statement>
+				<p>
+					For an arbitrary vector <m>{\mathbf{u}}</m> in <m>V</m>, compute <m>0\odot {\mathbf{u}}</m>. Does the vector space property <m>0\odot {\mathbf{u}}=\mathbf{0}</m> hold?
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise points="4">
+		<introduction>
+			<p>
+				Consider the vector space <m>P_1</m> and the set <m>S=\{2x+10,c^2-41-5x\}</m>. Find all values of <m>c</m> so that the set <m>S</m> is linearly dependent.
+			</p>
+		</introduction>
+	</exercise>
+	<exercise points="6">
+		<introduction>
+			<p>
+				Each of the following statements is <term>false</term>. Show each statement is false by providing explicit counterexamples. You must fully justify your answers.
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					Let <m>V</m> be <m>\mathbb{R}^2</m> with the operation <m>\begin{bmatrix} x_1\\ y_1\end{bmatrix}\oplus \begin{bmatrix} x_2\\ y_2\end{bmatrix} = \begin{bmatrix} x_1-x_2\\ y_1+y_2\end{bmatrix}</m>. Then <m>\oplus</m> satisfies the vector space property <m>{\mathbf{v}}\oplus {\mathbf{u}}={\mathbf{u}}\oplus {\mathbf{v}}</m>.
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>F:M_{22}\to \mathbb{R}</m> by <m>F(A)=\det(A)+\text{tr}(A)</m> is a linear transformation.
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>W=\left\{\begin{bmatrix} x \\ y\end{bmatrix} \;\text{in} \;\mathbb{R}^2 :\; |x|\geq |y|\right\}</m> is a subspace of <m>\mathbb{R}^2</m>.
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise points="5">
+		<introduction>
+			<p>
+				Suppose <m>A</m> is a <m>3\times 5</m> matrix whose reduced row echelon form <m>RREF(A)</m> is
+			</p>
+			<p>
+				<m>RREF(A)=\left[\begin{array}{ccccc}1 &amp; 3 &amp; -2 &amp; 0 &amp; 4 \\ 0 &amp; 0 &amp; 0 &amp; 1 &amp; -3 \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \end{array}\right]</m>.
+			</p>
+			<p>
+				Answer each of the following questions about the matrix <m>A</m>, if possible. Justification is not required.
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					<term>(Multiple Choice-choose one)</term> What is the <m>\dim(\text{null}\ A)</m>?
+				</p>
+			</statement>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								<m>0</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								<m>1</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								<m>2</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								<m>3</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								<m>4</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								Not enough information to answer.
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<term>(Multiple Choice-choose one)</term> Is <m>\begin{bmatrix} 1 \\ 0 \\ 0\end{bmatrix}</m> in the column space of <m>A</m>?
+				</p>
+			</statement>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								Yes
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								No
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								Not enough information to answer.
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<term>(Multiple Choice-choose one)</term> For <m>T:\mathbb{R}^5\to\mathbb{R}^3</m> defined by <m>T(\mathbf{x})=A\mathbf{x}</m>, what is the dimension of the image of <m>T</m>?
+				</p>
+			</statement>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								<m>0</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								<m>1</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								<m>2</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								<m>3</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								<m>4</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								<m>5</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								Not enough information to answer.
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<term>(Multiple Choice-choose one)</term> For <m>T:\mathbb{R}^5\to\mathbb{R}^3</m> defined by <m>T(\mathbf{x})=A\mathbf{x}</m>, is <m>T</m> one-to-one (also called injective)?
+				</p>
+			</statement>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								Yes
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								No
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								Not enough information to answer.
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<term>(Multiple Choice-choose one)</term> Are the (five) column vectors making up <m>A</m> a linearly independent set in <m>\mathbb{R}^3</m>?
+				</p>
+			</statement>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								Yes
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								No
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								Not enough information to answer.
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
+	</exercise>
+</worksheet>
