@@ -31,15 +31,7 @@ jobs:
               run: pip install -r requirements.txt
 
             - name: Install LaTeX dependencies
-              run: tlmgr install arydshln
-
-            - name: set up node
-              uses: actions/setup-node@v4
-              with:
-                node-version: '22'
-
-            - name: install local ptx files
-              run: pretext --version
+              run: tlmgr update --self && tlmgr install arydshln
 
             - name: build deploy targets
               run: |
