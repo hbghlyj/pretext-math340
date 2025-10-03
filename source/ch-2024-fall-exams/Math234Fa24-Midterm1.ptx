@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<worksheet xml:id="Math234Fa24-Midterm1" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Math234Fa24-Midterm1</title>
+	<exercise>
+		<introduction>
+			<p>
+				Let <m>\vec{a} = \langle 2, -3, 1 \rangle</m> and <m>\vec{b} = \langle 1, 4, -2 \rangle.</m>
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					Find the unit vector in the direction of <m>\vec{a}.</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Find the vector projection of <m>\vec{b}</m> onto <m>\vec{a}.</m>
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Find an equation for the plane that contains the points <m>A = (1,0,1),</m> <m>B = (3, 2, 0)</m> and <m>C = (4, 1, 2).</m>
+			</p>
+		</introduction>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Find an equation for the <term>line segment</term> connecting the points <m>A = (1,4, 2)</m> and <m>B = (5, 3, 8).</m>
+			</p>
+		</introduction>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Consider the surface <m>x^2 =4y^2 + z^2</m>.
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					Sketch the traces of the form <m>x = k</m>, with <m>k =0, 1</m> in the <m>yz</m>-plane where the <m>y</m> axis is horizontal. Label your traces.
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Sketch the traces of the form <m>y = k</m>, with <m>k =0, 1</m> in the <m>xz</m>-plane where the <m>x</m> axis is horizontal. Label your traces.
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				If the limit exists, compute it (making sure to justify your answer). If the limit does not exist, justify why it doesn’t exist. If you use a theorem, state clearly which theorem you are using. Make sure to use correct limit notation. <me>\displaystyle\lim_{(x,y) \to (0,0)} \dfrac{xy^2}{2x^2 + y^4}</me>
+			</p>
+		</introduction>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				At what point(s) does the curve <m>\vec{r}(t) = \langle 4t^2+6t, 0, t \rangle</m> intersect the paraboloid <m>x = y^2+z^2</m> ? Make sure to give the coordinate(s) of the point(s) in your final answer.
+			</p>
+		</introduction>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Consider the curve given by <m>\vec{r}(t)=\langle t, t^2, 2t+t^3\rangle.</m>
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					Find a tangent vector to the curve at the point <m>(2,4,12).</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Write down an integral that represents the length of the curve, with <m>1 \le t \le 2.</m> You do NOT need to evaluate the integral.
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Find an equation for the tangent line to the curve at the point <m>(2,4,12).</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Find an equation for the normal plane to the curve at the point <m>(2,4,12).</m> That is, find an equation for the plane that is perpendicular to the tangent line to the curve at the given point.
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Consider the surfaces <m>z = \sqrt{x^2+y^2}</m> and <m>z = 2+x.</m> Find a vector function that represents the curve of intersection of the given surfaces.
+			</p>
+		</introduction>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Consider the curve given by <m>\vec{r}(t)=\langle 3+2\sin(t),2t,2\cos(t)\rangle</m>
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					Find the unit tangent vector, <m>\vec{T}(t).</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Find the unit normal vector, <m>\vec{N}(t).</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Find the curvature, <m>\kappa(t).</m>
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Consider the function <m>f(x,y) = \dfrac{\cos(y+x)}{ e^{x^2 -y}\sqrt{y^3-x}}.</m>
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					Find the domain of the function.
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Sketch the domain of the function. Shade the region(s) that are part of the domain. Use dotted lines when sketching a curve that is NOT in the domain, and solid lines when sketching curves that are.
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				An object’s acceleration is given by <me>\vec{a}(t) = \langle \sin(\pi t), e^{-t}, 2t +3 \rangle.</me> Its initial velocity is <m>\vec{v}(0) = \langle 1,0,2 \rangle.</m> Find a vector equation <m>\vec{v}(t)</m> for the velocity of the object at time <m>t.</m>
+			</p>
+		</introduction>
+	</exercise>
+</worksheet>

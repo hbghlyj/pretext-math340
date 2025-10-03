@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project ptx-version="2">
+  <targets>
+    <target name="print" format="pdf" source="main.ptx"
+      output-filename="main.pdf" publication="publication-nosoln.ptx" />
+  </targets>
+</project>

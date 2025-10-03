@@ -1,0 +1,146 @@
+\documentclass[addpoints,12pt]{exam}
+\newcommand{\ds}{\displaystyle}
+\usepackage[margin=0.8in]{geometry}
+\usepackage{subcaption}
+\usepackage{amssymb,amsmath,graphicx,wrapfig,verbatim, psfragx,color}
+\usepackage{multicol}
+\usepackage{wasysym}
+% If you want them as a list (instead of next to each other)
+\usepackage{enumitem}
+% ---- Convenience commands -----
+% Choose one option (bubbles)
+\newcommand{\chooseone}{{\Large$\Circle$\ \ }}
+% ---- Example Usage | Multiple Choice -----
+%\usepackage{fancyhdr}
+%\setlength{\headheight}{13.6pt}
+%\pagestyle{fancy}
+%\lhead{Math 222}
+%\chead{ Midterm 1 }
+%\rhead{Spring 2022}
+\def\FillInBlank{\rule{3truein} {.01truein}}
+\newcommand{\TorF}{\hspace{.1in} \textbf{True} \hspace{.1in} \textbf{False} \hspace{.1in}}
+\begin{document}
+\begin{enumerate}
+\item Compute the following integrals. If you use a theorem, clearly state which theorem you
+are using.
+\begin{itemize}
+%\item[5] $\displaystyle\int_{\mathcal{C}} 3y \, ds,$ where $\mathcal{C}$ is the line segment joining the points $(2,4)$ and $(3,6).$
+%\vfill
+\item[5] $\displaystyle\int_{\mathcal{C}} xy \, dy,$ where $\mathcal{C}$ is the portion of the
+parabola $y = x^2+1$ with $0\le x \le 1,$ traversed starting at $(0,1)$ and ending at $(1,2).$
+\vfill
+\item[6] $\displaystyle\int_{\mathcal{C}}(x^3 +3y)\, dx + (6x - \sin(y^2))\, dy $ where $C$ is the
+rectangle with corners at $(0,0),$ $(2,0),$ $(2,1)$ and $(0,1)$ traversed counterclockwise.
+\vfill
+\newpage
+\item[4] $\displaystyle\int_{\mathcal{C}}
+\vec{F} \cdot d\vec{r}, $ where $\vec{F}$ is the conservative vector field given by $\vec{F}(x) =
+\langle 2xy, x^2 \rangle,$ and $\mathcal{C}$ is the circle of radius 3 centered at the point $(-1,
+0), $ traversed counterclockwise.
+\vfill
+\vfill
+\item[6] $\displaystyle\int_0^8 \int_{y^{1/3}}^2\sin(x^4)\, dx \, dy$
+\vfill
+\vfill
+\vfill
+\newpage
+\end{itemize}
+\newpage
+\item[4] An object's acceleration is given by
+$$\vec{a}(t) = \langle e^{3t}-2, t+\sin(t) , t^2 \rangle.$$
+Its initial velocity is $\vec{v}(0) = \langle 3,4,2 \rangle.$ Find a vector equation $\vec{v}(t)$ for
+the velocity of the object at time $t.$
+\newpage
+\item[4] Let $z(x,y)$ be defined implicitly by
+$$ 4x^3y^2 +3z^2 x = \cos(z^2) + 4yz^3$$
+Compute $\dfrac{\partial z}{\partial y}. $
+\newpage
+\item[8] Use Stoke's Theorem to compute
+$\displaystyle\int_C \vec{F} \cdot d\vec{r},$
+where
+$$\vec{F}(x, y, z) = \langle e^{x^8}+4y, \sqrt{y^4+1} +2x, 2y + \sin(z^4) \rangle,$$
+and \( C \) is the boundary of the plane $4x + 3y + z = 12 $ in the first octant, oriented
+counterclockwise when viewed from above.
+%Let $\vec{F}(x, y, z) = \langle -y, x, 0 \rangle.$ Let \( S \) be the upper hemisphere of the unit
+% sphere $x^2 + y^2 + z^2 = 1,$ and let \( C \) be the boundary of \( S \) oriented counterclockwise
+% when viewed from above. Compute
+%\[
+%\displaystyle\int_C \vec{F} \cdot d\vec{r}.
+%\]
+%If you use a theorem, clearly state which theorem you are using.
+\newpage
+\item Consider the vector field $\vec{F}(x,y) = \langle 2xe^{x^2-y} + 2y +4, -e^{x^2-y} + 2x-3
+\rangle.$
+\begin{itemize}
+\item[2] Show that $\vec{F}$ is conservative.
+\vfill
+\item[5] Find a potential function for $\vec{F}.$
+%\item[6] Find a function $f$ such that $\nabla f = \vec{F}.$
+\vfill
+\vfill
+\vfill
+\end{itemize}
+\newpage
+\item[8] Compute $\displaystyle\iint_{S} \vec{F} \cdot d{\vec{S}},$ for the vector field
+$$\vec{F}(x,y,z) = \langle 2x + 3y+ 4\cos(z) , -x +y + e^{xz}, \sin(x^2) + e^{3y} - 2z \rangle, $$
+outward through the surface $S$ of the box
+$$ E = \{(x,y,z) | -3 \le x \le 0, -2\le y \le 1, 1\le z \le 6 \}.$$
+If you use a theorem, clearly state which theorem you are using.
+\newpage
+\item Let $\vec{r}(t) = \langle 5\cos(t), 2+ 3\sin(t), 4\sin(t)+1 \rangle.$
+\begin{itemize}
+\item[4] Compute the unit tangent vector at $t=\pi,$ that is, \( \vec{T}(\pi) \).
+\vfill
+\item[4] Compute the unit normal vector at $t=\pi, $ that is, \( \vec{N}(\pi) \).
+\vfill
+\item[2] Compute the curvature at $t=1,$ that is, \( \kappa(\pi) \).
+\vfill
+\end{itemize}
+\newpage
+\item Consider the function
+$$f(x,y) = x^3 -12xy +8y^3.$$
+%
+\begin{itemize}
+\item[4]
+Find all critical point(s) of $f(x,y)$.
+\vfill
+\vfill
+\item[2] Compute the second derivatives of the function and use them to write down a formula
+for $D(x,y).$ You do NOT need to evaluate $D$ at the points found on part (a) for this part.
+\vfill
+\vfill
+\item[4]
+Classify each critical point you found in (a) as a local maximum, local minimum, or saddle point.
+\vfill
+\vfill
+\vfill
+%\newpage
+\end{itemize}
+\newpage
+\item[10] Compute $$\displaystyle\iint_{R}(x-y)^2\, dA,$$ where \( R \) is the region in the \(
+xy \)-plane bounded by the lines
+\[
+x - y = 0, \quad x - y = 2, \quad x + y = 2, \quad x + y = 4,
+\] by applying the transformation $u = x-y$ and $v = x+y$.
+\newpage
+\item
+\begin{itemize}
+\item[4] Find an equation for the cone $z = \sqrt{\frac{x^2}{3}+ \frac{y^2}{3}}$ in spherical
+coordinates.
+\vfill
+\item[6] Write
+$$\displaystyle\iiint_{E} (2y+3z) dV$$
+as an integral in spherical coordinates. Here, $E$ represents the solid that lies below the cone
+$z= \sqrt{x^2+y^2},$ above the cone $z = \sqrt{\frac{x^2}{3}+ \frac{y^2}{3}},$ and within the
+sphere $x^2+y^2+z^2 = 4.$ You do \textbf{NOT} need to evaluate the integrals.
+\vfill
+\end{itemize}
+\newpage
+\item[8] Evaluate
+\[
+\iint_S (x^2 + y^2)\, dS,
+\]
+where \( S \) is the portion of the cylinder \( x^2 + y^2 = 4 \) bounded between the planes \( z = 0
+\) and \( z = 5 \).
+\end{enumerate}
+\end{document}

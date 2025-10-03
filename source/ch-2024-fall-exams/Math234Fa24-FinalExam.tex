@@ -1,0 +1,221 @@
+\documentclass[addpoints,12pt]{exam}
+\newcommand{\ds}{\displaystyle}
+\usepackage[margin=0.8in]{geometry}
+\usepackage{subcaption}
+\usepackage{amssymb,amsmath,graphicx,wrapfig,verbatim, psfragx,color}
+\usepackage{multicol}
+\usepackage{wasysym}
+% If you want them as a list (instead of next to each other)
+\usepackage{enumitem}
+% ---- Convenience commands -----
+% Choose one option (bubbles)
+\newcommand{\chooseone}{{\Large$\Circle$\ \ }}
+% ---- Example Usage | Multiple Choice -----
+%\usepackage{fancyhdr}
+%\setlength{\headheight}{13.6pt}
+%\pagestyle{fancy}
+%\lhead{Math 222}
+%\chead{ Midterm 1 }
+%\rhead{Spring 2022}
+\def\FillInBlank{\rule{3truein} {.01truein}}
+\newcommand{\TorF}{\hspace{.1in} \textbf{True} \hspace{.1in} \textbf{False} \hspace{.1in}}
+\begin{document}
+\begin{enumerate}
+%\item Consider the vector field given by $\vec F(x,y,z)= \langle e^{xyz}, \sin(x^2yz^3),e^x+e^y+e^z \rangle$
+%\begin{itemize}
+%\item Compute the curl of $\vec F$.
+%\vfill
+%\item Compute the divergence of $\vec F$.
+%\vfill
+%\end{itemize}
+%\newpage
+\item Consider the curve $\vec{r}(t) = \langle 2t+1, \sin(\pi t), t^2 -2 \rangle.$
+\begin{itemize}
+\item[4] Write down an integral that represents the length of the curve from the point $(1, 0, -2)$
+to the point $(5, 0, 2).$ You do NOT need to compute the integral.
+\vfill
+\item[3] Find an equation for the tangent line to the curve at the point $(5, 0, 2).$
+\vfill
+\end{itemize}
+\newpage
+%\item A midterm 1 question? A curve of intersection of surfaces? Raplcing Lagrange by saddle points if they do worse on that on midterm 2, adding a question on compute a limit using Squeeze? Lagrange changing to more interesting constraint.
+%\item Two particles begin moving at time $t = 0$ seconds. Particle P1 follows a path given by $\vec{r_1}(t) = \langle 4t, 4, t^2+1\rangle.$ Particle P2 follows a path given by $\vec{r_2}(t) = \langle t^2-8 , 2t-4, t+1 \rangle.$ The paths of these two particles intersect at some point $Q.$
+%\begin{itemize}
+%\item Find point $Q$
+%\vfill
+%\item Do the particles collide at $Q$? If so, show why. If not,
+%which arrives at $Q$ first?
+%\vfill
+%\end{itemize}
+\newpage
+\item Write
+$$\displaystyle\iiint_{E} (x +2z) dV$$
+as an integral in the specified coordinate system. Here, $E$ represents the solid that lies above
+the cone $z = \sqrt{x^2+y^2}$ and below the sphere $x^2+y^2+z^2 = 9, $ with $x>0.$ You do
+\textbf{NOT} need to evaluate the integrals.
+%in the specified coordinate system?
+\begin{itemize}
+\item[6] Cylindrical Coordinates
+\vfill
+\item[6]Spherical Coordinates
+\vfill
+\end{itemize}
+\newpage
+\item[11] Compute $\displaystyle\iint_{S} \text{curl} (\vec{F}) \cdot d{\vec{S}},$ where
+$$\vec{F}(x,y,z) = \langle -y+2z -4, xe^{z-2}, \ln(z^2+4) \rangle$$
+and $S$ is the portion of the sphere $x^2+y^2+(z-2)^2 = 4$ that lies below the plane $z=2,$
+oriented inward (that is, the normal vector at the origin points in the direction of the positive
+$z$-axis). If you use a theorem, clearly state which theorem you are using.
+%curve should be the circle <2cost, 2sint, 2>.
+\newpage
+% \item[8] Find the absolute maximum and absolute minimum values of $f(x,y) = x^2-4y^2$ subject to the constraint $2x^2+y^2 = 8.$
+% \newpage
+\newpage
+%Surface integral
+%v16.7ex12020pv
+\newpage
+\item[11] Rewrite the double integral $$\displaystyle\int_0^2\int_0^{2-x}\sqrt{y-3x}(x+y)^8\,
+dydx$$ as a double integral in $u$ and $v$ over an appropriate region by applying the
+transformation $u = x+y$ and $v = y-3x$. You do NOT need to evaluate the integral.
+\newpage
+\item Consider the surface that is the part of the paraboloid $y=x^2+z^2$ that lies within the
+cylinder $x^2+z^2=4.$
+\begin{itemize}
+\item[4] Write down a parametrization for the surface. Make sure to include bounds for your
+parameters.
+\vfill
+\item[8] Find the surface area of the surface.
+\vfill
+\vfill
+\vfill
+\vfill
+\vfill
+\end{itemize}
+%section 16.6 problem 47
+\newpage
+\item Compute the following integrals.
+\medskip
+\begin{itemize}
+\item[7] $\displaystyle\iint_{D} e^{x^2+y^2}\, dA$ where the region $D$ is between the curves
+$x^2+y^2=4$ and \\ $x^2+y^2 = 16,$ below the line $y=x$, and below the line $y=0$.
+%$\displaystyle\int_0^{\frac{\sqrt{3}}{2}}\displaystyle\int_{-\sqrt{9-y^2}}^{-y} e^{x^2+y^2}\, dx dy$
+where the region $R$ is the region enclosed by the curves $x^2+y^2=4,$ $x^2+y^2 = 16,$ the
+line $y=x$ and the line $y=-x,$ with $y<0.$
+\vfill
+\item[7] $\displaystyle\int_0^1 \int_{\sqrt{y}}^1 \sqrt{x^3+1} \, dx dy$
+\vfill
+\newpage
+% \item[6] $\displaystyle\int_{\mathcal{C}}(x+2y) dy,$ where the curve $\mathcal{C}$ is the line segment from $(2,-1)$ to $(3,1).$
+%\vfill
+\item[7] $\displaystyle\int_{\mathcal{C}}xy^2 ds,$ where the curve $\mathcal{C}$ is the portion
+of the circle of radius 3 centered at the origin in the first quadrant traversed counterclockwise.
+\vfill
+\end{itemize}
+\newpage
+\item Consider the vector field $\vec{F}(x,y) = \langle 2xy+ye^{xy} , x^2+xe^{xy}+2y
+\rangle.$
+\begin{itemize}
+\item[2] Show that $\vec{F}$ is conservative.
+\vfill
+\item[5] Find a potential function for $\vec{F}.$
+%\item[6] Find a function $f$ such that $\nabla f = \vec{F}.$
+\vfill
+\vfill
+\vfill
+%\vspace{2in}
+\item[3] Evaluate the integral $\displaystyle\int_{\mathcal{C}} \vec{F} \cdot d\vec{r},$ where
+$\mathcal{C}$ is parametrized by $$\vec{r}(t) = \langle t\ln(5-t), t^2-3t \rangle,$$ with $0 \le t \le
+4.$
+\vfill
+\vfill
+\end{itemize}
+\newpage
+\item[8] Compute $\displaystyle\iint_{S} \vec{F} \cdot d{\vec{S}},$ for the vector field
+$$\vec{F}(x,y,z) = \langle \ln(y^2+z^2+1) +2x , y - e^{z^2x}, \sin(xy) + x^2y^3 \rangle, $$
+outward through the surface $S$ of the box
+$$ E = \{(x,y,z) | -2 \le x \le 1, -1\le y \le 0, 0\le z \le 4 \}.$$
+If you use a theorem, clearly state which theorem you are using.
+\newpage
+\item[8] Compute
+%Green
+\[
+\int_{\mathcal{C}} \left(e^{x^3}\sqrt{x} + 2y\right)dx+\left(-3x + \sin(y^2) \right)dy
+\]
+where $\mathcal{C}$ is given by $\vec{r}(t) = \langle 2\cos(t), 2\sin(t)\rangle$ with $0\le t \le
+2\pi$. If you use a theorem, clearly state which theorem you are using.
+\newpage
+%\newpage
+%\item[10] Clearly mark the correct answer for each of the following by completely filling in the appropriate bubble. \textbf{No justification is needed.}
+%\bigskip
+%\begin{itemize}
+%\item Let $\vec{A}$ be a differentiable vector field on $\mathbb{R}^3$. Then
+%$\text{div}(\nabla\times \vec{A})=0$.
+%\begin{itemize}[label={}]
+%\item \chooseone True
+%\item \chooseone False
+%\end{itemize}
+% false
+%\vfill
+%\newpage
+%\item
+%Let $\vec{E}$ be a differentiable field on $\mathbb{R}^2\setminus \{(0,0)\}$.
+%If $\vec{E}=0$ is not conservative, then $$\oint_{\gamma}\vec{E}\cdot Tds\neq0$$ for \textbf{all} closed paths $\gamma$ in $\mathbb{R}^2\setminus \{(0,0)\}$ .
+%\item The limit $\lim_{(x,y)\to (0,0)}\frac{x^2-xy}{x-y}$ does not exist.
+%\begin{itemize}[label={}]
+%\begin{itemize}[label={}]
+%\item \chooseone True
+%\item \chooseone False
+%\end{itemize}
+%\vspace{.4in}
+%\item
+%Let $\vec{E}$ be the differentiable field on $\mathbb{R}^2\setminus \{(0,0)\}$ given by
+% $$\vec{E}:=\frac{-y}{x^2+y^2}\vec{i}+\frac{x}{x^2+y^2}\vec{j}\ .$$
+%Then $$\nabla\times \vec{E}=0\ .$$
+%\begin{itemize}[label={}]
+%\item \chooseone True
+%\item \chooseone False
+%\end{itemize}
+%\item Let $\vec{A}$ be a differentiable vector field on $\mathbb{R}^3$. Then $\text{div}(\nabla\times \vec{A})=0$.
+%\begin{itemize}[label={}]
+%\item \chooseone True
+%\item \chooseone False
+%\end{itemize}
+%\vspace{.4in}
+%\item Let $\vec{F}$ be a differentiable vector field on $\mathbb{R}^{3}\setminus\{(0,0,0)\}$. If $\text{div}(\vec{F})=0$ then $\vec{F}$ is the curl of some field $\vec{A}$.
+%\begin{itemize}[label={}]
+%\item \chooseone True
+%\item \chooseone False
+%\end{itemize}
+%\item $\int \limits_{-1}^2 \int \limits_0^6 x^2 \sin(x-y)dxdy=\int \limits_0^6 \int \limits_{-1}^2 x^2\sin(x-y)dydx$
+%\begin{itemize}[label={}]
+%\item \chooseone True
+%\item \chooseone False
+%\end{itemize}
+% \vspace{.4in}
+%\item
+%Let $\vec{E}$ be a differentiable field on $\mathbb{R}^2\setminus \{(0,0)\}$.
+%If $\nabla\times \vec{E}=0$ then $\vec{E}$ is conservative.
+%\item The limit $\lim_{(x,y)\to (0,0)}\frac{x^2-xy}{x-y}$ does not exist.
+%\begin{itemize}[label={}]
+%\begin{itemize}[label={}]
+%\item \chooseone True
+%\item \chooseone False
+%\end{itemize}
+%\vspace{.4in}
+%\item
+%Let $\vec{E}$ be a differentiable field on $\mathbb{R}^2\setminus \{(0,0)\}$.
+%If $\vec{E}$ is conservative then $\nabla\times \vec{E}=0$.
+%\item The limit $\lim_{(x,y)\to (0,0)}\frac{x^2-xy}{x-y}$ does not exist.
+%\begin{itemize}[label={}]
+%\begin{itemize}[label={}]
+%\item \chooseone True
+%\item \chooseone False
+%\end{itemize}
+%\item The vector function ${\bf r}(t) = \langle \frac{t}{\sqrt{2}},\frac{1}{2}(\cos(t)-\sin(t)),\frac{1}{2}(\cos(t)+\sin(t)) \rangle$ is an \emph{arclength parameterization} of a curve.
+%\begin{itemize}[label={}]
+%\item \chooseone True
+%\item \chooseone False
+%\end{itemize}
+%\end{itemize}
+\end{enumerate}
+\end{document}
