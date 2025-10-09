@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<worksheet xml:id="Math211Fa24-Midterm1-PracticeA" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Math211Fa24-Midterm1-PracticeA</title>
+	<exercise>
+		<introduction>
+			<p>
+				Clearly mark the correct answer for each of the following by completely filling in the appropriate bubble. <term>No justification is needed.</term>
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					<term>(Multiple Choice)</term> The cost of producing <m>x</m> ounces of gold from a new gold mine is <m>C(x)</m> dollars. What does the statement <m>C'(500) = 17</m> mean?
+				</p>
+			</statement>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								The total cost to produce 17 ounces of gold is approximately $500.
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								After 500 ounces of gold have been produced, the average production cost is $17/ounce. So the cost of producing 500 ounces is about $17/ounce.
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								After 500 ounces of gold have been produced, the rate at which the production cost is increasing is $17/ounce. So the cost of producing the 500th (or 501st) ounce is about $17.
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								After 17 ounces of gold have been produced, the average production cost is $500/ounce. So the cost of producing 17 ounces is about $500/ounce.
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<term>(True/False)</term> If <m>f(t)</m> is the function describing (in feet) the water level in a lake at time <m>t</m> (where <m>t</m> is in hours), and <m>f'(3)=10</m> and <m>f''(3)=-2</m>, then the water level is rising at <m>t=3</m>, but the rate is slowing.
+				</p>
+			</statement>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								True
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								False
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<term>(True/False)</term> The graph below describes a function in <m>x</m>.
+				</p>
+			</statement>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								True
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								False
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Calculate the derivative of each function. You do not need to simplify your answer.
+			</p>
+		</introduction>
+		<task workspace="2in">
+			<statement>
+				<p>
+					<m>g(x)=\dfrac{4}{x^3} + 7</m>
+				</p>
+			</statement>
+		</task>
+		<task workspace="2in">
+			<statement>
+				<p>
+					<m>F(x)=(x+1)(2x+3)</m>
+				</p>
+			</statement>
+		</task>
+		<task workspace="2in">
+			<statement>
+				<p>
+					<m>r(x)=\displaystyle\sqrt{2x-3}</m>
+				</p>
+			</statement>
+		</task>
+		<task workspace="2in">
+			<statement>
+				<p>
+					<m>f(x)=(x^2+2x)^8</m>
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Find each limit. Show all work. Simplify your final answers.
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					<m>\displaystyle\lim_{x\to 3} \dfrac{ x^2-x-6}{x^2+2x-15}</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>\displaystyle \lim_{x\to 0}\dfrac{3x-5}{x^2+3}</m>
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Find an equation for the tangent line of <m>f(x)=x^3-5x^2+2</m> at <m>x=1</m>. Show all work.
+			</p>
+		</introduction>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Find <m>f''(x)</m> of <m>f(x)=4x(x+1)</m>. You do not need to simplify your final answer. Show all work.
+			</p>
+		</introduction>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				A baseball bat manufacturer finds that the cost of making <m>x</m> bats is <m>C(x)=40+10x</m>, and the revenue in selling <m>x</m> bats is <m>R(x)=28x-2x^2</m>.
+			</p>
+		</introduction>
+		<task workspace="2in">
+			<statement>
+				<p>
+					Find all <m>x</m> value(s) where <m>R(x)=C(x)</m>. Show your work.
+				</p>
+			</statement>
+		</task>
+		<task workspace="2in">
+			<statement>
+				<p>
+					Find the <term>marginal revenue function</term> <m>MR(x)</m> and evaluate <m>MR(2)</m>. You do not need to simplify your final numerical answer.
+				</p>
+			</statement>
+		</task>
+		<task workspace="1in">
+			<statement>
+				<p>
+					Find the <term>average cost function</term> <m>AC(x)</m>.
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Find the <term>marginal average cost function</term> <m>MAC(x)</m> and evaluate <m>MAC(2)</m>. You do not need to simplify your final numerical answer.
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Consider the function <m>y=f(x)</m> below. Answer the following questions. ​ ​
+			</p>
+		</introduction>
+		<task workspace="1in">
+			<statement>
+				<p>
+					For which <m>x</m>-value(s) is <m>f'(x)=0</m>? Briefly (one sentence) explain your answer.
+				</p>
+			</statement>
+		</task>
+		<task workspace="1in">
+			<statement>
+				<p>
+					Is <m>f'(-1)</m> positive, negative, or zero? Briefly (one sentence) explain your answer.
+				</p>
+			</statement>
+		</task>
+		<task workspace="1in">
+			<statement>
+				<p>
+					Is <m>f'(2)</m> positive, negative, or zero? Briefly (one sentence) explain your answer.
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Use the (limit) definition of the derivative, <me>\displaystyle f'(x)=\lim_{h\to 0}\frac{f(x+h)-f(x)}{h},</me> to compute <m>f'(x)</m> for <m>f(x)=3x^2-4</m>.
+			</p>
+		</introduction>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				For the graph of <m>y=f(x)</m> below:
+			</p>
+		</introduction>
+		<task workspace="1in">
+			<statement>
+				<p>
+					Give all <m>x</m>-values where <m>f(x)</m> is discontinuous.
+				</p>
+			</statement>
+		</task>
+		<task workspace="0.5in">
+			<statement>
+				<p>
+					Find each value, if possible. If not possible, write DNE.
+				</p>
+				<p>
+					(a) <m>\displaystyle \lim_{x\to 1^-} f(x)=</m>
+				</p>
+				<p>
+					(b) <m>\displaystyle \lim_{x\to 1^+} f(x)=</m>
+				</p>
+				<p>
+					(c) <m>\displaystyle \lim_{x\to 1} f(x)=</m>
+				</p>
+				<p>
+					(d) <m>\displaystyle \lim_{x\to 3} f(x)=</m>
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<task workspace="1in">
+			<statement>
+				<p>
+					Given the graph of <m>y=f(x)</m> below, give the domain and the range of <m>f(x)</m>. Use interval notation.
+				</p>
+				<p>
+					Domain:
+				</p>
+				<p>
+					Range:
+				</p>
+			</statement>
+		</task>
+		<task workspace="1.5in">
+			<statement>
+				<p>
+					Simplify <m>\dfrac{x^2}{4\sqrt{x}}</m> to the form <m>ax^b</m>, where <m>a</m> and <m>b</m> are both numbers.
+				</p>
+			</statement>
+		</task>
+		<task workspace="0.5in">
+			<statement>
+				<p>
+					For <m>f(x)=2x-1</m> and <m>g(x)=\sqrt{x+3}</m>, Write down expressions for each function composition. You do not need to simplify.
+				</p>
+				<p>
+					<m>f(g(x))=</m>
+				</p>
+				<p>
+					<m>g(f(x))=</m>
+				</p>
+				<p>
+					<m>f(f(x))=</m>
+				</p>
+			</statement>
+		</task>
+	</exercise>
+</worksheet>
