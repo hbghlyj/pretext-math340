@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<chapter xml:id="ch-2025-spring-exams" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>2025 Spring Exams</title>
-  <xi:include href="./ch-2025-spring-exams/Math234Sp25-Midterm1.ptx"/>
-  <xi:include href="./ch-2025-spring-exams/Math234Sp25-Midterm2.ptx"/>
-  <xi:include href="./ch-2025-spring-exams/Math234Sp25-FinalExam.ptx"/>
-</chapter>

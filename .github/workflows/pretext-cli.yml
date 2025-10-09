@@ -14,7 +14,7 @@ on:
         branches: ["*"]
     ## Runs on pushes to main
     push:
-        branches: ["234"]
+        branches: ["211"]
     # Runs on demand
     workflow_dispatch:
 
