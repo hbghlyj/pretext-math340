@@ -318,19 +318,19 @@ Find each limit. Show all work. Simplify your final answers.
 
 \question Consider the function $y=f(x)$ below. Clearly mark the correct answer(s) for each of
 the following by completely filling in the appropriate bubble. \textbf{No justification is needed.}
-​
-​         \begin{tikzpicture}[scale=.99]
-​         ​       \draw[gray!60] (-5, -5) grid[step=1] (5, 5);
-​         ​       \draw[<->,thick,black] (-5.3,0)--(5.3,0) node[right]{$x$};
-​         ​       \draw[<->, thick,black] (0,-5.3)--(0,5.3) node[above]{$y$};
-​         ​       \foreach \x in {-5,-4,...,5}
-​         ​       \draw[thick] (\x,-.1) --(\x,.1) node[below] {\small \x};
-​         ​       \foreach \y in {-5,-4,...,5}
-​         ​       \draw[thick] (-.1,\y) --(.1,\y) node[left] {\small \y};
-​         ​       \draw[domain=-4.75:4.25,samples=200,very thick,<->] plot
+
+         \begin{tikzpicture}[scale=.99]
+                \draw[gray!60] (-5, -5) grid[step=1] (5, 5);
+                \draw[<->,thick,black] (-5.3,0)--(5.3,0) node[right]{$x$};
+                \draw[<->, thick,black] (0,-5.3)--(0,5.3) node[above]{$y$};
+                \foreach \x in {-5,-4,...,5}
+                \draw[thick] (\x,-.1) --(\x,.1) node[below] {\small \x};
+                \foreach \y in {-5,-4,...,5}
+                \draw[thick] (-.1,\y) --(.1,\y) node[left] {\small \y};
+                \draw[domain=-4.75:4.25,samples=200,very thick,<->] plot
 ({\x},{(\x-2)^2*(\x+4)/8});
-​         ​       \node[thick] at (5,3.25) {$y=f(x)$};
-​         \end{tikzpicture}
+                \node[thick] at (5,3.25) {$y=f(x)$};
+         \end{tikzpicture}
 
 
 \begin{parts}
