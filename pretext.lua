@@ -9,8 +9,30 @@
 -- produce informative error messages if your code contains
 -- syntax errors.
 
--- The following breaks older pandoc installs, and it doesn't seem to be necessary for what I want to do.
--- local pipe = pandoc.pipe
+local pipe = pandoc.pipe
+
+local function shell_quote(str)
+  local quoted = "'" .. tostring(str):gsub("'", "'\\''") .. "'"
+  return quoted
+end
+
+local script_path
+do
+  local info = debug.getinfo(1, "S")
+  if info and info.source then
+    local path = info.source:match("^@(.*)$")
+    if path and path ~= "" then
+      if not path:match("^/") then
+        local get_cwd = pandoc and pandoc.system and pandoc.system.get_working_directory
+        local cwd = get_cwd and get_cwd()
+        if cwd and cwd ~= "" then
+          path = cwd .. "/" .. path
+        end
+      end
+      script_path = path
+    end
+  end
+end
 -- local stringify = (require "pandoc.utils").stringify
 -- local utils = require 'pandoc.utils'
 
@@ -134,49 +156,73 @@ local function build_workspace_lookup(source)
     end
   end
 
+  local tracked_envs = {
+    enumerate = true,
+    itemize = true,
+    questions = true,
+    parts = true,
+  }
+
+  local function scan_command(line, command, handler)
+    local pattern = "\\" .. command
+    local search_pos = 1
+    while true do
+      local start_idx, end_idx = line:find(pattern, search_pos, true)
+      if not start_idx then
+        break
+      end
+      local next_char = line:sub(end_idx + 1, end_idx + 1)
+      if next_char == "" or not next_char:match("%a") then
+        handler()
+      end
+      search_pos = end_idx + 1
+    end
+  end
+
+  local function handle_list_command()
+    local top = stack[#stack]
+    if not top then
+      return
+    end
+
+    if top == "enumerate" or top == "questions" then
+      if #stack == 1 then
+        current_exercise = current_exercise + 1
+        lookup[current_exercise] = {}
+        last_task = nil
+      elseif #stack == 2 then
+        local tasks = lookup[current_exercise]
+        if tasks then
+          table.insert(tasks, "")
+          last_task = {exercise = current_exercise, index = #tasks}
+        end
+      end
+    elseif top == "itemize" or top == "parts" then
+      if #stack == 2 and (stack[1] == "enumerate" or stack[1] == "questions") then
+        local tasks = lookup[current_exercise]
+        if tasks then
+          table.insert(tasks, "")
+          last_task = {exercise = current_exercise, index = #tasks}
+        end
+      end
+    end
+  end
+
   for line in (source .. "\n"):gmatch("(.-)\n") do
     for env in line:gmatch([[\begin%s*{%s*([%w%*]+)%s*}]]) do
-      if env == "enumerate" or env == "itemize" then
+      if tracked_envs[env] then
         push(env)
       end
     end
     for env in line:gmatch([[\end%s*{%s*([%w%*]+)%s*}]]) do
-      if env == "enumerate" or env == "itemize" then
+      if tracked_envs[env] then
         pop(env)
       end
     end
 
-    local search_pos = 1
-    while true do
-      local start_idx, end_idx = line:find([[\item]], search_pos)
-      if not start_idx then break end
-      local next_char = line:sub(end_idx + 1, end_idx + 1)
-      if next_char ~= "i" then
-        local top = stack[#stack]
-        if top == "enumerate" then
-          if #stack == 1 then
-            current_exercise = current_exercise + 1
-            lookup[current_exercise] = {}
-            last_task = nil
-          elseif #stack == 2 then
-            local tasks = lookup[current_exercise]
-            if tasks then
-              table.insert(tasks, "")
-              last_task = {exercise = current_exercise, index = #tasks}
-            end
-          end
-        elseif top == "itemize" then
-          if #stack == 2 and stack[1] == "enumerate" then
-            local tasks = lookup[current_exercise]
-            if tasks then
-              table.insert(tasks, "")
-              last_task = {exercise = current_exercise, index = #tasks}
-            end
-          end
-        end
-      end
-      search_pos = end_idx + 1
-    end
+    scan_command(line, "item", handle_list_command)
+    scan_command(line, "question", handle_list_command)
+    scan_command(line, "part", handle_list_command)
 
     record_workspace(line)
   end
@@ -583,10 +629,49 @@ function Doc(body, metadata, variables)
   end
 
   workspace_lookup = {}
+  local source
   if PANDOC_STATE and PANDOC_STATE.input_files and #PANDOC_STATE.input_files > 0 then
-    local source = read_file_contents(PANDOC_STATE.input_files[1])
+    source = read_file_contents(PANDOC_STATE.input_files[1])
     if source then
       workspace_lookup = build_workspace_lookup(source)
+    end
+  end
+
+  local skip_normalize = os.getenv("PTX_SKIP_Q_NORMALIZE") == "1"
+  if not skip_normalize and source and source:find([[\begin%s*{%s*questions%s*}]]) and script_path then
+    local normalized = source
+    normalized = normalized:gsub([[\begin%s*{%s*questions%s*}]], "\\begin{enumerate}")
+    normalized = normalized:gsub([[\end%s*{%s*questions%s*}]], "\\end{enumerate}")
+    normalized = normalized:gsub([[\begin%s*{%s*parts%s*}]], "\\begin{itemize}")
+    normalized = normalized:gsub([[\end%s*{%s*parts%s*}]], "\\end{itemize}")
+    normalized = normalized:gsub("\\question%[", "\\item[")
+    normalized = normalized:gsub("\\question(%W)", function(follow)
+      return "\\item" .. follow
+    end)
+    normalized = normalized:gsub("\\question$", "\\item")
+    normalized = normalized:gsub("\\part%[", "\\item[")
+    normalized = normalized:gsub("\\part(%W)", function(follow)
+      return "\\item" .. follow
+    end)
+    normalized = normalized:gsub("\\part$", "\\item")
+
+    local tmp_path = os.tmpname()
+    local tmp = io.open(tmp_path, "w")
+    if tmp then
+      tmp:write(normalized)
+      tmp:close()
+      local command = "PTX_SKIP_Q_NORMALIZE=1 pandoc -f latex"
+      if doc_id and doc_id ~= "" then
+        command = command .. " " .. shell_quote("--metadata=identifier:" .. doc_id)
+      end
+      command = command .. " -t " .. shell_quote(script_path) .. " " .. shell_quote(tmp_path)
+      local ok_run, normalized_output = pcall(pipe, "sh", {"-c", command}, "")
+      os.remove(tmp_path)
+      if ok_run and normalized_output and normalized_output ~= "" then
+        return normalized_output
+      end
+    else
+      os.remove(tmp_path)
     end
   end
 
