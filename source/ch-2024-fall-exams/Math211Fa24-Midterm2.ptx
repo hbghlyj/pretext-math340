@@ -150,9 +150,14 @@
 		<task>
 			<statement>
 				<p>
-					A gift store expects to sell 500 candles this year. The candles costs the store owner <m>\$4</m> per candle, there is an ordering fee of <m>\$20</m> per shipment, and the cost of storing the candles is <m>\$2</m> per candle per year. The candle inventory is consumed at a constant rate throughout the year, and each shipment arrives just as the preceding shipment is used up. Which of the following is the correct expression for the yearly <term>total costs</term> (storage costs plus reorder costs) in dollars of the candles with lot size <m>x</m>? (Hint: The average inventory size is half the lot size.)
+					A gift store expects to sell 500 candles this year. The candles costs the store owner <m>\$4</m> per candle, there is an ordering fee of <m>\$20</m> per shipment, and the cost of storing the candles is <m>\$2</m> per candle per year. The candle inventory is consumed at a constant rate throughout the year, and each shipment arrives just as the preceding shipment is used up. Which of the following is the correct expression for the yearly <term>total costs</term> (storage costs plus reorder costs) in dollars of the candles with lot size <m>x</m>?
 				</p>
 			</statement>
+			<hint>
+				<p>
+					The average inventory size is half the lot size.
+				</p>
+			</hint>
 				<choices multiple-correct="no">
 					<choice>
 						<statement>

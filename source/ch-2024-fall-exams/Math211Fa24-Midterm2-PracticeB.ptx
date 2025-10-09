@@ -57,9 +57,14 @@
 					<term>(Multiple Choice-Choose one)</term> A store expects to sell 8000 bottles of perfume this year. The perfume costs the store owner <m>\$20</m> per bottle, there is an ordering fee of <m>\$100</m> per shipment, and the cost of storing the perfume is <m>\$10</m> per bottle per year. The perfume is consumed at a constant rate throughout the year, and each shipment arrives just as the preceding shipment is used up. Which of the following is the correct expression for the
 				</p>
 				<p>
-					yearly <term>storage costs</term> (in dollars) of the perfume with lot size <m>x</m>? (hint: average inventory is <m>x/2</m>).
+					yearly <term>storage costs</term> (in dollars) of the perfume with lot size <m>x</m>?
 				</p>
 			</statement>
+			<hint>
+				<p>
+					average inventory is <m>x/2</m>
+				</p>
+			</hint>
 				<choices multiple-correct="no">
 					<choice>
 						<statement>
