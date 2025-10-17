@@ -1,0 +1,324 @@
+\documentclass[addpoints,12pt]{exam}
+\newcommand{\ds}{\displaystyle}
+\usepackage[margin=0.8in]{geometry}
+\usepackage{subcaption}
+\usepackage{tikz}
+\usepackage{amssymb,amsmath,graphicx,wrapfig,verbatim,wasysym, enumitem,psfragx,color}
+\usepackage{multicol}
+
+%\usepackage{fancyhdr}
+%\setlength{\headheight}{13.6pt}
+%\pagestyle{fancy}
+%\lhead{Math 222}
+%\chead{ Midterm 1 }
+%\rhead{Spring 2022}
+
+\def\FillInBlank{\rule{3truein} {.01truein}}
+
+% Choose one option (bubbles)
+\newcommand{\chooseone}{{\Large$\Circle$\ \ }}
+
+
+\newcommand{\myleft}{\makebox[.4\textwidth]{First Name:\enspace\hrulefill}}
+\newcommand{\myright}{\makebox[.4\textwidth]{Last Name:\enspace\hrulefill}}
+\header{\oddeven{\myleft}{}}
+    {}
+    {\oddeven{\myright}{}}
+
+\footrule
+
+\footer{Math 221}
+     {Final Exam - Spring 2025}
+     {Page \thepage\ of \numpages}
+
+\begin{document}
+
+\begin{questions}
+
+
+\question Evaluate the limit, if it exists. If the limit does not exist, state whether it is $\infty,$
+$-\infty,$ or neither, and fully explain its behavior. You must show all work. If you use a theorem
+(for example, the Squeeze/Sandwich Theorem or L'Hopital's Rule), clearly state which theorem
+you are using. State any indeterminate forms.
+
+\begin{parts}
+
+\part[3] $\displaystyle\lim_{x \to 0}\dfrac{5e^{3x}-5}{2x+4x^3} $
+
+\vfill
+\vfill
+
+
+\part[3] $\displaystyle \lim_{x\to \infty } \dfrac{5x + 4x^{18}+7x^5 }{-24x^{15} + 3x^{18} }$
+
+\vfill
+
+\vfill
+
+\part[2]$\displaystyle \lim_{x\to -2^{-}} \dfrac{|2x-3|}{x+2}$
+
+\vfill
+\vfill
+
+
+
+
+\newpage
+\part[3] $ \displaystyle\lim_{x \to -4 } f(x),$ where
+$ f(x) = \left\{
+       \begin{array}{ll}
+          \dfrac{x^2-16}{x+4} & \quad x < -4 \\
+         7 & \quad x = -4 \\
+         3x + 4 & \quad x > -4 \\
+       \end{array}
+   \right. $
+
+
+
+
+\vfill
+\vfill
+
+
+
+
+\part[5] $\displaystyle\lim_{x\to 0} \dfrac{2\sin(x) -\sin(2x)}{x - \sin(x)}$
+
+
+
+
+\vfill
+\vfill
+
+\end{parts}
+
+\newpage
+
+
+
+
+\question Compute the following derivatives. Use any method. You do not need to simplify your
+answer.
+
+\begin{parts}
+\part[5] Let $ f(t) = \dfrac{\ln(t^2+2t)}{3t+2}.$ Compute $f'(t).$
+
+\vfill
+
+\part[4] Let $ g(x) = e^{\sin(4x)}.$ Compute $g'(x).$
+\vfill
+
+
+
+
+\newpage
+\part[5] Let $g(t) = \cos(2t) \sqrt{4t+5}.$ Compute $g'(t).$
+
+\vfill
+\part[4] Let $ h(t) = \dfrac{2}{t^3} + 2^t - \ln(\pi).$ Compute $h'(t).$
+\vfill
+
+\part[4] Compute $ \dfrac{d}{dx} \left(\displaystyle\int_{-4}^{e^{2x}} \cos(t^4) \, dt \right).$
+\vfill
+
+\end{parts}
+
+
+
+
+\newpage
+
+\question Compute the following integrals. Use any method from this course. You do not need to
+simplify your answer. Make sure to show all your work. A correct answer with no work shown
+will earn no credit.
+
+\begin{parts}
+
+\part[4] $\displaystyle\int \dfrac{t^2-4t +1}{t^3} \, dt$
+
+\vfill
+
+
+
+
+\part[5] $\displaystyle\int_0^{\pi/4} \sin^3(x) \cos(x) \, dx$
+
+
+
+
+\vfill
+
+\newpage
+
+
+
+
+\part[5] $\displaystyle\int e^{2t} \sqrt{e^t+4} \, dt$
+
+\vfill
+
+
+
+
+\part[3] $\displaystyle\int_{-3}^{0} |4+2x| \, dx$
+\vfill
+
+
+\end{parts}
+
+\newpage
+
+
+
+
+\question Let $f(x) = 4x^2-3x$.
+
+\begin{parts}
+\part[4] Use the LIMIT DEFINITION of the derivative to compute $f'(-1).$ No credit will be given
+if you do not use the limit definition of the derivative to compute it.
+
+\vspace{5in}
+
+\part[2] Find an equation of the tangent line to the graph of $f$ when $x =-1.$
+
+\vfill
+\end{parts}
+
+\newpage
+
+%\question[8] MAYBE, AND IF WE KEEP, INCLUDE PICTURE. A rocket is launched so that it
+%rises vertically. A camera is positioned 5000 ft
+  %from the launch pad. When the rocket is 1000 ft
+ % above the launch pad, its velocity is 600 ft/sec.
+% Find the necessary rate of change of the camera’s angle as a function of time so that it stays
+%focused on the rocket.
+
+ %\bigskip
+
+\question[6] A cylinder filled with water has a 3.0-foot radius and 10-foot height. The water is
+being drained from the tank such that the depth of the water is decreasing at 0.1 feet per
+second. How fast is the water draining from the tank?
+
+ \newpage
+
+
+\question[6] Sketch a graph of a function $f(x)$ that has the following properties:
+
+\begin{itemize}
+\item $f(-2)=5$
+\item $f(4)=3$
+\item $\displaystyle\lim_{x\to 1^{-}}f(x) = +\infty,$ $\displaystyle\lim_{x\to 1^{+}}f(x) = -\infty$
+\item $\displaystyle\lim_{x\to -2} f(x) = 1$
+\item $f'(x)>0$ when $-\infty <x < -2,$ $-2<x<1$ and $1<x<4$
+\item $f'(x)<0$ when $4<x<\infty$
+\item $f''(x)>0$ when $-2<x<1$
+\item $f''(x)<0$ when $-\infty<x<-2$ and $1<x<\infty$
+
+\end{itemize}
+
+\begin{center}
+
+\begin{tikzpicture}
+\draw[help lines, color=gray!30, dashed] (-7.9,-7.9) grid (7.9,7.9);
+\draw[->,ultra thick] (-8,0)--(8,0) node[right]{$x$};
+\draw[->,ultra thick] (0,-8)--(0,8) node[above]{$y$};
+
+\end{tikzpicture}
+\end{center}
+
+\newpage
+
+
+\question[7] A poster is to have a total area (including both printed area and margins) of 180
+square inches. The poster must have 1 inch margins at the bottom and sides, and a 2 inch
+margin at the top. What dimensions will give the largest printed area?
+
+\newpage
+
+
+
+
+\question Consider the function $f(x)= \ln(x^2-2x+5) $.
+
+\begin{parts}
+
+
+
+
+\part[5] For what values of $x$ is the function increasing? Decreasing?
+\vfill
+
+
+
+
+\part[2] Find any local maxima or minima of the function. Make sure to specify for each point
+whether it is a maximum or a minimum. Write your answer(s) as ordered pairs, that is, give both
+the $x$ and $y$ coordinates of the point(s). You do not need to simplify your answer.
+
+\vfill
+
+
+
+
+\end{parts}
+
+\newpage
+
+
+
+
+%add something from mid 1 fall 21 q 4
+
+
+
+
+%\begin{center}
+
+%\begin{tikzpicture}
+%\draw[help lines, color=gray!30, dashed] (-7.9,-6.9) grid (9.9,6.9);
+%\draw[->,ultra thick] (-8,0)--(10,0) node[right]{$x$};
+%\draw[->,ultra thick] (0,-7)--(0,7) node[above]{$y$};
+
+%\end{tikzpicture}
+%\end{center}
+
+\newpage
+
+\question[5] Find the average value of $f(x) = \dfrac{1}{x^2+1}$ on the interval $[-1,1].$
+
+\newpage
+
+
+\question
+
+\begin{parts}
+
+\part[4] Write down an integral that represents the area of the region bounded by the curves
+$y=x^2$ and $y = x+2.$ {\bf You do NOT need to compute the integral. }
+
+%\newline
+%\newline
+
+%Proposed alternate problem: the region bounded by $y=x$, $y=1/x$, and $y=\frac{1}{2}$
+
+\vfill
+
+
+
+
+\part[4] Write down an integral that represents the volume of the solid obtained by revolving the
+region enclosed by $y = e^x,$ $y = 2$ and the $y$-axis, about the line $y =\, -3$. {\bf You do
+NOT need to compute the integral.}
+
+
+
+
+\vfill
+\end{parts}
+
+
+
+
+\end{questions}
+
+\end{document}

@@ -1,0 +1,374 @@
+\documentclass[addpoints,12pt]{exam}
+\newcommand{\ds}{\displaystyle}
+\usepackage[margin=0.8in]{geometry}
+\usepackage{subcaption}
+\usepackage{tikz}
+\usepackage{amssymb,amsmath,graphicx,wrapfig,verbatim,wasysym, enumitem,psfragx,color}
+\usepackage{multicol}
+
+%\usepackage{fancyhdr}
+%\setlength{\headheight}{13.6pt}
+%\pagestyle{fancy}
+%\lhead{Math 222}
+%\chead{ Midterm 1 }
+%\rhead{Spring 2022}
+
+\def\FillInBlank{\rule{3truein} {.01truein}}
+
+% Choose one option (bubbles)
+\newcommand{\chooseone}{{\Large$\Circle$\ \ }}
+
+
+\newcommand{\myleft}{\makebox[.4\textwidth]{First Name:\enspace\hrulefill}}
+\newcommand{\myright}{\makebox[.4\textwidth]{Last Name:\enspace\hrulefill}}
+\header{\oddeven{\myleft}{}}
+    {}
+    {\oddeven{\myright}{}}
+
+\footrule
+
+\footer{Math 221}
+     {Final Exam - Fall 2023}
+     {Page \thepage\ of \numpages}
+
+\begin{document}
+
+\begin{questions}
+
+
+\question
+Evaluate the limit, if it exists. If the limit does not exist, state whether it is $\infty,$ $-\infty,$ or
+neither, and fully explain its behavior. If you use a theorem (for example, the Squeeze/Sandwich
+Theorem or L'Hopital's Rule), clearly state which theorem you are using and why it applies.
+
+\begin{parts}
+
+
+\part[4] $\displaystyle\lim_{x\to 0} \dfrac{1 - e^{2x}+2x}{x \sin(x)}$
+
+\vfill
+
+
+
+
+\part[3] $\displaystyle\lim_{x\to \infty}x\sin\left(\tfrac{3}{x}\right)$
+
+
+%$\displaystyle\lim_{x\to 0}e^{-1/x^2}\sin\left(\tfrac{1}{x}\right)$
+
+%Cassie: change to a $0\cdot \infty$?
+
+%Grace: suggestion -
+
+%Dallas: I like Grace's suggestion
+
+\vfill
+
+
+
+
+\part[3] $\displaystyle\lim_{x \to 3^-}\ln\left(\tfrac{5}{3-x}\right)$
+
+
+
+
+\vfill
+
+%\displaystyle\lim_{x \to 0} \dfrac{e^{5x} - 1 }{\sin(2x) + 4x^2}$
+
+
+
+
+\end{parts}
+
+\newpage
+
+
+
+
+\question Compute the following derivatives. Use any method. You do not need to simplify your
+answer.
+
+\begin{parts}
+\part[3] Let $ f(t) = \dfrac{\ln(4t^2)}{t^2+6t}.$ Compute $f'(t).$
+
+\vfill
+
+\part[3] Let $ g(x) = e^{8x} \arctan(x^3)$ (that is, $g(x) = e^{8x}\tan^{-1}(x^3)$). Compute
+$g'(x).$
+\vfill
+
+\newpage
+
+\part[3] Let $ h(t) = \tan(\sin(t) + \cos(t) + 5t).$ Compute $h'(t).$
+\vfill
+
+\part[3] Let $F(x) = \displaystyle\int_2^{x^2} \sqrt{\cos^2(t) +8} \, dt.$ Compute $F'(x).$
+\vfill
+
+\end{parts}
+
+\newpage
+
+\question Compute the following integrals. Use any method from this course. You do not need to
+simplify your answer.
+
+\begin{parts}
+
+\part[4] $\displaystyle\int_1^e \left( t\sqrt{t}+\frac{1}{\sqrt{t}}\right)^2 \, dt$
+
+\vfill
+
+
+
+
+\part[4] $\displaystyle\int_0^{\pi} x^3 \sin(x^4) \, dx$
+
+\vfill
+
+
+\newpage
+
+\part[3] $\displaystyle\int_{-4}^{0} |x+2| - x\, dx$
+\vfill
+
+
+%\part[6] $\displaystyle\int_0^{5} 2 + \sqrt{25-x^2}\, dx $
+%\vfill
+
+\part[4] $\displaystyle\int \dfrac{e^{2x}}{\sqrt{e^{x} + 1}} \, dx$
+
+\vfill
+
+
+
+
+\end{parts}
+
+
+
+
+\newpage
+
+\newpage
+
+\question[6] Approximate the area under the graph of $y = x^2+ 1$ and above the $x$-axis with
+$0 \le x\le 6$ by using 3 rectangles (of equal width) with right end points. Remember that you
+don't need to simplify your answer.
+
+\newpage
+
+\question Consider the function $f(x)=x^4-x^3+7$.
+
+\begin{parts}
+
+\part[4] For what values of $x$ is the function decreasing?
+\vfill
+
+\part[2] Find where all local minima (if any) of $f(x)$ occur. It suffices to give the $x$-coordinate
+of any points you find.
+\vfill
+
+\part[4] For what values of $x$ is the function concave up?
+\vfill
+
+
+
+
+\end{parts}
+
+
+
+
+\newpage
+
+\question[10] A road running north to south crosses a road going east to west at the point $P.$
+Car A is driving north along the first road, and car B is driving east along the second road. At a
+particular time car A is 10 kilometers to the north of $P$ and traveling at 80 km/hr, while car B is
+
+15 kilometers to the east of $P$ and traveling at 100 km/hr. How fast is the distance between
+the two cars changing at that time? Make sure to include units in your final answer.
+
+\vspace{.2in}
+
+\hfill \includegraphics[width=2.65in]{finalexamimage.jpg}
+
+\newpage
+
+
+
+
+\question Let $f(x) = \dfrac{1}{x-3}.$
+
+\begin{parts}
+\part[6] Use the {\bf limit definition} of the derivative to find $f'(4).$ \\
+No credit will be given if you do not use the limit definition of the derivative to compute it.
+\vfill
+
+\part[3] Find the equation of the tangent line to $f$ when $x = 4$.
+
+\vfill
+\end{parts}
+
+\newpage
+
+
+
+
+%\begin{center}
+
+%\begin{tikzpicture}
+%\draw[help lines, color=gray!30, dashed] (-7.9,-6.9) grid (9.9,6.9);
+%\draw[->,ultra thick] (-8,0)--(10,0) node[right]{$x$};
+%\draw[->,ultra thick] (0,-7)--(0,7) node[above]{$y$};
+
+%\end{tikzpicture}
+%\end{center}
+
+\newpage
+
+
+
+
+\question
+
+\begin{parts}
+\part[5] Write down an integral or sum of integrals that represents the area of the region in the
+first quadrant (that is, where $x\ge 0$ and $y \ge0$), bounded by the curves $y=x$,
+$\displaystyle{y=\frac{1}{x}}$, and $\displaystyle{y= \frac{1}{2}}.$ {\bf You do NOT need to
+compute the integral. }
+
+%\newline
+%\newline
+
+%Proposed alternate problem: the region bounded by $y=x$, $y=1/x$, and $y=\frac{1}{2}$
+
+\vfill
+
+
+
+
+\part[5] Write down an integral or sum of integrals that represents the volume of the solid
+obtained by revolving the region enclosed by the curves $y = x^2+2,$ $x=3$ and $y = 2$ about
+the line $y =\, -4$. {\bf You do NOT need to compute the integral.}
+
+
+
+
+\vfill
+\end{parts}
+
+\newpage
+
+\question %CHANGE? Accumulation question Bobby and Cassie.
+The graph of $y=f(t)$ is given below. Define the function $G(x)=\displaystyle{\int_1^x f(t)\,dt}$
+for all real numbers $x$. Answer the questions below using the graph. \textbf{Justification is
+not required.}
+%Consider the function $F(x)=\displaystyle{\int_1^x f(t)\,dt}$, where $f(t)$ is the graph given
+%below.
+
+%\begin{figure}[htbp]
+\begin{center}
+         \includegraphics[width=.5\textwidth]{accumulationgraph.png} %\caption{(a)}
+%\hspace{.5in}
+\end{center}
+
+%\end{figure}
+\begin{parts}
+\part[2] Find $G(3)$. Clearly write your answer within the provided answer box. %Explain how
+%you got your answer from the graph.
+
+
+$G(3)$ = \fbox{\parbox{.2\textwidth}{\hspace{1in}\\
+\\}}
+
+
+\part[2] State whether $G(7)$ is positive, negative, or zero. Clearly mark the correct answer by
+completely filling in the appropriate bubble.
+\begin{itemize}[label={}]
+\item \chooseone Positive
+\item \chooseone Negative
+\item \chooseone Zero
+\end{itemize}
+
+%\vfill
+%Justify your answer briefly using the graph.
+\part[2] Find the $x$-values of all local minima of $G(x)$ in the interval $(0,12).$ %Justify your
+%answer briefly.
+\vfill
+%Does $F(x)$ have any minimums? If so, list their $x$-values and explain how you know that
+%they are minima using calculus and the graph.
+\vfill
+
+\part[2] Does $G(x)$ have any inflection points? If so, list their $x$-values. If not, state clearly
+that $G$ does not have any inflection points.
+%If so, list their $x$-values and explain how you know that they are inflection points using
+%calculus and the graph. If not, state clearly that $F$ does not have any inflection points.
+\vfill
+\vfill
+\end{parts}
+
+\newpage
+
+\newpage
+
+\question[10] Clearly mark the correct answer for each of the following by completely filling in
+the appropriate bubble. \textbf{No justification is needed.}
+
+\bigskip
+
+\begin{parts}
+
+
+
+
+\part For any function $f(x)$, $\displaystyle{\int_1^5 f(x)\,dx>\int_4^5 f(x)\,dx}$.
+\begin{itemize}[label={}]
+\item \chooseone True
+\item \chooseone False
+\end{itemize}
+
+\vfill
+
+
+\part $\displaystyle{\lim_{x\to\infty} e^{kx}=\infty}$ for any value of $k$.
+\begin{itemize}[label={}]
+\item \chooseone True
+\item \chooseone False
+\end{itemize}
+
+
+\vfill
+
+\part $\displaystyle{\int \frac{1}{1+x^3} \ dx = \ln({1+x^3}) +C}$
+\begin{itemize}[label={}]
+\item \chooseone True
+\item \chooseone False
+\end{itemize}
+
+
+\vfill
+
+\part If $\displaystyle\lim_{x\to2}{f(x)}=5$ then $f(2)=5$.
+
+\begin{itemize}[label={}]
+\item \chooseone True
+\item \chooseone False
+
+\end{itemize}
+
+
+\vfill
+
+\part The graph of $y=\ln (x)$ has no horizontal tangent lines.
+\begin{itemize}[label={}]
+\item \chooseone True
+\item \chooseone False
+\end{itemize}
+
+\vfill
+
+\end{parts}
+\end{questions}
+
+\end{document}

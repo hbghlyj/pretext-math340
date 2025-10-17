@@ -1,0 +1,456 @@
+\documentclass[addpoints,12pt]{exam}
+\newcommand{\ds}{\displaystyle}
+\usepackage[margin=0.8in]{geometry}
+\usepackage{subcaption}
+\usepackage{tikz}
+\usepackage{amssymb,amsmath,graphicx,wrapfig,verbatim,wasysym, enumitem,psfragx,color}
+\usepackage{multicol}
+
+%\usepackage{fancyhdr}
+%\setlength{\headheight}{13.6pt}
+%\pagestyle{fancy}
+%\lhead{Math 222}
+%\chead{ Midterm 1 }
+%\rhead{Spring 2022}
+
+\def\FillInBlank{\rule{3truein} {.01truein}}
+
+% Choose one option (bubbles)
+\newcommand{\chooseone}{{\Large$\Circle$\ \ }}
+
+
+\newcommand{\myleft}{\makebox[.4\textwidth]{First Name:\enspace\hrulefill}}
+\newcommand{\myright}{\makebox[.4\textwidth]{Last Name:\enspace\hrulefill}}
+\header{\oddeven{\myleft}{}}
+    {}
+    {\oddeven{\myright}{}}
+
+\footrule
+
+\footer{Math 221}
+     {Midterm 1 - Fall 2024}
+     {Page \thepage\ of \numpages}
+
+\begin{document}
+
+\begin{questions}
+
+
+
+
+\question Evaluate the limit, if it exists, and justify your answer. If the limit does not exist, state
+whether it is $+\infty,$ $-\infty,$ or neither, and fully explain its behavior. You may NOT use
+L'Hopital's Rule. If you use a theorem, clearly state which theorem you are using.
+
+\begin{parts}
+
+
+
+
+\part[4] $\displaystyle\lim_{x\to 0} \dfrac {x^3+x^2-6x}{x^2+5x}$
+
+\vfill
+
+\part[3] $\displaystyle\lim_{h \to 0} \dfrac{\sin(\pi+h) - \sin(\pi)}{h}$
+
+\vfill
+
+ \part[0] this problem is removed. %$\displaystyle\lim_{x \to 0} \dfrac{\tan^2(x)}{2x^2}$
+
+\vfill
+
+
+
+
+\part[4] $\displaystyle\lim_{x\to 3} \dfrac {\dfrac{1}{x} - \dfrac{1}{3}}{6-2x}$
+
+\vfill
+
+\newpage
+
+\part[4] $\displaystyle\lim_{x \to 0} \left( \dfrac{1}{x} - \dfrac{2}{x^2+2x} \right)$
+
+\vfill
+
+\part[4] $ \displaystyle\lim_{x \to -3 } f(x),$ where
+$ f(x) = \left\{
+      \begin{array}{ll}
+          2x^2 -x-6 & \quad x < -3 \\
+         9 & \quad x = 3 \\
+
+         15 & \quad x > -3 \\
+       \end{array}
+   \right. $
+
+
+
+
+\vfill
+
+
+
+
+\part[4] $\displaystyle\lim_{x \to 2}\dfrac{|x-2| }{4x-8} $
+%$\displaystyle{\lim_{x \to 2}~ \frac{x-1}{x^2-1}}$
+
+
+\vfill
+
+
+\end{parts}
+
+\newpage
+
+
+
+
+\question Compute the derivatives, where they are defined, of the following functions. Use any
+method. Do not simplify your answer.
+
+\begin{parts}
+\part[5] $f(t) = \sqrt{t^2+3t}$
+
+\vfill
+
+
+\part[5] $ h(t) = t^2 \sec(t) \sin(t) $
+\vfill
+
+
+
+
+\newpage
+
+\part[5] $g(t) = \dfrac{\tan(t)}{4t^3+2t}$
+
+\vfill
+
+\part[5] $f(t) = \cos\left( \dfrac{1}{t} + \pi t\right)$
+
+\vfill
+
+\end{parts}
+
+\newpage
+
+
+
+
+%\question[10] Find the equation of the tangent line to the implicitly-defined curve $$\sqrt{x+y}
+%+15 = x^2y+8y^2$$
+%at the point \(\ds\left(3 ,1 \right)\).
+
+%\newpage
+
+\question[7] Sketch the graph of a function $f(x)$ with \textbf{all} of the given properties.
+
+
+
+
+% Work on wording to not use removable or jump
+
+\begin{itemize}
+\item $\displaystyle{\lim_{x\to 2} f(x) = 4}$
+\item $f(2) = -3$
+\item $\displaystyle{\lim_{x\to -1^{+}} f(x) = 2}$
+\item $\displaystyle{\lim_{x\to -1^{-}} f(x) = -1}$
+\item $f(-1)=2$
+\item $\displaystyle{\lim_{x\to 4^{-}} f(x) = +\infty}$
+\item $\displaystyle{\lim_{x\to 4^{+}} f(x) = -\infty}$
+\item $f(x)$ is continuous at all other $x$-values
+\end{itemize}
+
+\noindent\textsc{Notes:} Be sure that your graph is well-labeled and that we can easily identify
+how your graph meets the requirements above. You are not trying to find an equation for $f(x)$,
+you are creating a graph with these characteristics. Please note that there are many correct
+solutions to this problem.
+
+\begin{center}
+
+\begin{tikzpicture}
+\draw[help lines, color=gray!30, dashed] (-5.9,-5.9) grid (5.9,5.9);
+\draw[->,ultra thick] (-6,0)--(6,0) node[right]{$x$};
+\draw[->,ultra thick] (0,-6)--(0,6) node[above]{$y$};
+
+\end{tikzpicture}
+\end{center}
+%$\displaystyle\lim_{x \to -3^{+}} \dfrac{x^2+5x+6}{|x-3|}$
+
+
+%\item $\displaystyle\lim_{t \to 2} \dfrac{\sqrt{4t+1}-3}{2t-4}$
+
+\vfill
+
+\newpage
+
+
+
+
+\question[8] Please fill in the circle that corresponds to the correct answer. Please make sure
+the circle is completely filled in.
+
+
+
+
+\begin{parts}
+
+\bigskip
+
+\part A function $g(x)= |x-3|$ when $x\leq 3$. Find a true statement (choose one).
+
+% $g(x) = \left\{
+%      \begin{array}{ll}
+%         |x-3| & \quad x \leq 3 \\
+%         \\
+%
+%        x^2 - 2x -3 & \quad x > 3 \\
+% \end{array}
+% \right. $ \,\,\,
+
+
+% \bigskip
+% \bigskip
+
+
+  \begin{itemize}[label={}]
+
+\item \chooseone If $g(x)=\tan (x-3)$ when $x>3$ then $g$ is a continuous function.
+\item \chooseone If $g(x)=x^2 - 2x -3$ when $x>3$ then $g$ is not a continuous function.
+\item \chooseone If $g(x)=\frac{1}{x-2}-1$ when $x>3$ then $g$ is a continuous function.
+\item \chooseone There is no true statement among above three
+\end{itemize}
+
+
+\bigskip
+ \bigskip
+
+
+
+
+\part Consider a function $f(x) = \left\{
+     \begin{array}{ll}
+       \dfrac{3-x}{2} & \quad x \leq -1, \\
+       \\
+
+       \sqrt{x^2 +3} & \quad x > -1. \\
+   \end{array}
+  \right. $
+
+
+ \bigskip
+
+  (b-1) Find a true statement (choose one) for the following right-hand limit $$\lim_{h \rightarrow
+0^+} \frac{f(x+ h)- f(x)}{h}. $$
+
+  \begin{itemize}[label={}]
+\item \chooseone The right-hand limit does not exist at $x=-1$.
+\item \chooseone The right-hand limit exists at $x=-1$ and it is $-1$
+\item \chooseone The right-hand limit exists at $x=-1$ and it is $- \frac{1}{2}$.
+\item \chooseone The right-hand limit exists at $x=-1$ and it is $2$.
+\end{itemize}
+
+ \bigskip
+
+(b-2) Find a true statement (choose one) for the following left-hand limit $$\lim_{h \rightarrow
+0^-} \frac{f(x+ h)- f(x)}{h}.$$
+
+  \begin{itemize}[label={}]
+\item \chooseone The left-hand limit does not exist at $x=-1$.
+\item \chooseone The left-hand limit exists at $x=-1$ and it is $- \frac{1}{2}$.
+\item \chooseone The left-hand limit exists at $x=-1$ and it is $2$.
+\item \chooseone The left-hand limit exists at $x=-1$ and it is $-1$.
+\end{itemize}
+
+
+
+
+ \bigskip
+
+(b-3) Find a true statement for $f(x)$ (choose one).
+
+
+
+
+  \begin{itemize}[label={}]
+\item \chooseone Continuous at $x =-1$, but not differentiable at $x =-1.$
+\item \chooseone Differentiable at $x =-1$, but not continuous at $x =-1.$
+\item \chooseone Both continuous and differentiable at $x =-1.$
+\item \chooseone Neither continuous nor differentiable at $x =-1.$
+\end{itemize}
+
+
+
+
+ \vfill
+
+\end{parts}
+
+\newpage
+
+\question Consider the function
+
+% Work on wording to not use removable or jump
+%add something from mid 1 fall 21 q 4
+
+$$ f(x) = \left\{
+     \begin{array}{ll}
+        \dfrac{x^2-2x-3}{x^2+3x+2} & \quad x \neq -1, 0 \\
+        \\
+         -4 & \quad x = -1, 0 \\
+
+      \end{array}
+  \right. $$
+
+\bigskip
+For each of the following values of $x$, decide if the function is continuous or not. If the function
+is not continuous, identify the discontinuities as jump, removable, infinite or other. The
+definitions of jump, removable and infinite discontinuities are provided below.
+
+\begin{itemize}
+\item A function $f$ has a {\bf jump discontinuity} at a point $a$ if $\displaystyle\lim_{x\to a^-}
+f(x)$ and $\displaystyle\lim_{x \to a^+}f(x)$ both exist, but $\displaystyle\lim_{x \to a^-}f(x) \neq
+\displaystyle\lim_{x \to a^+}f(x).$
+
+\item A function $f$ has a {\bf removable discontinuity} at a point $a$ if $\displaystyle\lim_{x \to
+a}f(x)$ exists, but $\displaystyle\lim_{x \to a}f(x) \neq f(a).$
+
+
+\item A function $f$ has an {\bf infinite discontinuity} at a point $a$ if the function has a vertical
+asymptote at $x=a.$
+
+
+\end{itemize}
+
+Make sure to justify your answers.
+
+\begin{parts}
+
+\part[4] $x = -1$
+\vfill
+
+\part[4] $x=0$
+\vfill
+
+
+\end{parts}
+
+\newpage
+
+\question Let $f(x) = \dfrac{1}{2x}$.
+
+
+
+
+\begin{parts}
+\part[7] Use the LIMIT DEFINITION of the derivative to compute $f'(1).$ No credit will be given
+if you do not use the limit definition of the derivative to compute it.
+
+\vspace{5in}
+
+\part[3] Find an equation of the tangent line to the graph of $f$ when $x =1.$
+
+\vfill
+\end{parts}
+
+\newpage
+
+\question Consider the functions $$f(x) = x+2,$$ $$g(x) = \dfrac{(x+2)(x-1)}{(x-1)},$$ and $$h(x)
+=
+ \begin{cases} \dfrac{(x+2)(x-1)}{(x-1)} & \text{if } x \neq 1 \\ -3 & \text{if } x =1 \end{cases} $$
+
+
+
+
+ \begin{parts}
+ \part[1] Sketch the graph of $f(x) = x+2$
+\begin{center}
+
+\begin{tikzpicture}[scale=0.8, transform shape]
+\draw[help lines, color=gray!30, dashed] (-5.9,-5.9) grid (5.9,5.9);
+\draw[->,ultra thick] (-6,0)--(6,0) node[right]{$x$};
+
+\draw[->,ultra thick] (0,-6)--(0,6) node[above]{$y$};
+
+\end{tikzpicture}
+
+
+\end{center}
+
+
+\part[1] Compute, if it exists, $\displaystyle\lim_{x \to 1} f(x)$
+
+\vfill
+
+\newpage
+ \part[2] Sketch the graph of $g(x)= \dfrac{(x+2)(x-1)}{(x-1)}$
+ \begin{center}
+
+\begin{tikzpicture}[scale=0.8, transform shape]
+\draw[help lines, color=gray!30, dashed] (-5.9,-5.9) grid (5.9,5.9);
+\draw[->,ultra thick] (-6,0)--(6,0) node[right]{$x$};
+\draw[->,ultra thick] (0,-6)--(0,6) node[above]{$y$};
+
+\end{tikzpicture}
+\end{center}
+
+\part[1] Compute, if it exists, $\displaystyle\lim_{x \to 1} g(x)$
+
+\vfill
+
+\newpage
+
+ \part[2] Sketch the graph of $h(x) =
+ \begin{cases} \dfrac{(x+2)(x-1)}{(x-1)} & \text{if } x \neq 1 \\ -3 & \text{if } x =1 \end{cases}$
+ \begin{center}
+
+\begin{tikzpicture}[scale=0.8, transform shape]
+\draw[help lines, color=gray!30, dashed] (-5.9,-5.9) grid (5.9,5.9);
+\draw[->,ultra thick] (-6,0)--(6,0) node[right]{$x$};
+\draw[->,ultra thick] (0,-6)--(0,6) node[above]{$y$};
+
+\end{tikzpicture}
+\end{center}
+
+     \part[1] Compute, if it exists, $\displaystyle\lim_{x \to 1} h(x)$
+
+     \vfill
+
+     \end{parts}
+
+
+\newpage
+
+\question The position of a particle is given by $s(t) = \dfrac{1}{(t+1)^2}+\sqrt{t}.$
+
+\begin{parts}
+\part[5] Find the velocity of the particle at time $t=4,$ that is, $v(4).$ Remember that you don't
+need to simplify your answers.
+
+\vfill
+
+\part[5] Find the acceleration of the particle at time $t=4,$ that is, $a(4).$ Remember that you
+don't need to simplify your answers.
+
+\vfill
+
+\end{parts}
+
+
+\newpage
+
+%Give a small table of cos values 0, pi. define "root" in problem i.e. f(c) = 0
+
+
+\question[6] Does the function $$f(x) = 5\cos(\pi x) + 2x $$ have a root in the interval $[0 , 1 ]$?
+That is, is there a point on the interval $[0,1]$ where $f(x)=0$? Explain why or why not. If you
+use a theorem, clearly state which theorem you are using and why it applies.
+
+
+\newpage
+
+% Change? Too much work for MC - Maybe separate into continuity and differentiablity. Pick a
+%function that is cont. but not diff.
+
+\end{questions}
+
+\end{document}

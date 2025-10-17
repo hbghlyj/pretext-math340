@@ -1,0 +1,305 @@
+\documentclass[addpoints,12pt]{exam}
+\newcommand{\ds}{\displaystyle}
+\usepackage[margin=0.8in]{geometry}
+\usepackage{subcaption}
+\usepackage{tikz}
+\usepackage{amssymb,amsmath,graphicx,wrapfig,verbatim,wasysym, enumitem,psfragx,color}
+\usepackage{multicol}
+
+%\usepackage{fancyhdr}
+%\setlength{\headheight}{13.6pt}
+%\pagestyle{fancy}
+%\lhead{Math 222}
+%\chead{ Midterm 1 }
+%\rhead{Spring 2022}
+
+\def\FillInBlank{\rule{3truein} {.01truein}}
+
+% Choose one option (bubbles)
+
+\newcommand{\chooseone}{{\Large$\Circle$\ \ }}
+
+
+\newcommand{\myleft}{\makebox[.4\textwidth]{First Name:\enspace\hrulefill}}
+\newcommand{\myright}{\makebox[.4\textwidth]{Last Name:\enspace\hrulefill}}
+\header{\oddeven{\myleft}{}}
+    {}
+    {\oddeven{\myright}{}}
+
+\footrule
+
+\footer{Math 221}
+     {Final Exam - Spring 2024}
+     {Page \thepage\ of \numpages}
+
+\begin{document}
+
+\begin{questions}
+
+
+\question
+Evaluate the limit, if it exists. If the limit does not exist, state whether it is $\infty,$ $-\infty,$ or
+neither, and fully explain its behavior. If you use a theorem (for example, the Squeeze/Sandwich
+Theorem or L'Hopital's Rule), clearly state which theorem you are using and why it applies.
+
+\begin{parts}
+
+\part[3] $\displaystyle\lim_{x\to \infty} \dfrac{4x^5+3x^2-2x+4}{3x^5-6x+7}$
+
+
+
+
+\vfill
+\vfill
+
+\part[4] Compute $ \displaystyle\lim_{x \to -1 } f(x),$ where
+$ f(x) = \left\{
+       \begin{array}{ll}
+         \dfrac{x^4-2x^3+x^2}{x^2-2x+1} & \quad x < -1 \\
+          -3 & \quad x = -1 \\
+           1 & \quad x > -1 \\
+       \end{array}
+   \right. $
+
+\vfill
+\vfill
+
+\newpage
+\part[4] $\displaystyle\lim_{x \to 0} \dfrac{1-\cos(2x)}{x\sin(3x)}$
+
+
+
+
+\vfill
+\vfill
+
+\part[4] $\displaystyle\lim_{x\to 0^+} x^2\ln(4x)$
+%write as quotient then l'hopital
+
+\vfill
+\vfill
+
+
+
+
+%\displaystyle\lim_{x \to 0} \dfrac{e^{5x} - 1 }{\sin(2x) + 4x^2}$
+
+
+
+
+\end{parts}
+
+\newpage
+
+\question Compute the following derivatives. Use any method. You do not need to simplify your
+answer.
+
+\begin{parts}
+\part[4] Let $ f(t) = \sin(4t^2) \cos(3t).$ Compute $f'(t).$
+
+\vfill
+
+\part[4] Let $ g(x) = \sqrt{\ln(x^2+1)}.$ Compute $g'(x).$
+\vfill
+
+\newpage
+
+\part[4] Let $ h(t) = \dfrac{e^{t}+t}{\tan(t)}.$ Compute $h'(t).$
+\vfill
+
+\part[4] Let $F(x) = \displaystyle\int_{-3}^{x^3+2x} \sin(t^2) \, dt.$ Compute $F'(x).$
+\vfill
+
+\end{parts}
+
+
+
+
+\newpage
+
+\question Compute the following integrals. Use any method from this course. You do not need to
+simplify your answer.
+
+\begin{parts}
+
+\part[4] $\displaystyle\int \left(\sec(t)\tan(t) + \dfrac{4}{t} + \dfrac{3}{1+t^2} \right) \, dt$
+
+\vfill
+
+
+
+
+\part[4] $\displaystyle\int \cos(x)\cos(\sin(x)) \, dx$
+
+\vfill
+
+
+\newpage
+
+\part[4] $\displaystyle\int_{0}^{3} |x-1| + 2x \, dx$
+\vfill
+
+
+%\part[6] $\displaystyle\int_0^{5} 2 + \sqrt{25-x^2}\, dx $
+%\vfill
+
+\part[4] $\displaystyle\int_0^{2} x^2 e^{x^3} \, dx$
+
+\vfill
+
+
+
+
+\end{parts}
+
+\newpage
+
+\question[8] A person is sitting 30 feet away from a model rocket that is fired straight up into the
+air at a rate of 10 ft/sec. At what rate is the distance between the person and the rocket
+increasing 4 seconds after the rocket is launched?
+
+
+\newpage
+
+
+\question[8] Find the dimensions of the rectangle with an area of 100 cm$^2$ that has the
+smallest perimeter. Make sure to justify why your result is the global minimum.
+
+\newpage
+
+
+
+
+\question Consider the function $f(x)=e^x - x$.
+
+\begin{parts}
+
+\part[4] For what values of $x$ is the function increasing? Decreasing?
+\vfill
+
+\part[2] Find any local maxima or minima of the function. Make sure to specify for each point
+whether it is a maximum or a minimum. Write your answer(s) as ordered pairs, that is, give both
+the $x$ and $y$ coordinates of the point(s).
+
+\vfill
+
+\part[2] For what values of $x$ is the function concave up? Concave down?
+\vfill
+
+
+
+
+%\part[4] Sketch the function.
+
+%\begin{center}
+
+%\begin{tikzpicture}[scale=0.80]
+%\draw[help lines, color=gray!30, dashed] (-4.9,-4.9) grid (4.9,4.9);
+%\draw[->,ultra thick] (-5,0)--(5,0) node[right]{$x$};
+%\draw[->,ultra thick] (0,-5)--(0,5) node[above]{$y$};
+
+%\end{tikzpicture}
+%\end{center}
+
+
+
+
+\end{parts}
+
+
+
+
+\newpage
+
+
+
+
+\question Consider the function
+
+%add something from mid 1 fall 21 q 4
+
+$$ f(x) = \left\{
+     \begin{array}{ll}
+        \dfrac{x^2+6x+9}{x^2+x-6} & \quad x \neq -3, 0 \\
+        \\
+         0 & \quad x = -3, 0 \\
+
+      \end{array}
+  \right. $$
+
+\bigskip
+For each of the following values of $x$, decide if the function is continuous or not. If the function
+is not continuous, identify the discontinuities as jump, removable, infinite or other. Give reasons
+for your claims!
+
+\begin{parts}
+
+\part[4] $x = -3$
+\vfill
+
+\part[4] $x=0$
+\vfill
+
+%\part[4] $x=2$
+%\vfill
+\end{parts}
+
+
+
+
+%\begin{center}
+
+%\begin{tikzpicture}
+%\draw[help lines, color=gray!30, dashed] (-7.9,-6.9) grid (9.9,6.9);
+%\draw[->,ultra thick] (-8,0)--(10,0) node[right]{$x$};
+%\draw[->,ultra thick] (0,-7)--(0,7) node[above]{$y$};
+
+%\end{tikzpicture}
+%\end{center}
+
+\newpage
+
+\question[6] Find the absolute maximum and absolute minimum of $f(x) =-x^3+3x^2-1 $ on the
+interval $[1 , 3].$
+
+\newpage
+
+\question[5]
+Find the average value of $f(x) = \dfrac{1}{x^2}$ on the interval $[1,4].$
+
+\newpage
+
+
+\question
+
+\begin{parts}
+
+\part[5] Write down an integral that represents the area of the region bounded by the curves
+$y=\sin(x)$, $y = x -\pi$ and $x=0.$ {\bf You do NOT need to compute the integral. }
+
+%\newline
+%\newline
+
+%Proposed alternate problem: the region bounded by $y=x$, $y=1/x$, and $y=\frac{1}{2}$
+
+\vfill
+
+
+
+
+\part[5] Write down an integral that represents the volume of the solid obtained by revolving the
+region enclosed by the curves $y = \ln(x),$ $y=0$ and $x = 4$ about the line $y =\, -3$. {\bf You
+do NOT need to compute the integral.}
+
+
+
+
+\vfill
+\end{parts}
+
+
+
+
+\end{questions}
+
+\end{document}

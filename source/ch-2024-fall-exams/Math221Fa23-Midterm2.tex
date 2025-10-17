@@ -1,0 +1,298 @@
+\documentclass[addpoints,12pt]{exam}
+\newcommand{\ds}{\displaystyle}
+\usepackage[margin=0.8in]{geometry}
+\usepackage{subcaption}
+\usepackage{tikz}
+\usepackage{amssymb,amsmath,graphicx,wrapfig,verbatim,wasysym, enumitem,psfragx,color}
+\usepackage{multicol}
+
+%\usepackage{fancyhdr}
+%\setlength{\headheight}{13.6pt}
+%\pagestyle{fancy}
+%\lhead{Math 222}
+%\chead{ Midterm 1 }
+%\rhead{Spring 2022}
+
+\def\FillInBlank{\rule{3truein} {.01truein}}
+
+% Choose one option (bubbles)
+\newcommand{\chooseone}{{\Large$\Circle$\ \ }}
+
+
+\newcommand{\myleft}{\makebox[.4\textwidth]{First Name:\enspace\hrulefill}}
+\newcommand{\myright}{\makebox[.4\textwidth]{Last Name:\enspace\hrulefill}}
+\header{\oddeven{\myleft}{}}
+    {}
+    {\oddeven{\myright}{}}
+
+\footrule
+
+\footer{Math 221}
+     {Midterm 2 - Fall 2023}
+     {Page \thepage\ of \numpages}
+
+\begin{document}
+
+\begin{questions}
+
+
+
+
+\question Compute the following definite integrals.
+
+\begin{parts}
+
+
+
+
+\part[6] $\displaystyle\int_1^{3} \left(3x^4 + \dfrac{2}{x^3} +\sqrt{x} + \cos(x) \, \right)\, dx$
+
+\vfill
+
+%\part[5] $\displaystyle\int_0^{2\pi} \left(\cos(t) + 3\sec^2(t) + 2\sin(t)\right)\, dt$
+
+
+
+
+% \part[6] $\displaystyle\int_{1}^{2} \dfrac{t^3+4t+8}{\sqrt{t}}\, dt$
+% \vfill
+
+\part[6] $\displaystyle \int_{0}^1 (t^6+4)(3t-2) \, dt$
+
+
+
+
+\vfill
+
+\end{parts}
+
+\newpage
+
+
+\vfill
+
+\question[6] Find the antiderivative $F$ of the function $f(x) = 3x^2+ \sin(x)$ that satisfies the
+condition $F(0) = 6.$
+
+\vfill
+
+\newpage
+
+\question[8] Find all the vertical, horizontal, and slant asymptotes of
+
+$$f(x) = \dfrac{x^3 + 2x^2}{x^2-4},$$
+
+if any. Justify your answers for each asymptote.
+
+
+
+
+%$f(x) = \dfrac{x^3 + 2x^2}{x^2-4}$
+
+
+
+
+%\newpage
+
+%\question Compute the following limits.
+
+%\begin{parts}
+
+%\part[4] $\displaystyle\lim_{x \to \infty} \sqrt{x^2+x} + x$
+
+%\vfill
+
+%\part[4] $\displaystyle\lim_{x \to -\infty} \sqrt{x^2+x} + x$
+
+%\vfill
+
+%\end{parts}
+
+
+\newpage
+
+\question[10] Find the slope of the tangent line to the curve $2xy + x^2 = y^2 +7 $ at the point
+$(2,3).$
+
+\newpage
+
+
+\question[12] Sally is standing at the top of an 40-foot-tall lighthouse, and pulling a rope which is
+attached to a boat in the water below. She pulls the rope at a constant rate of 5 feet per
+second, causing the boat to move closer to the lighthouse. How fast is the angle between the
+rope and the water changing at the moment when the boat is 30 feet away (horizontally) from
+the lighthouse?
+
+%[Dallas offered to crisp up the lighthouse on the iPad.]
+
+%\begin{figure}
+\hfill \includegraphics[width=.5\textwidth]{worstboat.jpg}
+%\end{figure}
+
+\newpage
+
+
+\question[8] Find the absolute maximum and absolute minimum of $f(x) = 2x^3+3x^2-12x$ on
+the interval $[-1, 2]$. Write your final answer listing both the $x$ and $y$ coordinates of the
+points.
+
+\newpage
+
+\question[12] A rectangular box with an open top and a volume of 36 cubic inches is to be
+constructed. %One side of the base is twice as long as the other.
+The base is twice as long as it is wide. What should the dimensions of the box be to minimize
+the surface area of the box?
+%THINK ABOUT THIS ONE
+%A rectangular box with a square base, an open top, and a volume of 16 cubic inches is to be
+%constructed. What should the dimensions of the box be to minimize the surface area of the box?
+
+% numbers to be computed
+
+\newpage
+
+
+
+
+\question[12]
+
+Sketch a graph of a function $f(x)$ that has the following properties:
+
+\begin{itemize}
+\item $f(-1)=-1,$ $f(4) = 2$
+\item $\displaystyle\lim_{x\to 1^{-}}f(x) = \infty,$ $\displaystyle\lim_{x\to 1^{+}}f(x) = -\infty$
+\item $\displaystyle\lim_{x\to -\infty} f(x) = 1,$ $\displaystyle\lim_{x\to \infty}f(x) = -\infty$
+\item $f'(x)>0$ when $-1<x<1$ and $1<x<4$
+\item $f'(x)<0$ when $-\infty<x<-1$ and $4<x<\infty$
+\item $f''(x)>0$ when $-3<x<1$
+\item $f''(x)<0$ when $-\infty<x<-3$ and $1<x<\infty$
+
+\end{itemize}
+
+
+\begin{center}
+
+\begin{tikzpicture}
+\draw[help lines, color=gray!30, dashed] (-6.9,-6.9) grid (6.9,6.9);
+\draw[->,ultra thick] (-7,0)--(7,0) node[right]{$x$};
+\draw[->,ultra thick] (0,-7)--(0,7) node[above]{$y$};
+
+\end{tikzpicture}
+\end{center}
+
+\newpage
+
+
+
+
+\question The figure below shows the graph of
+$f'(x),$ the \textbf{derivative} of the function $f(x).$ Use the information on the graph to answer
+the following questions about $f(x).$
+
+
+\begin{center}
+\includegraphics[width=.55\textwidth]{fprimeok}
+
+\end{center}
+
+
+
+
+\begin{parts}
+\part[4] For what values of $x$ is the function $f$ increasing? Write your answer using interval
+notation.
+
+\vfill
+
+%\part[4] For what values of $x$ is the function $f$ decreasing? Write your answer using
+%interval notation.
+
+%\vfill
+
+
+
+
+%\part[4] For what values of $x$ is the function $f$ concave up? Write your ***answer using
+%interval notation.
+
+%\vfill
+
+\part[4] For what values of $x$ is the function $f$ concave down? Write your answer using
+interval notation.
+
+\vfill
+
+\part[2] At what value(s) of $x$ does the function $f$ have a local max?
+
+\vfill
+
+\end{parts}
+
+
+
+
+\newpage
+
+\question[10] Clearly mark the correct answer for each of the following by completely filling in
+the appropriate bubble. \textbf{No justification is needed.}
+
+\bigskip
+
+\begin{parts}
+
+
+
+
+\part If $f'(x) = 2$ everywhere and $f(2) = 4$, then $f(x) = 2x+2$.
+% this is false because it fails f(2)=4
+\begin{itemize}[label={}]
+\item \chooseone True
+\item \chooseone False
+\end{itemize}
+
+\vspace{.4in}
+
+\part There exists a differentiable function $f$ satisfying $f(1) = 3$, $f(3) = 9$, and $f'(x) \geq 4$
+everywhere.
+\begin{itemize}[label={}]
+\item \chooseone True
+\item \chooseone False
+\end{itemize}
+
+\vspace{.4in}
+
+\part If $f'(7)=0$ and $f''(7)>0$, then $f(x)$ has a local minimum at $x=7$.
+%[DA: I kind of like this. Not all my students are using the 2nd deriv. test.]
+% true
+\begin{itemize}[label={}]
+\item \chooseone True
+\item \chooseone False
+\end{itemize}
+
+\vspace{.4in}
+
+\part If $f''(x)$ is always equal to 4, then which of the following is true?
+\begin{itemize}[label={}]
+\item \chooseone $f(x)$ is always concave up.
+\item \chooseone $f(x)$ is always concave down.
+\item \chooseone $f(x)$ is neither concave up nor concave down.
+\item \chooseone We don't have enough information to determine concavity.
+\end{itemize}
+
+\vspace{.4in}
+
+\part If $f(x)$ is increasing, a Riemann sum using left endpoints will be an overestimate of the
+actual area under the curve.
+
+\begin{itemize}[label={}]
+\item \chooseone True
+\item \chooseone False
+\end{itemize}
+
+\end{parts}
+
+
+
+
+\end{questions}
+
+\end{document}
