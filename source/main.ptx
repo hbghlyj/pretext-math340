@@ -14,6 +14,8 @@
     </introduction>
 
     <!-- Include chapters -->
+    <xi:include href="./ch-2023-fall-exams.ptx"/>
     <xi:include href="./ch-2024-fall-exams.ptx"/>
+    <xi:include href="./ch-2025-spring-exams.ptx"/>
   </book>
 </pretext>

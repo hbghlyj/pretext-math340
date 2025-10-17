@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter xml:id="ch-2023-fall-exams" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>2023 Fall Exams</title>
+  <xi:include href="./ch-2023-fall-exams/Math221Fa23-FinalExam.ptx"/>
+  <xi:include href="./ch-2023-fall-exams/Math221Fa23-Midterm1.ptx"/>
+  <xi:include href="./ch-2023-fall-exams/Math221Fa23-Midterm2.ptx"/>
+</chapter>
