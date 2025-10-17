@@ -2,14 +2,11 @@
 <worksheet xml:id="Math221Fa24-FinalExam" xmlns:xi="http://www.w3.org/2001/XInclude">
 	<title>Math221Fa24-FinalExam</title>
 	<exercise>
-		<introduction>
-			<p>
-				Evaluate the limit, if it exists. If the limit does not exist, state whether it is <m>\infty,</m> <m>-\infty,</m> or neither, and fully explain its behavior. If you use a theorem (for example, the
-			</p>
-			<p>
-				Squeeze/Sandwich Theorem or L’Hopital’s Rule), clearly state which theorem you are using and why it applies.
-			</p>
-		</introduction>
+                <introduction>
+                        <p>
+                                Evaluate the limit, if it exists. If the limit does not exist, state whether it is <m>\infty,</m> <m>-\infty,</m> or neither, and fully explain its behavior. If you use a theorem (for example, the Squeeze/Sandwich Theorem or L’Hopital’s Rule), clearly state which theorem you are using and why it applies.
+                        </p>
+                </introduction>
 		<task>
 			<statement>
 				<p>
