@@ -1,2 +1,361 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="./Math221Fa23-Midterm1.tex" parse="text"/>
+<worksheet xml:id="Math221Fa23-Midterm1" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Math221Fa23-Midterm1</title>
+	<exercise>
+		<introduction>
+			<p>
+				Evaluate the limit, if it exists, and justify your answer. If the limit does not exist, state whether it is <m>\infty,</m> <m>-\infty,</m> or neither, and fully explain its behavior. You may NOT use L’Hopital’s Rule. If you use a theorem, clearly state which theorem you are using.
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					<m>\displaystyle\lim_{t\to 5} \dfrac {\sqrt{t+11}-4}{t-5}</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>\displaystyle\lim_{x \to 5^{-}} \dfrac{x+5}{|x-5|}</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>\displaystyle\lim_{x \to 0} \dfrac{\tan(4x)}{6x}</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Compute <m>\displaystyle\lim_{x \to -3 } f(x),</m> where <m>f(x) = \left\{
+											       \begin{array}{ll}
+											         x^2 - 2 &amp; \quad x &lt; -3 \\
+											          1 &amp; \quad x = -3 \\
+											           \dfrac{-x^2+x+12}{x+3} &amp; \quad x &gt; -3 \\
+											       \end{array}
+											   \right.</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>\displaystyle{\lim_{x \to 1}~ x^2\,{\cos\left(\frac{\pi}{x}\right)}}</m>
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Sketch the graph of a function <m>f(x)</m> with <term>all</term> of the given properties.
+			</p>
+			<p>
+				<alert>Notes:</alert> Be sure that your graph is well-labeled and that we can easily identify how your graph meets the requirements above. You are not trying to find an equation for <m>f(x)</m>, you are creating a graph with these characteristics.
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					<m>f</m> has a jump discontinuity at <m>x= -2</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>\displaystyle{\lim_{x\to -2^-} f(x) = 1}</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>f(1)=1</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>\displaystyle{\lim_{x\to 1} f(x) = 3}</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>\displaystyle{\lim_{x\to 4^{-}} f(x) = -\infty}</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>\displaystyle{\lim_{x\to 4^{+}} f(x) = +\infty}</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>f(x)</m> is continuous at all other <m>x</m>-values
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Compute the derivatives of the following functions. Use any method. Do not simplify your answer.
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					<m>f(t) = t^2 \tan(9t)</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>h(t) = \dfrac{\cos(t)+8}{t^2+1}</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>g(t) = \sec\left( \dfrac{2}{t+1} \right)</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>h(t)=\sin(\sqrt{3t^2 + 8t+6})</m>
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Let <m>f(x) = \dfrac{4}{x}</m>.
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					Use the LIMIT DEFINITION of the derivative to compute <m>f'(1).</m> No credit will be given if you do not use the limit definition of the derivative to compute it.
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Find the equation of the tangent line to the graph of <m>f</m> when <m>x =1.</m>
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Does the function <me>f(x) = 8x^5 - \cos(\pi x)</me> have a root in the interval <m>[0,1]</m>? Explain why or why not. If you use a theorem, clearly state which theorem you are using and why it applies.
+			</p>
+		</introduction>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				The position of a particle is given by <m>s(t) = \dfrac{1}{t+1} + 3t^2.</m>
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					Find the velocity of the particle, <m>v(t).</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Find the acceleration of the particle, <m>a(t).</m>
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Consider the function <m>g(x) = \left\{
+							    \begin{array}{ll}
+							       |x-3| &amp; \quad x \leq 2 \\
+							       \\
+							        x^2 - 3 &amp; \quad x &gt; 2 \\
+							    \end{array}
+							   \right.</m>    
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					Is the function continuous at <m>x = 2</m>? Make sure to justify your answer. Be careful to use correct limit notation.
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Is the function differentiable at <m>x = 2</m>? Make sure to justify your answer. Be careful to use correct limit notation.
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Clearly mark the correct answer for each of the following by completely filling in the appropriate bubble. <term>No justification is needed.</term>
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					For the function <m>f(x)</m> graphed below we have <m>\displaystyle{\lim_{x\to 2} f(x)=L}</m>. Given the value of <m>\varepsilon</m> marked in the graph, for which of these values of <m>\delta</m> is it true that if <m>0&lt;\vert x-2\vert&lt;\delta</m> then <m>\vert f(x)-L\vert&lt;\varepsilon</m>?
+				</p>
+				<p>
+					 
+				</p>
+			</statement>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								<m>\delta=1.5</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								<m>\delta=1.33</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								<m>\delta=0.5</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								None of the above.
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
+		<task>
+			<statement>
+				<p>
+					If <m>f</m> is a function such that <m>\displaystyle{\lim_{x \to a^-} f(x) = \lim_{x \to a^+} f(x)}</m>, then <m>f</m> is continuous at <m>x=a</m>.
+				</p>
+			</statement>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								True
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								False
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
+		<task>
+			<statement>
+				<p>
+					If <m>f(x) = \displaystyle{\frac{g(x)}{h(x)}}</m> and <m>h(7)=0,</m> then <m>f(x)</m> must have a vertical asymptote at <m>x=7</m>.
+				</p>
+			</statement>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								True
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								False
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
+		<task>
+			<statement>
+				<p>
+					If <m>H(x)</m> represents the number of people whose height is equal to <m>x</m> inches, the derivative <m>H'(x)</m> is measured in inches per year.
+				</p>
+			</statement>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								True
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								False
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
+		<task>
+			<statement>
+				<p>
+					If <m>f(3)=2</m> then <m>\displaystyle{\lim_{x\to3}f(x)=2}</m>.
+				</p>
+			</statement>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								True
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								False
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
+	</exercise>
+</worksheet>

@@ -1,2 +1,237 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="./Math221Sp25-Midterm1.tex" parse="text"/>
+<worksheet xml:id="Math221Sp25-Midterm1" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Math221Sp25-Midterm1</title>
+	<exercise>
+		<introduction>
+			<p>
+				Consider the function, <m>f</m>, whose graph is given below and answer the questions that follow.
+			</p>
+		</introduction>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Evaluate the limit, if it exists, and justify your answer. If the limit does not exist, state whether it is <m>+\infty,</m> <m>-\infty,</m> or neither, and fully explain its behavior. You may NOT use L’Hopital’s Rule. If you use a theorem, clearly state which theorem you are using and show your work.
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					<m>\displaystyle\lim_{x\to 1} \dfrac{\sqrt{x^2+1}}{4x-11}</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>\displaystyle\lim_{x\to 2} \dfrac {2x^2-3x-2}{x^3+4x^2-12x}</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>\displaystyle\lim_{x \to 0} \dfrac{\sin(x)\cos^2(x)}{4x}</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>\displaystyle \lim_{x \to -5^+} \dfrac{x+2}{x+5}</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>\displaystyle\lim_{x \to 3^+} \dfrac{x-3}{|3-x|}</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>\displaystyle\lim_{x \to 0} 5x^4 \cos \left( \dfrac{4}{x^2}\right)</m>
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Compute the derivatives, where they are defined, of the following functions. Use any method. Do not simplify your answer.
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					<m>f(t) = 6\sqrt{t}\cos(5t)</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>h(t) = \sec(t^3-1)</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>g(x) =\tan(x) + \sqrt{\dfrac{1}{x} + 4x^2}</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>f(x) = \dfrac{\sin^2(x)}{x^2+3}</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>h(x) = \dfrac{(x^2+1)^9(2x+4)}{x^3+4x}</m>
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Let <m>f(x) = \sqrt{3x}</m>.
+			</p>
+		</introduction>
+		<task workspace="5in">
+			<statement>
+				<p>
+					Use the LIMIT DEFINITION of the derivative to compute <m>f'(x).</m> No credit will be given if you do not use the limit definition of the derivative to compute it.
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Find an equation of the tangent line to the graph of <m>f</m> when <m>x =2.</m>
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Sketch the graph of a function <m>f(x)</m> with <term>all</term> of the given properties.
+			</p>
+			<p>
+				<alert>Notes:</alert> Be sure that your graph is well-labeled and that we can easily identify how your graph meets the requirements above. You are not trying to find an equation for <m>f(x)</m>, you are creating a graph with these characteristics. Please note that there are many correct solutions to this problem.
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					<m>f(-3) = -1</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>\displaystyle{\lim_{x\to -3} f(x) = 2}</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>\displaystyle{\lim_{x\to -1^{-}} f(x) = +\infty}</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>\displaystyle{\lim_{x\to -1^{+}} f(x) = -\infty}</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>f(2)=1</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>\displaystyle{\lim_{x\to 2^{-}} f(x) = 1}</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>\displaystyle{\lim_{x\to 2^{+}} f(x) = 3}</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>f(x)</m> is continuous at all other <m>x</m>-values
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				The position of a particle is given by <m>s(t) = \sqrt{t^2+4t+4}.</m>
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					Find the velocity of the particle at time <m>t=1,</m> that is, <m>v(1).</m> Remember that you don’t need to simplify your answers.
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Find the acceleration of the particle at time <m>t=1,</m> that is, <m>a(1).</m> Remember that you don’t need to simplify your answers.
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Find the values of <m>a</m> for which the function
+			</p>
+			<p>
+				<me>f(x) = \left\{
+							      \begin{array}{ll}
+							         2x^2 -4a &amp; \quad x \le -1 \\
+							        4x+2 &amp; \quad x&gt;-1 \\
+							        %3bx-2 &amp; \quad x \ge 2 \\
+							      \end{array}
+							  \right.</me>
+			</p>
+			<p>
+				is continuous for all <m>x.</m> Show your work, making sure to use correct limit notation.
+			</p>
+		</introduction>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Does the function <me>f(x) = 3\sin(\pi x) - 2x^2</me> have a root in the interval <m>[1/2 , 1
+							]</m>? That is, is there a point on the interval <m>[1/2,1]</m> where <m>f(x)=0</m>? Explain why or why not. If you use a theorem, clearly state which theorem you are using and why it applies.
+			</p>
+		</introduction>
+	</exercise>
+</worksheet>

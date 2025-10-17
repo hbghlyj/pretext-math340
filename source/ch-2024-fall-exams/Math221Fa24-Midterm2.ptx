@@ -1,2 +1,231 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="./Math221Fa24-Midterm2.tex" parse="text"/>
+<worksheet xml:id="Math221Fa24-Midterm2" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Math221Fa24-Midterm2</title>
+	<exercise>
+		<introduction>
+			<p>
+				Compute the following definite integrals. Remember that you do not need to simplify your answer arithmetically.
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					<m>\displaystyle\int_1^{2} (2x+1)\left( 3-x\right) dx</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>\displaystyle\int_{0}^{\pi/2} \left( 4\sin(x) -3\cos(x) - 5\pi \, \right)\, dx</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>\displaystyle \int_{1}^6 \frac{6u^3 - 3u + 5u^4}{ u \sqrt{u}} \, du</m>
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Find the slope of the tangent line to the curve <m>x^2y^4 + y^2 = (2x-3y)^4 +4</m> at the point <m>(2,1).</m> Remember that you do not need to simplify your answer arithmetically.
+			</p>
+		</introduction>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				An object is moving with an acceleration of <m>a(t) = 2t^3 -\sqrt{t}.</m> If its initial velocity is <m>v(0) = 2,</m> find its velocity, <m>v(t).</m>
+			</p>
+		</introduction>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Find the largest rectangle (that is, the rectangle with largest area) that fits inside the graph of the parabola <m>y=x^2</m> below the line <m>y=6,</m> with the top side of the rectangle on the horizontal line <m>y=6.</m> The image below shows an example of such a rectangle, though not necessarily the largest one.
+			</p>
+		</introduction>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Find all the vertical, horizontal, and slant asymptotes of the following functions, if any. Make sure to justify your answers for any horizontal or slant asymptotes. No justification is required for vertical asymptotes.
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					<m>f(x) = \dfrac{x^2-2x-3}{x^2+x-12}</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>g(x) = \dfrac{3x^4+x^3-8x^2+1}{x^3+x^2 -2x}</m>
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				A balloon rises straight up at a rate of change of 3 m/s from a point on the ground 30 meters from an observer. Find the rate of change of the angle of elevation of the balloon from the observer when the balloon is 40m above the ground.
+			</p>
+		</introduction>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Sketch a graph of a function <m>f(x)</m> that has the following properties:
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					<m>f(-1)=2</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>\displaystyle\lim_{x\to -3^{-}}f(x) = +\infty,</m> <m>\displaystyle\lim_{x\to -3^{+}}f(x) = +\infty</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>\displaystyle\lim_{x\to 2^{-}}f(x) = -\infty,</m> <m>\displaystyle\lim_{x\to 2^{+}}f(x) = -\infty</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>\displaystyle\lim_{x\to -\infty} f(x) = 0,</m> <m>\displaystyle\lim_{x\to +\infty}f(x) = 3</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>f'(x)&gt;0</m> when <m>-\infty&lt;x&lt;-3</m> and <m>2&lt;x&lt;\infty</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>f'(x)&lt;0</m> when <m>-3&lt;x&lt;2</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>f''(x)&gt;0</m> when <m>-\infty&lt;x&lt;-3</m> and <m>-3&lt;x&lt;-1</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>f''(x)&lt;0</m> when <m>-1&lt;x&lt;2</m> and <m>2&lt;x&lt;\infty</m>
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Consider the function <m>y = x^2 + 1.</m>
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					Approximate the area under the graph of <m>y = x^2+1</m> and above the <m>x</m>-axis with <m>0
+											\le x\le 6</m> by using 3 rectangles (of equal width) with right end points. Remember that you don’t need to simplify your answer.
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Multiple Choice. Fully fill in the circle. The approximation in part (a) is:
+				</p>
+			</statement>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								an underestimate of the area under the graph
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								an overestimate of the area under the graph
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								equal to the area under the graph
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								it cannot be determined with the information provided whether the approximation is an underestimate, an overestimate, or equal to the area under the graph.
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Write down a definite integral that represents the area under the graph of <m>y = x^2+1</m> and above the <m>x</m>-axis with <m>0 \le x\le 6.</m> You do not need to compute the integral.
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Consider the function <m>f(x) = \dfrac{1}{3}x^3- 3x^2+4.</m>
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					In which intervals of <m>x</m> is the function increasing? Decreasing?
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Find the <m>x</m>-coordinate of all local maxima or minima of the function. Make sure to specify for each point if it is a maximum or a minimum.
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					In which intervals of <m>x</m> is the function concave up? Concave down?
+				</p>
+			</statement>
+		</task>
+	</exercise>
+</worksheet>

@@ -1,2 +1,426 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="./Math221Fa24-Midterm1.tex" parse="text"/>
+<worksheet xml:id="Math221Fa24-Midterm1" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Math221Fa24-Midterm1</title>
+	<exercise>
+		<introduction>
+			<p>
+				Evaluate the limit, if it exists, and justify your answer. If the limit does not exist, state whether it is <m>+\infty,</m> <m>-\infty,</m> or neither, and fully explain its behavior. You may NOT use L’Hopital’s Rule. If you use a theorem, clearly state which theorem you are using.
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					<m>\displaystyle\lim_{x\to 0} \dfrac {x^3+x^2-6x}{x^2+5x}</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>\displaystyle\lim_{h \to 0} \dfrac{\sin(\pi+h) - \sin(\pi)}{h}</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					this problem is removed.
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>\displaystyle\lim_{x\to 3} \dfrac {\dfrac{1}{x} - \dfrac{1}{3}}{6-2x}</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>\displaystyle\lim_{x \to 0} \left( \dfrac{1}{x} - \dfrac{2}{x^2+2x} \right)</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>\displaystyle\lim_{x \to -3 } f(x),</m> where <m>f(x) = \left\{
+											      \begin{array}{ll}
+											          2x^2 -x-6 &amp; \quad x &lt; -3 \\
+											         9 &amp; \quad x = 3 \\
+											         15 &amp; \quad x &gt; -3 \\
+											       \end{array}
+											   \right.</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>\displaystyle\lim_{x \to 2}\dfrac{|x-2| }{4x-8}</m>
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Compute the derivatives, where they are defined, of the following functions. Use any method. Do not simplify your answer.
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					<m>f(t) = \sqrt{t^2+3t}</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>h(t) = t^2 \sec(t) \sin(t)</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>g(t) = \dfrac{\tan(t)}{4t^3+2t}</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>f(t) = \cos\left( \dfrac{1}{t} + \pi t\right)</m>
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Sketch the graph of a function <m>f(x)</m> with <term>all</term> of the given properties.
+			</p>
+			<p>
+				<alert>Notes:</alert> Be sure that your graph is well-labeled and that we can easily identify how your graph meets the requirements above. You are not trying to find an equation for <m>f(x)</m>, you are creating a graph with these characteristics. Please note that there are many correct solutions to this problem.
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					<m>\displaystyle{\lim_{x\to 2} f(x) = 4}</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>f(2) = -3</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>\displaystyle{\lim_{x\to -1^{+}} f(x) = 2}</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>\displaystyle{\lim_{x\to -1^{-}} f(x) = -1}</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>f(-1)=2</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>\displaystyle{\lim_{x\to 4^{-}} f(x) = +\infty}</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>\displaystyle{\lim_{x\to 4^{+}} f(x) = -\infty}</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>f(x)</m> is continuous at all other <m>x</m>-values
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Please fill in the circle that corresponds to the correct answer. Please make sure the circle is completely filled in.
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					A function <m>g(x)= |x-3|</m> when <m>x\leq 3</m>. Find a true statement (choose one).
+				</p>
+			</statement>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								If <m>g(x)=\tan (x-3)</m> when <m>x&gt;3</m> then <m>g</m> is a continuous function.
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								If <m>g(x)=x^2 - 2x -3</m> when <m>x&gt;3</m> then <m>g</m> is not a continuous function.
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								If <m>g(x)=\frac{1}{x-2}-1</m> when <m>x&gt;3</m> then <m>g</m> is a continuous function.
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								There is no true statement among above three
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Consider a function <m>f(x) = \left\{
+											     \begin{array}{ll}
+											       \dfrac{3-x}{2} &amp; \quad x \leq -1, \\
+											       \\
+											       \sqrt{x^2 +3} &amp; \quad x &gt; -1. \\
+											   \end{array}
+											  \right.</m>
+				</p>
+				<p>
+					(b-1) Find a true statement (choose one) for the following right-hand limit <me>\lim_{h \rightarrow
+											0^+} \frac{f(x+ h)- f(x)}{h}.</me>
+				</p>
+				<p>
+					(b-2) Find a true statement (choose one) for the following left-hand limit <me>\lim_{h \rightarrow
+											0^-} \frac{f(x+ h)- f(x)}{h}.</me>
+				</p>
+				<p>
+					(b-3) Find a true statement for <m>f(x)</m> (choose one).
+				</p>
+			</statement>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								Continuous at <m>x =-1</m>, but not differentiable at <m>x =-1.</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								Differentiable at <m>x =-1</m>, but not continuous at <m>x =-1.</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								Both continuous and differentiable at <m>x =-1.</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								Neither continuous nor differentiable at <m>x =-1.</m>
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Consider the function
+			</p>
+			<p>
+				<me>f(x) = \left\{
+							     \begin{array}{ll}
+							        \dfrac{x^2-2x-3}{x^2+3x+2} &amp; \quad x \neq -1, 0 \\
+							        \\
+							         -4 &amp; \quad x = -1, 0 \\
+							      \end{array}
+							  \right.</me>
+			</p>
+			<p>
+				For each of the following values of <m>x</m>, decide if the function is continuous or not. If the function is not continuous, identify the discontinuities as jump, removable, infinite or other. The definitions of jump, removable and infinite discontinuities are provided below.
+			</p>
+			<p>
+				Make sure to justify your answers.
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					A function <m>f</m> has a <term>jump discontinuity</term> at a point <m>a</m> if <m>\displaystyle\lim_{x\to a^-}
+											f(x)</m> and <m>\displaystyle\lim_{x \to a^+}f(x)</m> both exist, but <m>\displaystyle\lim_{x \to a^-}f(x) \neq
+											\displaystyle\lim_{x \to a^+}f(x).</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					A function <m>f</m> has a <term>removable discontinuity</term> at a point <m>a</m> if <m>\displaystyle\lim_{x \to
+											a}f(x)</m> exists, but <m>\displaystyle\lim_{x \to a}f(x) \neq f(a).</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					A function <m>f</m> has an <term>infinite discontinuity</term> at a point <m>a</m> if the function has a vertical asymptote at <m>x=a.</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>x = -1</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>x=0</m>
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Let <m>f(x) = \dfrac{1}{2x}</m>.
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					Use the LIMIT DEFINITION of the derivative to compute <m>f'(1).</m> No credit will be given if you do not use the limit definition of the derivative to compute it.
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Find an equation of the tangent line to the graph of <m>f</m> when <m>x =1.</m>
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Consider the functions <me>f(x) = x+2,</me> <me>g(x) = \dfrac{(x+2)(x-1)}{(x-1)},</me> and <me>h(x)
+							=
+							 \begin{cases} \dfrac{(x+2)(x-1)}{(x-1)} &amp; \text{if } x \neq 1 \\ -3 &amp; \text{if } x =1 \end{cases}</me>
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					Sketch the graph of <m>f(x) = x+2</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Compute, if it exists, <m>\displaystyle\lim_{x \to 1} f(x)</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Sketch the graph of <m>g(x)= \dfrac{(x+2)(x-1)}{(x-1)}</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Compute, if it exists, <m>\displaystyle\lim_{x \to 1} g(x)</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Sketch the graph of <m>h(x) =
+											 \begin{cases} \dfrac{(x+2)(x-1)}{(x-1)} &amp; \text{if } x \neq 1 \\ -3 &amp; \text{if } x =1 \end{cases}</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Compute, if it exists, <m>\displaystyle\lim_{x \to 1} h(x)</m>
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				The position of a particle is given by <m>s(t) = \dfrac{1}{(t+1)^2}+\sqrt{t}.</m>
+			</p>
+		</introduction>
+		<task workspace="5in">
+			<statement>
+				<p>
+					Find the velocity of the particle at time <m>t=4,</m> that is, <m>v(4).</m> Remember that you don’t need to simplify your answers.
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Find the acceleration of the particle at time <m>t=4,</m> that is, <m>a(4).</m> Remember that you don’t need to simplify your answers.
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Does the function <me>f(x) = 5\cos(\pi x) + 2x</me> have a root in the interval <m>[0 , 1 ]</m>? That is, is there a point on the interval <m>[0,1]</m> where <m>f(x)=0</m>? Explain why or why not. If you use a theorem, clearly state which theorem you are using and why it applies.
+			</p>
+		</introduction>
+	</exercise>
+</worksheet>

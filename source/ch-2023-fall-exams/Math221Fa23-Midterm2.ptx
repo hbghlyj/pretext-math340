@@ -1,2 +1,272 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="./Math221Fa23-Midterm2.tex" parse="text"/>
+<worksheet xml:id="Math221Fa23-Midterm2" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Math221Fa23-Midterm2</title>
+	<exercise>
+		<introduction>
+			<p>
+				Compute the following definite integrals.
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					<m>\displaystyle\int_1^{3} \left(3x^4 + \dfrac{2}{x^3} +\sqrt{x} + \cos(x) \, \right)\, dx</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>\displaystyle \int_{0}^1 (t^6+4)(3t-2) \, dt</m>
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Find the antiderivative <m>F</m> of the function <m>f(x) = 3x^2+ \sin(x)</m> that satisfies the condition <m>F(0) = 6.</m>
+			</p>
+		</introduction>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Find all the vertical, horizontal, and slant asymptotes of
+			</p>
+			<p>
+				<me>f(x) = \dfrac{x^3 + 2x^2}{x^2-4},</me>
+			</p>
+			<p>
+				if any. Justify your answers for each asymptote.
+			</p>
+		</introduction>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Find the slope of the tangent line to the curve <m>2xy + x^2 = y^2 +7</m> at the point <m>(2,3).</m>
+			</p>
+		</introduction>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Sally is standing at the top of an 40-foot-tall lighthouse, and pulling a rope which is attached to a boat in the water below. She pulls the rope at a constant rate of 5 feet per second, causing the boat to move closer to the lighthouse. How fast is the angle between the rope and the water changing at the moment when the boat is 30 feet away (horizontally) from the lighthouse?
+			</p>
+		</introduction>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Find the absolute maximum and absolute minimum of <m>f(x) = 2x^3+3x^2-12x</m> on the interval <m>[-1, 2]</m>. Write your final answer listing both the <m>x</m> and <m>y</m> coordinates of the points.
+			</p>
+		</introduction>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				A rectangular box with an open top and a volume of 36 cubic inches is to be constructed. The base is twice as long as it is wide. What should the dimensions of the box be to minimize the surface area of the box?
+			</p>
+		</introduction>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Sketch a graph of a function <m>f(x)</m> that has the following properties:
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					<m>f(-1)=-1,</m> <m>f(4) = 2</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>\displaystyle\lim_{x\to 1^{-}}f(x) = \infty,</m> <m>\displaystyle\lim_{x\to 1^{+}}f(x) = -\infty</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>\displaystyle\lim_{x\to -\infty} f(x) = 1,</m> <m>\displaystyle\lim_{x\to \infty}f(x) = -\infty</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>f'(x)&gt;0</m> when <m>-1&lt;x&lt;1</m> and <m>1&lt;x&lt;4</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>f'(x)&lt;0</m> when <m>-\infty&lt;x&lt;-1</m> and <m>4&lt;x&lt;\infty</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>f''(x)&gt;0</m> when <m>-3&lt;x&lt;1</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>f''(x)&lt;0</m> when <m>-\infty&lt;x&lt;-3</m> and <m>1&lt;x&lt;\infty</m>
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				The figure below shows the graph of <m>f'(x),</m> the <term>derivative</term> of the function <m>f(x).</m> Use the information on the graph to answer the following questions about <m>f(x).</m>
+			</p>
+		</introduction>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Clearly mark the correct answer for each of the following by completely filling in the appropriate bubble. <term>No justification is needed.</term>
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					If <m>f'(x) = 2</m> everywhere and <m>f(2) = 4</m>, then <m>f(x) = 2x+2</m>.
+				</p>
+			</statement>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								True
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								False
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
+		<task>
+			<statement>
+				<p>
+					There exists a differentiable function <m>f</m> satisfying <m>f(1) = 3</m>, <m>f(3) = 9</m>, and <m>f'(x) \geq 4</m> everywhere.
+				</p>
+			</statement>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								True
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								False
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
+		<task>
+			<statement>
+				<p>
+					If <m>f'(7)=0</m> and <m>f''(7)&gt;0</m>, then <m>f(x)</m> has a local minimum at <m>x=7</m>.
+				</p>
+			</statement>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								True
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								False
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
+		<task>
+			<statement>
+				<p>
+					If <m>f''(x)</m> is always equal to 4, then which of the following is true?
+				</p>
+			</statement>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								<m>f(x)</m> is always concave up.
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								<m>f(x)</m> is always concave down.
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								<m>f(x)</m> is neither concave up nor concave down.
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								We don’t have enough information to determine concavity.
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
+		<task>
+			<statement>
+				<p>
+					If <m>f(x)</m> is increasing, a Riemann sum using left endpoints will be an overestimate of the actual area under the curve.
+				</p>
+			</statement>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								True
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								False
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
+	</exercise>
+</worksheet>
