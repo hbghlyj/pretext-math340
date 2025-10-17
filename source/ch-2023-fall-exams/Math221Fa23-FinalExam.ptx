@@ -134,16 +134,13 @@
 			</statement>
 		</task>
 	</exercise>
-	<exercise>
-		<introduction>
-			<p>
-				A road running north to south crosses a road going east to west at the point <m>P.</m> Car A is driving north along the first road, and car B is driving east along the second road. At a particular time car A is 10 kilometers to the north of <m>P</m> and traveling at 80 km/hr, while car B is
-			</p>
-			<p>
-				15 kilometers to the east of <m>P</m> and traveling at 100 km/hr. How fast is the distance between the two cars changing at that time? Make sure to include units in your final answer.
-			</p>
-		</introduction>
-	</exercise>
+		<exercise>
+			<introduction>
+				<p>
+					A road running north to south crosses a road going east to west at the point <m>P.</m> Car A is driving north along the first road, and car B is driving east along the second road. At a particular time car A is 10 kilometers to the north of <m>P</m> and traveling at 80 km/hr, while car B is 15 kilometers to the east of <m>P</m> and traveling at 100 km/hr. How fast is the distance between the two cars changing at that time? Make sure to include units in your final answer.
+				</p>
+			</introduction>
+		</exercise>
 	<exercise>
 		<introduction>
 			<p>
