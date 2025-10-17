@@ -1,0 +1,287 @@
+\documentclass[addpoints,12pt]{exam}
+\newcommand{\ds}{\displaystyle}
+\usepackage[margin=0.8in]{geometry}
+\usepackage{subcaption}
+\usepackage{tikz}
+\usepackage{amssymb,amsmath,graphicx,wrapfig,verbatim,wasysym, enumitem,psfragx,color}
+\usepackage{multicol}
+
+%\usepackage{fancyhdr}
+%\setlength{\headheight}{13.6pt}
+%\pagestyle{fancy}
+%\lhead{Math 222}
+%\chead{ Midterm 1 }
+%\rhead{Spring 2022}
+
+\def\FillInBlank{\rule{3truein} {.01truein}}
+
+% Choose one option (bubbles)
+\newcommand{\chooseone}{{\Large$\Circle$\ \ }}
+
+
+\newcommand{\myleft}{\makebox[.4\textwidth]{First Name:\enspace\hrulefill}}
+\newcommand{\myright}{\makebox[.4\textwidth]{Last Name:\enspace\hrulefill}}
+\header{\oddeven{\myleft}{}}
+    {}
+    {\oddeven{\myright}{}}
+
+\footrule
+
+\footer{Math 221}
+     {Midterm 2 - Fall 2024}
+     {Page \thepage\ of \numpages}
+
+\begin{document}
+
+\begin{questions}
+
+
+
+
+ \question Compute the following definite integrals. Remember that you do not need to simplify
+your answer arithmetically.
+
+\begin{parts}
+
+
+
+
+\part[6] $\displaystyle\int_1^{2} (2x+1)\left( 3-x\right) dx$
+
+\vfill
+
+\part[5] $\displaystyle\int_{0}^{\pi/2} \left( 4\sin(x) -3\cos(x) - 5\pi \, \right)\, dx$
+
+\vfill
+
+\part[6] $\displaystyle \int_{1}^6 \frac{6u^3 - 3u + 5u^4}{ u \sqrt{u}} \, du$
+
+
+
+
+\vfill
+
+\end{parts}
+
+\newpage
+
+
+\vfill
+
+\question[10] Find the slope of the tangent line to the curve $x^2y^4 + y^2 = (2x-3y)^4 +4 $ at
+the point $(2,1).$ Remember that you do not need to simplify your answer arithmetically.
+
+\newpage
+
+
+
+
+\question[6] An object is moving with an acceleration of $a(t) = 2t^3 -\sqrt{t}.$ If its initial velocity
+is $v(0) = 2,$ find its velocity, $v(t).$
+
+
+
+
+%Find the antiderivative $F$ of the function $f(x) = 4x+ \dfrac{1}{x^3}$ that satisfies the
+%condition $F(1) = 3.$
+
+\vfill
+
+\newpage
+
+\question Find the largest rectangle (that is, the rectangle with largest area) that fits inside the
+graph of the parabola $y=x^2$ below the line $y=6,$ with the top side of the rectangle on the
+horizontal line $y=6.$ The image below shows an example of such a rectangle, though not
+necessarily the largest one.
+
+\includegraphics[width=0.3\textwidth]{221fig1}
+
+\begin{parts}
+\part[2] Write down the width (horizontal dimension) and length (vertical dimension) of the
+rectangle in terms of $x.$
+\vfill
+\part[2] Write down the function that you are optimizing as a function of $x.$ \vfill
+\part[8] Find the dimensions of the largest rectangle.
+\vfill
+\vfill
+\vfill
+\vfill
+
+\end{parts}
+
+\newpage
+
+
+
+
+\question Find all the vertical, horizontal, and slant asymptotes of the following functions, if any.
+Make sure to justify your answers for any horizontal or slant asymptotes. No justification is
+required for vertical asymptotes.
+
+\begin{parts}
+
+\part[5] $f(x) = \dfrac{x^2-2x-3}{x^2+x-12}$
+
+\vfill
+
+\part[7] $g(x) = \dfrac{3x^4+x^3-8x^2+1}{x^3+x^2 -2x}$
+
+
+
+
+\vfill
+
+\end{parts}
+
+
+\newpage
+
+ \question[12] A balloon rises straight up at a rate of change of 3 m/s from a point on the ground
+30 meters from an observer. Find the rate of change of the angle of elevation of the balloon from
+the observer when the balloon is 40m above the ground.
+
+\includegraphics[width=0.3\textwidth, angle =4]{Fig6}
+
+% Taken from https://www.youtube.com/watch?v=YGl2bXAGrfk
+
+\newpage
+
+\question[10] Sketch a graph of a function $f(x)$ that has the following properties:
+
+\begin{itemize}
+\item $f(-1)=2$
+\item $\displaystyle\lim_{x\to -3^{-}}f(x) = +\infty,$ $\displaystyle\lim_{x\to -3^{+}}f(x) = +\infty$
+\item $\displaystyle\lim_{x\to 2^{-}}f(x) = -\infty,$ $\displaystyle\lim_{x\to 2^{+}}f(x) = -\infty$
+\item $\displaystyle\lim_{x\to -\infty} f(x) = 0,$ $\displaystyle\lim_{x\to +\infty}f(x) = 3$
+\item $f'(x)>0$ when $-\infty<x<-3$ and $2<x<\infty$
+\item $f'(x)<0$ when $-3<x<2$
+\item $f''(x)>0$ when $-\infty<x<-3$ and $-3<x<-1$
+\item $f''(x)<0$ when $-1<x<2$ and $2<x<\infty$
+
+\end{itemize}
+
+
+\begin{center}
+
+\begin{tikzpicture}
+\draw[help lines, color=gray!30, dashed] (-7.9,-7.9) grid (7.9,7.9);
+\draw[->,ultra thick] (-8,0)--(8,0) node[right]{$x$};
+\draw[->,ultra thick] (0,-8)--(0,8) node[above]{$y$};
+
+\end{tikzpicture}
+\end{center}
+
+\newpage
+
+\question Consider the function $y = x^2 + 1.$
+
+\begin{parts}
+
+ \part[4] Approximate the area under the graph of $y = x^2+1$ and above the $x$-axis with $0
+\le x\le 6$ by using 3 rectangles (of equal width) with right end points. Remember that you don't
+need to simplify your answer.
+
+\vfill
+
+\part[2] Multiple Choice. Fully fill in the circle. The approximation in part (a) is:
+
+\bigskip
+
+
+ \begin{itemize}[label={}]
+\item \chooseone an underestimate of the area under the graph
+\item \chooseone an overestimate of the area under the graph
+\item \chooseone equal to the area under the graph
+\item \chooseone it cannot be determined with the information provided whether the
+approximation is an underestimate, an overestimate, or equal to the area under the graph.
+\end{itemize}
+
+
+
+
+\bigskip
+
+\part[4] Write down a definite integral that represents the area under the graph of $y = x^2+1$
+and above the $x$-axis with $0 \le x\le 6. $ You do not need to compute the integral.
+
+\vfill
+
+
+\end{parts}
+
+\newpage
+
+
+\question Consider the function $f(x) = \dfrac{1}{3}x^3- 3x^2+4. $
+
+\begin{parts}
+
+\part[4] In which intervals of $x$ is the function increasing? Decreasing?
+\vfill
+\vfill
+
+
+\part[3] Find the $x$-coordinate of all local maxima or minima of the function. Make sure to
+specify for each point if it is a maximum or a minimum.
+
+\vfill
+
+\part[4] In which intervals of $x$ is the function concave up? Concave down?
+\vfill
+
+\vfill
+
+\end{parts}
+
+\newpage
+
+
+
+
+%$f(x) = \dfrac{x^3 + 2x^2}{x^2-4}$
+
+
+
+
+%\newpage
+
+%\question Compute the following limits.
+
+%\begin{parts}
+
+%\part[4] $\displaystyle\lim_{x \to \infty} \sqrt{x^2+x} + x$
+
+%\vfill
+
+%\part[4] $\displaystyle\lim_{x \to -\infty} \sqrt{x^2+x} + x$
+
+%\vfill
+
+%\end{parts}
+
+
+\newpage
+
+%\newpage
+
+%\question[10] Clearly mark the correct answer for each of the following by completely filling in
+%the appropriate bubble. \textbf{No justification is needed.}
+
+%\bigskip
+
+%\begin{parts}
+%\part If $f'(x) = 2$ everywhere and $f(2) = 4$, then $f(x) = 2x+2$.
+% this is false because it fails f(2)=4
+%\begin{itemize}[label={}]
+%\item \chooseone True
+%\item \chooseone False
+%\end{itemize}
+
+%\vspace{.4in}
+
+
+%\end{parts}
+
+\end{questions}
+
+\end{document}

@@ -1,0 +1,401 @@
+\documentclass[addpoints,12pt]{exam}
+\newcommand{\ds}{\displaystyle}
+\usepackage[margin=0.8in]{geometry}
+\usepackage{subcaption}
+\usepackage{tikz}
+\usepackage{amssymb,amsmath,graphicx,wrapfig,verbatim,wasysym, enumitem,psfragx,color}
+\usepackage{multicol}
+
+%\usepackage{fancyhdr}
+%\setlength{\headheight}{13.6pt}
+%\pagestyle{fancy}
+%\lhead{Math 222}
+%\chead{ Midterm 1 }
+
+%\rhead{Spring 2022}
+
+\def\FillInBlank{\rule{3truein} {.01truein}}
+
+% Choose one option (bubbles)
+\newcommand{\chooseone}{{\Large$\Circle$\ \ }}
+
+
+\newcommand{\myleft}{\makebox[.4\textwidth]{First Name:\enspace\hrulefill}}
+\newcommand{\myright}{\makebox[.4\textwidth]{Last Name:\enspace\hrulefill}}
+\header{\oddeven{\myleft}{}}
+    {}
+    {\oddeven{\myright}{}}
+
+\footrule
+
+\footer{Math 221}
+     {Midterm 1 - Spring 2024}
+     {Page \thepage\ of \numpages}
+
+\begin{document}
+
+\begin{questions}
+
+
+
+
+\question Evaluate the limit, if it exists, and justify your answer. If the limit does not exist, state
+whether it is $+\infty,$ $-\infty,$ or neither, and fully explain its behavior. You may NOT use
+L'Hopital's Rule. If you use a theorem, clearly state which theorem you are using.
+
+\begin{parts}
+
+\part[4] $\displaystyle\lim_{x\to -1} \dfrac {x^2-3x-4}{2x^2-2}$
+
+\vfill
+
+
+
+
+ \part[4] $\displaystyle\lim_{x \to 0} x^6 \sin\left(\dfrac{4}{x^3}\right)$
+
+\vfill
+
+\part[4] $\displaystyle\lim_{x \to -4} \dfrac{4-|x|}{4+x}$
+
+\vfill
+
+\part[4] $\displaystyle\lim_{x\to 0} \dfrac {\sin(4x)}{\sin(6x)}$
+
+\vfill
+
+\newpage
+
+\part[4] Compute $ \displaystyle\lim_{x \to 4 } f(x),$ where
+$ f(x) = \left\{
+       \begin{array}{ll}
+         \dfrac{x^2-3x-4}{x-4} & \quad x < 4 \\
+          5 & \quad x = 4 \\
+           x^2 -2x+5 & \quad x > 4 \\
+       \end{array}
+   \right. $
+
+\vfill
+
+
+
+
+%\part[4] $\displaystyle\lim_{t \to 0} t^8 \cos\left(\dfrac{6+t^4}{t^2+t}\right)$
+
+\part[4] $\displaystyle\lim_{x \to -3^{-}} \dfrac{x \cos^2(\pi x) }{x+3}$
+
+\vfill
+
+
+\part[5] $\displaystyle\lim_{x \to 3} \left(\dfrac{3x }{x-3} + \dfrac{ 18}{6-2x} \right)$
+%$\displaystyle{\lim_{x \to 2}~ \frac{x-1}{x^2-1}}$
+
+\vfill
+
+
+\end{parts}
+
+\newpage
+
+\question[7]
+
+Is there a number $a$ such that
+
+$$\lim_{x \to 3} \dfrac{2x^2 +2x-ax-a}{x^2-x-6}$$
+
+exists? If so, find the value of $a$ and the value of the limit. If not, explain why.
+
+\newpage
+
+
+
+
+%Use the limit definition of the derivative to compute $f'(0).$
+
+%\bigskip
+
+%Note: you will not receive any credit for this part of the question if you do not use the limit
+%definition of the derivative to compute the answer.
+
+%\vfill
+
+%\item Find the equation of the line tangent to the curve $y=f(x)$ at $x = 0.$
+
+%\vfill
+
+%\end{enumerate}
+
+\newpage
+
+
+
+
+\question Compute the derivatives of the following functions. Use any method. Do not simplify
+your answer.
+
+\begin{parts}
+\part[6] $f(t) = \cos\left(t^3 +\dfrac{2}{t}\right)$
+%$ f(x) = \cos(4t)\sin(3t)$
+
+\vfill
+
+\part[6] $ h(t) = \dfrac{\sin(t) }{2t^4+6}$
+\vfill
+
+
+
+
+\newpage
+
+
+\part[6] $g(t) = t\tan(t) +\sec(t)$
+
+\vfill
+
+\part[6] $h(t)=\sqrt{t^2 \cos(t)} $
+%Old version$ h(x) =\sqrt{\sec(t)} $
+
+\vfill
+
+\end{parts}
+
+\newpage
+
+
+\question Consider the function $f(x) = \left\{
+    \begin{array}{ll}
+      x^2+2x & \quad x \leq 1 \\
+       \\
+
+       2x^2 + 1 & \quad x > 1 \\
+    \end{array}
+
+   \right. $ \,\,\,
+
+
+
+
+\begin{parts}
+\part[7] Is the function continuous at $x = 1$? Make sure to justify your answer. Be careful to
+use correct limit notation.
+
+\vfill
+
+\part[7] Is the function differentiable at $x = 1$? Make sure to justify your answer. Be careful to
+use correct limit notation.
+
+
+
+
+  \vfill
+\end{parts}
+
+
+
+
+\newpage
+
+
+
+
+\question Let $f(x) = 4x^2+1$.
+
+
+
+
+\begin{parts}
+\part[7] Use the LIMIT DEFINITION of the derivative to compute $f'(-1).$ No credit will be given
+if you do not use the limit definition of the derivative to compute it.
+
+\vspace{5in}
+
+\part[3] Find the equation of the tangent line to the graph of $f$ when $x =-1.$
+
+\vfill
+\end{parts}
+
+\newpage
+
+%\question[10] Find the equation of the tangent line to the implicitly-defined curve $$\sqrt{x+y}
+%+15 = x^2y+8y^2$$
+%at the point \(\ds\left(3 ,1 \right)\).
+
+%\newpage
+
+\question[10] Sketch the graph of a function $f(x)$ with \textbf{all} of the given properties.
+
+\begin{itemize}
+\item $\displaystyle{\lim_{x\to -3^{-}} f(x) = -1}$
+\item $f(-3)=4$
+\item $f$ has a removable discontinuity at $x=-3$
+\item $\displaystyle{\lim_{x\to 2^{-}} f(x) = +\infty}$
+\item $\displaystyle{\lim_{x\to 2^{+}} f(x) = +\infty}$
+\item $f$ has a jump discontinuity at $x= 4$
+\item $f(4)=2$
+\item $f(x)$ is continuous at all other $x$-values
+\end{itemize}
+
+
+
+
+\noindent\textsc{Notes:} Be sure that your graph is well-labeled and that we can easily identify
+how your graph meets the requirements above. You are not trying to find an equation for $f(x)$,
+you are creating a graph with these characteristics.
+
+\begin{center}
+
+\begin{tikzpicture}
+\draw[help lines, color=gray!30, dashed] (-5.9,-5.9) grid (5.9,5.9);
+\draw[->,ultra thick] (-6,0)--(6,0) node[right]{$x$};
+\draw[->,ultra thick] (0,-6)--(0,6) node[above]{$y$};
+
+\end{tikzpicture}
+\end{center}
+%$\displaystyle\lim_{x \to -3^{+}} \dfrac{x^2+5x+6}{|x-3|}$
+
+
+%\item $\displaystyle\lim_{t \to 2} \dfrac{\sqrt{4t+1}-3}{2t-4}$
+
+\vfill
+
+\newpage
+
+\question[6] Does the function $$f(x) = -x + \sqrt{x + 6} +2 $$ have a root in the interval $[3 , 10
+]$? Explain why or why not. If you use a theorem, clearly state which theorem you are using and
+why it applies.
+
+
+\newpage
+
+%\question Consider the function
+
+
+%add something from mid 1 fall 21 q 4
+
+%$$ f(x) = \left\{
+%     \begin{array}{ll}
+ %       \dfrac{x^2+6x+9}{x^2+x-6} & \quad x \neq -3, 0, 2 \\
+ %       \\
+  %       0 & \quad x = -3, 0 \\
+
+  % \end{array}
+  %\right. $$
+
+%\bigskip
+%For each of the following values of $x$, decide if the function is continuous or not. If the
+%function is not continuous, identify the discontinuities as jump, removable, infinite or other. Give
+%reasons for your claims!
+
+%\begin{parts}
+
+%\part[4] $x = -3$
+%\vfill
+
+%\part[4] $x=0$
+%\vfill
+
+%\part[4] $x=2$
+%\vfill
+%\end{parts}
+
+
+
+
+  \newpage
+
+%\question[6] Let $f(x) = 3x+2.$ We know that $\displaystyle\lim_{x \to 1} f(x) = 5.$ Find a
+%number $\delta >0$ such that if $ 0 < |x - 1| <\delta,$ then $|f(x) -5| < 0.01.$ Show your work.
+%Answers with no justification may not receive credit.
+
+
+\newpage
+
+
+
+
+%\question[6] Is there a number $a$ such that $\displaystyle\lim_{x\to 4} \dfrac{x^2+ax
+%-6x-6a}{x^2-3x-4}$ exists? If so, find the value of $a$ and the value of the limit. If not, explain
+%why not.
+
+
+
+
+\newpage
+
+
+
+
+\begin{comment}
+\question[10] Clearly mark the correct answer for each of the following by completely filling in
+the appropriate bubble. \textbf{No justification is needed.}
+
+\begin{parts}
+\part For the function $f(x)$ graphed below we have $\displaystyle{\lim_{x\to 2} f(x)=L}$. Given
+the value of $\varepsilon$ marked in the graph, for which of these values of $\delta$ is it true
+that if $0<\vert x-2\vert<\delta$ then $\vert f(x)-L\vert<\varepsilon$?
+
+\hspace{-.5in}
+\begin{minipage}{.3\textwidth}
+\begin{itemize}[label={}]
+\item \chooseone $\delta=1.5$
+\item \chooseone $\delta=1.33$
+\item \chooseone $\delta=0.5$
+\item \chooseone None of the above.
+\end{itemize}
+\end{minipage}
+
+~
+\begin{minipage}{.65\textwidth}
+\begin{center}
+\includegraphics[width=.95\textwidth]{epsilondelta221Fa23.png}
+\end{center}
+\end{minipage}
+
+
+
+
+\vspace{.4in}
+
+\part If $f$ is a function such that $\displaystyle{\lim_{x \to a^-} f(x) = \lim_{x \to a^+} f(x)}$, then
+$f$ is continuous at $x=a$.
+\begin{itemize}[label={}]
+\item \chooseone True
+\item \chooseone False
+\end{itemize}
+
+\vspace{.4in}
+
+\part If $f(x) = \displaystyle{\frac{g(x)}{h(x)}}$ and $h(7)=0,$ then $f(x)$ must have a vertical
+asymptote at $x=7$.
+\begin{itemize}[label={}]
+\item \chooseone True
+\item \chooseone False
+\end{itemize}
+
+\vspace{.4in}
+
+\part If $H(x)$ represents the number of people whose height is equal to $x$ inches, the
+derivative $H'(x)$ is measured in inches per year.
+\begin{itemize}[label={}]
+\item \chooseone True
+\item \chooseone False
+\end{itemize}
+
+\vspace{.4in}
+
+\part If $f(3)=2$ then $\displaystyle{\lim_{x\to3}f(x)=2}$.
+\begin{itemize}[label={}]
+\item \chooseone True
+\item \chooseone False
+\end{itemize}
+
+\end{parts}
+
+\end{comment}
+
+
+
+
+\end{questions}
+
+\end{document}
