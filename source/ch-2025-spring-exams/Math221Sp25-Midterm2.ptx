@@ -1,2 +1,242 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="./Math221Sp25-Midterm2.tex" parse="text"/>
+<worksheet xml:id="Math221Sp25-Midterm2" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Math221Sp25-Midterm2</title>
+	<exercise>
+		<introduction>
+			<p>
+				Compute the following definite integrals. Remember that you do not need to simplify your answer arithmetically.
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					<m>\displaystyle\int_0^{1} t^3(t+1) \, dt</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>\displaystyle \int_{1}^{4} x^2 + \dfrac{1}{\sqrt{x^3}} +\frac{3}{x^2} \, dx</m>
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Find the general antiderivative, <m>F(x),</m> of <m>f(x) = 6x^2 + 2\sin(x) + 3\sec(x)\tan(x) +
+							4.</m>
+			</p>
+		</introduction>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Consider the curve <m>6x^3y^2 + 2y -1 = x^2 + y^4 +1 .</m>
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					Compute <m>\dfrac{dy}{dx}.</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Find the equation of the tangent line to the curve at the point <m>(1,-1).</m>
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Two cars start moving from the same point. One travels south at 60 miles per hour, and the other travels west at 25 miles per hour. At what rate is the distance between the cars increasing 2 hours later?
+			</p>
+		</introduction>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Find all the vertical, horizontal, and slant asymptotes of the following function, if any. Make sure to check ALL appropriate limits for each type of asymptote.
+			</p>
+			<p>
+				<me>f(x) = \dfrac{5x -4x^3 +6}{x^3+x}</me>
+			</p>
+		</introduction>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Consider the function <m>f(x) = x^4- 3x^3+1.</m>
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					For what values of <m>x</m> is the function increasing? Decreasing?
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Find the <m>x</m>-coordinate(s) of all local maxima or minima of the function. Make sure to specify for each point if it is a maximum or a minimum.
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					In which intervals of <m>x</m> is the function concave up? Concave down?
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Find the <m>x</m>-coordinate(s) of all inflection points of the function.
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				A landscape architect wishes to enclose a rectangular garden on one side by a brick wall costing $30 per foot, and on the other three sides by a metal fence costing $10 per foot. If the area of the garden is 1000 square feet, find the dimensions of the garden that minimizes the cost.
+			</p>
+		</introduction>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Find a function <m>f</m> such that <m>f'(t) = 2t+1,</m> and <m>f(-1) = 4.</m>
+			</p>
+		</introduction>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Sketch a graph of a function <m>f(x)</m> that has the following properties:
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					<m>f(-1)=-5</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>\displaystyle\lim_{x\to -\infty} f(x) = 2,</m> <m>\displaystyle\lim_{x\to +\infty}f(x) = 2</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>f'(x)&gt;0</m> when <m>-1&lt;x&lt;\infty</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>f'(x)&lt;0</m> when <m>-\infty&lt;x&lt;-1</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>f''(x)&gt;0</m> when <m>-4&lt;x&lt;2</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>f''(x)&lt;0</m> when <m>-\infty&lt;x&lt;-4</m> and <m>2&lt;x&lt;\infty</m>
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+                                Find the absolute maximum value and the absolute minimum value of <me>f(x) = x^3 -
+							12x + 23</me> on the interval <m>[-5, 1].</m>
+			</p>
+		</introduction>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Does there exist a differentiable function <m>f</m> such that <m>f(2) = 8,</m> <m>f(4) = 11</m> and <m>f'(x) \ge 4</m> for all <m>x</m>? Clearly justify your answer. Answers with no justification will receive no credit. If you use a theorem, state which theorem you are using.
+			</p>
+		</introduction>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Consider the graph of <m>y = \sqrt{x}</m> above the <m>x</m>-axis with <m>1 \le x\le 9</m>. In this problem, you will estimate the area under this curve using 4 rectangles (of equal width) with left end points.
+			</p>
+		</introduction>
+		<task workspace="2in">
+			<statement>
+				<p>
+					Sketch the graph (including the rectangles).
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Approximate the area. Remember that you don’t need to simplify your answer.
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Multiple Choice. Fully fill in the circle. The approximation in part (b) is:
+				</p>
+			</statement>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								an underestimate of the area under the graph
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								an overestimate of the area under the graph
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								equal to the area under the graph
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								it cannot be determined with the information provided whether the approximation is an underestimate, an overestimate, or equal to the area under the graph.
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
+	</exercise>
+</worksheet>

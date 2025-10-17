@@ -1,2 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="./Math221Sp24-Midterm2.tex" parse="text"/>
+<worksheet xml:id="Math221Sp24-Midterm2" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Math221Sp24-Midterm2</title>
+	<exercise>
+		<introduction>
+			<p>
+				Compute the following definite integrals.
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					<m>\displaystyle\int_0^{\pi/4} \left(\sin(x) + \cos(x) + \sec^2(x) \right)\, dx</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>\displaystyle\int_1^{2} \left( \dfrac{1}{\sqrt{x}} + 4x^8 + \dfrac{3}{x^2} \, \right)\, dx</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>\displaystyle \int_{1}^4 \frac{t^2 + 8t + \sqrt{t}}{ 2t} \, dt</m>
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Find the antiderivative <m>F</m> of the function <m>f(x) = 4x+ \dfrac{1}{x^3}</m> that satisfies the condition <m>F(1) = 3.</m>
+			</p>
+		</introduction>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				A 13 ft ladder is leaning against a house when its base starts to slide away from the house. By the time the base of the ladder is 5 ft from the house, the base is moving at a rate of 2 ft/sec. How fast is the ladder’s top sliding down the wall when the base of the ladder is 5 ft from the house?
+			</p>
+		</introduction>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Find the slope of the tangent line to the curve <m>(x+y)^8 = 3x^2y^3 +x - 2</m> at the point <m>(-1,1).</m>
+			</p>
+		</introduction>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Consider the function <m>f(x) = \frac{1}{2}x^4- 4x^2+6.</m>
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					For what values of <m>x</m> is the function increasing? Decreasing?
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Find the <m>x</m>-coordinate of any local maxima or minima of the function. Make sure to specify for each point if it is a maximum or a minimum.
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					For what values of <m>x</m> is the function concave up? Concave down?
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Find all the vertical, horizontal, and slant asymptotes of the following functions, if any.
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					<m>f(x) = \dfrac{-2x^2+5x+1}{x-2}</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>g(x) = \dfrac{x^2 +x -2}{x^2 -1}</m>
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				An open-top box is to be made by cutting small congruent squares from the corners of a 12 inch by 12 inch sheet of tin and bending up the sides. How large should the squares cut from the corners be to maximize the volume of the box?
+			</p>
+		</introduction>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Approximate the area under the graph of <m>y = x^3+ 10</m> and above the <m>x</m>-axis with <m>-2 \le x\le 2</m> by using 4 rectangles (of equal width) with right end points. Remember that you don’t need to simplify your answer.
+			</p>
+		</introduction>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Does there exist a differentiable function <m>f</m> such that <m>f(2) = 6,</m> <m>f(5) = 8</m> and <m>f'(x) \ge 1</m> for all <m>x</m>? Clearly justify your answer. If you use a theorem, state which theorem you are using.
+			</p>
+		</introduction>
+	</exercise>
+</worksheet>

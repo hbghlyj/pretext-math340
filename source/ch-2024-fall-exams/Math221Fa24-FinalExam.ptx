@@ -1,2 +1,239 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="./Math221Fa24-FinalExam.tex" parse="text"/>
+<worksheet xml:id="Math221Fa24-FinalExam" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Math221Fa24-FinalExam</title>
+	<exercise>
+                <introduction>
+                        <p>
+                                Evaluate the limit, if it exists. If the limit does not exist, state whether it is <m>\infty,</m> <m>-\infty,</m> or neither, and fully explain its behavior. If you use a theorem (for example, the Squeeze/Sandwich Theorem or L’Hopital’s Rule), clearly state which theorem you are using and why it applies.
+                        </p>
+                </introduction>
+		<task>
+			<statement>
+				<p>
+					<m>\displaystyle\lim_{x\to 0} \dfrac{e^x-1}{\tan(x)}</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>\displaystyle\lim_{x \to 2} \dfrac{\sqrt{x^2+5}-3}{x-2}</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>\displaystyle\lim_{x \to 3^+} (x-3)\sin\left(\dfrac{2x+1}{x^2-9}\right)</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>\displaystyle\lim_{x\to 0} \dfrac{\cos(x)-1+\frac{1}{2}x^2}{x^4}</m>
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Compute the following derivatives. Use any method. You do not need to simplify your answer.
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					Let <m>f(t) = \dfrac{e^{t^2}}{4t^3+2t}.</m> Compute <m>f'(t).</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Let <m>g(x) = \ln(4\sin^2(x) +6).</m> Compute <m>g'(x).</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Let <m>h(t) = \sqrt{4t^2+\pi} \arctan(3t).</m> Compute <m>h'(t).</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Let <m>F(x) = \displaystyle\int_{-2}^{\cos(x)} \sqrt{2t^2+1} \, dt.</m> Compute <m>F'(x).</m>
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Compute the following integrals. Use any method from this course. You do not need to simplify your answer.
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					<m>\displaystyle\int (e^t+2)(5e^t-1) \, dt</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>\displaystyle\int_0^1 t^7 \sqrt{t^4+2} \, dt</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>\displaystyle\int \frac{ \sin(\ln(x))}{x} \, dx</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>\displaystyle\int_{0}^{3} \sqrt{9-x^2} \, dx</m>
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Find the values of <m>a</m> and <m>b</m> for which the function
+			</p>
+			<p>
+				<m>f(x) = \left\{
+							       \begin{array}{ll}
+							          x^2 -2a &amp; \quad x \le -1 \\
+							         4x+7 &amp; \quad -1&lt;x&lt;2 \\
+							         bx+9 &amp; \quad x \ge 2 \\
+							       \end{array}
+							   \right.</m>
+			</p>
+			<p>
+				is continuous for all <m>x.</m> Show your work, making sure to use correct limit notation.
+			</p>
+		</introduction>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Let <m>f(x) = 2x^2-5x</m>.
+			</p>
+		</introduction>
+		<task workspace="5in">
+			<statement>
+				<p>
+					Use the LIMIT DEFINITION of the derivative to compute <m>f'(2).</m> No credit will be given if you do not use the limit definition of the derivative to compute it.
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Find an equation of the tangent line to the graph of <m>f</m> when <m>x =2.</m>
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Find the absolute maximum value and absolute minimum value of <me>f(x)
+							=2x^3-3x^2-12x+1</me> on the interval <m>[-2 , 0].</m>
+			</p>
+		</introduction>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Does there exist a differentiable function <m>f</m> such that <m>f(1) = 7,</m> <m>f(3) = 15</m> and <m>f'(x) \le 2</m> for all <m>x</m>? Clearly justify your answer. Answers with no justification will receive no credit. If you use a theorem, state which theorem you are using.
+			</p>
+		</introduction>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				A conical paper cup 10 inches across the top (diameter) and 4 inches deep is full of water. The cup springs a leak at the bottom and loses water at the rate of 3 cubic inches per second. How fast is the water level dropping when the water is exactly 2 inches deep?
+			</p>
+			<p>
+				Note: the formula for the volume of a cone of top radius <m>r</m> and height <m>h</m> is <m>\frac{1}{3}\pi r^2 h.</m>
+			</p>
+		</introduction>
+	</exercise>
+	<exercise>
+                <introduction>
+                        <p>
+                                An open (no lid) rectangular box with a square base is to be made from 48 ft<m>^2</m> of material. What dimensions will result in a box with the largest possible volume? Justify your answer using Calculus. Make sure that you justify why your answer is a maximum and not a minimum.
+                        </p>
+                </introduction>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Consider the function <m>f(x)=\frac{(x-2)}{e^{x}}</m>.
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					Does the function have any vertical asymptote(s)? If so, find them. If not, state so.
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Does the function have any horizontal asymptote(s)? If so, find them. If not, state so.
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					For what values of <m>x</m> is the function increasing? Decreasing?
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Find any local maxima or minima of the function. Make sure to specify for each point whether it is a maximum or a minimum. Write your answer(s) as ordered pairs, that is, give both the <m>x</m> and <m>y</m> coordinates of the point(s).
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					For what values of <m>x</m> is the function concave up? Concave down?
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<task>
+			<statement>
+				<p>
+					Write down an integral that represents the area of the region bounded by the curves <m>y=\sqrt{x}</m> and <m>y = x.</m> <term>You do NOT need to compute the integral.</term>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Write down an integral that represents the volume of the solid obtained by revolving the region enclosed by <m>y = \sin(x),</m> <m>x = \pi/2</m> and the <m>x</m>-axis, with <m>0\le x \le \pi/2,</m> about the line <m>y =\, 5</m>. <term>You do NOT need to compute the integral.</term>
+				</p>
+			</statement>
+		</task>
+	</exercise>
+</worksheet>

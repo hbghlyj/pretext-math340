@@ -1,2 +1,236 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="./Math221Sp24-Midterm1.tex" parse="text"/>
+<worksheet xml:id="Math221Sp24-Midterm1" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Math221Sp24-Midterm1</title>
+	<exercise>
+		<introduction>
+			<p>
+				Evaluate the limit, if it exists, and justify your answer. If the limit does not exist, state whether it is <m>+\infty,</m> <m>-\infty,</m> or neither, and fully explain its behavior. You may NOT use L’Hopital’s Rule. If you use a theorem, clearly state which theorem you are using.
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					<m>\displaystyle\lim_{x\to -1} \dfrac {x^2-3x-4}{2x^2-2}</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>\displaystyle\lim_{x \to 0} x^6 \sin\left(\dfrac{4}{x^3}\right)</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>\displaystyle\lim_{x \to -4} \dfrac{4-|x|}{4+x}</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>\displaystyle\lim_{x\to 0} \dfrac {\sin(4x)}{\sin(6x)}</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Compute <m>\displaystyle\lim_{x \to 4 } f(x),</m> where <m>f(x) = \left\{
+											       \begin{array}{ll}
+											         \dfrac{x^2-3x-4}{x-4} &amp; \quad x &lt; 4 \\
+											          5 &amp; \quad x = 4 \\
+											           x^2 -2x+5 &amp; \quad x &gt; 4 \\
+											       \end{array}
+											   \right.</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>\displaystyle\lim_{x \to -3^{-}} \dfrac{x \cos^2(\pi x) }{x+3}</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>\displaystyle\lim_{x \to 3} \left(\dfrac{3x }{x-3} + \dfrac{ 18}{6-2x} \right)</m>
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Is there a number <m>a</m> such that
+			</p>
+			<p>
+				<me>\lim_{x \to 3} \dfrac{2x^2 +2x-ax-a}{x^2-x-6}</me>
+			</p>
+			<p>
+				exists? If so, find the value of <m>a</m> and the value of the limit. If not, explain why.
+			</p>
+		</introduction>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Compute the derivatives of the following functions. Use any method. Do not simplify your answer.
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					<m>f(t) = \cos\left(t^3 +\dfrac{2}{t}\right)</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>h(t) = \dfrac{\sin(t) }{2t^4+6}</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>g(t) = t\tan(t) +\sec(t)</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>h(t)=\sqrt{t^2 \cos(t)}</m>
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Consider the function <m>f(x) = \left\{
+							    \begin{array}{ll}
+							      x^2+2x &amp; \quad x \leq 1 \\
+							       \\
+							       2x^2 + 1 &amp; \quad x &gt; 1 \\
+							    \end{array}
+							   \right.</m>    
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					Is the function continuous at <m>x = 1</m>? Make sure to justify your answer. Be careful to use correct limit notation.
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Is the function differentiable at <m>x = 1</m>? Make sure to justify your answer. Be careful to use correct limit notation.
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Let <m>f(x) = 4x^2+1</m>.
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					Use the LIMIT DEFINITION of the derivative to compute <m>f'(-1).</m> No credit will be given if you do not use the limit definition of the derivative to compute it.
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Find the equation of the tangent line to the graph of <m>f</m> when <m>x =-1.</m>
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Sketch the graph of a function <m>f(x)</m> with <term>all</term> of the given properties.
+			</p>
+			<p>
+				<alert>Notes:</alert> Be sure that your graph is well-labeled and that we can easily identify how your graph meets the requirements above. You are not trying to find an equation for <m>f(x)</m>, you are creating a graph with these characteristics.
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					<m>\displaystyle{\lim_{x\to -3^{-}} f(x) = -1}</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>f(-3)=4</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>f</m> has a removable discontinuity at <m>x=-3</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>\displaystyle{\lim_{x\to 2^{-}} f(x) = +\infty}</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>\displaystyle{\lim_{x\to 2^{+}} f(x) = +\infty}</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>f</m> has a jump discontinuity at <m>x= 4</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>f(4)=2</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>f(x)</m> is continuous at all other <m>x</m>-values
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Does the function <me>f(x) = -x + \sqrt{x + 6} +2</me> have a root in the interval <m>[3 , 10
+							]</m>? Explain why or why not. If you use a theorem, clearly state which theorem you are using and why it applies.
+			</p>
+		</introduction>
+	</exercise>
+</worksheet>
