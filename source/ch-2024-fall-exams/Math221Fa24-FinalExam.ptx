@@ -172,14 +172,11 @@
 		</introduction>
 	</exercise>
 	<exercise>
-		<introduction>
-			<p>
-				An open (no lid) rectangular box with a square base is to be made from 48 ft<m>^2</m> of material. What dimensions will result in a box with the largest possible volume? Justify your
-			</p>
-			<p>
-				answer using Calculus. Make sure that you justify why your answer is a maximum and not a minimum.
-			</p>
-		</introduction>
+                <introduction>
+                        <p>
+                                An open (no lid) rectangular box with a square base is to be made from 48 ft<m>^2</m> of material. What dimensions will result in a box with the largest possible volume? Justify your answer using Calculus. Make sure that you justify why your answer is a maximum and not a minimum.
+                        </p>
+                </introduction>
 	</exercise>
 	<exercise>
 		<introduction>

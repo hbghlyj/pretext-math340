@@ -169,7 +169,7 @@
 	<exercise>
 		<introduction>
 			<p>
-				Find the absolute maximum value and the absolute minimum value of <me>f(x) = x^3 –
+                                Find the absolute maximum value and the absolute minimum value of <me>f(x) = x^3 -
 							12x + 23</me> on the interval <m>[-5, 1].</m>
 			</p>
 		</introduction>
