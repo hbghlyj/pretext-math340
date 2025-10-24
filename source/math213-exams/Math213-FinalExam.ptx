@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="math213-final" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Math 213 Final Exam Practice</title>
+  <raw format="latex" xml:space="preserve">
+    <xi:include href="./Math213-FinalExam.tex" parse="text"/>
+  </raw>
+</section>
