@@ -832,6 +832,10 @@ function Code(s, attr)
 end
 
 function InlineMath(s)
+  local currency_amount = s:match("^\\$([%d,%.%,%s]*%d)$")
+  if currency_amount then
+    return "$" .. escape(currency_amount)
+  end
   return "<m>" .. escape(s) .. "</m>"
 end
 
