@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="math213-midterm1" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Math 213 Midterm 1 Practice Exam</title>
+  <raw format="latex" xml:space="preserve">
+    <xi:include href="./Math213-Midterm1.tex" parse="text"/>
+  </raw>
+</section>
