@@ -14,11 +14,11 @@
   <exercise>
     <introduction>
       <p>Suppose the population of a certain species is modeled by the differential equation <me>\dfrac{dP}{dt} = 1.4P(7200-P).</me> You do NOT need to show work to receive full credit on this problem.</p>
+    </introduction>
+    <task>
       <hint>
         <p>You do NOT need to solve the differential equation to answer this question.</p>
       </hint>
-    </introduction>
-    <task>
       <statement>
         <p>Determine what type of differential equation is the differential equation given above. Clearly mark the correct answer by completely filling in the appropriate bubble.</p>
         <ul>
