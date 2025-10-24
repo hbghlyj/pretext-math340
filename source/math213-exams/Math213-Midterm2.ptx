@@ -114,13 +114,17 @@
         <p>Using the least squares method, the slope of the best-fit line for data points (1, 1), (2, 2), and (3, 4) is:</p>
         <ul>
           <li>
-					</li>
+            <p>0.5</p>
+          </li>
           <li>
-					</li>
+            <p>1</p>
+          </li>
           <li>
-					</li>
+            <p>1.5</p>
+          </li>
           <li>
-					</li>
+            <p>2</p>
+          </li>
         </ul>
       </statement>
     </task>
