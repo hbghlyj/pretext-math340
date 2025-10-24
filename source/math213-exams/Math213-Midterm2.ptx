@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <worksheet xml:id="Math213-Midterm2" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Math213-Midterm2</title>
+  <title>Math 213 Midterm 2 Practice Exam</title>
   <exercise>
     <introduction>
       <p>Determine the radius of convergence for the power series <m>\displaystyle\sum_{n=1}^{\infty} \dfrac{n^2 x^n}{2^n}</m>.</p>

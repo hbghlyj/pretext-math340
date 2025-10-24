@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <worksheet xml:id="Math213-FinalExam" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Math213-FinalExam</title>
+  <title>Math 213 Final Exam Practice Exam</title>
   <exercise>
     <introduction>
       <p>Consider the first-order linear differential equation <me>y' -\dfrac{3}{x}y = x^4.</me></p>
