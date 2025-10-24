@@ -108,6 +108,21 @@ end
 
 local workspace_lookup = {}
 
+local item_metadata = {}
+local item_metadata_index = 0
+
+local escape
+
+local function reset_item_metadata(metadata)
+  item_metadata = metadata or {}
+  item_metadata_index = 0
+end
+
+local function next_item_metadata()
+  item_metadata_index = item_metadata_index + 1
+  return item_metadata[item_metadata_index]
+end
+
 local function read_file_contents(path)
   local file = io.open(path, "r")
   if not file then
@@ -228,6 +243,51 @@ local function build_workspace_lookup(source)
   end
 
   return lookup
+end
+
+local function build_item_metadata(source)
+  local items = {}
+  if not source then
+    return items
+  end
+  local choose_token_len = {
+    ["\\chooseone"] = string.len("\\chooseone"),
+    ["\\chooseall"] = string.len("\\chooseall"),
+  }
+  for line in source:gmatch("([^\n]*)\n?") do
+    if line then
+      local rest = line:match("^%s*\\item%s*%b[]%s*(.*)$")
+      if not rest then
+        rest = line:match("^%s*\\item%s*(.*)$")
+      end
+      if rest then
+        local meta = {choose = false, text = nil}
+        local macro
+        local choose_pos = rest:find("\\chooseone", 1, true)
+        if choose_pos then
+          macro = "\\chooseone"
+        else
+          choose_pos = rest:find("\\chooseall", 1, true)
+          if choose_pos then
+            macro = "\\chooseall"
+          end
+        end
+        if macro and choose_pos then
+          meta.choose = true
+          local after = rest:sub(choose_pos + choose_token_len[macro])
+          after = after:gsub("^%s*", "")
+          after = after:gsub("\\vfill", "")
+          after = after:gsub("\\hfill", "")
+          after = trim(after)
+          if after ~= "" then
+            meta.text = after
+          end
+        end
+        table.insert(items, meta)
+      end
+    end
+  end
+  return items
 end
 
 local function lookup_workspace(exercise_index, task_index)
@@ -398,8 +458,13 @@ local function render_plain_list(tag, content, indent)
   local open_tag = tag == "ol" and "ol" or "ul"
   table.insert(lines, indent_line("<" .. open_tag .. ">", indent))
   for _, entry in ipairs(parse_list_items(content)) do
+    local meta = next_item_metadata()
+    local entry_markup = entry
+    if trim(entry_markup) == "" and meta and meta.choose and meta.text and meta.text ~= "" then
+      entry_markup = "<p>" .. escape(meta.text) .. "</p>"
+    end
     table.insert(lines, indent_line("<li>", indent + 1))
-    local blocks = parse_blocks(entry)
+    local blocks = parse_blocks(entry_markup)
     for _, block in ipairs(blocks) do
       if block.type == "p" then
         local para = render_paragraph(block.content, indent + 2)
@@ -420,7 +485,12 @@ local function render_choices(list_content, indent)
   local lines = {}
   table.insert(lines, indent_line('<choices multiple-correct="' .. multiple .. '">', indent))
   for _, entry in ipairs(parse_list_items(list_content)) do
-    local blocks = parse_blocks(entry)
+    local meta = next_item_metadata()
+    local entry_markup = entry
+    if trim(entry_markup) == "" and meta and meta.choose and meta.text and meta.text ~= "" then
+      entry_markup = "<p>" .. escape(meta.text) .. "</p>"
+    end
+    local blocks = parse_blocks(entry_markup)
     local paragraphs = {}
     for _, block in ipairs(blocks) do
       if block.type == "p" then
@@ -485,6 +555,7 @@ local function extract_outermost_ol(source)
 end
 
 local function convert_task(entry, indent, exercise_index, task_index)
+  next_item_metadata()
   local blocks = parse_blocks(entry)
   local points
   local statement_parts = {}
@@ -636,6 +707,7 @@ function Doc(body, metadata, variables)
       workspace_lookup = build_workspace_lookup(source)
     end
   end
+  reset_item_metadata(build_item_metadata(source))
 
   local skip_normalize = os.getenv("PTX_SKIP_Q_NORMALIZE") == "1"
   if not skip_normalize and source and source:find([[\begin%s*{%s*questions%s*}]]) and script_path then
@@ -684,6 +756,7 @@ function Doc(body, metadata, variables)
       local exercise_parts = {}
       local exercise_index = 0
       for _, item in ipairs(parse_list_items(inner)) do
+        next_item_metadata()
         exercise_index = exercise_index + 1
         table.insert(exercise_parts, convert_exercise(item, 1, exercise_index))
       end
@@ -725,7 +798,7 @@ end
   
 -- Character escaping
 -- (might want to remove the quotes, double check pretext)
-local function escape(s, in_attribute)
+escape = function(s, in_attribute)
   return s:gsub("[<>&\"']",
     function(x)
       if x == '<' then
@@ -924,9 +997,15 @@ function BulletList(items)
   local tabs = string.rep("\t", indents)
   local buffer = {}
   for _, item in ipairs(items) do
-    local content = indent_line(trim(item), indents + 2)
+    local meta = next_item_metadata()
+    local effective = trim(item)
+    if effective == "" and meta and meta.choose and meta.text and meta.text ~= "" then
+      effective = "<p>" .. escape(meta.text) .. "</p>"
+    end
+    local trimmed = trim(effective)
+    local content = indent_line(trimmed, indents + 2)
     table.insert(buffer, indent_line("<li>", indents + 1))
-    if content ~= "" then
+    if trimmed ~= "" then
       table.insert(buffer, content)
     end
     table.insert(buffer, indent_line("</li>", indents + 1))
@@ -938,6 +1017,7 @@ function OrderedList(items)
   local tabs = string.rep("\t", indents)
   local buffer = {}
   for _, item in ipairs(items) do
+    local meta = next_item_metadata()
     local content = indent_line(trim(item), indents + 2)
     table.insert(buffer, indent_line("<li>", indents + 1))
     if content ~= "" then
