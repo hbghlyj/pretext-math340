@@ -1,217 +1,154 @@
 <?xml version="1.0" encoding="utf-8"?>
 <worksheet xml:id="Math213-Midterm2" xmlns:xi="http://www.w3.org/2001/XInclude">
-<title>Math 213 Midterm 2 Practice Exam</title>
-	<exercise>
-		<introduction>
-			<p>
-				Determine the radius of convergence for the power series <m>\displaystyle\sum_{n=1}^{\infty}
-							\dfrac{n^2 x^n}{2^n}</m>.
-			</p>
-		</introduction>
-	</exercise>
-	<exercise>
-		<introduction>
-			<p>
-				Modify a known series expansion to find the Taylor Series for <m>f(x) =
-							\dfrac{x^2}{1+5x}</m> centered at 0. Please provide at least the first 5 terms of the series. You do not need to provide a formula for the general term.
-			</p>
-		</introduction>
-	</exercise>
-	<exercise>
-		<introduction>
-			<p>
-				A company produces violins and cellos. If they price the violins at <m>x</m> dollars and the cellos at <m>y</m> dollars, they sell <m>200-2x+3y</m> violins a day and <m>300+x-4y</m> cellos a day.
-			</p>
-		</introduction>
-		<task>
-			<statement>
-				<p>
-					Find their revenue function <m>R(x,y)</m>.
-				</p>
-			</statement>
-		</task>
-		<task>
-			<statement>
-				<p>
-					If it costs <m>\$100</m> to produce a violin and <m>\$200</m> to produce a cello, with daily fixed costs at <m>\$500</m>, find their profit function <m>P(x,y)</m>.
-				</p>
-			</statement>
-		</task>
-	</exercise>
-	<exercise>
-		<task>
-			<statement>
-				<p>
-					Compute <m>\displaystyle\int_0^1\int_{x^2}^{\sqrt{x}}2xy\, dy\, dx</m>
-				</p>
-			</statement>
-		</task>
-		<task>
-			<statement>
-				<p>
-					Set up, but do not solve, a double integral that represents the volume under the surface <m>f(x,y) = x^2e^{xy}</m> and above the shaded region <m>R</m> bounded by <m>f(x)=x</m> and <m>g(x)=x^3</m> shown in the graph below.
-				</p>
-			</statement>
-		</task>
-	</exercise>
-	<exercise>
-		<introduction>
-			<p>
-				Find the critical points of the function <m>f(x, y) = x^2 + 8xy + 4y^2 + 16x - 8y + 1.</m>
-			</p>
-		</introduction>
-	</exercise>
-	<exercise>
-		<introduction>
-			<p>
-				For the function <m>f(x,y)=\frac{1}{3}y^3-y +x^2y</m>:
-			</p>
-		</introduction>
-		<task>
-			<statement>
-				<p>
-					Compute <m>f_{xx}, f_{yy},</m> and <m>f_{xy}</m>. Show all work.
-				</p>
-			</statement>
-		</task>
-		<task>
-			<statement>
-				<p>
-					The critical points of <m>f(x,y)</m> are <m>(0,1),</m> <m>(0,-1),</m> <m>(-1,0)</m> and <m>(1,0)</m>. Determine, using the <m>D</m>-test, if each point corresponds to a relative maximum, relative minimum, or saddle point. Show all work.
-				</p>
-			</statement>
-		</task>
-	</exercise>
-	<exercise>
-		<introduction>
-			<p>
-				Use Lagrange multipliers to find the absolute maximum and the absolute minimum of <m>f(x, y) = x+4y</m> on the ellipse <m>x^2 + 2y^2 = 36.</m>
-			</p>
-		</introduction>
-	</exercise>
-	<exercise>
-		<introduction>
-			<p>
-				Short answer questions. You do not need to justify your answer or show your work.
-			</p>
-		</introduction>
-		<task>
-			<statement>
-				<p>
-					Find the value of the infinite series <m>1 + 2 + \dfrac{2^2}{2!} + \dfrac{2^3}{3!} +
-											\dfrac{2^4}{4!}+\ldots</m>.
-				</p>
-			</statement>
-		</task>
-		<task>
-			<statement>
-				<p>
-					Find the domain of the function <m>f(x,y) = \ln(x - 3)\sqrt{y}.</m> Write your answer using set notation.
-				</p>
-			</statement>
-		</task>
-		<task>
-			<statement>
-				<p>
-					Let <m>y = x^3-x^2+1.</m> Find <m>dy</m> if <m>x=2</m> and <m>dx = 1/2.</m>
-				</p>
-			</statement>
-		</task>
-	</exercise>
-	<exercise>
-		<introduction>
-			<p>
-				Clearly mark the correct answer for each of the following by completely filling in the appropriate bubble. <term>No justification is needed.</term>
-			</p>
-		</introduction>
-		<task>
-			<statement>
-				<p>
-					A company’s profit from producing <m>x</m> chairs and <m>y</m> tables per day is <m>P(x,y)</m>. Assume <m>P_y(46, 53) = 86.</m> Which of the following statements can we deduce from the provided information?
-				</p>
-				<ul>
-					<li>
-						<p>
-							Profit increases by about $86 per additional chair when producing 46 chairs and 53 tables per day.
-						</p>
+  <title>Math 213 Midterm 2 Practice Exam</title>
+  <exercise>
+    <introduction>
+      <p>Determine the radius of convergence for the power series <m>\displaystyle\sum_{n=1}^{\infty} \dfrac{n^2 x^n}{2^n}</m>.</p>
+    </introduction>
+  </exercise>
+  <exercise>
+    <introduction>
+      <p>Modify a known series expansion to find the Taylor Series for <m>f(x) = \dfrac{x^2}{1+5x}</m> centered at 0. Please provide at least the first 5 terms of the series. You do not need to provide a formula for the general term.</p>
+    </introduction>
+  </exercise>
+  <exercise>
+    <introduction>
+      <p>A company produces violins and cellos. If they price the violins at <m>x</m> dollars and the cellos at <m>y</m> dollars, they sell <m>200-2x+3y</m> violins a day and <m>300+x-4y</m> cellos a day.</p>
+    </introduction>
+    <task>
+      <statement>
+        <p>Find their revenue function <m>R(x,y)</m>.</p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>If it costs <m>\$100</m> to produce a violin and <m>\$200</m> to produce a cello, with daily fixed costs at <m>\$500</m>, find their profit function <m>P(x,y)</m>.</p>
+      </statement>
+    </task>
+  </exercise>
+  <exercise>
+    <task>
+      <statement>
+        <p>Compute <m>\displaystyle\int_0^1\int_{x^2}^{\sqrt{x}}2xy\, dy\, dx</m></p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>Set up, but do not solve, a double integral that represents the volume under the surface <m>f(x,y) = x^2e^{xy}</m> and above the shaded region <m>R</m> bounded by <m>f(x)=x</m> and <m>g(x)=x^3</m> shown in the graph below.</p>
+      </statement>
+    </task>
+  </exercise>
+  <exercise>
+    <introduction>
+      <p>Find the critical points of the function <m>f(x, y) = x^2 + 8xy + 4y^2 + 16x - 8y + 1.</m></p>
+    </introduction>
+  </exercise>
+  <exercise>
+    <introduction>
+      <p>For the function <m>f(x,y)=\frac{1}{3}y^3-y +x^2y</m>:</p>
+    </introduction>
+    <task>
+      <statement>
+        <p>Compute <m>f_{xx}, f_{yy},</m> and <m>f_{xy}</m>. Show all work.</p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>The critical points of <m>f(x,y)</m> are <m>(0,1),</m> <m>(0,-1),</m> <m>(-1,0)</m> and <m>(1,0)</m>. Determine, using the <m>D</m>-test, if each point corresponds to a relative maximum, relative minimum, or saddle point. Show all work.</p>
+      </statement>
+    </task>
+  </exercise>
+  <exercise>
+    <introduction>
+      <p>Use Lagrange multipliers to find the absolute maximum and the absolute minimum of <m>f(x, y) = x+4y</m> on the ellipse <m>x^2 + 2y^2 = 36.</m></p>
+    </introduction>
+  </exercise>
+  <exercise>
+    <introduction>
+      <p>Short answer questions. You do not need to justify your answer or show your work.</p>
+    </introduction>
+    <task>
+      <statement>
+        <p>Find the value of the infinite series <m>1 + 2 + \dfrac{2^2}{2!} + \dfrac{2^3}{3!} + \dfrac{2^4}{4!}+\ldots</m>.</p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>Find the domain of the function <m>f(x,y) = \ln(x - 3)\sqrt{y}.</m> Write your answer using set notation.</p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>Let <m>y = x^3-x^2+1.</m> Find <m>dy</m> if <m>x=2</m> and <m>dx = 1/2.</m></p>
+      </statement>
+    </task>
+  </exercise>
+  <exercise>
+    <introduction>
+      <p>Clearly mark the correct answer for each of the following by completely filling in the appropriate bubble. <term>No justification is needed.</term></p>
+    </introduction>
+    <task>
+      <statement>
+        <p>A company’s profit from producing <m>x</m> chairs and <m>y</m> tables per day is <m>P(x,y)</m>. Assume <m>P_y(46, 53) = 86.</m> Which of the following statements can we deduce from the provided information?</p>
+        <ul>
+          <li>
+            <p>Profit increases by about $86 per additional chair when producing 46 chairs and 53 tables per day.</p>
+          </li>
+          <li>
+            <p>Profit increases by about $86 per additional table when producing 46 chairs and 53 tables per day.</p>
+          </li>
+          <li>
+            <p>Profit is constant and equals $86, independent of how many chairs and/or tables are produced.</p>
+          </li>
+          <li>
+            <p>None of the above</p>
+          </li>
+          <li>
+            <p>All of the above</p>
+          </li>
+        </ul>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>Using the least squares method, the slope of the best-fit line for data points (1, 1), (2, 2), and (3, 4) is:</p>
+        <ul>
+          <li>
 					</li>
-					<li>
-						<p>
-							Profit increases by about $86 per additional table when producing 46 chairs and 53 tables per day.
-						</p>
+          <li>
 					</li>
-					<li>
-						<p>
-							Profit is constant and equals $86, independent of how many chairs and/or tables are produced.
-						</p>
+          <li>
 					</li>
-					<li>
-						<p>
-							None of the above
-						</p>
+          <li>
 					</li>
-					<li>
-						<p>
-							All of the above
-						</p>
-					</li>
-				</ul>
-			</statement>
-		</task>
-		<task>
-			<statement>
-				<p>
-					Using the least squares method, the slope of the best-fit line for data points (1, 1), (2, 2), and (3, 4) is:
-				</p>
-				<ul>
-					<li>
-					</li>
-					<li>
-					</li>
-					<li>
-					</li>
-					<li>
-					</li>
-				</ul>
-			</statement>
-		</task>
-		<task>
-			<statement>
-				<p>
-					Every function <m>f(x,y)</m> of two variables can be written as the sum of two functions of one variable, <m>g(x)+h(y).</m>
-				</p>
-				<ul>
-					<li>
-						<p>
-							True
-						</p>
-					</li>
-					<li>
-						<p>
-							False
-						</p>
-					</li>
-				</ul>
-			</statement>
-		</task>
-		<task>
-			<statement>
-				<p>
-					At a critical point, <m>D=0</m> means that the point is <em>not</em> a relative maximum or minimum point.
-				</p>
-				<ul>
-					<li>
-						<p>
-							True
-						</p>
-					</li>
-					<li>
-						<p>
-							False
-						</p>
-					</li>
-				</ul>
-			</statement>
-		</task>
-	</exercise>
+        </ul>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>Every function <m>f(x,y)</m> of two variables can be written as the sum of two functions of one variable, <m>g(x)+h(y).</m></p>
+        <ul>
+          <li>
+            <p>True</p>
+          </li>
+          <li>
+            <p>False</p>
+          </li>
+        </ul>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>At a critical point, <m>D=0</m> means that the point is <em>not</em> a relative maximum or minimum point.</p>
+        <ul>
+          <li>
+            <p>True</p>
+          </li>
+          <li>
+            <p>False</p>
+          </li>
+        </ul>
+      </statement>
+    </task>
+  </exercise>
 </worksheet>
