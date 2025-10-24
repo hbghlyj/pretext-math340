@@ -118,7 +118,7 @@
     </task>
     <task>
       <statement>
-        <p>Suppose the slope field below correspond to the population of trout in a lake (where <m>y</m> is the population in hundreds and <m>x</m> is months). For which <m>y</m> values is the population of trout increasing? <image source="dirfield.png" /></p>
+        <p>Suppose the slope field below correspond to the population of trout in a lake (where <m>y</m> is the population in hundreds and <m>x</m> is months). For which <m>y</m> values is the population of trout increasing?</p>
         <ul>
           <li>
             <p><m>y=0,4</m></p>
