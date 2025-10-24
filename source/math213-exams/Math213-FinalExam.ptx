@@ -1,7 +1,295 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<section xml:id="math213-final" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Math 213 Final Exam Practice</title>
-  <raw format="latex" xml:space="preserve">
-    <xi:include href="./Math213-FinalExam.tex" parse="text"/>
-  </raw>
-</section>
+<?xml version="1.0" encoding="utf-8"?>
+<worksheet xml:id="Math213-FinalExam" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Math213-FinalExam</title>
+	<exercise>
+		<introduction>
+			<p>
+				Consider the first-order linear differential equation <me>y' -\dfrac{3}{x}y = x^4.</me>
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					Find the general solution of the differential equation.
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Find the particular solution that satisfies the initial condition <m>y(1) = 5.</m>
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				For your retirement <q>nest egg,</q> you deposit $300 at the end of each month into a bank account paying 6% interest compounded monthly. Use your knowledge of series to find an expression that represents the amount of this annuity at the end of your 40-year working career. While you do not need to simplify your final answer, you do need to find a single term expression that represents the value of the annuity. Writing your answer as a sum of terms is not enough.
+			</p>
+		</introduction>
+	</exercise>
+	<exercise>
+		<task>
+			<statement>
+				<p>
+					Find the 3rd degree Taylor polynomial of <m>f(x) = \sqrt{x}</m> centered at <m>x=9.</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Use the 3rd degree Taylor polynomial that you found in part (a) to find an approximation for <m>\sqrt{10}</m> by evaluating the polynomial at an appropriate value of <m>x.</m>
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Use known series expansions to find the Taylor Series of <m>f(x) = x^2 e^{2x}</m> centered at <m>x=0.</m> Give at least the first five terms of the series.
+			</p>
+		</introduction>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Find the volume under the surface <m>f(x,y) = 4y</m> and above the shaded region <m>R</m> shown in the graph.
+			</p>
+		</introduction>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Use the method of Lagrange multipliers to find the minimum of <m>f(x,y) = 4xy</m> subject to the constraint <m>2x+6y=12.</m>
+			</p>
+		</introduction>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Consider the initial-value problem <me>y' = 2x + y, \,\, y(0) = 2.</me> Use Euler’s method with <m>n = 2</m> steps to approximate <m>y(1).</m>
+			</p>
+		</introduction>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Consider the function <m>f(x) = x^2-x-2.</m> Use 2 iterations of Newton’s method starting with <m>x_0 = 1</m> to approximate a zero of <m>f(x).</m>
+			</p>
+		</introduction>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Consider a continuous random variable <m>X</m> with probability density function <m>f(x) =
+							\dfrac{3}{2}\sqrt{x}</m> on <m>[0,1].</m>
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					Compute the probability <m>P\left(X \ge \dfrac{1}{2} \right)</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Find the mean (i.e., the expected value) of <m>X.</m>
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				For the spinner below, the arrow is spun and then stops, pointing in one of the numbered sectors, with probability proportional to the area of the sector. Let <m>X</m> stand for the number so chosen. Find the following. (Leave your answers as fractions, integers, or exact decimals.)
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					<m>P(X=8)=</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>E(X)=</m>
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				A company’s profit <m>P(x,y)</m> from making <m>x</m> computers and <m>y</m> tablets per day is given by <m>P(x,y) = 4x^2-5xy +5y^2 +10x+4y+70.</m>
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					Find the marginal profit function for computers.
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Find the marginal profit function for tablets.
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Clearly mark the correct answer for each of the following by completely filling in the appropriate bubble. <term>No justification is needed.</term>
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					Consider the infinite series <m>\displaystyle\sum_{n=0}^{\infty}\dfrac{8}{6^n}.</m> What can you say about the convergence of this series?
+				</p>
+				<ul>
+					<li>
+						<p>
+							The series converges to <m>8/6.</m>
+						</p>
+					</li>
+					<li>
+						<p>
+							The series converges to <m>\frac{8}{1-1/6}.</m>
+						</p>
+					</li>
+					<li>
+						<p>
+							The series converges, but its value cannot be determined.
+						</p>
+					</li>
+					<li>
+						<p>
+							The series diverges.
+						</p>
+					</li>
+				</ul>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Consider the infinite series <m>\displaystyle\sum_{n=1}^{\infty}(-1)^{n-1}\dfrac{1}{n2^n}.</m> What can you say about the convergence of this series?
+				</p>
+				<ul>
+					<li>
+						<p>
+							The series converges to <m>\ln(3/2).</m>
+						</p>
+					</li>
+					<li>
+						<p>
+							The series converges to <m>\frac{1}{1-1/2}.</m>
+						</p>
+					</li>
+					<li>
+						<p>
+							The series converges, but its value cannot be determined.
+						</p>
+					</li>
+					<li>
+						<p>
+							The series diverges.
+						</p>
+					</li>
+				</ul>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					The value of a painting, initially worth $10000, continuously grows in value at a rate of 4% a year. Let <m>y(t)</m> be the value of the painting after <m>t</m> years. Which of the following expressions correctly describe <m>y(t)</m>? Select all that apply.
+				</p>
+				<ul>
+					<li>
+						<p>
+							<m>y(t)= 10000e^{0.04t}</m>
+						</p>
+					</li>
+					<li>
+						<p>
+							<m>y(t)= 10000(1+0.04/n)^{nt}</m>
+						</p>
+					</li>
+					<li>
+						<p>
+							<m>y'(t) = 0.04(10000 -y).</m>
+						</p>
+					</li>
+					<li>
+						<p>
+							<m>y'(t) = 0.04y,</m> with <m>y(0) = 10000</m>
+						</p>
+					</li>
+					<li>
+						<p>
+							None of the above.
+						</p>
+					</li>
+				</ul>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Consider the function <m>f(x,y) = e^{x-1}\sqrt{y -4}.</m> Then the domain of <m>f(x,y)</m> is given by:
+				</p>
+				<ul>
+					<li>
+						<p>
+							<m>\{ (x,y) | y \neq 4 \}</m>
+						</p>
+					</li>
+					<li>
+						<p>
+							<m>\{ (x,y) | x \neq 1\, \text{and } \, y \neq 4 \}</m>
+						</p>
+					</li>
+					<li>
+						<p>
+							<m>\{ (x,y) | y &gt; 4 \}</m>
+						</p>
+					</li>
+					<li>
+						<p>
+							<m>\{ (x,y) | y \ge 4 \}</m>
+						</p>
+					</li>
+					<li>
+						<p>
+							<m>\{ (x,y) | y \le 4 \}</m>
+						</p>
+					</li>
+					<li>
+						<p>
+							<m>\{ (x,y) | x \ge 1 \}</m>
+						</p>
+					</li>
+					<li>
+						<p>
+							<m>\{ (x,y) | x \le 1 \}</m>
+						</p>
+					</li>
+					<li>
+						<p>
+							None of the above.
+						</p>
+					</li>
+				</ul>
+			</statement>
+		</task>
+	</exercise>
+</worksheet>

@@ -13,8 +13,6 @@ not need to provide a formula for the general term.
 \question A company produces violins and cellos. If they price the violins at $x$ dollars and the
 cellos at $y$ dollars, they sell $200-2x+3y$ violins a day and $300+x-4y$ cellos a day.
 
-%\question A company's profit $P(x,y)$ from making $x$ violins and $y$ cellos per day is given
-%by $P(x,y) = 2x^2-3xy +3y^2 +150x+75y +200.$
 \begin{parts}
 \part[4] Find their revenue function $R(x,y)$.
 \vfill
@@ -51,15 +49,12 @@ thick,
 {x} node[pos=1, right]{$y=f(x)$};;
 \addplot [domain=-1.25:1.25, samples=100,<->, name path=g, very thick]
 {x^3} node[pos=1, above]{$y=g(x)$};
-%\node[font=\footnotesize] at (axis cs: 2,1.5) {$y=f(x)$};
-%\node[ font=\footnotesize] at (axis cs: 1.5,2.2) {$y=g(x)$};
 \addplot[gray!60, opacity=1] fill between[of=f and g, soft clip={domain=-1:0}];
 \node at (axis cs: -0.5,-0.3) {$R$};
 
 \end{axis}
 \end{tikzpicture}
 
-%Done! -KP
 \vfill
 
 \end{parts}

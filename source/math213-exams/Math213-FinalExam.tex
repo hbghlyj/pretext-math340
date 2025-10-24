@@ -19,7 +19,6 @@ expression that represents the amount of this annuity at the end of your 40-year
 While you do not need to simplify your final answer, you do need to find a single term
 expression that represents the value of the annuity. Writing your answer as a sum of terms is
 not enough.
-%sec 10.2
 \newpage
 \question
 \begin{parts}
@@ -35,8 +34,6 @@ centered at $x=0.$ Give at least the first five terms of the series.
 \newpage
 \question[8] Find the volume under the surface $f(x,y) = 4y$ and above the shaded region $R$
 shown in the graph.
-%Note to Kailtyn: can you help me with a picture of the region between xsquared and sqrtx?
-%-Done.
 
 \begin{tikzpicture}
 \begin{axis}[
@@ -55,8 +52,6 @@ xtick distance=1, ytick distance=1, grid=both ]
 {sqrt(x)} node[pos=1, right]{$y=\sqrt{x}$};;
 \addplot [domain=0:1.3, samples=100,->, name path=g, thick]
 {x^2} node[pos=1, above]{$y=x^2$};
-%\node[font=\footnotesize] at (axis cs: 2,1.5) {$y=f(x)$};
-%\node[ font=\footnotesize] at (axis cs: 1.5,2.2) {$y=g(x)$};
 \addplot[gray!50, opacity=0.4] fill between[of=f and g, soft clip={domain=-1:1}];
 \node at (axis cs:0.5, 0.5) {$R$};
 
@@ -96,7 +91,6 @@ decimals.)
 \draw[fill=none,thick](0,0) circle (2.0);
 \draw[](-2,0) -- (2,0);
 \draw[] (0,0) --(0,2);
-%\draw[-{Triangle[width=16pt,length=10pt]}, line width=8pt](-1.5, -0.5) -- (1.5, 0.5);
 \draw[fill=black, rotate=20]
 (-1.7,0.15)--(-1.6,0)--(-1.7,-0.15)--(1.5,-0.15)--(1.5,-0.3)--(1.75,0)--(1.5,0.3)--(1.5,0.15)--cycle;
 \draw[fill=white](0,0) circle (2 pt);
@@ -112,13 +106,6 @@ decimals.)
 \vfill
 
 \end{parts}
-%Consider the experiment of rolling two fair 6-sided dice.
-%\begin{parts}
-%\part[3] Determine the probability that the sum of the numbers rolled is 10.
-%\vfill
-%\part[3] Determine the probability that a 1 is rolled on either die.
-%\vfill
-%\end{parts}
 
 \newpage
 
@@ -145,8 +132,6 @@ you say about the convergence of this series?
 \item \chooseone The series converges to $\frac{8}{1-1/6}.$
 \item \chooseone The series converges, but its value cannot be determined.
 \item \chooseone The series diverges.
-%\item \chooseone It cannot be determined whether the series converges or diverges with the
-%given information.
 \end{itemize}
 \vfill
 \part[2] Consider the infinite series $\displaystyle\sum_{n=1}^{\infty}(-1)^{n-1}\dfrac{1}{n2^n}.$
@@ -156,8 +141,6 @@ What can you say about the convergence of this series?
 \item \chooseone The series converges to $\frac{1}{1-1/2}.$
 \item \chooseone The series converges, but its value cannot be determined.
 \item \chooseone The series diverges.
-%\item \chooseone It cannot be determined whether the series converges or diverges with the
-%given information.
 \end{itemize}
 \vfill
 
