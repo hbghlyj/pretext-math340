@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter xml:id="math213-practice-exams" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Math 112 Practice Exams</title>
+  <xi:include href="./math112-exams/Sp25 Final.ptx"/>
+  <xi:include href="./math112-exams/Sp25 Midterm1.ptx"/>
+  <xi:include href="./math112-exams/Sp25 Midterm2.ptx"/>
+</chapter>
