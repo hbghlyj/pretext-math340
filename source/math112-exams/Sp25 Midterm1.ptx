@@ -11,8 +11,100 @@
 			<p>
 				<term>Select ALL</term> of the following that are functions:
 			</p>
-		</introduction>
-	</exercise>
+                </introduction>
+                <choices multiple-correct="yes">
+                        <choice>
+                                <statement>
+                                        <image xml:id="mid1-relations-a" width="60%" alt="Mapping diagram with set A containing x, y, z and set B containing a, b, c, d where y maps to both b and c.">
+                                                <latex-image><![CDATA[
+\begin{tikzpicture}
+  \foreach[count=\i] \lseti/\lsetmi in {A/{x,y,z},B/{a,b,c,d}} {
+    \begin{scope}[local bounding box=\lseti, x=3cm, y=.5cm]
+      \foreach[count=\j] \lj in \lsetmi {
+        \node[minimum width=1em] (n-\j-\lseti) at (\i,-\j) {\lj};
+      }
+    \end{scope}
+    \node[ellipse, draw, fit=(\lseti),
+      label={[name=l-\lseti]above:$\lseti$}] {};
+  }
+  \draw[->] (n-1-A) -- (n-1-B);
+  \draw[->] (n-2-A) -- (n-2-B);
+  \draw[->] (n-3-A) -- (n-4-B);
+  \draw[->] (n-2-A) -- (n-3-B);
+\end{tikzpicture}
+                                                ]]></latex-image>
+                                        </image>
+                                </statement>
+                        </choice>
+                        <choice>
+                                <statement>
+                                        <image xml:id="mid1-relations-b" width="60%" alt="Mapping diagram with set A containing x, y, z, w and set B containing a, b, c where x and w both map to c.">
+                                                <latex-image><![CDATA[
+\begin{tikzpicture}
+  \foreach[count=\i] \lseti/\lsetmi in {A/{x,y,z,w},B/{a,b,c}} {
+    \begin{scope}[local bounding box=\lseti, x=3cm, y=.5cm]
+      \foreach[count=\j] \lj in \lsetmi {
+        \node[minimum width=1em] (n-\j-\lseti) at (\i,-\j) {\lj};
+      }
+    \end{scope}
+    \node[ellipse, draw, fit=(\lseti),
+      label={[name=l-\lseti]above:$\lseti$}] {};
+  }
+  \draw[->] (n-1-A) -- (n-2-B);
+  \draw[->] (n-2-A) -- (n-1-B);
+  \draw[->] (n-3-A) -- (n-3-B);
+  \draw[->] (n-4-A) -- (n-3-B);
+\end{tikzpicture}
+                                                ]]></latex-image>
+                                        </image>
+                                </statement>
+                        </choice>
+                        <choice>
+                                <statement>
+                                        <image xml:id="mid1-relations-c" width="60%" alt="Graph with a parabola opening upward for x greater than or equal to zero and a line with slope one for x less than zero.">
+                                                <latex-image><![CDATA[
+\begin{tikzpicture}
+  \begin{axis}[
+    grid=major,
+    axis x line = middle,
+    axis y line = middle,
+    yticklabel style = {font=\tiny,xshift=0.5ex},
+    xticklabel style = {font=\tiny,yshift=0.5ex},
+    width=5 cm,
+    height=5 cm,
+    xtick={-2,-1,0,1,2},
+    ytick={-2,-1,0,1,2,3,4},
+    xmin=-3.1,
+    xmax=3.1,
+    ymin=-2.1,
+    ymax=4.1,
+  ]
+    \addplot[smooth, thick, domain = 0:2,samples=35] { (x^2)};
+    \addplot[smooth, thick, domain = -3:0,samples=35] { -x};
+  \end{axis}
+\end{tikzpicture}
+                                                ]]></latex-image>
+                                        </image>
+                                </statement>
+                        </choice>
+                        <choice>
+                                <statement>
+                                        <image xml:id="mid1-relations-d" width="60%" alt="Hyperbola with vertical transverse axis drawn with asymptotic branches opening upward and downward.">
+                                                <latex-image><![CDATA[
+\begin{tikzpicture}[scale=.5]
+  \draw[->] (-3, 0) -- (3, 0) node[anchor=north west] {$x$};
+  \draw[->] (0, -3.5) -- (0, 3.5) node[anchor=south east] {$y$};
+  \draw[thick, smooth, domain=1:3.5, samples=20] plot ({sqrt((\x)^2/2 - .5)}, \x);
+  \draw[thick, smooth, domain=1:3.5, samples=20] plot ({-sqrt((\x)^2/2 - .5)}, \x);
+  \draw[thick, smooth, domain=-3.5:-1, samples=20] plot ({sqrt((\x)^2/2 - .5)}, \x);
+  \draw[thick, smooth, domain=-3.5:-1, samples=20] plot ({-sqrt((\x)^2/2 - .5)}, \x);
+\end{tikzpicture}
+                                                ]]></latex-image>
+                                        </image>
+                                </statement>
+                        </choice>
+                </choices>
+        </exercise>
        <exercise>
                <statement>
                        <p>
@@ -102,8 +194,122 @@
 							    -x &amp;,&amp; x&lt;0
 							\end{matrix}\right.</m>
 			</p>
-		</introduction>
-	</exercise>
+                </introduction>
+                <choices multiple-correct="no">
+                        <choice>
+                                <statement>
+                                        <image xml:id="mid1-piecewise-a" width="60%" alt="Graph with a parabola on the negative x-axis and a line with negative slope on the positive x-axis.">
+                                                <latex-image><![CDATA[
+\begin{tikzpicture}
+  \begin{axis}[
+    grid=major,
+    axis x line = middle,
+    axis y line = middle,
+    yticklabel style = {font=\tiny,xshift=0.5ex},
+    xticklabel style = {font=\tiny,yshift=0.5ex},
+    width=5 cm,
+    height=5 cm,
+    xtick={-2,-1,0,1,2},
+    ytick={-2,-1,0,1,2,3,4},
+    xmin=-3.1,
+    xmax=3.1,
+    ymin=-2.1,
+    ymax=4.1,
+  ]
+    \addplot[smooth, thick, domain = -2:0,samples=35] { (x^2)};
+    \addplot[smooth, thick, domain = 0:3,samples=35] { -x};
+  \end{axis}
+\end{tikzpicture}
+                                                ]]></latex-image>
+                                        </image>
+                                </statement>
+                        </choice>
+                        <choice>
+                                <statement>
+                                        <image xml:id="mid1-piecewise-b" width="60%" alt="Graph with the parabola drawn for positive x and a line with slope one drawn for negative x.">
+                                                <latex-image><![CDATA[
+\begin{tikzpicture}
+  \begin{axis}[
+    grid=major,
+    axis x line = middle,
+    axis y line = middle,
+    yticklabel style = {font=\tiny,xshift=0.5ex},
+    xticklabel style = {font=\tiny,yshift=0.5ex},
+    width=5 cm,
+    height=5 cm,
+    xtick={-2,-1,0,1,2},
+    ytick={-2,-1,0,1,2,3,4},
+    xmin=-3.1,
+    xmax=3.1,
+    ymin=-2.1,
+    ymax=4.1,
+  ]
+    \addplot[smooth, thick, domain = 0:2,samples=35] { (x^2)};
+    \addplot[smooth, thick, domain = -3:0,samples=35] { -x};
+  \end{axis}
+\end{tikzpicture}
+                                                ]]></latex-image>
+                                        </image>
+                                </statement>
+                        </choice>
+                        <choice>
+                                <statement>
+                                        <image xml:id="mid1-piecewise-c" width="60%" alt="Graph showing the entire parabola and the entire line plotted across all x-values.">
+                                                <latex-image><![CDATA[
+\begin{tikzpicture}
+  \begin{axis}[
+    grid=major,
+    axis x line = middle,
+    axis y line = middle,
+    yticklabel style = {font=\tiny,xshift=0.5ex},
+    xticklabel style = {font=\tiny,yshift=0.5ex},
+    width=5 cm,
+    height=5 cm,
+    xtick={-2,-1,0,1,2},
+    ytick={-2,-1,0,1,2,3,4},
+    xmin=-3.1,
+    xmax=3.1,
+    ymin=-2.1,
+    ymax=4.1,
+  ]
+    \addplot[smooth, thick, domain = -2.1:2.1,samples=35] { (x^2)};
+    \addplot[smooth, thick, domain = -3:3,samples=35] { -x};
+  \end{axis}
+\end{tikzpicture}
+                                                ]]></latex-image>
+                                        </image>
+                                </statement>
+                        </choice>
+                        <choice>
+                                <statement>
+                                        <image xml:id="mid1-piecewise-d" width="60%" alt="Graph plotting only the right half of the parabola and the line for positive x-values.">
+                                                <latex-image><![CDATA[
+\begin{tikzpicture}
+  \begin{axis}[
+    grid=major,
+    axis x line = middle,
+    axis y line = middle,
+    yticklabel style = {font=\tiny,xshift=0.5ex},
+    xticklabel style = {font=\tiny,yshift=0.5ex},
+    width=5 cm,
+    height=5 cm,
+    xtick={-2,-1,0,1,2},
+    ytick={-2,-1,0,1,2,3,4},
+    xmin=-3.1,
+    xmax=3.1,
+    ymin=-2.1,
+    ymax=4.1,
+  ]
+    \addplot[smooth, thick, domain = 0:2.1,samples=35] { (x^2)};
+    \addplot[smooth, thick, domain = 0:3,samples=35] { -x};
+  \end{axis}
+\end{tikzpicture}
+                                                ]]></latex-image>
+                                        </image>
+                                </statement>
+                        </choice>
+                </choices>
+        </exercise>
        <exercise>
                <statement>
                        <p>
@@ -200,6 +406,35 @@
                         <p>
                                 Given the graph of the function <m>y=F(x)</m> describing the temperature of lake Mendota over one year below:
                         </p>
+                        <figure xml:id="mid1-lake-graph">
+                                <caption>Seasonal temperature model for Lake Mendota.</caption>
+                                <image width="100%" alt="Smooth sinusoidal curve showing temperature in degrees Fahrenheit versus day of the year.">
+                                        <latex-image><![CDATA[
+\begin{tikzpicture}
+  \begin{axis}[
+    domain=0:365,
+    samples=200,
+    width=\textwidth,
+    height=8cm,
+    xlabel={$x$ (days)},
+    ylabel={$y$ ($^\circ$F)},
+    axis lines=middle,
+    grid=both,
+    major grid style={solid, gray},
+    minor grid style={solid, lightgray},
+    xmin=0, xmax=365,
+    ymin=0, ymax=75,
+    xtick={0,20,40,60,80,100,120,140,160,180,200,220,240,260,280,300,320,340,360},
+    ytick={0,10,20,30,40,50,60,70},
+    tick label style={font=\small},
+    xticklabel style={rotate=270, anchor=south, xshift=.3cm, yshift=-.25cm}
+  ]
+    \addplot[very thick] {25*sin(deg(pi/150*(x-115))) + 45};
+  \end{axis}
+\end{tikzpicture}
+                                        ]]></latex-image>
+                                </image>
+                        </figure>
                 </introduction>
                 <task>
                         <statement>
@@ -308,6 +543,39 @@
                         <p>
                                 The function graphed below represents the <term>Percentage of Children Under 5 with Acute Malnutrition (Wasting)</term> in a small occupied territory.
                         </p>
+                        <figure xml:id="mid1-malnutrition-graph">
+                                <caption>Reported percentage of children under five experiencing wasting.</caption>
+                                <image width="75%" alt="Blue curve rising from about two percent in 2000 to just over ten percent in 2024.">
+                                        <latex-image><![CDATA[
+\begin{tikzpicture}
+  \begin{axis}[
+    xlabel={Year},
+    ylabel={Wasting (\%)},
+    xtick={2000,2005,2010,2015,2017,2020,2022,2024},
+    ytick={0,1,2,3,4,5,6,7,8,9,10},
+    grid=both,
+    width=10cm,
+    height=7cm,
+    enlargelimits=true,
+    smooth,
+    domain=2000:2024
+  ]
+    \addplot[smooth, ultra thick, blue] coordinates {
+      (2000,2.0)
+      (2005,2.4)
+      (2010,2.9)
+      (2014.8,3.8)
+      (2017,3.0)
+      (2020,4.0)
+      (2022,4.7)
+      (2023.6,6.5)
+      (2024,10.1)
+    };
+  \end{axis}
+\end{tikzpicture}
+                                        ]]></latex-image>
+                                </image>
+                        </figure>
                 </introduction>
                 <task>
                         <statement>

@@ -55,6 +55,30 @@
                        <p>
                                The graph below has which properties?
                        </p>
+                        <image xml:id="mid2-function-inverse-graph" width="70%" alt="Cubic curve crossing the origin with open circles at negative and positive four on the x-axis.">
+                                <latex-image><![CDATA[
+\begin{tikzpicture}
+  \begin{axis}[
+    grid=both,
+    width=.6\textwidth,
+    axis lines=middle,
+    xlabel={$x$},
+    ylabel={$y$},
+    xmin=-6,
+    xmax=6,
+    ymin=-6,
+    ymax=6,
+    xtick={-6,-4,-2,0,2,4,6},
+    ytick={-6,-4,-2,0,2,4,6},
+    yticklabel style = {font=\footnotesize,xshift=0.5ex},
+    xticklabel style = {font=\footnotesize,yshift=0.5ex}
+  ]
+    \addplot[smooth, ultra thick, domain=-4:4, samples=200] {0.125*x^3-2*x};
+    \addplot[only marks,mark=*, mark options={scale=2, fill=none}, line width=0.3pt, mark size=1.5pt] coordinates{(-4,0) (4,0)};
+  \end{axis}
+\end{tikzpicture}
+                                ]]></latex-image>
+                        </image>
                </statement>
                <choices multiple-correct="yes">
 				<choice>
@@ -145,6 +169,32 @@
                         <p>
                                 Here is a graph of the parent function <m>f(x)= \sqrt{x}</m>.
                         </p>
+                        <figure xml:id="mid2-root-parent">
+                                <caption>Graph of the parent function <m>f(x)=\sqrt{x}</m>.</caption>
+                                <image width="70%" alt="Standard square-root curve starting at the origin and increasing slowly to the right.">
+                                        <latex-image><![CDATA[
+\begin{tikzpicture}
+  \begin{axis}[
+    domain=0:5,
+    samples=200,
+    xmin=-4, xmax=4,
+    ymin=-4, ymax=4,
+    axis equal,
+    axis lines=middle,
+    xlabel={$x$},
+    ylabel={$y$},
+    xtick={-4,-3,-2,-1,0,1,2,3,4},
+    ytick={-3,-2,-1,0,1,2,3},
+    grid=both,
+    minor grid style={dotted},
+    major grid style={semithick}
+  ]
+    \addplot[black, very thick, samples=250] {sqrt(x)};
+  \end{axis}
+\end{tikzpicture}
+                                        ]]></latex-image>
+                                </image>
+                        </figure>
                         <p>
                                 Match each function child function below to its graph. Write the letter of the corresponding graphs in the boxes next to the functions below.
                         </p>
@@ -160,15 +210,226 @@
                         <p>
                                 <m>\boxed{\phantom{\dfrac{aaa}{b}}}</m> = <m>\displaystyle \frac{3}{2}\sqrt{-x+1}-1</m>
                         </p>
+                        <sidebyside widths="45%" valign="top">
+                                <side>
+                                        <figure xml:id="mid2-root-graph-a">
+                                                <caption>Graph A</caption>
+                                                <image width="100%" alt="Square-root graph reflected across the y-axis, stretched vertically, and shifted right and down.">
+                                                        <latex-image><![CDATA[
+\begin{tikzpicture}
+  \begin{axis}[
+    domain=-5:1,
+    samples=200,
+    xmin=-4, xmax=4,
+    ymin=-4, ymax=4,
+    axis equal,
+    axis lines=middle,
+    xlabel={$x$},
+    ylabel={$y$},
+    xtick={-4,-3,-2,-1,0,1,2,3,4},
+    ytick={-3,-2,-1,0,1,2,3},
+    grid=both,
+    minor grid style={dotted},
+    major grid style={semithick}
+  ]
+    \addplot[black, very thick, samples=250] {1.5*sqrt(-x+1)-1};
+  \end{axis}
+\end{tikzpicture}
+                                                        ]]></latex-image>
+                                        </figure>
+                                        <figure xml:id="mid2-root-graph-c">
+                                                <caption>Graph C</caption>
+                                                <image width="100%" alt="Square-root graph reflected across both axes and shifted left and up.">
+                                                        <latex-image><![CDATA[
+\begin{tikzpicture}
+  \begin{axis}[
+    domain=-5:-1,
+    samples=200,
+    xmin=-4, xmax=4,
+    ymin=-4, ymax=4,
+    axis equal,
+    axis lines=middle,
+    xlabel={$x$},
+    ylabel={$y$},
+    xtick={-4,-3,-2,-1,0,1,2,3,4},
+    ytick={-3,-2,-1,0,1,2,3},
+    grid=both,
+    minor grid style={dotted},
+    major grid style={semithick}
+  ]
+    \addplot[black, very thick, samples=250] {-(2/3)*sqrt(-x-1)+1};
+  \end{axis}
+\end{tikzpicture}
+                                                        ]]></latex-image>
+                                        </figure>
+                                </side>
+                                <side>
+                                        <figure xml:id="mid2-root-graph-b">
+                                                <caption>Graph B</caption>
+                                                <image width="100%" alt="Square-root graph shifted left and up with a horizontal stretch.">
+                                                        <latex-image><![CDATA[
+\begin{tikzpicture}
+  \begin{axis}[
+    domain=-1:5,
+    samples=200,
+    xmin=-4, xmax=4,
+    ymin=-4, ymax=4,
+    axis equal,
+    axis lines=middle,
+    xlabel={$x$},
+    ylabel={$y$},
+    xtick={-4,-3,-2,-1,0,1,2,3,4},
+    ytick={-3,-2,-1,0,1,2,3},
+    grid=both,
+    minor grid style={dotted},
+    major grid style={semithick}
+  ]
+    \addplot[black, very thick, samples=250] {sqrt((3/2)*(x+1))+1};
+  \end{axis}
+\end{tikzpicture}
+                                                        ]]></latex-image>
+                                        </figure>
+                                        <figure xml:id="mid2-root-graph-d">
+                                                <caption>Graph D</caption>
+                                                <image width="100%" alt="Square-root graph reflected across the x-axis and shifted right and down.">
+                                                        <latex-image><![CDATA[
+\begin{tikzpicture}
+  \begin{axis}[
+    domain=1:5,
+    samples=200,
+    xmin=-4, xmax=4,
+    ymin=-4, ymax=4,
+    axis equal,
+    axis lines=middle,
+    xlabel={$x$},
+    ylabel={$y$},
+    xtick={-4,-3,-2,-1,0,1,2,3,4},
+    ytick={-3,-2,-1,0,1,2,3},
+    grid=both,
+    minor grid style={dotted},
+    major grid style={semithick}
+  ]
+    \addplot[black, very thick, samples=250] {-sqrt((2/3)*(x-1))-1};
+  \end{axis}
+\end{tikzpicture}
+                                                        ]]></latex-image>
+                                        </figure>
+                                </side>
+                        </sidebyside>
                 </introduction>
         </exercise>
 	<exercise>
-		<introduction>
-			<p>
-				Select the graph of <m>f(x)=x^2(x-2)^2</m>.
-			</p>
-		</introduction>
-	</exercise>
+                <introduction>
+                        <p>
+                                Select the graph of <m>f(x)=x^2(x-2)^2</m>.
+                        </p>
+                </introduction>
+                <choices multiple-correct="no">
+                        <choice>
+                                <statement>
+                                        <image xml:id="mid2-poly-graph-a" width="60%" alt="Quartic-like graph crossing the x-axis at zero and two with simple zeros.">
+                                                <latex-image><![CDATA[
+\begin{tikzpicture}
+  \begin{axis}[
+    grid=major,
+    axis x line = middle,
+    axis y line = middle,
+    xticklabel style = {font=\small,yshift=0.5ex},
+    width=5 cm,
+    height=5 cm,
+    xtick={-2,0,2},
+    ymin=-10,
+    ymax=10,
+    xmin=-4,
+    xmax=4
+  ]
+    \addplot[smooth, thick, domain = -5:5,samples=200] { x*(x-2)};
+  \end{axis}
+\end{tikzpicture}
+                                                ]]></latex-image>
+                                </statement>
+                        </choice>
+                        <choice>
+                                <statement>
+                                        <image xml:id="mid2-poly-graph-b" width="60%" alt="Graph with a triple root at two causing a flattened crossing there.">
+                                                <latex-image><![CDATA[
+\begin{tikzpicture}
+  \begin{axis}[
+    grid=major,
+    axis x line = middle,
+    axis y line = middle,
+    xticklabel style = {font=\small,yshift=0.5ex},
+    width=5 cm,
+    height=5 cm,
+    xtick={-2,0,2},
+    ymin=-5,
+    ymax=5,
+    xmin=-4,
+    xmax=4
+  ]
+    \addplot[smooth, thick, domain = -2:5,samples=200] { x*(x-2)^3};
+  \end{axis}
+\end{tikzpicture}
+                                                ]]></latex-image>
+                                </statement>
+                        </choice>
+                        <choice>
+                                <statement>
+                                        <image xml:id="mid2-poly-graph-c" width="60%" alt="Graph touching the x-axis at zero and two and remaining nonnegative.">
+                                                <latex-image><![CDATA[
+\begin{tikzpicture}
+  \begin{axis}[
+    grid=major,
+    axis x line = middle,
+    axis y line = middle,
+    xticklabel style = {font=\small,yshift=0.5ex},
+    width=5 cm,
+    height=5 cm,
+    xtick={-2,0,2},
+    ymin=-10,
+    ymax=10,
+    xmin=-4,
+    xmax=4
+  ]
+    \addplot[smooth, thick, domain = -5:5,samples=200] { x^2*(x-2)^2};
+  \end{axis}
+\end{tikzpicture}
+                                                ]]></latex-image>
+                                </statement>
+                        </choice>
+                        <choice>
+                                <statement>
+                                        <image xml:id="mid2-poly-graph-d" width="60%" alt="Graph crossing the x-axis at zero but only touching at two.">
+                                                <latex-image><![CDATA[
+\begin{tikzpicture}
+  \begin{axis}[
+    grid=major,
+    axis x line = middle,
+    axis y line = middle,
+    xticklabel style = {font=\small,yshift=0.5ex},
+    width=5 cm,
+    height=5 cm,
+    xtick={-2,0,2},
+    ymin=-10,
+    ymax=10,
+    xmin=-4,
+    xmax=4
+  ]
+    \addplot[smooth, thick, domain = -4:4,samples=200] { x*(x-2)^2};
+  \end{axis}
+\end{tikzpicture}
+                                                ]]></latex-image>
+                                </statement>
+                        </choice>
+                        <choice>
+                                <statement>
+                                        <p>
+                                                None of the above.
+                                        </p>
+                                </statement>
+                        </choice>
+                </choices>
+        </exercise>
 	<exercise>
 		<introduction>
 			<p>
@@ -305,12 +566,39 @@
 			</p>
 		</introduction>
 	</exercise>
-	<exercise>
-		<introduction>
-			<p>
-				Let <m>g(x)=\sqrt{x+4}+1</m>. The graph is shown below.
-			</p>
-		</introduction>
+        <exercise>
+                <introduction>
+                        <p>
+                                Let <m>g(x)=\sqrt{x+4}+1</m>. The graph is shown below.
+                        </p>
+                        <figure xml:id="mid2-g-graph">
+                                <caption>Graph of <m>g(x)=\sqrt{x+4}+1</m>.</caption>
+                                <image width="70%" alt="Square-root graph starting at x equals negative four with an open circle and increasing to the right.">
+                                        <latex-image><![CDATA[
+\begin{tikzpicture}
+  \begin{axis}[
+    width=.7\textwidth,
+    height=.3\textwidth,
+    axis lines=middle,
+    grid=major,
+    xmin=-6,
+    xmax=6,
+    ymin=-1,
+    ymax=4,
+    xlabel={$x$},
+    ylabel={$y$},
+    xtick={-6,-4,-2,0,2,4,6},
+    ytick={-1,0,1,2,3,4}
+  ]
+    \addplot[smooth, thick, domain = -3:5,samples=200] { sqrt(x+4)+1};
+    \addplot[smooth, thick, domain = -4:-3,samples=50] { sqrt(x+4)+1};
+    \node at (axis cs:-4,1) [circle,fill=white,draw=black,inner sep=1.5pt] {};
+  \end{axis}
+\end{tikzpicture}
+                                        ]]></latex-image>
+                        </image>
+                        </figure>
+                </introduction>
                 <task>
                         <statement>
                                 <p>

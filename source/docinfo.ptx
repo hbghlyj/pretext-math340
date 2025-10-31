@@ -2,4 +2,10 @@
 <docinfo xmlns:xi="http://www.w3.org/2001/XInclude">
   <macros>
   </macros>
+  <latex-image-preamble>
+    \usepackage{tikz}
+    \usetikzlibrary{calc,fit,shapes,3d}
+    \usepackage{pgfplots}
+    \pgfplotsset{compat=1.16}
+  </latex-image-preamble>
 </docinfo>

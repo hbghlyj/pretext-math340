@@ -6,16 +6,103 @@
 				Multiple choice section. All points are for choosing the correct answer. No justification is needed.
 			</p>
 	</introduction>
-	<exercise>
-		<introduction>
-			<p>
-				Starting form the base function <m>|x|</m> (graph shown below).
-			</p>
-			<p>
-				Select the function graphed below.
-			</p>
-		</introduction>
-	</exercise>
+        <exercise>
+                <introduction>
+                        <p>
+                                Starting form the base function <m>|x|</m> (graph shown below).
+                        </p>
+                        <figure xml:id="final-abs-base">
+                                <caption>Graph of the base function <m>y=|x|</m>.</caption>
+                                <image width="55%" alt="V-shaped graph with vertex at the origin opening upward.">
+                                        <latex-image><![CDATA[
+\begin{tikzpicture}
+  \begin{axis}[
+    grid=major,
+    width=.5\textwidth,
+    axis lines=middle,
+    xmin=-5,
+    xmax=5,
+    ymin=-5,
+    ymax=5,
+    xlabel={$x$},
+    ylabel={$y$},
+    xtick={-5,-4,-3,-2,-1,0,1,2,3,4,5},
+    ytick={-5,-4,-3,-2,-1,0,1,2,3,4,5}
+  ]
+    \addplot[smooth, thick, domain = -6:0,samples=2] { abs(x)};
+    \addplot[smooth, thick, domain = 0:6,samples=2] { abs(x)};
+  \end{axis}
+\end{tikzpicture}
+                                        ]]></latex-image>
+                                </image>
+                        </figure>
+                        <p>
+                                Select the function graphed below.
+                        </p>
+                        <figure xml:id="final-abs-transform">
+                                <caption>Transformed absolute value graph used in the question.</caption>
+                                <image width="55%" alt="V-shaped graph shifted right one unit, vertically scaled by one half, and shifted up two units.">
+                                        <latex-image><![CDATA[
+\begin{tikzpicture}
+  \begin{axis}[
+    grid=major,
+    width=.5\textwidth,
+    axis lines=middle,
+    xmin=-5,
+    xmax=5,
+    ymin=-5,
+    ymax=5,
+    xlabel={$x$},
+    ylabel={$y$},
+    xtick={-5,-4,-3,-2,-1,0,1,2,3,4,5},
+    ytick={-5,-4,-3,-2,-1,0,1,2,3,4,5}
+  ]
+    \addplot[smooth, thick, domain = -6:1,samples=2] { 0.5*abs(x-1)+2};
+    \addplot[smooth, thick, domain = 1:6,samples=2] { 0.5*abs(x-1)+2};
+  \end{axis}
+\end{tikzpicture}
+                                        ]]></latex-image>
+                                </image>
+                        </figure>
+                </introduction>
+                <choices multiple-correct="no">
+                        <choice>
+                                <statement>
+                                        <p>
+                                                <m>f(x)=2|x-1|+2</m>
+                                        </p>
+                                </statement>
+                        </choice>
+                        <choice>
+                                <statement>
+                                        <p>
+                                                <m>f(x)=2|x+1|+2</m>
+                                        </p>
+                                </statement>
+                        </choice>
+                        <choice>
+                                <statement>
+                                        <p>
+                                                <m>f(x)=\dfrac{1}{2}|x-1|+2</m>
+                                        </p>
+                                </statement>
+                        </choice>
+                        <choice>
+                                <statement>
+                                        <p>
+                                                <m>f(x)=\dfrac{1}{2}|x+1|+2</m>
+                                        </p>
+                                </statement>
+                        </choice>
+                        <choice>
+                                <statement>
+                                        <p>
+                                                None of the above.
+                                        </p>
+                                </statement>
+                        </choice>
+                </choices>
+        </exercise>
        <exercise>
                <statement>
                        <p>
