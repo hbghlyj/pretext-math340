@@ -13,14 +13,13 @@
 			</p>
 		</introduction>
 	</exercise>
-	<exercise>
-		<task>
-			<statement>
-				<p>
-				Find the solution to the following inequality <me>|x-3|\ge-3</me>
-				</p>
-			</statement>
-			<choices multiple-correct="no">
+       <exercise>
+               <statement>
+                       <p>
+                               Find the solution to the following inequality <me>|x-3|\ge-3</me>
+                               </p>
+               </statement>
+               <choices multiple-correct="no">
 				<choice>
 					<statement>
 						<p>
@@ -49,17 +48,15 @@
 						</p>
 					</statement>
 				</choice>
-			</choices>
-		</task>
-	</exercise>
-	<exercise>
-		<task>
-			<statement>
-				<p>
-					<term>Select ALL</term> (real and complex) solutions to the equation: <me>x^3=-x</me>
-				</p>
-			</statement>
-			<choices multiple-correct="yes">
+               </choices>
+       </exercise>
+       <exercise>
+               <statement>
+                       <p>
+                               <term>Select ALL</term> (real and complex) solutions to the equation: <me>x^3=-x</me>
+                                </p>
+               </statement>
+               <choices multiple-correct="yes">
 				<choice>
 					<statement>
 						<p>
@@ -95,9 +92,8 @@
 						</p>
 					</statement>
 				</choice>
-			</choices>
-		</task>
-	</exercise>
+               </choices>
+       </exercise>
 	<exercise>
 		<introduction>
 			<p>
@@ -108,14 +104,13 @@
 			</p>
 		</introduction>
 	</exercise>
-	<exercise>
-		<task>
-			<statement>
-				<p>
-				If <m>f(x)=5x^2-\dfrac{1}{3-x}</m>, What is <m>f(-2z)</m>?
-			</p>
-			</statement>
-			<choices multiple-correct="no">
+       <exercise>
+               <statement>
+                       <p>
+                               If <m>f(x)=5x^2-\dfrac{1}{3-x}</m>, What is <m>f(-2z)</m>?
+                        </p>
+               </statement>
+               <choices multiple-correct="no">
 				<choice>
 					<statement>
 						<p>
@@ -151,20 +146,18 @@
 							</p>
 					</statement>
 				</choice>
-			</choices>
-		</task>
-	</exercise>
-	<exercise>
-		<task>
-			<statement>
-				<p>
-				Find the domain of the function: <me>\dfrac{\sqrt{x+3}}{x-7}</me>
-				</p>
-				<p>
-				Free answer section. Work must be shown to get credit for any answer. Partial credit may be given even for incorrect final answers, so show your work.
-			</p>
-			</statement>
-			<choices multiple-correct="no">
+               </choices>
+       </exercise>
+       <exercise>
+               <statement>
+                       <p>
+                               Find the domain of the function: <me>\dfrac{\sqrt{x+3}}{x-7}</me>
+                               </p>
+                               <p>
+                               Free answer section. Work must be shown to get credit for any answer. Partial credit may be given even for incorrect final answers, so show your work.
+                       </p>
+               </statement>
+               <choices multiple-correct="no">
 				<choice>
 					<statement>
 						<p>
@@ -200,9 +193,8 @@
 							</p>
 					</statement>
 				</choice>
-			</choices>
-		</task>
-	</exercise>
+               </choices>
+       </exercise>
 	<exercise>
 		<introduction>
 			<p>
@@ -297,13 +289,34 @@
 			</p>
 		</introduction>
 	</exercise>
-	<exercise>
-		<introduction>
-			<p>
-				The function graphed below represents the <term>Percentage of Children Under 5 with Acute Malnutrition (Wasting)</term> in a small occupied territory.
-			</p>
-		</introduction>
-	</exercise>
+        <exercise>
+                <introduction>
+                        <p>
+                                The function graphed below represents the <term>Percentage of Children Under 5 with Acute Malnutrition (Wasting)</term> in a small occupied territory.
+                        </p>
+                </introduction>
+                <task>
+                        <statement>
+                                <p>
+                                        What was the average rate of change of wasting between 2000 and 2020?
+                                </p>
+                        </statement>
+                </task>
+                <task>
+                        <statement>
+                                <p>
+                                        What was the average rate of change of wasting between 2020 and 2024?
+                                </p>
+                        </statement>
+                </task>
+                <task>
+                        <statement>
+                                <p>
+                                        For what period of time (intervals) is the function <term>increasing</term>? Express your answer in interval notation.
+                                </p>
+                        </statement>
+                </task>
+        </exercise>
 	<exercise>
 		<introduction>
 			<p>
