@@ -162,13 +162,17 @@
                         </p>
                 </introduction>
         </exercise>
-	<exercise>
-		<introduction>
-			<p>
-				Select the graph of <m>f(x)=x^2(x-2)^2</m>.
-			</p>
-		</introduction>
-	</exercise>
+        <exercise>
+                <introduction>
+                        <p>
+                                Select the graph of <m>f(x)=x^2(x-2)^2</m>.
+                        </p>
+                        
+                        <p>
+                                Free answer section. Work must be shown to get credit for any answer. Partial credit may be given even for incorrect final answers, so show your work.
+                        </p>
+                </introduction>
+        </exercise>
 	<exercise>
 		<introduction>
 			<p>
