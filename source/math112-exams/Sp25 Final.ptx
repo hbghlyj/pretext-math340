@@ -7,53 +7,51 @@
 			</p>
 	</introduction>
         <exercise>
-                <introduction>
+                <statement>
                         <p>
-                                Starting form the base function <m>|x|</m> (graph shown below).
+                                Starting from the base function <m>|x|</m> (graph shown below).
                         </p>
                         <p>
                                 Select the function graphed below.
                         </p>
-                </introduction>
-                <task>
-<choices multiple-correct="no">
-                                <choice>
-                                        <statement>
-                                                <p>
-                                                        A. <m>f(x)=2|x-1|+2</m>
-                                                </p>
-                                        </statement>
-                                </choice>
-                                <choice>
-                                        <statement>
-                                                <p>
-                                                        B. <m>f(x)=2|x+1|+2</m>
-                                                </p>
-                                        </statement>
-                                </choice>
-                                <choice>
-                                        <statement>
-                                                <p>
-                                                        C. <m>f(x)=\frac{1}{2}|x-1|+2</m>
-                                                </p>
-                                        </statement>
-                                </choice>
-                                <choice>
-                                        <statement>
-                                                <p>
-                                                        D. <m>f(x)=\frac{1}{2}|x+1|+2</m>
-                                                </p>
-                                        </statement>
-                                </choice>
-                                <choice>
-                                        <statement>
-                                                <p>
-                                                        E. None of the above.
-                                                </p>
-                                        </statement>
-                                </choice>
-                        </choices>
-                </task>
+                </statement>
+                <choices multiple-correct="no">
+                        <choice>
+                                <statement>
+                                        <p>
+                                                <m>f(x)=2|x-1|+2</m>
+                                        </p>
+                                </statement>
+                        </choice>
+                        <choice>
+                                <statement>
+                                        <p>
+                                                <m>f(x)=2|x+1|+2</m>
+                                        </p>
+                                </statement>
+                        </choice>
+                        <choice>
+                                <statement>
+                                        <p>
+                                                <m>f(x)=\frac{1}{2}|x-1|+2</m>
+                                        </p>
+                                </statement>
+                        </choice>
+                        <choice>
+                                <statement>
+                                        <p>
+                                                <m>f(x)=\frac{1}{2}|x+1|+2</m>
+                                        </p>
+                                </statement>
+                        </choice>
+                        <choice>
+                                <statement>
+                                        <p>
+                                                None of the above.
+                                        </p>
+                                </statement>
+                        </choice>
+                </choices>
         </exercise>
        <exercise>
                <statement>
