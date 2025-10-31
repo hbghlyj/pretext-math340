@@ -337,6 +337,15 @@ local function parse_blocks(block_str)
     rest = rest:gsub("^%s+", "")
     if rest == "" then break end
 
+    -- Strip any leading HTML comments that might wrap other structures
+    while true do
+      local comment = rest:match("^<!%-%-.-%-%->")
+      if not comment then break end
+      rest = rest:sub(#comment + 1)
+      rest = rest:gsub("^%s+", "")
+    end
+    if rest == "" then break end
+
     local handled = false
 
     if rest:sub(1,3) == "<p>" then

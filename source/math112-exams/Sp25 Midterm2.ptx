@@ -216,16 +216,22 @@
 				</p>
 			</statement>
 		</task>
-		<task>
-			<statement>
-				<p>
-					When does the ball reach its maximum height? What is the maximum height? Please include units for both answers.
-				</p>
-			</statement>
-		</task>
-	</exercise>
-	<exercise>
-		<task>
+                <task>
+                        <statement>
+                                <p>
+                                        When does the ball reach its maximum height? What is the maximum height? Please include units for both answers.
+                                </p>
+                                <p>
+                                        <m>\mbox{Max Height: } \scalebox{1.1}{\ensuremath{\boxed{ \phantom{\frac{a}{b}} \hspace{3cm} }}}</m>
+                                </p>
+                                <p>
+                                        <m>\mbox{Time: } \scalebox{1.1}{\ensuremath{\boxed{ \phantom{\frac{a}{b}} \hspace{3cm} }}}</m>
+                                </p>
+                        </statement>
+                </task>
+        </exercise>
+        <exercise>
+                <task>
 			<statement>
 				<p>
 					Find the polynomial <m>h(x)</m> of least possible degree with  that has a repeated root of <m>-3</m> with multiplicity 2 and a root of <m>\sqrt{5}</m> such that <m>h(0)=90</m>.
@@ -235,16 +241,22 @@
 				</p>
 			</statement>
 		</task>
-		<task>
-			<statement>
-				<p>
-					What is the leading term of the polynomial and what is the degree of the polynomial?
-				</p>
-			</statement>
-		</task>
-	</exercise>
-	<exercise>
-		<introduction>
+                <task>
+                        <statement>
+                                <p>
+                                        What is the leading term of the polynomial and what is the degree of the polynomial?
+                                </p>
+                                <p>
+                                        <m>\mbox{Leading term: } \scalebox{1.1}{\ensuremath{\boxed{ \phantom{\frac{a}{b}} \hspace{3cm} }}}</m>
+                                </p>
+                                <p>
+                                        <m>\mbox{Degree: } \scalebox{1.1}{\ensuremath{\boxed{ \phantom{\frac{a}{b}} \hspace{3cm} }}}</m>
+                                </p>
+                        </statement>
+                </task>
+        </exercise>
+        <exercise>
+                <introduction>
 			<p>
 				Compute the following.
 			</p>
@@ -284,28 +296,40 @@
 				Let <m>g(x)=\sqrt{x+4}+1</m>. The graph is shown below.
 			</p>
 		</introduction>
-		<task>
-			<statement>
-				<p>
-					What is the domain and range of <m>g(x)</m>? (Write in interval notation.)
-				</p>
-			</statement>
-		</task>
-		<task>
-			<statement>
+                <task>
+                        <statement>
+                                <p>
+                                        What is the domain and range of <m>g(x)</m>? (Write in interval notation.)
+                                </p>
+                                <p>
+                                        <m>\mbox{Domain: } \scalebox{1.1}{\ensuremath{\boxed{ \phantom{\frac{a}{b}} \hspace{3cm} }}}</m>
+                                </p>
+                                <p>
+                                        <m>\mbox{Range: } \scalebox{1.1}{\ensuremath{\boxed{ \phantom{\frac{a}{b}} \hspace{3cm} }}}</m>
+                                </p>
+                        </statement>
+                </task>
+                <task>
+                        <statement>
 				<p>
 					What is <m>g^{-1}(x)</m>? <m>g^{-1}(x) = \scalebox{1.2}{\ensuremath{\boxed{ \phantom{\dfrac{a}{b}} \hspace{5cm} }}}</m>
 				</p>
 			</statement>
 		</task>
-		<task>
-			<statement>
-				<p>
-					What are the domain and range of <m>g^{-1}(x)</m>?
-				</p>
-			</statement>
-		</task>
-	</exercise>
+                <task>
+                        <statement>
+                                <p>
+                                        What are the domain and range of <m>g^{-1}(x)</m>?
+                                </p>
+                                <p>
+                                        <m>\mbox{Domain: } \scalebox{1.1}{\ensuremath{\boxed{ \phantom{\frac{a}{b}} \hspace{3cm} }}}</m>
+                                </p>
+                                <p>
+                                        <m>\mbox{Range: } \scalebox{1.1}{\ensuremath{\boxed{ \phantom{\frac{a}{b}} \hspace{3cm} }}}</m>
+                                </p>
+                        </statement>
+                </task>
+        </exercise>
 	<exercise>
 		<introduction>
 			<p>
