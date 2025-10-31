@@ -16,7 +16,7 @@
                         </p>
                 </introduction>
                 <task>
-                        <choices multiple-correct="yes">
+<choices multiple-correct="no">
                                 <choice>
                                         <statement>
                                                 <p>
