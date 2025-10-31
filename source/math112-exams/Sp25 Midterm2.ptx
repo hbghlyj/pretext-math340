@@ -152,7 +152,7 @@
                                 2
                         </p>
                         <p>
-                                2 <m>\boxed{\phantom{\dfrac{aaa}{b}}}</m> =<m>\displaystyle -\frac{2}{3}\sqrt{-x-1}+1</m>
+                                <m>\boxed{\phantom{\dfrac{aaa}{b}}}</m> =<m>\displaystyle -\frac{2}{3}\sqrt{-x-1}+1</m>
                         </p>
                         <p>
                                 <m>\boxed{\phantom{\dfrac{aaa}{b}}}</m> = <m>\displaystyle -\sqrt{\frac{2}{3}(x-1)}-1</m>
@@ -246,7 +246,7 @@
                                         When does the ball reach its maximum height? What is the maximum height? Please include units for both answers.
                                 </p>
                                 <p>
-                                        2 <m>\mbox{Max Height: } \scalebox{1.1}{\ensuremath{\boxed{ \phantom{\frac{a}{b}} \hspace{3cm} }}}</m>
+                                        <m>\mbox{Max Height: } \scalebox{1.1}{\ensuremath{\boxed{ \phantom{\frac{a}{b}} \hspace{3cm} }}}</m>
                                 </p>
                                 <p>
                                         <m>\mbox{Time: } \scalebox{1.1}{\ensuremath{\boxed{ \phantom{\frac{a}{b}} \hspace{3cm} }}}</m>
@@ -271,7 +271,7 @@
                                         What is the leading term of the polynomial and what is the degree of the polynomial?
                                 </p>
                                 <p>
-                                        2 <m>\mbox{Leading term: } \scalebox{1.1}{\ensuremath{\boxed{ \phantom{\frac{a}{b}} \hspace{3cm} }}}</m>
+                                        <m>\mbox{Leading term: } \scalebox{1.1}{\ensuremath{\boxed{ \phantom{\frac{a}{b}} \hspace{3cm} }}}</m>
                                 </p>
                                 <p>
                                         <m>\mbox{Degree: } \scalebox{1.1}{\ensuremath{\boxed{ \phantom{\frac{a}{b}} \hspace{3cm} }}}</m>
@@ -326,7 +326,7 @@
                                         What is the domain and range of <m>g(x)</m>? (Write in interval notation.)
                                 </p>
                                 <p>
-                                        2 <m>\mbox{Domain: } \scalebox{1.1}{\ensuremath{\boxed{ \phantom{\frac{a}{b}} \hspace{3cm} }}}</m>
+                                        <m>\mbox{Domain: } \scalebox{1.1}{\ensuremath{\boxed{ \phantom{\frac{a}{b}} \hspace{3cm} }}}</m>
                                 </p>
                                 <p>
                                         <m>\mbox{Range: } \scalebox{1.1}{\ensuremath{\boxed{ \phantom{\frac{a}{b}} \hspace{3cm} }}}</m>
@@ -346,7 +346,7 @@
                                         What are the domain and range of <m>g^{-1}(x)</m>?
                                 </p>
                                 <p>
-                                        2 <m>\mbox{Domain: } \scalebox{1.1}{\ensuremath{\boxed{ \phantom{\frac{a}{b}} \hspace{3cm} }}}</m>
+                                        <m>\mbox{Domain: } \scalebox{1.1}{\ensuremath{\boxed{ \phantom{\frac{a}{b}} \hspace{3cm} }}}</m>
                                 </p>
                                 <p>
                                         <m>\mbox{Range: } \scalebox{1.1}{\ensuremath{\boxed{ \phantom{\frac{a}{b}} \hspace{3cm} }}}</m>

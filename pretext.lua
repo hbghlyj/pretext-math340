@@ -333,6 +333,21 @@ end
 local function parse_blocks(block_str)
   local blocks = {}
   local rest = block_str or ""
+
+  local function strip_multicolumn_counter(content)
+    if not content then
+      return content
+    end
+    local stripped, count = content:gsub("^%s*%d+%s+(<)", "%1", 1)
+    if count > 0 then
+      return stripped
+    end
+    stripped, count = content:gsub("^%s*%d+%s+(\\)", "%1", 1)
+    if count > 0 then
+      return stripped
+    end
+    return content
+  end
   while rest do
     rest = rest:gsub("^%s+", "")
     if rest == "" then break end
@@ -368,7 +383,8 @@ local function parse_blocks(block_str)
       if direct_tag then
         local before, block, remainder = extract_outermost_list(rest, direct_tag)
         if before and trim(before) ~= "" then
-          table.insert(blocks, {type = "p", content = trim(before)})
+          local cleaned = strip_multicolumn_counter(trim(before))
+          table.insert(blocks, {type = "p", content = cleaned})
         end
         if block then
           table.insert(blocks, {type = "list", tag = direct_tag, content = strip_outer_list_markup(block, direct_tag)})
@@ -390,6 +406,7 @@ local function parse_blocks(block_str)
     if not handled then
       local para_content, remainder = rest:match("^<p>%s*(.-)%s*</p>(.*)$")
       if para_content then
+        para_content = strip_multicolumn_counter(para_content)
         table.insert(blocks, {type = "p", content = para_content})
         rest = remainder
       else
