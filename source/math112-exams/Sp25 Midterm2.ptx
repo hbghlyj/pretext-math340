@@ -12,7 +12,7 @@
                                A parabola has a vertex of <m>(5,-2)</m>, and the vertex is a maximum. What is a possible equation for the parabola?
                        </p>
                </statement>
-               <choices multiple-correct="yes">
+               <choices multiple-correct="no">
 				<choice>
 					<statement>
 						<p>
@@ -56,7 +56,7 @@
                                The graph below has which properties?
                        </p>
                </statement>
-               <choices multiple-correct="yes">
+               <choices multiple-correct="no">
 				<choice>
 					<statement>
 						<p>
@@ -102,7 +102,7 @@
                                        <m>P(x)\to-\infty</m>. What do you know about <m>a</m> and <m>n</m>?
                        </p>
                </statement>
-               <choices multiple-correct="yes">
+<choices multiple-correct="no">
 				<choice>
 					<statement>
 						<p>

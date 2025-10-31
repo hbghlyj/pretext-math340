@@ -504,7 +504,9 @@ local function render_plain_list(tag, content, indent)
 end
 
 local function render_choices(list_content, indent)
-  local multiple = (list_content:find("<m>PTXMULTI</m>") or list_content:find("&lt;m&gt;PTXMULTI&lt;/m&gt;")) and "yes" or "no"
+  local has_multi = list_content:find("<m>PTXMULTI</m>") or list_content:find("&lt;m&gt;PTXMULTI&lt;/m&gt;")
+  local has_single = list_content:find("<m>PTXSINGLE</m>") or list_content:find("&lt;m&gt;PTXSINGLE&lt;/m&gt;")
+  local multiple = (has_multi and not has_single) and "yes" or "no"
   local lines = {}
   table.insert(lines, indent_line('<choices multiple-correct="' .. multiple .. '">', indent))
   for _, entry in ipairs(parse_list_items(list_content)) do
