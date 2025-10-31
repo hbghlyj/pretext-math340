@@ -236,6 +236,7 @@
   \end{axis}
 \end{tikzpicture}
                                                         ]]></latex-image>
+                                                </image>
                                         </figure>
                                         <figure xml:id="mid2-root-graph-c">
                                                 <caption>Graph C</caption>
@@ -261,6 +262,7 @@
   \end{axis}
 \end{tikzpicture}
                                                         ]]></latex-image>
+                                                </image>
                                         </figure>
                                 </side>
                                 <side>
@@ -288,6 +290,7 @@
   \end{axis}
 \end{tikzpicture}
                                                         ]]></latex-image>
+                                                </image>
                                         </figure>
                                         <figure xml:id="mid2-root-graph-d">
                                                 <caption>Graph D</caption>
@@ -313,6 +316,7 @@
   \end{axis}
 \end{tikzpicture}
                                                         ]]></latex-image>
+                                                </image>
                                         </figure>
                                 </side>
                         </sidebyside>
@@ -347,6 +351,7 @@
   \end{axis}
 \end{tikzpicture}
                                                 ]]></latex-image>
+                                        </image>
                                 </statement>
                         </choice>
                         <choice>
@@ -371,6 +376,7 @@
   \end{axis}
 \end{tikzpicture}
                                                 ]]></latex-image>
+                                        </image>
                                 </statement>
                         </choice>
                         <choice>
@@ -395,6 +401,7 @@
   \end{axis}
 \end{tikzpicture}
                                                 ]]></latex-image>
+                                        </image>
                                 </statement>
                         </choice>
                         <choice>
@@ -419,6 +426,7 @@
   \end{axis}
 \end{tikzpicture}
                                                 ]]></latex-image>
+                                        </image>
                                 </statement>
                         </choice>
                         <choice>
