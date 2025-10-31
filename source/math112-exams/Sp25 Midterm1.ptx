@@ -307,8 +307,15 @@
 	<exercise>
 		<introduction>
 			<p>
-				Solve the given equation: (Hint: check your solutions.) <me>\sqrt{x+7}-x+4=5</me>
+				Solve the given equation: <me>\sqrt{x+7}-x+4=5</me>
 			</p>
 		</introduction>
+		<task>
+			<hint>
+				<p>
+					Check your solutions.
+				</p>
+			</hint>
+		</task>
 	</exercise>
 </worksheet>
