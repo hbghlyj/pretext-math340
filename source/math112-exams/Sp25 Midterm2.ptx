@@ -140,13 +140,28 @@
 				</choice>
                </choices>
        </exercise>
-	<exercise>
-		<introduction>
-			<p>
-				Here is a graph of the parent function <m>f(x)= \sqrt{x}</m>.
-			</p>
-		</introduction>
-	</exercise>
+        <exercise>
+                <introduction>
+                        <p>
+                                Here is a graph of the parent function <m>f(x)= \sqrt{x}</m>.
+                        </p>
+                        <p>
+                                Match each function child function below to its graph. Write the letter of the corresponding graphs in the boxes next to the functions below.
+                        </p>
+                        <p>
+                                <m>\boxed{\phantom{\dfrac{aaa}{b}}}</m> =<m>\displaystyle -\frac{2}{3}\sqrt{-x-1}+1</m>
+                        </p>
+                        <p>
+                                <m>\boxed{\phantom{\dfrac{aaa}{b}}}</m> = <m>\displaystyle -\sqrt{\frac{2}{3}(x-1)}-1</m>
+                        </p>
+                        <p>
+                                <m>\boxed{\phantom{\dfrac{aaa}{b}}}</m> = <m>\displaystyle \sqrt{\frac{3}{2}(x+1)}+1</m>
+                        </p>
+                        <p>
+                                <m>\boxed{\phantom{\dfrac{aaa}{b}}}</m> = <m>\displaystyle \frac{3}{2}\sqrt{-x+1}-1</m>
+                        </p>
+                </introduction>
+        </exercise>
 	<exercise>
 		<introduction>
 			<p>
