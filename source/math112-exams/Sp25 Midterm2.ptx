@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<worksheet xml:id="Midterm2" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="Midterm2">
 	<title>Sp25 Midterm2</title>
 	<introduction>
 		<p>
@@ -7,141 +7,143 @@
 			</p>
 	</introduction>
 	<exercise>
-		<introduction>
-			<p>
+		<task>
+			<statement>
+				<p>
 				A parabola has a vertex of <m>(5,-2)</m>, and the vertex is a maximum. What is a possible equation for the parabola?
 			</p>
-		</introduction>
-		<task>
-				<choices multiple-correct="yes">
-					<choice>
-						<statement>
-							<p>
-								<m>y=(x+5)^2-2</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>y=-(x-5)^2+2</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>y=-(x-5)^2-2</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>y=-(x-2)^2+5</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
+			</statement>
+			<choices multiple-correct="yes">
+				<choice>
+					<statement>
+						<p>
+							<m>y=(x+5)^2-2</m>
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							<m>y=-(x-5)^2+2</m>
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							<m>y=-(x-5)^2-2</m>
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							<m>y=-(x-2)^2+5</m>
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
 								None of the above.
 							</p>
-						</statement>
-					</choice>
-				</choices>
+					</statement>
+				</choice>
+			</choices>
 		</task>
 	</exercise>
 	<exercise>
-		<introduction>
-			<p>
+		<task>
+			<statement>
+				<p>
 				The graph below has which properties?
 			</p>
-		</introduction>
-		<task>
-				<choices multiple-correct="yes">
-					<choice>
-						<statement>
-							<p>
+			</statement>
+			<choices multiple-correct="yes">
+				<choice>
+					<statement>
+						<p>
 								The graph  a function and  have an inverse.
 							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
 								The graph is  a function does  have an inverse.
 							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
 								The graph is  a function, but  have an inverse.
 							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
 								The graph  a function, but does  have an inverse.
 							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
 								None of the above.
 							</p>
-						</statement>
-					</choice>
-				</choices>
+					</statement>
+				</choice>
+			</choices>
 		</task>
 	</exercise>
 	<exercise>
-		<introduction>
-			<p>
-				Consider a polynomial <me>P(x) = ax^n</me> You know <m>n</m> is a positive integer, but do not know <m>a</m>. If as <m>x\to-\infty</m> <m>P(x)\to+\infty</m> and as <m>x\to+\infty</m> <m>P(x)\to-\infty</m>. What do you know about <m>a</m> and <m>n</m>?
-			</p>
-		</introduction>
 		<task>
-				<choices multiple-correct="yes">
-					<choice>
-						<statement>
-							<p>
-								<m>a</m> is positive and <m>n</m> is odd.
+			<statement>
+				<p>
+				Consider a polynomial <me>P(x) = ax^n</me> You know <m>n</m> is a positive integer, but do not know <m>a</m>. If as <m>x\to-\infty</m>
+					<m>P(x)\to+\infty</m> and as <m>x\to+\infty</m>
+					<m>P(x)\to-\infty</m>. What do you know about <m>a</m> and <m>n</m>?
+			</p>
+			</statement>
+			<choices multiple-correct="yes">
+				<choice>
+					<statement>
+						<p>
+							<m>a</m> is positive and <m>n</m> is odd.
 							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>a</m> is negative and <m>n</m> is odd.
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							<m>a</m> is negative and <m>n</m> is odd.
 							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>a</m> is negative and <m>n</m> is even.
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							<m>a</m> is negative and <m>n</m> is even.
 							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>a</m> is positive and <m>n</m> is even.
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							<m>a</m> is positive and <m>n</m> is even.
 							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
 								None of the above.
 							</p>
-						</statement>
-					</choice>
-				</choices>
+					</statement>
+				</choice>
+			</choices>
 		</task>
 	</exercise>
 	<exercise>
