@@ -289,13 +289,34 @@
 			</p>
 		</introduction>
 	</exercise>
-	<exercise>
-		<introduction>
-			<p>
-				The function graphed below represents the <term>Percentage of Children Under 5 with Acute Malnutrition (Wasting)</term> in a small occupied territory.
-			</p>
-		</introduction>
-	</exercise>
+        <exercise>
+                <introduction>
+                        <p>
+                                The function graphed below represents the <term>Percentage of Children Under 5 with Acute Malnutrition (Wasting)</term> in a small occupied territory.
+                        </p>
+                </introduction>
+                <task>
+                        <statement>
+                                <p>
+                                        What was the average rate of change of wasting between 2000 and 2020?
+                                </p>
+                        </statement>
+                </task>
+                <task>
+                        <statement>
+                                <p>
+                                        What was the average rate of change of wasting between 2020 and 2024?
+                                </p>
+                        </statement>
+                </task>
+                <task>
+                        <statement>
+                                <p>
+                                        For what period of time (intervals) is the function <term>increasing</term>? Express your answer in interval notation.
+                                </p>
+                        </statement>
+                </task>
+        </exercise>
 	<exercise>
 		<introduction>
 			<p>
