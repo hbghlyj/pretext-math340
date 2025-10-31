@@ -110,92 +110,92 @@
     <task>
       <statement>
         <p>Consider the infinite series <m>\displaystyle\sum_{n=0}^{\infty}\dfrac{8}{6^n}.</m> What can you say about the convergence of this series?</p>
-        <ul>
-          <li>
+        <choices>
+          <choice>
             <p>The series converges to <m>8/6.</m></p>
-          </li>
-          <li>
+          </choice>
+          <choice>
             <p>The series converges to <m>\frac{8}{1-1/6}.</m></p>
-          </li>
-          <li>
+          </choice>
+          <choice>
             <p>The series converges, but its value cannot be determined.</p>
-          </li>
-          <li>
+          </choice>
+          <choice>
             <p>The series diverges.</p>
-          </li>
-        </ul>
+          </choice>
+        </choices>
       </statement>
     </task>
     <task>
       <statement>
         <p>Consider the infinite series <m>\displaystyle\sum_{n=1}^{\infty}(-1)^{n-1}\dfrac{1}{n2^n}.</m> What can you say about the convergence of this series?</p>
-        <ul>
-          <li>
+        <choices>
+          <choice>
             <p>The series converges to <m>\ln(3/2).</m></p>
-          </li>
-          <li>
+          </choice>
+          <choice>
             <p>The series converges to <m>\frac{1}{1-1/2}.</m></p>
-          </li>
-          <li>
+          </choice>
+          <choice>
             <p>The series converges, but its value cannot be determined.</p>
-          </li>
-          <li>
+          </choice>
+          <choice>
             <p>The series diverges.</p>
-          </li>
-        </ul>
+          </choice>
+        </choices>
       </statement>
     </task>
     <task>
       <statement>
         <p>The value of a painting, initially worth $10000, continuously grows in value at a rate of 4% a year. Let <m>y(t)</m> be the value of the painting after <m>t</m> years. Which of the following expressions correctly describe <m>y(t)</m>? Select all that apply.</p>
-        <ul>
-          <li>
+        <choices>
+          <choice>
             <p><m>y(t)= 10000e^{0.04t}</m></p>
-          </li>
-          <li>
+          </choice>
+          <choice>
             <p><m>y(t)= 10000(1+0.04/n)^{nt}</m></p>
-          </li>
-          <li>
+          </choice>
+          <choice>
             <p><m>y'(t) = 0.04(10000 -y).</m></p>
-          </li>
-          <li>
+          </choice>
+          <choice>
             <p><m>y'(t) = 0.04y,</m> with <m>y(0) = 10000</m></p>
-          </li>
-          <li>
+          </choice>
+          <choice>
             <p>None of the above.</p>
-          </li>
-        </ul>
+          </choice>
+        </choices>
       </statement>
     </task>
     <task>
       <statement>
         <p>Consider the function <m>f(x,y) = e^{x-1}\sqrt{y -4}.</m> Then the domain of <m>f(x,y)</m> is given by:</p>
-        <ul>
-          <li>
+        <choices>
+          <choice>
             <p><m>\{ (x,y) | y \neq 4 \}</m></p>
-          </li>
-          <li>
+          </choice>
+          <choice>
             <p><m>\{ (x,y) | x \neq 1\, \text{and } \, y \neq 4 \}</m></p>
-          </li>
-          <li>
+          </choice>
+          <choice>
             <p><m>\{ (x,y) | y &gt; 4 \}</m></p>
-          </li>
-          <li>
+          </choice>
+          <choice>
             <p><m>\{ (x,y) | y \ge 4 \}</m></p>
-          </li>
-          <li>
+          </choice>
+          <choice>
             <p><m>\{ (x,y) | y \le 4 \}</m></p>
-          </li>
-          <li>
+          </choice>
+          <choice>
             <p><m>\{ (x,y) | x \ge 1 \}</m></p>
-          </li>
-          <li>
+          </choice>
+          <choice>
             <p><m>\{ (x,y) | x \le 1 \}</m></p>
-          </li>
-          <li>
+          </choice>
+          <choice>
             <p>None of the above.</p>
-          </li>
-        </ul>
+          </choice>
+        </choices>
       </statement>
     </task>
   </exercise>
