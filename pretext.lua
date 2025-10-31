@@ -67,6 +67,58 @@ local function indent_line(text, level)
   return table.concat(lines, "\n")
 end
 
+local function clean_choice_chunk(chunk)
+  chunk = chunk or ""
+  chunk = chunk:gsub("\\chooseone%s*", "")
+  chunk = chunk:gsub("\\checkboxchar%s*%b{}", "")
+  chunk = chunk:gsub("^%s+", "")
+  chunk = chunk:gsub("%s+$", "")
+  return chunk
+end
+
+local function convert_choice_body(body, marker)
+  local items = {}
+  local search_start = 1
+  while true do
+    local start_idx, end_idx = body:find("\\choice", search_start)
+    if not start_idx then
+      break
+    end
+    local next_start = body:find("\\choice", end_idx + 1)
+    local finish = next_start and (next_start - 1) or #body
+    local segment = body:sub(end_idx + 1, finish)
+    segment = clean_choice_chunk(segment)
+    table.insert(items, segment)
+    search_start = finish + 1
+  end
+  if #items == 0 then
+    return nil
+  end
+  local lines = {}
+  for _, segment in ipairs(items) do
+    if segment ~= "" then
+      table.insert(lines, "\\item <m>" .. marker .. "</m> " .. segment)
+    else
+      table.insert(lines, "\\item <m>" .. marker .. "</m>")
+    end
+  end
+  return table.concat(lines, "\n")
+end
+
+local function convert_choice_environment(text, env, marker)
+  local pattern = "\n%s*\\begin%s*{%s*" .. env .. "%s*}([%s%S]-)\\end%s*{%s*" .. env .. "%s*}"
+  local function replacer(body)
+    local converted = convert_choice_body(body, marker)
+    if not converted then
+      return "\n\\begin{itemize}\n" .. body .. "\n\\end{itemize}"
+    end
+    return "\n\\begin{itemize}\n" .. converted .. "\n\\end{itemize}"
+  end
+  local augmented = "\n" .. text
+  local replaced = augmented:gsub(pattern, replacer)
+  return replaced:sub(2)
+end
+
 local function render_paragraph(content, indent)
   content = trim(content)
   if content == "" then
@@ -382,15 +434,18 @@ local function extract_points(text)
 end
 
 local function strip_choice_marker(text)
-  local without = text:gsub("<m>\\Circle</m>%s*", "")
-  without = without:gsub("<m>\\Square</m>%s*", "")
+  local without = text:gsub("<m>PTXSINGLE</m>%s*", "")
+  without = without:gsub("<m>PTXMULTI</m>%s*", "")
+  without = without:gsub("&lt;m&gt;PTXSINGLE&lt;/m&gt;%s*", "")
+  without = without:gsub("&lt;m&gt;PTXMULTI&lt;/m&gt;%s*", "")
   without = without:gsub(" ", "")
   return trim(without)
 end
 
 local function is_choice_list(content)
   if not content then return false end
-  return content:find("<m>\\Circle</m>") or content:find("<m>\\Square</m>")
+  return content:find("<m>PTXSINGLE</m>") or content:find("<m>PTXMULTI</m>")
+    or content:find("&lt;m&gt;PTXSINGLE&lt;/m&gt;") or content:find("&lt;m&gt;PTXMULTI&lt;/m&gt;")
 end
 
 local function render_plain_list(tag, content, indent)
@@ -416,7 +471,7 @@ local function render_plain_list(tag, content, indent)
 end
 
 local function render_choices(list_content, indent)
-  local multiple = list_content:find("<m>\\Square</m>") and "yes" or "no"
+  local multiple = (list_content:find("<m>PTXMULTI</m>") or list_content:find("&lt;m&gt;PTXMULTI&lt;/m&gt;")) and "yes" or "no"
   local lines = {}
   table.insert(lines, indent_line('<choices multiple-correct="' .. multiple .. '">', indent))
   for _, entry in ipairs(parse_list_items(list_content)) do
@@ -485,7 +540,18 @@ local function extract_outermost_ol(source)
 end
 
 local function convert_task(entry, indent, exercise_index, task_index)
-  local blocks = parse_blocks(entry)
+  local entry_kind = "item"
+  local entry_content = entry
+  if type(entry) == "table" then
+    entry_kind = entry.kind or "item"
+    entry_content = entry.content or ""
+  end
+  local blocks
+  if entry_kind == "choices" then
+    blocks = {{type = "list", tag = "ul", content = entry_content}}
+  else
+    blocks = parse_blocks(entry_content)
+  end
   local points
   local statement_parts = {}
   local hint_parts = {}
@@ -567,8 +633,12 @@ local function convert_exercise(item, indent, exercise_index)
   local task_blocks = {}
   for _, block in ipairs(blocks) do
     if block.type == "list" then
-      for _, entry in ipairs(parse_list_items(block.content)) do
-        table.insert(task_blocks, entry)
+      if is_choice_list(block.content) then
+        table.insert(task_blocks, {kind = "choices", content = block.content})
+      else
+        for _, entry in ipairs(parse_list_items(block.content)) do
+          table.insert(task_blocks, {kind = "item", content = entry})
+        end
       end
     elseif block.type == "p" then
       table.insert(intro_blocks, block.content)
@@ -644,6 +714,9 @@ function Doc(body, metadata, variables)
     normalized = normalized:gsub([[\end%s*{%s*questions%s*}]], "\\end{enumerate}")
     normalized = normalized:gsub([[\begin%s*{%s*parts%s*}]], "\\begin{itemize}")
     normalized = normalized:gsub([[\end%s*{%s*parts%s*}]], "\\end{itemize}")
+    normalized = normalized:gsub([[\checkboxchar%s*%b{}]], "")
+    normalized = convert_choice_environment(normalized, "checkboxes", "PTXMULTI")
+    normalized = convert_choice_environment(normalized, "choices", "PTXSINGLE")
     normalized = normalized:gsub("\\question%[", "\\item[")
     normalized = normalized:gsub("\\question(%W)", function(follow)
       return "\\item" .. follow
