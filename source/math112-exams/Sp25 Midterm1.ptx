@@ -195,13 +195,27 @@
 				</choice>
                </choices>
        </exercise>
-	<exercise>
-		<introduction>
-			<p>
-				Given the graph of the function <m>y=F(x)</m> describing the temperature of lake Mendota over one year below:
-			</p>
-		</introduction>
-	</exercise>
+        <exercise>
+                <introduction>
+                        <p>
+                                Given the graph of the function <m>y=F(x)</m> describing the temperature of lake Mendota over one year below:
+                        </p>
+                </introduction>
+                <task>
+                        <statement>
+                                <p>
+                                        Find the day(s) and temperature Lake Mendota reached a local maximum temperature.
+                                </p>
+                        </statement>
+                </task>
+                <task>
+                        <statement>
+                                <p>
+                                        Find the day(s) and temperature(s) Lake Mendota reached a local minimum temperature.
+                                </p>
+                        </statement>
+                </task>
+        </exercise>
 	<exercise>
 		<introduction>
 			<p>
