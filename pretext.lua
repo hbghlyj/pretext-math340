@@ -346,6 +346,10 @@ local function parse_blocks(block_str)
     if count > 0 then
       return stripped
     end
+    local trimmed = trim(content)
+    if trimmed:match("^%d+$") then
+      return ""
+    end
     return content
   end
   while rest do
