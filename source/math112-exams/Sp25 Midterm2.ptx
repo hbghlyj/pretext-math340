@@ -210,7 +210,7 @@
                         <p>
                                 <m>\boxed{\phantom{\dfrac{aaa}{b}}}</m> = <m>\displaystyle \frac{3}{2}\sqrt{-x+1}-1</m>
                         </p>
-                        <sidebyside widths="45%" valign="top">
+                        <sidebyside widths="45% 45%" valign="top">
                                 <side>
                                         <figure xml:id="mid2-root-graph-a">
                                                 <caption>Graph A</caption>
