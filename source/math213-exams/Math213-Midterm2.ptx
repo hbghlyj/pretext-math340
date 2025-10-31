@@ -90,68 +90,68 @@
     <task>
       <statement>
         <p>A company’s profit from producing <m>x</m> chairs and <m>y</m> tables per day is <m>P(x,y)</m>. Assume <m>P_y(46, 53) = 86.</m> Which of the following statements can we deduce from the provided information?</p>
-        <ul>
-          <li>
+        <choices>
+          <choice>
             <p>Profit increases by about $86 per additional chair when producing 46 chairs and 53 tables per day.</p>
-          </li>
-          <li>
+          </choice>
+          <choice>
             <p>Profit increases by about $86 per additional table when producing 46 chairs and 53 tables per day.</p>
-          </li>
-          <li>
+          </choice>
+          <choice>
             <p>Profit is constant and equals $86, independent of how many chairs and/or tables are produced.</p>
-          </li>
-          <li>
+          </choice>
+          <choice>
             <p>None of the above</p>
-          </li>
-          <li>
+          </choice>
+          <choice>
             <p>All of the above</p>
-          </li>
-        </ul>
+          </choice>
+        </choices>
       </statement>
     </task>
     <task>
       <statement>
         <p>Using the least squares method, the slope of the best-fit line for data points (1, 1), (2, 2), and (3, 4) is:</p>
-        <ul>
-          <li>
+        <choices>
+          <choice>
             <p>0.5</p>
-          </li>
-          <li>
+          </choice>
+          <choice>
             <p>1</p>
-          </li>
-          <li>
+          </choice>
+          <choice>
             <p>1.5</p>
-          </li>
-          <li>
+          </choice>
+          <choice>
             <p>2</p>
-          </li>
-        </ul>
+          </choice>
+        </choices>
       </statement>
     </task>
     <task>
       <statement>
         <p>Every function <m>f(x,y)</m> of two variables can be written as the sum of two functions of one variable, <m>g(x)+h(y).</m></p>
-        <ul>
-          <li>
+        <choices>
+          <choice>
             <p>True</p>
-          </li>
-          <li>
+          </choice>
+          <choice>
             <p>False</p>
-          </li>
-        </ul>
+          </choice>
+        </choices>
       </statement>
     </task>
     <task>
       <statement>
         <p>At a critical point, <m>D=0</m> means that the point is <em>not</em> a relative maximum or minimum point.</p>
-        <ul>
-          <li>
+        <choices>
+          <choice>
             <p>True</p>
-          </li>
-          <li>
+          </choice>
+          <choice>
             <p>False</p>
-          </li>
-        </ul>
+          </choice>
+        </choices>
       </statement>
     </task>
   </exercise>
