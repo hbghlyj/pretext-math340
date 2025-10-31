@@ -4,16 +4,16 @@
   <!-- we first include a file which contains the docinfo element: -->
   <xi:include href="./docinfo.ptx" />
 
-  <book xml:id="math213-practice">
-    <title>Math 213 Practice Exams</title>
+  <book xml:id="math112-practice">
+    <title>Math 112 Practice Exams</title>
 
     <introduction>
       <p>
-        This collection of practice exams gathers Math 213 materials to help you prepare for current and future offerings of the course.
+        This collection of practice exams gathers Math 112 materials to help you prepare for current and future offerings of the course.
       </p>
     </introduction>
 
     <!-- Include chapters -->
-    <xi:include href="./ch-math213-exams.ptx"/>
+    <xi:include href="./ch-math112-exams.ptx"/>
   </book>
 </pretext>
