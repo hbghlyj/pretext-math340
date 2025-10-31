@@ -16,14 +16,13 @@
 			</p>
 		</introduction>
 	</exercise>
-	<exercise>
-		<task>
-			<statement>
-				<p>
-				Which of the following is a polynomial, <m>p(x)</m> with roots of <m>-3</m>, <m>\sqrt{2}</m>, and 1.
-			</p>
-			</statement>
-			<choices multiple-correct="no">
+       <exercise>
+               <statement>
+                       <p>
+                               Which of the following is a polynomial, <m>p(x)</m> with roots of <m>-3</m>, <m>\sqrt{2}</m>, and 1.
+                       </p>
+               </statement>
+               <choices multiple-correct="no">
 				<choice>
 					<statement>
 						<p>
@@ -59,17 +58,15 @@
 							</p>
 					</statement>
 				</choice>
-			</choices>
-		</task>
-	</exercise>
-	<exercise>
-		<task>
-			<statement>
-				<p>
-				Consider the parabola <m>f(x)=(x+3)^2+k</m>. What is <m>k</m> if <m>f(x)</m> has only one zero?
-			</p>
-			</statement>
-			<choices multiple-correct="no">
+               </choices>
+       </exercise>
+       <exercise>
+               <statement>
+                       <p>
+                               Consider the parabola <m>f(x)=(x+3)^2+k</m>. What is <m>k</m> if <m>f(x)</m> has only one zero?
+                       </p>
+               </statement>
+               <choices multiple-correct="no">
 				<choice>
 					<statement>
 						<p>
@@ -105,17 +102,15 @@
 							</p>
 					</statement>
 				</choice>
-			</choices>
-		</task>
-	</exercise>
-	<exercise>
-		<task>
-			<statement>
-				<p>
-				Consider the rational function <me>f(x)=\dfrac{x^3+5x+3}{2x^2+1}</me> What can we say about any asymptotes for this function?
-			</p>
-			</statement>
-			<choices multiple-correct="no">
+               </choices>
+       </exercise>
+       <exercise>
+               <statement>
+                       <p>
+                               Consider the rational function <me>f(x)=\dfrac{x^3+5x+3}{2x^2+1}</me> What can we say about any asymptotes for this function?
+                       </p>
+               </statement>
+               <choices multiple-correct="no">
 				<choice>
 					<statement>
 						<p>
@@ -151,17 +146,15 @@
 							</p>
 					</statement>
 				</choice>
-			</choices>
-		</task>
-	</exercise>
-	<exercise>
-		<task>
-			<statement>
-				<p>
-				Let <m>f(x)=x^2-\sqrt{x+1}</m> and <m>g(x)=\dfrac{-3}{2x}</m>, what is <m>f(g(x))</m>?
-			</p>
-			</statement>
-			<choices multiple-correct="no">
+               </choices>
+       </exercise>
+       <exercise>
+               <statement>
+                       <p>
+                               Let <m>f(x)=x^2-\sqrt{x+1}</m> and <m>g(x)=\dfrac{-3}{2x}</m>, what is <m>f(g(x))</m>?
+                       </p>
+               </statement>
+               <choices multiple-correct="no">
 				<choice>
 					<statement>
 						<p>
@@ -197,9 +190,8 @@
 							</p>
 					</statement>
 				</choice>
-			</choices>
-		</task>
-	</exercise>
+               </choices>
+       </exercise>
 	<exercise>
 		<task>
 			<statement>

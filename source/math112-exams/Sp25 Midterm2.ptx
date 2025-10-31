@@ -6,14 +6,13 @@
 				Multiple choice and fill in the blank section. All points are for choosing the correct answer. No justification is needed.
 			</p>
 	</introduction>
-	<exercise>
-		<task>
-			<statement>
-				<p>
-				A parabola has a vertex of <m>(5,-2)</m>, and the vertex is a maximum. What is a possible equation for the parabola?
-			</p>
-			</statement>
-			<choices multiple-correct="yes">
+       <exercise>
+               <statement>
+                       <p>
+                               A parabola has a vertex of <m>(5,-2)</m>, and the vertex is a maximum. What is a possible equation for the parabola?
+                       </p>
+               </statement>
+               <choices multiple-correct="yes">
 				<choice>
 					<statement>
 						<p>
@@ -49,17 +48,15 @@
 							</p>
 					</statement>
 				</choice>
-			</choices>
-		</task>
-	</exercise>
-	<exercise>
-		<task>
-			<statement>
-				<p>
-				The graph below has which properties?
-			</p>
-			</statement>
-			<choices multiple-correct="yes">
+               </choices>
+       </exercise>
+       <exercise>
+               <statement>
+                       <p>
+                               The graph below has which properties?
+                       </p>
+               </statement>
+               <choices multiple-correct="yes">
 				<choice>
 					<statement>
 						<p>
@@ -95,19 +92,17 @@
 							</p>
 					</statement>
 				</choice>
-			</choices>
-		</task>
-	</exercise>
-	<exercise>
-		<task>
-			<statement>
-				<p>
-				Consider a polynomial <me>P(x) = ax^n</me> You know <m>n</m> is a positive integer, but do not know <m>a</m>. If as <m>x\to-\infty</m>
-					<m>P(x)\to+\infty</m> and as <m>x\to+\infty</m>
-					<m>P(x)\to-\infty</m>. What do you know about <m>a</m> and <m>n</m>?
-			</p>
-			</statement>
-			<choices multiple-correct="yes">
+               </choices>
+       </exercise>
+       <exercise>
+               <statement>
+                       <p>
+                               Consider a polynomial <me>P(x) = ax^n</me> You know <m>n</m> is a positive integer, but do not know <m>a</m>. If as <m>x\to-\infty</m>
+                                       <m>P(x)\to+\infty</m> and as <m>x\to+\infty</m>
+                                       <m>P(x)\to-\infty</m>. What do you know about <m>a</m> and <m>n</m>?
+                       </p>
+               </statement>
+               <choices multiple-correct="yes">
 				<choice>
 					<statement>
 						<p>
@@ -143,9 +138,8 @@
 							</p>
 					</statement>
 				</choice>
-			</choices>
-		</task>
-	</exercise>
+               </choices>
+       </exercise>
 	<exercise>
 		<introduction>
 			<p>
