@@ -16,14 +16,13 @@
 			</p>
 		</introduction>
 	</exercise>
-	<exercise>
-		<task>
-			<statement>
-				<p>
-				Which of the following is a polynomial, <m>p(x)</m> with roots of <m>-3</m>, <m>\sqrt{2}</m>, and 1.
-			</p>
-			</statement>
-			<choices multiple-correct="no">
+       <exercise>
+               <statement>
+                       <p>
+                               Which of the following is a polynomial, <m>p(x)</m> with roots of <m>-3</m>, <m>\sqrt{2}</m>, and 1.
+                       </p>
+               </statement>
+               <choices multiple-correct="no">
 				<choice>
 					<statement>
 						<p>
@@ -59,17 +58,15 @@
 							</p>
 					</statement>
 				</choice>
-			</choices>
-		</task>
-	</exercise>
-	<exercise>
-		<task>
-			<statement>
-				<p>
-				Consider the parabola <m>f(x)=(x+3)^2+k</m>. What is <m>k</m> if <m>f(x)</m> has only one zero?
-			</p>
-			</statement>
-			<choices multiple-correct="no">
+               </choices>
+       </exercise>
+       <exercise>
+               <statement>
+                       <p>
+                               Consider the parabola <m>f(x)=(x+3)^2+k</m>. What is <m>k</m> if <m>f(x)</m> has only one zero?
+                       </p>
+               </statement>
+               <choices multiple-correct="no">
 				<choice>
 					<statement>
 						<p>
@@ -105,17 +102,15 @@
 							</p>
 					</statement>
 				</choice>
-			</choices>
-		</task>
-	</exercise>
-	<exercise>
-		<task>
-			<statement>
-				<p>
-				Consider the rational function <me>f(x)=\dfrac{x^3+5x+3}{2x^2+1}</me> What can we say about any asymptotes for this function?
-			</p>
-			</statement>
-			<choices multiple-correct="no">
+               </choices>
+       </exercise>
+       <exercise>
+               <statement>
+                       <p>
+                               Consider the rational function <me>f(x)=\dfrac{x^3+5x+3}{2x^2+1}</me> What can we say about any asymptotes for this function?
+                       </p>
+               </statement>
+               <choices multiple-correct="no">
 				<choice>
 					<statement>
 						<p>
@@ -151,17 +146,15 @@
 							</p>
 					</statement>
 				</choice>
-			</choices>
-		</task>
-	</exercise>
-	<exercise>
-		<task>
-			<statement>
-				<p>
-				Let <m>f(x)=x^2-\sqrt{x+1}</m> and <m>g(x)=\dfrac{-3}{2x}</m>, what is <m>f(g(x))</m>?
-			</p>
-			</statement>
-			<choices multiple-correct="no">
+               </choices>
+       </exercise>
+       <exercise>
+               <statement>
+                       <p>
+                               Let <m>f(x)=x^2-\sqrt{x+1}</m> and <m>g(x)=\dfrac{-3}{2x}</m>, what is <m>f(g(x))</m>?
+                       </p>
+               </statement>
+               <choices multiple-correct="no">
 				<choice>
 					<statement>
 						<p>
@@ -197,9 +190,8 @@
 							</p>
 					</statement>
 				</choice>
-			</choices>
-		</task>
-	</exercise>
+               </choices>
+       </exercise>
 	<exercise>
 		<task>
 			<statement>
@@ -272,12 +264,18 @@
                             <p>
                             Write the function <m>f(x)=2x^{2}+4x+7</m> in vertex form, <m>a(x-h)^2+k</m>.
                             </p>
+                            <p>
+                            <m>\mbox{$f(x)=$ } \scalebox{1.5}{\ensuremath{\boxed{ \phantom{\dfrac{a}{b}} \hspace{5cm} }}}</m>
+                            </p>
                     </statement>
             </task>
             <task>
                     <statement>
                             <p>
                             What are the coordinates of the vertex?
+                            </p>
+                            <p>
+                            <m>\mbox{Vertex: } \scalebox{1.1}{\ensuremath{\boxed{ \phantom{\frac{a}{b}} \hspace{4cm} }}}</m>
                             </p>
                     </statement>
             </task>
@@ -287,6 +285,22 @@
                             Is the vertex a maximum or a minimum?
                             </p>
                     </statement>
+                    <choices multiple-correct="no">
+                            <choice>
+                                    <statement>
+                                            <p>
+                                            Maximum.
+                                            </p>
+                                    </statement>
+                            </choice>
+                            <choice>
+                                    <statement>
+                                            <p>
+                                            Minimum.
+                                            </p>
+                                    </statement>
+                            </choice>
+                    </choices>
             </task>
     </exercise>
 	<exercise>
@@ -302,29 +316,38 @@
 				Consider the rational function <me>f(x)=\dfrac{x-5}{x^2+2x}</me>
 			</p>
 		</introduction>
-		<task>
-			<statement>
-				<p>
-					Find the zero(s) of <m>f</m>
-				</p>
-			</statement>
-		</task>
-		<task>
-			<statement>
-				<p>
-					Find the vertical asymptote(s) of <m>f</m>
-				</p>
-			</statement>
-		</task>
-		<task>
-			<statement>
-				<p>
-					For what intervals of <m>x</m> is <m>f(x)\le 0</m>
-				</p>
-			</statement>
-		</task>
-	</exercise>
-	<exercise>
+                <task>
+                        <statement>
+                                <p>
+                                        Find the zero(s) of <m>f</m>
+                                </p>
+                                <p>
+                                        <m>\mbox{$x=$ } \scalebox{1.5}{\ensuremath{\boxed{ \phantom{\dfrac{a}{b}} \hspace{5cm} }}}</m>
+                                </p>
+                        </statement>
+                </task>
+                <task>
+                        <statement>
+                                <p>
+                                        Find the vertical asymptote(s) of <m>f</m>
+                                </p>
+                                <p>
+                                        <m>\mbox{$x=$ } \scalebox{1.5}{\ensuremath{\boxed{ \phantom{\dfrac{a}{b}} \hspace{5cm} }}}</m>
+                                </p>
+                        </statement>
+                </task>
+                <task>
+                        <statement>
+                                <p>
+                                        For what intervals of <m>x</m> is <m>f(x)\le 0</m>
+                                </p>
+                                <p>
+                                        <m>\mbox{Interval(s)}: \scalebox{1.5}{\ensuremath{\boxed{ \phantom{\dfrac{a}{b}} \hspace{5cm} }}}</m>
+                                </p>
+                        </statement>
+                </task>
+        </exercise>
+        <exercise>
 		<introduction>
 			<p>
 				Find the inverse function for the function below: <me>f(x)=\dfrac{2x}{5-3x}</me>
@@ -358,27 +381,49 @@
                           A swimming pool is being emptied, and the amount of water (in liters) in the pool at time <m>t</m> (in minutes) is given by <me>P(t) = P_0 \cdot 5^{rt}</me> where <m>P_0</m> and <m>r</m> are some constants. If there is initially <m>1000</m> liters of water in the pool, and after <m>7</m> minutes there is <m>500</m> liters of water in the pool, find the values of <m>P_0</m> and <m>r</m>.
                   </p>
           </introduction>
-          <task>
-                  <statement>
-                          <p>
-                          What is <m>P_0</m>?
-                          </p>
-                  </statement>
-          </task>
-          <task>
-                  <statement>
-                          <p>
-                          What is <m>r</m>? (Leave the value for <m>r</m> in terms of a logarithm.)
-                          </p>
-                  </statement>
-          </task>
-          <task>
-                  <statement>
-                          <p>
-                          Knowing that the pool is being emptied, is <m>r</m> positive or negative?
-                          </p>
-                  </statement>
-          </task>
+                <task>
+                        <statement>
+                                <p>
+                                        What is <m>P_0</m>?
+                                </p>
+                                <p>
+                                        <m>\mbox{$P_0$ = } \scalebox{1.5}{\ensuremath{\boxed{ \phantom{\dfrac{a}{b}} \hspace{5cm} }}}</m>
+                                </p>
+                        </statement>
+                </task>
+                <task>
+                        <statement>
+                                <p>
+                                        What is <m>r</m>? (Leave the value for <m>r</m> in terms of a logarithm.)
+                                </p>
+                                <p>
+                                        <m>\mbox{$r$ = } \scalebox{1.5}{\ensuremath{\boxed{ \phantom{\dfrac{a}{b}} \hspace{5cm} }}}</m>
+                                </p>
+                        </statement>
+                </task>
+                <task>
+                        <statement>
+                                <p>
+                                        Knowing that the pool is being emptied, is <m>r</m> positive or negative?
+                                </p>
+                        </statement>
+                        <choices multiple-correct="no">
+                                <choice>
+                                        <statement>
+                                                <p>
+                                                <m>r</m> is positive
+                                                </p>
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p>
+                                                <m>r</m> is negative
+                                                </p>
+                                        </statement>
+                                </choice>
+                        </choices>
+                </task>
   </exercise>
 	<exercise>
 		<introduction>
