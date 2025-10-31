@@ -71,31 +71,34 @@ local function clean_choice_chunk(chunk)
   chunk = chunk or ""
   chunk = chunk:gsub("\\chooseone%s*", "")
   chunk = chunk:gsub("\\checkboxchar%s*%b{}", "")
-  chunk = chunk:gsub("^%s+", "")
-  chunk = chunk:gsub("%s+$", "")
-  return chunk
+  chunk = chunk:gsub("^%s*%*+", "")
+  while true do
+    local before = chunk
+    chunk = chunk:gsub("^%s*%b[]", "", 1)
+    if chunk == before then break end
+  end
+  return trim(chunk)
 end
 
 local function convert_choice_body(body, marker)
-  local items = {}
-  local search_start = 1
-  while true do
-    local start_idx, end_idx = body:find("\\choice", search_start)
-    if not start_idx then
-      break
+  local found = {}
+  body:gsub("()\\([A-Za-z]+)(%*?)", function(pos, name, star)
+    local lower = name:lower()
+    if lower:match("choice$") then
+      table.insert(found, {start = pos, name = name, star = star or ""})
     end
-    local next_start = body:find("\\choice", end_idx + 1)
-    local finish = next_start and (next_start - 1) or #body
-    local segment = body:sub(end_idx + 1, finish)
-    segment = clean_choice_chunk(segment)
-    table.insert(items, segment)
-    search_start = finish + 1
-  end
-  if #items == 0 then
+    return ""
+  end)
+  if #found == 0 then
     return nil
   end
   local lines = {}
-  for _, segment in ipairs(items) do
+  for index, info in ipairs(found) do
+    local macro_len = #info.name + #info.star + 1
+    local start_pos = info.start + macro_len
+    local next_start = found[index + 1] and found[index + 1].start or (#body + 1)
+    local segment = body:sub(start_pos, next_start - 1)
+    segment = clean_choice_chunk(segment)
     if segment ~= "" then
       table.insert(lines, "\\item <m>" .. marker .. "</m> " .. segment)
     else
@@ -507,6 +510,28 @@ local function normalize_hint(text)
   return trim(text)
 end
 
+local function split_text_and_hints(text)
+  local hints = {}
+  local remaining = text or ""
+  local function capture_hint(segment)
+    local normalized = normalize_hint(segment)
+    if normalized ~= "" then
+      table.insert(hints, normalized)
+    end
+    return ""
+  end
+  remaining = remaining:gsub("%s*(%(%s*[Hh]int:?[^%)]*%))", capture_hint)
+  remaining = trim(remaining)
+  if remaining ~= "" and remaining:match("^%(*%s*[Hh]int") then
+    local normalized = normalize_hint(remaining)
+    if normalized ~= "" then
+      table.insert(hints, normalized)
+    end
+    remaining = ""
+  end
+  return remaining, hints
+end
+
 local function extract_outermost_ol(source)
   local start = source:find("<ol>")
   if not start then
@@ -545,6 +570,16 @@ local function convert_task(entry, indent, exercise_index, task_index)
   if type(entry) == "table" then
     entry_kind = entry.kind or "item"
     entry_content = entry.content or ""
+  end
+  if entry_kind == "intro_hint" then
+    local lines = {}
+    table.insert(lines, indent_line("<task>", indent))
+    table.insert(lines, indent_line("<hint>", indent + 1))
+    local para = render_paragraph(entry_content, indent + 2)
+    if para then table.insert(lines, para) end
+    table.insert(lines, indent_line("</hint>", indent + 1))
+    table.insert(lines, indent_line("</task>", indent))
+    return table.concat(lines, "\n")
   end
   local blocks
   if entry_kind == "choices" then
@@ -630,6 +665,7 @@ end
 local function convert_exercise(item, indent, exercise_index)
   local blocks = parse_blocks(item)
   local intro_blocks = {}
+  local intro_hint_blocks = {}
   local task_blocks = {}
   for _, block in ipairs(blocks) do
     if block.type == "list" then
@@ -641,8 +677,17 @@ local function convert_exercise(item, indent, exercise_index)
         end
       end
     elseif block.type == "p" then
-      table.insert(intro_blocks, block.content)
+      local cleaned, hints = split_text_and_hints(block.content)
+      if cleaned ~= "" then
+        table.insert(intro_blocks, cleaned)
+      end
+      for _, hint_text in ipairs(hints) do
+        table.insert(intro_hint_blocks, hint_text)
+      end
     end
+  end
+  for _, hint_text in ipairs(intro_hint_blocks) do
+    table.insert(task_blocks, {kind = "intro_hint", content = hint_text})
   end
   local intro_points
   if intro_blocks[1] then
