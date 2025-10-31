@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<worksheet xml:id="Sp25 Midterm1" xmlns:xi="http://www.w3.org/2001/XInclude">
+<worksheet xml:id="Midterm1" xmlns:xi="http://www.w3.org/2001/XInclude">
 	<title>Sp25 Midterm1</title>
 	<introduction>
 		<p>
@@ -313,7 +313,7 @@
 		<task>
 			<hint>
 				<p>
-					check your solutions.
+					Check your solutions.
 				</p>
 			</hint>
 		</task>
