@@ -325,10 +325,10 @@
 					Fill in the blanks with the end behavior of <m>f(x)</m> (no justification needed):
 				</p>
 				<p>
-					As <m>x\to -\infty</m>, <m>y\to</m> .
+					As <m>x\to -\infty</m>, <m>y\to</m> <emphasis role="underline"></emphasis>.
 				</p>
 				<p>
-					As <m>x\to +\infty</m>, <m>y\to</m> .
+					As <m>x\to +\infty</m>, <m>y\to</m> <emphasis role="underline"></emphasis>.
 				</p>
 			</statement>
 		</task>

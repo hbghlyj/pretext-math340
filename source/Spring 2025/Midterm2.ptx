@@ -60,28 +60,28 @@
 				<choice>
 					<statement>
 						<p>
-							The graph  a function and  have an inverse.
+							The graph <emphasis role="underline">is</emphasis> a function and <emphasis role="underline">does</emphasis> have an inverse.
 						</p>
 					</statement>
 				</choice>
 				<choice>
 					<statement>
 						<p>
-							The graph is  a function does  have an inverse.
+							The graph is <emphasis role="underline">not</emphasis> a function does <emphasis role="underline">not</emphasis> have an inverse.
 						</p>
 					</statement>
 				</choice>
 				<choice>
 					<statement>
 						<p>
-							The graph is  a function, but  have an inverse.
+							The graph is <emphasis role="underline">not</emphasis> a function, but <emphasis role="underline">does</emphasis> have an inverse.
 						</p>
 					</statement>
 				</choice>
 				<choice>
 					<statement>
 						<p>
-							The graph  a function, but does  have an inverse.
+							The graph <emphasis role="underline">is</emphasis> a function, but does <emphasis role="underline">not</emphasis> have an inverse.
 						</p>
 					</statement>
 				</choice>
@@ -283,7 +283,7 @@
 		<task>
 			<statement>
 				<p>
-					Find the polynomial <m>h(x)</m> of least possible degree with  that has a repeated root of <m>-3</m> with multiplicity 2 and a root of <m>\sqrt{5}</m> such that <m>h(0)=90</m>.
+					Find the polynomial <m>h(x)</m> of least possible degree with <emphasis role="underline">integer coefficients</emphasis> that has a repeated root of <m>-3</m> with multiplicity 2 and a root of <m>\sqrt{5}</m> such that <m>h(0)=90</m>.
 				</p>
 				<p>
 					(You may leave your answer as a product of linear factors.)

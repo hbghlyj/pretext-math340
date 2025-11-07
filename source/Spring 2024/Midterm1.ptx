@@ -270,7 +270,7 @@
 		<task>
 			<statement>
 				<p>
-					Find  solutions to the equation <m>x^4-1=0</m>.<!-- linebreak -->(Hint: Let <m>y=x^2</m> and solve for <m>y</m> first).
+					Find <emphasis role="underline">all</emphasis> solutions to the equation <m>x^4-1=0</m>.<!-- linebreak -->(Hint: Let <m>y=x^2</m> and solve for <m>y</m> first).
 				</p>
 			</statement>
 		</task>
@@ -334,7 +334,7 @@
 	<exercise>
 		<introduction>
 			<p>
-				Find the  for the functions below on the indicated intervals.
+				Find the <emphasis role="underline">average rate of change</emphasis> for the functions below on the indicated intervals.
 			</p>
 		</introduction>
 		<task workspace="9cm">

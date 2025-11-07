@@ -385,71 +385,113 @@
 			<p>
 				Consider the function <me>f(x) = \frac{(2x+1)(x-2)}{3x(x-2)(x+3)^2}</me>
 			</p>
-		</statement>
-			<choices multiple-correct="no">
-				<choice>
-					<statement>
-						<p>
-							Find the zero(s) of <m>f(x)</m>. If none exist, write “DNE".
-						</p>
-						<p>
-							<m>\mbox{zero(s)} = \scalebox{1.5}{\ensuremath{\boxed{ \phantom{\dfrac{a}{b}} \hspace{3cm} }}}</m>
-						</p>
-					</statement>
-				</choice>
-				<choice>
-					<statement>
-						<p>
-							Find the vertical asymptote(s) of <m>f(x)</m>. If none exist, write “DNE".
-						</p>
-						<p>
-							<m>\mbox{Vertical Asymptotes} = \scalebox{1.5}{\ensuremath{\boxed{ \phantom{\dfrac{a}{b}} \hspace{3cm} }}}</m>
-						</p>
-					</statement>
-				</choice>
-				<choice>
-					<statement>
-						<p>
-							What can we say about the graph of f(x)? [Select <term>ONE</term>]
-						</p>
-					</statement>
-				</choice>
-				<choice>
-					<statement>
-						<p>
-							Sketch this function on the axis below. Make sure to label ,  and  on your sketch.
-						</p>
-					</statement>
-				</choice>
-			</choices>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					Find the zero(s) of <m>f(x)</m>. If none exist, write “DNE".
+				</p>
+				<p>
+					<m>\mbox{zero(s)} = \scalebox{1.5}{\ensuremath{\boxed{ \phantom{\dfrac{a}{b}} \hspace{3cm} }}}</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Find the vertical asymptote(s) of <m>f(x)</m>. If none exist, write “DNE".
+				</p>
+				<p>
+					<m>\mbox{Vertical Asymptotes} = \scalebox{1.5}{\ensuremath{\boxed{ \phantom{\dfrac{a}{b}} \hspace{3cm} }}}</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					What can we say about the graph of f(x)? [Select <term>ONE</term>]
+				</p>
+			</statement>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								<m>f(x)</m> has a horizontal asymptote at <m>y = 0</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								<m>f(x)</m> has a horizontal asymptote at <m>y = \dfrac{2}{3}</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								<m>f(x)</m> has a slant asymptote.
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								None of the above.
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Sketch this function on the axis below. Make sure to label <emphasis role="underline">zeroes</emphasis>, <emphasis role="underline">asymptotes</emphasis> and <emphasis role="underline">holes</emphasis> on your sketch.
+				</p>
+			</statement>
+		</task>
 	</exercise>
 	<exercise>
 		<statement>
 			<p>
 				A group of scientists are trying to develop a treatment to stop the planarians from growing.
 			</p>
-		</statement>
-			<choices multiple-correct="no">
-				<choice>
-					<statement>
-						<p>
-							Sample A starts with 1000 planarians, and 2 hours later there are 200 planarians. Find a function <m>P(t)=P_0e^{rt}</m> that models the population of the planarians after <m>t</m> hours. (Leave the value for <m>r</m> in terms of a <m>\log</m>) <me>\begin{aligned}
-													                \scalebox{1.7}{\ensuremath{\boxed{P(t) =\phantom{\frac{1}{2}} \hspace{4cm} }}}
-													            
-													\end{aligned}</me>
-						</p>
-					</statement>
-				</choice>
-				<choice>
-					<statement>
-						<p>
-							The scientists find that the number of planarians in sample B <m>t</m> hours after treatment is best modeled by the function <me>P(t) = 800 e^{0.5\ln(1/3)t}.</me> Is this function increasing or decreasing? [Select <term>ONE</term>]
-						</p>
-						<p>
-							Explain how you know based on this model.
-						</p>
-					</statement>
-				</choice>
-			</choices>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					Sample A starts with 1000 planarians, and 2 hours later there are 200 planarians. Find a function <m>P(t)=P_0e^{rt}</m> that models the population of the planarians after <m>t</m> hours. (Leave the value for <m>r</m> in terms of a <m>\log</m>) <me>\begin{aligned}
+											                \scalebox{1.7}{\ensuremath{\boxed{P(t) =\phantom{\frac{1}{2}} \hspace{4cm} }}}
+											            
+											\end{aligned}</me>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					The scientists find that the number of planarians in sample B <m>t</m> hours after treatment is best modeled by the function <me>P(t) = 800 e^{0.5\ln(1/3)t}.</me> Is this function increasing or decreasing? [Select <term>ONE</term>]
+				</p>
+				<p>
+					Explain how you know based on this model.
+				</p>
+			</statement>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								Increasing
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								Decreasing
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
 	</exercise>
 </worksheet>

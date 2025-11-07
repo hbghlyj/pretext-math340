@@ -211,7 +211,7 @@
 		<task workspace=".5cm">
 			<statement>
 				<p>
-					Find the polynomial <m>h(x)</m> of least possible degree with  that has a repeated root of 3 with multiplicity 2 and a root of <m>\sqrt{2}</m> such that <m>h(0)=-36</m>.
+					Find the polynomial <m>h(x)</m> of least possible degree with <emphasis role="underline">integer coefficients</emphasis> that has a repeated root of 3 with multiplicity 2 and a root of <m>\sqrt{2}</m> such that <m>h(0)=-36</m>.
 				</p>
 				<p>
 					(You may leave your answer as a product of linear factors.)
@@ -302,7 +302,7 @@
 		<task>
 			<statement>
 				<p>
-					What number(s) of bacteria would result in  of the drug being created?
+					What number(s) of bacteria would result in <emphasis role="underline">none</emphasis> of the drug being created?
 				</p>
 			</statement>
 		</task>

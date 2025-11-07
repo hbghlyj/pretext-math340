@@ -199,7 +199,7 @@
 	<exercise>
 		<statement>
 			<p>
-				Gilbert is solving a quadratic using completing the square. He has isolated the <m>x</m>-terms on one side of the equation to find: <me>x^2-6x=2</me> What does he  of the equation in the next step of completing the square?
+				Gilbert is solving a quadratic using completing the square. He has isolated the <m>x</m>-terms on one side of the equation to find: <me>x^2-6x=2</me> What does he <emphasis role="underline">add to both sides</emphasis> of the equation in the next step of completing the square?
 			</p>
 			<p>
 				Free answer section. Work must be shown to get credit for any answer. Partial credit may be given even for incorrect final answers, so show your work.
@@ -342,7 +342,7 @@
 		<task>
 			<statement>
 				<p>
-					What is the  of <m>g</m>?
+					What is the <emphasis role="underline">range</emphasis> of <m>g</m>?
 				</p>
 			</statement>
 		</task>
@@ -373,23 +373,43 @@
 			<p>
 				Find the average rate of change for functions below on indicated intervals.
 			</p>
-		</statement>
-			<choices multiple-correct="no">
-				<choice>
-					<statement>
-						<p>
-							<m>f(x) = \dfrac{x^2}{2\sqrt{x + 6}}</m> on <m>[-5,10]</m>
-						</p>
-					</statement>
-				</choice>
-				<choice>
-					<statement>
-						<p>
-							Below is the graph of a function <m>g</m>. Of the three choices below, choose the interval where <m>g(x)</m> has the .
-						</p>
-					</statement>
-				</choice>
-			</choices>
-		<workspace amount="1cm"/>
+		</introduction>
+		<task workspace="1cm">
+			<statement>
+				<p>
+					<m>f(x) = \dfrac{x^2}{2\sqrt{x + 6}}</m> on <m>[-5,10]</m>
+				</p>
+			</statement>
+		</task>
+		<task workspace="1cm">
+			<statement>
+				<p>
+					Below is the graph of a function <m>g</m>. Of the three choices below, choose the interval where <m>g(x)</m> has the <emphasis role="underline">largest average rate of change</emphasis>.
+				</p>
+			</statement>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								<m>[0,3]</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								<m>[3,5]</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								<m>[0,5]</m>
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
 	</exercise>
 </worksheet>

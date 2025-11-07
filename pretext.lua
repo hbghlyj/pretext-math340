@@ -81,6 +81,7 @@ local function sanitize_identifier(value)
   return sanitized
 end
 
+
 local function convert_scale_macros(text)
   local replacements = 0
   local parts = {}
@@ -592,9 +593,25 @@ local function strip_choice_marker(text)
 end
 
 local function is_choice_list(content)
-  if not content then return false end
-  return content:find("<m>PTXSINGLE</m>") or content:find("<m>PTXMULTI</m>")
-    or content:find("&lt;m&gt;PTXSINGLE&lt;/m&gt;") or content:find("&lt;m&gt;PTXMULTI&lt;/m&gt;")
+  if not content or content == "" then
+    return false
+  end
+  local items = parse_list_items(content)
+  if #items == 0 then
+    return false
+  end
+  local has_marker = false
+  for _, entry in ipairs(items) do
+    local entry_has_marker = entry:find("<m>PTXSINGLE</m>")
+      or entry:find("<m>PTXMULTI</m>")
+      or entry:find("&lt;m&gt;PTXSINGLE&lt;/m&gt;")
+      or entry:find("&lt;m&gt;PTXMULTI&lt;/m&gt;")
+    if not entry_has_marker then
+      return false
+    end
+    has_marker = true
+  end
+  return has_marker
 end
 
 local function extract_plain_text(text)
@@ -1260,7 +1277,11 @@ function Emph(s)
   return "<em>" .. s .. "</em>"
 end
 
--- No <bold> tag in PreTeXt, but <term> gives bold look.  Assume bold in source document denotes a term, otherwise author could search for <term> and fix case-by-case. 
+function Underline(s)
+  return '<emphasis role="underline">' .. s .. '</emphasis>'
+end
+
+-- No <bold> tag in PreTeXt, but <term> gives bold look.  Assume bold in source document denotes a term, otherwise author could search for <term> and fix case-by-case.
 function Strong(s)
   return "<term>" .. s .. "</term>"
 end
