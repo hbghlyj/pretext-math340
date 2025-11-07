@@ -7,257 +7,247 @@
 			</p>
 	</introduction>
 	<exercise>
-		<introduction>
+		<statement>
 			<p>
 				Solve the following quadratic equation:<!-- linebreak --><me>x^2+9=0</me> [Select <term>ONE</term>]
 			</p>
-		</introduction>
-		<task>
-				<choices multiple-correct="no">
-					<choice>
-						<statement>
-							<p>
-								<m>x=-3</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>x=3</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>x=3</m> or <m>x=-3</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>x=3i</m> or <m>x=-3i</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								The equation has no solution.
-							</p>
-						</statement>
-					</choice>
-				</choices>
-		</task>
+		</statement>
+			<choices multiple-correct="no">
+				<choice>
+					<statement>
+						<p>
+							<m>x=-3</m>
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							<m>x=3</m>
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							<m>x=3</m> or <m>x=-3</m>
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							<m>x=3i</m> or <m>x=-3i</m>
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							The equation has no solution.
+						</p>
+					</statement>
+				</choice>
+			</choices>
 	</exercise>
 	<exercise>
-		<introduction>
+		<statement>
 			<p>
 				Select the equation of the line through <m>(-2 , 3)</m> <term>parallel</term> to the line <m>y=-2x+1</m>. [Select <term>ONE</term>]
 			</p>
-		</introduction>
-		<task>
-				<choices multiple-correct="no">
-					<choice>
-						<statement>
-							<p>
-								<m>y + 3=-2(x-2)</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>y - 3=-2(x+2)</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>y + 3=\frac{1}{2}(x-2)</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>y - 3=\frac{1}{2}(x+2)</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								None of the above.
-							</p>
-						</statement>
-					</choice>
-				</choices>
-		</task>
+		</statement>
+			<choices multiple-correct="no">
+				<choice>
+					<statement>
+						<p>
+							<m>y + 3=-2(x-2)</m>
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							<m>y - 3=-2(x+2)</m>
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							<m>y + 3=\frac{1}{2}(x-2)</m>
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							<m>y - 3=\frac{1}{2}(x+2)</m>
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							None of the above.
+						</p>
+					</statement>
+				</choice>
+			</choices>
 	</exercise>
 	<exercise>
-		<introduction>
+		<statement>
 			<p>
 				Select all real solutions to the equation <m>\sqrt{7-2x}+1=2x</m>. [Select <term>One or more</term>]
 			</p>
-		</introduction>
-		<task>
-				<choices multiple-correct="yes">
-					<choice>
-						<statement>
-							<p>
-								A. <m>x=-1</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								B. <m>x=1</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								C. <m>x=\frac{3}{2}</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								D. <m>x=-\frac{3}{2}</m>
-							</p>
-						</statement>
-					</choice>
-				</choices>
-		</task>
+		</statement>
+			<choices multiple-correct="yes">
+				<choice>
+					<statement>
+						<p>
+							A. <m>x=-1</m>
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							B. <m>x=1</m>
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							C. <m>x=\frac{3}{2}</m>
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							D. <m>x=-\frac{3}{2}</m>
+						</p>
+					</statement>
+				</choice>
+			</choices>
 	</exercise>
 	<exercise>
-		<introduction>
+		<statement>
 			<p>
 				Select the function graphed below. [Select <term>ONE</term>]
 			</p>
-		</introduction>
-		<task>
-				<choices multiple-correct="no">
-					<choice>
-						<statement>
-							<p>
-								A. <m>f(x)=-2(x+2)^2-2</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								B. <m>f(x)=2(x+2)^2+2</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								C. <m>f(x)=2(x-2)^2-2</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								D. <m>f(x)=2(x-2)^2+2</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								E. None of the above.
-							</p>
-						</statement>
-					</choice>
-				</choices>
-		</task>
+		</statement>
+			<choices multiple-correct="no">
+				<choice>
+					<statement>
+						<p>
+							A. <m>f(x)=-2(x+2)^2-2</m>
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							B. <m>f(x)=2(x+2)^2+2</m>
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							C. <m>f(x)=2(x-2)^2-2</m>
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							D. <m>f(x)=2(x-2)^2+2</m>
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							E. None of the above.
+						</p>
+					</statement>
+				</choice>
+			</choices>
 	</exercise>
 	<exercise>
-		<introduction>
+		<statement>
 			<p>
 				Determine where the function is increasing. [Select <term>ONE</term>]
 			</p>
-		</introduction>
-		<task>
-				<choices multiple-correct="no">
-					<choice>
-						<statement>
-							<p>
-								A. <m>(-\infty,\infty)</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								B. <m>(-\infty,-1)\cup (3,\infty)</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								C. <m>(3,\infty)</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								D. <m>(-\infty,1)\cup (1,\infty)</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								E. None of the above.
-							</p>
-						</statement>
-					</choice>
-				</choices>
-		</task>
+		</statement>
+			<choices multiple-correct="no">
+				<choice>
+					<statement>
+						<p>
+							A. <m>(-\infty,\infty)</m>
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							B. <m>(-\infty,-1)\cup (3,\infty)</m>
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							C. <m>(3,\infty)</m>
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							D. <m>(-\infty,1)\cup (1,\infty)</m>
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							E. None of the above.
+						</p>
+					</statement>
+				</choice>
+			</choices>
 	</exercise>
 	<exercise>
-		<introduction>
+		<statement>
 			<p>
 				Select the graph of the function below. [Select <term>ONE</term>] <me>f(x)=(x+2)^2(x+1)(x-1).</me>
 			</p>
 			<p>
 				Free answer section. Work must be shown to get credit for any answer. Partial credit may be given even for incorrect final answers, so show your work.
 			</p>
-		</introduction>
+		</statement>
 	</exercise>
 	<exercise>
-		<introduction>
+		<statement>
 			<p>
 				Solve the following inequality and write your answers using interval notation. <me>|2x+3|+1 \leq 6</me>.
 			</p>
 			<p>
 				<m>\mbox{Solution: } \scalebox{1.5}{\ensuremath{\boxed{ \phantom{\dfrac{a}{b}} \hspace{8cm} }}}</m>
 			</p>
-		</introduction>
+		</statement>
 	</exercise>
 	<exercise>
-		<introduction>
+		<statement>
 			<p>
 				Expand the logs with no interior multiplications or divisions and simplified powers as much as the rules allow. <me>\ln \frac{y^2}{\sqrt{2^x (z+x)^3}}</me>
 			</p>
 			<p>
 				<m>\ln \frac{y^2}{\sqrt{2^x (z+x)^3}}= \scalebox{1.5}{\ensuremath{\boxed{ \phantom{\dfrac{a}{b}} \hspace{8cm} }}}</m>
 			</p>
-		</introduction>
+		</statement>
 	</exercise>
 	<exercise>
 		<introduction>
@@ -345,17 +335,17 @@
 		</task>
 	</exercise>
 	<exercise>
-		<introduction>
+		<statement>
 			<p>
 				Find all roots of the polynomial: <m>x^4 + x^2 - 12</m>. (Roots may be real, complex or a combination.)
 			</p>
 			<p>
 				<m>\mbox{Roots: } \scalebox{1.5}{\ensuremath{\boxed{ \phantom{\dfrac{a}{b}} \hspace{8cm} }}}</m>
 			</p>
-		</introduction>
+		</statement>
 	</exercise>
 	<exercise>
-		<introduction>
+		<statement>
 			<p>
 				Find all values of <m>x</m> that satisfy the following inequality:
 			</p>
@@ -365,20 +355,20 @@
 			<p>
 				Interval: <m>\scalebox{1.7}{\ensuremath{\boxed{ \phantom{\dfrac{a}{b}} \hspace{6cm} }}}</m>
 			</p>
-		</introduction>
+		</statement>
 	</exercise>
 	<exercise>
-		<introduction>
+		<statement>
 			<p>
 				Solve the following equation. If no solution exists, write <q>DNE</q>. <me>\log_2 (x-1)+\log_2 (x+6)=3</me>
 			</p>
 			<p>
 				<m>x = \scalebox{1.5}{\ensuremath{\boxed{ \phantom{\dfrac{a}{b}} \hspace{3cm} }}}</m>
 			</p>
-		</introduction>
+		</statement>
 	</exercise>
 	<exercise>
-		<introduction>
+		<statement>
 			<p>
 				For the following system of linear equations, determine whether or not the system has any solutions. If the system has a solution, state it as an ordered pair <m>(x,y)</m>; if the systems has infinitely many solutions, write your solutions as an ordered pair in terms of the variable <m>x</m> only. <me>\begin{cases}
 							3 x  +  4 y &amp; = 1 \\
@@ -388,7 +378,7 @@
 			<p>
 				<m>(x,y) = \scalebox{1.5}{\ensuremath{\boxed{ \phantom{\dfrac{a}{b}} \hspace{3cm} }}}</m>
 			</p>
-		</introduction>
+		</statement>
 	</exercise>
 	<exercise>
 		<introduction>
@@ -397,42 +387,68 @@
 			</p>
 		</introduction>
 		<task>
+			<statement>
+				<p>
+					Find the zero(s) of <m>f(x)</m>. If none exist, write “DNE".
+				</p>
+				<p>
+					<m>\mbox{zero(s)} = \scalebox{1.5}{\ensuremath{\boxed{ \phantom{\dfrac{a}{b}} \hspace{3cm} }}}</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Find the vertical asymptote(s) of <m>f(x)</m>. If none exist, write “DNE".
+				</p>
+				<p>
+					<m>\mbox{Vertical Asymptotes} = \scalebox{1.5}{\ensuremath{\boxed{ \phantom{\dfrac{a}{b}} \hspace{3cm} }}}</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					What can we say about the graph of f(x)? [Select <term>ONE</term>]
+				</p>
+			</statement>
 				<choices multiple-correct="no">
 					<choice>
 						<statement>
 							<p>
-								Find the zero(s) of <m>f(x)</m>. If none exist, write “DNE".
-							</p>
-							<p>
-								<m>\mbox{zero(s)} = \scalebox{1.5}{\ensuremath{\boxed{ \phantom{\dfrac{a}{b}} \hspace{3cm} }}}</m>
+								<m>f(x)</m> has a horizontal asymptote at <m>y = 0</m>
 							</p>
 						</statement>
 					</choice>
 					<choice>
 						<statement>
 							<p>
-								Find the vertical asymptote(s) of <m>f(x)</m>. If none exist, write “DNE".
-							</p>
-							<p>
-								<m>\mbox{Vertical Asymptotes} = \scalebox{1.5}{\ensuremath{\boxed{ \phantom{\dfrac{a}{b}} \hspace{3cm} }}}</m>
+								<m>f(x)</m> has a horizontal asymptote at <m>y = \dfrac{2}{3}</m>
 							</p>
 						</statement>
 					</choice>
 					<choice>
 						<statement>
 							<p>
-								What can we say about the graph of f(x)? [Select <term>ONE</term>]
+								<m>f(x)</m> has a slant asymptote.
 							</p>
 						</statement>
 					</choice>
 					<choice>
 						<statement>
 							<p>
-								Sketch this function on the axis below. Make sure to label ,  and  on your sketch.
+								None of the above.
 							</p>
 						</statement>
 					</choice>
 				</choices>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Sketch this function on the axis below. Make sure to label <emphasis role="underline">zeroes</emphasis>, <emphasis role="underline">asymptotes</emphasis> and <emphasis role="underline">holes</emphasis> on your sketch.
+				</p>
+			</statement>
 		</task>
 	</exercise>
 	<exercise>
@@ -442,24 +458,36 @@
 			</p>
 		</introduction>
 		<task>
+			<statement>
+				<p>
+					Sample A starts with 1000 planarians, and 2 hours later there are 200 planarians. Find a function <m>P(t)=P_0e^{rt}</m> that models the population of the planarians after <m>t</m> hours. (Leave the value for <m>r</m> in terms of a <m>\log</m>) <me>\begin{aligned}
+											                \scalebox{1.7}{\ensuremath{\boxed{P(t) =\phantom{\frac{1}{2}} \hspace{4cm} }}}
+											            
+											\end{aligned}</me>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					The scientists find that the number of planarians in sample B <m>t</m> hours after treatment is best modeled by the function <me>P(t) = 800 e^{0.5\ln(1/3)t}.</me> Is this function increasing or decreasing? [Select <term>ONE</term>]
+				</p>
+				<p>
+					Explain how you know based on this model.
+				</p>
+			</statement>
 				<choices multiple-correct="no">
 					<choice>
 						<statement>
 							<p>
-								Sample A starts with 1000 planarians, and 2 hours later there are 200 planarians. Find a function <m>P(t)=P_0e^{rt}</m> that models the population of the planarians after <m>t</m> hours. (Leave the value for <m>r</m> in terms of a <m>\log</m>) <me>\begin{aligned}
-														                \scalebox{1.7}{\ensuremath{\boxed{P(t) =\phantom{\frac{1}{2}} \hspace{4cm} }}}
-														            
-														\end{aligned}</me>
+								Increasing
 							</p>
 						</statement>
 					</choice>
 					<choice>
 						<statement>
 							<p>
-								The scientists find that the number of planarians in sample B <m>t</m> hours after treatment is best modeled by the function <me>P(t) = 800 e^{0.5\ln(1/3)t}.</me> Is this function increasing or decreasing? [Select <term>ONE</term>]
-							</p>
-							<p>
-								Explain how you know based on this model.
+								Decreasing
 							</p>
 						</statement>
 					</choice>
