@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<worksheet xml:id="Final" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Final</title>
+	<introduction>
+		<p>
+				Multiple choice section. All points are for choosing the correct answer. No justification is needed.
+			</p>
+	</introduction>
+	<exercise>
+		<introduction>
+			<p>
+				Solve the following quadratic equation:<!-- linebreak --><me>x^2+9=0</me> [Select <term>ONE</term>]
+			</p>
+		</introduction>
+		<task>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								<m>x=-3</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								<m>x=3</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								<m>x=3</m> or <m>x=-3</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								<m>x=3i</m> or <m>x=-3i</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								The equation has no solution.
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Select the equation of the line through <m>(-2 , 3)</m> <term>parallel</term> to the line <m>y=-2x+1</m>. [Select <term>ONE</term>]
+			</p>
+		</introduction>
+		<task>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								<m>y + 3=-2(x-2)</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								<m>y - 3=-2(x+2)</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								<m>y + 3=\frac{1}{2}(x-2)</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								<m>y - 3=\frac{1}{2}(x+2)</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								None of the above.
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Select all real solutions to the equation <m>\sqrt{7-2x}+1=2x</m>. [Select <term>One or more</term>]
+			</p>
+		</introduction>
+		<task>
+				<choices multiple-correct="yes">
+					<choice>
+						<statement>
+							<p>
+								A. <m>x=-1</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								B. <m>x=1</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								C. <m>x=\frac{3}{2}</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								D. <m>x=-\frac{3}{2}</m>
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Select the function graphed below. [Select <term>ONE</term>]
+			</p>
+		</introduction>
+		<task>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								A. <m>f(x)=-2(x+2)^2-2</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								B. <m>f(x)=2(x+2)^2+2</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								C. <m>f(x)=2(x-2)^2-2</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								D. <m>f(x)=2(x-2)^2+2</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								E. None of the above.
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Determine where the function is increasing. [Select <term>ONE</term>]
+			</p>
+		</introduction>
+		<task>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								A. <m>(-\infty,\infty)</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								B. <m>(-\infty,-1)\cup (3,\infty)</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								C. <m>(3,\infty)</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								D. <m>(-\infty,1)\cup (1,\infty)</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								E. None of the above.
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Select the graph of the function below. [Select <term>ONE</term>] <me>f(x)=(x+2)^2(x+1)(x-1).</me>
+			</p>
+			<p>
+				Free answer section. Work must be shown to get credit for any answer. Partial credit may be given even for incorrect final answers, so show your work.
+			</p>
+		</introduction>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Solve the following inequality and write your answers using interval notation. <me>|2x+3|+1 \leq 6</me>.
+			</p>
+			<p>
+				<m>\mbox{Solution: } \Scale[1.5]{\boxed{ \phantom{\dfrac{a}{b}} \hspace{8cm} }}</m>
+			</p>
+		</introduction>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Expand the logs with no interior multiplications or divisions and simplified powers as much as the rules allow. <me>\ln \frac{y^2}{\sqrt{2^x (z+x)^3}}</me>
+			</p>
+			<p>
+				<m>\ln \frac{y^2}{\sqrt{2^x (z+x)^3}}= \Scale[1.5]{\boxed{ \phantom{\dfrac{a}{b}} \hspace{8cm} }}</m>
+			</p>
+		</introduction>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Consider the function <m>f(x)=\dfrac{2x-5}{x+4}</m>. (Graph shown below.)
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					What is the domain and range of <m>f(x)</m>? (Write in interval notation.)
+				</p>
+				<p>
+					<m>\mbox{Domain: } \Scale[1.7]{\boxed{ \phantom{\dfrac{a}{b}} \hspace{3cm} }}</m><!-- linebreak --><m>\mbox{Range: } \Scale[1.7]{\boxed{ \phantom{\dfrac{a}{b}} \hspace{3cm} }}</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					What are the domain and range of <m>f^{-1}(x)</m>? (Write in interval notation.)
+				</p>
+				<p>
+					<m>\mbox{Domain: } \Scale[1.7]{\boxed{ \phantom{\dfrac{a}{b}} \hspace{3cm} }}</m><!-- linebreak --><m>\mbox{Range: } \Scale[1.7]{\boxed{ \phantom{\dfrac{a}{b}} \hspace{3cm} }}</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					What is <m>f^{-1}(x)</m>? <m>f^{-1}(x) = \Scale[1.5]{\boxed{ \phantom{\dfrac{a}{b}} \hspace{5cm} }}</m>
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Consider the rational function <me>f(x)= \dfrac{x^3-13 x^2+40 x+18}{ x^2-7x}</me>
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					Perform the division and write <m>f(x)</m> as <m>f(x)= Q(x)+\dfrac{R(x)}{D(x)}</m>
+				</p>
+				<p>
+					<m>f(x) = \Scale[2]{\boxed{ \phantom{\dfrac{a}{b}} \hspace{6cm} }}</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Does <m>f(x)</m> have a slant asymptote? If so what is it? If not write “DNE".
+				</p>
+				<p>
+					<m>\mbox{slant asymptote: }   \Scale[1.7]{\boxed{ \phantom{\dfrac{a}{b}} \hspace{4cm} }}</m>
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				A basketball player throws a half court shot. Let <m>t</m> denote the time taken (in seconds) after the ball was released. At <m>t=0</m>, they release the ball at the height of 10ft. At <m>t=2</m>, the ball reaches the basket, which is also 10ft high. The height of the ball <m>h</m> (in ft) can be modeled by the following equation: <me>h(t)=a(t-1)^2+k.</me>
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					It is given that the maximum height of the ball is 15ft. Based on the information above, find the values of <m>a</m> and <m>k</m> in the equation of <m>h(t)</m>.
+				</p>
+				<p>
+					<m>a</m> = , <m>k</m> =
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					What time <m>t</m> will the ball reach its maximum height?<!-- linebreak --><m>t = \Scale[1.5]{\boxed{ \phantom{\dfrac{a}{b}} \hspace{2cm} }}</m>
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Find all roots of the polynomial: <m>x^4 + x^2 - 12</m>. (Roots may be real, complex or a combination.)
+			</p>
+			<p>
+				<m>\mbox{Roots: } \Scale[1.5]{\boxed{ \phantom{\dfrac{a}{b}} \hspace{8cm} }}</m>
+			</p>
+		</introduction>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Find all values of <m>x</m> that satisfy the following inequality:
+			</p>
+			<p>
+				<me>\displaystyle \frac{x}{x-11}\displaystyle \ge \frac{100}{x^2-11x}.</me> Write your answer in interval notation.
+			</p>
+			<p>
+				Interval: <m>\Scale[1.7]{\boxed{ \phantom{\dfrac{a}{b}} \hspace{6cm} }}</m>
+			</p>
+		</introduction>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Solve the following equation. If no solution exists, write <q>DNE</q>. <me>\log_2 (x-1)+\log_2 (x+6)=3</me>
+			</p>
+			<p>
+				<m>x = \Scale[1.5]{\boxed{ \phantom{\dfrac{a}{b}} \hspace{3cm} }}</m>
+			</p>
+		</introduction>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				For the following system of linear equations, determine whether or not the system has any solutions. If the system has a solution, state it as an ordered pair <m>(x,y)</m>; if the systems has infinitely many solutions, write your solutions as an ordered pair in terms of the variable <m>x</m> only. <me>\begin{cases}
+							3 x  +  4 y &amp; = 1 \\
+							- x  +  2 y &amp; = 8
+							\end{cases}</me>
+			</p>
+			<p>
+				<m>(x,y) = \Scale[1.5]{\boxed{ \phantom{\dfrac{a}{b}} \hspace{3cm} }}</m>
+			</p>
+		</introduction>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Consider the function <me>f(x) = \frac{(2x+1)(x-2)}{3x(x-2)(x+3)^2}</me>
+			</p>
+		</introduction>
+		<task>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								Find the zero(s) of <m>f(x)</m>. If none exist, write “DNE".
+							</p>
+							<p>
+								<m>\mbox{zero(s)} = \Scale[1.5]{\boxed{ \phantom{\dfrac{a}{b}} \hspace{3cm} }}</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								Find the vertical asymptote(s) of <m>f(x)</m>. If none exist, write “DNE".
+							</p>
+							<p>
+								<m>\mbox{Vertical Asymptotes} = \Scale[1.5]{\boxed{ \phantom{\dfrac{a}{b}} \hspace{3cm} }}</m>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								What can we say about the graph of f(x)? [Select <term>ONE</term>]
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								Sketch this function on the axis below. Make sure to label ,  and  on your sketch.
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				A group of scientists are trying to develop a treatment to stop the planarians from growing.
+			</p>
+		</introduction>
+		<task>
+				<choices multiple-correct="no">
+					<choice>
+						<statement>
+							<p>
+								Sample A starts with 1000 planarians, and 2 hours later there are 200 planarians. Find a function <m>P(t)=P_0e^{rt}</m> that models the population of the planarians after <m>t</m> hours. (Leave the value for <m>r</m> in terms of a <m>\log</m>) <me>\begin{aligned}
+														                \Scale[1.7]{\boxed{P(t) =\phantom{\frac{1}{2}} \hspace{4cm} }}
+														            
+														\end{aligned}</me>
+							</p>
+						</statement>
+					</choice>
+					<choice>
+						<statement>
+							<p>
+								The scientists find that the number of planarians in sample B <m>t</m> hours after treatment is best modeled by the function <me>P(t) = 800 e^{0.5\ln(1/3)t}.</me> Is this function increasing or decreasing? [Select <term>ONE</term>]
+							</p>
+							<p>
+								Explain how you know based on this model.
+							</p>
+						</statement>
+					</choice>
+				</choices>
+		</task>
+	</exercise>
+</worksheet>
