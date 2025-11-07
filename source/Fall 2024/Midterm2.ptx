@@ -13,7 +13,7 @@
 				Which of the following functions have inverse functions? [Select <term>MULTIPLE</term>]
 			</p>
                         </statement>
-                        <choices multiple-correct="no">
+                        <choices multiple-correct="yes">
                                 <choice>
                                         <statement>
                                                 <p>
@@ -239,8 +239,7 @@
 				Perform the polynomial division below, and identify the quotient and remainder.
 			</p>
                         <p>
-                                <me>%Changed the x^2 term to 10x^2 instead of 2x^2 to avoid flustering students with 4*18
-							        \left(5 x^4-3 x^3+10 x^2-1\right) \div\left(x^2+4\right)</me>
+                                <me>\left(5 x^4-3 x^3+10 x^2-1\right) \div\left(x^2+4\right)</me>
                         </p>
                 </introduction>
         </exercise>
