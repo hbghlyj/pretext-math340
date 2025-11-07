@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <chapter xml:id="math112-practice-exams" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Math 112 Practice Exams</title>
-  <xi:include href="./Spring%202025/Sp25%20Midterm1.ptx"/>
-  <xi:include href="./Spring%202025/Sp25%20Midterm2.ptx"/>
-  <xi:include href="./Spring%202025/Sp25%20Final.ptx"/>
-  <xi:include href="./Fall%202024/Sp25%20Midterm1.ptx"/>
-  <xi:include href="./Fall%202024/Sp25%20Midterm2.ptx"/>
-  <xi:include href="./Fall%202024/Sp25%20Final.ptx"/>
-  <xi:include href="./Spring%202024/Sp25%20Midterm1.ptx"/>
-  <xi:include href="./Spring%202024/Sp25%20Midterm2.ptx"/>
-  <xi:include href="./Spring%202024/Sp25%20Final.ptx"/>
-  <xi:include href="./Fall%202023/Sp25%20Midterm1.ptx"/>
-  <xi:include href="./Fall%202023/Sp25%20Midterm2.ptx"/>
-  <xi:include href="./Fall%202023/Sp25%20Final.ptx"/>
+  <xi:include href="./Spring%202025/Midterm1.ptx"/>
+  <xi:include href="./Spring%202025/Midterm2.ptx"/>
+  <xi:include href="./Spring%202025/Final.ptx"/>
+  <xi:include href="./Fall%202024/Midterm1.ptx"/>
+  <xi:include href="./Fall%202024/Midterm2.ptx"/>
+  <xi:include href="./Fall%202024/Final.ptx"/>
+  <xi:include href="./Spring%202024/Midterm1.ptx"/>
+  <xi:include href="./Spring%202024/Midterm2.ptx"/>
+  <xi:include href="./Spring%202024/Final.ptx"/>
+  <xi:include href="./Fall%202023/Midterm1.ptx"/>
+  <xi:include href="./Fall%202023/Midterm2.ptx"/>
+  <xi:include href="./Fall%202023/Final.ptx"/>
 </chapter>
