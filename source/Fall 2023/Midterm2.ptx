@@ -214,8 +214,8 @@
         <exercise>
                 <introduction>
                         <p>
-				[4] Given the graphs of functions <m>f(x)</m> and <m>g(x)</m> below, find <m>f\circ g(1)</m>.
-			</p>
+                                Given the graphs of functions <m>f(x)</m> and <m>g(x)</m> below, find <m>f\circ g(1)</m>.
+                        </p>
                 </introduction>
         </exercise>
         <exercise>
