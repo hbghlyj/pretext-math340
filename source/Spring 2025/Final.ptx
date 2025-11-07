@@ -428,7 +428,7 @@
 		</statement>
 	</exercise>
 	<exercise>
-		<statement>
+		<introduction>
 			<p>
 				A swimming pool is being emptied, and the amount of water (in liters) in the pool at time <m>t</m> (in minutes) is given by <me>P(t) = P_0 \cdot 5^{rt}</me> where <m>P_0</m> and <m>r</m> are some constants. If there is initially <m>1000</m> liters of water in the pool, and after <m>7</m> minutes there is <m>500</m> liters of water in the pool, find the values of <m>P_0</m> and <m>r</m>.
 			</p>
