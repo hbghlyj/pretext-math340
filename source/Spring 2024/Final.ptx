@@ -401,13 +401,13 @@
 	<exercise>
 		<introduction>
 			<p>
-				How long will it take for an investment of $5000 to reach $10000 at an annual interest rate of 10%, compounded continuously? Leave your answer in terms of logs.=P_0e^{rt}</m>)
+				How long will it take for an investment of $5000 to reach $10000 at an annual interest rate of 10%, compounded continuously? Leave your answer in terms of logs.
 			</p>
 		</introduction>
 		<task>
 			<hint>
 				<p>
-					<m>P(t
+					<m>P(t)=P_0e^{rt}</m>
 				</p>
 			</hint>
 		</task>

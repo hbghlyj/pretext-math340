@@ -584,16 +584,52 @@ end
 
 local function split_text_and_hints(text)
   local hints = {}
-  local remaining = text or ""
-  local function capture_hint(segment)
-    local normalized = normalize_hint(segment)
-    if normalized ~= "" then
-      table.insert(hints, normalized)
+  local source = text or ""
+  local parts = {}
+  local index = 1
+  local length = #source
+
+  while index <= length do
+    local start_pos, prefix_end = source:find("%(%s*[Hh]int:?%s*", index)
+    if not start_pos then
+      table.insert(parts, source:sub(index))
+      break
     end
-    return ""
+
+    if start_pos > index then
+      table.insert(parts, source:sub(index, start_pos - 1))
+    end
+
+    local depth = 1
+    local scan = prefix_end + 1
+    local closed = false
+    while scan <= length do
+      local ch = source:sub(scan, scan)
+      if ch == "(" then
+        depth = depth + 1
+      elseif ch == ")" then
+        depth = depth - 1
+        if depth == 0 then
+          local segment = source:sub(start_pos, scan)
+          local normalized = normalize_hint(segment)
+          if normalized ~= "" then
+            table.insert(hints, normalized)
+          end
+          index = scan + 1
+          closed = true
+          break
+        end
+      end
+      scan = scan + 1
+    end
+
+    if not closed then
+      table.insert(parts, source:sub(start_pos))
+      break
+    end
   end
-  remaining = remaining:gsub("%s*(%(%s*[Hh]int:?[^%)]*%))", capture_hint)
-  remaining = trim(remaining)
+
+  local remaining = trim(table.concat(parts, ""))
   if remaining ~= "" and remaining:match("^%(*%s*[Hh]int") then
     local normalized = normalize_hint(remaining)
     if normalized ~= "" then
