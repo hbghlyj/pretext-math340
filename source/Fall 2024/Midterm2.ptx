@@ -12,7 +12,7 @@
 				Which of the following functions have inverse functions? [Select <term>MULTIPLE</term>]
 			</p>
 		</statement>
-			<choices multiple-correct="no">
+<choices multiple-correct="yes">
 				<choice>
 					<statement>
 						<p>
