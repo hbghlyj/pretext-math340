@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<worksheet xml:id="Final" xmlns:xi="http://www.w3.org/2001/XInclude">
-	<title>Final</title>
+<worksheet xml:id="Spring-2024-Final" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Spring-2024-Final</title>
 	<introduction>
 		<p>
 				Multiple choice section. All points are for choosing the correct answer. No justification is needed.
@@ -401,13 +401,13 @@
 	<exercise>
 		<introduction>
 			<p>
-				How long will it take for an investment of $5000 to reach $10000 at an annual interest rate of 10%, compounded continuously? Leave your answer in terms of logs.=P_0e^{rt}</m>)
+				How long will it take for an investment of $5000 to reach $10000 at an annual interest rate of 10%, compounded continuously? Leave your answer in terms of logs.
 			</p>
 		</introduction>
 		<task>
 			<hint>
 				<p>
-					<m>P(t
+					<m>P(t)=P_0e^{rt}</m>
 				</p>
 			</hint>
 		</task>
