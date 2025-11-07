@@ -55,6 +55,109 @@ local function trim(s)
   return (s:gsub("^%s+", ""):gsub("%s+$", ""))
 end
 
+local function sanitize_identifier(value)
+  if not value or value == "" then
+    return ""
+  end
+  local sanitized = tostring(value)
+  sanitized = sanitized:gsub("\\", "/")
+  sanitized = sanitized:gsub("^%./+", "")
+  sanitized = sanitized:gsub("%.tex$", "")
+  sanitized = sanitized:gsub("[/\\]+", "-")
+  sanitized = sanitized:gsub("%s+", "-")
+  sanitized = sanitized:gsub("[^%w_%.:-]", "-")
+  sanitized = sanitized:gsub("-+", "-")
+  sanitized = sanitized:gsub("^[-%.:]+", "")
+  sanitized = sanitized:gsub("^source[-_]?", "")
+  if sanitized == "" or sanitized:match("^[^A-Za-z_]") then
+    sanitized = "doc-" .. sanitized
+    sanitized = sanitized:gsub("[^%w_%.:-]", "-")
+    sanitized = sanitized:gsub("-+", "-")
+    sanitized = sanitized:gsub("^[-%.:]+", "")
+    if sanitized == "" then
+      sanitized = "doc"
+    end
+  end
+  return sanitized
+end
+
+local function convert_scale_macros(text)
+  local replacements = 0
+  local parts = {}
+  local pos = 1
+  local len = #text
+  while pos <= len do
+    local start_pos, end_pos = text:find("\\Scale", pos, true)
+    if not start_pos then
+      table.insert(parts, text:sub(pos))
+      break
+    end
+    table.insert(parts, text:sub(pos, start_pos - 1))
+    local cursor = end_pos + 1
+    while cursor <= len and text:sub(cursor, cursor):match("%s") do
+      cursor = cursor + 1
+    end
+    local scale = "4"
+    if cursor <= len and text:sub(cursor, cursor) == "[" then
+      local depth = 1
+      local j = cursor + 1
+      while j <= len and depth > 0 do
+        local ch = text:sub(j, j)
+        if ch == "[" then
+          depth = depth + 1
+        elseif ch == "]" then
+          depth = depth - 1
+        end
+        j = j + 1
+      end
+      if depth == 0 then
+        local raw_scale = trim(text:sub(cursor + 1, j - 2))
+        if raw_scale ~= "" then
+          scale = raw_scale
+        end
+        cursor = j
+        while cursor <= len and text:sub(cursor, cursor):match("%s") do
+          cursor = cursor + 1
+        end
+      else
+        local fallback_end = math.max(cursor - 1, start_pos)
+        table.insert(parts, text:sub(start_pos, fallback_end))
+        pos = fallback_end + 1
+        goto continue_loop
+      end
+    end
+    if cursor > len or text:sub(cursor, cursor) ~= "{" then
+      local fallback_end = math.max(cursor - 1, start_pos)
+      table.insert(parts, text:sub(start_pos, fallback_end))
+      pos = fallback_end + 1
+    else
+      local depth = 1
+      local j = cursor + 1
+      while j <= len and depth > 0 do
+        local ch = text:sub(j, j)
+        if ch == "{" then
+          depth = depth + 1
+        elseif ch == "}" then
+          depth = depth - 1
+        end
+        j = j + 1
+      end
+      if depth == 0 then
+        local content = text:sub(cursor + 1, j - 2)
+        table.insert(parts, "\\scalebox{" .. scale .. "}{\\ensuremath{" .. content .. "}}")
+        pos = j
+        replacements = replacements + 1
+      else
+        local fallback_end = math.max(cursor - 1, start_pos)
+        table.insert(parts, text:sub(start_pos, fallback_end))
+        pos = fallback_end + 1
+      end
+    end
+    ::continue_loop::
+  end
+  return table.concat(parts), replacements
+end
+
 local function indent_line(text, level)
   local prefix = string.rep("\t", level)
   local lines = {}
@@ -869,14 +972,15 @@ function Doc(body, metadata, variables)
   end
   local doc_id
   if metadata and metadata.identifier and metadata.identifier ~= "" then
-    doc_id = trim(metadata.identifier)
+    doc_id = sanitize_identifier(trim(metadata.identifier))
   end
   if (not doc_id or doc_id == "") and PANDOC_STATE and PANDOC_STATE.input_files and #PANDOC_STATE.input_files > 0 then
-    local name = PANDOC_STATE.input_files[1]
-    name = name:gsub(".*[/\\]", "")
-    name = name:gsub("%.[^.]+$", "")
-    if name ~= "" then
-      doc_id = name
+    local input_path = PANDOC_STATE.input_files[1]
+    if input_path and input_path ~= "" then
+      local sanitized = sanitize_identifier(input_path)
+      if sanitized ~= "" then
+        doc_id = sanitized
+      end
     end
   end
   if not doc_id or doc_id == "" then
@@ -888,6 +992,10 @@ function Doc(body, metadata, variables)
   if PANDOC_STATE and PANDOC_STATE.input_files and #PANDOC_STATE.input_files > 0 then
     source = read_file_contents(PANDOC_STATE.input_files[1])
     if source then
+      local converted_source, scale_replacements = convert_scale_macros(source)
+      if scale_replacements > 0 then
+        source = converted_source
+      end
       workspace_lookup = build_workspace_lookup(source)
     end
   end
@@ -959,6 +1067,7 @@ function Doc(body, metadata, variables)
   end
   body = assembled
 
+  doc_id = sanitize_identifier(doc_id)
   local title = doc_id
   local header = '<?xml version="1.0" encoding="utf-8"?>\n<worksheet xml:id="' .. doc_id .. '" xmlns:xi="http://www.w3.org/2001/XInclude">'
   local title_line = indent_line("<title>" .. title .. "</title>", 1)

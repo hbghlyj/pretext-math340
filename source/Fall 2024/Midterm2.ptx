@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<worksheet xml:id="Midterm2" xmlns:xi="http://www.w3.org/2001/XInclude">
-	<title>Midterm2</title>
+<worksheet xml:id="Fall-2024-Midterm2" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Fall-2024-Midterm2</title>
 	<introduction>
 		<p>
 				<term>Multiple Choice</term>. Clearly mark the correct answer for each of the following by completely filling in the appropriate bubble or box. No justification is needed.
@@ -195,14 +195,14 @@
 		<task workspace="7cm">
 			<statement>
 				<p>
-					Find <m>(g-f)(1) = \Scale[5]{\boxed{ \hspace{.3cm}}}</m>
+					Find <m>(g-f)(1) = \scalebox{5}{\ensuremath{\boxed{ \hspace{.3cm}}}}</m>
 				</p>
 			</statement>
 		</task>
 		<task workspace="5cm">
 			<statement>
 				<p>
-					Find <m>g\circ f (3) = \Scale[5]{\boxed{ \hspace{.3cm}}}</m>
+					Find <m>g\circ f (3) = \scalebox{5}{\ensuremath{\boxed{ \hspace{.3cm}}}}</m>
 				</p>
 			</statement>
 		</task>
@@ -362,7 +362,7 @@
 			<statement>
 				<p>
 					Write an algebraic expression describing how <m>g(x)</m> was obtained from <m>f(x)</m>: <me>\begin{aligned}
-											                \Scale[1.7]{\boxed{g(x) = \hspace{4cm} }}
+											                \scalebox{1.7}{\ensuremath{\boxed{g(x) = \hspace{4cm} }}}
 											            
 											\end{aligned}</me>
 				</p>

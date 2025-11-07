@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<worksheet xml:id="Final" xmlns:xi="http://www.w3.org/2001/XInclude">
-	<title>Final</title>
+<worksheet xml:id="Fall-2024-Final" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Fall-2024-Final</title>
 	<introduction>
 		<p>
 				Multiple choice section. All points are for choosing the correct answer. No justification is needed.
@@ -245,7 +245,7 @@
 				Solve the following inequality and write your answers using interval notation. <me>|2x+3|+1 \leq 6</me>.
 			</p>
 			<p>
-				<m>\mbox{Solution: } \Scale[1.5]{\boxed{ \phantom{\dfrac{a}{b}} \hspace{8cm} }}</m>
+				<m>\mbox{Solution: } \scalebox{1.5}{\ensuremath{\boxed{ \phantom{\dfrac{a}{b}} \hspace{8cm} }}}</m>
 			</p>
 		</introduction>
 	</exercise>
@@ -255,7 +255,7 @@
 				Expand the logs with no interior multiplications or divisions and simplified powers as much as the rules allow. <me>\ln \frac{y^2}{\sqrt{2^x (z+x)^3}}</me>
 			</p>
 			<p>
-				<m>\ln \frac{y^2}{\sqrt{2^x (z+x)^3}}= \Scale[1.5]{\boxed{ \phantom{\dfrac{a}{b}} \hspace{8cm} }}</m>
+				<m>\ln \frac{y^2}{\sqrt{2^x (z+x)^3}}= \scalebox{1.5}{\ensuremath{\boxed{ \phantom{\dfrac{a}{b}} \hspace{8cm} }}}</m>
 			</p>
 		</introduction>
 	</exercise>
@@ -271,7 +271,7 @@
 					What is the domain and range of <m>f(x)</m>? (Write in interval notation.)
 				</p>
 				<p>
-					<m>\mbox{Domain: } \Scale[1.7]{\boxed{ \phantom{\dfrac{a}{b}} \hspace{3cm} }}</m><!-- linebreak --><m>\mbox{Range: } \Scale[1.7]{\boxed{ \phantom{\dfrac{a}{b}} \hspace{3cm} }}</m>
+					<m>\mbox{Domain: } \scalebox{1.7}{\ensuremath{\boxed{ \phantom{\dfrac{a}{b}} \hspace{3cm} }}}</m><!-- linebreak --><m>\mbox{Range: } \scalebox{1.7}{\ensuremath{\boxed{ \phantom{\dfrac{a}{b}} \hspace{3cm} }}}</m>
 				</p>
 			</statement>
 		</task>
@@ -281,14 +281,14 @@
 					What are the domain and range of <m>f^{-1}(x)</m>? (Write in interval notation.)
 				</p>
 				<p>
-					<m>\mbox{Domain: } \Scale[1.7]{\boxed{ \phantom{\dfrac{a}{b}} \hspace{3cm} }}</m><!-- linebreak --><m>\mbox{Range: } \Scale[1.7]{\boxed{ \phantom{\dfrac{a}{b}} \hspace{3cm} }}</m>
+					<m>\mbox{Domain: } \scalebox{1.7}{\ensuremath{\boxed{ \phantom{\dfrac{a}{b}} \hspace{3cm} }}}</m><!-- linebreak --><m>\mbox{Range: } \scalebox{1.7}{\ensuremath{\boxed{ \phantom{\dfrac{a}{b}} \hspace{3cm} }}}</m>
 				</p>
 			</statement>
 		</task>
 		<task>
 			<statement>
 				<p>
-					What is <m>f^{-1}(x)</m>? <m>f^{-1}(x) = \Scale[1.5]{\boxed{ \phantom{\dfrac{a}{b}} \hspace{5cm} }}</m>
+					What is <m>f^{-1}(x)</m>? <m>f^{-1}(x) = \scalebox{1.5}{\ensuremath{\boxed{ \phantom{\dfrac{a}{b}} \hspace{5cm} }}}</m>
 				</p>
 			</statement>
 		</task>
@@ -305,7 +305,7 @@
 					Perform the division and write <m>f(x)</m> as <m>f(x)= Q(x)+\dfrac{R(x)}{D(x)}</m>
 				</p>
 				<p>
-					<m>f(x) = \Scale[2]{\boxed{ \phantom{\dfrac{a}{b}} \hspace{6cm} }}</m>
+					<m>f(x) = \scalebox{2}{\ensuremath{\boxed{ \phantom{\dfrac{a}{b}} \hspace{6cm} }}}</m>
 				</p>
 			</statement>
 		</task>
@@ -315,7 +315,7 @@
 					Does <m>f(x)</m> have a slant asymptote? If so what is it? If not write “DNE".
 				</p>
 				<p>
-					<m>\mbox{slant asymptote: }   \Scale[1.7]{\boxed{ \phantom{\dfrac{a}{b}} \hspace{4cm} }}</m>
+					<m>\mbox{slant asymptote: }   \scalebox{1.7}{\ensuremath{\boxed{ \phantom{\dfrac{a}{b}} \hspace{4cm} }}}</m>
 				</p>
 			</statement>
 		</task>
@@ -339,7 +339,7 @@
 		<task>
 			<statement>
 				<p>
-					What time <m>t</m> will the ball reach its maximum height?<!-- linebreak --><m>t = \Scale[1.5]{\boxed{ \phantom{\dfrac{a}{b}} \hspace{2cm} }}</m>
+					What time <m>t</m> will the ball reach its maximum height?<!-- linebreak --><m>t = \scalebox{1.5}{\ensuremath{\boxed{ \phantom{\dfrac{a}{b}} \hspace{2cm} }}}</m>
 				</p>
 			</statement>
 		</task>
@@ -350,7 +350,7 @@
 				Find all roots of the polynomial: <m>x^4 + x^2 - 12</m>. (Roots may be real, complex or a combination.)
 			</p>
 			<p>
-				<m>\mbox{Roots: } \Scale[1.5]{\boxed{ \phantom{\dfrac{a}{b}} \hspace{8cm} }}</m>
+				<m>\mbox{Roots: } \scalebox{1.5}{\ensuremath{\boxed{ \phantom{\dfrac{a}{b}} \hspace{8cm} }}}</m>
 			</p>
 		</introduction>
 	</exercise>
@@ -363,7 +363,7 @@
 				<me>\displaystyle \frac{x}{x-11}\displaystyle \ge \frac{100}{x^2-11x}.</me> Write your answer in interval notation.
 			</p>
 			<p>
-				Interval: <m>\Scale[1.7]{\boxed{ \phantom{\dfrac{a}{b}} \hspace{6cm} }}</m>
+				Interval: <m>\scalebox{1.7}{\ensuremath{\boxed{ \phantom{\dfrac{a}{b}} \hspace{6cm} }}}</m>
 			</p>
 		</introduction>
 	</exercise>
@@ -373,7 +373,7 @@
 				Solve the following equation. If no solution exists, write <q>DNE</q>. <me>\log_2 (x-1)+\log_2 (x+6)=3</me>
 			</p>
 			<p>
-				<m>x = \Scale[1.5]{\boxed{ \phantom{\dfrac{a}{b}} \hspace{3cm} }}</m>
+				<m>x = \scalebox{1.5}{\ensuremath{\boxed{ \phantom{\dfrac{a}{b}} \hspace{3cm} }}}</m>
 			</p>
 		</introduction>
 	</exercise>
@@ -386,7 +386,7 @@
 							\end{cases}</me>
 			</p>
 			<p>
-				<m>(x,y) = \Scale[1.5]{\boxed{ \phantom{\dfrac{a}{b}} \hspace{3cm} }}</m>
+				<m>(x,y) = \scalebox{1.5}{\ensuremath{\boxed{ \phantom{\dfrac{a}{b}} \hspace{3cm} }}}</m>
 			</p>
 		</introduction>
 	</exercise>
@@ -404,7 +404,7 @@
 								Find the zero(s) of <m>f(x)</m>. If none exist, write “DNE".
 							</p>
 							<p>
-								<m>\mbox{zero(s)} = \Scale[1.5]{\boxed{ \phantom{\dfrac{a}{b}} \hspace{3cm} }}</m>
+								<m>\mbox{zero(s)} = \scalebox{1.5}{\ensuremath{\boxed{ \phantom{\dfrac{a}{b}} \hspace{3cm} }}}</m>
 							</p>
 						</statement>
 					</choice>
@@ -414,7 +414,7 @@
 								Find the vertical asymptote(s) of <m>f(x)</m>. If none exist, write “DNE".
 							</p>
 							<p>
-								<m>\mbox{Vertical Asymptotes} = \Scale[1.5]{\boxed{ \phantom{\dfrac{a}{b}} \hspace{3cm} }}</m>
+								<m>\mbox{Vertical Asymptotes} = \scalebox{1.5}{\ensuremath{\boxed{ \phantom{\dfrac{a}{b}} \hspace{3cm} }}}</m>
 							</p>
 						</statement>
 					</choice>
@@ -447,7 +447,7 @@
 						<statement>
 							<p>
 								Sample A starts with 1000 planarians, and 2 hours later there are 200 planarians. Find a function <m>P(t)=P_0e^{rt}</m> that models the population of the planarians after <m>t</m> hours. (Leave the value for <m>r</m> in terms of a <m>\log</m>) <me>\begin{aligned}
-														                \Scale[1.7]{\boxed{P(t) =\phantom{\frac{1}{2}} \hspace{4cm} }}
+														                \scalebox{1.7}{\ensuremath{\boxed{P(t) =\phantom{\frac{1}{2}} \hspace{4cm} }}}
 														            
 														\end{aligned}</me>
 							</p>
