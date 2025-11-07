@@ -381,7 +381,7 @@
 		</statement>
 	</exercise>
 	<exercise>
-		<statement>
+		<introduction>
 			<p>
 				Consider the function <me>f(x) = \frac{(2x+1)(x-2)}{3x(x-2)(x+3)^2}</me>
 			</p>
@@ -452,7 +452,7 @@
 		</task>
 	</exercise>
 	<exercise>
-		<statement>
+		<introduction>
 			<p>
 				A group of scientists are trying to develop a treatment to stop the planarians from growing.
 			</p>
