@@ -7,142 +7,136 @@
 			</p>
 	</introduction>
 	<exercise>
-		<introduction>
+		<statement>
 			<p>
 				A parabola has a vertex of <m>(5,-2)</m>, and the vertex is a maximum. What is a possible equation for the parabola?
 			</p>
-		</introduction>
-		<task>
-				<choices multiple-correct="no">
-					<choice>
-						<statement>
-							<p>
-								<m>y=(x+5)^2-2</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>y=-(x-5)^2+2</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>y=-(x-5)^2-2</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>y=-(x-2)^2+5</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								None of the above.
-							</p>
-						</statement>
-					</choice>
-				</choices>
-		</task>
+		</statement>
+			<choices multiple-correct="no">
+				<choice>
+					<statement>
+						<p>
+							<m>y=(x+5)^2-2</m>
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							<m>y=-(x-5)^2+2</m>
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							<m>y=-(x-5)^2-2</m>
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							<m>y=-(x-2)^2+5</m>
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							None of the above.
+						</p>
+					</statement>
+				</choice>
+			</choices>
 	</exercise>
 	<exercise>
-		<introduction>
+		<statement>
 			<p>
 				The graph below has which properties?
 			</p>
-		</introduction>
-		<task>
-				<choices multiple-correct="no">
-					<choice>
-						<statement>
-							<p>
-								The graph  a function and  have an inverse.
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								The graph is  a function does  have an inverse.
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								The graph is  a function, but  have an inverse.
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								The graph  a function, but does  have an inverse.
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								None of the above.
-							</p>
-						</statement>
-					</choice>
-				</choices>
-		</task>
+		</statement>
+			<choices multiple-correct="no">
+				<choice>
+					<statement>
+						<p>
+							The graph  a function and  have an inverse.
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							The graph is  a function does  have an inverse.
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							The graph is  a function, but  have an inverse.
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							The graph  a function, but does  have an inverse.
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							None of the above.
+						</p>
+					</statement>
+				</choice>
+			</choices>
 	</exercise>
 	<exercise>
-		<introduction>
+		<statement>
 			<p>
 				Consider a polynomial <me>P(x) = ax^n</me> You know <m>n</m> is a positive integer, but do not know <m>a</m>. If as <m>x\to-\infty</m> <m>P(x)\to+\infty</m> and as <m>x\to+\infty</m> <m>P(x)\to-\infty</m>. What do you know about <m>a</m> and <m>n</m>?
 			</p>
-		</introduction>
-		<task>
-				<choices multiple-correct="no">
-					<choice>
-						<statement>
-							<p>
-								<m>a</m> is positive and <m>n</m> is odd.
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>a</m> is negative and <m>n</m> is odd.
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>a</m> is negative and <m>n</m> is even.
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>a</m> is positive and <m>n</m> is even.
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								None of the above.
-							</p>
-						</statement>
-					</choice>
-				</choices>
-		</task>
+		</statement>
+			<choices multiple-correct="no">
+				<choice>
+					<statement>
+						<p>
+							<m>a</m> is positive and <m>n</m> is odd.
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							<m>a</m> is negative and <m>n</m> is odd.
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							<m>a</m> is negative and <m>n</m> is even.
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							<m>a</m> is positive and <m>n</m> is even.
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							None of the above.
+						</p>
+					</statement>
+				</choice>
+			</choices>
 	</exercise>
 	<exercise>
 		<introduction>
@@ -175,41 +169,39 @@
 		</task>
 	</exercise>
 	<exercise>
-		<introduction>
+		<statement>
 			<p>
 				Select the graph of <m>f(x)=x^2(x-2)^2</m>.
 			</p>
 			<p>
 				Free answer section. Work must be shown to get credit for any answer. Partial credit may be given even for incorrect final answers, so show your work.
 			</p>
-		</introduction>
-		<task>
-				<choices multiple-correct="no">
-					<choice>
-						<statement>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								None of the above.
-							</p>
-						</statement>
-					</choice>
-				</choices>
-		</task>
+		</statement>
+			<choices multiple-correct="no">
+				<choice>
+					<statement>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							None of the above.
+						</p>
+					</statement>
+				</choice>
+			</choices>
 	</exercise>
 	<exercise>
 		<introduction>
@@ -247,11 +239,11 @@
 		</task>
 	</exercise>
 	<exercise>
-		<introduction>
+		<statement>
 			<p>
 				Perform the polynomial long division, then identify the quotient and the remainder. <me>\left(x^4+3 x^3+5x^2+2x+1\right) \div\left(x^2+1\right)</me>
 			</p>
-		</introduction>
+		</statement>
 	</exercise>
 	<exercise>
 		<introduction>
@@ -341,11 +333,11 @@
 		</task>
 	</exercise>
 	<exercise>
-		<introduction>
+		<statement>
 			<p>
 				Let <m>f(x)=\dfrac{3}{x+4}</m>. Find <m>f^{-1}(x)</m>, and find the domain of <m>f(x)</m>.
 			</p>
-		</introduction>
+		</statement>
 	</exercise>
 	<exercise>
 		<introduction>

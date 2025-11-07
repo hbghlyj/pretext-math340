@@ -7,213 +7,205 @@
 			</p>
 	</introduction>
 	<exercise>
-		<introduction>
+		<statement>
 			<p>
 				Select a polynomial of smallest degree with roots of <m>6</m>, <m>\sqrt{7}</m>, a repeated root of <m>-3</m> with a multiplicity of <m>2</m>, and a leading coefficient of <m>-5</m>.
 			</p>
-		</introduction>
-		<task>
-				<choices multiple-correct="no">
-					<choice>
-						<statement>
-							<p>
-								<m>(x-6)(x-\sqrt{7})(x+3)^2</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>-5(x-6)(x-\sqrt{7})(x+3)^2</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>(x+6)(x+\sqrt{7})(x-3)^2(x-5)</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>-5(x+6)(x+\sqrt{7})(x-3)^2</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								None of the above.
-							</p>
-						</statement>
-					</choice>
-				</choices>
-		</task>
+		</statement>
+			<choices multiple-correct="no">
+				<choice>
+					<statement>
+						<p>
+							<m>(x-6)(x-\sqrt{7})(x+3)^2</m>
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							<m>-5(x-6)(x-\sqrt{7})(x+3)^2</m>
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							<m>(x+6)(x+\sqrt{7})(x-3)^2(x-5)</m>
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							<m>-5(x+6)(x+\sqrt{7})(x-3)^2</m>
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							None of the above.
+						</p>
+					</statement>
+				</choice>
+			</choices>
 	</exercise>
 	<exercise>
-		<introduction>
+		<statement>
 			<p>
 				You run a business teaching aspiring didgeridoo players. Let <m>x</m> be the number of hours you spend teaching your students. If the equation for your profit (in dollars) is given by <me>P(x) = 28 x-35</me> What is the rate of change and what does it represent in this equation?
 			</p>
-		</introduction>
-		<task>
-				<choices multiple-correct="no">
-					<choice>
-						<statement>
-							<p>
-								You earn $28 dollars per hour teaching.
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								You make 28 didgeridoos per hour.
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								You lose $35 dollars per hour teaching.
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>x=\dfrac{5}{4}</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								None of the above.
-							</p>
-						</statement>
-					</choice>
-				</choices>
-		</task>
+		</statement>
+			<choices multiple-correct="no">
+				<choice>
+					<statement>
+						<p>
+							You earn $28 dollars per hour teaching.
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							You make 28 didgeridoos per hour.
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							You lose $35 dollars per hour teaching.
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							<m>x=\dfrac{5}{4}</m>
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							None of the above.
+						</p>
+					</statement>
+				</choice>
+			</choices>
 	</exercise>
 	<exercise>
-		<introduction>
+		<statement>
 			<p>
 				Consider a polynomial <me>P(x) = ax^7+3x^5-4x+12</me> You do not know <m>a</m>, but you know as <m>x\to-\infty</m> <m>P(x)\to+\infty</m>. What else do you know?
 			</p>
-		</introduction>
-		<task>
-				<choices multiple-correct="no">
-					<choice>
-						<statement>
-							<p>
-								As <m>x\to+\infty</m>  <m>P(x)\to+\infty</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>P(x)</m> has seven rational roots.
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								As <m>x\to+\infty</m>  <m>P(x)\to-\infty</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>P(x)</m> has seven real roots.
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								None of the above.
-							</p>
-						</statement>
-					</choice>
-				</choices>
-		</task>
+		</statement>
+			<choices multiple-correct="no">
+				<choice>
+					<statement>
+						<p>
+							As <m>x\to+\infty</m>  <m>P(x)\to+\infty</m>
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							<m>P(x)</m> has seven rational roots.
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							As <m>x\to+\infty</m>  <m>P(x)\to-\infty</m>
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							<m>P(x)</m> has seven real roots.
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							None of the above.
+						</p>
+					</statement>
+				</choice>
+			</choices>
 	</exercise>
 	<exercise>
-		<introduction>
+		<statement>
 			<p>
 				Given the graph of <m>f(x)=2^x</m> below, select the correct graph of <m>g(x)=\dfrac{1}{4}2^{-x}+1</m>
 			</p>
-		</introduction>
-		<task workspace="-.7cm">
-				<choices multiple-correct="no">
-					<choice>
-						<statement>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-						</statement>
-					</choice>
-				</choices>
-		</task>
+		</statement>
+			<choices multiple-correct="no">
+				<choice>
+					<statement>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+					</statement>
+				</choice>
+			</choices>
+		<workspace amount="-.7cm"/>
 	</exercise>
 	<exercise>
-		<introduction>
+		<statement>
 			<p>
 				of the functions graphed below which would have an inverse function.
 			</p>
 			<p>
 				Free answer section. Work must be shown to get credit for any answer. Partial credit may be given even for incorrect final answers, so show your work.
 			</p>
-		</introduction>
-		<task workspace="-.7cm">
-				<choices multiple-correct="no">
-					<choice>
-						<statement>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-						</statement>
-					</choice>
-				</choices>
-		</task>
+		</statement>
+			<choices multiple-correct="no">
+				<choice>
+					<statement>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+					</statement>
+				</choice>
+			</choices>
+		<workspace amount="-.7cm"/>
 	</exercise>
 	<exercise>
-		<introduction>
+		<statement>
 			<p>
 				The graph of a function <m>y = f(x)</m> is displayed below:
 			</p>
-		</introduction>
+		</statement>
 	</exercise>
 	<exercise>
-		<introduction>
+		<statement>
 			<p>
 				[4] Given the graphs of functions <m>f(x)</m> and <m>g(x)</m> below, find <m>f\circ g(1)</m>.
 			</p>
-		</introduction>
+		</statement>
 	</exercise>
 	<exercise>
 		<introduction>

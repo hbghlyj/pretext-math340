@@ -7,234 +7,224 @@
 			</p>
 	</introduction>
 	<exercise>
-		<introduction>
+		<statement>
 			<p>
 				A parabola has a vertex of <m>(-3,2)</m>, and the vertex is a maximum. What is a possible equation for the parabola?
 			</p>
-		</introduction>
-		<task>
-				<choices multiple-correct="no">
-					<choice>
-						<statement>
-							<p>
-								<m>y=(x+3)^2+2</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>y=-(x-3)^2-2</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>y=-(x+3)^2+2</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>y=-(x-2)^2-3</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								None of the above.
-							</p>
-						</statement>
-					</choice>
-				</choices>
-		</task>
+		</statement>
+			<choices multiple-correct="no">
+				<choice>
+					<statement>
+						<p>
+							<m>y=(x+3)^2+2</m>
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							<m>y=-(x-3)^2-2</m>
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							<m>y=-(x+3)^2+2</m>
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							<m>y=-(x-2)^2-3</m>
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							None of the above.
+						</p>
+					</statement>
+				</choice>
+			</choices>
 	</exercise>
 	<exercise>
-		<introduction>
+		<statement>
 			<p>
 				The graph below has which properties?
 			</p>
-		</introduction>
-		<task>
-				<choices multiple-correct="no">
-					<choice>
-						<statement>
-							<p>
-								The graph is a function and does have an inverse.
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								The graph is neither a function nor has an inverse.
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								The graph is not a function, but does have an inverse.
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								The graph is a function, but does not have an inverse.
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								None of the above.
-							</p>
-						</statement>
-					</choice>
-				</choices>
-		</task>
+		</statement>
+			<choices multiple-correct="no">
+				<choice>
+					<statement>
+						<p>
+							The graph is a function and does have an inverse.
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							The graph is neither a function nor has an inverse.
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							The graph is not a function, but does have an inverse.
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							The graph is a function, but does not have an inverse.
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							None of the above.
+						</p>
+					</statement>
+				</choice>
+			</choices>
 	</exercise>
 	<exercise>
-		<introduction>
+		<statement>
 			<p>
 				Consider a polynomial <me>P(x) = ax^n</me> You know <m>n</m> is a positive integer, but do not know <m>a</m>. If as <m>x\to-\infty</m> <m>P(x)\to-\infty</m> and as <m>x\to+\infty</m> <m>P(x)\to-\infty</m>. What do you know about <m>a</m> and <m>n</m>?
 			</p>
-		</introduction>
-		<task>
-				<choices multiple-correct="no">
-					<choice>
-						<statement>
-							<p>
-								<m>a</m> is positive and <m>n</m> is odd.
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>a</m> is negative and <m>n</m> is odd.
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>a</m> is negative and <m>n</m> is even.
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>a</m> is positive and <m>n</m> is even.
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								None of the above.
-							</p>
-						</statement>
-					</choice>
-				</choices>
-		</task>
+		</statement>
+			<choices multiple-correct="no">
+				<choice>
+					<statement>
+						<p>
+							<m>a</m> is positive and <m>n</m> is odd.
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							<m>a</m> is negative and <m>n</m> is odd.
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							<m>a</m> is negative and <m>n</m> is even.
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							<m>a</m> is positive and <m>n</m> is even.
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							None of the above.
+						</p>
+					</statement>
+				</choice>
+			</choices>
 	</exercise>
 	<exercise>
-		<introduction>
+		<statement>
 			<p>
 				A graph of a generic quadratic <m>y=ax^2+bx+c</m>, with <m>a\neq0</m>
 			</p>
-		</introduction>
-		<task>
-				<choices multiple-correct="no">
-					<choice>
-						<statement>
-							<p>
-								will always touch (intersect) the <m>x</m>-axis in 2 different places.
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								will always touch (intersect) the <m>x</m>-axis at least once.
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								will always touch (intersect) the <m>x</m>-axis exactly once.
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								may not touch (intersect) the <m>x</m>-axis at all.
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								None of the above.
-							</p>
-						</statement>
-					</choice>
-				</choices>
-		</task>
+		</statement>
+			<choices multiple-correct="no">
+				<choice>
+					<statement>
+						<p>
+							will always touch (intersect) the <m>x</m>-axis in 2 different places.
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							will always touch (intersect) the <m>x</m>-axis at least once.
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							will always touch (intersect) the <m>x</m>-axis exactly once.
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							may not touch (intersect) the <m>x</m>-axis at all.
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							None of the above.
+						</p>
+					</statement>
+				</choice>
+			</choices>
 	</exercise>
 	<exercise>
-		<introduction>
+		<statement>
 			<p>
 				A graph of a generic quadratic <m>y=ax^2+bx+c</m>, with <m>a\neq0</m>
 			</p>
-		</introduction>
-		<task>
-				<choices multiple-correct="no">
-					<choice>
-						<statement>
-							<p>
-								will always touch (intersect) the <m>y</m>-axis in 2 different places.
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								will always touch (intersect) the <m>y</m>-axis at least once.
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								will always touch (intersect) the <m>y</m>-axis exactly once.
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								may not touch (intersect) the <m>y</m>-axis at all.
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								None of the above.
-							</p>
-						</statement>
-					</choice>
-				</choices>
-		</task>
+		</statement>
+			<choices multiple-correct="no">
+				<choice>
+					<statement>
+						<p>
+							will always touch (intersect) the <m>y</m>-axis in 2 different places.
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							will always touch (intersect) the <m>y</m>-axis at least once.
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							will always touch (intersect) the <m>y</m>-axis exactly once.
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							may not touch (intersect) the <m>y</m>-axis at all.
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							None of the above.
+						</p>
+					</statement>
+				</choice>
+			</choices>
 	</exercise>
 	<exercise>
 		<introduction>
@@ -258,21 +248,21 @@
 		</task>
 	</exercise>
 	<exercise>
-		<introduction>
+		<statement>
 			<p>
 				Find the quotient and remainder of the following: <me>(8x^4+2x^3-10x^2+4)\div (2x^2-1)</me>
 			</p>
-		</introduction>
+		</statement>
 	</exercise>
 	<exercise>
-		<introduction>
+		<statement>
 			<p>
 				The graph of a function <m>y = f(x)</m> is displayed below:
 			</p>
 			<p>
 				Draw the graph of <m>y = -f(2x) - 1</m> below.
 			</p>
-		</introduction>
+		</statement>
 	</exercise>
 	<exercise>
 		<introduction>
