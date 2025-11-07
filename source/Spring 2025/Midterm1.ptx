@@ -1,396 +1,384 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<worksheet xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="Spring-2025-Midterm1">
-        <title>Spring-2025-Midterm1</title>
-        <introduction>
-                <p>
+<?xml version="1.0" encoding="utf-8"?>
+<worksheet xml:id="Spring-2025-Midterm1" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Spring-2025-Midterm1</title>
+	<introduction>
+		<p>
 				Multiple choice section. All points are for choosing the correct answer(s). No justification is needed.
 			</p>
-        </introduction>
-        <exercise>
-                <task workspace="-.7cm">
-                        <statement>
-                                <p>
-                                        <term>Select ALL</term> of the following that are functions:
+	</introduction>
+	<exercise>
+		<statement>
+			<p>
+				<term>Select ALL</term> of the following that are functions:
 			</p>
-                        </statement>
-                        <choices multiple-correct="yes">
-                                <choice>
-                                        <statement>
-						</statement>
-                                </choice>
-                                <choice>
-                                        <statement>
-						</statement>
-                                </choice>
-                                <choice>
-                                        <statement>
-						</statement>
-                                </choice>
-                                <choice>
-                                        <statement>
-						</statement>
-                                </choice>
-                        </choices>
-                </task>
-        </exercise>
-        <exercise>
-                <task>
-                        <statement>
-                                <p>
+		</statement>
+			<choices multiple-correct="yes">
+				<choice>
+					<statement>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+					</statement>
+				</choice>
+			</choices>
+		<workspace amount="-.7cm"/>
+	</exercise>
+	<exercise>
+		<statement>
+			<p>
 				Find the solution to the following inequality <me>|x-3|\ge-3</me>
-                                </p>
-                        </statement>
-                        <choices multiple-correct="no">
-                                <choice>
-                                        <statement>
-                                                <p>
-                                                        <m>(-\infty,\infty)</m>
-                                                </p>
-                                        </statement>
-                                </choice>
-                                <choice>
-                                        <statement>
-                                                <p>
-                                                        <m>(-\infty,0]\cup[6,\infty)</m>
-                                                </p>
-                                        </statement>
-                                </choice>
-                                <choice>
-                                        <statement>
-                                                <p>
-								There is no <m>x</m> that solves the inequality.
-							</p>
-                                        </statement>
-                                </choice>
-                                <choice>
-                                        <statement>
-                                                <p>
-                                                        <m>[0,6]</m>
-                                                </p>
-                                        </statement>
-                                </choice>
-                        </choices>
-                </task>
-        </exercise>
-        <exercise>
-                <task>
-                        <statement>
-                                <p>
-                                        <term>Select ALL</term> (real and complex) solutions to the equation: <me>x^3=-x</me>
-                                </p>
-                        </statement>
-                        <choices multiple-correct="yes">
-                                <choice>
-                                        <statement>
-                                                <p>
-                                                        <m>x=0</m>
-                                                </p>
-                                        </statement>
-                                </choice>
-                                <choice>
-                                        <statement>
-                                                <p>
-                                                        <m>x=1</m>
-                                                </p>
-                                        </statement>
-                                </choice>
-                                <choice>
-                                        <statement>
-                                                <p>
-                                                        <m>x=-1</m>
-                                                </p>
-                                        </statement>
-                                </choice>
-                                <choice>
-                                        <statement>
-                                                <p>
-                                                        <m>x=i</m>
-                                                </p>
-                                        </statement>
-                                </choice>
-                                <choice>
-                                        <statement>
-                                                <p>
-                                                        <m>x=-i</m>
-                                                </p>
-                                        </statement>
-                                </choice>
-                        </choices>
-                </task>
-        </exercise>
-        <exercise>
-                <task workspace="-.7cm">
-                        <statement>
-                                <p>
+			</p>
+		</statement>
+			<choices multiple-correct="no">
+				<choice>
+					<statement>
+						<p>
+							<m>(-\infty,\infty)</m>
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							<m>(-\infty,0]\cup[6,\infty)</m>
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							There is no <m>x</m> that solves the inequality.
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							<m>[0,6]</m>
+						</p>
+					</statement>
+				</choice>
+			</choices>
+	</exercise>
+	<exercise>
+		<statement>
+			<p>
+				<term>Select ALL</term> (real and complex) solutions to the equation: <me>x^3=-x</me>
+			</p>
+		</statement>
+			<choices multiple-correct="yes">
+				<choice>
+					<statement>
+						<p>
+							<m>x=0</m>
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							<m>x=1</m>
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							<m>x=-1</m>
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							<m>x=i</m>
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							<m>x=-i</m>
+						</p>
+					</statement>
+				</choice>
+			</choices>
+	</exercise>
+	<exercise>
+		<statement>
+			<p>
 				Select the correct graph of <m>f(x)=\left\{\begin{matrix}
 							    x^2 &amp;,&amp; x\ge 0\\
 							    -x &amp;,&amp; x&lt;0
 							\end{matrix}\right.</m>
-                                </p>
-                        </statement>
-                        <choices multiple-correct="no">
-                                <choice>
-                                        <statement>
-						</statement>
-                                </choice>
-                                <choice>
-                                        <statement>
-						</statement>
-                                </choice>
-                                <choice>
-                                        <statement>
-						</statement>
-                                </choice>
-                                <choice>
-                                        <statement>
-						</statement>
-                                </choice>
-                        </choices>
-                </task>
-        </exercise>
-        <exercise>
-                <task>
-                        <statement>
-                                <p>
+			</p>
+		</statement>
+			<choices multiple-correct="no">
+				<choice>
+					<statement>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+					</statement>
+				</choice>
+			</choices>
+		<workspace amount="-.7cm"/>
+	</exercise>
+	<exercise>
+		<statement>
+			<p>
 				If <m>f(x)=5x^2-\dfrac{1}{3-x}</m>, What is <m>f(-2z)</m>?
 			</p>
-                        </statement>
-                        <choices multiple-correct="no">
-                                <choice>
-                                        <statement>
-                                                <p>
-                                                        <m>20z^2-\dfrac{1}{3+2z}</m>
-                                                </p>
-                                        </statement>
-                                </choice>
-                                <choice>
-                                        <statement>
-                                                <p>
-                                                        <m>-10z^3+\dfrac{2z}{3-z}</m>
-                                                </p>
-                                        </statement>
-                                </choice>
-                                <choice>
-                                        <statement>
-                                                <p>
-                                                        <m>-10z^3-\dfrac{2z}{3+2z}</m>
-                                                </p>
-                                        </statement>
-                                </choice>
-                                <choice>
-                                        <statement>
-                                                <p>
-                                                        <m>-20z^2+\dfrac{1}{3-2z}</m>
-                                                </p>
-                                        </statement>
-                                </choice>
-                                <choice>
-                                        <statement>
-                                                <p>
-								None of the above.
-							</p>
-                                        </statement>
-                                </choice>
-                        </choices>
-                </task>
-        </exercise>
-        <exercise>
-                <task>
-                        <statement>
-                                <p>
+		</statement>
+			<choices multiple-correct="no">
+				<choice>
+					<statement>
+						<p>
+							<m>20z^2-\dfrac{1}{3+2z}</m>
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							<m>-10z^3+\dfrac{2z}{3-z}</m>
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							<m>-10z^3-\dfrac{2z}{3+2z}</m>
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							<m>-20z^2+\dfrac{1}{3-2z}</m>
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							None of the above.
+						</p>
+					</statement>
+				</choice>
+			</choices>
+	</exercise>
+	<exercise>
+		<statement>
+			<p>
 				Find the domain of the function: <me>\dfrac{\sqrt{x+3}}{x-7}</me>
-                                </p>
-                                <p>
+			</p>
+			<p>
 				Free answer section. Work must be shown to get credit for any answer. Partial credit may be given even for incorrect final answers, so show your work.
 			</p>
-                        </statement>
-                        <choices multiple-correct="no">
-                                <choice>
-                                        <statement>
-                                                <p>
-                                                        <m>(-\infty, -3)\bigcup(-3,7)\bigcup(7,\infty)</m>
-                                                </p>
-                                        </statement>
-                                </choice>
-                                <choice>
-                                        <statement>
-                                                <p>
-                                                        <m>(-\infty, 7)\bigcup(7,\infty)</m>
-                                                </p>
-                                        </statement>
-                                </choice>
-                                <choice>
-                                        <statement>
-                                                <p>
-                                                        <m>[-3,7)\bigcup(7,\infty)</m>
-                                                </p>
-                                        </statement>
-                                </choice>
-                                <choice>
-                                        <statement>
-                                                <p>
-                                                        <m>[-3,\infty)</m>
-                                                </p>
-                                        </statement>
-                                </choice>
-                                <choice>
-                                        <statement>
-                                                <p>
-								None of the Above.
-							</p>
-                                        </statement>
-                                </choice>
-                        </choices>
-                </task>
-        </exercise>
-        <exercise>
-                <introduction>
-                        <p>
+		</statement>
+			<choices multiple-correct="no">
+				<choice>
+					<statement>
+						<p>
+							<m>(-\infty, -3)\bigcup(-3,7)\bigcup(7,\infty)</m>
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							<m>(-\infty, 7)\bigcup(7,\infty)</m>
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							<m>[-3,7)\bigcup(7,\infty)</m>
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							<m>[-3,\infty)</m>
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							None of the Above.
+						</p>
+					</statement>
+				</choice>
+			</choices>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
 				Given the graph of the function <m>y=F(x)</m> describing the temperature of lake Mendota over one year below:
 			</p>
-                </introduction>
-                <task workspace="2cm">
-                        <statement>
-                                <p>
+		</introduction>
+		<task workspace="2cm">
+			<statement>
+				<p>
 					Find the day(s) and temperature Lake Mendota reached a local maximum temperature.
 				</p>
-                        </statement>
-                </task>
-                <task workspace="2cm">
-                        <statement>
-                                <p>
+			</statement>
+		</task>
+		<task workspace="2cm">
+			<statement>
+				<p>
 					Find the day(s) and temperature(s) Lake Mendota reached a local minimum temperature.
 				</p>
-                        </statement>
-                </task>
-        </exercise>
-        <exercise>
-                <introduction>
-                        <p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<statement>
+			<p>
 				Given two points <m>A\left(\dfrac{1}{2},\dfrac{1}{2}\right)</m> and <m>B(0,-1)</m>. Find the equation of the line through <m>A</m> and <m>B</m>, write it in the point-slope form.
 			</p>
-                </introduction>
-        </exercise>
-        <exercise>
-                <introduction>
-                        <p>
+		</statement>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
 				Given the line <m>y=\dfrac{2}{3}x-4</m>:
 			</p>
-                </introduction>
-                <task>
-                        <statement>
-                                <p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
 					Find the equation of the line through <m>(-3,1)</m> parallel to the line.
 				</p>
-                        </statement>
-                </task>
-                <task>
-                        <statement>
-                                <p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
 					Find the equation of the line through the point <m>(-3,1)</m> perpendicular to the line.
 				</p>
-                        </statement>
-                </task>
-        </exercise>
-        <exercise>
-                <introduction>
-                        <p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<statement>
+			<p>
 				Write the following as a single fraction. (In your final answer, make sure that the numerator and the denominator do not contain a common factor other than 1.)
 			</p>
-                        <p>
-                                <m>\displaystyle{\frac{x+2}{x^2+5x+4} + \frac{x+1}{2x+8}}</m>
-                        </p>
-                </introduction>
-        </exercise>
-        <exercise>
-                <introduction>
-                        <p>
+			<p>
+				<m>\displaystyle{\frac{x+2}{x^2+5x+4} + \frac{x+1}{2x+8}}</m>
+			</p>
+		</statement>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
 				Solve each of the following inequalities. For each part, express your answer in interval notation.
 			</p>
-                </introduction>
-                <task>
-                        <statement>
-                                <p>
-                                        <m>8 &lt; 9+4x \leq 11</m>
-                                </p>
-                        </statement>
-                </task>
-                <task>
-                        <statement>
-                                <p>
-                                        <m>3x^2 \geq 13x-4</m>
-                                </p>
-                        </statement>
-                </task>
-        </exercise>
-        <exercise>
-                <introduction>
-                        <p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					<m>8 &lt; 9+4x \leq 11</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>3x^2 \geq 13x-4</m>
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<statement>
+			<p>
 				Solve the given equation: <me>(x+2)(x+3)=12x-6</me>
-                        </p>
-                </introduction>
-        </exercise>
-        <exercise>
-                <introduction>
-                        <p>
+			</p>
+		</statement>
+	</exercise>
+	<exercise>
+		<statement>
+			<p>
 				Solve the given equation: <me>2x^2 -6x+1=0</me>
-                        </p>
-                </introduction>
-        </exercise>
-        <exercise>
-                <introduction>
-                        <p>
+			</p>
+		</statement>
+	</exercise>
+	<exercise>
+		<statement>
+			<p>
 				Find the possible value(s) for <m>x</m> if <me>2|x-5|+4 = 7.</me>
-                        </p>
-                </introduction>
-        </exercise>
-        <exercise>
-                <introduction>
-                        <p>
+			</p>
+		</statement>
+	</exercise>
+	<exercise>
+		<statement>
+			<p>
 				Find the values of <m>x</m> that solve the following equation: <me>(3-2x)^2-(3-2x)-2=0</me>
-                        </p>
-                </introduction>
-        </exercise>
-        <exercise>
-                <introduction>
-                        <p>
+			</p>
+		</statement>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
 				The function graphed below represents the <term>Percentage of Children Under 5 with Acute Malnutrition (Wasting)</term> in a small occupied territory.
 			</p>
-                </introduction>
-                <task>
-                        <statement>
-                                <p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
 					What was the average rate of change of wasting between 2000 and 2020?
 				</p>
-                        </statement>
-                </task>
-                <task>
-                        <statement>
-                                <p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
 					What was the average rate of change of wasting between 2020 and 2024?
 				</p>
-                        </statement>
-                </task>
-                <task>
-                        <statement>
-                                <p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
 					For what period of time (intervals) is the function <term>increasing</term>? Express your answer in interval notation.
 				</p>
-                        </statement>
-                </task>
-        </exercise>
-        <exercise>
-                <introduction>
-                        <p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<statement>
+			<p>
 				Solve the given equation:  <me>\sqrt{x+7}-x+4=5</me>
-                        </p>
-                </introduction>
-                <task>
-                        <hint>
-                                <p>
-					check your solutions.
-				</p>
-                        </hint>
-                </task>
-        </exercise>
+			</p>
+		</statement>
+		<hint>
+			<p>
+				check your solutions.
+			</p>
+		</hint>
+	</exercise>
 </worksheet>
