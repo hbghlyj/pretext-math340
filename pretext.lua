@@ -800,7 +800,11 @@ local function convert_task(entry, indent, exercise_index, task_index, context_t
     if para then table.insert(lines, para) end
     table.insert(lines, indent_line("</hint>", indent + 1))
     table.insert(lines, indent_line("</task>", indent))
-    return table.concat(lines, "\n")
+    local metadata = {
+      kind = entry_kind,
+      hints = {entry_content}
+    }
+    return table.concat(lines, "\n"), context_text, metadata
   end
   local blocks
   if entry_kind == "choices" then
@@ -813,6 +817,7 @@ local function convert_task(entry, indent, exercise_index, task_index, context_t
   local hint_parts = {}
   local choices_markup = nil
   local choice_list_content = nil
+  local choice_forced_mode = nil
   local workspace
   for index, block in ipairs(blocks) do
     if block.type == "p" then
@@ -852,8 +857,8 @@ local function convert_task(entry, indent, exercise_index, task_index, context_t
   end
 
   if choice_list_content then
-    local forced_mode = determine_forced_mode(choice_list_content, combined_context)
-    choices_markup = render_choices(choice_list_content, indent + 2, forced_mode)
+    choice_forced_mode = determine_forced_mode(choice_list_content, combined_context)
+    choices_markup = render_choices(choice_list_content, indent + 2, choice_forced_mode)
   end
 
   if (not workspace or workspace == "") and exercise_index and task_index then
@@ -898,7 +903,16 @@ local function convert_task(entry, indent, exercise_index, task_index, context_t
   if next_context == "" then
     next_context = context_text
   end
-  return table.concat(lines, "\n"), next_context
+  local metadata = {
+    kind = entry_kind,
+    points = points,
+    workspace = workspace,
+    statement_parts = statement_parts,
+    hints = hint_parts,
+    choice_list_content = choice_list_content,
+    choice_forced_mode = choice_forced_mode
+  }
+  return table.concat(lines, "\n"), next_context, metadata
 end
 
 local function convert_exercise(item, indent, exercise_index)
@@ -939,19 +953,98 @@ local function convert_exercise(item, indent, exercise_index)
   end
   local lines = {}
   table.insert(lines, indent_line("<exercise" .. attr .. ">", indent))
-  if #intro_blocks > 0 then
-    table.insert(lines, indent_line("<introduction>", indent + 1))
-    for _, content in ipairs(intro_blocks) do
-      local para = render_paragraph(content, indent + 2)
-      if para then table.insert(lines, para) end
-    end
-    table.insert(lines, indent_line("</introduction>", indent + 1))
-  end
   local context_text = intro_context
+  local task_results = {}
   for idx, entry in ipairs(task_blocks) do
-    local task_markup, updated_context = convert_task(entry, indent + 1, exercise_index, idx, context_text)
-    table.insert(lines, task_markup)
+    local task_markup, updated_context, metadata = convert_task(entry, indent + 1, exercise_index, idx, context_text)
+    table.insert(task_results, {markup = task_markup, metadata = metadata})
     context_text = updated_context or context_text
+  end
+  local flattened_parts = {}
+  for _, content in ipairs(intro_blocks) do
+    table.insert(flattened_parts, {type = "p", content = content})
+  end
+  local flattened_hints = {}
+  local flattened_choices = {}
+  local task_points
+  local can_flatten = true
+  for _, result in ipairs(task_results) do
+    local metadata = result.metadata
+    if not metadata then
+      can_flatten = false
+      break
+    end
+    if metadata.kind == "intro_hint" then
+      for _, hint_text in ipairs(metadata.hints or {}) do
+        table.insert(flattened_hints, hint_text)
+      end
+    else
+      if metadata.statement_parts then
+        for _, part in ipairs(metadata.statement_parts) do
+          if part.type == "p" then
+            table.insert(flattened_parts, {type = "p", content = part.content})
+          elseif part.type == "list" then
+            table.insert(flattened_parts, {type = "list", tag = part.tag, content = part.content})
+          end
+        end
+      end
+      if metadata.hints then
+        for _, hint_text in ipairs(metadata.hints) do
+          table.insert(flattened_hints, hint_text)
+        end
+      end
+      if metadata.choice_list_content then
+        table.insert(flattened_choices, {
+          content = metadata.choice_list_content,
+          forced_mode = metadata.choice_forced_mode
+        })
+      end
+      if (not task_points) and metadata.points then
+        task_points = metadata.points
+      end
+    end
+  end
+  if can_flatten then
+    if (not intro_points) and task_points then
+      attr = attr .. ' points="' .. task_points .. '"'
+      lines[1] = indent_line("<exercise" .. attr .. ">", indent)
+    end
+    if #flattened_parts > 0 then
+      table.insert(lines, indent_line("<statement>", indent + 1))
+      for _, part in ipairs(flattened_parts) do
+        if part.type == "p" then
+          local para = render_paragraph(part.content, indent + 2)
+          if para then table.insert(lines, para) end
+        elseif part.type == "list" then
+          table.insert(lines, render_plain_list(part.tag, part.content, indent + 2))
+        end
+      end
+      table.insert(lines, indent_line("</statement>", indent + 1))
+    end
+    for _, choice in ipairs(flattened_choices) do
+      local rendered = render_choices(choice.content, indent + 1, choice.forced_mode)
+      if rendered and rendered ~= "" then
+        table.insert(lines, rendered)
+      end
+    end
+    for _, hint_text in ipairs(flattened_hints) do
+      table.insert(lines, indent_line("<hint>", indent + 1))
+      local para = render_paragraph(hint_text, indent + 2)
+      if para then table.insert(lines, para) end
+      table.insert(lines, indent_line("</hint>", indent + 1))
+    end
+  else
+    if #intro_blocks > 0 then
+      table.insert(lines, indent_line("<introduction>", indent + 1))
+      for _, content in ipairs(intro_blocks) do
+        local para = render_paragraph(content, indent + 2)
+        if para then table.insert(lines, para) end
+      end
+      table.insert(lines, indent_line("</introduction>", indent + 1))
+    end
+    for _, result in ipairs(task_results) do
+      table.insert(lines, result.markup)
+    end
   end
   table.insert(lines, indent_line("</exercise>", indent))
   return table.concat(lines, "\n")

@@ -7,383 +7,321 @@
 			</p>
 	</introduction>
 	<exercise>
-		<introduction>
+		<statement>
 			<p>
 				The number <m>i^{7}</m> is equal to
 			</p>
-		</introduction>
-		<task>
-				<choices multiple-correct="no">
-					<choice>
-						<statement>
-							<p>
-								<m>i</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>-1</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>-i</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>1</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								None of the Above
-							</p>
-						</statement>
-					</choice>
-				</choices>
-		</task>
+		</statement>
+		<choices multiple-correct="no">
+			<choice>
+				<statement>
+					<p>
+						<m>i</m>
+					</p>
+				</statement>
+			</choice>
+			<choice>
+				<statement>
+					<p>
+						<m>-1</m>
+					</p>
+				</statement>
+			</choice>
+			<choice>
+				<statement>
+					<p>
+						<m>-i</m>
+					</p>
+				</statement>
+			</choice>
+			<choice>
+				<statement>
+					<p>
+						<m>1</m>
+					</p>
+				</statement>
+			</choice>
+			<choice>
+				<statement>
+					<p>
+						None of the Above
+					</p>
+				</statement>
+			</choice>
+		</choices>
 	</exercise>
 	<exercise>
-		<introduction>
+		<statement>
 			<p>
 				The domain of <m>\dfrac{1}{\sqrt{x+4}}</m> is:
 			</p>
-		</introduction>
-		<task>
-				<choices multiple-correct="no">
-					<choice>
-						<statement>
-							<p>
-								<m>(-\infty,-4]</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>(-\infty, -4)</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>[-4,\infty)</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>(-4,\infty)</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>x\ge 0</m>
-							</p>
-						</statement>
-					</choice>
-				</choices>
-		</task>
+		</statement>
+		<choices multiple-correct="no">
+			<choice>
+				<statement>
+					<p>
+						<m>(-\infty,-4]</m>
+					</p>
+				</statement>
+			</choice>
+			<choice>
+				<statement>
+					<p>
+						<m>(-\infty, -4)</m>
+					</p>
+				</statement>
+			</choice>
+			<choice>
+				<statement>
+					<p>
+						<m>[-4,\infty)</m>
+					</p>
+				</statement>
+			</choice>
+			<choice>
+				<statement>
+					<p>
+						<m>(-4,\infty)</m>
+					</p>
+				</statement>
+			</choice>
+			<choice>
+				<statement>
+					<p>
+						<m>x\ge 0</m>
+					</p>
+				</statement>
+			</choice>
+		</choices>
 	</exercise>
 	<exercise>
-		<introduction>
+		<statement>
 			<p>
 				Select the correct graph of <m>f(x)=\left\{\begin{matrix}
 							    x^2 &amp;,&amp; x\ge 0\\
 							    2x &amp;,&amp; x&lt;0
 							\end{matrix}\right.</m>
 			</p>
-		</introduction>
-		<task workspace="-.7cm">
-				<choices multiple-correct="no">
-					<choice>
-						<statement>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-						</statement>
-					</choice>
-				</choices>
-		</task>
+		</statement>
+		<choices multiple-correct="no">
+			<choice>
+				<statement>
+				</statement>
+			</choice>
+			<choice>
+				<statement>
+				</statement>
+			</choice>
+			<choice>
+				<statement>
+				</statement>
+			</choice>
+			<choice>
+				<statement>
+				</statement>
+			</choice>
+		</choices>
 	</exercise>
 	<exercise>
-		<introduction>
+		<statement>
 			<p>
 				Determine whether the curve below represents a function.
 			</p>
-		</introduction>
-		<task>
-				<choices multiple-correct="no">
-					<choice>
-						<statement>
-							<p>
-								Function: The graph passes the horizontal line test.
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								Not a Function: The graph fails the horizontal line test.
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								Not a Function: The graph fails the vertical line test.
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								Function: The graph passes the vertical line test.
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								We cannot tell from the graph whether or not it represents a function.
-							</p>
-						</statement>
-					</choice>
-				</choices>
-		</task>
+		</statement>
+		<choices multiple-correct="no">
+			<choice>
+				<statement>
+					<p>
+						Function: The graph passes the horizontal line test.
+					</p>
+				</statement>
+			</choice>
+			<choice>
+				<statement>
+					<p>
+						Not a Function: The graph fails the horizontal line test.
+					</p>
+				</statement>
+			</choice>
+			<choice>
+				<statement>
+					<p>
+						Not a Function: The graph fails the vertical line test.
+					</p>
+				</statement>
+			</choice>
+			<choice>
+				<statement>
+					<p>
+						Function: The graph passes the vertical line test.
+					</p>
+				</statement>
+			</choice>
+			<choice>
+				<statement>
+					<p>
+						We cannot tell from the graph whether or not it represents a function.
+					</p>
+				</statement>
+			</choice>
+		</choices>
 	</exercise>
 	<exercise>
-		<introduction>
+		<statement>
 			<p>
 				Find all <term>real</term> solutions to the following equation. <me>x^4=9x^2</me>
 			</p>
 			<p>
 				Free answer section. Work must be shown to get credit for any answer. Partial credit may be given even for incorrect final answers, so show your work.
 			</p>
-		</introduction>
-		<task>
-				<choices multiple-correct="no">
-					<choice>
-						<statement>
-							<p>
-								<m>x=\sqrt{3},\, x=-\sqrt{3}</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>x=3,\,x=3</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>x=0,\,x=\sqrt{3},\,x=-\sqrt{3}</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>x=0,\,x=3,\,x=-3</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								None of the Above.
-							</p>
-						</statement>
-					</choice>
-				</choices>
-		</task>
+		</statement>
+		<choices multiple-correct="no">
+			<choice>
+				<statement>
+					<p>
+						<m>x=\sqrt{3},\, x=-\sqrt{3}</m>
+					</p>
+				</statement>
+			</choice>
+			<choice>
+				<statement>
+					<p>
+						<m>x=3,\,x=3</m>
+					</p>
+				</statement>
+			</choice>
+			<choice>
+				<statement>
+					<p>
+						<m>x=0,\,x=\sqrt{3},\,x=-\sqrt{3}</m>
+					</p>
+				</statement>
+			</choice>
+			<choice>
+				<statement>
+					<p>
+						<m>x=0,\,x=3,\,x=-3</m>
+					</p>
+				</statement>
+			</choice>
+			<choice>
+				<statement>
+					<p>
+						None of the Above.
+					</p>
+				</statement>
+			</choice>
+		</choices>
 	</exercise>
 	<exercise>
-		<introduction>
+		<statement>
 			<p>
 				Perform the operation and write the answer as a single polynomial.
 			</p>
 			<p>
 				<me>(3x-5)(x+3)=</me>
 			</p>
-		</introduction>
+		</statement>
 	</exercise>
 	<exercise>
-		<introduction>
+		<statement>
 			<p>
 				Perform the following operations and simplify. Your final answer should be written as a single fraction and contain no common factors in the numerator and denominator. <me>\dfrac{x-2}{x^2-9} -\dfrac{1}{5x+15}</me>
 			</p>
-		</introduction>
+		</statement>
 	</exercise>
 	<exercise>
-		<introduction>
+		<statement>
 			<p>
 				Solve the following equations for all solutions.
 			</p>
-		</introduction>
-		<task workspace="1.1in">
-			<statement>
-				<p>
-					<m>\dfrac{1+3x}{x+2}=5</m>
-				</p>
-			</statement>
-		</task>
-		<task workspace="1.1in">
-			<statement>
-				<p>
-					<m>\sqrt{2x+5}=x+1</m>
-				</p>
-			</statement>
-		</task>
+			<p>
+				<m>\dfrac{1+3x}{x+2}=5</m>
+			</p>
+			<p>
+				<m>\sqrt{2x+5}=x+1</m>
+			</p>
+		</statement>
 	</exercise>
 	<exercise>
-		<introduction>
+		<statement>
 			<p>
 				Solve the following inequalities.
 			</p>
-		</introduction>
-		<task workspace="1.1in">
-			<statement>
-				<p>
-					<m>3\ge -4x-7 &gt;-7</m>
-				</p>
-			</statement>
-		</task>
-		<task workspace="1.1in">
-			<statement>
-				<p>
-					<m>x^2-21x+20\ge0</m>
-				</p>
-			</statement>
-		</task>
+			<p>
+				<m>3\ge -4x-7 &gt;-7</m>
+			</p>
+			<p>
+				<m>x^2-21x+20\ge0</m>
+			</p>
+		</statement>
 	</exercise>
 	<exercise>
-		<introduction>
+		<statement>
 			<p>
 				Solve the following for <m>x</m>.
 			</p>
 			<p>
 				<m>5-3|x+2|=2</m>
 			</p>
-		</introduction>
+		</statement>
 	</exercise>
 	<exercise>
-		<introduction>
+		<statement>
 			<p>
 				Plot the following points.
 			</p>
-		</introduction>
-		<task>
-			<statement>
-				<p>
-					<m>A(3, 0),\, B(-4,5)</m>
-				</p>
-			</statement>
-		</task>
-		<task>
-			<statement>
-				<p>
-					What is the distance between the points <m>A</m> and <m>B</m>? (You may leave it as a square root.)
-				</p>
-			</statement>
-		</task>
-		<task>
-			<statement>
-				<p>
-					What is the slope of the line through <m>A</m> and <m>B</m>?
-				</p>
-			</statement>
-		</task>
-		<task>
-			<statement>
-				<p>
-					What is an equation of the line through <m>A</m> and <m>B</m>?
-				</p>
-			</statement>
-		</task>
-		<task>
-			<statement>
-				<p>
-					What is the equation of the line through <m>(2,-3)</m> perpendicular to the line through <m>A</m> and <m>B</m>
-				</p>
-			</statement>
-		</task>
+			<p>
+				<m>A(3, 0),\, B(-4,5)</m>
+			</p>
+			<p>
+				What is the distance between the points <m>A</m> and <m>B</m>? (You may leave it as a square root.)
+			</p>
+			<p>
+				What is the slope of the line through <m>A</m> and <m>B</m>?
+			</p>
+			<p>
+				What is an equation of the line through <m>A</m> and <m>B</m>?
+			</p>
+			<p>
+				What is the equation of the line through <m>(2,-3)</m> perpendicular to the line through <m>A</m> and <m>B</m>
+			</p>
+		</statement>
 	</exercise>
 	<exercise>
-		<introduction>
+		<statement>
 			<p>
 				What is the average rate of change of <m>f(x)=3x^2-5x</m> between <m>x=-2</m> and <m>x=1</m>?
 			</p>
-		</introduction>
+		</statement>
 	</exercise>
 	<exercise>
-		<introduction>
+		<statement>
 			<p>
 				Consider the function <m>f(x)=\sqrt{2x^2-5x}</m>. Let <m>g(x)=f(-3x)</m>.
 			</p>
 			<p>
 				Write down an expression of <m>g(x)</m>.
 			</p>
-		</introduction>
+		</statement>
 	</exercise>
 	<exercise>
-		<introduction>
+		<statement>
 			<p>
 				Consider the graphs of functions <m>f(x)</m> and <m>g(x)</m> as shown below. (Note: <m>f</m> is a curve, <m>g</m> is straight lines with a corner.)
 			</p>
-		</introduction>
-		<task>
-			<statement>
-				<p>
-					The range of <m>g</m>
-				</p>
-			</statement>
-		</task>
-		<task workspace="2in">
-			<statement>
-				<p>
-					Intervals on which <m>f</m> is increasing
-				</p>
-			</statement>
-		</task>
-		<task>
-			<statement>
-				<p>
-					A local max for <m>f</m> in the interval <m>(-2,2)</m>.
-				</p>
-			</statement>
-		</task>
-		<task>
-			<statement>
-				<p>
-					Interval(s) in <m>x</m> for which <m>f(x)&gt;g(x)</m>
-				</p>
-			</statement>
-		</task>
+			<p>
+				The range of <m>g</m>
+			</p>
+			<p>
+				Intervals on which <m>f</m> is increasing
+			</p>
+			<p>
+				A local max for <m>f</m> in the interval <m>(-2,2)</m>.
+			</p>
+			<p>
+				Interval(s) in <m>x</m> for which <m>f(x)&gt;g(x)</m>
+			</p>
+		</statement>
 	</exercise>
 </worksheet>

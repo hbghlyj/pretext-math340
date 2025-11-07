@@ -7,398 +7,320 @@
 			</p>
 	</introduction>
 	<exercise>
-		<introduction>
+		<statement>
 			<p>
 				Select a polynomial of smallest degree with roots of <m>6</m>, <m>\sqrt{7}</m>, a repeated root of <m>-3</m> with a multiplicity of <m>2</m>, and a leading coefficient of <m>-5</m>.
 			</p>
-		</introduction>
-		<task>
-				<choices multiple-correct="no">
-					<choice>
-						<statement>
-							<p>
-								<m>(x-6)(x-\sqrt{7})(x+3)^2</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>-5(x-6)(x-\sqrt{7})(x+3)^2</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>(x+6)(x+\sqrt{7})(x-3)^2(x-5)</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>-5(x+6)(x+\sqrt{7})(x-3)^2</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								None of the above.
-							</p>
-						</statement>
-					</choice>
-				</choices>
-		</task>
+		</statement>
+		<choices multiple-correct="no">
+			<choice>
+				<statement>
+					<p>
+						<m>(x-6)(x-\sqrt{7})(x+3)^2</m>
+					</p>
+				</statement>
+			</choice>
+			<choice>
+				<statement>
+					<p>
+						<m>-5(x-6)(x-\sqrt{7})(x+3)^2</m>
+					</p>
+				</statement>
+			</choice>
+			<choice>
+				<statement>
+					<p>
+						<m>(x+6)(x+\sqrt{7})(x-3)^2(x-5)</m>
+					</p>
+				</statement>
+			</choice>
+			<choice>
+				<statement>
+					<p>
+						<m>-5(x+6)(x+\sqrt{7})(x-3)^2</m>
+					</p>
+				</statement>
+			</choice>
+			<choice>
+				<statement>
+					<p>
+						None of the above.
+					</p>
+				</statement>
+			</choice>
+		</choices>
 	</exercise>
 	<exercise>
-		<introduction>
+		<statement>
 			<p>
 				You run a business teaching aspiring didgeridoo players. Let <m>x</m> be the number of hours you spend teaching your students. If the equation for your profit (in dollars) is given by <me>P(x) = 28 x-35</me> What is the rate of change and what does it represent in this equation?
 			</p>
-		</introduction>
-		<task>
-				<choices multiple-correct="no">
-					<choice>
-						<statement>
-							<p>
-								You earn $28 dollars per hour teaching.
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								You make 28 didgeridoos per hour.
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								You lose $35 dollars per hour teaching.
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>x=\dfrac{5}{4}</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								None of the above.
-							</p>
-						</statement>
-					</choice>
-				</choices>
-		</task>
+		</statement>
+		<choices multiple-correct="no">
+			<choice>
+				<statement>
+					<p>
+						You earn $28 dollars per hour teaching.
+					</p>
+				</statement>
+			</choice>
+			<choice>
+				<statement>
+					<p>
+						You make 28 didgeridoos per hour.
+					</p>
+				</statement>
+			</choice>
+			<choice>
+				<statement>
+					<p>
+						You lose $35 dollars per hour teaching.
+					</p>
+				</statement>
+			</choice>
+			<choice>
+				<statement>
+					<p>
+						<m>x=\dfrac{5}{4}</m>
+					</p>
+				</statement>
+			</choice>
+			<choice>
+				<statement>
+					<p>
+						None of the above.
+					</p>
+				</statement>
+			</choice>
+		</choices>
 	</exercise>
 	<exercise>
-		<introduction>
+		<statement>
 			<p>
 				Consider a polynomial <me>P(x) = ax^7+3x^5-4x+12</me> You do not know <m>a</m>, but you know as <m>x\to-\infty</m> <m>P(x)\to+\infty</m>. What else do you know?
 			</p>
-		</introduction>
-		<task>
-				<choices multiple-correct="no">
-					<choice>
-						<statement>
-							<p>
-								As <m>x\to+\infty</m>  <m>P(x)\to+\infty</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>P(x)</m> has seven rational roots.
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								As <m>x\to+\infty</m>  <m>P(x)\to-\infty</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>P(x)</m> has seven real roots.
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								None of the above.
-							</p>
-						</statement>
-					</choice>
-				</choices>
-		</task>
+		</statement>
+		<choices multiple-correct="no">
+			<choice>
+				<statement>
+					<p>
+						As <m>x\to+\infty</m>  <m>P(x)\to+\infty</m>
+					</p>
+				</statement>
+			</choice>
+			<choice>
+				<statement>
+					<p>
+						<m>P(x)</m> has seven rational roots.
+					</p>
+				</statement>
+			</choice>
+			<choice>
+				<statement>
+					<p>
+						As <m>x\to+\infty</m>  <m>P(x)\to-\infty</m>
+					</p>
+				</statement>
+			</choice>
+			<choice>
+				<statement>
+					<p>
+						<m>P(x)</m> has seven real roots.
+					</p>
+				</statement>
+			</choice>
+			<choice>
+				<statement>
+					<p>
+						None of the above.
+					</p>
+				</statement>
+			</choice>
+		</choices>
 	</exercise>
 	<exercise>
-		<introduction>
+		<statement>
 			<p>
 				Given the graph of <m>f(x)=2^x</m> below, select the correct graph of <m>g(x)=\dfrac{1}{4}2^{-x}+1</m>
 			</p>
-		</introduction>
-		<task workspace="-.7cm">
-				<choices multiple-correct="no">
-					<choice>
-						<statement>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-						</statement>
-					</choice>
-				</choices>
-		</task>
+		</statement>
+		<choices multiple-correct="no">
+			<choice>
+				<statement>
+				</statement>
+			</choice>
+			<choice>
+				<statement>
+				</statement>
+			</choice>
+			<choice>
+				<statement>
+				</statement>
+			</choice>
+			<choice>
+				<statement>
+				</statement>
+			</choice>
+		</choices>
 	</exercise>
 	<exercise>
-		<introduction>
+		<statement>
 			<p>
 				of the functions graphed below which would have an inverse function.
 			</p>
 			<p>
 				Free answer section. Work must be shown to get credit for any answer. Partial credit may be given even for incorrect final answers, so show your work.
 			</p>
-		</introduction>
-		<task workspace="-.7cm">
-				<choices multiple-correct="no">
-					<choice>
-						<statement>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-						</statement>
-					</choice>
-				</choices>
-		</task>
+		</statement>
+		<choices multiple-correct="no">
+			<choice>
+				<statement>
+				</statement>
+			</choice>
+			<choice>
+				<statement>
+				</statement>
+			</choice>
+			<choice>
+				<statement>
+				</statement>
+			</choice>
+			<choice>
+				<statement>
+				</statement>
+			</choice>
+		</choices>
 	</exercise>
 	<exercise>
-		<introduction>
+		<statement>
 			<p>
 				The graph of a function <m>y = f(x)</m> is displayed below:
 			</p>
-		</introduction>
+		</statement>
 	</exercise>
 	<exercise>
-		<introduction>
+		<statement>
 			<p>
 				[4] Given the graphs of functions <m>f(x)</m> and <m>g(x)</m> below, find <m>f\circ g(1)</m>.
 			</p>
-		</introduction>
+		</statement>
 	</exercise>
 	<exercise>
-		<introduction>
+		<statement>
 			<p>
 				Let <m>f(x)=\frac{1}{x}+x</m> and <m>g(x)=x^2+1</m>.
 			</p>
-		</introduction>
-		<task>
-			<statement>
-				<p>
-					Find <m>f\circ g(x)</m>.
-				</p>
-			</statement>
-		</task>
-		<task>
-			<statement>
-				<p>
-					Find <m>f\circ f(x)</m>.
-				</p>
-			</statement>
-		</task>
+			<p>
+				Find <m>f\circ g(x)</m>.
+			</p>
+			<p>
+				Find <m>f\circ f(x)</m>.
+			</p>
+		</statement>
 	</exercise>
 	<exercise>
-		<introduction>
+		<statement>
 			<p>
 				Let <m>f(x)=\sqrt{x^3-1}</m>.
 			</p>
-		</introduction>
-		<task>
-			<statement>
-				<p>
-					Find the domain of function <m>f(x)</m>.
-				</p>
-			</statement>
-		</task>
-		<task>
-			<statement>
-				<p>
-					Find the inverse <m>f^{-1}(x)</m>.
-				</p>
-			</statement>
-		</task>
+			<p>
+				Find the domain of function <m>f(x)</m>.
+			</p>
+			<p>
+				Find the inverse <m>f^{-1}(x)</m>.
+			</p>
+		</statement>
 	</exercise>
 	<exercise>
-		<introduction>
+		<statement>
 			<p>
 				A manufacturer finds that the revenue generated by selling <m>x</m> units of a certain commodity is given by the function <me>R(x) = 40 x - 5 x^2 \,.</me>
 			</p>
-		</introduction>
-		<task>
-			<statement>
-				<p>
-					Write the function <m>R(x)</m> in vertex form.
-				</p>
-			</statement>
-		</task>
-		<task>
-			<statement>
-				<p>
-					What is the maximum possible revenue generated?
-				</p>
-			</statement>
-		</task>
-		<task>
-			<statement>
-				<p>
-					How many units should be manufactured to obtain the maximum revenue?
-				</p>
-			</statement>
-		</task>
+			<p>
+				Write the function <m>R(x)</m> in vertex form.
+			</p>
+			<p>
+				What is the maximum possible revenue generated?
+			</p>
+			<p>
+				How many units should be manufactured to obtain the maximum revenue?
+			</p>
+		</statement>
 	</exercise>
 	<exercise>
-		<introduction>
+		<statement>
 			<p>
 				Let <m>f(x) = -3(x+1)(x-4)^3</m> be a polynomial function.
 			</p>
-		</introduction>
-		<task>
-			<statement>
-				<p>
-					Fill in the blanks with the end behavior of <m>f(x)</m>.
-				</p>
-				<p>
-					(No justification is needed.)
-				</p>
-				<p>
-					As <m>x \to \infty</m>, <m>y \to</m>
-				</p>
-				<p>
-					.
-				</p>
-				<p>
-					As <m>x \to -\infty</m>, <m>y \to</m>
-				</p>
-				<p>
-					.
-				</p>
-			</statement>
-		</task>
-		<task>
-			<statement>
-				<p>
-					Find the <m>x</m>-intercepts (zeroes) of the function <m>f(x)</m>.
-				</p>
-			</statement>
-		</task>
-		<task>
-			<statement>
-				<p>
-					Using part (b) and (c), sketch the graph of <m>f(x)</m> on the <m>xy</m>-plane provided below. You need to clearly indicate the <m>x</m>-intercepts of <m>f(x)</m> to receive full credit.
-				</p>
-			</statement>
-		</task>
+			<p>
+				Fill in the blanks with the end behavior of <m>f(x)</m>.
+			</p>
+			<p>
+				(No justification is needed.)
+			</p>
+			<p>
+				As <m>x \to \infty</m>, <m>y \to</m>
+			</p>
+			<p>
+				.
+			</p>
+			<p>
+				As <m>x \to -\infty</m>, <m>y \to</m>
+			</p>
+			<p>
+				.
+			</p>
+			<p>
+				Find the <m>x</m>-intercepts (zeroes) of the function <m>f(x)</m>.
+			</p>
+			<p>
+				Using part (b) and (c), sketch the graph of <m>f(x)</m> on the <m>xy</m>-plane provided below. You need to clearly indicate the <m>x</m>-intercepts of <m>f(x)</m> to receive full credit.
+			</p>
+		</statement>
 	</exercise>
 	<exercise>
-		<introduction>
+		<statement>
 			<p>
 				Let <m>P(x)=5x^4+2x^2-x+1</m> and <m>D(x)=x^2-x+2</m>.
 			</p>
-		</introduction>
-		<task>
-			<statement>
-				<p>
-					Divide <m>P(x)</m> by <m>D(x)</m>.
-				</p>
-			</statement>
-		</task>
-		<task>
-			<statement>
-				<p>
-					Express <m>P(x)</m> in the form <m>D(x)\cdot Q(x)+R(x)</m>.
-				</p>
-			</statement>
-		</task>
+			<p>
+				Divide <m>P(x)</m> by <m>D(x)</m>.
+			</p>
+			<p>
+				Express <m>P(x)</m> in the form <m>D(x)\cdot Q(x)+R(x)</m>.
+			</p>
+		</statement>
 	</exercise>
 	<exercise>
-		<introduction>
+		<statement>
 			<p>
 				Let <m>g(x) = 3x^{3}+7x^{2}-7x-3</m>.
 			</p>
-		</introduction>
-		<task>
-			<statement>
-				<p>
-					What are all the possible rational roots of <m>g(x)</m> according to the rational root theorem?
-				</p>
-			</statement>
-		</task>
-		<task>
-			<statement>
-				<p>
-					If we know that <m>g(x)</m> has a root at <m>x=-3</m>, find all the roots of <m>g(x)</m>
-				</p>
-			</statement>
-		</task>
-		<task>
-			<statement>
-				<p>
-					Write <m>g(x)</m> as a product of linear factors.
-				</p>
-			</statement>
-		</task>
+			<p>
+				What are all the possible rational roots of <m>g(x)</m> according to the rational root theorem?
+			</p>
+			<p>
+				If we know that <m>g(x)</m> has a root at <m>x=-3</m>, find all the roots of <m>g(x)</m>
+			</p>
+			<p>
+				Write <m>g(x)</m> as a product of linear factors.
+			</p>
+		</statement>
 	</exercise>
 	<exercise>
-		<introduction>
+		<statement>
 			<p>
 				For this problem, leave your answers in terms of an exponential. (Please do not try to expand the exponential or calculate the final values.)
 			</p>
 			<p>
 				Suppose you invest $10,000 in a fund with 6% annual interest. Write an expression for the amount of money in the account after 5 years if interest is compounded:
 			</p>
-		</introduction>
-		<task>
-			<statement>
-				<p>
-					Quarterly (<m>n=4</m> times per year)
-				</p>
-			</statement>
-		</task>
-		<task>
-			<statement>
-				<p>
-					Continuously
-				</p>
-			</statement>
-		</task>
+			<p>
+				Quarterly (<m>n=4</m> times per year)
+			</p>
+			<p>
+				Continuously
+			</p>
+		</statement>
 	</exercise>
 </worksheet>
