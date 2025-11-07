@@ -707,10 +707,10 @@ local function split_text_and_hints(text)
     local scan = prefix_end + 1
     local closed = false
     while scan <= length do
-      local ch = source:sub(scan, scan)
-      if ch == "(" then
+      local byte = source:byte(scan)
+      if byte == 40 then -- '('
         depth = depth + 1
-      elseif ch == ")" then
+      elseif byte == 41 then -- ')'
         depth = depth - 1
         if depth == 0 then
           local segment = source:sub(start_pos, scan)
