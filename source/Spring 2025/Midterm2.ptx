@@ -1,421 +1,423 @@
-<?xml version="1.0" encoding="utf-8"?>
-<worksheet xml:id="Spring-2025-Midterm2" xmlns:xi="http://www.w3.org/2001/XInclude">
-	<title>Spring-2025-Midterm2</title>
-	<introduction>
-		<p>
+<?xml version='1.0' encoding='UTF-8'?>
+<worksheet xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="Spring-2025-Midterm2">
+        <title>Spring-2025-Midterm2</title>
+        <introduction>
+                <p>
 				Multiple choice and fill in the blank section. All points are for choosing the correct answer. No justification is needed.
 			</p>
-	</introduction>
-	<exercise>
-		<introduction>
-			<p>
+        </introduction>
+        <exercise>
+                <task>
+                        <statement>
+                                <p>
 				A parabola has a vertex of <m>(5,-2)</m>, and the vertex is a maximum. What is a possible equation for the parabola?
 			</p>
-		</introduction>
-		<task>
-				<choices multiple-correct="no">
-					<choice>
-						<statement>
-							<p>
-								<m>y=(x+5)^2-2</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>y=-(x-5)^2+2</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>y=-(x-5)^2-2</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>y=-(x-2)^2+5</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
+                        </statement>
+                        <choices multiple-correct="no">
+                                <choice>
+                                        <statement>
+                                                <p>
+                                                        <m>y=(x+5)^2-2</m>
+                                                </p>
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p>
+                                                        <m>y=-(x-5)^2+2</m>
+                                                </p>
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p>
+                                                        <m>y=-(x-5)^2-2</m>
+                                                </p>
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p>
+                                                        <m>y=-(x-2)^2+5</m>
+                                                </p>
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p>
 								None of the above.
 							</p>
-						</statement>
-					</choice>
-				</choices>
-		</task>
-	</exercise>
-	<exercise>
-		<introduction>
-			<p>
+                                        </statement>
+                                </choice>
+                        </choices>
+                </task>
+        </exercise>
+        <exercise>
+                <task>
+                        <statement>
+                                <p>
 				The graph below has which properties?
 			</p>
-		</introduction>
-		<task>
-				<choices multiple-correct="no">
-					<choice>
-						<statement>
-							<p>
+                        </statement>
+                        <choices multiple-correct="no">
+                                <choice>
+                                        <statement>
+                                                <p>
 								The graph  a function and  have an inverse.
 							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p>
 								The graph is  a function does  have an inverse.
 							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p>
 								The graph is  a function, but  have an inverse.
 							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p>
 								The graph  a function, but does  have an inverse.
 							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p>
 								None of the above.
 							</p>
-						</statement>
-					</choice>
-				</choices>
-		</task>
-	</exercise>
-	<exercise>
-		<introduction>
-			<p>
-				Consider a polynomial <me>P(x) = ax^n</me> You know <m>n</m> is a positive integer, but do not know <m>a</m>. If as <m>x\to-\infty</m> <m>P(x)\to+\infty</m> and as <m>x\to+\infty</m> <m>P(x)\to-\infty</m>. What do you know about <m>a</m> and <m>n</m>?
+                                        </statement>
+                                </choice>
+                        </choices>
+                </task>
+        </exercise>
+        <exercise>
+                <task>
+                        <statement>
+                                <p>
+				Consider a polynomial <me>P(x) = ax^n</me> You know <m>n</m> is a positive integer, but do not know <m>a</m>. If as <m>x\to-\infty</m>
+                                        <m>P(x)\to+\infty</m> and as <m>x\to+\infty</m>
+                                        <m>P(x)\to-\infty</m>. What do you know about <m>a</m> and <m>n</m>?
 			</p>
-		</introduction>
-		<task>
-				<choices multiple-correct="no">
-					<choice>
-						<statement>
-							<p>
-								<m>a</m> is positive and <m>n</m> is odd.
+                        </statement>
+                        <choices multiple-correct="no">
+                                <choice>
+                                        <statement>
+                                                <p>
+                                                        <m>a</m> is positive and <m>n</m> is odd.
 							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>a</m> is negative and <m>n</m> is odd.
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p>
+                                                        <m>a</m> is negative and <m>n</m> is odd.
 							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>a</m> is negative and <m>n</m> is even.
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p>
+                                                        <m>a</m> is negative and <m>n</m> is even.
 							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>a</m> is positive and <m>n</m> is even.
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p>
+                                                        <m>a</m> is positive and <m>n</m> is even.
 							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p>
 								None of the above.
 							</p>
-						</statement>
-					</choice>
-				</choices>
-		</task>
-	</exercise>
-	<exercise>
-		<introduction>
-			<p>
+                                        </statement>
+                                </choice>
+                        </choices>
+                </task>
+        </exercise>
+        <exercise>
+                <introduction>
+                        <p>
 				Here is a graph of the parent function <m>f(x)= \sqrt{x}</m>.
 			</p>
-			<p>
+                        <p>
 				Match each function child function below to its graph. Write the letter of the corresponding graphs in the boxes next to the functions below.
 			</p>
-			<p>
-				<m>\boxed{\phantom{\dfrac{aaa}{b}}}</m> =<m>\displaystyle -\frac{2}{3}\sqrt{-x-1}+1</m>
-			</p>
-			<p>
-				<m>\boxed{\phantom{\dfrac{aaa}{b}}}</m> = <m>\displaystyle -\sqrt{\frac{2}{3}(x-1)}-1</m>
-			</p>
-			<p>
-				<m>\boxed{\phantom{\dfrac{aaa}{b}}}</m> = <m>\displaystyle \sqrt{\frac{3}{2}(x+1)}+1</m>
-			</p>
-			<p>
-				<m>\boxed{\phantom{\dfrac{aaa}{b}}}</m> = <m>\displaystyle \frac{3}{2}\sqrt{-x+1}-1</m>
-			</p>
-		</introduction>
-		<task>
+                        <p>
+                                <m>\boxed{\phantom{\dfrac{aaa}{b}}}</m> =<m>\displaystyle -\frac{2}{3}\sqrt{-x-1}+1</m>
+                        </p>
+                        <p>
+                                <m>\boxed{\phantom{\dfrac{aaa}{b}}}</m> = <m>\displaystyle -\sqrt{\frac{2}{3}(x-1)}-1</m>
+                        </p>
+                        <p>
+                                <m>\boxed{\phantom{\dfrac{aaa}{b}}}</m> = <m>\displaystyle \sqrt{\frac{3}{2}(x+1)}+1</m>
+                        </p>
+                        <p>
+                                <m>\boxed{\phantom{\dfrac{aaa}{b}}}</m> = <m>\displaystyle \frac{3}{2}\sqrt{-x+1}-1</m>
+                        </p>
+                </introduction>
+                <task>
 		</task>
-		<task>
+                <task>
 		</task>
-		<task>
+                <task>
 		</task>
-		<task>
+                <task>
 		</task>
-	</exercise>
-	<exercise>
-		<introduction>
-			<p>
+        </exercise>
+        <exercise>
+                <task>
+                        <statement>
+                                <p>
 				Select the graph of <m>f(x)=x^2(x-2)^2</m>.
 			</p>
-			<p>
+                                <p>
 				Free answer section. Work must be shown to get credit for any answer. Partial credit may be given even for incorrect final answers, so show your work.
 			</p>
-		</introduction>
-		<task>
-				<choices multiple-correct="no">
-					<choice>
-						<statement>
+                        </statement>
+                        <choices multiple-correct="no">
+                                <choice>
+                                        <statement>
 						</statement>
-					</choice>
-					<choice>
-						<statement>
+                                </choice>
+                                <choice>
+                                        <statement>
 						</statement>
-					</choice>
-					<choice>
-						<statement>
+                                </choice>
+                                <choice>
+                                        <statement>
 						</statement>
-					</choice>
-					<choice>
-						<statement>
+                                </choice>
+                                <choice>
+                                        <statement>
 						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p>
 								None of the above.
 							</p>
-						</statement>
-					</choice>
-				</choices>
-		</task>
-	</exercise>
-	<exercise>
-		<introduction>
-			<p>
+                                        </statement>
+                                </choice>
+                        </choices>
+                </task>
+        </exercise>
+        <exercise>
+                <introduction>
+                        <p>
 				Every <m>3</m> years, an average family in the US generates <m>10</m> tons of trash. Your family created <m>95</m> tons of waste before you were born. Let <m>x</m> represent years after your birth.
 			</p>
-		</introduction>
-		<task workspace="-.7cm">
-			<statement>
-				<p>
+                </introduction>
+                <task workspace="-.7cm">
+                        <statement>
+                                <p>
 					Find a linear function <m>w=f(x)</m> that determines the total amount of waste created by an average family <m>w</m> as a function of time <m>x</m>.
 				</p>
-			</statement>
-		</task>
-		<task workspace="-.7cm">
-			<statement>
-				<p>
+                        </statement>
+                </task>
+                <task workspace="-.7cm">
+                        <statement>
+                                <p>
 					Find <m>f(21)</m> and explain what it tells you in this situation.
 				</p>
-			</statement>
-		</task>
-		<task workspace="-.7cm">
-			<statement>
-				<p>
+                        </statement>
+                </task>
+                <task workspace="-.7cm">
+                        <statement>
+                                <p>
 					Find <m>x=f^{-1}(w)</m> for value of <m>w</m>.
 				</p>
-			</statement>
-		</task>
-		<task workspace="-.7cm">
-			<statement>
-				<p>
+                        </statement>
+                </task>
+                <task workspace="-.7cm">
+                        <statement>
+                                <p>
 					Find <m>f^{-1}(205)</m> and explain what it tells you in this situation.
 				</p>
-			</statement>
-		</task>
-	</exercise>
-	<exercise>
-		<introduction>
-			<p>
+                        </statement>
+                </task>
+        </exercise>
+        <exercise>
+                <introduction>
+                        <p>
 				Perform the polynomial long division, then identify the quotient and the remainder. <me>\left(x^4+3 x^3+5x^2+2x+1\right) \div\left(x^2+1\right)</me>
-			</p>
-		</introduction>
-	</exercise>
-	<exercise>
-		<introduction>
-			<p>
+                        </p>
+                </introduction>
+        </exercise>
+        <exercise>
+                <introduction>
+                        <p>
 				Suppose a ball is thrown directly upward, and its height (in feet) after <m>t</m> seconds is given by <me>y(t) = - 16 t^2 + 16t + a\,, \quad (\mathrm{ft})</me> with <m>a</m> to be determined.
 			</p>
-		</introduction>
-		<task>
-			<statement>
-				<p>
+                </introduction>
+                <task>
+                        <statement>
+                                <p>
 					If at time <m>t=0</m>, the ball is thrown at height <m>10 \mathrm{ft}</m>, what is the value of <m>a</m>?
 				</p>
-			</statement>
-		</task>
-		<task>
-			<statement>
-				<p>
+                        </statement>
+                </task>
+                <task>
+                        <statement>
+                                <p>
 					Write the function <m>y(t)</m> in vertex form by completing the square.
 				</p>
-			</statement>
-		</task>
-		<task>
-			<statement>
-				<p>
+                        </statement>
+                </task>
+                <task>
+                        <statement>
+                                <p>
 					When does the ball reach its maximum height? What is the maximum height? Please include units for both answers.
 				</p>
-				<p>
-					<m>\mbox{Max Height: } \scalebox{1.1}{\ensuremath{\boxed{ \phantom{\frac{a}{b}} \hspace{3cm} }}}</m>
-				</p>
-				<p>
-					<m>\mbox{Time: } \scalebox{1.1}{\ensuremath{\boxed{ \phantom{\frac{a}{b}} \hspace{3cm} }}}</m>
-				</p>
-			</statement>
-		</task>
-	</exercise>
-	<exercise>
-		<task>
-			<statement>
-				<p>
+                                <p>
+                                        <m>\mbox{Max Height: } \scalebox{1.1}{\ensuremath{\boxed{ \phantom{\frac{a}{b}} \hspace{3cm} }}}</m>
+                                </p>
+                                <p>
+                                        <m>\mbox{Time: } \scalebox{1.1}{\ensuremath{\boxed{ \phantom{\frac{a}{b}} \hspace{3cm} }}}</m>
+                                </p>
+                        </statement>
+                </task>
+        </exercise>
+        <exercise>
+                <task>
+                        <statement>
+                                <p>
 					Find the polynomial <m>h(x)</m> of least possible degree with  that has a repeated root of <m>-3</m> with multiplicity 2 and a root of <m>\sqrt{5}</m> such that <m>h(0)=90</m>.
 				</p>
-				<p>
+                                <p>
 					(You may leave your answer as a product of linear factors.)
 				</p>
-			</statement>
-		</task>
-		<task>
-			<statement>
-				<p>
+                        </statement>
+                </task>
+                <task>
+                        <statement>
+                                <p>
 					What is the leading term of the polynomial and what is the degree of the polynomial?
 				</p>
-				<p>
-					<m>\mbox{Leading term: } \scalebox{1.1}{\ensuremath{\boxed{ \phantom{\frac{a}{b}} \hspace{3cm} }}}</m>
-				</p>
-				<p>
-					<m>\mbox{Degree: } \scalebox{1.1}{\ensuremath{\boxed{ \phantom{\frac{a}{b}} \hspace{3cm} }}}</m>
-				</p>
-			</statement>
-		</task>
-	</exercise>
-	<exercise>
-		<introduction>
-			<p>
+                                <p>
+                                        <m>\mbox{Leading term: } \scalebox{1.1}{\ensuremath{\boxed{ \phantom{\frac{a}{b}} \hspace{3cm} }}}</m>
+                                </p>
+                                <p>
+                                        <m>\mbox{Degree: } \scalebox{1.1}{\ensuremath{\boxed{ \phantom{\frac{a}{b}} \hspace{3cm} }}}</m>
+                                </p>
+                        </statement>
+                </task>
+        </exercise>
+        <exercise>
+                <introduction>
+                        <p>
 				Compute the following.
 			</p>
-		</introduction>
-		<task>
-			<statement>
-				<p>
+                </introduction>
+                <task>
+                        <statement>
+                                <p>
 					Let <m>f(x) = \dfrac{1}{2-x}</m> and <m>g(x) = \sqrt{x+12}.</m> Let <m>h(x) = \dfrac{f(x)}{g(x)}.</m> Compute <m>h(4).</m>
-				</p>
-			</statement>
-		</task>
-		<task workspace="1cm">
-			<statement>
-				<p>
+                                </p>
+                        </statement>
+                </task>
+                <task workspace="1cm">
+                        <statement>
+                                <p>
 					Let <m>p(x) = \sqrt{-x + 6}</m> and <m>q(x) = \sqrt{x-1}</m>. Let <m>r(x) = p\cdot q(x)</m>. Find the domain of <m>r(x)</m>.
 				</p>
-			</statement>
-		</task>
-		<task>
-			<statement>
-				<p>
+                        </statement>
+                </task>
+                <task>
+                        <statement>
+                                <p>
 					Let <m>a(x) = \dfrac{1}{5-x}</m> and <m>b(x) = x^2+1</m>. Compute <m>a \circ b(x)</m> and find its domain.
 				</p>
-			</statement>
-		</task>
-	</exercise>
-	<exercise>
-		<introduction>
-			<p>
+                        </statement>
+                </task>
+        </exercise>
+        <exercise>
+                <introduction>
+                        <p>
 				Let <m>f(x)=\dfrac{3}{x+4}</m>. Find <m>f^{-1}(x)</m>, and find the domain of <m>f(x)</m>.
 			</p>
-		</introduction>
-	</exercise>
-	<exercise>
-		<introduction>
-			<p>
+                </introduction>
+        </exercise>
+        <exercise>
+                <introduction>
+                        <p>
 				Let <m>g(x)=\sqrt{x+4}+1</m>. The graph is shown below.
 			</p>
-		</introduction>
-		<task>
-			<statement>
-				<p>
+                </introduction>
+                <task>
+                        <statement>
+                                <p>
 					What is the domain and range of <m>g(x)</m>? (Write in interval notation.)
 				</p>
-				<p>
-					<m>\mbox{Domain: } \scalebox{1.1}{\ensuremath{\boxed{ \phantom{\frac{a}{b}} \hspace{3cm} }}}</m>
-				</p>
-				<p>
-					<m>\mbox{Range: } \scalebox{1.1}{\ensuremath{\boxed{ \phantom{\frac{a}{b}} \hspace{3cm} }}}</m>
-				</p>
-			</statement>
-		</task>
-		<task>
-			<statement>
-				<p>
+                                <p>
+                                        <m>\mbox{Domain: } \scalebox{1.1}{\ensuremath{\boxed{ \phantom{\frac{a}{b}} \hspace{3cm} }}}</m>
+                                </p>
+                                <p>
+                                        <m>\mbox{Range: } \scalebox{1.1}{\ensuremath{\boxed{ \phantom{\frac{a}{b}} \hspace{3cm} }}}</m>
+                                </p>
+                        </statement>
+                </task>
+                <task>
+                        <statement>
+                                <p>
 					What is <m>g^{-1}(x)</m>? <m>g^{-1}(x) = \scalebox{1.2}{\ensuremath{\boxed{ \phantom{\dfrac{a}{b}} \hspace{5cm} }}}</m>
-				</p>
-			</statement>
-		</task>
-		<task>
-			<statement>
-				<p>
+                                </p>
+                        </statement>
+                </task>
+                <task>
+                        <statement>
+                                <p>
 					What are the domain and range of <m>g^{-1}(x)</m>?
 				</p>
-				<p>
-					<m>\mbox{Domain: } \scalebox{1.1}{\ensuremath{\boxed{ \phantom{\frac{a}{b}} \hspace{3cm} }}}</m>
-				</p>
-				<p>
-					<m>\mbox{Range: } \scalebox{1.1}{\ensuremath{\boxed{ \phantom{\frac{a}{b}} \hspace{3cm} }}}</m>
-				</p>
-			</statement>
-		</task>
-	</exercise>
-	<exercise>
-		<introduction>
-			<p>
+                                <p>
+                                        <m>\mbox{Domain: } \scalebox{1.1}{\ensuremath{\boxed{ \phantom{\frac{a}{b}} \hspace{3cm} }}}</m>
+                                </p>
+                                <p>
+                                        <m>\mbox{Range: } \scalebox{1.1}{\ensuremath{\boxed{ \phantom{\frac{a}{b}} \hspace{3cm} }}}</m>
+                                </p>
+                        </statement>
+                </task>
+        </exercise>
+        <exercise>
+                <introduction>
+                        <p>
 				Let <m>f(x)= 3 x^3 - 13 x^2 - 11 x + 5</m>.
 			</p>
-		</introduction>
-		<task>
-			<statement>
-				<p>
+                </introduction>
+                <task>
+                        <statement>
+                                <p>
 					List all possible rational roots of <m>f(x)</m> according to the rational root theorem.
 				</p>
-			</statement>
-		</task>
-		<task>
-			<statement>
-				<p>
+                        </statement>
+                </task>
+                <task>
+                        <statement>
+                                <p>
 					We know that <m>f(x)</m> has a root at <m>x=5</m>. Use this fact to find all the roots of <m>f(x)</m>.
 				</p>
-			</statement>
-		</task>
-		<task>
-			<statement>
-				<p>
+                        </statement>
+                </task>
+                <task>
+                        <statement>
+                                <p>
 					Write <m>f(x)</m> as a product of linear factors.
 				</p>
-				<p>
-					<m>\mbox{$f(x)=$ } \scalebox{1.5}{\ensuremath{\boxed{ \phantom{\frac{a}{b}} \hspace{8cm} }}}</m>
-				</p>
-			</statement>
-		</task>
-	</exercise>
+                                <p>
+                                        <m>\mbox{$f(x)=$ } \scalebox{1.5}{\ensuremath{\boxed{ \phantom{\frac{a}{b}} \hspace{8cm} }}}</m>
+                                </p>
+                        </statement>
+                </task>
+        </exercise>
 </worksheet>

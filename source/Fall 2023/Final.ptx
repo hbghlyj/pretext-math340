@@ -1,479 +1,479 @@
-<?xml version="1.0" encoding="utf-8"?>
-<worksheet xml:id="Fall-2023-Final" xmlns:xi="http://www.w3.org/2001/XInclude">
-	<title>Fall-2023-Final</title>
-	<introduction>
-		<p>
+<?xml version='1.0' encoding='UTF-8'?>
+<worksheet xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="Fall-2023-Final">
+        <title>Fall-2023-Final</title>
+        <introduction>
+                <p>
 				Multiple choice section. All points are for choosing the correct answer. No justification is needed.
 			</p>
-	</introduction>
-	<exercise>
-		<introduction>
-			<p>
+        </introduction>
+        <exercise>
+                <task>
+                        <statement>
+                                <p>
 				Select the function graphed below.
 			</p>
-		</introduction>
-		<task>
-				<choices multiple-correct="no">
-					<choice>
-						<statement>
-							<p>
-								<m>f(x)=-2(x+2)^2-1</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>f(x)=2(x+2)^2+1</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>f(x)=-2(x-2)^2-1</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>f(x)=-2(x-2)^2+1</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
+                        </statement>
+                        <choices multiple-correct="no">
+                                <choice>
+                                        <statement>
+                                                <p>
+                                                        <m>f(x)=-2(x+2)^2-1</m>
+                                                </p>
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p>
+                                                        <m>f(x)=2(x+2)^2+1</m>
+                                                </p>
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p>
+                                                        <m>f(x)=-2(x-2)^2-1</m>
+                                                </p>
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p>
+                                                        <m>f(x)=-2(x-2)^2+1</m>
+                                                </p>
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p>
 								None of the above.
 							</p>
-						</statement>
-					</choice>
-				</choices>
-		</task>
-	</exercise>
-	<exercise>
-		<introduction>
-			<p>
+                                        </statement>
+                                </choice>
+                        </choices>
+                </task>
+        </exercise>
+        <exercise>
+                <task>
+                        <statement>
+                                <p>
 				Determine which rational function could generate the graph below.
 			</p>
-		</introduction>
-		<task>
-				<choices multiple-correct="no">
-					<choice>
-						<statement>
-							<p>
-								<m>\dfrac{x^2-3x}{x-1}</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>\dfrac{x^2+3x}{x-1}</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>\dfrac{x^2+3x}{x^2-1}</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>\dfrac{x^2+3x}{x^3-1}</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
+                        </statement>
+                        <choices multiple-correct="no">
+                                <choice>
+                                        <statement>
+                                                <p>
+                                                        <m>\dfrac{x^2-3x}{x-1}</m>
+                                                </p>
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p>
+                                                        <m>\dfrac{x^2+3x}{x-1}</m>
+                                                </p>
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p>
+                                                        <m>\dfrac{x^2+3x}{x^2-1}</m>
+                                                </p>
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p>
+                                                        <m>\dfrac{x^2+3x}{x^3-1}</m>
+                                                </p>
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p>
 								None of the above.
 							</p>
-						</statement>
-					</choice>
-				</choices>
-		</task>
-	</exercise>
-	<exercise>
-		<introduction>
-			<p>
+                                        </statement>
+                                </choice>
+                        </choices>
+                </task>
+        </exercise>
+        <exercise>
+                <task>
+                        <statement>
+                                <p>
 				Solve the following inequality. <me>2(3x-5)\geq 10</me>
-			</p>
-		</introduction>
-		<task>
-				<choices multiple-correct="no">
-					<choice>
-						<statement>
-							<p>
-								<m>\left(-\infty,\dfrac{10}{3}\right]</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>\left[\dfrac{10}{3},\infty\right)</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>\left(-\infty,\dfrac{10}{3}\right)</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>\left(\dfrac{10}{3},\infty\right)</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
+                                </p>
+                        </statement>
+                        <choices multiple-correct="no">
+                                <choice>
+                                        <statement>
+                                                <p>
+                                                        <m>\left(-\infty,\dfrac{10}{3}\right]</m>
+                                                </p>
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p>
+                                                        <m>\left[\dfrac{10}{3},\infty\right)</m>
+                                                </p>
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p>
+                                                        <m>\left(-\infty,\dfrac{10}{3}\right)</m>
+                                                </p>
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p>
+                                                        <m>\left(\dfrac{10}{3},\infty\right)</m>
+                                                </p>
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p>
 								None of the above.
 							</p>
-						</statement>
-					</choice>
-				</choices>
-		</task>
-	</exercise>
-	<exercise>
-		<introduction>
-			<p>
+                                        </statement>
+                                </choice>
+                        </choices>
+                </task>
+        </exercise>
+        <exercise>
+                <task>
+                        <statement>
+                                <p>
 				Consider quadratic, <m>f(x)=ax^2+bx+c</m>. What are we guaranteed about the zeros (roots) of the quadratic.
 			</p>
-		</introduction>
-		<task>
-				<choices multiple-correct="no">
-					<choice>
-						<statement>
-							<p>
-								<m>f(x)</m> will have two integer roots (not necessarily distinct).
+                        </statement>
+                        <choices multiple-correct="no">
+                                <choice>
+                                        <statement>
+                                                <p>
+                                                        <m>f(x)</m> will have two integer roots (not necessarily distinct).
 							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>f(x)</m> will have two rational roots (not necessarily distinct).
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p>
+                                                        <m>f(x)</m> will have two rational roots (not necessarily distinct).
 							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>f(x)</m> will have two real roots (not necessarily distinct).
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p>
+                                                        <m>f(x)</m> will have two real roots (not necessarily distinct).
 							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>f(x)</m> is not guaranteed to have any real roots.
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p>
+                                                        <m>f(x)</m> is not guaranteed to have any real roots.
 							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p>
 								None of the above.
 							</p>
-						</statement>
-					</choice>
-				</choices>
-		</task>
-	</exercise>
-	<exercise>
-		<introduction>
-			<p>
+                                        </statement>
+                                </choice>
+                        </choices>
+                </task>
+        </exercise>
+        <exercise>
+                <task workspace="-.7cm">
+                        <statement>
+                                <p>
 				Select the graph below that is not a function.
 			</p>
-		</introduction>
-		<task workspace="-.7cm">
-				<choices multiple-correct="no">
-					<choice>
-						<statement>
+                        </statement>
+                        <choices multiple-correct="no">
+                                <choice>
+                                        <statement>
 						</statement>
-					</choice>
-					<choice>
-						<statement>
+                                </choice>
+                                <choice>
+                                        <statement>
 						</statement>
-					</choice>
-					<choice>
-						<statement>
+                                </choice>
+                                <choice>
+                                        <statement>
 						</statement>
-					</choice>
-					<choice>
-						<statement>
+                                </choice>
+                                <choice>
+                                        <statement>
 						</statement>
-					</choice>
-				</choices>
-		</task>
-	</exercise>
-	<exercise>
-		<introduction>
-			<p>
+                                </choice>
+                        </choices>
+                </task>
+        </exercise>
+        <exercise>
+                <task>
+                        <statement>
+                                <p>
 				Find all solutions to the following equation. <me>x^3=x</me>
-			</p>
-			<p>
+                                </p>
+                                <p>
 				Free answer section. Work must be shown to get credit for any answer. Partial credit may be given even for incorrect final answers, so show your work.
 			</p>
-		</introduction>
-		<task>
-				<choices multiple-correct="no">
-					<choice>
-						<statement>
-							<p>
-								<m>x=1</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>x=1</m>, <m>x=0</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>x=1</m>, <m>x=-1</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>x=1</m>, <m>x=-1</m>, <m>x=0</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>x=i</m>, <m>x=-i</m>, <m>x=1</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
+                        </statement>
+                        <choices multiple-correct="no">
+                                <choice>
+                                        <statement>
+                                                <p>
+                                                        <m>x=1</m>
+                                                </p>
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p>
+                                                        <m>x=1</m>, <m>x=0</m>
+                                                </p>
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p>
+                                                        <m>x=1</m>, <m>x=-1</m>
+                                                </p>
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p>
+                                                        <m>x=1</m>, <m>x=-1</m>, <m>x=0</m>
+                                                </p>
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p>
+                                                        <m>x=i</m>, <m>x=-i</m>, <m>x=1</m>
+                                                </p>
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p>
 								None of the above.
 							</p>
-						</statement>
-					</choice>
-				</choices>
-		</task>
-	</exercise>
-	<exercise>
-		<introduction>
-			<p>
+                                        </statement>
+                                </choice>
+                        </choices>
+                </task>
+        </exercise>
+        <exercise>
+                <introduction>
+                        <p>
 				Solve the following inequality. <me>2|3-x|\geq 1</me>
-			</p>
-		</introduction>
-	</exercise>
-	<exercise>
-		<introduction>
-			<p>
+                        </p>
+                </introduction>
+        </exercise>
+        <exercise>
+                <introduction>
+                        <p>
 				Write a polynomial, <m>P(x)</m> with roots of <m>-3</m>, <m>6</m>, a repeated root at <m>11</m> with multiplicity 3, and as <m>x\to -\infty</m>, <m>P(x)\to +\infty</m> and as <m>x\to +\infty</m>, <m>P(x)\to -\infty</m>
-			</p>
-		</introduction>
-	</exercise>
-	<exercise>
-		<introduction>
-			<p>
+                        </p>
+                </introduction>
+        </exercise>
+        <exercise>
+                <introduction>
+                        <p>
 				Let <m>f(x) = x^2 - x - 20</m>.
 			</p>
-		</introduction>
-		<task>
-			<statement>
-				<p>
+                </introduction>
+                <task>
+                        <statement>
+                                <p>
 					Find all the roots of <m>f(x)</m>.
 				</p>
-			</statement>
-		</task>
-		<task>
-			<statement>
-				<p>
+                        </statement>
+                </task>
+                <task>
+                        <statement>
+                                <p>
 					Let <m>g(x) = x^2</m>, find <m>(f \circ g)(x)</m>.
 				</p>
-			</statement>
-		</task>
-		<task>
-			<statement>
-				<p>
+                        </statement>
+                </task>
+                <task>
+                        <statement>
+                                <p>
 					What are all the possible <term>rational roots</term> of <m>(f \circ g)(x)</m> according to the <term>rational root theorem</term>?
 				</p>
-			</statement>
-		</task>
-		<task>
-			<statement>
-				<p>
+                        </statement>
+                </task>
+                <task>
+                        <statement>
+                                <p>
 					Using Part (a) of the question, find all the <term>roots</term> of <m>(f \circ g)(x)</m>. Credit will be given solely based on whether the answer is correct. (<term>Hint</term>: Some of the roots are complex numbers).
 				</p>
-			</statement>
-		</task>
-	</exercise>
-	<exercise>
-		<introduction>
-			<p>
+                        </statement>
+                </task>
+        </exercise>
+        <exercise>
+                <introduction>
+                        <p>
 				Expand the following log function with no interior multiplications or divisions and simplified powers as much as the log rules allow <me>\ln \frac{x^3y}{\sqrt{x-y}}.</me>
-			</p>
-		</introduction>
-	</exercise>
-	<exercise>
-		<introduction>
-			<p>
+                        </p>
+                </introduction>
+        </exercise>
+        <exercise>
+                <introduction>
+                        <p>
 				Perform the following operation and write as a single fraction. <me>\frac{x}{x+2}+\frac{x-3}{x^2+7x+10}</me>
-			</p>
-		</introduction>
-	</exercise>
-	<exercise>
-		<introduction>
-			<p>
+                        </p>
+                </introduction>
+        </exercise>
+        <exercise>
+                <introduction>
+                        <p>
 				Let <m>f(x)=\log_2(3-x)</m>.
 			</p>
-		</introduction>
-		<task workspace="5cm">
-			<statement>
-				<p>
+                </introduction>
+                <task workspace="5cm">
+                        <statement>
+                                <p>
 					Find the domain of <m>f(x)</m>.
 				</p>
-			</statement>
-		</task>
-		<task>
-			<statement>
-				<p>
+                        </statement>
+                </task>
+                <task>
+                        <statement>
+                                <p>
 					Find the zero of <m>f(x)</m>
-				</p>
-			</statement>
-		</task>
-		<task>
-			<statement>
-				<p>
+                                </p>
+                        </statement>
+                </task>
+                <task>
+                        <statement>
+                                <p>
 					Compute the inverse function <m>f^{-1}(x)</m>.
 				</p>
-			</statement>
-		</task>
-	</exercise>
-	<exercise>
-		<introduction>
-			<p>
+                        </statement>
+                </task>
+        </exercise>
+        <exercise>
+                <introduction>
+                        <p>
 				For each of the following systems of linear equations, determine whether or not the system has any solutions. For the systems that have solutions, find all solutions; for the systems that have infinitely many solutions, write your solutions as an ordered pair in terms of the variable <m>x</m> only.
 			</p>
-		</introduction>
-		<task>
-			<statement>
-				<p>
-					<me>\begin{aligned}
+                </introduction>
+                <task>
+                        <statement>
+                                <p>
+                                        <me>\begin{aligned}
 											        5 x  -  y &amp;= 5 \\
 											          x  +  3y &amp;= -7
 											    
 											\end{aligned}</me>
-				</p>
-			</statement>
-		</task>
-		<task>
-			<statement>
-				<p>
-					<me>\begin{aligned}
+                                </p>
+                        </statement>
+                </task>
+                <task>
+                        <statement>
+                                <p>
+                                        <me>\begin{aligned}
 											        2x - 2y &amp;= 3 \\
 											        -4x + 4y &amp;= -6
 											    
 											\end{aligned}</me>
-				</p>
-			</statement>
-		</task>
-	</exercise>
-	<exercise>
-		<introduction>
-			<p>
+                                </p>
+                        </statement>
+                </task>
+        </exercise>
+        <exercise>
+                <introduction>
+                        <p>
 				Consider the rational function <me>f(x)=\frac{2x+5}{x^2+2x-35}</me>
-			</p>
-		</introduction>
-		<task workspace="4cm">
-			<statement>
-				<p>
+                        </p>
+                </introduction>
+                <task workspace="4cm">
+                        <statement>
+                                <p>
 					Find the zeroes of <m>f</m>.
 				</p>
-			</statement>
-		</task>
-		<task workspace="4cm">
-			<statement>
-				<p>
+                        </statement>
+                </task>
+                <task workspace="4cm">
+                        <statement>
+                                <p>
 					Find the vertical asymptotes of <m>f</m>.
 				</p>
-			</statement>
-		</task>
-		<task workspace="2cm">
-			<statement>
-				<p>
+                        </statement>
+                </task>
+                <task workspace="2cm">
+                        <statement>
+                                <p>
 					Solve the following inequality and put your final answers in interval notation.<me>\frac{2x+5}{x^2+2x-35}\geq 0</me>
-				</p>
-			</statement>
-		</task>
-	</exercise>
-	<exercise>
-		<introduction>
-			<p>
+                                </p>
+                        </statement>
+                </task>
+        </exercise>
+        <exercise>
+                <introduction>
+                        <p>
 				Find the complete solution of the linear system, or show that it has no solution. <me>\left\{
 							    \begin{aligned}
 							         x+y+z&amp;=1\\
 							        2x-y-2z&amp;=0\\
 							        5x-3y-6z&amp;=10\\
 							    \end{aligned}\right.</me>
-			</p>
-		</introduction>
-	</exercise>
-	<exercise>
-		<introduction>
-			<p>
+                        </p>
+                </introduction>
+        </exercise>
+        <exercise>
+                <introduction>
+                        <p>
 				Find the domain of the function
 			</p>
-			<p>
-				<me>f(x) = \sqrt{2+x} + \dfrac{1}{\sqrt{2-x}}</me>
-			</p>
-		</introduction>
-	</exercise>
-	<exercise>
-		<introduction>
-			<p>
+                        <p>
+                                <me>f(x) = \sqrt{2+x} + \dfrac{1}{\sqrt{2-x}}</me>
+                        </p>
+                </introduction>
+        </exercise>
+        <exercise>
+                <introduction>
+                        <p>
 				Find the solution(s) to the following equation. <me>\log_2(x+7)+\log_2(x)=3</me>
-			</p>
-		</introduction>
-	</exercise>
-	<exercise>
-		<introduction>
-			<p>
+                        </p>
+                </introduction>
+        </exercise>
+        <exercise>
+                <introduction>
+                        <p>
 				This problem involves the radioactive decay model, <m>A(t)=A_, e^{-kt}</m>
-			</p>
-			<p>
+                        </p>
+                        <p>
 				You may have heard of radiocarbon dating, in which the age of materials can be estimated by measuring how much Carbon-14 they contain.
 			</p>
-			<p>
+                        <p>
 				Assume a sample originally had 14 pg (picograms) of Carbon-14. The same sample has 7 pg of Carbon-14 after 5730 years.
 			</p>
-			<p>
+                        <p>
 				Find the value of <m>k</m> in the radioactive decay model. (Leave it in terms of a log.)
 			</p>
-		</introduction>
-	</exercise>
-	<exercise>
-		<introduction>
-			<p>
+                </introduction>
+        </exercise>
+        <exercise>
+                <introduction>
+                        <p>
 				A population of 20 cats is sent to a moon habitat and the population begins to grow. The number of moon-cats is modelled by <m>n(t)=P_0 e^{0.21t}</m>, with <m>t</m> measured in years.
 			</p>
-			<p>
+                        <p>
 				How many years will it take for there to be 5000 moon-cats? (Leave your answer in terms of a log.)
 			</p>
-		</introduction>
-	</exercise>
+                </introduction>
+        </exercise>
 </worksheet>

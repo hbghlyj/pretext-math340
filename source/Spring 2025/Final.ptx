@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
-<worksheet xml:id="Spring-2025-Final" xmlns:xi="http://www.w3.org/2001/XInclude">
-	<title>Spring-2025-Final</title>
-	<introduction>
-		<p>
+<?xml version='1.0' encoding='UTF-8'?>
+<worksheet xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="Spring-2025-Final">
+        <title>Spring-2025-Final</title>
+        <introduction>
+                <p>
 				Multiple choice section. All points are for choosing the correct answer. No justification is needed.
 			</p>
-	</introduction>
+        </introduction>
         <exercise>
                 <statement>
                         <p>
@@ -53,437 +53,438 @@
                         </choice>
                 </choices>
         </exercise>
-	<exercise>
-		<introduction>
-			<p>
+        <exercise>
+                <task>
+                        <statement>
+                                <p>
 				Which of the following is a polynomial, <m>p(x)</m> with roots of <m>-3</m>, <m>\sqrt{2}</m>, and 1.
 			</p>
-		</introduction>
-		<task>
-				<choices multiple-correct="no">
-					<choice>
-						<statement>
-							<p>
-								<m>p(x)=(x-3)(x+2)^2(x+1)</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>p(x)=(x+3)(x-2)^2(x-1)</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>p(x)=(x-3)(x+\sqrt{2})(x+1)</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>p(x)=(x+3)(x-\sqrt{2})(x-1)</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
+                        </statement>
+                        <choices multiple-correct="no">
+                                <choice>
+                                        <statement>
+                                                <p>
+                                                        <m>p(x)=(x-3)(x+2)^2(x+1)</m>
+                                                </p>
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p>
+                                                        <m>p(x)=(x+3)(x-2)^2(x-1)</m>
+                                                </p>
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p>
+                                                        <m>p(x)=(x-3)(x+\sqrt{2})(x+1)</m>
+                                                </p>
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p>
+                                                        <m>p(x)=(x+3)(x-\sqrt{2})(x-1)</m>
+                                                </p>
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p>
 								None of the above.
 							</p>
-						</statement>
-					</choice>
-				</choices>
-		</task>
-	</exercise>
-	<exercise>
-		<introduction>
-			<p>
+                                        </statement>
+                                </choice>
+                        </choices>
+                </task>
+        </exercise>
+        <exercise>
+                <task>
+                        <statement>
+                                <p>
 				Consider the parabola <m>f(x)=(x+3)^2+k</m>. What is <m>k</m> if <m>f(x)</m> has only one zero?
 			</p>
-		</introduction>
-		<task>
-				<choices multiple-correct="no">
-					<choice>
-						<statement>
-							<p>
-								<m>k=0</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>k&gt;0</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>k=-9</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>k=-3</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
+                        </statement>
+                        <choices multiple-correct="no">
+                                <choice>
+                                        <statement>
+                                                <p>
+                                                        <m>k=0</m>
+                                                </p>
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p>
+                                                        <m>k&gt;0</m>
+                                                </p>
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p>
+                                                        <m>k=-9</m>
+                                                </p>
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p>
+                                                        <m>k=-3</m>
+                                                </p>
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p>
 								None of the above.
 							</p>
-						</statement>
-					</choice>
-				</choices>
-		</task>
-	</exercise>
-	<exercise>
-		<introduction>
-			<p>
+                                        </statement>
+                                </choice>
+                        </choices>
+                </task>
+        </exercise>
+        <exercise>
+                <task>
+                        <statement>
+                                <p>
 				Consider the rational function <me>f(x)=\dfrac{x^3+5x+3}{2x^2+1}</me> What can we say about any asymptotes for this function?
 			</p>
-		</introduction>
-		<task>
-				<choices multiple-correct="no">
-					<choice>
-						<statement>
-							<p>
-								<m>f(x)</m> has a horizontal asymptote at <m>y=0</m>.
+                        </statement>
+                        <choices multiple-correct="no">
+                                <choice>
+                                        <statement>
+                                                <p>
+                                                        <m>f(x)</m> has a horizontal asymptote at <m>y=0</m>.
 							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>f(x)</m> has a horizontal asymptote at <m>y=\dfrac{1}{2}</m>.
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p>
+                                                        <m>f(x)</m> has a horizontal asymptote at <m>y=\dfrac{1}{2}</m>.
 							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p>
 								We cannot say anything about asymptotes of <m>f(x)</m>.
 							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>f(x)</m> has a slant asymptote.
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p>
+                                                        <m>f(x)</m> has a slant asymptote.
 							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p>
 								None of the above.
 							</p>
-						</statement>
-					</choice>
-				</choices>
-		</task>
-	</exercise>
-	<exercise>
-		<introduction>
-			<p>
+                                        </statement>
+                                </choice>
+                        </choices>
+                </task>
+        </exercise>
+        <exercise>
+                <task>
+                        <statement>
+                                <p>
 				Let <m>f(x)=x^2-\sqrt{x+1}</m> and <m>g(x)=\dfrac{-3}{2x}</m>, what is <m>f(g(x))</m>?
 			</p>
-		</introduction>
-		<task>
-				<choices multiple-correct="no">
-					<choice>
-						<statement>
-							<p>
-								<m>\dfrac{-3x}{2}+\dfrac{3\sqrt{x+1}}{2x}</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>\dfrac{9}{4x^2}-\sqrt{\frac{-3}{2x}+1}</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>\dfrac{-9}{4x^2}-\sqrt{\frac{-3}{2x}+1}</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>\dfrac{-3}{2x^2-2\sqrt{x+1}}</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
+                        </statement>
+                        <choices multiple-correct="no">
+                                <choice>
+                                        <statement>
+                                                <p>
+                                                        <m>\dfrac{-3x}{2}+\dfrac{3\sqrt{x+1}}{2x}</m>
+                                                </p>
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p>
+                                                        <m>\dfrac{9}{4x^2}-\sqrt{\frac{-3}{2x}+1}</m>
+                                                </p>
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p>
+                                                        <m>\dfrac{-9}{4x^2}-\sqrt{\frac{-3}{2x}+1}</m>
+                                                </p>
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p>
+                                                        <m>\dfrac{-3}{2x^2-2\sqrt{x+1}}</m>
+                                                </p>
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p>
 								None of the above.
 							</p>
-						</statement>
-					</choice>
-				</choices>
-		</task>
-	</exercise>
-	<exercise>
-		<introduction>
-			<p>
+                                        </statement>
+                                </choice>
+                        </choices>
+                </task>
+        </exercise>
+        <exercise>
+                <task>
+                        <statement>
+                                <p>
 				What is the domain of the following function: <me>f(x)=\dfrac{\sqrt{x+3}}{x-5}</me>
-			</p>
-			<p>
+                                </p>
+                                <p>
 				Free answer section. <term>Work must be shown to get credit for any answer.</term> Partial credit may be given even for incorrect final answers, so show your work.
 			</p>
-		</introduction>
-		<task>
-				<choices multiple-correct="no">
-					<choice>
-						<statement>
-							<p>
-								<m>[-3,\infty)</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>(-\infty,5)\bigcup(5,\infty)</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>[-3,5)\bigcup(5,\infty)</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
-								<m>(-\infty,\infty)</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
+                        </statement>
+                        <choices multiple-correct="no">
+                                <choice>
+                                        <statement>
+                                                <p>
+                                                        <m>[-3,\infty)</m>
+                                                </p>
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p>
+                                                        <m>(-\infty,5)\bigcup(5,\infty)</m>
+                                                </p>
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p>
+                                                        <m>[-3,5)\bigcup(5,\infty)</m>
+                                                </p>
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p>
+                                                        <m>(-\infty,\infty)</m>
+                                                </p>
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p>
 								None of the above.
 							</p>
-						</statement>
-					</choice>
-				</choices>
-		</task>
-	</exercise>
-	<exercise>
-		<introduction>
-			<p>
+                                        </statement>
+                                </choice>
+                        </choices>
+                </task>
+        </exercise>
+        <exercise>
+                <introduction>
+                        <p>
 				Solve the following inequality and write your answers in interval notation. <me>|7x + 3| + 8 \geq 13\,</me>
-			</p>
-			<p>
-				<m>\mbox{Interval(s)}: \scalebox{1.5}{\ensuremath{\boxed{ \phantom{\dfrac{a}{b}} \hspace{5cm} }}}</m>
-			</p>
-		</introduction>
-	</exercise>
-	<exercise>
-		<introduction>
-			<p>
+                        </p>
+                        <p>
+                                <m>\mbox{Interval(s)}: \scalebox{1.5}{\ensuremath{\boxed{ \phantom{\dfrac{a}{b}} \hspace{5cm} }}}</m>
+                        </p>
+                </introduction>
+        </exercise>
+        <exercise>
+                <introduction>
+                        <p>
 				Combine the following into a single fraction with no common factors on the top and bottom.
 			</p>
-			<p>
-				<me>\dfrac{3}{5x^2-10x}+\dfrac{2x}{x-2}</me>
-			</p>
-			<p>
-				<m>\mbox{$f(x)=$ } \scalebox{1.5}{\ensuremath{\boxed{ \phantom{\dfrac{\dfrac{a}{b}}{b}} \hspace{5cm} }}}</m>
-			</p>
-		</introduction>
-	</exercise>
-	<exercise>
-		<task>
-				<choices multiple-correct="no">
-					<choice>
-						<statement>
-							<p>
+                        <p>
+                                <me>\dfrac{3}{5x^2-10x}+\dfrac{2x}{x-2}</me>
+                        </p>
+                        <p>
+                                <m>\mbox{$f(x)=$ } \scalebox{1.5}{\ensuremath{\boxed{ \phantom{\dfrac{\dfrac{a}{b}}{b}} \hspace{5cm} }}}</m>
+                        </p>
+                </introduction>
+        </exercise>
+        <exercise>
+                <task>
+                        <choices multiple-correct="no">
+                                <choice>
+                                        <statement>
+                                                <p>
 								Write the function <m>f(x)=2x^{2}+4x+7</m> in vertex form, <m>a(x-h)^2+k</m>.
 							</p>
-							<p>
-								<m>\mbox{$f(x)=$ } \scalebox{1.5}{\ensuremath{\boxed{ \phantom{\dfrac{a}{b}} \hspace{5cm} }}}</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
+                                                <p>
+                                                        <m>\mbox{$f(x)=$ } \scalebox{1.5}{\ensuremath{\boxed{ \phantom{\dfrac{a}{b}} \hspace{5cm} }}}</m>
+                                                </p>
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p>
 								What are the coordinates of the vertex?
 							</p>
-							<p>
-								<m>\mbox{Vertex: } \scalebox{1.1}{\ensuremath{\boxed{ \phantom{\frac{a}{b}} \hspace{4cm} }}}</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
+                                                <p>
+                                                        <m>\mbox{Vertex: } \scalebox{1.1}{\ensuremath{\boxed{ \phantom{\frac{a}{b}} \hspace{4cm} }}}</m>
+                                                </p>
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p>
 								Is the vertex a maximum or a minimum?
 							</p>
-						</statement>
-					</choice>
-				</choices>
-		</task>
-	</exercise>
-	<exercise>
-		<introduction>
-			<p>
+                                        </statement>
+                                </choice>
+                        </choices>
+                </task>
+        </exercise>
+        <exercise>
+                <introduction>
+                        <p>
 				Write the following as a single log. <me>f(x)=4\ln(x+2)-\frac{1}{2}\ln z+y\ln 3</me>
-			</p>
-			<p>
-				<m>\mbox{$f(x)=$ } \scalebox{1.5}{\ensuremath{\boxed{ \phantom{\dfrac{\dfrac{a}{b}}{b}} \hspace{5cm} }}}</m>
-			</p>
-		</introduction>
-	</exercise>
-	<exercise>
-		<introduction>
-			<p>
+                        </p>
+                        <p>
+                                <m>\mbox{$f(x)=$ } \scalebox{1.5}{\ensuremath{\boxed{ \phantom{\dfrac{\dfrac{a}{b}}{b}} \hspace{5cm} }}}</m>
+                        </p>
+                </introduction>
+        </exercise>
+        <exercise>
+                <introduction>
+                        <p>
 				Consider the rational function <me>f(x)=\dfrac{x-5}{x^2+2x}</me>
-			</p>
-		</introduction>
-		<task>
-			<statement>
-				<p>
+                        </p>
+                </introduction>
+                <task>
+                        <statement>
+                                <p>
 					Find the zero(s) of <m>f</m>
-				</p>
-				<p>
-					<m>\mbox{$x=$ } \scalebox{1.5}{\ensuremath{\boxed{ \phantom{\dfrac{a}{b}} \hspace{5cm} }}}</m>
-				</p>
-			</statement>
-		</task>
-		<task>
-			<statement>
-				<p>
+                                </p>
+                                <p>
+                                        <m>\mbox{$x=$ } \scalebox{1.5}{\ensuremath{\boxed{ \phantom{\dfrac{a}{b}} \hspace{5cm} }}}</m>
+                                </p>
+                        </statement>
+                </task>
+                <task>
+                        <statement>
+                                <p>
 					Find the vertical asymptote(s) of <m>f</m>
-				</p>
-				<p>
-					<m>\mbox{$x=$ } \scalebox{1.5}{\ensuremath{\boxed{ \phantom{\dfrac{a}{b}} \hspace{5cm} }}}</m>
-				</p>
-			</statement>
-		</task>
-		<task>
-			<statement>
-				<p>
+                                </p>
+                                <p>
+                                        <m>\mbox{$x=$ } \scalebox{1.5}{\ensuremath{\boxed{ \phantom{\dfrac{a}{b}} \hspace{5cm} }}}</m>
+                                </p>
+                        </statement>
+                </task>
+                <task>
+                        <statement>
+                                <p>
 					For what intervals of <m>x</m> is <m>f(x)\le 0</m>
-				</p>
-				<p>
-					<m>\mbox{Interval(s)}: \scalebox{1.5}{\ensuremath{\boxed{ \phantom{\dfrac{a}{b}} \hspace{5cm} }}}</m>
-				</p>
-			</statement>
-		</task>
-	</exercise>
-	<exercise>
-		<introduction>
-			<p>
+                                </p>
+                                <p>
+                                        <m>\mbox{Interval(s)}: \scalebox{1.5}{\ensuremath{\boxed{ \phantom{\dfrac{a}{b}} \hspace{5cm} }}}</m>
+                                </p>
+                        </statement>
+                </task>
+        </exercise>
+        <exercise>
+                <introduction>
+                        <p>
 				Find the inverse function for the function below: <me>f(x)=\dfrac{2x}{5-3x}</me>
-			</p>
-			<p>
-				<m>\mbox{$f^{-1}(x)=$ } \scalebox{1.5}{\ensuremath{\boxed{ \phantom{\dfrac{\dfrac{a}{b}}{b}} \hspace{5cm} }}}</m>
-			</p>
-		</introduction>
-	</exercise>
-	<exercise>
-		<introduction>
-			<p>
-				Solve the following equation for <m>x:</m> <me>\begin{aligned}
+                        </p>
+                        <p>
+                                <m>\mbox{$f^{-1}(x)=$ } \scalebox{1.5}{\ensuremath{\boxed{ \phantom{\dfrac{\dfrac{a}{b}}{b}} \hspace{5cm} }}}</m>
+                        </p>
+                </introduction>
+        </exercise>
+        <exercise>
+                <introduction>
+                        <p>
+				Solve the following equation for <m>x:</m>
+                                <me>\begin{aligned}
 							        \log_{6}(x)+\log_6 (x-1) = 1
 							    
 							\end{aligned}</me>
-			</p>
-			<p>
-				<m>\mbox{$x$ = } \scalebox{1.5}{\ensuremath{\boxed{ \phantom{\dfrac{a}{b}} \hspace{5cm} }}}</m>
-			</p>
-		</introduction>
-	</exercise>
-	<exercise>
-		<introduction>
-			<p>
+                        </p>
+                        <p>
+                                <m>\mbox{$x$ = } \scalebox{1.5}{\ensuremath{\boxed{ \phantom{\dfrac{a}{b}} \hspace{5cm} }}}</m>
+                        </p>
+                </introduction>
+        </exercise>
+        <exercise>
+                <introduction>
+                        <p>
 				For what value(s) of <m>x</m> does <me>\begin{aligned}
 							        \left(\ln(x)\right)^2 - 3\ln(x)=0\,?
 							    
 							\end{aligned}</me>
-			</p>
-			<p>
-				<m>\mbox{$x$ = } \scalebox{1.5}{\ensuremath{\boxed{ \phantom{\dfrac{a}{b}} \hspace{5cm} }}}</m>
-			</p>
-		</introduction>
-	</exercise>
-	<exercise>
-		<introduction>
-			<p>
+                        </p>
+                        <p>
+                                <m>\mbox{$x$ = } \scalebox{1.5}{\ensuremath{\boxed{ \phantom{\dfrac{a}{b}} \hspace{5cm} }}}</m>
+                        </p>
+                </introduction>
+        </exercise>
+        <exercise>
+                <task>
+                        <statement>
+                                <p>
 				A swimming pool is being emptied, and the amount of water (in liters) in the pool at time <m>t</m> (in minutes) is given by <me>P(t) = P_0 \cdot 5^{rt}</me> where <m>P_0</m> and <m>r</m> are some constants. If there is initially <m>1000</m> liters of water in the pool, and after <m>7</m> minutes there is <m>500</m> liters of water in the pool, find the values of <m>P_0</m> and <m>r</m>.
 			</p>
-		</introduction>
-		<task>
-				<choices multiple-correct="no">
-					<choice>
-						<statement>
-							<p>
+                        </statement>
+                        <choices multiple-correct="no">
+                                <choice>
+                                        <statement>
+                                                <p>
 								What is <m>P_0</m>?
 							</p>
-							<p>
-								<m>\mbox{$P_0$ = } \scalebox{1.5}{\ensuremath{\boxed{ \phantom{\dfrac{a}{b}} \hspace{5cm} }}}</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
+                                                <p>
+                                                        <m>\mbox{$P_0$ = } \scalebox{1.5}{\ensuremath{\boxed{ \phantom{\dfrac{a}{b}} \hspace{5cm} }}}</m>
+                                                </p>
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p>
 								What is <m>r</m>? (Leave the value for <m>r</m> in terms of a logarithm.)
 							</p>
-							<p>
-								<m>\mbox{$r$ = } \scalebox{1.5}{\ensuremath{\boxed{ \phantom{\dfrac{a}{b}} \hspace{5cm} }}}</m>
-							</p>
-						</statement>
-					</choice>
-					<choice>
-						<statement>
-							<p>
+                                                <p>
+                                                        <m>\mbox{$r$ = } \scalebox{1.5}{\ensuremath{\boxed{ \phantom{\dfrac{a}{b}} \hspace{5cm} }}}</m>
+                                                </p>
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p>
 								Knowing that the pool is being emptied, is <m>r</m> positive or negative?
 							</p>
-						</statement>
-					</choice>
-				</choices>
-		</task>
-	</exercise>
-	<exercise>
-		<introduction>
-			<p>
+                                        </statement>
+                                </choice>
+                        </choices>
+                </task>
+        </exercise>
+        <exercise>
+                <introduction>
+                        <p>
 				Consider the following polynomial <me>q(x)= 3x^3+16x^2+3x-10</me> Suppose we know <m>q(x)</m> has a root <m>x=-1</m>, write <m>q(x)</m> as a product of linear factors.
 			</p>
-			<p>
-				<m>\mbox{$q(x)$ = } \scalebox{1.5}{\ensuremath{\boxed{ \phantom{\dfrac{a}{b}} \hspace{5cm} }}}</m>
-			</p>
-		</introduction>
-	</exercise>
-	<exercise>
-		<introduction>
-			<p>
+                        <p>
+                                <m>\mbox{$q(x)$ = } \scalebox{1.5}{\ensuremath{\boxed{ \phantom{\dfrac{a}{b}} \hspace{5cm} }}}</m>
+                        </p>
+                </introduction>
+        </exercise>
+        <exercise>
+                <introduction>
+                        <p>
 				For the following system of linear equations, determine whether or not the system has any solutions. If the system has a solution, state it as an ordered pair <m>(x,y)</m>; if the systems has infinitely many solutions, write your solutions as an ordered pair in terms of the variable <m>x</m> only. <me>\begin{cases}
 							4 x  +  3 y &amp; = 7 \\
 							- x  +  2 y &amp; = 5
 							\end{cases}</me>
-			</p>
-			<p>
-				<m>(x,y) = \scalebox{1.5}{\ensuremath{\boxed{ \phantom{\dfrac{a}{b}} \hspace{5cm} }}}</m>
-			</p>
-		</introduction>
-	</exercise>
+                        </p>
+                        <p>
+                                <m>(x,y) = \scalebox{1.5}{\ensuremath{\boxed{ \phantom{\dfrac{a}{b}} \hspace{5cm} }}}</m>
+                        </p>
+                </introduction>
+        </exercise>
 </worksheet>
