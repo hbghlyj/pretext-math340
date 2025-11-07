@@ -481,6 +481,17 @@ local function is_choice_list(content)
     or content:find("&lt;m&gt;PTXSINGLE&lt;/m&gt;") or content:find("&lt;m&gt;PTXMULTI&lt;/m&gt;")
 end
 
+local function extract_plain_text(text)
+  text = text or ""
+  text = text:gsub("<[^>]+>", " ")
+  text = text:gsub("&[A-Za-z]+;", " ")
+  text = text:gsub("&#x[%x]+;", " ")
+  text = text:gsub("&#%d+;", " ")
+  text = text:gsub("\\[%a]+", " ")
+  text = text:gsub("%s+", " ")
+  return trim(text:lower())
+end
+
 local function render_plain_list(tag, content, indent)
   local lines = {}
   local open_tag = tag == "ol" and "ol" or "ul"
@@ -503,10 +514,39 @@ local function render_plain_list(tag, content, indent)
   return table.concat(lines, "\n")
 end
 
-local function render_choices(list_content, indent)
+local function determine_forced_mode(list_content, context_text)
+  if not list_content then
+    return nil
+  end
+  local has_multi = list_content:find("<m>PTXMULTI</m>")
+    or list_content:find("&lt;m&gt;PTXMULTI&lt;/m&gt;")
+  local has_single = list_content:find("<m>PTXSINGLE</m>")
+    or list_content:find("&lt;m&gt;PTXSINGLE&lt;/m&gt;")
+  if not has_multi or has_single then
+    return nil
+  end
+  local plain = extract_plain_text(context_text or "")
+  if plain == "" then
+    return "no"
+  end
+  if plain:find("select%s+all") or plain:find("choose%s+all")
+    or plain:find("mark%s+all") or plain:find("all%s+that%s+apply")
+    or plain:find("all%s+of%s+the%s+following")
+    or plain:find("select%s+every") or plain:find("choose%s+each") then
+    return "yes"
+  end
+  return "no"
+end
+
+local function render_choices(list_content, indent, forced_mode)
   local has_multi = list_content:find("<m>PTXMULTI</m>") or list_content:find("&lt;m&gt;PTXMULTI&lt;/m&gt;")
   local has_single = list_content:find("<m>PTXSINGLE</m>") or list_content:find("&lt;m&gt;PTXSINGLE&lt;/m&gt;")
-  local multiple = (has_multi and not has_single) and "yes" or "no"
+  local multiple
+  if forced_mode == "yes" or forced_mode == "no" then
+    multiple = forced_mode
+  else
+    multiple = (has_multi and not has_single) and "yes" or "no"
+  end
   local lines = {}
   table.insert(lines, indent_line('<choices multiple-correct="' .. multiple .. '">', indent))
   for _, entry in ipairs(parse_list_items(list_content)) do
@@ -596,7 +636,17 @@ local function extract_outermost_ol(source)
   return nil
 end
 
-local function convert_task(entry, indent, exercise_index, task_index)
+local function collect_statement_text(parts)
+  local fragments = {}
+  for _, part in ipairs(parts) do
+    if part.type == "p" and part.content then
+      table.insert(fragments, part.content)
+    end
+  end
+  return trim(table.concat(fragments, " "))
+end
+
+local function convert_task(entry, indent, exercise_index, task_index, context_text)
   local entry_kind = "item"
   local entry_content = entry
   if type(entry) == "table" then
@@ -623,6 +673,7 @@ local function convert_task(entry, indent, exercise_index, task_index)
   local statement_parts = {}
   local hint_parts = {}
   local choices_markup = nil
+  local choice_list_content = nil
   local workspace
   for index, block in ipairs(blocks) do
     if block.type == "p" then
@@ -642,7 +693,7 @@ local function convert_task(entry, indent, exercise_index, task_index)
       end
     elseif block.type == "list" then
       if is_choice_list(block.content) then
-        choices_markup = render_choices(block.content, indent + 2)
+        choice_list_content = block.content
       else
         table.insert(statement_parts, {type = "list", tag = block.tag, content = block.content})
       end
@@ -651,6 +702,19 @@ local function convert_task(entry, indent, exercise_index, task_index)
         workspace = block.amount
       end
     end
+  end
+
+  local statement_text = collect_statement_text(statement_parts)
+  local combined_context = context_text or ""
+  if combined_context ~= "" and statement_text ~= "" then
+    combined_context = combined_context .. " " .. statement_text
+  elseif statement_text ~= "" then
+    combined_context = statement_text
+  end
+
+  if choice_list_content then
+    local forced_mode = determine_forced_mode(choice_list_content, combined_context)
+    choices_markup = render_choices(choice_list_content, indent + 2, forced_mode)
   end
 
   if (not workspace or workspace == "") and exercise_index and task_index then
@@ -691,7 +755,11 @@ local function convert_task(entry, indent, exercise_index, task_index)
     table.insert(lines, indent_line("</hint>", indent + 1))
   end
   table.insert(lines, indent_line("</task>", indent))
-  return table.concat(lines, "\n")
+  local next_context = combined_context
+  if next_context == "" then
+    next_context = context_text
+  end
+  return table.concat(lines, "\n"), next_context
 end
 
 local function convert_exercise(item, indent, exercise_index)
@@ -718,6 +786,7 @@ local function convert_exercise(item, indent, exercise_index)
       end
     end
   end
+  local intro_context = trim(table.concat(intro_blocks, " "))
   for _, hint_text in ipairs(intro_hint_blocks) do
     table.insert(task_blocks, {kind = "intro_hint", content = hint_text})
   end
@@ -739,8 +808,11 @@ local function convert_exercise(item, indent, exercise_index)
     end
     table.insert(lines, indent_line("</introduction>", indent + 1))
   end
+  local context_text = intro_context
   for idx, entry in ipairs(task_blocks) do
-    table.insert(lines, convert_task(entry, indent + 1, exercise_index, idx))
+    local task_markup, updated_context = convert_task(entry, indent + 1, exercise_index, idx, context_text)
+    table.insert(lines, task_markup)
+    context_text = updated_context or context_text
   end
   table.insert(lines, indent_line("</exercise>", indent))
   return table.concat(lines, "\n")
