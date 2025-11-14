@@ -1,0 +1,184 @@
+\documentclass[11pt]{exam}
+\usepackage{tikz}
+\usetikzlibrary {plotmarks}
+\usepackage{multicol}
+\usepackage{subfigure,amsmath,amssymb}
+\usepackage{systeme}
+
+\newcommand{\class}{MATH 96}
+\newcommand{\term}{Fall 2024}
+\newcommand{\examnum}{Final Exam} 
+\newcommand{\examdate}{12/16/2024}
+\newcommand{\timelimit}{120 Minutes}
+
+\parindent 0ex
+
+\begin{document} 
+
+\pagestyle{head}
+\firstpageheader{}{}{}
+\runningheader{\class}{\examnum\ - Page \thepage\ of \numpages}{\examdate}
+\runningheadrule
+
+\begin{flushright}
+\begin{tabular}{p{2.1in} r l}
+\textbf{\class} & \textbf{First and Last Name:}     & \makebox[2.2in]{\hrulefill}\\
+\textbf{\term}  &                    &\\
+\textbf{\examnum} &  & \\
+ & \textbf{Section:} & \makebox[2.2in]{\hrulefill}\\
+
+\end{tabular}\\
+\end{flushright}
+\rule[1ex]{\textwidth}{.1pt}
+
+This exam contains \numpages\ pages (including this cover page) and
+\numquestions\ problems.  Check to see if any pages are missing.  Enter
+your name and your section above.
+\vspace{4pt}
+You may \emph{not} use textbooks, course notes, cell phones, or calculators during this exam.
+\vspace{4pt}
+You are required to show your work on each problem on this exam, and the following rules apply:
+\vspace{4pt}
+\begin{itemize}
+
+\item \textbf{Organize your work in a reasonable, neat, and coherent way.} Work that is jumbled, disorganized, or lacks clear reasoning will receive little credit.  
+
+\item \textbf{Partial credit may be given.} Any answer must be supported by calculations, explanation, and/or algebraic work to receive full credit.  Unsupported answers will not receive full credit, but well-argued, incorrect solutions may earn partial credit.
+
+\item \textbf{If you require more space, use the back of a page.} Clearly indicate when you do this below the problem.
+\end{itemize}
+
+Do not write in the table to the right.
+
+\hfill
+\begin{minipage}[t]{2.3in}
+\vspace{0pt}
+\gradetablestretch{2}
+\vqword{Problem}
+\addpoints
+\gradetable[v][pages]
+\end{minipage}
+%=======================================================================================================================
+\newpage
+\begin{questions}
+%=======================================================================================================================
+\addpoints
+\question[8] Simplify and reduce each expression to a single fraction.
+\noaddpoints
+\begin{multicols}{2}
+\begin{parts}
+\part[4] $\displaystyle \left(\frac{2}{3}-\frac{1}{4}\right) \cdot \left(\frac{2}{5}+\frac{2}{3}\right)$
+\vspace{2.25in}
+\part[4] $\displaystyle  \frac{(-3)^2-(-2)^2}{-3^2-(-2^2-3)}$
+\end{parts}
+\addpoints
+\end{multicols}
+\vspace{4in}
+%=======================================================================================================================
+\addpoints
+\question[6] Solve~~$\displaystyle \frac{1}{2}\left\vert -x + 1 \right\vert = 4$.
+\vspace{4in}
+%=======================================================================================================================
+\question[15] Consider the line with the equation $-x + 2y -2 = 0$.
+\noaddpoints
+\begin{parts}
+\part[6] Find the slope and the $y$-intercepts of the line above.
+\vspace{1.5in}
+\part[4] Determine whether the line $\displaystyle y -2 = -2(x+3)$ is parallel, perpendicular, or neither to the line above.  Explain your reasoning.
+\vspace{1.75in}
+\part[5] Graph the lines $-x + 2y -2 = 0$ and  $\displaystyle y -2 = -2(x+3)$. \emph{Clearly label two points on each line.}
+
+\begin{figure}[!ht]
+\vspace{2pt}
+\centering
+\begin{tikzpicture}[scale=.9]
+\draw[dotted] (-7.5,-4.5) grid (7.5,4.5); 
+\draw[<->] (-7.5,0) -- (7.5,0)node[anchor=south] {\footnotesize{$x$}};
+\draw[<->] (0,-4.5)--(0,4.5)node[anchor=west] {\footnotesize{$y$}};
+\foreach \x in {-7,-6,-5,-4,-3,-2,-1,1,2,3,4,5,6,7}
+    \draw (\x cm, 2pt) -- (\x cm, -2pt) node[anchor=north] {\footnotesize{$\x$}};
+\foreach \y in {-4,-3,-2,-1,1,2,3,4}
+    \draw (2pt, \y cm) -- (-2pt, \y cm) node[anchor=east] {\footnotesize{$\y$}}; 
+\end{tikzpicture}
+\end{figure}
+\end{parts}
+\addpoints
+%=======================================================================================================================
+\newpage
+\question[16] Determine the solutions for the provided inequalities and represent the solution sets using interval notation.
+
+\noaddpoints
+\begin{parts}
+
+\part[8] $\displaystyle 6 \geq 2\left\vert -1  + x \right\vert $
+
+\vspace{2.5in}
+\part[8] $\displaystyle 0 \leq 2x-1 < 3$
+
+
+\vspace{2.5in}
+
+\end{parts}
+\addpoints
+
+%=======================================================================================================================
+\question[10] Perform the indicated operations. \emph{Simplify the expression as much as possible.}
+\vspace{-8pt}
+\noaddpoints
+\begin{parts}
+\begin{multicols}{2}
+\part[5] $\displaystyle \frac{3}{2x} - \frac{y+1}{3xy}$
+\vspace{4.2in}
+\part[5] $\displaystyle \frac{1}{t - 1} - \frac{2}{t+2}$
+\end{multicols}
+\vspace{4.2in}
+\end{parts}
+\addpoints
+
+%=======================================================================================================================
+\question[15] Expand the following expressions.
+\noaddpoints
+\vspace{2.5pt}
+\begin{parts}
+\part[7] $-(x+1)(-4-3x)$
+\vspace{2in}
+
+\part[8] $(k+1)(k^2-k+1)$
+\vspace{2in}
+\end{parts}
+\addpoints
+
+%=======================================================================================================================
+\question[10] Find solutions to the given quadratic equations by any appropriate method.
+\noaddpoints
+\vspace{2pt}
+\begin{parts}
+\part[5] $2x^2+2x=12$
+\vspace{2in}
+\part[5] $-x^2 = 4x - 5$
+\vspace{2in}
+\end{parts}
+\addpoints
+
+%=======================================================================================================================
+
+\question[15] For the function $f(x)=2x^2-5x+3$, determine the following.
+\noaddpoints
+\vspace{2pt}
+\begin{parts}
+\part[2] $y$-intercept
+\vspace{.5in}
+\part[5] The vertex form $f(x)=a(x-h)^2+k$, with $a, h, k$ values.
+\vspace{2in}
+\part[8] $x$-intercepts
+\vspace{1.5in}
+
+\end{parts}
+\addpoints
+
+\question[5] Find the restricted values of $\displaystyle \frac{x+3}{x^2+4x+3}$ and simplify the rational expression as much as possible.
+\addpoints
+\end{questions}
+\end{document}
+
+

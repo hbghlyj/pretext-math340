@@ -1,0 +1,148 @@
+\documentclass[11pt]{exam}
+\usepackage{tikz}
+\usetikzlibrary {plotmarks}
+\usepackage{multicol}
+\usepackage{subfigure}
+
+\newcommand{\class}{MATH 96}
+\newcommand{\term}{Spring 2025}
+\newcommand{\examnum}{Exam 1} 
+\newcommand{\examdate}{2/19/25}
+\newcommand{\timelimit}{60 Minutes}
+
+\parindent 0ex
+
+\begin{document} 
+
+\pagestyle{head}
+\firstpageheader{}{}{}
+\runningheader{\class}{\examnum\ - Page \thepage\ of \numpages}{\examdate}
+\runningheadrule
+
+\begin{flushright}
+\begin{tabular}{p{2.2in} r l}
+\textbf{\class} & \textbf{Name:}     & \makebox[2.7in]{\hrulefill}\\
+\textbf{\term}  &                    &\\
+\textbf{\examnum} &  & \\
+ & \textbf{Section:} & \makebox[2.7in]{\hrulefill}\\
+
+\end{tabular}\\
+\end{flushright}
+\rule[1ex]{\textwidth}{.1pt}
+
+This exam contains \numpages\ pages (including this cover page) and
+\numquestions\ problems.  Check to see if any pages are missing.  Enter
+your name and your section above.
+\vspace{0.2in}
+
+You may \emph{not} use textbooks, course notes, cell phones, or calculators during this exam.
+\vspace{0.2in}
+
+You are required to show your work on each problem on this exam, and the following rules apply:
+\vspace{0.2in}
+
+\begin{minipage}[t]{3.7in}
+\vspace{0pt}
+\begin{itemize}
+
+\item \textbf{Organize your work in a reasonable, neat, and coherent way.} Work that is jumbled, disorganized, or lacks clear reasoning will receive little credit.  
+
+\item \textbf{Partial credit may be given.} Any answer must be supported by calculations, explanation, and/or algebraic work to receive full credit.  Unsupported answers will not receive full credit, but well-argued, incorrect solutions may earn partial credit.
+
+\item \textbf{If you require more space, use the back of a page.} Clearly indicate when you do this below the problem.
+\end{itemize}
+
+Do not write in the table to the right.
+\end{minipage}
+\hfill
+\begin{minipage}[t]{2.3in}
+\vspace{0pt}
+\gradetablestretch{2}
+\vqword{Problem}
+\addpoints
+\gradetable[v][pages]
+\end{minipage}
+%=======================================================================================================================
+\newpage
+\begin{questions}
+%=======================================================================================================================
+\question[15] Simplify and reduce each expression to a single fraction.
+\begin{multicols}{2}
+\begin{parts}
+\noaddpoints
+\part[8] $\displaystyle \left(\frac{2}{3}-\frac{1}{4}\right) \div\left(\frac{3}{4}+\frac{1}{3}\right)$
+\vspace{2.25in}
+\part[7] $\displaystyle  \frac{-3-(-1^2)}{-(-2)^2+(3-2)^2}$
+\end{parts}
+\addpoints
+\end{multicols}
+\vspace{3.5in}
+\question[15] Solve the equation $\displaystyle \frac{5}{4}+\frac{4}{3}x = \frac{1}{4}$
+\vspace{4in}
+\addpoints
+
+\question[10] Simplify the expression as much as possible.
+\[
+- (x+2y) - 2(-3y-2x) + 2y
+\]
+\vspace{3.5in}
+
+\question[15] Find the equation of the line in slope-intercept form that passes through the points $(1,-1)$ and $(-1,3)$.
+\vspace{3.5in}
+
+\newpage
+\question[20] Consider the line with the equation $-2x + 4y = -8.$
+\noaddpoints
+\begin{parts}
+\part[5] Find the slope of the line above.
+\vspace{1in}
+\part[5] Find the $x$-intercept and $y$-intercept of the line above.
+\vspace{1in}
+\part[5] Determine whether the line $\displaystyle y - 1 = -2(x+2)$ is parallel, perpendicular, or neither to the line above.  Explain your reasoning.
+\vspace{1.75in}
+\part[5] Graph the line $-2x + 4y =-8$. \emph{Clearly label any two points with $P$ and $Q$ on the line.}
+\begin{figure}[ht]
+\vspace{-12pt}
+\centering
+\begin{tikzpicture}[scale=.9]
+\draw[dotted] (-7.5,-4.5) grid (7.5,4.5); 
+\draw[<->] (-7.5,0) -- (7.5,0)node[anchor=south] {\footnotesize{$x$}};
+\draw[<->] (0,-4.5)--(0,4.5)node[anchor=west] {\footnotesize{$y$}};
+\foreach \x in {-7,-6,-5,-4,-3,-2,-1,1,2,3,4,5,6,7}
+    \draw (\x cm, 2pt) -- (\x cm, -2pt) node[anchor=north] {\footnotesize{$\x$}};
+\foreach \y in {-4,-3,-2,-1,1,2,3,4}
+    \draw (2pt, \y cm) -- (-2pt, \y cm) node[anchor=east] {\footnotesize{$\y$}}; 
+\end{tikzpicture}
+\end{figure}
+\end{parts}
+\addpoints
+\newpage
+%=======================================================================================================================
+
+\vspace{2.75in}
+\emph{\textbf{Clearly define your variables. Solve each problem by setting up an algebraic equation and then use that equation to find the solution. There’s no need to simplify any numerical fractions.}}
+\question[10] Find three consecutive even integers whose sum is 222.
+
+\vspace{2.75in}
+\question[15] A store is offering a 25\% discount on a jacket that originally costs \$240. 
+
+\begin{parts}
+    
+\noaddpoints
+    \part[10] What is the amount of the discount?
+    \vspace{3in}
+    \part[5] What is the sale price of the jacket after the discount is applied?
+\end{parts}
+\addpoints
+%\newpage
+%==============================================================================================================
+%\emph{Clearly identify your variables.  Solve each problem by setting up an equation algebraically.  Then use the equation to solve the problem.  You do not need to simplify any numeric fraction.}
+%\question[12] Tony Stark flew on an airplane from New York City to London. It took him 5
+%hours to fly with constant wind, and 7 hours on the return flight against the same constant
+%wind. If the speed of the wind is 40 mph, find the speed of the plane in still air.
+%=======================================================================================================================
+\end{questions}
+\end{document}
+
+
+}
