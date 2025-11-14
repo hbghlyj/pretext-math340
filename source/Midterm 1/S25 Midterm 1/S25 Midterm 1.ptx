@@ -224,13 +224,11 @@
                 </task>
         </exercise>
         <exercise>
-                <task workspace="0.5in">
-                        <statement>
-                                <p>
-                                        Solve for <m>x</m>: <m>4x^3-3x^2+x=0</m>. Clearly explain your answer.
-                                </p>
-                        </statement>
-                </task>
+                <statement>
+                        <p>
+                                Solve for <m>x</m>: <m>4x^3-3x^2+x=0</m>. Clearly explain your answer.
+                        </p>
+                </statement>
                 <solution>
                         <p>
                                 Factor out <m>x</m>:
