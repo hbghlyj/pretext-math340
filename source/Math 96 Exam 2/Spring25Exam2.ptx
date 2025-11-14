@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<worksheet xml:id="Math-96-Exam-2-Spring25Exam2" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Math-96-Exam-2-Spring25Exam2</title>
+	<introduction>
+		<!-- div attr= class="flushright"-->
+			<table>
+				<title></title>
+				<tabular>
+				<row class="odd">
+					<cell halign="left"><term>MATH 96</term></cell>
+					<cell halign="right"><term>Name:</term></cell>
+					<cell halign="left"></cell>
+				</row>
+				<row class="even">
+					<cell halign="left"><term>Spring 2025</term></cell>
+					<cell halign="right"></cell>
+					<cell halign="left"></cell>
+				</row>
+				<row class="odd">
+					<cell halign="left"><term>Exam 2</term></cell>
+					<cell halign="right"></cell>
+					<cell halign="left"></cell>
+				</row>
+				<row class="even">
+					<cell halign="left"></cell>
+					<cell halign="right"><term>Section:</term></cell>
+					<cell halign="left"></cell>
+				</row>
+				</tabular>
+			</table>
+			<p>
+				<!-- linebreak -->
+			</p><!--</div attr= class="flushright">-->
+		<!-- Horizontal Rule Not Implimented -->
+			<p>
+				This exam contains  pages (including this cover page) and  problems. Check to see if any pages are missing. Enter your name and your section above.
+			</p>
+			<p>
+				You may <em>not</em> use textbooks, course notes, cell phones, or calculators during this exam.
+			</p>
+			<p>
+				You are required to show your work on each problem in this exam, and the following rules apply:
+			</p>
+			<ul>
+				<li>
+					<p>
+							<term>Organize your work in a reasonable, neat, and coherent way.</term> Work that is jumbled, disorganized, or lacks clear reasoning will receive little credit.
+						</p>
+				</li>
+				<li>
+					<p>
+							<term>Partial credit may be given.</term> Any answer must be supported by calculations, explanation, and/or algebraic work to receive full credit. Unsupported answers will not receive full credit, but well-argued, incorrect solutions may earn partial credit.
+						</p>
+				</li>
+				<li>
+					<p>
+							<term>If you require more space, use the back of a page.</term> Clearly indicate when you do this below the problem.
+						</p>
+				</li>
+			</ul>
+			<p>
+				Do not write in the table to the right.
+			</p>
+	</introduction>
+	<exercise>
+		<introduction>
+			<p>
+				Find solutions to the given linear inequalities and express the solution sets using both interval notation and number line representation.
+			</p>
+		</introduction>
+		<task workspace="2.2in">
+			<statement>
+				<p>
+					<m>\displaystyle 2 x - 6 &gt; -5x +8</m>
+				</p>
+				<p>
+					Solution set in interval notation:
+				</p>
+				<p>
+					Solution set on the number line:
+				</p>
+			</statement>
+		</task>
+		<task workspace="2.2in">
+			<statement>
+				<p>
+					<m>\displaystyle \frac{1}{3}x - 5 \leq -\frac{1}{2}x</m>
+				</p>
+				<p>
+					Solution set in interval notation:
+				</p>
+				<p>
+					Solution set on the number line:
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<statement>
+			<p>
+				Decide whether each equation is <em>true</em>(T) or <em>false</em>(F). Provide a brief explanation if it is found to be <em>false.</em>
+			</p>
+		</statement>
+	</exercise>
+	<exercise>
+		<statement>
+			<p>
+				Solve  <m>\displaystyle \frac{2}{3}\left\vert 5-x \right\vert = 4</m>.
+			</p>
+		</statement>
+	</exercise>
+	<exercise>
+		<statement>
+			<p>
+				Simplify each expression as much as possible, ensuring all exponents are <term>positive</term>.
+			</p>
+		</statement>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Find solutions to the given inequalities and express the solution sets using interval notation.
+			</p>
+		</introduction>
+		<task workspace="2.5in">
+			<statement>
+				<p>
+					<m>\displaystyle 6 &gt; 3|2x + 1|</m>
+				</p>
+			</statement>
+		</task>
+		<task workspace="2.5in">
+			<statement>
+				<p>
+					<m>\displaystyle -3 \ge 2x + 1 &gt; -1</m>
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				A community play sold 200 tickets for a show at the Town Theater. Child tickets were priced at $5, and adult tickets cost $10. The total revenue from ticket sales was $1,500. How many child and adult tickets were sold?
+			</p>
+		</introduction>
+		<task workspace="2in">
+			<statement>
+				<p>
+					Let <m>x</m> be the number of child tickets and <m>y</m> be the number of adult tickets. Set up the system of two linear equations involving <m>x</m> and <m>y</m>.
+				</p>
+			</statement>
+		</task>
+		<task workspace="3in">
+			<statement>
+				<p>
+					Solve the system of two linear equations using the addition/elimination method.
+				</p>
+			</statement>
+		</task>
+		<task workspace="3in">
+			<statement>
+				<p>
+					Solve the system of two linear equations using the substitution method.
+				</p>
+			</statement>
+		</task>
+	</exercise>
+</worksheet>

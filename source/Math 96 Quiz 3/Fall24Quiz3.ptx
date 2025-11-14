@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<worksheet xml:id="Math-96-Quiz-3-Fall24Quiz3" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Math-96-Quiz-3-Fall24Quiz3</title>
+	<introduction>
+		<p>
+				<term>MATH 96</term> <term>Name:</term><!-- linebreak --><term>Fall 2024</term><!-- linebreak --><term>Quiz 3</term><!-- linebreak --><term>25 Minutes</term>
+			</p>
+		<!-- Horizontal Rule Not Implimented -->
+			<p>
+				You may <em>not</em> use textbooks, course notes, or a calculator during this exam. Organize your work in a reasonable, neat, and coherent way. Any answer must be supported by calculations, explanation, and/or algebraic work to receive full credit. Partial credit may be given.<!-- linebreak -->
+			</p>
+		<!-- Horizontal Rule Not Implimented -->
+	</introduction>
+	<exercise>
+		<statement>
+			<p>
+				Simplify the expression <m>-27^{\frac{4}{3}}</m>.
+			</p>
+		</statement>
+	</exercise>
+	<exercise>
+		<statement>
+			<p>
+				Simplify <m>\displaystyle \sqrt{ \frac{8x^2y^4}{4x^4 y^2} }</m>
+			</p>
+		</statement>
+	</exercise>
+	<exercise>
+		<statement>
+			<p>
+				Expand and simplify the expression <m>(-2-x)(-2+x)</m>
+			</p>
+		</statement>
+	</exercise>
+	<exercise>
+		<statement>
+			<p>
+				Divide the expression <m>(x^3-6x^2-4x+2)\div (x+1)</m> and find the quotient and the remainder.
+			</p>
+		</statement>
+	</exercise>
+</worksheet>

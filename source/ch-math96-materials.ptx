@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter xml:id="math96-assessments" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Math 96 Assessments</title>
+
+  <section xml:id="math96-quizzes">
+    <title>Quizzes</title>
+
+    <subsection xml:id="math96-quizzes-fall-2024">
+      <title>Fall 2024</title>
+      <xi:include href="./Math%2096%20Quiz%201/Fall24Quiz1.ptx"/>
+      <xi:include href="./Math%2096%20Quiz%202/Fall24Quiz2.ptx"/>
+      <xi:include href="./Math%2096%20Quiz%203/Fall24Quiz3.ptx"/>
+    </subsection>
+
+    <subsection xml:id="math96-quizzes-spring-2025">
+      <title>Spring 2025</title>
+      <xi:include href="./Math%2096%20Quiz%201/Spring25Quiz1.ptx"/>
+      <xi:include href="./Math%2096%20Quiz%202/Spring25Quiz2.ptx"/>
+      <xi:include href="./Math%2096%20Quiz%203/Spring25Quiz3.ptx"/>
+    </subsection>
+  </section>
+
+  <section xml:id="math96-exams">
+    <title>Exams</title>
+
+    <subsection xml:id="math96-exams-fall-2024">
+      <title>Fall 2024</title>
+      <xi:include href="./Math%2096%20Exam%201/Fall2024Exam1.ptx"/>
+      <xi:include href="./Math%2096%20Exam%202/Fall24Exam2.ptx"/>
+      <xi:include href="./Math%2096%20Exam%203/Fall24Exam3.ptx"/>
+      <xi:include href="./Math%2096%20Final%20Exam/Fall24Final.ptx"/>
+    </subsection>
+
+    <subsection xml:id="math96-exams-spring-2025">
+      <title>Spring 2025</title>
+      <xi:include href="./Math%2096%20Exam%201/Spring2025Exam1.ptx"/>
+      <xi:include href="./Math%2096%20Exam%202/Spring25Exam2.ptx"/>
+      <xi:include href="./Math%2096%20Exam%203/Spring25Exam3.ptx"/>
+      <xi:include href="./Math%2096%20Final%20Exam/Spring25Final.ptx"/>
+    </subsection>
+  </section>
+</chapter>

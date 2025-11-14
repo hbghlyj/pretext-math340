@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<worksheet xml:id="Math-96-Quiz-3-Spring25Quiz3" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Math-96-Quiz-3-Spring25Quiz3</title>
+	<introduction>
+		<p>
+				<term>MATH 96</term> <term>Name:</term><!-- linebreak --><term>Spring 2025</term><!-- linebreak --><term>Quiz 3</term><!-- linebreak --><term>25 Minutes</term>
+			</p>
+		<!-- Horizontal Rule Not Implimented -->
+			<p>
+				You may <em>not</em> use textbooks, course notes, or a calculator during this exam. Organize your work in a reasonable, neat, and coherent way. Any answer must be supported by calculations, explanation, and/or algebraic work to receive full credit. Partial credit may be given.<!-- linebreak -->
+			</p>
+		<!-- Horizontal Rule Not Implimented -->
+	</introduction>
+	<exercise>
+		<statement>
+			<p>
+				Simplify the expression <m>81^{\frac{3}{4}}</m>.
+			</p>
+		</statement>
+	</exercise>
+	<exercise>
+		<statement>
+			<p>
+				Simplify <m>\displaystyle \sqrt{ \frac{25a^6b^{-4}}{100a^2b^8} }</m> so that the final answer includes only positive powers. Assume all variables represent positive real numbers.
+			</p>
+		</statement>
+	</exercise>
+	<exercise>
+		<statement>
+			<p>
+				Expand and simplify the expression <m>(-2-3x)(-2+3x)</m>
+			</p>
+		</statement>
+	</exercise>
+	<exercise>
+		<statement>
+			<p>
+				Divide the expression <m>(x^3 + 2x^2 - 5x - 3) \div (x - 2)</m> and find the quotient and the remainder.
+			</p>
+		</statement>
+	</exercise>
+</worksheet>
