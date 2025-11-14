@@ -231,109 +231,185 @@
                                 </p>
                         </statement>
                 </task>
+        </exercise>
+        <exercise>
+                <introduction>
+                        <p>
+                                Calculate the derivative of each function. You do not need to simplify your answers.
+                        </p>
+                </introduction>
                 <task workspace="1in">
                         <statement>
                                 <p>
-                                        Calculate the derivative of each function. You do not need to simplify your answers.
-                                </p>
-                                <p>
-                                        (a) <m>f(x)=\dfrac{x}{x^3+1}</m>
-                                </p>
-                                <p>
-                                        (b) <m>g(x)=\dfrac{3}{x^2}-\sqrt{x}+5</m>
-                                </p>
-                                <p>
-                                        (c) <m>h(x)=\sqrt[5]{x^2+1}</m>
-                                </p>
-                                <p>
-                                        (d) <m>F(x)=(3x^2-1)^8(2x+1)^7</m>
+                                        <m>f(x)=\dfrac{x}{x^3+1}</m>
                                 </p>
                         </statement>
                 </task>
                 <task workspace="1in">
                         <statement>
                                 <p>
-                                        The function <m>f(x)</m> is defined on the interval <m>[-2,2]</m>. Its graph is shown below. Based on the graph, answer the following questions.
-                                </p>
-                                <p>
-                                        (a) Find <m>\displaystyle\lim_{x\to 2^-} f(x)</m>, if possible. If not possible, write <term>DNE</term>.
-                                </p>
-                                <p>
-                                        (b) Find <m>\displaystyle\lim_{x\to 0^+} f(x)</m>, if possible. If not possible, write <term>DNE</term>.
-                                </p>
-                                <p>
-                                        (c) Determine whether <m>f(x)</m> is discontinuous at the points <m>x=-1</m>, <m>x=0</m>, and <m>x=1</m>. Explain your answer.
+                                        <m>g(x)=\dfrac{3}{x^2}-\sqrt{x}+5</m>
                                 </p>
                         </statement>
                 </task>
                 <task workspace="1in">
                         <statement>
                                 <p>
-                                        Find <m>f''(x)</m> for <m>f(x)=\sqrt[3]{x}-4x</m>. Simplify your answer and show all work.
+                                        <m>h(x)=\sqrt[5]{x^2+1}</m>
                                 </p>
                         </statement>
                 </task>
                 <task workspace="1in">
                         <statement>
                                 <p>
-                                        Suppose a manufacturer determines that their cost function <m>C(x)</m> (in dollars) for producing <m>x</m> products is <m>C(x)=8x^{3/2}+9x</m>.
+                                        <m>F(x)=(3x^2-1)^8(2x+1)^7</m>
                                 </p>
+                        </statement>
+                </task>
+        </exercise>
+        <exercise>
+                <introduction>
+                        <p>
+                                The function <m>f(x)</m> is defined on the interval <m>[-2,2]</m>. Its graph is shown below. Based on the graph, answer the following questions.
+                        </p>
+                </introduction>
+                <task workspace="1in">
+                        <statement>
                                 <p>
-                                        (a) Find the marginal cost function.
-                                </p>
-                                <p>
-                                        (b) Find the average cost function.
-                                </p>
-                                <p>
-                                        (c) Find the marginal average cost when <m>x=16</m>. Simplify your answer and show all work.
+                                        Find <m>\displaystyle\lim_{x\to 2^-} f(x)</m>, if possible. If not possible, write <term>DNE</term>.
                                 </p>
                         </statement>
                 </task>
                 <task workspace="1in">
                         <statement>
                                 <p>
-                                        Find each limit. Show all work and simplify your final answers.
-                                </p>
-                                <p>
-                                        (a) <m>\displaystyle\lim_{x\to 2} \dfrac{x+1}{\sqrt{x-1}}</m>
-                                </p>
-                                <p>
-                                        (b) <m>\displaystyle\lim_{x\to 2} \dfrac{x^2-4}{2x-4}</m>
-                                </p>
-                                <p>
-                                        (c) <m>\displaystyle\lim_{x\to -1} \dfrac{x^2+3x+2}{x^2-1}</m>
+                                        Find <m>\displaystyle\lim_{x\to 0^+} f(x)</m>, if possible. If not possible, write <term>DNE</term>.
                                 </p>
                         </statement>
                 </task>
                 <task workspace="1in">
                         <statement>
                                 <p>
-                                        Find the equation of the tangent line to the function <m>f(x)=x^3-4x+1</m> at <m>x=2</m>. Simplify your answer and show all work.
+                                        Determine whether <m>f(x)</m> is discontinuous at the points <m>x=-1</m>, <m>x=0</m>, and <m>x=1</m>. Explain your answer.
+                                </p>
+                        </statement>
+                </task>
+        </exercise>
+        <exercise>
+                <introduction>
+                        <p>
+                                Find <m>f''(x)</m> for <m>f(x)=\sqrt[3]{x}-4x</m>. Simplify your answer and show all work.
+                        </p>
+                </introduction>
+        </exercise>
+        <exercise>
+                <introduction>
+                        <p>
+                                Suppose a manufacturer determines that their cost function <m>C(x)</m> (in dollars) for producing <m>x</m> products is <m>C(x)=8x^{3/2}+9x</m>.
+                        </p>
+                </introduction>
+                <task workspace="1in">
+                        <statement>
+                                <p>
+                                        Find the marginal cost function.
                                 </p>
                         </statement>
                 </task>
                 <task workspace="1in">
                         <statement>
                                 <p>
-                                        The graph of the function <m>f(x)</m> is given below. Based on the graph, determine whether the following numbers are zero, positive, or negative.
+                                        Find the average cost function.
                                 </p>
+                        </statement>
+                </task>
+                <task workspace="1in">
+                        <statement>
                                 <p>
-                                        (a) <m>f'(0.5)</m>
+                                        Find the marginal average cost when <m>x=16</m>. Simplify your answer and show all work.
                                 </p>
+                        </statement>
+                </task>
+        </exercise>
+        <exercise>
+                <introduction>
+                        <p>
+                                Find each limit. Show all work and simplify your final answers.
+                        </p>
+                </introduction>
+                <task workspace="1in">
+                        <statement>
                                 <p>
-                                        (b) <m>f'(1)</m>
+                                        <m>\displaystyle\lim_{x\to 2} \dfrac{x+1}{\sqrt{x-1}}</m>
                                 </p>
+                        </statement>
+                </task>
+                <task workspace="1in">
+                        <statement>
                                 <p>
-                                        (c) <m>f'(2)</m>
+                                        <m>\displaystyle\lim_{x\to 2} \dfrac{x^2-4}{2x-4}</m>
                                 </p>
+                        </statement>
+                </task>
+                <task workspace="1in">
+                        <statement>
                                 <p>
-                                        (d) <m>f'(2.5)</m>
+                                        <m>\displaystyle\lim_{x\to -1} \dfrac{x^2+3x+2}{x^2-1}</m>
                                 </p>
+                        </statement>
+                </task>
+        </exercise>
+        <exercise>
+                <introduction>
+                        <p>
+                                Find the equation of the tangent line to the function <m>f(x)=x^3-4x+1</m> at <m>x=2</m>. Simplify your answer and show all work.
+                        </p>
+                </introduction>
+        </exercise>
+        <exercise>
+                <introduction>
+                        <p>
+                                The graph of the function <m>f(x)</m> is given below. Based on the graph, determine whether the following numbers are zero, positive, or negative.
+                        </p>
+                </introduction>
+                <task workspace="1in">
+                        <statement>
                                 <p>
-                                        (e) <m>f'(3)</m>
+                                        <m>f'(0.5)</m>
                                 </p>
+                        </statement>
+                </task>
+                <task workspace="1in">
+                        <statement>
                                 <p>
-                                        (f) <m>f'(4)</m>
+                                        <m>f'(1)</m>
+                                </p>
+                        </statement>
+                </task>
+                <task workspace="1in">
+                        <statement>
+                                <p>
+                                        <m>f'(2)</m>
+                                </p>
+                        </statement>
+                </task>
+                <task workspace="1in">
+                        <statement>
+                                <p>
+                                        <m>f'(2.5)</m>
+                                </p>
+                        </statement>
+                </task>
+                <task workspace="1in">
+                        <statement>
+                                <p>
+                                        <m>f'(3)</m>
+                                </p>
+                        </statement>
+                </task>
+                <task workspace="1in">
+                        <statement>
+                                <p>
+                                        <m>f'(4)</m>
                                 </p>
                         </statement>
                 </task>
