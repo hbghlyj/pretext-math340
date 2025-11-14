@@ -342,6 +342,28 @@
                                         <m>\displaystyle\lim_{x\to 2} \dfrac{x+1}{\sqrt{x-1}}</m>
                                 </p>
                         </statement>
+                        <choices multiple-correct="no">
+                                <choice>
+                                        <statement>
+                                                <p><m>3</m></p>
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p><m>4</m></p>
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p><term>DNE</term></p>
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p>None of the above.</p>
+                                        </statement>
+                                </choice>
+                        </choices>
                 </task>
                 <task workspace="1in">
                         <statement>
@@ -349,6 +371,28 @@
                                         <m>\displaystyle\lim_{x\to 2} \dfrac{x^2-4}{2x-4}</m>
                                 </p>
                         </statement>
+                        <choices multiple-correct="no">
+                                <choice>
+                                        <statement>
+                                                <p><m>1</m></p>
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p><m>2</m></p>
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p><term>DNE</term></p>
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p>None of the above.</p>
+                                        </statement>
+                                </choice>
+                        </choices>
                 </task>
                 <task workspace="1in">
                         <statement>
@@ -356,6 +400,28 @@
                                         <m>\displaystyle\lim_{x\to -1} \dfrac{x^2+3x+2}{x^2-1}</m>
                                 </p>
                         </statement>
+                        <choices multiple-correct="no">
+                                <choice>
+                                        <statement>
+                                                <p><m>-\dfrac{1}{2}</m></p>
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p><m>2</m></p>
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p><term>DNE</term></p>
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p>None of the above.</p>
+                                        </statement>
+                                </choice>
+                        </choices>
                 </task>
         </exercise>
         <exercise>
@@ -371,47 +437,149 @@
                                 The graph of the function <m>f(x)</m> is given below. Based on the graph, determine whether the following numbers are zero, positive, or negative.
                         </p>
                 </introduction>
-                <task workspace="1in">
+                <task>
                         <statement>
                                 <p>
                                         <m>f'(0.5)</m>
                                 </p>
                         </statement>
+                        <choices multiple-correct="no">
+                                <choice>
+                                        <statement>
+                                                <p>positive</p>
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p>negative</p>
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p>zero</p>
+                                        </statement>
+                                </choice>
+                        </choices>
                 </task>
-                <task workspace="1in">
+                <task>
                         <statement>
                                 <p>
                                         <m>f'(1)</m>
                                 </p>
                         </statement>
+                        <choices multiple-correct="no">
+                                <choice>
+                                        <statement>
+                                                <p>positive</p>
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p>negative</p>
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p>zero</p>
+                                        </statement>
+                                </choice>
+                        </choices>
                 </task>
-                <task workspace="1in">
+                <task>
                         <statement>
                                 <p>
                                         <m>f'(2)</m>
                                 </p>
                         </statement>
+                        <choices multiple-correct="no">
+                                <choice>
+                                        <statement>
+                                                <p>positive</p>
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p>negative</p>
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p>zero</p>
+                                        </statement>
+                                </choice>
+                        </choices>
                 </task>
-                <task workspace="1in">
+                <task>
                         <statement>
                                 <p>
                                         <m>f'(2.5)</m>
                                 </p>
                         </statement>
+                        <choices multiple-correct="no">
+                                <choice>
+                                        <statement>
+                                                <p>positive</p>
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p>negative</p>
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p>zero</p>
+                                        </statement>
+                                </choice>
+                        </choices>
                 </task>
-                <task workspace="1in">
+                <task>
                         <statement>
                                 <p>
                                         <m>f'(3)</m>
                                 </p>
                         </statement>
+                        <choices multiple-correct="no">
+                                <choice>
+                                        <statement>
+                                                <p>positive</p>
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p>negative</p>
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p>zero</p>
+                                        </statement>
+                                </choice>
+                        </choices>
                 </task>
-                <task workspace="1in">
+                <task>
                         <statement>
                                 <p>
                                         <m>f'(4)</m>
                                 </p>
                         </statement>
+                        <choices multiple-correct="no">
+                                <choice>
+                                        <statement>
+                                                <p>positive</p>
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p>negative</p>
+                                        </statement>
+                                </choice>
+                                <choice>
+                                        <statement>
+                                                <p>zero</p>
+                                        </statement>
+                                </choice>
+                        </choices>
                 </task>
         </exercise>
 </worksheet>
