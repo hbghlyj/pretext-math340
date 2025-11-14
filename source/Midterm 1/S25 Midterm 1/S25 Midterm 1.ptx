@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<worksheet xml:id="Math211Sp25-Midterm1" xmlns:xi="http://www.w3.org/2001/XInclude">
+        <title>Math211Sp25-Midterm1</title>
+        <exercise>
+                <introduction>
+                        <p>
+                                Clearly mark the correct answer(s) for each of the following by completely filling in the appropriate bubble. <term>No justification is needed.</term>
+                        </p>
+                </introduction>
+                <task>
+                        <statement>
+                                <p>
+                                        <term>(Multiple Choice-Choose one)</term> Let <m>f(x)</m> and <m>g(x)</m> be functions with the following values: <m>f(2)=3</m>, <m>g(2)=5</m>, <m>f'(2)=4</m>, <m>f'(5)=3</m>, <m>g'(2)=2</m>, and <m>g'(5)=1</m>. Find the instantaneous rate of change of <m>f(g(x))</m> at <m>x=2</m>.
+                                </p>
+                        </statement>
+                                <choices multiple-correct="no">
+                                        <choice>
+                                                <statement>
+                                                        <p>
+                                                                5
+                                                        </p>
+                                                </statement>
+                                        </choice>
+                                        <choice>
+                                                <statement>
+                                                        <p>
+                                                                6
+                                                        </p>
+                                                </statement>
+                                        </choice>
+                                        <choice>
+                                                <statement>
+                                                        <p>
+                                                                8
+                                                        </p>
+                                                </statement>
+                                        </choice>
+                                        <choice>
+                                                <statement>
+                                                        <p>
+                                                                15
+                                                        </p>
+                                                </statement>
+                                        </choice>
+                                </choices>
+                </task>
+                <task>
+                        <statement>
+                                <p>
+                                        <term>(Multiple Choice-Choose one)</term> Suppose <m>h(t)</m> represents the depth of a submarine (in meters) below sea level <m>t</m> hours after it begins a descent. Suppose at <m>t=4</m>, the submarine is slowing down while still moving downward. Which of the following statements is true?
+                                </p>
+                        </statement>
+                                <choices multiple-correct="no">
+                                        <choice>
+                                                <statement>
+                                                        <p>
+                                                                <m>h'(4)</m> is negative, while <m>h''(4)</m> is positive.
+                                                        </p>
+                                                </statement>
+                                        </choice>
+                                        <choice>
+                                                <statement>
+                                                        <p>
+                                                                <m>h'(4)</m> is positive, while <m>h''(4)</m> is negative.
+                                                        </p>
+                                                </statement>
+                                        </choice>
+                                        <choice>
+                                                <statement>
+                                                        <p>
+                                                                <m>h'(4)</m> and <m>h''(4)</m> are both positive.
+                                                        </p>
+                                                </statement>
+                                        </choice>
+                                        <choice>
+                                                <statement>
+                                                        <p>
+                                                                <m>h'(4)</m> and <m>h''(4)</m> are both negative.
+                                                        </p>
+                                                </statement>
+                                        </choice>
+                                </choices>
+                </task>
+                <task>
+                        <statement>
+                                <p>
+                                        <term>(True/False)</term> The function <m>f(x)</m> is given by <m>f(x)=\begin{cases}x & \text{ if } x \leq 1\\ 5x-4 & \text{ if } x>1\end{cases}</m>. Is <m>f(x)</m> continuous at <m>x=1</m>?
+                                </p>
+                        </statement>
+                                <choices multiple-correct="no">
+                                        <choice>
+                                                <statement>
+                                                        <p>
+                                                                True
+                                                        </p>
+                                                </statement>
+                                        </choice>
+                                        <choice>
+                                                <statement>
+                                                        <p>
+                                                                False
+                                                        </p>
+                                                </statement>
+                                        </choice>
+                                </choices>
+                </task>
+                <task>
+                        <statement>
+                                <p>
+                                        <term>(Multiple Choice-Choose one)</term> Which of the following is equal to <m>\dfrac{12}{\sqrt[3]{27x^2}}</m>?
+                                </p>
+                        </statement>
+                                <choices multiple-correct="no">
+                                        <choice>
+                                                <statement>
+                                                        <p>
+                                                                <m>4x^{-2/3}</m>
+                                                        </p>
+                                                </statement>
+                                        </choice>
+                                        <choice>
+                                                <statement>
+                                                        <p>
+                                                                <m>6x^{-2/3}</m>
+                                                        </p>
+                                                </statement>
+                                        </choice>
+                                        <choice>
+                                                <statement>
+                                                        <p>
+                                                                <m>6x^{-3/2}</m>
+                                                        </p>
+                                                </statement>
+                                        </choice>
+                                        <choice>
+                                                <statement>
+                                                        <p>
+                                                                <m>4x^{-3/2}</m>
+                                                        </p>
+                                                </statement>
+                                        </choice>
+                                </choices>
+                </task>
+                <task>
+                        <statement>
+                                <p>
+                                        <term>(Multiple Choice-Choose one)</term> Determine the range of the function <m>y=f(x)</m> based on the given graph.
+                                </p>
+                        </statement>
+                                <choices multiple-correct="no">
+                                        <choice>
+                                                <statement>
+                                                        <p>
+                                                                <m>[3,4]</m>
+                                                        </p>
+                                                </statement>
+                                        </choice>
+                                        <choice>
+                                                <statement>
+                                                        <p>
+                                                                <m>[-2,5]</m>
+                                                        </p>
+                                                </statement>
+                                        </choice>
+                                        <choice>
+                                                <statement>
+                                                        <p>
+                                                                <m>[2,4]</m>
+                                                        </p>
+                                                </statement>
+                                        </choice>
+                                        <choice>
+                                                <statement>
+                                                        <p>
+                                                                <m>[1,4)</m>
+                                                        </p>
+                                                </statement>
+                                        </choice>
+                                        <choice>
+                                                <statement>
+                                                        <p>
+                                                                None of the above.
+                                                        </p>
+                                                </statement>
+                                        </choice>
+                                </choices>
+                </task>
+                <task>
+                        <statement>
+                                <p>
+                                        <term>(Multiple Choice-Choose one)</term> Let <m>g(x)=\dfrac{(2x-1)(x^2-1)}{x+1}</m>. Which of the following is the domain of the function <m>g(x)</m>?
+                                </p>
+                        </statement>
+                                <choices multiple-correct="no">
+                                        <choice>
+                                                <statement>
+                                                        <p>
+                                                                <m>\{x: x \neq -1\}</m>
+                                                        </p>
+                                                </statement>
+                                        </choice>
+                                        <choice>
+                                                <statement>
+                                                        <p>
+                                                                <m>\mathbb{R}</m>
+                                                        </p>
+                                                </statement>
+                                        </choice>
+                                        <choice>
+                                                <statement>
+                                                        <p>
+                                                                <m>\{x: x \neq \tfrac{1}{2}, x \neq 1\}</m>
+                                                        </p>
+                                                </statement>
+                                        </choice>
+                                        <choice>
+                                                <statement>
+                                                        <p>
+                                                                None of the above.
+                                                        </p>
+                                                </statement>
+                                        </choice>
+                                </choices>
+                </task>
+        </exercise>
+        <exercise>
+                <task workspace="0.5in">
+                        <statement>
+                                <p>
+                                        Solve for <m>x</m>: <m>4x^3-3x^2+x=0</m>. Clearly explain your answer.
+                                </p>
+                        </statement>
+                </task>
+                <task workspace="1in">
+                        <statement>
+                                <p>
+                                        Calculate the derivative of each function. You do not need to simplify your answers.
+                                </p>
+                                <p>
+                                        (a) <m>f(x)=\dfrac{x}{x^3+1}</m>
+                                </p>
+                                <p>
+                                        (b) <m>g(x)=\dfrac{3}{x^2}-\sqrt{x}+5</m>
+                                </p>
+                                <p>
+                                        (c) <m>h(x)=\sqrt[5]{x^2+1}</m>
+                                </p>
+                                <p>
+                                        (d) <m>F(x)=(3x^2-1)^8(2x+1)^7</m>
+                                </p>
+                        </statement>
+                </task>
+                <task workspace="1in">
+                        <statement>
+                                <p>
+                                        The function <m>f(x)</m> is defined on the interval <m>[-2,2]</m>. Its graph is shown below. Based on the graph, answer the following questions.
+                                </p>
+                                <p>
+                                        (a) Find <m>\displaystyle\lim_{x\to 2^-} f(x)</m>, if possible. If not possible, write <term>DNE</term>.
+                                </p>
+                                <p>
+                                        (b) Find <m>\displaystyle\lim_{x\to 0^+} f(x)</m>, if possible. If not possible, write <term>DNE</term>.
+                                </p>
+                                <p>
+                                        (c) Determine whether <m>f(x)</m> is discontinuous at the points <m>x=-1</m>, <m>x=0</m>, and <m>x=1</m>. Explain your answer.
+                                </p>
+                        </statement>
+                </task>
+                <task workspace="1in">
+                        <statement>
+                                <p>
+                                        Find <m>f''(x)</m> for <m>f(x)=\sqrt[3]{x}-4x</m>. Simplify your answer and show all work.
+                                </p>
+                        </statement>
+                </task>
+                <task workspace="1in">
+                        <statement>
+                                <p>
+                                        Suppose a manufacturer determines that their cost function <m>C(x)</m> (in dollars) for producing <m>x</m> products is <m>C(x)=8x^{3/2}+9x</m>.
+                                </p>
+                                <p>
+                                        (a) Find the marginal cost function.
+                                </p>
+                                <p>
+                                        (b) Find the average cost function.
+                                </p>
+                                <p>
+                                        (c) Find the marginal average cost when <m>x=16</m>. Simplify your answer and show all work.
+                                </p>
+                        </statement>
+                </task>
+                <task workspace="1in">
+                        <statement>
+                                <p>
+                                        Find each limit. Show all work and simplify your final answers.
+                                </p>
+                                <p>
+                                        (a) <m>\displaystyle\lim_{x\to 2} \dfrac{x+1}{\sqrt{x-1}}</m>
+                                </p>
+                                <p>
+                                        (b) <m>\displaystyle\lim_{x\to 2} \dfrac{x^2-4}{2x-4}</m>
+                                </p>
+                                <p>
+                                        (c) <m>\displaystyle\lim_{x\to -1} \dfrac{x^2+3x+2}{x^2-1}</m>
+                                </p>
+                        </statement>
+                </task>
+                <task workspace="1in">
+                        <statement>
+                                <p>
+                                        Find the equation of the tangent line to the function <m>f(x)=x^3-4x+1</m> at <m>x=2</m>. Simplify your answer and show all work.
+                                </p>
+                        </statement>
+                </task>
+                <task workspace="1in">
+                        <statement>
+                                <p>
+                                        The graph of the function <m>f(x)</m> is given below. Based on the graph, determine whether the following numbers are zero, positive, or negative.
+                                </p>
+                                <p>
+                                        (a) <m>f'(0.5)</m>
+                                </p>
+                                <p>
+                                        (b) <m>f'(1)</m>
+                                </p>
+                                <p>
+                                        (c) <m>f'(2)</m>
+                                </p>
+                                <p>
+                                        (d) <m>f'(2.5)</m>
+                                </p>
+                                <p>
+                                        (e) <m>f'(3)</m>
+                                </p>
+                                <p>
+                                        (f) <m>f'(4)</m>
+                                </p>
+                        </statement>
+                </task>
+        </exercise>
+</worksheet>
