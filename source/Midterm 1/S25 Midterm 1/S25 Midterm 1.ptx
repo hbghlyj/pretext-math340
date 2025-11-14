@@ -231,6 +231,29 @@
                                 </p>
                         </statement>
                 </task>
+                <solution>
+                        <p>
+                                Factor out <m>x</m>:
+                        </p>
+                        <me>
+                                x(4x^2-3x+1)=0
+                        </me>
+                        <p>
+                                Solve <m>x=0</m>:
+                        </p>
+                        <me>
+                                x=0
+                        </me>
+                        <p>
+                                Solve the quadratic <m>4x^2-3x+1=0</m> using the quadratic formula:
+                        </p>
+                        <me>
+                                x=\frac{3\pm\sqrt{(-3)^2-4(4)(1)}}{2(4)}=\frac{3\pm\sqrt{-7}}{8}
+                        </me>
+                        <p>
+                                The real solution is <m>x=0</m>.
+                        </p>
+                </solution>
         </exercise>
         <exercise>
                 <introduction>
