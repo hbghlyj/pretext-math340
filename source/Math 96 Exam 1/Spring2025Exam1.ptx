@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<worksheet xml:id="Math-96-Exam-1-Spring2025Exam1" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Math-96-Exam-1-Spring2025Exam1</title>
+	<introduction>
+		<!-- div attr= class="flushright"-->
+			<table>
+				<title></title>
+				<tabular>
+				<row class="odd">
+					<cell halign="left"><term>MATH 96</term></cell>
+					<cell halign="right"><term>Name:</term></cell>
+					<cell halign="left"></cell>
+				</row>
+				<row class="even">
+					<cell halign="left"><term>Spring 2025</term></cell>
+					<cell halign="right"></cell>
+					<cell halign="left"></cell>
+				</row>
+				<row class="odd">
+					<cell halign="left"><term>Exam 1</term></cell>
+					<cell halign="right"></cell>
+					<cell halign="left"></cell>
+				</row>
+				<row class="even">
+					<cell halign="left"></cell>
+					<cell halign="right"><term>Section:</term></cell>
+					<cell halign="left"></cell>
+				</row>
+				</tabular>
+			</table>
+			<p>
+				<!-- linebreak -->
+			</p><!--</div attr= class="flushright">-->
+		<!-- Horizontal Rule Not Implimented -->
+			<p>
+				This exam contains  pages (including this cover page) and  problems. Check to see if any pages are missing. Enter your name and your section above.
+			</p>
+			<p>
+				You may <em>not</em> use textbooks, course notes, cell phones, or calculators during this exam.
+			</p>
+			<p>
+				You are required to show your work on each problem on this exam, and the following rules apply:
+			</p>
+			<ul>
+				<li>
+					<p>
+							<term>Organize your work in a reasonable, neat, and coherent way.</term> Work that is jumbled, disorganized, or lacks clear reasoning will receive little credit.
+						</p>
+				</li>
+				<li>
+					<p>
+							<term>Partial credit may be given.</term> Any answer must be supported by calculations, explanation, and/or algebraic work to receive full credit. Unsupported answers will not receive full credit, but well-argued, incorrect solutions may earn partial credit.
+						</p>
+				</li>
+				<li>
+					<p>
+							<term>If you require more space, use the back of a page.</term> Clearly indicate when you do this below the problem.
+						</p>
+				</li>
+			</ul>
+			<p>
+				Do not write in the table to the right.
+			</p>
+	</introduction>
+	<exercise>
+		<introduction>
+			<p>
+				Simplify and reduce each expression to a single fraction.
+			</p>
+		</introduction>
+		<task workspace="2.25in">
+			<statement>
+				<p>
+					<m>\displaystyle \left(\frac{2}{3}-\frac{1}{4}\right) \div\left(\frac{3}{4}+\frac{1}{3}\right)</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>\displaystyle  \frac{-3-(-1^2)}{-(-2)^2+(3-2)^2}</m>
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<statement>
+			<p>
+				Solve the equation <m>\displaystyle \frac{5}{4}+\frac{4}{3}x = \frac{1}{4}</m>
+			</p>
+		</statement>
+	</exercise>
+	<exercise>
+		<statement>
+			<p>
+				Simplify the expression as much as possible. <me>- (x+2y) - 2(-3y-2x) + 2y</me>
+			</p>
+		</statement>
+	</exercise>
+	<exercise>
+		<statement>
+			<p>
+				Find the equation of the line in slope-intercept form that passes through the points <m>(1,-1)</m> and <m>(-1,3)</m>.
+			</p>
+		</statement>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Consider the line with the equation <m>-2x + 4y = -8.</m>
+			</p>
+			<p>
+				<em><term>Clearly define your variables. Solve each problem by setting up an algebraic equation and then use that equation to find the solution. There’s no need to simplify any numerical fractions.</term></em>
+			</p>
+		</introduction>
+		<task workspace="1in">
+			<statement>
+				<p>
+					Find the slope of the line above.
+				</p>
+			</statement>
+		</task>
+		<task workspace="1in">
+			<statement>
+				<p>
+					Find the <m>x</m>-intercept and <m>y</m>-intercept of the line above.
+				</p>
+			</statement>
+		</task>
+		<task workspace="1.75in">
+			<statement>
+				<p>
+					Determine whether the line <m>\displaystyle y - 1 = -2(x+2)</m> is parallel, perpendicular, or neither to the line above. Explain your reasoning.
+				</p>
+			</statement>
+		</task>
+		<task workspace="-12pt">
+			<statement>
+				<p>
+					Graph the line <m>-2x + 4y =-8</m>. <em>Clearly label any two points with <m>P</m> and <m>Q</m> on the line.</em>
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<statement>
+			<p>
+				Find three consecutive even integers whose sum is 222.
+			</p>
+		</statement>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				A store is offering a 25% discount on a jacket that originally costs $240.
+			</p>
+		</introduction>
+		<task workspace="3in">
+			<statement>
+				<p>
+					What is the amount of the discount?
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					What is the sale price of the jacket after the discount is applied?
+				</p>
+			</statement>
+		</task>
+	</exercise>
+</worksheet>

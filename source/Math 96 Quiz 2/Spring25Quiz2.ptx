@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<worksheet xml:id="Math-96-Quiz-2-Spring25Quiz2" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Math-96-Quiz-2-Spring25Quiz2</title>
+	<introduction>
+		<p>
+				<term>MATH 96</term> <term>Name:</term><!-- linebreak --><term>Spring 2025</term><!-- linebreak --><term>Quiz 2</term><!-- linebreak --><term>20 Minutes</term>
+			</p>
+		<!-- Horizontal Rule Not Implimented -->
+			<p>
+				You may <em>not</em> use textbooks, course notes, or a calculator during this exam. Organize your work in a reasonable, neat, and coherent way. Any answer must be supported by calculations, explanation, and/or algebraic work to receive full credit. Partial credit may be given.<!-- linebreak -->
+			</p>
+		<!-- Horizontal Rule Not Implimented -->
+	</introduction>
+	<exercise>
+		<statement>
+			<p>
+				Determine the solution set for the given inequality, express it in interval notation, and illustrate it graphically on a number line. <me>-x +7 \leq -6x</me>
+			</p>
+		</statement>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Find the solution set for the inequality, express the solution set using interval notation, and represent it graphically on a number line.
+			</p>
+		</introduction>
+		<task workspace="1.6in">
+			<statement>
+				<p>
+					<m>\displaystyle \left\vert \frac{3}{4} x -2 \right\vert \leq 1</m>
+				</p>
+			</statement>
+		</task>
+		<task workspace="2.0in">
+			<statement>
+				<p>
+					<m>|1-x| \geq 5</m>
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<statement>
+			<p>
+				Find the solutions for the equation, <me>\frac{1}{2}\vert 4x-2 \vert = 3</me>
+			</p>
+		</statement>
+	</exercise>
+</worksheet>
