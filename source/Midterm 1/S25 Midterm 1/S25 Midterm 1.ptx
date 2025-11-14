@@ -84,7 +84,7 @@
                 <task>
                         <statement>
                                 <p>
-                                        <term>(True/False)</term> The function <m>f(x)</m> is given by <m>f(x)=\begin{cases}x & \text{ if } x \leq 1\\ 5x-4 & \text{ if } x>1\end{cases}</m>. Is <m>f(x)</m> continuous at <m>x=1</m>?
+                                        <term>(True/False)</term> The function <m>f(x)</m> is given by <m>f(x)=\begin{cases}x &amp; \text{ if } x \leq 1\\ 5x-4 &amp; \text{ if } x>1\end{cases}</m>. Is <m>f(x)</m> continuous at <m>x=1</m>?
                                 </p>
                         </statement>
                                 <choices multiple-correct="no">
