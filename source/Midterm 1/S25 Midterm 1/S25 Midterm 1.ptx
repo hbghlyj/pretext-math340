@@ -344,6 +344,11 @@
                                         Find <m>\displaystyle\lim_{x\to 2^-} f(x)</m>, if possible. If not possible, write <term>DNE</term>.
                                 </p>
                         </statement>
+                        <answer>
+                                <p>
+                                        <m>2</m>
+                                </p>
+                        </answer>
                 </task>
                 <task workspace="1in">
                         <statement>
@@ -351,6 +356,11 @@
                                         Find <m>\displaystyle\lim_{x\to 0^+} f(x)</m>, if possible. If not possible, write <term>DNE</term>.
                                 </p>
                         </statement>
+                        <answer>
+                                <p>
+                                        <m>0</m>
+                                </p>
+                        </answer>
                 </task>
                 <task workspace="1in">
                         <statement>
@@ -358,6 +368,17 @@
                                         Determine whether <m>f(x)</m> is discontinuous at the points <m>x=-1</m>, <m>x=0</m>, and <m>x=1</m>. Explain your answer.
                                 </p>
                         </statement>
+                        <answer>
+                                <p>
+                                        <m>x=-1</m>: discontinuous because <m>f</m> is not defined at <m>x=-1</m>.
+                                </p>
+                                <p>
+                                        <m>x=0</m>: discontinuous due to a jump; the one-sided limits do not agree.
+                                </p>
+                                <p>
+                                        <m>x=1</m>: continuous since <m>f(1)</m> equals the common limit as <m>x\to 1</m>.
+                                </p>
+                        </answer>
                 </task>
         </exercise>
         <exercise>
