@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter xml:id="ch-exams" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Prior Exams</title>
+
+  <section xml:id="midterm-1">
+    <title>Midterm 1</title>
+    <xi:include href="./Midterm 1/F24 Midterm 1/F24 Midterm 1.ptx"/>
+    <xi:include href="./Midterm 1/Practice Midterm 1/Practice Midterm 1.ptx"/>
+    <xi:include href="./Midterm 1/Additional Practice Midterm 1/Additional Practice Midterm 1.ptx"/>
+  </section>
+
+  <section xml:id="midterm-2">
+    <title>Midterm 2</title>
+    <xi:include href="./Midterm 2/F24 Midterm 2/F24 Midterm 2.ptx"/>
+    <xi:include href="./Midterm 2/Practice Midterm 2/Practice Midterm 2.ptx"/>
+    <xi:include href="./Midterm 2/Additional Practice Midterm 2/Additional Practice Midterm 2.ptx"/>
+  </section>
+
+  <section xml:id="final-exam">
+    <title>Final Exam</title>
+    <xi:include href="./Final Exam/F24 Final Exam/F24 Final Exam.ptx"/>
+    <xi:include href="./Final Exam/Practice Final Exam/Practice Final Exam.ptx"/>
+    <xi:include href="./Final Exam/Additional Practice Final Exam/Additional Practice Final Exam.ptx"/>
+  </section>
+</chapter>
