@@ -265,6 +265,14 @@
                                         <m>f(x)=\dfrac{x}{x^3+1}</m>
                                 </p>
                         </statement>
+                        <solution>
+                                <p>
+                                        For <m>f(x)=\dfrac{x}{x^3+1}</m>, use the quotient rule:
+                                </p>
+                                <me>
+                                        f'(x)=\dfrac{(1)(x^3+1)-x(3x^2)}{(x^3+1)^2}
+                                </me>
+                        </solution>
                 </task>
                 <task workspace="1in">
                         <statement>
@@ -272,6 +280,14 @@
                                         <m>g(x)=\dfrac{3}{x^2}-\sqrt{x}+5</m>
                                 </p>
                         </statement>
+                        <solution>
+                                <p>
+                                        For <m>g(x)=\dfrac{3}{x^2}-\sqrt{x}+5</m>, differentiate term by term:
+                                </p>
+                                <me>
+                                        g'(x)=-\dfrac{6}{x^3}-\dfrac{1}{2\sqrt{x}}+0
+                                </me>
+                        </solution>
                 </task>
                 <task workspace="1in">
                         <statement>
@@ -279,6 +295,14 @@
                                         <m>h(x)=\sqrt[5]{x^2+1}</m>
                                 </p>
                         </statement>
+                        <solution>
+                                <p>
+                                        For <m>h(x)=\sqrt[5]{x^2+1}=(x^2+1)^{1/5}</m>, use the chain rule:
+                                </p>
+                                <me>
+                                        h'(x)=\dfrac{1}{5}(x^2+1)^{-4/5}\cdot 2x
+                                </me>
+                        </solution>
                 </task>
                 <task workspace="1in">
                         <statement>
@@ -286,49 +310,15 @@
                                         <m>F(x)=(3x^2-1)^8(2x+1)^7</m>
                                 </p>
                         </statement>
-                </task>
-                <solution>
-                        <task>
-                                <statement>
-                                        <p>
-                                                For <m>f(x)=\dfrac{x}{x^3+1}</m>, use the quotient rule:
-                                        </p>
-                                </statement>
-                                <me>
-                                        f'(x)=\dfrac{(1)(x^3+1)-x(3x^2)}{(x^3+1)^2}
-                                </me>
-                        </task>
-                        <task>
-                                <statement>
-                                        <p>
-                                                For <m>g(x)=\dfrac{3}{x^2}-\sqrt{x}+5</m>, differentiate term by term:
-                                        </p>
-                                </statement>
-                                <me>
-                                        g'(x)=-\dfrac{6}{x^3}-\dfrac{1}{2\sqrt{x}}+0
-                                </me>
-                        </task>
-                        <task>
-                                <statement>
-                                        <p>
-                                                For <m>h(x)=\sqrt[5]{x^2+1}=(x^2+1)^{1/5}</m>, use the chain rule:
-                                        </p>
-                                </statement>
-                                <me>
-                                        h'(x)=\dfrac{1}{5}(x^2+1)^{-4/5}\cdot 2x
-                                </me>
-                        </task>
-                        <task>
-                                <statement>
-                                        <p>
-                                                For <m>F(x)=(3x^2-1)^8(2x+1)^7</m>, use the product rule and chain rule:
-                                        </p>
-                                </statement>
+                        <solution>
+                                <p>
+                                        For <m>F(x)=(3x^2-1)^8(2x+1)^7</m>, use the product rule and chain rule:
+                                </p>
                                 <me>
                                         F'(x)=8(3x^2-1)^7(6x)(2x+1)^7+7(3x^2-1)^8(2x+1)^6(2)
                                 </me>
-                        </task>
-                </solution>
+                        </solution>
+                </task>
         </exercise>
         <exercise>
                 <statement>
