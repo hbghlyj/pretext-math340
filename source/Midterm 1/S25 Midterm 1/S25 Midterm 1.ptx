@@ -566,23 +566,6 @@
                                         <m>f'(0.5)</m>
                                 </p>
                         </statement>
-                        <choices multiple-correct="no">
-                                <choice>
-                                        <statement>
-                                                <p>positive</p>
-                                        </statement>
-                                </choice>
-                                <choice correct="yes">
-                                        <statement>
-                                                <p>negative</p>
-                                        </statement>
-                                </choice>
-                                <choice>
-                                        <statement>
-                                                <p>zero</p>
-                                        </statement>
-                                </choice>
-                        </choices>
                         <answer>
                                 <p>
                                         negative
@@ -595,23 +578,6 @@
                                         <m>f'(1)</m>
                                 </p>
                         </statement>
-                        <choices multiple-correct="no">
-                                <choice>
-                                        <statement>
-                                                <p>positive</p>
-                                        </statement>
-                                </choice>
-                                <choice>
-                                        <statement>
-                                                <p>negative</p>
-                                        </statement>
-                                </choice>
-                                <choice correct="yes">
-                                        <statement>
-                                                <p>zero</p>
-                                        </statement>
-                                </choice>
-                        </choices>
                         <answer>
                                 <p>
                                         zero
@@ -624,23 +590,6 @@
                                         <m>f'(2)</m>
                                 </p>
                         </statement>
-                        <choices multiple-correct="no">
-                                <choice>
-                                        <statement>
-                                                <p>positive</p>
-                                        </statement>
-                                </choice>
-                                <choice>
-                                        <statement>
-                                                <p>negative</p>
-                                        </statement>
-                                </choice>
-                                <choice correct="yes">
-                                        <statement>
-                                                <p>zero</p>
-                                        </statement>
-                                </choice>
-                        </choices>
                         <answer>
                                 <p>
                                         zero
@@ -653,23 +602,6 @@
                                         <m>f'(2.5)</m>
                                 </p>
                         </statement>
-                        <choices multiple-correct="no">
-                                <choice>
-                                        <statement>
-                                                <p>positive</p>
-                                        </statement>
-                                </choice>
-                                <choice correct="yes">
-                                        <statement>
-                                                <p>negative</p>
-                                        </statement>
-                                </choice>
-                                <choice>
-                                        <statement>
-                                                <p>zero</p>
-                                        </statement>
-                                </choice>
-                        </choices>
                         <answer>
                                 <p>
                                         negative
@@ -682,23 +614,6 @@
                                         <m>f'(3)</m>
                                 </p>
                         </statement>
-                        <choices multiple-correct="no">
-                                <choice>
-                                        <statement>
-                                                <p>positive</p>
-                                        </statement>
-                                </choice>
-                                <choice>
-                                        <statement>
-                                                <p>negative</p>
-                                        </statement>
-                                </choice>
-                                <choice correct="yes">
-                                        <statement>
-                                                <p>zero</p>
-                                        </statement>
-                                </choice>
-                        </choices>
                         <answer>
                                 <p>
                                         zero
@@ -711,23 +626,6 @@
                                         <m>f'(4)</m>
                                 </p>
                         </statement>
-                        <choices multiple-correct="no">
-                                <choice correct="yes">
-                                        <statement>
-                                                <p>positive</p>
-                                        </statement>
-                                </choice>
-                                <choice>
-                                        <statement>
-                                                <p>negative</p>
-                                        </statement>
-                                </choice>
-                                <choice>
-                                        <statement>
-                                                <p>zero</p>
-                                        </statement>
-                                </choice>
-                        </choices>
                         <answer>
                                 <p>
                                         positive
