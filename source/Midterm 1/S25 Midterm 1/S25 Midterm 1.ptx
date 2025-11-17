@@ -2,11 +2,11 @@
 <worksheet xml:id="Math211Sp25-Midterm1" xmlns:xi="http://www.w3.org/2001/XInclude">
         <title>Math211Sp25-Midterm1</title>
         <exercise>
-                <introduction>
+                <statement>
                         <p>
                                 Clearly mark the correct answer(s) for each of the following by completely filling in the appropriate bubble. <term>No justification is needed.</term>
                         </p>
-                </introduction>
+                </statement>
                 <task>
                         <statement>
                                 <p>
@@ -254,11 +254,11 @@
                 </solution>
         </exercise>
         <exercise>
-                <introduction>
+                <statement>
                         <p>
                                 Calculate the derivative of each function. You do not need to simplify your answers.
                         </p>
-                </introduction>
+                </statement>
                 <task workspace="1in">
                         <statement>
                                 <p>
@@ -331,11 +331,11 @@
                 </solution>
         </exercise>
         <exercise>
-                <introduction>
+                <statement>
                         <p>
                                 The function <m>f(x)</m> is defined on the interval <m>[-2,2]</m>. Its graph is shown below. Based on the graph, answer the following questions.
                         </p>
-                </introduction>
+                </statement>
                 <task workspace="1in">
                         <statement>
                                 <p>
@@ -380,18 +380,32 @@
                 </task>
         </exercise>
         <exercise>
-                <introduction>
+                <statement>
                         <p>
                                 Find <m>f''(x)</m> for <m>f(x)=\sqrt[3]{x}-4x</m>. Simplify your answer and show all work.
                         </p>
-                </introduction>
+                </statement>
+                <solution>
+                        <p>
+                                First, rewrite <m>f(x)</m> using exponents: <m>f(x)=x^{1/3}-4x</m>.
+                        </p>
+                        <p>
+                                Find the first derivative <m>f'(x)</m>: <m>f'(x)=\tfrac{1}{3}x^{-2/3}-4</m>.
+                        </p>
+                        <p>
+                                Find the second derivative <m>f''(x)</m>: <m>f''(x)=\tfrac{1}{3}\cdot\left(-\tfrac{2}{3}\right)x^{-5/3}=-\tfrac{2}{9}x^{-5/3}</m>.
+                        </p>
+                        <p>
+                                Simplify the answer: <m>f''(x)=-\tfrac{2}{9}x^{-5/3}=-\dfrac{2}{9x^{5/3}}</m>.
+                        </p>
+                </solution>
         </exercise>
         <exercise>
-                <introduction>
+                <statement>
                         <p>
                                 Suppose a manufacturer determines that their cost function <m>C(x)</m> (in dollars) for producing <m>x</m> products is <m>C(x)=8x^{3/2}+9x</m>.
                         </p>
-                </introduction>
+                </statement>
                 <task workspace="1in">
                         <statement>
                                 <p>
@@ -415,11 +429,11 @@
                 </task>
         </exercise>
         <exercise>
-                <introduction>
+                <statement>
                         <p>
                                 Find each limit. Show all work and simplify your final answers.
                         </p>
-                </introduction>
+                </statement>
                 <task workspace="1in">
                         <statement>
                                 <p>
@@ -509,18 +523,18 @@
                 </task>
         </exercise>
         <exercise>
-                <introduction>
+                <statement>
                         <p>
                                 Find the equation of the tangent line to the function <m>f(x)=x^3-4x+1</m> at <m>x=2</m>. Simplify your answer and show all work.
                         </p>
-                </introduction>
+                </statement>
         </exercise>
         <exercise>
-                <introduction>
+                <statement>
                         <p>
                                 The graph of the function <m>f(x)</m> is given below. Based on the graph, determine whether the following numbers are zero, positive, or negative.
                         </p>
-                </introduction>
+                </statement>
                 <task>
                         <statement>
                                 <p>
