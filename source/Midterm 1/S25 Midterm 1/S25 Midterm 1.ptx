@@ -518,6 +518,41 @@
                                 Find the equation of the tangent line to the function <m>f(x)=x^3-4x+1</m> at <m>x=2</m>. Simplify your answer and show all work.
                         </p>
                 </statement>
+                <solution>
+                        <p>
+                                First, find the point of tangency by evaluating <m>f(2)</m>:
+                        </p>
+                        <me>
+                                f(2)=(2)^3-4(2)+1=8-8+1=1
+                        </me>
+                        <p>
+                                The point on the graph is <m>(2,1)</m>.
+                        </p>
+                        <p>
+                                Compute the derivative to get the slope:
+                        </p>
+                        <me>
+                                f'(x)=\frac{d}{dx}\left(x^3-4x+1\right)=3x^2-4
+                        </me>
+                        <p>
+                                Evaluate at <m>x=2</m> to find the slope of the tangent line:
+                        </p>
+                        <me>
+                                f'(2)=3(2)^2-4=12-4=8
+                        </me>
+                        <p>
+                                Use the point-slope form <m>y-y_1=m(x-x_1)</m> with <m>m=8</m> and <m>(x_1,y_1)=(2,1)</m>:
+                        </p>
+                        <me>
+                                y-1=8(x-2)
+                        </me>
+                        <p>
+                                Simplify to obtain the tangent line equation:
+                        </p>
+                        <me>
+                                y=8x-15
+                        </me>
+                </solution>
         </exercise>
         <exercise>
                 <statement>
@@ -537,7 +572,7 @@
                                                 <p>positive</p>
                                         </statement>
                                 </choice>
-                                <choice>
+                                <choice correct="yes">
                                         <statement>
                                                 <p>negative</p>
                                         </statement>
@@ -548,6 +583,11 @@
                                         </statement>
                                 </choice>
                         </choices>
+                        <answer>
+                                <p>
+                                        negative
+                                </p>
+                        </answer>
                 </task>
                 <task>
                         <statement>
@@ -566,12 +606,17 @@
                                                 <p>negative</p>
                                         </statement>
                                 </choice>
-                                <choice>
+                                <choice correct="yes">
                                         <statement>
                                                 <p>zero</p>
                                         </statement>
                                 </choice>
                         </choices>
+                        <answer>
+                                <p>
+                                        zero
+                                </p>
+                        </answer>
                 </task>
                 <task>
                         <statement>
@@ -590,12 +635,17 @@
                                                 <p>negative</p>
                                         </statement>
                                 </choice>
-                                <choice>
+                                <choice correct="yes">
                                         <statement>
                                                 <p>zero</p>
                                         </statement>
                                 </choice>
                         </choices>
+                        <answer>
+                                <p>
+                                        zero
+                                </p>
+                        </answer>
                 </task>
                 <task>
                         <statement>
@@ -609,7 +659,7 @@
                                                 <p>positive</p>
                                         </statement>
                                 </choice>
-                                <choice>
+                                <choice correct="yes">
                                         <statement>
                                                 <p>negative</p>
                                         </statement>
@@ -620,6 +670,11 @@
                                         </statement>
                                 </choice>
                         </choices>
+                        <answer>
+                                <p>
+                                        negative
+                                </p>
+                        </answer>
                 </task>
                 <task>
                         <statement>
@@ -638,12 +693,17 @@
                                                 <p>negative</p>
                                         </statement>
                                 </choice>
-                                <choice>
+                                <choice correct="yes">
                                         <statement>
                                                 <p>zero</p>
                                         </statement>
                                 </choice>
                         </choices>
+                        <answer>
+                                <p>
+                                        zero
+                                </p>
+                        </answer>
                 </task>
                 <task>
                         <statement>
@@ -652,7 +712,7 @@
                                 </p>
                         </statement>
                         <choices multiple-correct="no">
-                                <choice>
+                                <choice correct="yes">
                                         <statement>
                                                 <p>positive</p>
                                         </statement>
@@ -668,6 +728,11 @@
                                         </statement>
                                 </choice>
                         </choices>
+                        <answer>
+                                <p>
+                                        positive
+                                </p>
+                        </answer>
                 </task>
         </exercise>
 </worksheet>
