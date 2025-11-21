@@ -2,9 +2,9 @@
 <worksheet xml:id="Math211Sp25-Midterm2" xmlns:xi="http://www.w3.org/2001/XInclude">
         <title>Math211Sp25-Midterm2</title>
 
-        <exercise>
+        <exercise points="3">
                 <statement>
-                        <p>(3 points) What are the vertical asymptotes of the function</p>
+                        <p>What are the vertical asymptotes of the function</p>
                         <me>f(x)=\frac{2 x^2-8}{x^2-1} ?</me>
                         <p>Choose the correct option.</p>
                 </statement>
@@ -37,9 +37,9 @@
                 </solution>
         </exercise>
 
-        <exercise>
+        <exercise points="3">
                 <statement>
-                        <p>(3 points) We learned that the mathematical constant <m>e</m> can be derived from the formula for compound interest:</p>
+                        <p>We learned that the mathematical constant <m>e</m> can be derived from the formula for compound interest:</p>
                         <me>e=\lim_{n \to \infty}\left(1+\frac{1}{n}\right)^n</me>
                         <p>In this expression, what does <m>n</m> represent in the context of compound interest?</p>
                 </statement>
@@ -72,9 +72,9 @@
                 </solution>
         </exercise>
 
-        <exercise>
+        <exercise points="3">
                 <statement>
-                        <p>(3 points) A machine worth <m>\$50{,}000</m> depreciates in value by <m>35\%</m> each year. Which formula correctly calculates its value after 4 years?</p>
+                        <p>A machine worth <m>\$50{,}000</m> depreciates in value by <m>35\%</m> each year. Which formula correctly calculates its value after 4 years?</p>
                 </statement>
                 <choices multiple-correct="no">
                         <choice correct="yes">
@@ -103,9 +103,9 @@
                 </solution>
         </exercise>
 
-        <exercise>
+        <exercise points="3">
                 <statement>
-                        <p>(3 points) A couple wants to save now to cover <m>\$20{,}000</m> in expected medical costs for childbirth in 5 years. If money can earn <m>6\%</m> interest compounded continuously, which formula correctly calculates the present value they need to invest today?</p>
+                        <p>A couple wants to save now to cover <m>\$20{,}000</m> in expected medical costs for childbirth in 5 years. If money can earn <m>6\%</m> interest compounded continuously, which formula correctly calculates the present value they need to invest today?</p>
                 </statement>
                 <choices multiple-correct="no">
                         <choice>
@@ -134,9 +134,9 @@
                 </solution>
         </exercise>
 
-        <exercise>
+        <exercise points="3">
                 <statement>
-                        <p>(3 points) Which of the following functions is <em>not</em> differentiable at <m>x=0</m>?</p>
+                        <p>Which of the following functions is <em>not</em> differentiable at <m>x=0</m>?</p>
                 </statement>
                 <choices multiple-correct="no">
                         <choice correct="yes">
@@ -165,9 +165,9 @@
                 </solution>
         </exercise>
 
-        <exercise>
+        <exercise points="3">
                 <statement>
-                        <p>(3 points) Suppose <m>f(x)</m> is a continuous function whose derivative is</p>
+                        <p>Suppose <m>f(x)</m> is a continuous function whose derivative is</p>
                         <me>f'(x)=x(x+1)(x-2)^2.</me>
                         <p>Which of the following are critical numbers of <m>f(x)</m>?</p>
                 </statement>
@@ -198,9 +198,9 @@
                 </solution>
         </exercise>
 
-        <exercise>
+        <exercise points="3">
                 <statement>
-                        <p>(3 points) Suppose the reproduction function for a moose population is</p>
+                        <p>Suppose the reproduction function for a moose population is</p>
                         <me>f(p)=4p-0.01p^2.</me>
                         <p>What population size <m>p</m> will result in the <em>maximum sustainable yield</em> for this population?</p>
                 </statement>
@@ -231,9 +231,9 @@
                 </solution>
         </exercise>
 
-        <exercise>
+        <exercise points="3">
                 <statement>
-                        <p>(3 points) A company's revenue based on advertising spending is modeled by</p>
+                        <p>A company's revenue based on advertising spending is modeled by</p>
                         <me>R(x)=-x^3+27x^2+50, \quad 0 \leq x \leq 20.</me>
                         <p>Find the point of diminishing returns.</p>
                 </statement>
@@ -264,9 +264,9 @@
                 </solution>
         </exercise>
 
-        <exercise>
+        <exercise points="9">
                 <statement>
-                        <p>(9 points) A function <m>f(x)</m> defined on <m>[-1,3]</m> has a graph with the features described below. Determine whether the function is differentiable at each specified point.</p>
+                        <p>A function <m>f(x)</m> defined on <m>[-1,3]</m> has a graph with the features described below. Determine whether the function is differentiable at each specified point.</p>
                         <ol label="1.">
                                 <li>At <m>x=0</m>:<ul><li>Differentiable? <em>No</em></li><li>Explanation: vertical tangent line.</li></ul></li>
                                 <li>At <m>x=2</m>:<ul><li>Differentiable? <em>No</em></li><li>Explanation: corner point (conflicting slopes).</li></ul></li>
@@ -275,9 +275,9 @@
                 </statement>
         </exercise>
 
-        <exercise>
+        <exercise points="9">
                 <statement>
-                        <p>(9 points) The graph of a function <m>f(x)</m> is given. For each specified <m>x</m>-value, determine the concavity of <m>f</m> at that point.</p>
+                        <p>The graph of a function <m>f(x)</m> is given. For each specified <m>x</m>-value, determine the concavity of <m>f</m> at that point.</p>
                         <ol label="(a)">
                                 <li>At <m>x=4</m>: Concave up.</li>
                                 <li>At <m>x=-3</m>: Concave down.</li>
@@ -286,9 +286,9 @@
                 </statement>
         </exercise>
 
-        <exercise>
+        <exercise points="14">
                 <statement>
-                        <p>(14 points) The function <m>f(x)</m> has a graph described below.</p>
+                        <p>The function <m>f(x)</m> has a graph described below.</p>
                         <p>For each interval, indicate whether the function is increasing/decreasing and concave up/down:</p>
                         <ul>
                                 <li><m>(-1,0)</m>: increasing and concave down</li>
@@ -305,9 +305,9 @@
                 </statement>
         </exercise>
 
-        <exercise>
+        <exercise points="17">
                 <statement>
-                        <p>(17 points) Let</p>
+                        <p>Let</p>
                         <me>f(x)=x^3-3 x^2+4.</me>
                         <p>Answer all parts completely, showing work.</p>
                 </statement>
@@ -326,9 +326,9 @@
                 </solution>
         </exercise>
 
-        <exercise>
+        <exercise points="10">
                 <statement>
-                        <p>(10 points) Find the inflection point(s) (x-values) and intervals of concavity for</p>
+                        <p>Find the inflection point(s) (x-values) and intervals of concavity for</p>
                         <me>f(x)=x^4-4x^3.</me>
                 </statement>
                 <solution>
@@ -338,9 +338,9 @@
                 </solution>
         </exercise>
 
-        <exercise>
+        <exercise points="10">
                 <statement>
-                        <p>(10 points) A packaging company needs an open-top, square-based container with volume <m>4</m> cubic inches. Find the dimensions that minimize surface area.</p>
+                        <p>A packaging company needs an open-top, square-based container with volume <m>4</m> cubic inches. Find the dimensions that minimize surface area.</p>
                 </statement>
                 <solution>
                         <p>Let <m>x</m> be the side length of the square base and <m>h</m> the height. The volume constraint <m>x^2h=4</m> gives <m>h=\dfrac{4}{x^2}</m>. The surface area is <m>S(x)=x^2+4xh=x^2+\dfrac{16}{x}</m>.</p>
@@ -349,9 +349,9 @@
                 </solution>
         </exercise>
 
-        <exercise>
+        <exercise points="7">
                 <statement>
-                        <p>(7 points) An appliance store expects to sell <m>500</m> refrigerators a year. Each refrigerator costs <m>\$800</m>, and there is a fixed charge of <m>\$400</m> per order. It costs <m>\$160</m> to store a refrigerator for a year. Let <m>x</m> be the number of refrigerators per order.</p>
+                        <p>An appliance store expects to sell <m>500</m> refrigerators a year. Each refrigerator costs <m>\$800</m>, and there is a fixed charge of <m>\$400</m> per order. It costs <m>\$160</m> to store a refrigerator for a year. Let <m>x</m> be the number of refrigerators per order.</p>
                         <p>Answer the following:</p>
                         <ol label="(a)">
                                 <li>Determine the annual purchase cost of the refrigerators.</li>
