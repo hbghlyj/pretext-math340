@@ -306,12 +306,12 @@
                 </choices>
         </exercise>
 
-        <exercise points="3">
-                <statement>
-                        <p>A water treatment plant's purification cost for <m>x\%</m> purity is:</p>
-                        <me>C(x)=\frac{200}{100-x} \text{ dollars, } \quad 80 \leq x<100</me>
-                        <p>The instantaneous rate of cost increase at <m>90\%</m> purity is:</p>
-                </statement>
+<exercise points="3">
+<statement>
+<p>A water treatment plant's purification cost for <m>x\%</m> purity is:</p>
+<p><m>C(x)=\frac{200}{100-x}</m> dollars, <m>80 \leq x &lt; 100</m>.</p>
+<p>The instantaneous rate of cost increase at <m>90\%</m> purity is:</p>
+</statement>
                 <choices multiple-correct="no">
                         <choice>
                                 <statement>
@@ -726,7 +726,7 @@
                 <solution>
                         <p>We are given the function</p>
                         <me>V(t)=10 \sqrt{t}-t</me>
-                        <p>for <m>t>0</m>.</p>
+<p>for <m>t&gt;0</m>.</p>
                         <p>To find when the value reaches its maximum, we first find the critical points by setting <m>V'(t)=0</m>.</p>
                         <p>First, compute the derivative:</p>
                         <me>V(t)=10 t^{1 / 2}-t,</me>
@@ -741,13 +741,13 @@
 \end{gathered}</me>
                         <p>Now, we justify that this critical point gives a maximum.</p>
                         <p>First, we can check the sign of <m>V'(t)</m>:</p>
-                        <ul>
-                                <li>For <m>t<25</m>, say <m>t=10</m>, <m>V'(10)=\dfrac{5}{\sqrt{10}}-1>0</m>.</li>
-                                <li>For <m>t>25</m>, say <m>t=30</m>, <m>V'(30)=\dfrac{5}{\sqrt{30}}-1<0</m>.</li>
-                        </ul>
+<ul>
+<li>For <m>t&lt;25</m>, say <m>t=10</m>, we have <m>V'(10)=\dfrac{5}{\sqrt{10}}-1&gt;0</m>.</li>
+<li>For <m>t&gt;25</m>, say <m>t=30</m>, we have <m>V'(30)=\dfrac{5}{\sqrt{30}}-1&lt;0</m>.</li>
+</ul>
                         <p>We use the second derivative test. Differentiate again:</p>
-                        <me>V''(t)=\frac{d}{d t}\left(\frac{5}{\sqrt{t}}-1\right)=-\frac{5}{2} t^{-3 / 2}.</me>
-                        <p>Since <m>V''(t)<0</m> for all <m>t>0</m>, the function is concave down everywhere, and in particular at <m>t=25</m>.</p>
+<me>V''(t)=\frac{d}{d t}\left(\frac{5}{\sqrt{t}}-1\right)=-\frac{5}{2} t^{-3 / 2}.</me>
+<p>Since <m>V''(t)&lt;0</m> for all <m>t&gt;0</m>, the function is concave down everywhere, and in particular at <m>t=25</m>.</p>
                         <p>Thus, by the second derivative test, <m>V(t)</m> has a maximum at <m>t=25</m>.</p>
                         <p>Therefore, the value reaches its maximum at <m>t=25</m> years.</p>
                 </solution>
