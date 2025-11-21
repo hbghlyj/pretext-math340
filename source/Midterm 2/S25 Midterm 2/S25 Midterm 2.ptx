@@ -267,23 +267,61 @@
         <exercise points="9">
                 <statement>
                         <p>A function <m>f(x)</m> defined on <m>[-1,3]</m> has a graph with the features described below. Determine whether the function is differentiable at each specified point.</p>
-                        <ol label="1.">
-                                <li>At <m>x=0</m>:<ul><li>Differentiable? <em>No</em></li><li>Explanation: vertical tangent line.</li></ul></li>
-                                <li>At <m>x=2</m>:<ul><li>Differentiable? <em>No</em></li><li>Explanation: corner point (conflicting slopes).</li></ul></li>
-                                <li>At <m>x=2.5</m>:<ul><li>Differentiable? <em>Yes</em></li><li>Explanation: straight line with the same slope on both sides.</li></ul></li>
-                        </ol>
                 </statement>
+                <task>
+                        <statement>
+                                <p>At <m>x=0</m>:</p>
+                        </statement>
+                        <answer>
+                                <p>No. Vertical tangent line.</p>
+                        </answer>
+                </task>
+                <task>
+                        <statement>
+                                <p>At <m>x=2</m>:</p>
+                        </statement>
+                        <answer>
+                                <p>No. Corner point with conflicting slopes.</p>
+                        </answer>
+                </task>
+                <task>
+                        <statement>
+                                <p>At <m>x=2.5</m>:</p>
+                        </statement>
+                        <answer>
+                                <p>Yes. Straight line with the same slope on both sides.</p>
+                        </answer>
+                </task>
         </exercise>
 
         <exercise points="9">
                 <statement>
                         <p>The graph of a function <m>f(x)</m> is given. For each specified <m>x</m>-value, determine the concavity of <m>f</m> at that point.</p>
-                        <ol label="(a)">
-                                <li>At <m>x=4</m>: Concave up.</li>
-                                <li>At <m>x=-3</m>: Concave down.</li>
-                                <li>At <m>x=0</m>: Neither concave up nor concave down.</li>
-                        </ol>
                 </statement>
+                <task>
+                        <statement>
+                                <p>At <m>x=4</m>:</p>
+                        </statement>
+                        <answer>
+                                <p>Concave up.</p>
+                        </answer>
+                </task>
+                <task>
+                        <statement>
+                                <p>At <m>x=-3</m>:</p>
+                        </statement>
+                        <answer>
+                                <p>Concave down.</p>
+                        </answer>
+                </task>
+                <task>
+                        <statement>
+                                <p>At <m>x=0</m>:</p>
+                        </statement>
+                        <answer>
+                                <p>Neither concave up nor concave down.</p>
+                        </answer>
+                </task>
         </exercise>
 
         <exercise points="14">
@@ -353,18 +391,38 @@
                 <statement>
                         <p>An appliance store expects to sell <m>500</m> refrigerators a year. Each refrigerator costs <m>\$800</m>, and there is a fixed charge of <m>\$400</m> per order. It costs <m>\$160</m> to store a refrigerator for a year. Let <m>x</m> be the number of refrigerators per order.</p>
                         <p>Answer the following:</p>
-                        <ol label="(a)">
-                                <li>Determine the annual purchase cost of the refrigerators.</li>
-                                <li>Determine the annual ordering cost in terms of <m>x</m>.</li>
-                                <li>Determine the annual holding cost in terms of <m>x</m>.</li>
-                                <li>Derive the total annual cost function as a function of <m>x</m>.</li>
-                        </ol>
                 </statement>
-                <solution>
-                        <p><strong>(a)</strong> Annual purchase cost: <m>500 \times 800</m>.</p>
-                        <p><strong>(b)</strong> Annual ordering cost: <m>\dfrac{500}{x} \times 400</m>.</p>
-                        <p><strong>(c)</strong> Annual holding cost: <m>\dfrac{x}{2} \times 160</m>.</p>
-                        <p><strong>(d)</strong> Total annual cost: <m>TC(x)=\dfrac{500}{x} \times 800+\dfrac{500}{x} \times 400+\dfrac{x}{2} \times 160</m>.</p>
-                </solution>
+                <task>
+                        <statement>
+                                <p>Determine the annual purchase cost of the refrigerators.</p>
+                        </statement>
+                        <solution>
+                                <p><m>500 \times 800</m>.</p>
+                        </solution>
+                </task>
+                <task>
+                        <statement>
+                                <p>Determine the annual ordering cost in terms of <m>x</m>.</p>
+                        </statement>
+                        <solution>
+                                <p><m>\dfrac{500}{x} \times 400</m>.</p>
+                        </solution>
+                </task>
+                <task>
+                        <statement>
+                                <p>Determine the annual holding cost in terms of <m>x</m>.</p>
+                        </statement>
+                        <solution>
+                                <p><m>\dfrac{x}{2} \times 160</m>.</p>
+                        </solution>
+                </task>
+                <task>
+                        <statement>
+                                <p>Derive the total annual cost function as a function of <m>x</m>.</p>
+                        </statement>
+                        <solution>
+                                <p><m>TC(x)=\dfrac{500}{x} \times 800+\dfrac{500}{x} \times 400+\dfrac{x}{2} \times 160</m>.</p>
+                        </solution>
+                </task>
         </exercise>
 </worksheet>
