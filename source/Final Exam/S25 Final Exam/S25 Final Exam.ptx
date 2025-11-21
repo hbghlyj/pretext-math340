@@ -622,10 +622,10 @@
                 </solution>
         </exercise>
 
-        <exercise points="12">
-                <statement>
-                        <p>Calculate the derivative of each function. You do NOT need to simplify your answer.</p>
-                </statement>
+<exercise points="12">
+<introduction>
+<p>Calculate the derivative of each function. You do NOT need to simplify your answer.</p>
+</introduction>
                 <task points="4">
                         <statement>
                                 <p><m>f(x)=\sqrt{2 x}-\frac{1}{x^2}</m></p>
@@ -683,10 +683,10 @@
                 </solution>
         </exercise>
 
-        <exercise points="15">
-                <statement>
-                        <p>Calculate each integral. Show all work. You do not need to simplify your answer.</p>
-                </statement>
+<exercise points="15">
+<introduction>
+<p>Calculate each integral. Show all work. You do not need to simplify your answer.</p>
+</introduction>
                 <task points="5">
                         <statement>
                                 <p><m>\displaystyle \int \frac{x^6-4}{x^3} d x</m></p>

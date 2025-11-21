@@ -359,10 +359,10 @@ x=\frac{54}{6}=9
                 </solution>
         </exercise>
 
-        <exercise points="9">
-                <statement>
-                        <p>A function <m>f(x)</m> defined on <m>[-1,3]</m> has a graph with the features described below. Determine whether the function is differentiable at each specified point.</p>
-                </statement>
+<exercise points="9">
+<introduction>
+<p>A function <m>f(x)</m> defined on <m>[-1,3]</m> has a graph with the features described below. Determine whether the function is differentiable at each specified point.</p>
+</introduction>
                 <task>
                         <statement>
                                 <p>At <m>x=0</m>:</p>
@@ -389,10 +389,10 @@ x=\frac{54}{6}=9
                 </task>
         </exercise>
 
-        <exercise points="9">
-                <statement>
-                        <p>The graph of a function <m>f(x)</m> is given. For each specified <m>x</m>-value, determine the concavity of <m>f</m> at that point.</p>
-                </statement>
+<exercise points="9">
+<introduction>
+<p>The graph of a function <m>f(x)</m> is given. For each specified <m>x</m>-value, determine the concavity of <m>f</m> at that point.</p>
+</introduction>
                 <task>
                         <statement>
                                 <p>At <m>x=4</m>:</p>
@@ -419,11 +419,11 @@ x=\frac{54}{6}=9
                 </task>
         </exercise>
 
-        <exercise points="14">
-                <statement>
-                        <p>The function <m>f(x)</m> has a graph described below.</p>
-                        <p>For each interval, indicate whether the function is increasing/decreasing and concave up/down. Then determine whether each listed <m>x</m>-value is an inflection point.</p>
-                </statement>
+<exercise points="14">
+<introduction>
+<p>The function <m>f(x)</m> has a graph described below.</p>
+<p>For each interval, indicate whether the function is increasing/decreasing and concave up/down. Then determine whether each listed <m>x</m>-value is an inflection point.</p>
+</introduction>
                 <task>
                         <statement>
                                 <p>Interval <m>(-1,0)</m>:</p>
@@ -482,12 +482,12 @@ x=\frac{54}{6}=9
                 </task>
         </exercise>
 
-        <exercise points="17">
-                <statement>
-                        <p>Let</p>
-                        <me>f(x)=x^3-3 x^2+4.</me>
-                        <p>Answer all parts completely, showing work.</p>
-                </statement>
+<exercise points="17">
+<introduction>
+<p>Let</p>
+<me>f(x)=x^3-3 x^2+4.</me>
+<p>Answer all parts completely, showing work.</p>
+</introduction>
                 <task>
                         <statement>
                                 <p>Find all critical numbers of <m>f(x)</m>.</p>
