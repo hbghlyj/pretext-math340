@@ -633,10 +633,10 @@ x=2
         </exercise>
 
         <exercise points="7">
-                <statement>
+                <introduction>
                         <p>An appliance store expects to sell <m>500</m> refrigerators a year. Each refrigerator costs <m>\$800</m>, and there is a fixed charge of <m>\$400</m> per order. It costs <m>\$160</m> to store a refrigerator for a year. Let <m>x</m> be the number of refrigerators per order.</p>
                         <p>Answer the following:</p>
-                </statement>
+                </introduction>
                 <task>
                         <statement>
                                 <p>Determine the annual purchase cost of the refrigerators.</p>
@@ -668,7 +668,7 @@ x=2
                                 <p>Derive the total annual cost function as a function of <m>x</m>.</p>
                         </statement>
                         <solution>
-                                <p><m>TC(x)=\dfrac{500}{x} \times 800+\dfrac{500}{x} \times 400+\dfrac{x}{2} \times 160</m>.</p>
+                                <p><m>TC(x)=500 \times 800+\dfrac{500}{x} \times 400+\dfrac{x}{2} \times 160</m>.</p>
                         </solution>
                 </task>
         </exercise>
