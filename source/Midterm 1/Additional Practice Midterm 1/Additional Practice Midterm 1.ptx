@@ -243,28 +243,28 @@
 		<task workspace="0.5in">
 			<statement>
 				<p>
-					<m>\displaystyle\lim_{x\to 3^-}f(x)=</m> ​
+					<m>\displaystyle\lim_{x\to 3^-}f(x)=</m> 
 				</p>
 			</statement>
 		</task>
 		<task workspace="0.5in">
 			<statement>
 				<p>
-					<m>\displaystyle\lim_{x\to 3^+}f(x)=</m> ​ ​
+					<m>\displaystyle\lim_{x\to 3^+}f(x)=</m>  
 				</p>
 			</statement>
 		</task>
 		<task workspace="0.5in">
 			<statement>
 				<p>
-					<m>\displaystyle\lim_{x\to 3}f(x)=</m> ​
+					<m>\displaystyle\lim_{x\to 3}f(x)=</m> 
 				</p>
 			</statement>
 		</task>
 		<task workspace="0.5in">
 			<statement>
 				<p>
-					<m>\displaystyle\lim_{x\to 0}f(x)=</m> ​
+					<m>\displaystyle\lim_{x\to 0}f(x)=</m> 
 				</p>
 			</statement>
 		</task>
@@ -303,10 +303,10 @@
 				Suppose the graph below is <m>f'(x)</m>. Assume each tick mark is 1 unit.
 			</p>
 			<p>
-				​
+				
 			</p>
 			<p>
-				​ ​
+				 
 			</p>
 		</introduction>
 		<task workspace="1.5in">
@@ -315,7 +315,7 @@
 					At which <m>x</m>-values does <m>f(x)</m> have a horizontal tangent line? Briefly explain your answer.
 				</p>
 				<p>
-					​ ​
+					 
 				</p>
 			</statement>
 		</task>
@@ -325,14 +325,14 @@
 					On which intervals is <m>f(x)</m> increasing? Briefly explain your answer.
 				</p>
 				<p>
-					​ ​
+					 
 				</p>
 			</statement>
 		</task>
 		<task workspace="1.5in">
 			<statement>
 				<p>
-					On which intervals is <m>f(x)</m> decreasing?Briefly explain your answer. ​
+					On which intervals is <m>f(x)</m> decreasing?Briefly explain your answer. 
 				</p>
 			</statement>
 		</task>

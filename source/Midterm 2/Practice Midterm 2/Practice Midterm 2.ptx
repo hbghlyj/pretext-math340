@@ -266,29 +266,29 @@
 				On the axes below, draw the graph of a continuous function <m>f(x)</m> that satisfies the following:
 			</p>
 			<p>
-				​ <m>f(0)=5</m> ​ ​ <m>f'(0)=0</m> ​ ​ <m>f'(x)&gt;0</m> on <m>(-\infty, 0)</m> ​ ​ <m>f'(x)&lt;0</m> on <m>(0,\infty)</m> ​ ​ ​ <m>f''(x)&lt;0</m> on <m>(-\infty, 2)</m> ​ ​ <m>f''(x)&gt;0</m> on <m>(2,\infty)</m>
+				 <m>f(0)=5</m>   <m>f'(0)=0</m>   <m>f'(x)&gt;0</m> on <m>(-\infty, 0)</m>   <m>f'(x)&lt;0</m> on <m>(0,\infty)</m>    <m>f''(x)&lt;0</m> on <m>(-\infty, 2)</m>   <m>f''(x)&gt;0</m> on <m>(2,\infty)</m>
 			</p>
 			<p>
 				<m>\displaystyle\lim_{x\to\infty}f(x)=1</m>
 			</p>
 			<p>
-				​
+				
 			</p>
 			<p>
-				​ ​
+				 
 			</p>
 		</introduction>
 	</exercise>
 	<exercise>
 		<introduction>
 			<p>
-				​ Farmer Stan is building a rectangular cattle pen to be enclosed by a fence and divided into three equal parts by two
+				 Farmer Stan is building a rectangular cattle pen to be enclosed by a fence and divided into three equal parts by two
 			</p>
 			<p>
-				​ additional fences parallel to one of the sides (see picture below). If he has 200 meters of fencing available to use, what dimensions for the outer rectangle (i.e., what values for <m>x</m> and <m>y</m>) will create the largest possible total area? Justify that your solution is optimal. Show all work.
+				 additional fences parallel to one of the sides (see picture below). If he has 200 meters of fencing available to use, what dimensions for the outer rectangle (i.e., what values for <m>x</m> and <m>y</m>) will create the largest possible total area? Justify that your solution is optimal. Show all work.
 			</p>
 			<p>
-				​
+				
 			</p>
 		</introduction>
 	</exercise>
