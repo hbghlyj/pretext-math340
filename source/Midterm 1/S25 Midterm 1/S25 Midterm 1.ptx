@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <worksheet xml:id="Math211Sp25-Midterm1" xmlns:xi="http://www.w3.org/2001/XInclude">
         <title>Math211Sp25-Midterm1</title>
-        <exercise>
-                <statement>
-                        <p>
-                                Clearly mark the correct answer(s) for each of the following by completely filling in the appropriate bubble. <term>No justification is needed.</term>
-                        </p>
-                </statement>
+<exercise>
+<introduction>
+<p>
+Clearly mark the correct answer(s) for each of the following by completely filling in the appropriate bubble. <term>No justification is needed.</term>
+</p>
+</introduction>
                 <task>
                         <statement>
                                 <p>
@@ -253,12 +253,12 @@
                         </p>
                 </solution>
         </exercise>
-        <exercise>
-                <statement>
-                        <p>
-                                Calculate the derivative of each function. You do not need to simplify your answers.
-                        </p>
-                </statement>
+<exercise>
+<introduction>
+<p>
+Calculate the derivative of each function. You do not need to simplify your answers.
+</p>
+</introduction>
                 <task workspace="1in">
                         <statement>
                                 <p>
@@ -320,12 +320,12 @@
                         </solution>
                 </task>
         </exercise>
-        <exercise>
-                <statement>
-                        <p>
-                                The function <m>f(x)</m> is defined on the interval <m>[-2,2]</m>. Its graph is shown below. Based on the graph, answer the following questions.
-                        </p>
-                </statement>
+<exercise>
+<introduction>
+<p>
+The function <m>f(x)</m> is defined on the interval <m>[-2,2]</m>. Its graph is shown below. Based on the graph, answer the following questions.
+</p>
+</introduction>
                 <task workspace="1in">
                         <statement>
                                 <p>
@@ -390,12 +390,12 @@
                         </p>
                 </solution>
         </exercise>
-        <exercise>
-                <statement>
-                        <p>
-                                Suppose a manufacturer determines that their cost function <m>C(x)</m> (in dollars) for producing <m>x</m> products is <m>C(x)=8x^{3/2}+9x</m>.
-                        </p>
-                </statement>
+<exercise>
+<introduction>
+<p>
+Suppose a manufacturer determines that their cost function <m>C(x)</m> (in dollars) for producing <m>x</m> products is <m>C(x)=8x^{3/2}+9x</m>.
+</p>
+</introduction>
                 <task workspace="1in">
                         <statement>
                                 <p>
@@ -448,12 +448,12 @@
                         </solution>
                 </task>
         </exercise>
-        <exercise>
-                <statement>
-                        <p>
-                                Find each limit. Show all work and simplify your final answers.
-                        </p>
-                </statement>
+<exercise>
+<introduction>
+<p>
+Find each limit. Show all work and simplify your final answers.
+</p>
+</introduction>
                 <task workspace="1in">
                         <statement>
                                 <p>
@@ -554,12 +554,12 @@
                         </me>
                 </solution>
         </exercise>
-        <exercise>
-                <statement>
-                        <p>
-                                The graph of the function <m>f(x)</m> is given below. Based on the graph, determine whether the following numbers are zero, positive, or negative.
-                        </p>
-                </statement>
+<exercise>
+<introduction>
+<p>
+The graph of the function <m>f(x)</m> is given below. Based on the graph, determine whether the following numbers are zero, positive, or negative.
+</p>
+</introduction>
                 <task>
                         <statement>
                                 <p>

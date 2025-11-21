@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="utf-8"?>
+<worksheet xml:id="Math211Sp25-Midterm2" xmlns:xi="http://www.w3.org/2001/XInclude">
+        <title>Math211Sp25-Midterm2</title>
+
+        <exercise points="3">
+                <statement>
+                        <p>What are the vertical asymptotes of the function</p>
+                        <me>f(x)=\frac{2 x^2-8}{x^2-1} ?</me>
+                        <p>Choose the correct option.</p>
+                </statement>
+                <choices multiple-correct="no">
+                        <choice>
+                                <statement>
+                                        <p><m>x=2</m> and <m>x=-2</m></p>
+                                </statement>
+                        </choice>
+                        <choice correct="yes">
+                                <statement>
+                                        <p><m>x=1</m> and <m>x=-1</m></p>
+                                </statement>
+                        </choice>
+                        <choice>
+                                <statement>
+                                        <p><m>x=2</m></p>
+                                </statement>
+                        </choice>
+                        <choice>
+                                <statement>
+                                        <p>There is no vertical asymptote.</p>
+                                </statement>
+                        </choice>
+                </choices>
+                <solution>
+                        <p>To find the vertical asymptotes of the function</p>
+                        <me>f(x)=\frac{2 x^2-8}{x^2-1}</me>
+                        <p>we need to find the values of <m>x</m> for which the denominator is zero and the numerator is non-zero.</p>
+                        <p>First, we set the denominator equal to zero:</p>
+                        <me>x^2-1=0</me>
+                        <p>Factoring the difference of squares, we get:</p>
+                        <me>(x-1)(x+1)=0</me>
+                        <p>This gives us two potential locations for vertical asymptotes:</p>
+                        <me>\begin{gathered}
+x-1=0 \Longrightarrow x=1 \\
+x+1=0 \Longrightarrow x=-1
+\end{gathered}</me>
+                        <p>Next, we check if the numerator is zero at these values of <m>x</m>. The numerator is <m>2 x^2-8</m>.</p>
+                        <p>For <m>x=1</m>:</p>
+                        <me>2(1)^2-8=2(1)-8=2-8=-6</me>
+                        <p>Since the numerator is <m>-6 \neq 0</m> at <m>x=1</m>, there is a vertical asymptote at <m>x=1</m>.</p>
+                        <p>For <m>x=-1</m>:</p>
+                        <me>2(-1)^2-8=2(1)-8=2-8=-6</me>
+                        <p>Since the numerator is <m>-6 \neq 0</m> at <m>x=-1</m>, there is a vertical asymptote at <m>x=-1</m>.</p>
+                        <p>Therefore, the vertical asymptotes of the function <m>f(x)=\frac{2 x^2-8}{x^2-1}</m> are <m>x=1</m> and <m>x=-1</m>.</p>
+                </solution>
+        </exercise>
+
+        <exercise points="3">
+                <statement>
+                        <p>We learned that the mathematical constant <m>e</m> can be derived from the formula for compound interest:</p>
+                        <me>e=\lim_{n \to \infty}\left(1+\frac{1}{n}\right)^n</me>
+                        <p>In this expression, what does <m>n</m> represent in the context of compound interest?</p>
+                </statement>
+                <choices multiple-correct="no">
+                        <choice>
+                                <statement>
+                                        <p>The final account balance after compounding.</p>
+                                </statement>
+                        </choice>
+                        <choice>
+                                <statement>
+                                        <p>The principal investment amount.</p>
+                                </statement>
+                        </choice>
+                        <choice>
+                                <statement>
+                                        <p>The number of years the money is invested.</p>
+                                </statement>
+                        </choice>
+                        <choice correct="yes">
+                                <statement>
+                                        <p>The number of times interest is compounded per year.</p>
+                                </statement>
+                        </choice>
+                </choices>
+                <solution>
+                        <p>The formula for the amount <m>A</m> accumulated after <m>t</m> years when a principal <m>P</m> is invested at an annual interest rate <m>r</m>, compounded <m>n</m> times per year, is given by:</p>
+                        <me>A=P\left(1+\frac{r}{n}\right)^{n t}</me>
+                        <p>To understand the connection to the definition of the mathematical constant <m>e</m>, let's consider a principal investment of <m>P=1</m> and an annual interest rate of <m>r=1</m> (or 100%). Then the accumulated amount after <m>t</m> years is:</p>
+                        <me>A=1\left(1+\frac{1}{n}\right)^{n t}=\left(1+\frac{1}{n}\right)^{n t}</me>
+                        <p>Now, if we consider the accumulation after <m>t=1</m> year, the formula simplifies to:</p>
+                        <me>A=\left(1+\frac{1}{n}\right)^n</me>
+                        <p>The definition of <m>e</m> is given by the limit as <m>n</m> approaches infinity:</p>
+                        <me>e=\lim_{n \rightarrow \infty}\left(1+\frac{1}{n}\right)^n</me>
+                        <p>Comparing the formula for compound interest with the definition of <m>e</m>, we can see that <m>n</m> in the expression <m>\left(1+\frac{1}{n}\right)^n</m> corresponds to the number of times the interest is compounded per year. As <m>n</m> increases, the interest is compounded more and more frequently (e.g., monthly, daily, hourly, continuously). The limit as <m>n</m> approaches infinity represents continuous compounding, and the resulting accumulated amount (when <m>P=1</m> and <m>r=1</m> for <m>t=1</m> year) approaches the value of <m>e</m>. Therefore, in the context of compound interest within the given expression for <m>e</m>, <m>n</m> represents the number of times interest is compounded per year.</p>
+                </solution>
+        </exercise>
+
+        <exercise points="3">
+                <statement>
+                        <p>A machine worth <m>\$50{,}000</m> depreciates in value by <m>35\%</m> each year. Which formula correctly calculates its value after 4 years?</p>
+                </statement>
+                <choices multiple-correct="no">
+                        <choice correct="yes">
+                                <statement>
+                                        <p><m>50000(1-0.35)^4</m></p>
+                                </statement>
+                        </choice>
+                        <choice>
+                                <statement>
+                                        <p><m>50000(1+0.35)^4</m></p>
+                                </statement>
+                        </choice>
+                        <choice>
+                                <statement>
+                                        <p><m>50000(1-0.35 \times 4)</m></p>
+                                </statement>
+                        </choice>
+                        <choice>
+                                <statement>
+                                        <p><m>50000(0.35)^4</m></p>
+                                </statement>
+                        </choice>
+                </choices>
+                <solution>
+                        <p>The problem describes a situation of depreciation, where the value of a machine decreases by a fixed percentage each year. The initial value of the machine is <m>\$50,000</m>, and it depreciates by <m>35\%</m> per year. After <m>n</m> years, the value of the machine will be:</p>
+                        <me>A=P(1-0.35)^n</me>
+                        <p>In this specific problem, <m>P=50000</m> and <m>n=4</m>. Therefore, the value of the machine after 4 years is:</p>
+                        <me>50000(1-0.35)^4</me>
+                </solution>
+        </exercise>
+
+        <exercise points="3">
+                <statement>
+                        <p>A couple wants to save now to cover <m>\$20{,}000</m> in expected medical costs for childbirth in 5 years. If money can earn <m>6\%</m> interest compounded continuously, which formula correctly calculates the present value they need to invest today?</p>
+                </statement>
+                <choices multiple-correct="no">
+                        <choice>
+                                <statement>
+                                        <p><m>20000 e^{0.06 \times 5}</m></p>
+                                </statement>
+                        </choice>
+                        <choice>
+                                <statement>
+                                        <p><m>\dfrac{20000}{(1+0.06)^5}</m></p>
+                                </statement>
+                        </choice>
+                        <choice>
+                                <statement>
+                                        <p><m>20000(1-0.06)^5</m></p>
+                                </statement>
+                        </choice>
+                        <choice correct="yes">
+                                <statement>
+                                        <p><m>20000 e^{-0.06 \times 5}</m></p>
+                                </statement>
+                        </choice>
+                </choices>
+                <solution>
+                        <p>The problem asks for the present value needed to invest today to have <m>\$20{,}000</m> in 5 years, given a continuous compound interest rate of <m>6\%</m>. The formula for the future value <m>A</m> of an investment with principal <m>P</m>, annual interest rate <m>r</m>, compounded continuously for <m>t</m> years is given by:</p>
+                        <me>A=P e^{r t}</me>
+                        <p>where <m>e</m> is the base of the natural logarithm. In this problem, we are given the future value <m>A=\$20{,}000</m>, the annual interest rate <m>r=6\%=0.06</m>, and the time period <m>t=5</m> years. We need to find the present value <m>P</m>, which is the amount they need to invest today.</p>
+                        <p>We can rearrange the continuous compounding formula to solve for the present value <m>P</m>:</p>
+                        <me>P=\frac{A}{e^{r t}}=A e^{-r t}</me>
+                        <p>Substituting the given values into this formula, we get:</p>
+                        <me>P=20000 \cdot e^{-(0.06)(5)}=20000 e^{-0.30}</me>
+                </solution>
+        </exercise>
+
+        <exercise points="3">
+                <statement>
+                        <p>Which of the following functions is <em>not</em> differentiable at <m>x=0</m>?</p>
+                </statement>
+                <choices multiple-correct="no">
+                        <choice correct="yes">
+                                <statement>
+                                        <p><m>|x|</m></p>
+                                </statement>
+                        </choice>
+                        <choice>
+                                <statement>
+                                        <p><m>x^{4/3}</m></p>
+                                </statement>
+                        </choice>
+                        <choice>
+                                <statement>
+                                        <p><m>|x-1|</m></p>
+                                </statement>
+                        </choice>
+                        <choice>
+                                <statement>
+                                        <p><m>\sqrt{x+1}</m></p>
+                                </statement>
+                        </choice>
+                </choices>
+                <solution>
+                        <p>A function is differentiable at a point if its derivative exists at that point. The derivative is defined as the limit:</p>
+                        <me>f'(a)=\lim_{h \rightarrow 0} \frac{f(a+h)-f(a)}{h}</me>
+                        <p>For the derivative to exist, the limit from the left and the limit from the right must be equal. Let's examine each function at <m>x=0</m>:</p>
+                        <p><em>Part 1:</em> <m>f(x)=|x|</m>. The function can be defined as:</p>
+                        <me>|x|= \begin{cases}x &amp; \text{if } x \geq 0 \\ -x &amp; \text{if } x&lt;0\end{cases}</me>
+                        <p>The derivative from the right <m>(h \rightarrow 0^{+})</m>:</p>
+                        <me>\lim_{h \rightarrow 0^{+}} \frac{|0+h|-|0|}{h}=\lim_{h \rightarrow 0^{+}} \frac{|h|}{h}=\lim_{h \rightarrow 0^{+}} \frac{h}{h}=1</me>
+                        <p>The derivative from the left <m>(h \rightarrow 0^{-})</m>:</p>
+                        <me>\lim_{h \rightarrow 0^{-}} \frac{|0+h|-|0|}{h}=\lim_{h \rightarrow 0^{-}} \frac{|h|}{h}=\lim_{h \rightarrow 0^{-}} \frac{-h}{h}=-1</me>
+                        <p>Since the left derivative (<m>-1</m>) is not equal to the right derivative (<m>1</m>), the function <m>f(x)= |x|</m> is not differentiable at <m>x=0</m>.</p>
+                        <p><em>Part 2:</em> <m>f(x)=x^{4 / 3}</m>. The derivative of <m>f(x)</m> is:</p>
+                        <me>f'(x)=\frac{4}{3} x^{(4 / 3)-1}=\frac{4}{3} x^{1 / 3}</me>
+                        <p>At <m>x=0</m>, the derivative is:</p>
+                        <me>f'(0)=\frac{4}{3}(0)^{1 / 3}=0</me>
+                        <p>Since the derivative exists at <m>x=0</m>, the function <m>f(x)=x^{4 / 3}</m> is differentiable at <m>x=0</m>.</p>
+                        <p><em>Part 3:</em> <m>f(x)=|x-1|</m>. The function can be defined as:</p>
+                        <me>|x-1|= \begin{cases}x-1 &amp; \text{if } x-1 \geq 0 \Longrightarrow x \geq 1 \\ -(x-1) &amp; \text{if } x-1&lt;0 \Longrightarrow x&lt;1\end{cases}</me>
+                        <p>At <m>x=0</m>, we are in the case where <m>x&lt;1</m>, so <m>f(x)=-(x-1)=1-x</m>. The derivative for <m>x&lt;1</m> is <m>f'(x)=-1</m>. Thus, at <m>x=0</m>, the derivative is <m>-1</m>. Alternatively, since the absolute value function has a sharp corner (non-differentiable point) where its argument is zero, <m>|x-1|</m> has a non-differentiable point at <m>x-1=0 \Longrightarrow x=1</m>. Since we are considering <m>x=0</m>, which is not the location of the sharp corner, the function is differentiable at <m>x=0</m>.</p>
+                        <p><em>Part 4:</em> <m>f(x)=\sqrt{x+1}</m>. The derivative of <m>f(x)</m> is:</p>
+                        <me>f'(x)=\frac{1}{2 \sqrt{x+1}}</me>
+                        <p>At <m>x=0</m>, the derivative is:</p>
+                        <me>f'(0)=\frac{1}{2 \sqrt{0+1}}=\frac{1}{2 \sqrt{1}}=\frac{1}{2}</me>
+                        <p>Since the derivative exists at <m>x=0</m>, the function <m>f(x)=\sqrt{x+1}</m> is differentiable at <m>x=0</m>.</p>
+                </solution>
+        </exercise>
+
+        <exercise points="3">
+                <statement>
+                        <p>Suppose <m>f(x)</m> is a continuous function whose derivative is</p>
+                        <me>f'(x)=x(x+1)(x-2)^2.</me>
+                        <p>Which of the following are critical numbers of <m>f(x)</m>?</p>
+                </statement>
+                <choices multiple-correct="no">
+                        <choice correct="yes">
+                                <statement>
+                                        <p><m>-1, 0</m>, and <m>2</m></p>
+                                </statement>
+                        </choice>
+                        <choice>
+                                <statement>
+                                        <p><m>-1</m> and <m>2</m> only</p>
+                                </statement>
+                        </choice>
+                        <choice>
+                                <statement>
+                                        <p><m>0</m> and <m>2</m> only</p>
+                                </statement>
+                        </choice>
+                        <choice>
+                                <statement>
+                                        <p><m>0</m>, <m>1</m>, and <m>-2</m></p>
+                                </statement>
+                        </choice>
+                </choices>
+                <solution>
+                        <p>Critical numbers of a function <m>f(x)</m> are the values of <m>x</m> in the domain of <m>f</m> for which either <m>f'(x)=0</m> or <m>f'(x)</m> does not exist. We are given that <m>f(x)</m> is a continuous function and its derivative is <m>f'(x)=x(x+1)(x-2)^2</m>.</p>
+                        <p>First, we need to find the values of <m>x</m> for which <m>f'(x)=0</m>:</p>
+                        <me>f'(x)=x(x+1)(x-2)^2=0</me>
+                        <p>This equation is satisfied if any of the factors are equal to zero:</p>
+                        <ul>
+                                <li><m>x=0</m></li>
+                                <li><m>x+1=0 \Longrightarrow x=-1</m></li>
+                                <li><m>(x-2)^2=0 \Longrightarrow x-2=0 \Longrightarrow x=2</m></li>
+                        </ul>
+                        <p>So, the values of <m>x</m> where <m>f'(x)=0</m> are <m>x=0</m>, <m>x=-1</m>, and <m>x=2</m>.</p>
+                        <p>Next, we need to consider if there are any values of <m>x</m> for which <m>f'(x)</m> does not exist. The derivative <m>f'(x)=x(x+1)(x-2)^2</m> is a polynomial function in <m>x</m>. Polynomial functions are defined and differentiable for all real numbers. Therefore, <m>f'(x)</m> exists for all real numbers <m>x</m>.</p>
+                        <p>Since <m>f'(x)</m> is zero at <m>x=0</m>, <m>x=-1</m>, and <m>x=2</m>, and it is defined everywhere, the critical numbers of <m>f(x)</m> are <m>-1</m>, <m>0</m>, and <m>2</m>.</p>
+                </solution>
+        </exercise>
+
+        <exercise points="3">
+                <statement>
+                        <p>Suppose the reproduction function for a moose population is</p>
+                        <me>f(p)=4p-0.01p^2.</me>
+                        <p>What population size <m>p</m> will result in the <em>maximum sustainable yield</em> for this population?</p>
+                </statement>
+                <choices multiple-correct="no">
+                        <choice>
+                                <statement>
+                                        <p><m>p=100</m></p>
+                                </statement>
+                        </choice>
+                        <choice correct="yes">
+                                <statement>
+                                        <p><m>p=150</m></p>
+                                </statement>
+                        </choice>
+                        <choice>
+                                <statement>
+                                        <p><m>p=200</m></p>
+                                </statement>
+                        </choice>
+                        <choice>
+                                <statement>
+                                        <p><m>p=300</m></p>
+                                </statement>
+                        </choice>
+                </choices>
+                <solution>
+                        <p>The reproduction function for the moose population is given by <m>f(p)=4 p-0.01 p^2</m>, where <m>p</m> is the current population size. The sustainable yield <m>Y(p)</m> is the number of moose that can be harvested such that the population remains stable. This is given by the difference between the number of offspring produced and the current population size:</p>
+                        <me>\begin{gathered}
+Y(p)=f(p)-p \\
+Y(p)=\left(4 p-0.01 p^2\right)-p \\
+Y(p)=3 p-0.01 p^2
+\end{gathered}</me>
+                        <p>To find the maximum sustainable yield, we need to find the value of <m>p</m> that maximizes <m>Y(p)</m>. We can do this by taking the derivative of <m>Y(p)</m> with respect to <m>p</m> and setting it to zero.</p>
+                        <me>\frac{d Y}{d p}=\frac{d}{d p}\left(3 p-0.01 p^2\right)=3-0.02 p</me>
+                        <p>Set the derivative equal to zero to find the critical points:</p>
+                        <me>\begin{gathered}
+3-0.02 p=0 \\
+0.02 p=3 \\
+p=\frac{3}{0.02}=\frac{300}{2}=150
+\end{gathered}</me>
+                        <p>So, the population size that yields the maximum sustainable yield is <m>p=150</m>.</p>
+                        <p>To confirm that this is a maximum, we can take the second derivative of <m>Y(p)</m>:</p>
+                        <me>\frac{d^2 Y}{d p^2}=\frac{d}{d p}(3-0.02 p)=-0.02</me>
+                        <p>Since the second derivative is negative (<m>-0.02&lt;0</m>), the function <m>Y(p)</m> has a maximum at <m>p=150</m>.</p>
+                </solution>
+        </exercise>
+
+        <exercise points="3">
+                <statement>
+                        <p>A company's revenue based on advertising spending is modeled by</p>
+                        <me>R(x)=-x^3+27x^2+50, \quad 0 \leq x \leq 20.</me>
+                        <p>Find the point of diminishing returns.</p>
+                </statement>
+                <choices multiple-correct="no">
+                        <choice>
+                                <statement>
+                                        <p><m>x=1</m></p>
+                                </statement>
+                        </choice>
+                        <choice>
+                                <statement>
+                                        <p><m>x=3</m></p>
+                                </statement>
+                        </choice>
+                        <choice correct="yes">
+                                <statement>
+                                        <p><m>x=9</m></p>
+                                </statement>
+                        </choice>
+                        <choice>
+                                <statement>
+                                        <p><m>x=18</m></p>
+                                </statement>
+                        </choice>
+                </choices>
+                <solution>
+                        <p>The revenue function is given by</p>
+                        <me>R(x)=-x^3+27 x^2+50</me>
+                        <p>To find the point of diminishing returns, we need to find the inflection point of the function, which occurs where the second derivative changes sign. First, we find the first derivative:</p>
+                        <me>R'(x)=\frac{d}{d x}\left(-x^3+27 x^2+50\right)=-3 x^2+54 x</me>
+                        <p>Next, we find the second derivative:</p>
+                        <me>R''(x)=\frac{d}{d x}\left(-3 x^2+54 x\right)=-6 x+54</me>
+                        <p>The point of diminishing returns occurs where the second derivative is equal to zero:</p>
+                        <me>R''(x)=0 \Longrightarrow-6 x+54=0</me>
+                        <p>Solving for <m>x</m>:</p>
+                        <me>\begin{gathered}
+6 x=54 \\
+x=\frac{54}{6}=9
+\end{gathered}</me>
+                        <p>To confirm that this is an inflection point, we check the sign of the second derivative around <m>x=9</m>: For <m>x&lt;9</m>, let <m>x=8</m>: <m>R''(8)=-6(8)+54=-48+54=6&gt;0</m>. For <m>x&gt;9</m>, let <m>x=10</m>: <m>R''(10)=-6(10)+54=-60+54=-6&lt;0</m>. Since the second derivative changes sign at <m>x=9</m>, this is the point of diminishing returns.</p>
+                </solution>
+        </exercise>
+
+<exercise points="9">
+<introduction>
+<p>A function <m>f(x)</m> defined on <m>[-1,3]</m> has a graph with the features described below. Determine whether the function is differentiable at each specified point.</p>
+</introduction>
+                <task>
+                        <statement>
+                                <p>At <m>x=0</m>:</p>
+                        </statement>
+                        <answer>
+                                <p>No. Vertical tangent line.</p>
+                        </answer>
+                </task>
+                <task>
+                        <statement>
+                                <p>At <m>x=2</m>:</p>
+                        </statement>
+                        <answer>
+                                <p>No. Corner point with conflicting slopes.</p>
+                        </answer>
+                </task>
+                <task>
+                        <statement>
+                                <p>At <m>x=2.5</m>:</p>
+                        </statement>
+                        <answer>
+                                <p>Yes. Straight line with the same slope on both sides.</p>
+                        </answer>
+                </task>
+        </exercise>
+
+<exercise points="9">
+<introduction>
+<p>The graph of a function <m>f(x)</m> is given. For each specified <m>x</m>-value, determine the concavity of <m>f</m> at that point.</p>
+</introduction>
+                <task>
+                        <statement>
+                                <p>At <m>x=4</m>:</p>
+                        </statement>
+                        <answer>
+                                <p>Concave up.</p>
+                        </answer>
+                </task>
+                <task>
+                        <statement>
+                                <p>At <m>x=-3</m>:</p>
+                        </statement>
+                        <answer>
+                                <p>Concave down.</p>
+                        </answer>
+                </task>
+                <task>
+                        <statement>
+                                <p>At <m>x=0</m>:</p>
+                        </statement>
+                        <answer>
+                                <p>Neither concave up nor concave down.</p>
+                        </answer>
+                </task>
+        </exercise>
+
+<exercise points="14">
+<introduction>
+<p>The function <m>f(x)</m> has a graph described below.</p>
+<p>For each interval, indicate whether the function is increasing/decreasing and concave up/down. Then determine whether each listed <m>x</m>-value is an inflection point.</p>
+</introduction>
+                <task>
+                        <statement>
+                                <p>Interval <m>(-1,0)</m>:</p>
+                        </statement>
+                        <answer>
+                                <p>Increasing and concave down.</p>
+                        </answer>
+                </task>
+                <task>
+                        <statement>
+                                <p>Interval <m>(0,1)</m>:</p>
+                        </statement>
+                        <answer>
+                                <p>Increasing and concave up.</p>
+                        </answer>
+                </task>
+                <task>
+                        <statement>
+                                <p>Interval <m>(1,2)</m>:</p>
+                        </statement>
+                        <answer>
+                                <p>Decreasing and concave up.</p>
+                        </answer>
+                </task>
+                <task>
+                        <statement>
+                                <p>Interval <m>(2,3)</m>:</p>
+                        </statement>
+                        <answer>
+                                <p>Decreasing and concave down.</p>
+                        </answer>
+                </task>
+                <task>
+                        <statement>
+                                <p>Is <m>x=0</m> an inflection point?</p>
+                        </statement>
+                        <answer>
+                                <p>Yes.</p>
+                        </answer>
+                </task>
+                <task>
+                        <statement>
+                                <p>Is <m>x=1</m> an inflection point?</p>
+                        </statement>
+                        <answer>
+                                <p>No.</p>
+                        </answer>
+                </task>
+                <task>
+                        <statement>
+                                <p>Is <m>x=1.25</m> an inflection point?</p>
+                        </statement>
+                        <answer>
+                                <p>No.</p>
+                        </answer>
+                </task>
+        </exercise>
+
+<exercise points="17">
+<introduction>
+<p>Let</p>
+<me>f(x)=x^3-3 x^2+4.</me>
+<p>Answer all parts completely, showing work.</p>
+</introduction>
+                <task>
+                        <statement>
+                                <p>Find all critical numbers of <m>f(x)</m>.</p>
+                        </statement>
+                        <answer>
+                                <p><m>x=0</m> and <m>x=2</m>.</p>
+                        </answer>
+                        <solution>
+                                <p>The function is given by <m>f(x)=x^3-3 x^2+4</m>. To find the critical numbers, we need to find the values of <m>x</m> for which the first derivative <m>f'(x)</m> is either zero or undefined.</p>
+                                <p>First, we find the first derivative of <m>f(x)</m>:</p>
+                                <me>f'(x)=\frac{d}{d x}\left(x^3-3 x^2+4\right)=3 x^2-6 x</me>
+                                <p>Now, we set <m>f'(x)=0</m> and solve for <m>x</m>:</p>
+                                <me>3 x^2-6 x=0</me>
+                                <p>We can factor out <m>3 x</m>:</p>
+                                <me>3 x(x-2)=0</me>
+                                <p>This equation is satisfied if either <m>3 x=0</m> or <m>x-2=0</m>:</p>
+                                <me>\begin{gathered}
+3 x=0 \Longrightarrow x=0 \\
+x-2=0 \Longrightarrow x=2
+\end{gathered}</me>
+                                <p>The first derivative <m>f'(x)=3 x^2-6 x</m> is a polynomial, so it is defined for all real numbers <m>x</m>. Therefore, the critical numbers of <m>f(x)</m> are the values of <m>x</m> where <m>f'(x)=0</m>, which are <m>x=0</m> and <m>x=2</m>.</p>
+                        </solution>
+                </task>
+                <task>
+                        <statement>
+                                <p>Find the intervals of increase and decrease for <m>f</m>.</p>
+                        </statement>
+                        <answer>
+                                <p>Increasing on <m>(-\infty,0)</m> and <m>(2,\infty)</m>; decreasing on <m>(0,2)</m>.</p>
+                        </answer>
+                        <solution>
+                                <p>The critical numbers are <m>x=0</m> and <m>x=2</m>. These numbers divide the real number line into three intervals: <m>(-\infty, 0)</m>, <m>(0,2)</m>, and <m>(2, \infty)</m>. We will test a value from each interval in the first derivative <m>f'(x)=3 x(x-2)</m> to determine the sign of <m>f'(x)</m> in that interval.</p>
+                                <p><em>Interval <m>(-\infty, 0)</m>:</em> Choose a test point, for example, <m>x=-1</m>.</p>
+                                <me>f'(-1)=3(-1)(-1-2)=3(-1)(-3)&gt;0</me>
+                                <p>Since <m>f'(x)&gt;0</m> in this interval, <m>f(x)</m> is increasing on <m>(-\infty, 0)</m>.</p>
+                                <p><em>Interval <m>(0,2)</m>:</em> Choose a test point, for example, <m>x=1</m>.</p>
+                                <me>f'(1)=3(1)(1-2)=3(1)(-1)&lt;0</me>
+                                <p>Since <m>f'(x)&lt;0</m> in this interval, <m>f(x)</m> is decreasing on <m>(0,2)</m>.</p>
+                                <p><em>Interval <m>(2, \infty)</m>:</em> Choose a test point, for example, <m>x=3</m>.</p>
+                                <me>f'(3)=3(3)(3-2)=3(3)(1)&gt;0</me>
+                                <p>Since <m>f'(x)&gt;0</m> in this interval, <m>f(x)</m> is increasing on <m>(2, \infty)</m>.</p>
+                                <p>Therefore, <m>f(x)</m> is increasing on the intervals <m>(-\infty, 0)</m> and <m>(2, \infty)</m>, and <m>f(x)</m> is decreasing on the interval <m>(0,2)</m>.</p>
+                        </solution>
+                </task>
+                <task>
+                        <statement>
+                                <p>Classify each critical number as a relative maximum, relative minimum, or neither.</p>
+                        </statement>
+                        <answer>
+                                <p><m>x=0</m> is a relative maximum; <m>x=2</m> is a relative minimum.</p>
+                        </answer>
+                        <solution>
+                                <p>We have critical numbers at <m>x=0</m> and <m>x=2</m>. We can use the First Derivative Test to classify them based on the intervals of increasing and decreasing found in the previous part.</p>
+                                <p><em>At <m>x=0</m>:</em> The function <m>f(x)</m> changes from increasing on <m>(-\infty, 0)</m> to decreasing on <m>(0,2)</m>. Therefore, <m>x=0</m> is the location of a relative maximum.</p>
+                                <p><em>At <m>x=2</m>:</em> The function <m>f(x)</m> changes from decreasing on <m>(0,2)</m> to increasing on <m>(2, \infty)</m>. Therefore, <m>x=2</m> is the location of a relative minimum.</p>
+                                <p><em>Second Derivative Test:</em> We can also use the Second Derivative Test</p>
+                                <me>f''(x)=6 x-6</me>
+                                <p><m>f''(0)=-6&lt;0</m> hence it is concave down so <m>x=0</m> is a local max, <m>f''(2)=6&gt;0</m> hence it is concave up so <m>x=2</m> is a local min.</p>
+                        </solution>
+                </task>
+                <task>
+                        <statement>
+                                <p>Find the absolute minimum value of <m>f</m> on <m>[-1,3]</m>.</p>
+                        </statement>
+                        <answer>
+                                <p>The absolute minimum value is <m>0</m>, attained at <m>x=-1</m> and <m>x=2</m>.</p>
+                        </answer>
+                        <solution>
+                                <p>To find the absolute minimum value of <m>f(x)=x^3-3 x^2+4</m> on the closed interval <m>[-1,3]</m>, we need to evaluate the function at the critical numbers within the interval and at the endpoints of the interval. The critical numbers are <m>x=0</m> and <m>x=2</m>, both of which lie within <m>[-1,3]</m>. The endpoints of the interval are <m>x=-1</m> and <m>x=3</m>.</p>
+                                <p>We evaluate <m>f(x)</m> at these points:</p>
+                                <ul>
+                                        <li><m>f(-1)=(-1)^3-3(-1)^2+4=-1-3(1)+4=-1-3+4=0</m></li>
+                                        <li><m>f(0)=(0)^3-3(0)^2+4=0-0+4=4</m></li>
+                                        <li><m>f(2)=(2)^3-3(2)^2+4=8-3(4)+4=8-12+4=0</m></li>
+                                        <li><m>f(3)=(3)^3-3(3)^2+4=27-3(9)+4=27-27+4=4</m></li>
+                                </ul>
+                                <p>Comparing the values of <m>f(x)</m> at these points, we have: <m>f(-1)=0</m>, <m>f(0)=4</m>, <m>f(2)=0</m>, <m>f(3)=4</m>.</p>
+                                <p>The smallest value among these is <m>0</m>, which occurs at <m>x=-1</m> and <m>x=2</m>. Therefore, the absolute minimum value of <m>f</m> on <m>[-1,3]</m> is <m>0</m>.</p>
+                        </solution>
+                </task>
+        </exercise>
+
+        <exercise points="10">
+                <statement>
+                        <p>Find the inflection point(s) (x-values) and intervals of concavity for</p>
+                        <me>f(x)=x^4-4x^3.</me>
+                </statement>
+                <solution>
+                        <p>To find the inflection points and intervals of concavity, we need to analyze the second derivative of the function <m>f(x)</m>.</p>
+                        <p>First, find the first derivative <m>f'(x)</m>:</p>
+                        <me>f'(x)=\frac{d}{d x}\left(x^4-4 x^3\right)=4 x^3-12 x^2</me>
+                        <p>Next, find the second derivative <m>f''(x)</m>:</p>
+                        <me>f''(x)=\frac{d}{d x}\left(4 x^3-12 x^2\right)=12 x^2-24 x</me>
+                        <p>To find the potential inflection points, we set the second derivative equal to zero and solve for <m>x</m>:</p>
+                        <me>f''(x)=12 x^2-24 x=0</me>
+                        <p>Factor out <m>12 x</m>:</p>
+                        <me>12 x(x-2)=0</me>
+                        <p>This gives us two possible inflection points:</p>
+                        <me>\begin{gathered}
+12 x=0 \Longrightarrow x=0 \\
+x-2=0 \Longrightarrow x=2
+\end{gathered}</me>
+                        <p>So, the potential inflection points occur at <m>x=0</m> and <m>x=2</m>.</p>
+                        <p>Now, we need to determine the intervals of concavity by analyzing the sign of the second derivative in the intervals determined by these potential inflection points. The intervals are <m>(-\infty, 0)</m>, <m>(0,2)</m>, and <m>(2, \infty)</m>.</p>
+                        <p>1. <em>Interval <m>(-\infty, 0)</m>:</em> Choose a test point, say <m>x=-1</m>.</p>
+                        <me>f''(-1)=12(-1)^2-24(-1)=12(1)+24=12+24&gt;0</me>
+                        <p>Since <m>f''(x)&gt;0</m> in this interval, the function is concave up on <m>(-\infty, 0)</m>.</p>
+                        <p>2. <em>Interval <m>(0,2)</m>:</em> Choose a test point, say <m>x=1</m>.</p>
+                        <me>f''(1)=12(1)^2-24(1)=12-24&lt;0</me>
+                        <p>Since <m>f''(x)&lt;0</m> in this interval, the function is concave down on <m>(0,2)</m>.</p>
+                        <p>3. <em>Interval <m>(2, \infty)</m>:</em> Choose a test point, say <m>x=3</m>.</p>
+                        <me>f''(3)=12(3)^2-24(3)=12(9)-72=108-72&gt;0</me>
+                        <p>Since <m>f''(x)&gt;0</m> in this interval, the function is concave up on <m>(2, \infty)</m>.</p>
+                        <p>Since the concavity changes at <m>x=0</m> (from concave up to concave down) and at <m>x=2</m> (from concave down to concave up), both <m>x=0</m> and <m>x=2</m> are inflection points.</p>
+                        <p><strong>Inflection Points (x-values only):</strong> <m>x=0</m>, <m>x=2</m>.</p>
+                        <p><strong>Intervals of Concavity:</strong></p>
+                        <ul>
+                                <li>Concave up: <m>(-\infty, 0) \cup(2, \infty)</m></li>
+                                <li>Concave down: <m>(0,2)</m></li>
+                        </ul>
+                </solution>
+        </exercise>
+
+        <exercise points="10">
+                <statement>
+                        <p>A packaging company needs an open-top, square-based container with volume <m>4</m> cubic inches. Find the dimensions that minimize surface area.</p>
+                </statement>
+                <solution>
+                        <p>Let the side length of the square base be <m>x</m> inches and the height of the container be <m>h</m> inches. The volume <m>V=x^2 h=4</m>, so <m>h=\dfrac{4}{x^2}</m>. The surface area is <m>S(x)=x^2+4 x h= x^2+4 x\left(\dfrac{4}{x^2}\right)=x^2+\dfrac{16}{x}</m>. The derivative is <m>\dfrac{d S}{d x}=2 x-\dfrac{16}{x^2}</m>. Setting <m>\dfrac{d S}{d x}=0</m>:</p>
+                        <me>\begin{gathered}
+2 x-\frac{16}{x^2}=0 \\
+2 x=\frac{16}{x^2} \\
+2 x^3=16 \\
+x^3=8 \\
+x=2
+\end{gathered}</me>
+                        <p>Now, find the height <m>h</m>:</p>
+                        <me>h=\frac{4}{x^2}=\frac{4}{2^2}=\frac{4}{4}=1</me>
+                        <p>The second derivative is <m>\dfrac{d^2 S}{d x^2}=2+\dfrac{32}{x^3}</m>. At <m>x=2</m>, <m>\dfrac{d^2 S}{d x^2}=2+\dfrac{32}{8}=2+4=6&gt;0</m>, so this is a minimum.</p>
+                        <p>The dimensions that minimize the surface area are a base with side length 2 inches and a height of 1 inch.</p>
+                        <p><strong>Final Answer:</strong> The final answer is base side length 2 inches, height 1 inch.</p>
+                </solution>
+        </exercise>
+
+        <exercise points="7">
+                <introduction>
+                        <p>An appliance store expects to sell <m>500</m> refrigerators a year. Each refrigerator costs <m>\$800</m>, and there is a fixed charge of <m>\$400</m> per order. It costs <m>\$160</m> to store a refrigerator for a year. Let <m>x</m> be the number of refrigerators per order.</p>
+                        <p>Answer the following:</p>
+                </introduction>
+                <task>
+                        <statement>
+                                <p>Determine the annual purchase cost of the refrigerators.</p>
+                        </statement>
+                        <solution>
+                                <p><m>500 \times 800</m>.</p>
+                                <p>Explanation: This is the total expense of acquiring the refrigerators sold throughout the year.</p>
+                        </solution>
+                </task>
+                <task>
+                        <statement>
+                                <p>Determine the annual ordering cost in terms of <m>x</m>.</p>
+                        </statement>
+                        <solution>
+                                <p><m>\dfrac{500}{x} \times 400</m>.</p>
+                        </solution>
+                </task>
+                <task>
+                        <statement>
+                                <p>Determine the annual holding cost in terms of <m>x</m>.</p>
+                        </statement>
+                        <solution>
+                                <p><m>\dfrac{x}{2} \times 160</m>.</p>
+                                <p>Explanation: On average, the store will be holding <m>\dfrac{x}{2}</m> refrigerators in inventory throughout the year. Each refrigerator incurs a storage cost of <m>\$160</m> per year.</p>
+                        </solution>
+                </task>
+                <task>
+                        <statement>
+                                <p>Derive the total annual cost function as a function of <m>x</m>.</p>
+                        </statement>
+                        <solution>
+                                <p><m>TC(x)=500 \times 800+\dfrac{500}{x} \times 400+\dfrac{x}{2} \times 160</m>.</p>
+                        </solution>
+                </task>
+        </exercise>
+</worksheet>

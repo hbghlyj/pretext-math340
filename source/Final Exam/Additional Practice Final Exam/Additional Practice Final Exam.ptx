@@ -240,7 +240,7 @@
 				Calculate each integral. You do not need to simplify your answer. Show all work.
 			</p>
 			<p>
-				​
+				
 			</p>
 		</introduction>
 		<task workspace="1.75in">
@@ -268,7 +268,7 @@
 	<exercise>
 		<introduction>
 			<p>
-				The promoters of a state fair estimate that <m>t</m> hours after the gates open at 9:00am, visitors will be entering the fair at the rate of <m>N'(t)=16-t^2</m> hundred people per hour. Find the total number of people who will enter the fair between 11:00am and 2:00pm. You do not need to simplify the final numerical answer, but provide units. ​
+				The promoters of a state fair estimate that <m>t</m> hours after the gates open at 9:00am, visitors will be entering the fair at the rate of <m>N'(t)=16-t^2</m> hundred people per hour. Find the total number of people who will enter the fair between 11:00am and 2:00pm. You do not need to simplify the final numerical answer, but provide units. 
 			</p>
 		</introduction>
 	</exercise>
@@ -312,14 +312,14 @@
 		<task>
 			<statement>
 				<p>
-					<m>f(3)=4</m> <m>f'(3)=-7</m> ​
+					<m>f(3)=4</m> <m>f'(3)=-7</m> 
 				</p>
 			</statement>
 		</task>
 		<task>
 			<statement>
 				<p>
-					<m>g(3)=2</m> <m>g'(3)=5</m> ​
+					<m>g(3)=2</m> <m>g'(3)=5</m> 
 				</p>
 			</statement>
 		</task>
@@ -333,21 +333,21 @@
 		<task>
 			<statement>
 				<p>
-					<m>g(6)=9</m><m>g'(6)=10</m> ​
+					<m>g(6)=9</m><m>g'(6)=10</m> 
 				</p>
 			</statement>
 		</task>
 		<task>
 			<statement>
 				<p>
-					<m>h'(3)</m> if <m>h(x)=f(x)g(x)</m>. ​
+					<m>h'(3)</m> if <m>h(x)=f(x)g(x)</m>. 
 				</p>
 			</statement>
 		</task>
 		<task>
 			<statement>
 				<p>
-					<m>h'(6)</m> if <m>h(x)=\dfrac{3f(x)}{4}</m>. ​
+					<m>h'(6)</m> if <m>h(x)=\dfrac{3f(x)}{4}</m>. 
 				</p>
 			</statement>
 		</task>
@@ -361,7 +361,7 @@
 		<task>
 			<statement>
 				<p>
-					The average value of <m>g'(x)</m> on <m>[3,6]</m>. ​
+					The average value of <m>g'(x)</m> on <m>[3,6]</m>. 
 				</p>
 			</statement>
 		</task>

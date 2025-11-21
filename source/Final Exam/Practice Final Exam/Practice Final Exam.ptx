@@ -164,7 +164,7 @@
 				Calculate each integral. You do not need to simplify your answer. Show all work.
 			</p>
 			<p>
-				​
+				
 			</p>
 		</introduction>
 		<task workspace="1.75in">
@@ -192,7 +192,7 @@
 	<exercise>
 		<introduction>
 			<p>
-				A company’s marginal cost function is <m>MC(x)=2e^{-x}</m>, where <m>x</m> is the number of units. Find the total cost of producing the first hundred units (<m>x=0</m> to <m>x=100</m>). Show all work. You do not need to simplify your final numerical answer. ​
+				A company’s marginal cost function is <m>MC(x)=2e^{-x}</m>, where <m>x</m> is the number of units. Find the total cost of producing the first hundred units (<m>x=0</m> to <m>x=100</m>). Show all work. You do not need to simplify your final numerical answer. 
 			</p>
 		</introduction>
 	</exercise>
@@ -300,7 +300,7 @@
 					On which interval(s) is <m>f(x)</m> increasing? Briefly justify your answer.
 				</p>
 				<p>
-					​
+					
 				</p>
 			</statement>
 		</task>
@@ -310,7 +310,7 @@
 					Is <m>f(x)</m> concave up or concave down at <m>x=-4</m>? Briefly justify your answer.
 				</p>
 				<p>
-					​
+					
 				</p>
 			</statement>
 		</task>

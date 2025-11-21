@@ -1,0 +1,751 @@
+<?xml version="1.0" encoding="utf-8"?>
+<worksheet xml:id="Math211Sp25-FinalExam" xmlns:xi="http://www.w3.org/2001/XInclude">
+        <title>Math211Sp25-FinalExam</title>
+
+        <exercise points="3">
+                <statement>
+                        <p>During a snowstorm, a town's snowplow clears snow at a rate of <m>S(t)</m> cubic meters per hour, where <m>t</m> is the number of hours after midnight <m>(0 \leq t \leq 12)</m>. Which of the following represents the total snow cleared between 5 a.m. and 8 a.m.?</p>
+                </statement>
+                <choices multiple-correct="no">
+                        <choice>
+                                <statement>
+                                        <p><m>\int_0^8 S(t)\,dt</m></p>
+                                </statement>
+                        </choice>
+                        <choice correct="yes">
+                                <statement>
+                                        <p><m>\int_5^8 S(t)\,dt</m></p>
+                                </statement>
+                        </choice>
+                        <choice>
+                                <statement>
+                                        <p><m>S(8)-S(0)</m></p>
+                                </statement>
+                        </choice>
+                        <choice>
+                                <statement>
+                                        <p><m>S(8)-S(5)</m></p>
+                                </statement>
+                        </choice>
+                </choices>
+        </exercise>
+
+        <exercise points="3">
+                <statement>
+                        <p>For a product with demand function <m>D(p)=75-p</m> where <m>p</m> is price in dollars, calculate the elasticity of demand when the price is <m>\$25</m>.</p>
+                </statement>
+                <choices multiple-correct="no">
+                        <choice>
+                                <statement>
+                                        <p><m>-0.5</m></p>
+                                </statement>
+                        </choice>
+                        <choice correct="yes">
+                                <statement>
+                                        <p><m>0.5</m></p>
+                                </statement>
+                        </choice>
+                        <choice>
+                                <statement>
+                                        <p><m>-2</m></p>
+                                </statement>
+                        </choice>
+                        <choice>
+                                <statement>
+                                        <p><m>2</m></p>
+                                </statement>
+                        </choice>
+                        <choice>
+                                <statement>
+                                        <p>None of the above.</p>
+                                </statement>
+                        </choice>
+                </choices>
+                <solution>
+                        <p>The elasticity of demand <m>E(p)</m> is given by</p>
+                        <me>E(p)=-\frac{d D}{d p} \times \frac{p}{D(p)}.</me>
+                        <p>First, compute the derivative:</p>
+                        <me>\frac{d D}{d p}=-1.</me>
+                        <p>Thus,</p>
+                        <me>E(p)=-(-1) \times \frac{p}{75-p}=\frac{p}{75-p}.</me>
+                        <p>Substituting <m>p=25</m>,</p>
+                        <me>E(25)=\frac{25}{50}=\frac{1}{2}=0.5.</me>
+                        <p>Therefore, the correct choice is (b).</p>
+                </solution>
+        </exercise>
+
+        <exercise points="3">
+                <statement>
+                        <p>Which of the following statements is <em>false</em>?</p>
+                </statement>
+                <choices multiple-correct="no">
+                        <choice correct="yes">
+                                <statement>
+                                        <p><m>\ln (x y)=\ln (x) \ln (y)</m> for all <m>x, y</m> positive</p>
+                                </statement>
+                        </choice>
+                        <choice>
+                                <statement>
+                                        <p><m>\ln (\sqrt{e})=\frac{1}{2}</m></p>
+                                </statement>
+                        </choice>
+                        <choice>
+                                <statement>
+                                        <p><m>\ln \left(\frac{x}{y}\right)=\ln (x)-\ln (y)</m> for all <m>x, y</m> positive</p>
+                                </statement>
+                        </choice>
+                        <choice>
+                                <statement>
+                                        <p><m>\ln \left(\frac{1}{2}\right)=-\ln (2)</m>.</p>
+                                </statement>
+                        </choice>
+                </choices>
+                <solution>
+                        <p>Recall the basic properties of logarithms:</p>
+                        <ul>
+                                <li><m>\ln (x y)=\ln (x)+\ln (y)</m> for all positive <m>x, y</m>.</li>
+                                <li><m>\ln \left(\frac{x}{y}\right)=\ln (x)-\ln (y)</m> for all positive <m>x, y</m>.</li>
+                                <li><m>\ln \left(\frac{1}{2}\right)=\ln (1)-\ln (2)=0-\ln (2)=-\ln (2)</m>.</li>
+                                <li><m>\ln (\sqrt{e})=\ln \left(e^{\frac{1}{2}}\right)=\frac{1}{2}</m>.</li>
+                        </ul>
+                        <p>Thus:</p>
+                        <ul>
+                                <li>(a) is false because <m>\ln (x y)</m> is not equal to <m>\ln (x) \ln (y)</m>; it equals <m>\ln (x)+\ln (y)</m>.</li>
+                                <li>(b), (c), and (d) are true.</li>
+                        </ul>
+                        <p>Therefore, the correct answer is (a).</p>
+                </solution>
+        </exercise>
+
+        <exercise points="3">
+                <statement>
+                        <p>What is the value of the limit</p>
+                        <me>\lim_{x \rightarrow 5}\left(\frac{x^2-25}{x-5}\right)?</me>
+                </statement>
+                <choices multiple-correct="no">
+                        <choice>
+                                <statement>
+                                        <p>0</p>
+                                </statement>
+                        </choice>
+                        <choice>
+                                <statement>
+                                        <p>5</p>
+                                </statement>
+                        </choice>
+                        <choice correct="yes">
+                                <statement>
+                                        <p>10</p>
+                                </statement>
+                        </choice>
+                        <choice>
+                                <statement>
+                                        <p>The limit does not exist.</p>
+                                </statement>
+                        </choice>
+                </choices>
+                <solution>
+                        <p>First, factor the numerator:</p>
+                        <me>x^2-25=(x-5)(x+5).</me>
+                        <p>Thus,</p>
+                        <me>\frac{x^2-25}{x-5}=\frac{(x-5)(x+5)}{x-5}.</me>
+                        <p>For <m>x \neq 5</m>, we can cancel <m>(x-5)</m>:</p>
+                        <me>\frac{(x-5)(x+5)}{x-5}=x+5.</me>
+                        <p>Therefore,</p>
+                        <me>\lim_{x \rightarrow 5}\left(\frac{x^2-25}{x-5}\right)=\lim_{x \rightarrow 5}(x+5)=5+5=10.</me>
+                        <p>Thus, the correct answer is (c) 10.</p>
+                </solution>
+        </exercise>
+
+        <exercise points="3">
+                <statement>
+                        <p>The graph of the derivative of a function <m>f(x)</m> is shown below.</p>
+                        <p>Based on the graph, at which of the following <m>x</m>-values does the function <m>f(x)</m> have a local maximum?</p>
+                </statement>
+                <choices multiple-correct="no">
+                        <choice>
+                                <statement>
+                                        <p><m>x=0</m></p>
+                                </statement>
+                        </choice>
+                        <choice correct="yes">
+                                <statement>
+                                        <p><m>x=1</m></p>
+                                </statement>
+                        </choice>
+                        <choice>
+                                <statement>
+                                        <p><m>x=2</m></p>
+                                </statement>
+                        </choice>
+                        <choice>
+                                <statement>
+                                        <p>None of the above</p>
+                                </statement>
+                        </choice>
+                        <choice>
+                                <statement>
+                                        <p>All of the above.</p>
+                                </statement>
+                        </choice>
+                </choices>
+        </exercise>
+
+        <exercise points="3">
+                <statement>
+                        <p>Let <m>f</m> be a function given by <m>f(x)=\sqrt{x}</m>. Which of the following statements about <m>f'(1)</m> is false?</p>
+                </statement>
+                <choices multiple-correct="no">
+                        <choice>
+                                <statement>
+                                        <p><m>f'(1)=\lim_{h \rightarrow 0} \dfrac{\sqrt{1+h}-1}{h}</m></p>
+                                </statement>
+                        </choice>
+                        <choice>
+                                <statement>
+                                        <p><m>f'(1)</m> represents the slope of the tangent line to the graph of <m>f</m> at <m>x=1</m></p>
+                                </statement>
+                        </choice>
+                        <choice correct="yes">
+                                <statement>
+                                        <p><m>f'(1)</m> determines whether the function is concave up or concave down at <m>x=1</m></p>
+                                </statement>
+                        </choice>
+                        <choice>
+                                <statement>
+                                        <p><m>f'(1)=\dfrac{1}{2}</m>.</p>
+                                </statement>
+                        </choice>
+                </choices>
+                <solution>
+                        <p>Let's check each statement:</p>
+                        <ul>
+                                <li>(a) True: By definition, the derivative at <m>x=1</m> is</li>
+                        </ul>
+                        <me>f'(1)=\lim_{h \rightarrow 0} \frac{f(1+h)-f(1)}{h}=\lim_{h \rightarrow 0} \frac{\sqrt{1+h}-1}{h}.</me>
+                        <ul>
+                                <li>(b) True: <m>f'(1)</m> represents the slope of the tangent line to the graph at <m>x=1</m>.</li>
+                                <li>(c) False: <m>f'(1)</m> gives the slope, but concavity is determined by the second derivative <m>f''(1)</m>, not <m>f'(1)</m>.</li>
+                                <li>(d) True: We have</li>
+                        </ul>
+                        <me>f'(x)=\frac{1}{2 \sqrt{x}}</me>
+                        <p>thus</p>
+                        <me>f'(1)=\frac{1}{2 \sqrt{1}}=\frac{1}{2}</me>
+                        <p>Thus, the false statement is (c).</p>
+                </solution>
+        </exercise>
+
+        <exercise points="3">
+                <statement>
+                        <p>Which of the following is the tangent line of <m>f(x)=x+x^2</m> at <m>x=1</m>?</p>
+                </statement>
+                <choices multiple-correct="no">
+                        <choice correct="yes">
+                                <statement>
+                                        <p><m>y=3 x-1</m></p>
+                                </statement>
+                        </choice>
+                        <choice>
+                                <statement>
+                                        <p><m>y=3 x+1</m></p>
+                                </statement>
+                        </choice>
+                        <choice>
+                                <statement>
+                                        <p><m>y=2 x+1</m></p>
+                                </statement>
+                        </choice>
+                        <choice>
+                                <statement>
+                                        <p><m>y=2 x-1</m></p>
+                                </statement>
+                        </choice>
+                </choices>
+                <solution>
+                        <p>First, find the derivative of <m>f(x)</m>:</p>
+                        <me>f'(x)=1+2 x</me>
+                        <p>Evaluate the derivative at <m>x=1</m>:</p>
+                        <me>f'(1)=1+2(1)=3</me>
+                        <p>Thus, the slope of the tangent line at <m>x=1</m> is 3.</p>
+                        <p>Next, find the point on the graph at <m>x=1</m>:</p>
+                        <me>f(1)=1+(1)^2=2</me>
+                        <p>The point is <m>(1,2)</m>.</p>
+                        <p>Using the point-slope form of the line:</p>
+                        <me>y-2=3(x-1)</me>
+                        <p>which simplifies to</p>
+                        <me>y=3 x-1</me>
+                        <p>Thus, the correct answer is (a) <m>y=3 x-1</m>.</p>
+                </solution>
+        </exercise>
+
+        <exercise points="3">
+                <statement>
+                        <p>Which of the following is the correct definite integral that computes the area between the curves <m>y=\sqrt{x}</m> and <m>y=-\sqrt{x}</m> from <m>x=0</m> to <m>x=4</m>?</p>
+                </statement>
+                <choices multiple-correct="no">
+                        <choice>
+                                <statement>
+                                        <p><m>2 \int_0^2 \sqrt{2 x}\, d x</m></p>
+                                </statement>
+                        </choice>
+                        <choice>
+                                <statement>
+                                        <p><m>\int_0^2 \sqrt{2(x+1)}\, d x</m></p>
+                                </statement>
+                        </choice>
+                        <choice correct="yes">
+                                <statement>
+                                        <p><m>2 \int_0^4 \sqrt{x}\, d x</m></p>
+                                </statement>
+                        </choice>
+                        <choice>
+                                <statement>
+                                        <p><m>2 \int_0^4 x\, d x</m></p>
+                                </statement>
+                        </choice>
+                </choices>
+        </exercise>
+
+<exercise points="3">
+<statement>
+<p>A water treatment plant's purification cost for <m>x\%</m> purity is:</p>
+<p><m>C(x)=\frac{200}{100-x}</m> dollars, <m>80 \leq x &lt; 100</m>.</p>
+<p>The instantaneous rate of cost increase at <m>90\%</m> purity is:</p>
+</statement>
+                <choices multiple-correct="no">
+                        <choice>
+                                <statement>
+                                        <p><m>\$0.5</m> per percentage point</p>
+                                </statement>
+                        </choice>
+                        <choice>
+                                <statement>
+                                        <p><m>\$1</m> per percentage point</p>
+                                </statement>
+                        </choice>
+                        <choice correct="yes">
+                                <statement>
+                                        <p><m>\$2</m> per percentage point</p>
+                                </statement>
+                        </choice>
+                        <choice>
+                                <statement>
+                                        <p><m>\$4</m> per percentage point</p>
+                                </statement>
+                        </choice>
+                </choices>
+                <solution>
+                        <p>First, find the derivative <m>C'(x)</m>:</p>
+                        <me>C(x)=200(100-x)^{-1}</me>
+                        <p>so by the power rule,</p>
+                        <me>C'(x)=200 \times(-1)(100-x)^{-2} \times(-1)=\frac{200}{(100-x)^2}</me>
+                        <p>Now evaluate <m>C'(90)</m>:</p>
+                        <me>C'(90)=\frac{200}{(100-90)^2}=\frac{200}{10^2}=\frac{200}{100}=2.</me>
+                        <p>Thus, the instantaneous rate of cost increase at <m>90\%</m> purity is <m>\$2</m> per percentage point. Therefore, the correct answer is (c).</p>
+                </solution>
+        </exercise>
+
+        <exercise points="3">
+                <statement>
+                        <p>The <em>second derivative</em> of the function <m>f(x)</m> is given by:</p>
+                        <me>f''(x)=x^2(x-2)^3(x+1)</me>
+                        <p>The inflection point(s) of <m>f(x)</m> occur at:</p>
+                </statement>
+                <choices multiple-correct="no">
+                        <choice>
+                                <statement>
+                                        <p><m>x=0</m> only</p>
+                                </statement>
+                        </choice>
+                        <choice correct="yes">
+                                <statement>
+                                        <p><m>x=-1</m> and <m>x=2</m> only</p>
+                                </statement>
+                        </choice>
+                        <choice>
+                                <statement>
+                                        <p><m>x=-1</m>, <m>x=0</m>, and <m>x=2</m></p>
+                                </statement>
+                        </choice>
+                        <choice>
+                                <statement>
+                                        <p><m>x=2</m> only</p>
+                                </statement>
+                        </choice>
+                        <choice>
+                                <statement>
+                                        <p>There are no inflection points</p>
+                                </statement>
+                        </choice>
+                </choices>
+                <solution>
+                        <p>Inflection points occur where <m>f''(x)=0</m> and the concavity changes (i.e., <m>f''(x)</m> changes sign).</p>
+                        <p>First, solve <m>f''(x)=0</m>:</p>
+                        <me>x^2(x-2)^3(x+1)=0</me>
+                        <p>Thus, the critical points are:</p>
+                        <me>x=0, \quad x=2, \quad x=-1.</me>
+                        <p>These values partition the line into the intervals <m>(-\infty,-1)</m>, <m>(-1,0)</m>, <m>(0,2)</m>, and <m>(2, \infty)</m>. Now, check the sign on each interval:</p>
+                        <ul>
+                                <li>Interval <m>(-\infty,-1)</m>: Choose <m>x=-2</m>: <m>f''(-2)=(-2)^2(-2-2)^3(-2+1)=(+)(-)(-)=+</m>.</li>
+                                <li>Interval <m>(-1,0)</m>: Choose <m>x=-0.5</m>: <m>f''=(0.5)^2(-1.5)^3(0.5)=(+)(-)(+)=(-)</m>.</li>
+                                <li>Interval <m>(0,2)</m>: Choose <m>x=1</m>: <m>f''=1^2(-1)^3(2)=(-)</m>.</li>
+                                <li>Interval <m>(2, \infty)</m>: Choose <m>x=3</m>: <m>f''=3^2(1^3)(4)=(+)</m>.</li>
+                        </ul>
+                        <p><m>f''</m> changes sign at <m>x=-1</m> and <m>x=2</m>.</p>
+                        <p>Therefore, the correct answer is (b).</p>
+                </solution>
+        </exercise>
+
+        <exercise points="3">
+                <statement>
+                        <p>After <m>t</m> months of training, a runner's average speed is modeled by</p>
+                        <me>v(t)=5\left(1-e^{-0.2 t}\right)</me>
+                        <p>miles per hour. How long will it take for the runner to reach an average speed of 4 miles per hour?</p>
+                </statement>
+                <choices multiple-correct="no">
+                        <choice>
+                                <statement>
+                                        <p><m>t=\dfrac{\ln (5 / 4)}{0.2}</m></p>
+                                </statement>
+                        </choice>
+                        <choice>
+                                <statement>
+                                        <p><m>t=\dfrac{\ln (4 / 5)}{-0.2}</m></p>
+                                </statement>
+                        </choice>
+                        <choice>
+                                <statement>
+                                        <p><m>t=\dfrac{1-\ln (4 / 5)}{0.2}</m></p>
+                                </statement>
+                        </choice>
+                        <choice correct="yes">
+                                <statement>
+                                        <p><m>t=\dfrac{\ln (1 / 5)}{-0.2}</m></p>
+                                </statement>
+                        </choice>
+                </choices>
+                <solution>
+                        <p>We are given</p>
+                        <me>v(t)=5\left(1-e^{-0.2 t}\right).</me>
+                        <p>We want to find <m>t</m> such that <m>v(t)=4</m>.</p>
+                        <p>Set up the equation:</p>
+                        <me>5\left(1-e^{-0.2 t}\right)=4.</me>
+                        <p>Divide both sides by 5:</p>
+                        <me>1-e^{-0.2 t}=\frac{4}{5}</me>
+                        <p>Subtract 1 from both sides:</p>
+                        <me>-e^{-0.2 t}=\frac{4}{5}-1=-\frac{1}{5}.</me>
+                        <p>Multiply both sides by <m>-1</m>:</p>
+                        <me>e^{-0.2 t}=\frac{1}{5}</me>
+                        <p>Take the natural logarithm of both sides:</p>
+                        <me>-0.2 t=\ln \left(\frac{1}{5}\right).</me>
+                        <p>Solve for <m>t</m>:</p>
+                        <me>t=\frac{\ln \left(\frac{1}{5}\right)}{-0.2}</me>
+                        <p>Thus, the correct answer is (d).</p>
+                </solution>
+        </exercise>
+
+        <exercise points="3">
+                <statement>
+                        <p>What is the relative rate of change of <m>f(x)=x^4</m> at <m>x=2</m>?</p>
+                </statement>
+                <choices multiple-correct="no">
+                        <choice>
+                                <statement>
+                                        <p><m>\dfrac{1}{2}</m></p>
+                                </statement>
+                        </choice>
+                        <choice correct="yes">
+                                <statement>
+                                        <p>2</p>
+                                </statement>
+                        </choice>
+                        <choice>
+                                <statement>
+                                        <p>4</p>
+                                </statement>
+                        </choice>
+                        <choice>
+                                <statement>
+                                        <p>8</p>
+                                </statement>
+                        </choice>
+                </choices>
+                <solution>
+                        <p>The relative rate of change of <m>f(x)</m> at <m>x=2</m> is given by:</p>
+                        <me>\frac{f'(2)}{f(2)}.</me>
+                        <p>First, find <m>f(x)</m> and its derivative:</p>
+                        <me>f(x)=x^4, \quad f'(x)=4 x^3.</me>
+                        <p>Evaluate at <m>x=2</m>:</p>
+                        <me>\begin{gathered}
+ f(2)=2^4=16, \\
+ f'(2)=4(2)^3=4(8)=32.
+\end{gathered}</me>
+                        <p>Thus, the relative rate of change is:</p>
+                        <me>\frac{f'(2)}{f(2)}=\frac{32}{16}=2.</me>
+                        <p>Therefore, the correct answer is (b).</p>
+                </solution>
+        </exercise>
+
+        <exercise points="3">
+                <statement>
+                        <p>Which of the following is the correct value of <m>\ln (\ln (e))</m>?</p>
+                </statement>
+                <choices multiple-correct="no">
+                        <choice correct="yes">
+                                <statement>
+                                        <p>0</p>
+                                </statement>
+                        </choice>
+                        <choice>
+                                <statement>
+                                        <p>1</p>
+                                </statement>
+                        </choice>
+                        <choice>
+                                <statement>
+                                        <p><m>e</m></p>
+                                </statement>
+                        </choice>
+                        <choice>
+                                <statement>
+                                        <p><m>e^2</m></p>
+                                </statement>
+                        </choice>
+                        <choice>
+                                <statement>
+                                        <p>Undefined.</p>
+                                </statement>
+                        </choice>
+                </choices>
+                <solution>
+                        <p>We are asked to compute <m>\ln (\ln (e))</m>.</p>
+                        <p>First, compute the inner logarithm:</p>
+                        <me>\ln (e)=1</me>
+                        <p>because the natural logarithm of <m>e</m> is 1.</p>
+                        <p>Now compute the outer logarithm:</p>
+                        <me>\ln (1)=0</me>
+                        <p>since <m>\ln (1)=0</m> for any logarithm base.</p>
+                        <p>Thus,</p>
+                        <me>\ln (\ln (e))=\ln (1)=0</me>
+                        <p>Therefore, the correct answer is (a).</p>
+                </solution>
+        </exercise>
+
+        <exercise points="3">
+                <statement>
+                        <p>Which of the following is the correct simplified expression of the function</p>
+                        <me>f(x)=\ln \left(3 x^3\right)-\ln (3)?</me>
+                </statement>
+                <choices multiple-correct="no">
+                        <choice correct="yes">
+                                <statement>
+                                        <p><m>3 \ln (x)</m></p>
+                                </statement>
+                        </choice>
+                        <choice>
+                                <statement>
+                                        <p><m>\ln (3 x)</m></p>
+                                </statement>
+                        </choice>
+                        <choice>
+                                <statement>
+                                        <p><m>3 \ln (3 x)</m></p>
+                                </statement>
+                        </choice>
+                        <choice>
+                                <statement>
+                                        <p><m>\ln (3)\left(\ln \left(x^3\right)-1\right)</m></p>
+                                </statement>
+                        </choice>
+                </choices>
+                <solution>
+                        <p>We are given</p>
+                        <me>f(x)=\ln \left(3 x^3\right)-\ln (3).</me>
+                        <p>First, apply the logarithmic property:</p>
+                        <me>\ln (a)-\ln (b)=\ln \left(\frac{a}{b}\right).</me>
+                        <p>Thus,</p>
+                        <me>f(x)=\ln \left(\frac{3 x^3}{3}\right)=\ln \left(x^3\right).</me>
+                        <p>Now apply the power rule for logarithms:</p>
+                        <me>\ln \left(x^3\right)=3 \ln (x).</me>
+                        <p>Thus,</p>
+                        <me>f(x)=3 \ln (x).</me>
+                        <p>Therefore, the correct answer is (a).</p>
+                </solution>
+        </exercise>
+
+        <exercise points="10">
+                <statement>
+                        <p>Find the average value of <m>f(x)=x^2+1</m> on <m>[0,3]</m>. Show all work and simplify your final answer.</p>
+                </statement>
+                <solution>
+                        <p>The average value of a function <m>f(x)</m> on the interval <m>[a, b]</m> is given by:</p>
+                        <me>\text { Average value }=\frac{1}{b-a} \int_a^b f(x) d x</me>
+                        <p>Here, <m>f(x)=x^2+1</m>, <m>a=0</m>, and <m>b=3</m>.</p>
+                        <p>First, compute the definite integral:</p>
+                        <me>\int_0^3\left(x^2+1\right) d x=\int_0^3 x^2 d x+\int_0^3 1 d x</me>
+                        <p>Evaluate each part:</p>
+                        <me>\begin{gathered}
+ \int_0^3 x^2 d x=\left[\frac{x^3}{3}\right]_0^3=\frac{3^3}{3}-\frac{0^3}{3}=\frac{27}{3}=9 \\
+ \int_0^3 1 d x=[x]_0^3=3-0=3
+\end{gathered}</me>
+                        <p>Thus,</p>
+                        <me>\int_0^3\left(x^2+1\right) d x=9+3=12</me>
+                        <p>Now, compute the average value:</p>
+                        <me>\text { Average value }=\frac{1}{3-0} \times 12=\frac{12}{3}=4.</me>
+                        <p>Therefore, the average value of <m>f(x)</m> on <m>[0,3]</m> is 4.</p>
+                </solution>
+        </exercise>
+
+        <exercise points="8">
+                <statement>
+                        <p>Find the area under the curve</p>
+                        <me>y=\frac{1}{\sqrt{x}}</me>
+                        <p>from <m>x=1</m> to <m>x=9</m>. Show all work and simplify your answer.</p>
+                </statement>
+                <solution>
+                        <p>We are asked to find the area under the curve</p>
+                        <me>y=\frac{1}{\sqrt{x}}</me>
+                        <p>from <m>x=1</m> to <m>x=9</m>.</p>
+                        <p>This area is given by the definite integral:</p>
+                        <me>\int_1^9 \frac{1}{\sqrt{x}} d x.</me>
+                        <p>Rewrite the integrand using exponents:</p>
+                        <me>\frac{1}{\sqrt{x}}=x^{-1 / 2}.</me>
+                        <p>Now compute the integral:</p>
+                        <me>\int_1^9 x^{-1 / 2} d x</me>
+                        <p>The antiderivative of <m>x^{-1 / 2}</m> is:</p>
+                        <me>\int x^{-1 / 2} d x=2 x^{1 / 2}+C.</me>
+                        <p>Thus,</p>
+                        <me>\int_1^9 x^{-1 / 2} d x=\left[2 x^{1 / 2}\right]_1^9=2(9)^{1 / 2}-2(1)^{1 / 2}</me>
+                        <p>Simplify:</p>
+                        <me>=2(3)-2(1)=6-2=4.</me>
+                        <p>Therefore, the area under the curve from <m>x=1</m> to <m>x=9</m> is 4.</p>
+                </solution>
+        </exercise>
+
+<exercise points="12">
+<introduction>
+<p>Calculate the derivative of each function. You do NOT need to simplify your answer.</p>
+</introduction>
+                <task points="4">
+                        <statement>
+                                <p><m>f(x)=\sqrt{2 x}-\frac{1}{x^2}</m></p>
+                        </statement>
+                        <solution>
+                                <p>We are given</p>
+                                <me>f(x)=\sqrt{2 x}-\frac{1}{x^2}</me>
+                                <p>First rewrite using exponents:</p>
+                                <me>f(x)=(2 x)^{1 / 2}-x^{-2}</me>
+                                <p>Now differentiate term-by-term:</p>
+                                <me>f'(x)=\frac{1}{2}(2 x)^{-1 / 2} \cdot 2-(-2) x^{-3}</me>
+                                <p>Simplifying slightly (optional):</p>
+                                <me>f'(x)=(2 x)^{-1 / 2}+2 x^{-3}</me>
+                        </solution>
+                </task>
+                <task points="4">
+                        <statement>
+                                <p><m>g(x)=\ln \left(x^3+1\right)</m></p>
+                        </statement>
+                        <solution>
+                                <p>We are given</p>
+                                <me>g(x)=\ln \left(x^3+1\right).</me>
+                                <p>Using the chain rule:</p>
+                                <me>g'(x)=\frac{1}{x^3+1} \cdot 3 x^2</me>
+                        </solution>
+                </task>
+                <task points="4">
+                        <statement>
+                                <p><m>h(x)=e^{x^2-5 x}</m></p>
+                        </statement>
+                        <solution>
+                                <p>We are given</p>
+                                <me>h(x)=e^{x^2-5 x}</me>
+                                <p>Using the chain rule:</p>
+                                <me>h'(x)=e^{x^2-5 x} \cdot(2 x-5)</me>
+                        </solution>
+                </task>
+        </exercise>
+
+        <exercise points="7">
+                <statement>
+                        <p>A car dealership estimates that during month <m>t</m> of a promotion, a discontinued model will sell at a rate of approximately <m>\dfrac{30}{t}</m> cars per month, where <m>t=1</m> corresponds to the beginning of the promotion, and no cars have been sold at the start. Find a formula for the total number of cars sold up to month <m>t</m>.</p>
+                </statement>
+                <solution>
+                        <p>We are given that the rate of sales (cars per month) is</p>
+                        <me>\frac{30}{t}</me>
+                        <p>The total cars sold is the integral of this rate:</p>
+                        <me>N(t)=\text { Total cars sold }=\int \frac{30}{t} d t=30 \ln (t)+C</me>
+                        <p>Since <m>N(1)=0</m>, we have</p>
+                        <me>30 \ln (1)+C=0</me>
+                        <p>Since <m>\ln (1)=0</m>, this simplifies to:</p>
+                        <me>C=0</me>
+                        <p>Thus, the total number of cars sold up to month <m>t</m> is</p>
+                        <me>30 \ln (t).</me>
+                </solution>
+        </exercise>
+
+<exercise points="15">
+<introduction>
+<p>Calculate each integral. Show all work. You do not need to simplify your answer.</p>
+</introduction>
+                <task points="5">
+                        <statement>
+                                <p><m>\displaystyle \int \frac{x^6-4}{x^3} d x</m></p>
+                        </statement>
+                        <solution>
+                                <p><m>\int \frac{x^6-4}{x^3} d x=\int\left(x^3-\frac{4}{x^3}\right) d x=\frac{x^4}{4}-\frac{4 x^{-2}}{-2}+C=\frac{x^4}{4}+2 x^{-2}+C</m></p>
+                        </solution>
+                </task>
+                <task points="5">
+                        <statement>
+                                <p><m>\displaystyle \int x(x-1)^2 d x</m></p>
+                        </statement>
+                        <solution>
+                                <p><m>\int x(x-1)^2 d x=\int x\left(x^2-2 x+1\right) d x=\int\left(x^3-2 x^2+x\right) d x=\frac{x^4}{4}-\frac{2 x^3}{3}+\frac{x^2}{2}+C</m></p>
+                        </solution>
+                </task>
+                <task points="5">
+                        <statement>
+                                <p><m>\displaystyle \int\left(e^{-x}+3 e^{2 x}\right) d x</m></p>
+                        </statement>
+                        <solution>
+                                <p><m>\int\left(e^{-x}+3 e^{2 x}\right) d x=-e^{-x}+\frac{3}{2} e^{2 x}+C</m></p>
+                        </solution>
+                </task>
+        </exercise>
+
+        <exercise points="6">
+                <statement>
+                        <p>The resale value (in <m>\$</m> million) of industrial equipment <m>t</m> years after purchase is modeled by:</p>
+                        <me>V(t)=10 \sqrt{t}-t \quad \text { for } t>0</me>
+                        <p>Find the exact time (in years) when the value reaches its maximum. Justify your answer and show all work.</p>
+                </statement>
+                <solution>
+                        <p>We are given the function</p>
+                        <me>V(t)=10 \sqrt{t}-t</me>
+<p>for <m>t&gt;0</m>.</p>
+                        <p>To find when the value reaches its maximum, we first find the critical points by setting <m>V'(t)=0</m>.</p>
+                        <p>First, compute the derivative:</p>
+                        <me>V(t)=10 t^{1 / 2}-t,</me>
+                        <p>so</p>
+                        <me>V'(t)=10 \times \frac{1}{2} t^{-1 / 2}-1=\frac{5}{\sqrt{t}}-1.</me>
+                        <p>Set the derivative equal to zero:</p>
+                        <me>\begin{gathered}
+ \frac{5}{\sqrt{t}}-1=0 \\
+ \frac{5}{\sqrt{t}}=1 \\
+ 5=\sqrt{t} \\
+ t=25.
+\end{gathered}</me>
+                        <p>Now, we justify that this critical point gives a maximum.</p>
+                        <p>First, we can check the sign of <m>V'(t)</m>:</p>
+<ul>
+<li>For <m>t&lt;25</m>, say <m>t=10</m>, we have <m>V'(10)=\dfrac{5}{\sqrt{10}}-1&gt;0</m>.</li>
+<li>For <m>t&gt;25</m>, say <m>t=30</m>, we have <m>V'(30)=\dfrac{5}{\sqrt{30}}-1&lt;0</m>.</li>
+</ul>
+                        <p>We use the second derivative test. Differentiate again:</p>
+<me>V''(t)=\frac{d}{d t}\left(\frac{5}{\sqrt{t}}-1\right)=-\frac{5}{2} t^{-3 / 2}.</me>
+<p>Since <m>V''(t)&lt;0</m> for all <m>t&gt;0</m>, the function is concave down everywhere, and in particular at <m>t=25</m>.</p>
+                        <p>Thus, by the second derivative test, <m>V(t)</m> has a maximum at <m>t=25</m>.</p>
+                        <p>Therefore, the value reaches its maximum at <m>t=25</m> years.</p>
+                </solution>
+        </exercise>
+</worksheet>
