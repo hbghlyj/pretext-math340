@@ -626,45 +626,43 @@
                 <statement>
                         <p>Calculate the derivative of each function. You do NOT need to simplify your answer.</p>
                 </statement>
-                <tasks>
-                        <task points="4">
-                                <statement>
-                                        <p><m>f(x)=\sqrt{2 x}-\frac{1}{x^2}</m></p>
-                                </statement>
-                                <solution>
-                                        <p>We are given</p>
-                                        <me>f(x)=\sqrt{2 x}-\frac{1}{x^2}</me>
-                                        <p>First rewrite using exponents:</p>
-                                        <me>f(x)=(2 x)^{1 / 2}-x^{-2}</me>
-                                        <p>Now differentiate term-by-term:</p>
-                                        <me>f'(x)=\frac{1}{2}(2 x)^{-1 / 2} \cdot 2-(-2) x^{-3}</me>
-                                        <p>Simplifying slightly (optional):</p>
-                                        <me>f'(x)=(2 x)^{-1 / 2}+2 x^{-3}</me>
-                                </solution>
-                        </task>
-                        <task points="4">
-                                <statement>
-                                        <p><m>g(x)=\ln \left(x^3+1\right)</m></p>
-                                </statement>
-                                <solution>
-                                        <p>We are given</p>
-                                        <me>g(x)=\ln \left(x^3+1\right).</me>
-                                        <p>Using the chain rule:</p>
-                                        <me>g'(x)=\frac{1}{x^3+1} \cdot 3 x^2</me>
-                                </solution>
-                        </task>
-                        <task points="4">
-                                <statement>
-                                        <p><m>h(x)=e^{x^2-5 x}</m></p>
-                                </statement>
-                                <solution>
-                                        <p>We are given</p>
-                                        <me>h(x)=e^{x^2-5 x}</me>
-                                        <p>Using the chain rule:</p>
-                                        <me>h'(x)=e^{x^2-5 x} \cdot(2 x-5)</me>
-                                </solution>
-                        </task>
-                </tasks>
+                <task points="4">
+                        <statement>
+                                <p><m>f(x)=\sqrt{2 x}-\frac{1}{x^2}</m></p>
+                        </statement>
+                        <solution>
+                                <p>We are given</p>
+                                <me>f(x)=\sqrt{2 x}-\frac{1}{x^2}</me>
+                                <p>First rewrite using exponents:</p>
+                                <me>f(x)=(2 x)^{1 / 2}-x^{-2}</me>
+                                <p>Now differentiate term-by-term:</p>
+                                <me>f'(x)=\frac{1}{2}(2 x)^{-1 / 2} \cdot 2-(-2) x^{-3}</me>
+                                <p>Simplifying slightly (optional):</p>
+                                <me>f'(x)=(2 x)^{-1 / 2}+2 x^{-3}</me>
+                        </solution>
+                </task>
+                <task points="4">
+                        <statement>
+                                <p><m>g(x)=\ln \left(x^3+1\right)</m></p>
+                        </statement>
+                        <solution>
+                                <p>We are given</p>
+                                <me>g(x)=\ln \left(x^3+1\right).</me>
+                                <p>Using the chain rule:</p>
+                                <me>g'(x)=\frac{1}{x^3+1} \cdot 3 x^2</me>
+                        </solution>
+                </task>
+                <task points="4">
+                        <statement>
+                                <p><m>h(x)=e^{x^2-5 x}</m></p>
+                        </statement>
+                        <solution>
+                                <p>We are given</p>
+                                <me>h(x)=e^{x^2-5 x}</me>
+                                <p>Using the chain rule:</p>
+                                <me>h'(x)=e^{x^2-5 x} \cdot(2 x-5)</me>
+                        </solution>
+                </task>
         </exercise>
 
         <exercise points="7">
@@ -689,32 +687,30 @@
                 <statement>
                         <p>Calculate each integral. Show all work. You do not need to simplify your answer.</p>
                 </statement>
-                <tasks>
-                        <task points="5">
-                                <statement>
-                                        <p><m>\displaystyle \int \frac{x^6-4}{x^3} d x</m></p>
-                                </statement>
-                                <solution>
-                                        <p><m>\int \frac{x^6-4}{x^3} d x=\int\left(x^3-\frac{4}{x^3}\right) d x=\frac{x^4}{4}-\frac{4 x^{-2}}{-2}+C=\frac{x^4}{4}+2 x^{-2}+C</m></p>
-                                </solution>
-                        </task>
-                        <task points="5">
-                                <statement>
-                                        <p><m>\displaystyle \int x(x-1)^2 d x</m></p>
-                                </statement>
-                                <solution>
-                                        <p><m>\int x(x-1)^2 d x=\int x\left(x^2-2 x+1\right) d x=\int\left(x^3-2 x^2+x\right) d x=\frac{x^4}{4}-\frac{2 x^3}{3}+\frac{x^2}{2}+C</m></p>
-                                </solution>
-                        </task>
-                        <task points="5">
-                                <statement>
-                                        <p><m>\displaystyle \int\left(e^{-x}+3 e^{2 x}\right) d x</m></p>
-                                </statement>
-                                <solution>
-                                        <p><m>\int\left(e^{-x}+3 e^{2 x}\right) d x=-e^{-x}+\frac{3}{2} e^{2 x}+C</m></p>
-                                </solution>
-                        </task>
-                </tasks>
+                <task points="5">
+                        <statement>
+                                <p><m>\displaystyle \int \frac{x^6-4}{x^3} d x</m></p>
+                        </statement>
+                        <solution>
+                                <p><m>\int \frac{x^6-4}{x^3} d x=\int\left(x^3-\frac{4}{x^3}\right) d x=\frac{x^4}{4}-\frac{4 x^{-2}}{-2}+C=\frac{x^4}{4}+2 x^{-2}+C</m></p>
+                        </solution>
+                </task>
+                <task points="5">
+                        <statement>
+                                <p><m>\displaystyle \int x(x-1)^2 d x</m></p>
+                        </statement>
+                        <solution>
+                                <p><m>\int x(x-1)^2 d x=\int x\left(x^2-2 x+1\right) d x=\int\left(x^3-2 x^2+x\right) d x=\frac{x^4}{4}-\frac{2 x^3}{3}+\frac{x^2}{2}+C</m></p>
+                        </solution>
+                </task>
+                <task points="5">
+                        <statement>
+                                <p><m>\displaystyle \int\left(e^{-x}+3 e^{2 x}\right) d x</m></p>
+                        </statement>
+                        <solution>
+                                <p><m>\int\left(e^{-x}+3 e^{2 x}\right) d x=-e^{-x}+\frac{3}{2} e^{2 x}+C</m></p>
+                        </solution>
+                </task>
         </exercise>
 
         <exercise points="6">
