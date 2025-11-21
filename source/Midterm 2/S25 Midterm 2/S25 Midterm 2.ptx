@@ -327,20 +327,64 @@
         <exercise points="14">
                 <statement>
                         <p>The function <m>f(x)</m> has a graph described below.</p>
-                        <p>For each interval, indicate whether the function is increasing/decreasing and concave up/down:</p>
-                        <ul>
-                                <li><m>(-1,0)</m>: increasing and concave down</li>
-                                <li><m>(0,1)</m>: increasing and concave up</li>
-                                <li><m>(1,2)</m>: decreasing and concave up</li>
-                                <li><m>(2,3)</m>: decreasing and concave down</li>
-                        </ul>
-                        <p>Inflection points:</p>
-                        <ul>
-                                <li><m>x=0</m>: Yes</li>
-                                <li><m>x=1</m>: No</li>
-                                <li><m>x=1.25</m>: No</li>
-                        </ul>
+                        <p>For each interval, indicate whether the function is increasing/decreasing and concave up/down. Then determine whether each listed <m>x</m>-value is an inflection point.</p>
                 </statement>
+                <task>
+                        <statement>
+                                <p>Interval <m>(-1,0)</m>:</p>
+                        </statement>
+                        <answer>
+                                <p>Increasing and concave down.</p>
+                        </answer>
+                </task>
+                <task>
+                        <statement>
+                                <p>Interval <m>(0,1)</m>:</p>
+                        </statement>
+                        <answer>
+                                <p>Increasing and concave up.</p>
+                        </answer>
+                </task>
+                <task>
+                        <statement>
+                                <p>Interval <m>(1,2)</m>:</p>
+                        </statement>
+                        <answer>
+                                <p>Decreasing and concave up.</p>
+                        </answer>
+                </task>
+                <task>
+                        <statement>
+                                <p>Interval <m>(2,3)</m>:</p>
+                        </statement>
+                        <answer>
+                                <p>Decreasing and concave down.</p>
+                        </answer>
+                </task>
+                <task>
+                        <statement>
+                                <p>Is <m>x=0</m> an inflection point?</p>
+                        </statement>
+                        <answer>
+                                <p>Yes.</p>
+                        </answer>
+                </task>
+                <task>
+                        <statement>
+                                <p>Is <m>x=1</m> an inflection point?</p>
+                        </statement>
+                        <answer>
+                                <p>No.</p>
+                        </answer>
+                </task>
+                <task>
+                        <statement>
+                                <p>Is <m>x=1.25</m> an inflection point?</p>
+                        </statement>
+                        <answer>
+                                <p>No.</p>
+                        </answer>
+                </task>
         </exercise>
 
         <exercise points="17">
@@ -349,19 +393,50 @@
                         <me>f(x)=x^3-3 x^2+4.</me>
                         <p>Answer all parts completely, showing work.</p>
                 </statement>
-                <solution>
-                        <p><strong>(a)</strong> Critical numbers satisfy <m>f'(x)=0</m>. Since <m>f'(x)=3x^2-6x=3x(x-2)</m>, the critical numbers are <m>x=0</m> and <m>x=2</m>.</p>
-                        <p><strong>(b)</strong> Sign testing <m>f'(x)</m> on <m>(-\infty,0)</m>, <m>(0,2)</m>, and <m>(2,\infty)</m> shows <m>f'(x)&gt;0</m> on the first and third intervals and <m>f'(x)&lt;0</m> on <m>(0,2)</m>. Thus, <m>f</m> increases on <m>(-\infty,0)</m> and <m>(2,\infty)</m> and decreases on <m>(0,2)</m>.</p>
-                        <p><strong>(c)</strong> At <m>x=0</m>, <m>f</m> changes from increasing to decreasing, giving a relative maximum. At <m>x=2</m>, <m>f</m> changes from decreasing to increasing, giving a relative minimum. Using <m>f''(x)=6x-6</m> confirms <m>f''(0)=-6&lt;0</m> (local max) and <m>f''(2)=6&gt;0</m> (local min).</p>
-                        <p><strong>(d)</strong> Evaluate <m>f(x)</m> at the critical points and endpoints of <m>[-1,3]</m>:</p>
-                        <ul>
-                                <li><m>f(-1)=0</m></li>
-                                <li><m>f(0)=4</m></li>
-                                <li><m>f(2)=0</m></li>
-                                <li><m>f(3)=4</m></li>
-                        </ul>
-                        <p>The smallest value is <m>0</m> at <m>x=-1</m> and <m>x=2</m>, so the absolute minimum on <m>[-1,3]</m> is <m>0</m>.</p>
-                </solution>
+                <task>
+                        <statement>
+                                <p>(a) Find all critical numbers of <m>f(x)</m>.</p>
+                        </statement>
+                        <answer>
+                                <p><m>x=0</m> and <m>x=2</m>.</p>
+                        </answer>
+                        <solution>
+                                <p>Compute <m>f'(x)=3x^2-6x=3x(x-2)</m>. Setting <m>f'(x)=0</m> yields <m>x=0</m> and <m>x=2</m>. The derivative exists everywhere, so these are the critical numbers.</p>
+                        </solution>
+                </task>
+                <task>
+                        <statement>
+                                <p>(b) Find the intervals of increase and decrease for <m>f</m>.</p>
+                        </statement>
+                        <answer>
+                                <p>Increasing on <m>(-\infty,0)</m> and <m>(2,\infty)</m>; decreasing on <m>(0,2)</m>.</p>
+                        </answer>
+                        <solution>
+                                <p>Test <m>f'(x)</m> on intervals determined by the critical numbers. On <m>(-\infty,0)</m>, <m>f'(x)&gt;0</m>; on <m>(0,2)</m>, <m>f'(x)&lt;0</m>; and on <m>(2,\infty)</m>, <m>f'(x)&gt;0</m>. These signs give the stated intervals of increase and decrease.</p>
+                        </solution>
+                </task>
+                <task>
+                        <statement>
+                                <p>(c) Classify each critical number as a relative maximum, relative minimum, or neither.</p>
+                        </statement>
+                        <answer>
+                                <p><m>x=0</m> is a relative maximum; <m>x=2</m> is a relative minimum.</p>
+                        </answer>
+                        <solution>
+                                <p>The sign change of <m>f'(x)</m> from positive to negative at <m>x=0</m> gives a local maximum. The sign change from negative to positive at <m>x=2</m> gives a local minimum. Equivalently, <m>f''(0)=-6&lt;0</m> (concave down) and <m>f''(2)=6&gt;0</m> (concave up).</p>
+                        </solution>
+                </task>
+                <task>
+                        <statement>
+                                <p>(d) Find the absolute minimum value of <m>f</m> on <m>[-1,3]</m>.</p>
+                        </statement>
+                        <answer>
+                                <p>The absolute minimum value is <m>0</m>, attained at <m>x=-1</m> and <m>x=2</m>.</p>
+                        </answer>
+                        <solution>
+                                <p>Evaluate <m>f(x)</m> at the endpoints and critical points: <m>f(-1)=0</m>, <m>f(0)=4</m>, <m>f(2)=0</m>, and <m>f(3)=4</m>. The smallest value is <m>0</m> at <m>x=-1</m> and <m>x=2</m>, giving the absolute minimum.</p>
+                        </solution>
+                </task>
         </exercise>
 
         <exercise points="10">
