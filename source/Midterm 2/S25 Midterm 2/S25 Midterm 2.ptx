@@ -395,7 +395,7 @@
                 </statement>
                 <task>
                         <statement>
-                                <p>(a) Find all critical numbers of <m>f(x)</m>.</p>
+                                <p>Find all critical numbers of <m>f(x)</m>.</p>
                         </statement>
                         <answer>
                                 <p><m>x=0</m> and <m>x=2</m>.</p>
@@ -406,7 +406,7 @@
                 </task>
                 <task>
                         <statement>
-                                <p>(b) Find the intervals of increase and decrease for <m>f</m>.</p>
+                                <p>Find the intervals of increase and decrease for <m>f</m>.</p>
                         </statement>
                         <answer>
                                 <p>Increasing on <m>(-\infty,0)</m> and <m>(2,\infty)</m>; decreasing on <m>(0,2)</m>.</p>
@@ -417,7 +417,7 @@
                 </task>
                 <task>
                         <statement>
-                                <p>(c) Classify each critical number as a relative maximum, relative minimum, or neither.</p>
+                                <p>Classify each critical number as a relative maximum, relative minimum, or neither.</p>
                         </statement>
                         <answer>
                                 <p><m>x=0</m> is a relative maximum; <m>x=2</m> is a relative minimum.</p>
@@ -428,7 +428,7 @@
                 </task>
                 <task>
                         <statement>
-                                <p>(d) Find the absolute minimum value of <m>f</m> on <m>[-1,3]</m>.</p>
+                                <p>Find the absolute minimum value of <m>f</m> on <m>[-1,3]</m>.</p>
                         </statement>
                         <answer>
                                 <p>The absolute minimum value is <m>0</m>, attained at <m>x=-1</m> and <m>x=2</m>.</p>
