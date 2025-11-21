@@ -20,6 +20,7 @@
 
   <section xml:id="final-exam">
     <title>Final Exam</title>
+    <xi:include href="./Final%20Exam/S25%20Final%20Exam/S25%20Final%20Exam.ptx"/>
     <xi:include href="./Final%20Exam/F24%20Final%20Exam/F24%20Final%20Exam.ptx"/>
     <xi:include href="./Final%20Exam/Practice%20Final%20Exam/Practice%20Final%20Exam.ptx"/>
     <xi:include href="./Final%20Exam/Additional%20Practice%20Final%20Exam/Additional%20Practice%20Final%20Exam.ptx"/>
