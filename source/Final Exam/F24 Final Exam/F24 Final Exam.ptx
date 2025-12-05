@@ -366,7 +366,7 @@
                                         x=\text{number of \$3 price increases}
                                 </md>
                                 <md>
-                                        R(x)=(60+3 x)(200-5 x)=60 \cdot 200-300 x+600 x
+                                        R(x)=(60+3 x)(200-5 x)=12000+300 x-15 x^2
                                 </md>
                                 <md>
                                         R'(x)=300-30 x=0 \quad \Longrightarrow \quad x=10
@@ -375,7 +375,7 @@
                                         \text { price }=60+3 \cdot 10=\$90
                                 </md>
                                 <md>
-                                        R^{\prime \prime}=-30&lt;0 \quad\curvearrowright \quad R \text{ is maximized}
+                                        R''=-30&lt;0 \quad\curvearrowright \quad R \text{ is maximized}
                                 </md>
                         </p>
                 </solution>
@@ -415,7 +415,7 @@
                                                 s(5)=3 \cdot 5^2+5=75+5=80
                                         </md>
                                         <md>
-                                                \text{surplus}=\int_0^5\left[80-\left(3 x^2+x\right)\right] d x=80 x-x^3-\left.\frac{x^2}{2}\right|_0 ^5=80-5-5^3-\frac{5^2}{2}
+                                                \text{surplus}=\int_0^5\left[80-\left(3 x^2+x\right)\right] d x=\left(80 x-x^3-\frac{x^2}{2}\right)\Bigg|_0 ^5=80(5)-5^3-\frac{5^2}{2}
                                         </md>
                                 </p>
                         </solution>
