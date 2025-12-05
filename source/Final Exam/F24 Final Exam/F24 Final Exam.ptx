@@ -375,7 +375,7 @@
                                         \text { price }=60+3 \cdot 10=\$90
                                 </md>
                                 <md>
-                                        R^{\prime \prime}=-30<0 \quad\curvearrowright \quad R \text{ is maximized}
+                                        R^{\prime \prime}=-30&lt;0 \quad\curvearrowright \quad R \text{ is maximized}
                                 </md>
                         </p>
                 </solution>
@@ -486,9 +486,9 @@
                                         <md>
                                                 D(0,0)=12 \cdot 6-6^2>0 \quad\text{and}\quad f_{x x}(0,0)=12>0 \Rightarrow (0,0) \text{ is a rel. min.}
                                         </md>
-                                        <md>
-                                                D(1,-1)=(12-12 \cdot 1) \cdot 6-6^2=-6^2<0 \Rightarrow (1,-1) \text{ is a saddle point}
-                                        </md>
+                                <md>
+                                        D(1,-1)=(12-12 \cdot 1) \cdot 6-6^2=-6^2&lt;0 \Rightarrow (1,-1) \text{ is a saddle point}
+                                </md>
                                 </p>
                         </solution>
                 </task>
