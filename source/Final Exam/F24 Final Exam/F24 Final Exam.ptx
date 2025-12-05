@@ -472,61 +472,118 @@
                                 </p>
                         </solution>
                 </task>
-		<task>
-			<statement>
-				<p>
-					The critical points of <m>f(x,y)</m> are <m>(0,0)</m> and <m>(1,-1)</m>. Determine, using the <m>D</m>-test, if each point corresponds to a relative maximum, relative minimum, or saddle point. Show all work.
-				</p>
-			</statement>
-		</task>
-	</exercise>
-	<exercise>
-		<introduction>
-			<p>
+                <task>
+                        <statement>
+                                <p>
+                                        The critical points of <m>f(x,y)</m> are <m>(0,0)</m> and <m>(1,-1)</m>. Determine, using the <m>D</m>-test, if each point corresponds to a relative maximum, relative minimum, or saddle point. Show all work.
+                                </p>
+                        </statement>
+                        <solution>
+                                <p>
+                                        <md>
+                                                D=f_{x x} f_{y y}-\left(f_{x y}\right)^2=(12-12 x)(6)-6^2
+                                        </md>
+                                        <md>
+                                                D(0,0)=12 \cdot 6-6^2>0 \quad\text{and}\quad f_{x x}(0,0)=12>0 \Rightarrow (0,0) \text{ is a rel. min.}
+                                        </md>
+                                        <md>
+                                                D(1,-1)=(12-12 \cdot 1) \cdot 6-6^2=-6^2<0 \Rightarrow (1,-1) \text{ is a saddle point}
+                                        </md>
+                                </p>
+                        </solution>
+                </task>
+        </exercise>
+        <exercise>
+                <introduction>
+                        <p>
 				Evaluate the following improper integral or show that it is divergent. Show all work.
 			</p>
-			<p>
-				<m>\displaystyle\int_0^\infty \dfrac{2e^{x}+4e^{2x}}{e^{3x}}dx</m>
-			</p>
-		</introduction>
-	</exercise>
-	<exercise>
-		<introduction>
-			<p>
+                        <p>
+                                <m>\displaystyle\int_0^\infty \dfrac{2e^{x}+4e^{2x}}{e^{3x}}dx</m>
+                        </p>
+                </introduction>
+                <solution>
+                        <p>
+                                <md>
+                                        \int_0^b\left(2 e^{-2 x}+4 e^{-x}\right) d x=\frac{2 e^{-2 x}}{-2}+\left.\frac{4 e^{-x}}{-1}\right|_0 ^b=-e^{-2 b}-4 e^{-b}-\left(-e^0-4 e^0\right)
+                                </md>
+                                <md>
+                                        =-e^{-2 b}-4 e^{-b}+5 \quad\Rightarrow\quad \int_0^{\infty} \dfrac{2 e^{x}+4 e^{2 x}}{e^{3 x}} d x=\lim _{b \rightarrow \infty}-e^{-2 b}-4 e^{-b}+5=5
+                                </md>
+                        </p>
+                </solution>
+        </exercise>
+        <exercise>
+                <introduction>
+                        <p>
 				For <m>f(x,y)=x^3-4xy-8y+3</m>:
 			</p>
 		</introduction>
-		<task workspace="1.5in">
-			<statement>
-				<p>
-					Compute <m>f(-1,2)</m>. Simplify your answer to a single number.
-				</p>
-			</statement>
-		</task>
-		<task workspace="1.5in">
-			<statement>
-				<p>
-					Find the partial derivative <m>f_x</m>.
-				</p>
-			</statement>
-		</task>
-		<task workspace="1.5in">
-			<statement>
-				<p>
-					Find the partial derivative <m>f_y</m>.
-				</p>
-			</statement>
-		</task>
-		<task>
-			<statement>
-				<p>
-					Find the critical point(s) of <m>f(x,y)</m>. Write each in the form <m>(x,y)</m>. Show all work.
-				</p>
-			</statement>
-		</task>
-	</exercise>
-	<exercise>
-		<introduction>
+                <task workspace="1.5in">
+                        <statement>
+                                <p>
+                                        Compute <m>f(-1,2)</m>. Simplify your answer to a single number.
+                                </p>
+                        </statement>
+                        <solution>
+                                <p>
+                                        <md>
+                                                f(-1,2)=(-1)^3-4(-1)(2)-8(2)+3=-1+8-16+3=-6
+                                        </md>
+                                </p>
+                        </solution>
+                </task>
+                <task workspace="1.5in">
+                        <statement>
+                                <p>
+                                        Find the partial derivative <m>f_x</m>.
+                                </p>
+                        </statement>
+                        <solution>
+                                <p>
+                                        <md>
+                                                f_x=3 x^2-4 y
+                                        </md>
+                                </p>
+                        </solution>
+                </task>
+                <task workspace="1.5in">
+                        <statement>
+                                <p>
+                                        Find the partial derivative <m>f_y</m>.
+                                </p>
+                        </statement>
+                        <solution>
+                                <p>
+                                        <md>
+                                                f_y=-4 x-8
+                                        </md>
+                                </p>
+                        </solution>
+                </task>
+                <task>
+                        <statement>
+                                <p>
+                                        Find the critical point(s) of <m>f(x,y)</m>. Write each in the form <m>(x,y)</m>. Show all work.
+                                </p>
+                        </statement>
+                        <solution>
+                                <p>
+                                        <md>
+                                                \begin{gathered}
+                                                3 x^2-4 y=0 \\
+                                                -4 x-8=0 \quad x=\dfrac{8}{-4}=-2 \\
+                                                3(-2)^2-4 y=0 \\
+                                                12-4 y=0 \quad y=3 \\
+                                                (-2,3)
+                                                \end{gathered}
+                                        </md>
+                                </p>
+                        </solution>
+                </task>
+        </exercise>
+        <exercise>
+                <introduction>
 			<p>
 				Use the graph of <m>y=f'(x)</m> to answer the following. No justification is required.
 			</p>
@@ -534,36 +591,56 @@
 				Again, <term>this is the graph of the derivative of <m>f(x)</m>.</term>
 			</p>
 		</introduction>
-		<task>
-			<statement>
-				<p>
-					On which interval(s) is <m>f(x)</m> decreasing?
-				</p>
-			</statement>
-		</task>
-		<task>
-			<statement>
-				<p>
-					At which <m>x</m>-value(s) does <m>f(x)</m> have a horizontal tangent line?
-				</p>
-				<p>
-					
-				</p>
-			</statement>
-		</task>
-		<task>
-			<statement>
-				<p>
-					What is <m>\displaystyle \lim_{h\to0}\frac{f(h)-f(0)}{h}</m>? 
-				</p>
-			</statement>
-		</task>
-		<task>
-			<statement>
-				<p>
-					Is <m>f(x)</m> concave up or concave down at <m>x=2</m>?
-				</p>
-			</statement>
-		</task>
-	</exercise>
+                <task>
+                        <statement>
+                                <p>
+                                        On which interval(s) is <m>f(x)</m> decreasing?
+                                </p>
+                        </statement>
+                        <solution>
+                                <p>
+                                        <m>(-\infty,-4)\cup(1,5)</m>
+                                </p>
+                        </solution>
+                </task>
+                <task>
+                        <statement>
+                                <p>
+                                        At which <m>x</m>-value(s) does <m>f(x)</m> have a horizontal tangent line?
+                                </p>
+                                <p>
+
+                                </p>
+                        </statement>
+                        <solution>
+                                <p>
+                                        <m>x=-4,1,5</m>
+                                </p>
+                        </solution>
+                </task>
+                <task>
+                        <statement>
+                                <p>
+                                        What is <m>\displaystyle \lim_{h\to0}\frac{f(h)-f(0)}{h}</m>?
+                                </p>
+                        </statement>
+                        <solution>
+                                <p>
+                                        <m>f'(0)=2</m>
+                                </p>
+                        </solution>
+                </task>
+                <task>
+                        <statement>
+                                <p>
+                                        Is <m>f(x)</m> concave up or concave down at <m>x=2</m>?
+                                </p>
+                        </statement>
+                        <solution>
+                                <p>
+                                        <m>\text{concave down}</m> (since <m>f'</m> is decreasing near <m>x=2</m>)
+                                </p>
+                        </solution>
+                </task>
+        </exercise>
 </worksheet>
