@@ -28,7 +28,7 @@
 							</p>
 						</statement>
 					</choice>
-					<choice>
+					<choice correct="yes">
 						<statement>
 							<p>
 								40
@@ -72,7 +72,7 @@
 							</p>
 						</statement>
 					</choice>
-					<choice>
+					<choice correct="yes">
 						<statement>
 							<p>
 								<m>f'(3)</m> and <m>f''(3)</m> are both positive.
@@ -103,7 +103,7 @@
 							</p>
 						</statement>
 					</choice>
-					<choice>
+					<choice correct="yes">
 						<statement>
 							<p>
 								False
@@ -140,7 +140,7 @@
 							</p>
 						</statement>
 					</choice>
-					<choice>
+					<choice correct="yes">
 						<statement>
 							<p>
 								None of the above.
@@ -177,7 +177,7 @@
 							</p>
 						</statement>
 					</choice>
-					<choice>
+					<choice correct="yes">
 						<statement>
 							<p>
 								<m>[-2,2)\cup(2,5]</m>
@@ -206,6 +206,11 @@
 					<m>f(x)=(x^3+2x-1)(x^2-10x)</m>
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<me>f'(x)=\left(3 x^2+2\right)\left(x^2-10 x\right)+\left(x^3+2 x-1\right)(2 x-10)</me>
+				</p>
+			</solution>
 		</task>
 		<task>
 			<statement>
@@ -213,6 +218,11 @@
 					<m>g(x)=\dfrac{2}{7x^2}+3x^4+\sqrt{2}</m>
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<me>g'(x)=\frac{2}{7}(-2) x^{-3}+12 x^3</me>
+				</p>
+			</solution>
 		</task>
 		<task>
 			<statement>
@@ -220,6 +230,11 @@
 					<m>r(t)=\sqrt[4]{t^2+t}</m>
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<me>r'(t)=\frac{1}{4}\left(t^2+t\right)^{-3 / 4}(2 t+1)</me>
+				</p>
+			</solution>
 		</task>
 		<task>
 			<statement>
@@ -227,6 +242,11 @@
 					<m>F(x)=(2x^6+x^2)^9+3x</m>
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<me>F'(x)=9\left(2 x^6+x^2\right)^8\left(12 x^5+2 x\right)+3</me>
+				</p>
+			</solution>
 		</task>
 	</exercise>
 	<exercise>
@@ -241,6 +261,11 @@
 					For which <m>x</m>-value(s) is <m>f(x)</m> discontinuous?
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<m>x=-1,1,3</m>
+				</p>
+			</solution>
 		</task>
 		<task>
 			<statement>
@@ -266,6 +291,26 @@
 					(f) <m>\displaystyle \lim_{x\to 4} f(x)=</m>
 				</p>
 			</statement>
+			<solution>
+				<p>
+					(a) <m>\lim _{x \rightarrow-1} f(x)=-3</m>
+				</p>
+				<p>
+					(b) <m>\lim _{x \rightarrow 1^{-}} f(x)=\infty</m>
+				</p>
+				<p>
+					(c) <m>\lim _{x \rightarrow 3^{-}} f(x)=-1</m>
+				</p>
+				<p>
+					(d) <m>\lim _{x \rightarrow 3^{+}} f(x)=-4</m>
+				</p>
+				<p>
+					(e) <m>\lim _{x \rightarrow 3} f(x)=</m> DNE
+				</p>
+				<p>
+					(f) <m>\lim _{x \rightarrow 4} f(x)=-2</m>
+				</p>
+			</solution>
 		</task>
 	</exercise>
 	<exercise>
@@ -274,6 +319,17 @@
 				Find <m>f''(x)</m> for <m>f(x)=12\sqrt{x}(x+1)</m>. You do not need to simplify your final answer. Show all work.
 			</p>
 		</introduction>
+		<solution>
+			<p>
+				<me>
+					\begin{aligned}
+					\amp f(x)=12 x^{1 / 2}(x+1)=12 x^{3 / 2}+12 x^{1 / 2} \\
+					\amp f'(x)=12 \cdot \frac{3}{2} \cdot x^{1 / 2}+12 \cdot \frac{1}{2} \cdot x^{-1 / 2} \\
+					\amp f''(x)=12 \cdot \frac{3}{2} \cdot\left(\frac{1}{2}\right) x^{-1 / 2}+12 \cdot \frac{1}{2} \cdot\left(-\frac{1}{2}\right) x^{-3 / 2}
+					\end{aligned}
+				</me>
+			</p>
+		</solution>
 	</exercise>
 	<exercise>
 		<introduction>
@@ -287,6 +343,18 @@
 					Find the <term>profit function</term> <m>P(x)</m>, then find the <m>x</m>-value(s) where <m>P(x)=0</m>. Show all work.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<me>
+						\begin{aligned}
+						P(x)=R(x)-C(x)= \amp 45 x-x^2-(30 x+50) \\
+						= \amp 15 x-x^2-50=-\left(x^2-15 x+50\right) \\
+						= \amp -(x-10)(x-5)=0 \\
+						\amp x=10,5
+						\end{aligned}
+					</me>
+				</p>
+			</solution>
 		</task>
 		<task workspace="2in">
 			<statement>
@@ -294,6 +362,16 @@
 					Find the <term>marginal revenue function</term> and evaluate it at <m>x=10</m>. You do not need to simplify your numerical answer. Show all work.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<me>
+						\begin{aligned}
+						\amp R'(x)=45-2 x \\
+						\amp R'(10)=45-2 \cdot 10
+						\end{aligned}
+					</me>
+				</p>
+			</solution>
 		</task>
 		<task workspace="1in">
 			<statement>
@@ -301,6 +379,11 @@
 					Find the <term>average cost function</term>.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<me>\frac{C(x)}{x}=\frac{30 x+50}{x}=30+50 x^{-1}</me>
+				</p>
+			</solution>
 		</task>
 		<task>
 			<statement>
@@ -308,6 +391,18 @@
 					Find the <term>marginal average cost function</term> and evaluate it at <m>x=10</m>. You do not need to simplify your numerical answer. Show all work.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<me>
+						\begin{aligned}
+						\amp \frac{d}{d x}\left(30+50 x^{-1}\right) \\
+						\amp -50 x^{-2} \\
+						\amp \text{At } x=10: \\
+						\amp -50 \cdot 10^{-2}
+						\end{aligned}
+					</me>
+				</p>
+			</solution>
 		</task>
 	</exercise>
 	<exercise>
@@ -316,6 +411,18 @@
 				Use the limit definition of the derivative to compute <m>f'(x)</m>, where <m>f(x)=2x^2-6x</m>. Show all work.
 			</p>
 		</introduction>
+		<solution>
+			<p>
+				<me>
+					\begin{aligned}
+					f'(x) \amp =\lim _{h \rightarrow 0} \frac{f(x+h)-f(x)}{h}=\lim _{h \rightarrow 0} \frac{2(x+h)^2-6(x+h)-\left(2 x^2-6 x\right)}{h} \\
+					\amp = \lim _{h \rightarrow 0} \frac{2\left(x^2+2 x h+h^2\right)-6 x-6 h-2 x^2+6 x}{h} \\
+					\amp =\lim _{h \rightarrow 0} \frac{4 x h+2 h^2-6 h}{h}=\lim _{h \rightarrow 0} (4 x+2 h-6) \\
+					\amp =4 x-6
+					\end{aligned}
+				</me>
+			</p>
+		</solution>
 	</exercise>
 	<exercise>
 		<introduction>
@@ -329,6 +436,11 @@
 					<m>\displaystyle \lim_{x\to 3} \dfrac{x^2+x-12}{2x-6}</m>
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<me>\lim _{x \rightarrow 3} \frac{(x-3)(x+4)}{2(x-3)}=\frac{3+4}{2}=\frac{7}{2}</me>
+				</p>
+			</solution>
 		</task>
 		<task>
 			<statement>
@@ -336,6 +448,11 @@
 					<m>\displaystyle \lim_{x\to 0}\dfrac{x^2+5x+4}{x^2+3x-4}</m>
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<me>\lim _{x \rightarrow 0} \frac{x^2+5 x+4}{x^2+3 x-4}=\frac{0^2+5 \cdot 0+4}{0^2+3 \cdot 0-4}=\frac{4}{-4}=-1</me>
+				</p>
+			</solution>
 		</task>
 	</exercise>
 	<exercise>
@@ -344,6 +461,18 @@
 				Find an equation for the tangent line of <m>f(x)=x^4+2x+4</m> at <m>x=-1</m>. Show all work.
 			</p>
 		</introduction>
+		<solution>
+			<p>
+				<me>
+					\begin{aligned}
+					\amp f'(x)=4 x^3+2 \\
+					\amp f'(-1)=4(-1)^3+2=-2 \\
+					\amp f(-1)=(-1)^4+2(-1)+4=1-2+4=3 \\
+					\amp y-3=-2(x+1)
+					\end{aligned}
+				</me>
+			</p>
+		</solution>
 	</exercise>
 	<exercise>
 		<introduction>
@@ -365,14 +494,14 @@
 							</p>
 						</statement>
 					</choice>
-					<choice>
+					<choice correct="yes">
 						<statement>
 							<p>
 								<m>x=-2</m>
 							</p>
 						</statement>
 					</choice>
-					<choice>
+					<choice correct="yes">
 						<statement>
 							<p>
 								<m>x=2</m>
@@ -395,7 +524,7 @@
 				</p>
 			</statement>
 				<choices multiple-correct="no">
-					<choice>
+					<choice correct="yes">
 						<statement>
 							<p>
 								positive
@@ -432,7 +561,7 @@
 							</p>
 						</statement>
 					</choice>
-					<choice>
+					<choice correct="yes">
 						<statement>
 							<p>
 								negative
