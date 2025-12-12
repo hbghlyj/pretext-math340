@@ -452,7 +452,7 @@
 			</statement>
 			<solution>
 				<p>
-					<m>x=-4,0,3,6 \rightarrow</m> where <m>f'(x)=0</m>.
+<m>x=-4,0,3,6</m>, as this is where <m>f'(x)=0</m>.
 				</p>
 			</solution>
 		</task>
