@@ -365,8 +365,9 @@
 					f'' \amp + \amp - \amp +
 					\end{array}
 				</me>
-				<m>f</m> is concave up on <m>(-\infty, 1) \cup(4, \infty)</m>
+				<m>f</m> is concave up on <m>(-\infty, 1) \cup(4, \infty)</m>.
 				<m>f</m> is concave down on <m>(1,4)</m>.
+				The inflection points are at <m>x=1</m> and <m>x=4</m>.
 			</p>
 		</solution>
 	</exercise>
