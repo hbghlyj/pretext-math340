@@ -520,7 +520,7 @@
 			<solution>
 				<p>
 					<me>
-						f'(x)=\frac{1}{x^2+2 x}(2 x+1)=\frac{2 x+1}{x^2+2 x}
+						f'(x)=\frac{1}{x^2+2 x}(2 x+2)=\frac{2 x+2}{x^2+2 x}
 					</me>
 				</p>
 			</solution>
