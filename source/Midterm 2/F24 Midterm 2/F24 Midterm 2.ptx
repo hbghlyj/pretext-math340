@@ -24,7 +24,7 @@
 							</p>
 						</statement>
 					</choice>
-					<choice>
+					<choice correct="yes">
 						<statement>
 							<p>
 								<m>\ln(3)+\ln(x)</m>
@@ -57,7 +57,7 @@
 				</p>
 			</statement>
 				<choices multiple-correct="no">
-					<choice>
+					<choice correct="yes">
 						<statement>
 							<p>
 								<m>x=-4</m> and <m>x=2</m>
@@ -101,7 +101,7 @@
 							</p>
 						</statement>
 					</choice>
-					<choice>
+					<choice correct="yes">
 						<statement>
 							<p>
 								False
@@ -124,7 +124,7 @@
 							</p>
 						</statement>
 					</choice>
-					<choice>
+					<choice correct="yes">
 						<statement>
 							<p>
 								Demand is <term>elastic</term>, and we should <term>lower</term> the price to increase revenue.
@@ -166,7 +166,7 @@
 							</p>
 						</statement>
 					</choice>
-					<choice>
+					<choice correct="yes">
 						<statement>
 							<p>
 								<m>x+(4x+20)\left(\dfrac{500}{x}\right)</m>
@@ -203,7 +203,7 @@
 							</p>
 						</statement>
 					</choice>
-					<choice>
+					<choice correct="yes">
 						<statement>
 							<p>
 								<m>g'(0)=-3</m>
@@ -240,7 +240,7 @@
 				</p>
 			</statement>
 				<choices multiple-correct="yes">
-					<choice>
+					<choice correct="yes">
 						<statement>
 							<p>
 								<m>x=-3</m>
@@ -261,7 +261,7 @@
 							</p>
 						</statement>
 					</choice>
-					<choice>
+					<choice correct="yes">
 						<statement>
 							<p>
 								<m>x=1</m>
@@ -290,6 +290,13 @@
 					What are the critical numbers of <m>f(x)</m>?
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<me>
+						x=1,2,-3
+					</me>
+				</p>
+			</solution>
 		</task>
 		<task>
 			<statement>
@@ -297,6 +304,16 @@
 					Using a sign chart, find the intervals of increasing and decreasing for <m>f(x)</m>. Write your answers using interval notation.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<me>
+						\begin{aligned}
+						\amp \operatorname{Inc}:(1,2) \\
+						\amp \operatorname{Dec}:(-\infty,-3) \cup(-3,1) \cup(2, \infty)
+						\end{aligned}
+					</me>
+				</p>
+			</solution>
 		</task>
 		<task workspace="1.5in">
 			<statement>
@@ -304,6 +321,17 @@
 					Classify each critical number as the location of a relative minimum, relative maximum, or neither. No justification is needed.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<me>
+						\begin{aligned}
+						\amp x=-3 \text { : neither } \\
+						\amp x=1: \min \\
+						\amp x=2: \max .
+						\end{aligned}
+					</me>
+				</p>
+			</solution>
 		</task>
 	</exercise>
 	<exercise>
@@ -340,6 +368,20 @@
 				A woodworker finds that when they price their cutting boards at <m>\$50</m>, they sell <m>30</m> cutting boards in a month. They determine that for each <m>\$1</m> price discount, they will sell 3 more cutting boards per month. If each cutting board costs <m>\$20</m> to produce, find the price of the cutting boards which will maximize their profit AND the number of cutting boards sold. Write each answer clearly with units, and justify your solution gives the maximum profit. Show all work.
 			</p>
 		</introduction>
+		<solution>
+			<p>
+				<me>
+					\begin{aligned}
+					\amp P(x)=1500+150 x-30 x-3 x^2-600-60 x \\
+					\amp P(x)=900+60 x-3 x^2 \\
+					\amp P'(x)=60-6 x=0 \\
+					\amp x=10 \rightarrow \max \text{ b/c } P''=-6 \lt 0 \quad \text { max! } \\
+					\amp \text { price: } 50-10=\$ 40
+					\end{aligned}
+				</me>
+				quantity: <m>30+3 \cdot 10=60</m> boards
+			</p>
+		</solution>
 	</exercise>
 	<exercise>
 		<task>
@@ -348,6 +390,20 @@
 					After <m>t</m> weeks of practice, a typing student can type <m>120(1-e^{-0.3t})</m> words per minute. How long will it take for the student to be able to type 100 words per minute? Show all work. You do not need to simplify your final answer, but include units.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<me>
+						\begin{aligned}
+						\amp 100=120\left(1-e^{-0.3 t}\right) \\
+						\amp \frac{10}{12}=1-e^{-0.3 t} \\
+						\amp e^{-0.3 t}=1-\frac{5}{6}=\frac{1}{6} \\
+						\amp \ln \left(e^{-.3 t}\right)=\ln \left(\frac{1}{6}\right) \\
+						\amp -.3 t=\ln(1/6) \\
+						\amp t=\frac{\ln (1 / 6)}{-.3} \text { weeks }
+						\end{aligned}
+					</me>
+				</p>
+			</solution>
 		</task>
 		<task>
 			<statement>
@@ -355,6 +411,17 @@
 					A rich aunt wants to give her nephew <m>\$45,000</m> when he turns 18. How much money must she deposit in a trust fund paying <m>8\%</m> compounded quarterly at the time of the nephew’s birth to yield <m>\$45,000</m> when he turns 18? Show all work. You do not need to simplify your answer.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<me>
+						\begin{aligned}
+						\amp A=P\left(1+\frac{r}{m}\right)^{m t} \\
+						\amp 45,000=P\left(1+\frac{.08}{4}\right)^{4 \cdot 18} \\
+						\amp P=\frac{45,000}{\left(1+\frac{.08}{4}\right)^{72}}
+						\end{aligned}
+					</me>
+				</p>
+			</solution>
 		</task>
 	</exercise>
 	<exercise>
@@ -366,6 +433,19 @@
 				<m>f(x)=9x^2-x^3+10x+12</m>. Give the intervals of concavity using interval notation. Show all work.
 			</p>
 		</introduction>
+		<solution>
+			<p>
+				<me>
+					\begin{aligned}
+					\amp f'(x)=18 x-3 x^2+10 \\
+					\amp f''(x)=18-6 x=6(3-x) \rightarrow x=3
+					\end{aligned}
+				</me>
+				Inflection point at <m>x=3</m>.
+				Concave up: <m>(-\infty, 3)</m>
+				Concave down: <m>(3, \infty)</m>
+			</p>
+		</solution>
 	</exercise>
 	<exercise>
 		<introduction>
@@ -373,6 +453,21 @@
 				A dog daycare owner wants to build a rectangular fenced area along the side of the daycare building, split into two equal parts by a fence parallel to one of its sides (see picture below, the dashed lines denote fencing). If the side along the building needs no fence, with 300 meters of fencing available to use, what dimensions for the outer rectangle will create the largest total area? Show all work, including justification that your solution is optimal.
 			</p>
 		</introduction>
+		<solution>
+			<p>
+				<me>
+					\begin{gathered}
+					300=x+3 y \rightarrow y=\frac{300-x}{3}=100-\frac{1}{3} x \\
+					\max \cdot A=x y=x\left(100-\frac{1}{3} x\right)=100 x-\frac{1}{3} x^2 \\
+					A'(x)=100-\frac{2}{3} x=0 \\
+					x=\frac{3 \cdot 100}{2}=150 . \\
+					\max \text{ b/c } A''=-2 / 3 \lt 0 \\
+					y=100-\frac{1}{3} \cdot 150=100-50=50 . \\
+					\text { dimensions: } x=150, y=50
+					\end{gathered}
+				</me>
+			</p>
+		</solution>
 	</exercise>
 	<exercise>
 		<introduction>
@@ -386,6 +481,13 @@
 					Find <m>f'(x)</m> if <m>f(x) = x^2\ln(4x).</m> You do not need to simplify your final answer.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<me>
+						f'(x)=2 x \ln (4 x)+x^2 \cdot \frac{1}{4 x} \cdot 4
+					</me>
+				</p>
+			</solution>
 		</task>
 		<task>
 			<statement>
@@ -393,6 +495,16 @@
 					Find <m>g''(x)</m> if <m>\displaystyle g(x)=e^{x^2+2x}</m>. You do not need to simplify your final answer.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<me>
+						\begin{aligned}
+						\amp g'(x)=e^{x^2+2 x}(2 x+2) \\
+						\amp g''(x)=e^{x^2+2 x}(2 x+2)(2 x+2)+e^{x^2+2 x}(2)
+						\end{aligned}
+					</me>
+				</p>
+			</solution>
 		</task>
 	</exercise>
 	<exercise>
@@ -402,6 +514,16 @@
 					For the demand function <m>D(p)=60-p^2</m>, find the elasticity of demand <m>E(p)</m> and evaluate it at <m>p=5.</m> Show all work. You do not need to simplify your final numerical answer.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<me>
+						\begin{aligned}
+						\amp E(p)=\frac{-p D'(p)}{D(p)}=\frac{-p(-2 p)}{60-p^2}=\frac{2 p^2}{60-p^2} \\
+						\amp E(5)=\frac{2 \cdot 5^2}{60-5^2}=\frac{50}{60-25}=\frac{50}{35}=\frac{10}{7}
+						\end{aligned}
+					</me>
+				</p>
+			</solution>
 		</task>
 		<task>
 			<statement>
@@ -409,6 +531,14 @@
 					Find the relative rate of change of <m>f(t)=t^3+2t</m> at <m>t=3</m>. Show all work. You do not need to simplify your final numerical answer.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<me>
+						\text { rel. rate of change }=\frac{f'(t)}{f(t)}=\frac{3 t^2+2}{t^3+2 t}
+					</me>
+					At <m>t=3</m>: <m>\dfrac{3 \cdot 3^2+2}{3^3+2 \cdot 3}</m>
+				</p>
+			</solution>
 		</task>
 	</exercise>
 </worksheet>
