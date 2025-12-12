@@ -21,7 +21,7 @@
 							</p>
 						</statement>
 					</choice>
-					<choice>
+					<choice correct="yes">
 						<statement>
 							<p>
 								<m>\dfrac{30000}{(1.01)^{64}}</m>
@@ -63,7 +63,7 @@
 				</p>
 			</hint>
 				<choices multiple-correct="no">
-					<choice>
+					<choice correct="yes">
 						<statement>
 							<p>
 								<m>5x</m>
@@ -114,7 +114,7 @@
 							</p>
 						</statement>
 					</choice>
-					<choice>
+					<choice correct="yes">
 						<statement>
 							<p>
 								<m>47.5\%</m>
@@ -144,7 +144,7 @@
 				</p>
 			</statement>
 				<choices multiple-correct="yes">
-					<choice>
+					<choice correct="yes">
 						<statement>
 							<p>
 								<m>x=-1</m>
@@ -158,7 +158,7 @@
 							</p>
 						</statement>
 					</choice>
-					<choice>
+					<choice correct="yes">
 						<statement>
 							<p>
 								<m>x=1</m>
@@ -172,7 +172,7 @@
 							</p>
 						</statement>
 					</choice>
-					<choice>
+					<choice correct="yes">
 						<statement>
 							<p>
 								<m>x=3</m>
@@ -202,7 +202,7 @@
 							</p>
 						</statement>
 					</choice>
-					<choice>
+					<choice correct="yes">
 						<statement>
 							<p>
 								False
@@ -225,7 +225,7 @@
 							</p>
 						</statement>
 					</choice>
-					<choice>
+					<choice correct="yes">
 						<statement>
 							<p>
 								False
@@ -247,6 +247,16 @@
 					Find the elasticity of demand <m>E(p)</m> and evaluate it at <m>p=10.</m> Simplify your answer.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<me>
+						\begin{gathered}
+						E(p)=\frac{-p D'(p)}{D(p)}=\frac{-p(-1)}{40-p}=\frac{p}{40-p} \\
+						E(10)=\frac{10}{40-10}=\frac{10}{30}=\frac{1}{3}
+						\end{gathered}
+					</me>
+				</p>
+			</solution>
 		</task>
 		<task>
 			<statement>
@@ -254,6 +264,14 @@
 					Is the demand elastic or inelastic at <m>p=10</m>? To increase revenue, should you increase or decrease the price?
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<me>
+						\frac{1}{3} \lt 1 \Rightarrow \text{ demand is inelastic at } p=10.
+					</me>
+					You should increase the price to increase revenue.
+				</p>
+			</solution>
 		</task>
 		<task>
 			<statement>
@@ -261,6 +279,17 @@
 					Find the price at which the demand is unit-elastic.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<me>
+						\text { want } \begin{aligned}
+						E(p)=1 \amp =\frac{p}{40-p} \\
+						40-p \amp =p \Rightarrow 40=2 p \\
+						\amp p=20
+						\end{aligned}
+					</me>
+				</p>
+			</solution>
 		</task>
 	</exercise>
 	<exercise>
@@ -275,6 +304,17 @@
 					What are the critical numbers of <m>f(x)</m>?
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<me>
+						\begin{array}{ll}
+						x^{-1 / 3}: \amp x=0 \\
+						2-x: \amp x=2 \\
+						(x+4)^2: \amp x=-4
+						\end{array}
+					</me>
+				</p>
+			</solution>
 		</task>
 		<task>
 			<statement>
@@ -282,6 +322,28 @@
 					At what points, if any, does <m>f(x)</m> assume relative maximum and minimum values? Fully justify your answer.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					Make sign chart.
+					<me>
+						\begin{array}{r:c|c|c|c} 
+						\amp -5 \amp -2 \amp 1 \amp 3 \\
+						x^{-1 / 3} \amp - \amp - \amp + \amp + \\
+						2-x \amp + \amp + \amp + \amp - \\
+						(x+4)^2 \amp + \amp + \amp + \amp + \\
+						\hline f' \amp - \amp - \amp + \amp - \\
+						\hline f \amp \searrow \amp \searrow \amp \nearrow \amp \searrow
+						\end{array}
+					</me>
+					<me>
+						\begin{aligned}
+						\amp x=-4 \text { not a rel. max nor rel. min } \\
+						\amp x=0 \text { is a rel. min. } \\
+						\amp x=2 \text { is a rel. max. }
+						\end{aligned}
+					</me>
+				</p>
+			</solution>
 		</task>
 	</exercise>
 	<exercise>
@@ -324,6 +386,25 @@
 				
 			</p>
 		</introduction>
+		<solution>
+			<p>
+				<me>
+					\begin{gathered}
+					\text{Cost: } 8x+10y=400 \implies y = 40-\frac{4}{5}x \\
+					\text{Area: } A(x) = xy = x\left(40-\frac{4}{5}x\right)
+					\end{gathered}
+				</me>
+				<me>
+					\begin{gathered}
+					A=\left(40-\frac{4}{5} x\right) x=40 x-\frac{4}{5} x^2 \\
+					A'=40-\frac{8}{5} x=0 \\
+					x=40 \cdot \frac{5}{8}=25 \\
+					y=40-\frac{4}{5} \cdot 25=40-20 \\
+					y=20
+					\end{gathered}
+				</me>
+			</p>
+		</solution>
 	</exercise>
 	<exercise>
 		<introduction>
@@ -337,6 +418,24 @@
 					Find the intervals of increasing/decreasing. Give your answers using interval notation. Show all work.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<me>
+						f'(x)=4 x^3-12 x^2=4 x^2(x-3) \quad \text{CN}: x=0,3
+					</me>
+					<me>
+						\begin{tabular}{cc|c|c} 
+						\amp -1 \amp 2 \amp 4 \\
+						4 x^2 \amp + \amp + \amp + \\
+						x-3 \amp - \amp - \amp + \\
+						\hline f' \amp - \amp - \amp + \\
+						\hline f \amp \searrow \amp \searrow \amp \nearrow
+						\end{tabular}
+					</me>
+					Dec: <m>(-\infty, 0) \cup(0,3)</m>
+					Inc: <m>(3, \infty)</m>
+				</p>
+			</solution>
 		</task>
 		<task>
 			<statement>
@@ -344,6 +443,24 @@
 					Find the intervals of concave up/concave down. Give your answers using interval notation. Show all work.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<me>
+						f''(x)=12 x^2-24 x=12 x(x-2)=0 \text { at } x=0,2
+					</me>
+					<me>
+						\begin{array}{cc|c|c} 
+						\amp -1 \amp 1 \amp 3 \\
+						12 x \amp - \amp + \amp + \\
+						x-2 \amp - \amp - \amp + \\
+						\hline f'' \amp + \amp - \amp + \\
+						\hline f \amp \cup \amp \cap \amp \cup
+						\end{array}
+					</me>
+					Concave up: <m>(-\infty, 0) \cup(2, \infty)</m>
+					Concave down: <m>(0,2)</m>.
+				</p>
+			</solution>
 		</task>
 	</exercise>
 	<exercise>
@@ -352,6 +469,25 @@
 				A bus company will rent a bus that holds 50 people to groups of 30 people or more. If a group contains exactly 30 people, each person pays <m>\$80</m>. In large groups, everybody’s fare is reduced by <m>\$2</m> for each person in excess of 30. Determine the size of the group for which the bus company’s revenue will be greatest. Justify why your solution is optimal.
 			</p>
 		</introduction>
+		<solution>
+			<p>
+				let <m>x=</m> number of people in excess of 30.
+				<me>
+					\begin{aligned}
+					\text { Rev }=R(x) \amp =(x+30)(80-2 x) \quad 0 \leq x \leq 20
+					\amp =80 x-2 x^2+2400-60 x \\
+					\amp =-2 x^2+20 x+2400
+					\end{aligned}
+				</me>
+				<me>
+					\begin{aligned}
+					R'(x)=-4 x \amp +20=0 \\
+					x=\frac{20}{4} \amp =5 \text { max b/c } R''=-4 \lt 0.
+					\end{aligned}
+				</me>
+				max revenue occurs when the group size is <m>35=30+5</m>.
+			</p>
+		</solution>
 	</exercise>
 	<exercise>
 		<introduction>
@@ -359,6 +495,20 @@
 				Find the absolute maximum and absolute minimum of <m>g(x)=6x^2-x^3-6</m> on <m>[-1,3]</m>.
 			</p>
 		</introduction>
+		<solution>
+			<p>
+				<me>
+					\begin{aligned}
+					g'(x) \amp =12 x-3 x^2=3 x(4-x) \\
+					\amp \quad \text { C.N. } x=0,4\\
+					g(-1) \amp =6(-1)^2-(-1)^3-6=1 \\
+					g(0) \amp =-6 \leftarrow \text { absolute min } \\
+					g(3) \amp =6 \cdot 3^2-3^3-6 \\
+					\amp =54-27-6=21 \leftarrow \text { absolute max. }
+					\end{aligned}
+				</me>
+			</p>
+		</solution>
 	</exercise>
 	<exercise>
 		<task>
@@ -367,6 +517,13 @@
 					Find <m>f'(x)</m> if <m>f(x) = \ln(x^2+2x)</m>. You do not need to simplify your final answer.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<me>
+						f'(x)=\frac{1}{x^2+2 x}(2 x+2)=\frac{2 x+2}{x^2+2 x}
+					</me>
+				</p>
+			</solution>
 		</task>
 		<task>
 			<statement>
@@ -374,6 +531,13 @@
 					Find <m>g'(x)</m> if <m>g(x)=e^{x^2+4x}</m>. You do not need to simplify your final answer.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<me>
+						g'(x)=e^{x^2+4 x}(2 x+4)
+					</me>
+				</p>
+			</solution>
 		</task>
 	</exercise>
 </worksheet>
