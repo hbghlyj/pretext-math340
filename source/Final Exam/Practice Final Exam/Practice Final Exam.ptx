@@ -207,7 +207,7 @@
 			<solution>
 				<p>
 					<me>
-						=\frac{10 x^5}{5}+8 \ln (x)+\frac{3 x^{-2+1}}{-2+1}+C
+						=\frac{10 x^5}{5}+8 \ln|x|+\frac{3 x^{-1}}{-1}+C
 					</me>
 				</p>
 			</solution>
