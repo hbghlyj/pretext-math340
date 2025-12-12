@@ -207,7 +207,7 @@
 			<solution>
 				<p>
 					<me>
-						=\frac{10 x^5}{5}+8 \ln (x)+\frac{3 x^{-2+1}}{-2+1}+C
+						=\frac{10 x^5}{5}+8 \ln|x|+\frac{3 x^{-1}}{-1}+C
 					</me>
 				</p>
 			</solution>
@@ -428,7 +428,7 @@
 						3 x^2-12=0 \\
 						2 y+6=0
 						\end{array}\right. \\
-						\amp 3 x^2-12=3\left(x^2-4\right)=3(x-2)(x+2)=0 \text { at } x=2 \times x=-2 . \\
+						\amp 3 x^2-12=3\left(x^2-4\right)=3(x-2)(x+2)=0 \text { at } x=2 \text{ and } x=-2 . \\
 						\amp 2 y+6=0 \text { at } y=-3 .
 						\end{aligned}
 					</me>
@@ -489,7 +489,7 @@
 			<solution>
 				<p>
 					<me>
-						\lim _{h \rightarrow 0} \frac{f(3+h)-f(3)}{n}=f'(3)=4 .
+						\lim _{h \rightarrow 0} \frac{f(3+h)-f(3)}{h}=f'(3)=4 .
 					</me>
 				</p>
 			</solution>
