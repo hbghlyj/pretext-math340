@@ -196,7 +196,7 @@
 				<p>
 					<me>
 						\begin{aligned}
-						300-\frac{1}{3} x^2 \amp =50+\frac{2}{3} x^2 \\
+                                                131-\frac{1}{3} x^2 \amp =50+\frac{2}{3} x^2 \\
 						81 \amp =x^2 \Rightarrow x=9
 						\end{aligned}
 					</me>
