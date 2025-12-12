@@ -24,7 +24,7 @@
 							</p>
 						</statement>
 					</choice>
-					<choice>
+					<choice correct="yes">
 						<statement>
 							<p>
 								False
@@ -47,7 +47,7 @@
 							</p>
 						</statement>
 					</choice>
-					<choice>
+					<choice correct="yes">
 						<statement>
 							<p>
 								False
@@ -63,7 +63,7 @@
 				</p>
 			</statement>
 				<choices multiple-correct="no">
-					<choice>
+					<choice correct="yes">
 						<statement>
 							<p>
 								True
@@ -100,7 +100,7 @@
 							</p>
 						</statement>
 					</choice>
-					<choice>
+					<choice correct="yes">
 						<statement>
 							<p>
 								False
@@ -116,7 +116,7 @@
 				</p>
 			</statement>
 				<choices multiple-correct="no">
-					<choice>
+					<choice correct="yes">
 						<statement>
 							<p>
 								True
@@ -146,7 +146,7 @@
 							</p>
 						</statement>
 					</choice>
-					<choice>
+					<choice correct="yes">
 						<statement>
 							<p>
 								False
@@ -162,7 +162,7 @@
 				</p>
 			</statement>
 				<choices multiple-correct="no">
-					<choice>
+					<choice correct="yes">
 						<statement>
 							<p>
 								True
@@ -185,7 +185,7 @@
 				</p>
 			</statement>
 				<choices multiple-correct="no">
-					<choice>
+					<choice correct="yes">
 						<statement>
 							<p>
 								True
@@ -215,7 +215,7 @@
 							</p>
 						</statement>
 					</choice>
-					<choice>
+					<choice correct="yes">
 						<statement>
 							<p>
 								nondifferentiable
@@ -244,6 +244,11 @@
 					Give all critical numbers for <m>f(x)</m>.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<me>x=2, \quad x=-3, \quad x=5 .</me>
+				</p>
+			</solution>
 		</task>
 		<task workspace="4in">
 			<statement>
@@ -251,6 +256,26 @@
 					Using a sign chart, find the intervals of increasing and decreasing for <m>f(x)</m>. Write your answers using interval notation.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<me>
+						\begin{array}{c|c|c|c|c|c} 
+						\amp (-\infty,-3) \amp (-3,2) \amp (2,5) \amp (5,\infty) \\
+						(x-2)^2 \amp + \amp + \amp + \amp + \\
+						(x+3) \amp - \amp + \amp + \amp + \\
+						(x-5) \amp - \amp - \amp - \amp + \\
+						f' \amp + \amp - \amp - \amp + \\
+						f \amp \nearrow \amp \searrow \amp \searrow \amp \nearrow
+						\end{array}
+					</me>
+					<me>
+						f \text{ is increasing on } (-\infty,-3) \cup(5, \infty)
+					</me>
+					<me>
+						f \text{ is decreasing on } (-3,2) \cup(2,5).
+					</me>
+				</p>
+			</solution>
 		</task>
 		<task>
 			<statement>
@@ -258,6 +283,11 @@
 					Classify each critical number as a relative minimum, relative maximum, or neither.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					There's a relative max at <m>x=-3</m>, a relative min at <m>x=5</m>, and neither at <m>x=2</m>.
+				</p>
+			</solution>
 		</task>
 	</exercise>
 	<exercise>
@@ -291,6 +321,24 @@
 				
 			</p>
 		</introduction>
+		<solution>
+			<p>
+				We need to maximize the area
+				<me>
+					\begin{aligned}
+					\amp A=x y=x\left(50-\frac{1}{2} x\right) . \\
+					\amp A(x)=50 x-\frac{1}{2} x^2 \\
+					\amp A'(x)=50-x=0 \Rightarrow x=50 .
+					\end{aligned}
+				</me>
+				We need to determine whether there's a max at <m>x=50</m>.
+				<me>
+					A''(x)=-1 \Rightarrow A''(50)=-1\lt 0, \text { so it is a max. }
+				</me>
+				When <m>x=50, y=50-\frac{1}{2} \cdot 50=25</m>.
+				The dimensions that will maximize the area are <m>x=50 \mathrm{~m}</m> and <m>y=25 \mathrm{~m}</m>.
+			</p>
+		</solution>
 	</exercise>
 	<exercise>
 		<introduction>
@@ -298,6 +346,29 @@
 				Find the intervals of concavity and inflection points (<m>x</m> values only) of <m>f(x)=\frac{1}{2}{x}^{4}-5{x}^{3}+12{x}^{2}+17x+89</m>. Give the intervals of concavity using interval notation. Show all work.
 			</p>
 		</introduction>
+		<solution>
+			<p>
+				<me>
+					\begin{aligned}
+					\amp f(x)=\frac{1}{2} x^4-5 x^3+12 x^2+17 x+89 \\
+					\amp f'(x)=2 x^3-15 x^2+24 x+17 \\
+					\amp f''(x)=6 x^2-30 x+24=6\left(x^2-5 x+4\right) \\
+					\amp =6(x-4)(x-1)
+					\end{aligned}
+				</me>
+				<me>
+					\begin{array}{c|c|c|c|c} 
+					\amp (-\infty,1) \amp (1,4) \amp (4,\infty) \\
+					6 \amp + \amp + \amp + \\
+					(x-4) \amp - \amp - \amp + \\
+					(x-1) \amp - \amp + \amp + \\
+					f'' \amp + \amp - \amp +
+					\end{array}
+				</me>
+				<m>f</m> is concave up on <m>(-\infty, 1) \cup(4, \infty)</m>
+				<m>f</m> is concave down on <m>(1,4)</m>.
+			</p>
+		</solution>
 	</exercise>
 	<exercise>
 		<introduction>
@@ -305,6 +376,25 @@
 				An Etsy necklace maker finds that when they price their necklaces at <m>\$20</m>, they sell <m>100</m> necklaces in a month. They determine that for each <m>\$1</m> price increase, they will sell 4 fewer necklaces per month. If each necklace costs <m>\$5</m> to produce, what price should they charge to maximize profit? Justify your solution is optimal.
 			</p>
 		</introduction>
+		<solution>
+			<p>
+				Let <m>x</m> be the number of <m>\$1</m> price increases.
+				Then <m>R(x)=\underbrace{(20+x)}_{\text {price }} \underbrace{(100-4 x)}_{\text {units }}</m> and <m>C(x)=5(100-4 x)</m>.
+				Then,
+				<me>
+					\begin{aligned}
+					P(x) \amp =R(x)-C(x) \\
+					\amp =(20+x)(100-4 x)-5(100-4 x) \\
+					\amp =(100-4 x)(20+x-5) \\
+					\amp =(100-4 x)(15+x) \\
+					P'(x) \amp =-4(15+x)+(100-4 x) \cdot 1 \\
+					\amp =-60-4 x+100-4 x=40-8 x=0 \text { at } x=5.
+					\end{aligned}
+				</me>
+				Notice that there's a max at <m>x=5</m>, since <m>P''(5)=-8 \lt 0</m>.
+				Therefore, the price they should charge to maximize the profit is <m>\$(20+5)</m>, that is, <m>\$ 25</m>.
+			</p>
+		</solution>
 	</exercise>
 	<exercise>
 		<task>
@@ -313,6 +403,21 @@
 					After <m>t</m> days of advertisements for a new restaurant, the proportions of shoppers in a town who have seen the ads is <m>1-e^{-0.04t}.</m> How long must the ads run to reach 90% of the shoppers? You do not need to simplify your answer.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					We need to know for what value of <m>t</m>
+					<me>
+						1-e^{-0.04 t}=\frac{90}{100} .
+					</me>
+					Solving for <m>t</m>, we have
+					<me>
+						\begin{aligned}
+						1 - \frac{90}{100} \amp =e^{-0.04 t} \\
+						\ln \left(1-\frac{90}{100}\right) \amp =-0.04 t \Rightarrow t=\frac{-1}{0.04} \ln \left(1-\frac{90}{100}\right) \text { days. }
+						\end{aligned}
+					</me>
+				</p>
+			</solution>
 		</task>
 		<task>
 			<statement>
@@ -320,6 +425,17 @@
 					Find <m>\dfrac{d}{dt}\ln(f(t))</m> (i.e. the relative rate of change) of <m>f(t)=t^2+1</m> at <m>t=2</m>.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<me>
+						\frac{d}{d t}\left(\ln \left(t^2+1\right)\right)=\frac{1}{t^2+1}\left(t^2+1\right)'=\frac{1}{t^2+1} \cdot 2 t
+					</me>
+					At <m>t=2</m>,
+					<me>
+						\frac{d}{d t}(\ln (f(t))=\frac{4}{4+1}=\frac{4}{5} .
+					</me>
+				</p>
+			</solution>
 		</task>
 		<task>
 			<statement>
@@ -327,6 +443,12 @@
 					A car worth $15,000 depreciates in value by 15% each year. How much is it worth after 5 years? You do not need to simplify your answer.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					The car is worth
+					<m>\$ 15000(1-0.15)^5</m> after 5 years.
+				</p>
+			</solution>
 		</task>
 	</exercise>
 	<exercise>
@@ -341,6 +463,13 @@
 					Find <m>f'(x)</m> if <m>f(x) = \ln(x) \sqrt{x}.</m> You do not need to simplify your final answer.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<me>
+						f'(x)=\frac{1}{x} \sqrt{x}+\ln (x) \cdot \frac{1}{2} x^{-1 / 2}
+					</me>
+				</p>
+			</solution>
 		</task>
 		<task>
 			<statement>
@@ -348,6 +477,16 @@
 					Find <m>g''(x)</m> if <m>g(x)=e^{x^3}</m>. You do not need to simplify your final answer.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<me>
+						\begin{aligned}
+						\amp g'(x)=e^{x^3} \cdot 3 x^2 \\
+						\amp g''(x)=e^{x^3} \cdot 3 x^2 \cdot 3 x^2+e^{x^3} \cdot 6 x .
+						\end{aligned}
+					</me>
+				</p>
+			</solution>
 		</task>
 	</exercise>
 </worksheet>
