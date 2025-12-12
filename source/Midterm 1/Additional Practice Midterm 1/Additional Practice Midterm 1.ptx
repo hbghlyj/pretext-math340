@@ -278,7 +278,7 @@
 				<me>
 					\begin{aligned}
 					f'(x) \amp =1-4 x \\
-					f'(3) \amp =1-4 \cdot 3=-11 \leftarrow \text { slope. } \\
+					f'(3) \amp =1-4 \cdot 3=-11 \quad \text{(slope)} \\
 					f(3) \amp =3-2 \cdot 3^2=3-18=-15 \\
 					y+15 \amp =-11(x-3)
 					\end{aligned}
