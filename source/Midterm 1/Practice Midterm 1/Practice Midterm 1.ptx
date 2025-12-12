@@ -28,7 +28,7 @@
 							</p>
 						</statement>
 					</choice>
-					<choice>
+					<choice correct="yes">
 						<statement>
 							<p>
 								After 500 ounces of gold have been produced, the rate at which the production cost is increasing is $17/ounce. So the cost of producing the 500th (or 501st) ounce is about $17.
@@ -51,7 +51,7 @@
 				</p>
 			</statement>
 				<choices multiple-correct="no">
-					<choice>
+					<choice correct="yes">
 						<statement>
 							<p>
 								True
@@ -74,7 +74,7 @@
 				</p>
 			</statement>
 				<choices multiple-correct="no">
-					<choice>
+					<choice correct="yes">
 						<statement>
 							<p>
 								True
@@ -103,6 +103,16 @@
 					<m>g(x)=\dfrac{4}{x^3} + 7</m>
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<me>
+						\begin{aligned}
+						\amp g(x)=4 x^{-3}+7 \\
+						\amp g'(x)=-12 x^{-4}
+						\end{aligned}
+					</me>
+				</p>
+			</solution>
 		</task>
 		<task workspace="2in">
 			<statement>
@@ -110,6 +120,11 @@
 					<m>F(x)=(x+1)(2x+3)</m>
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<me>F'(x)=1 \cdot(2 x+3)+(x+1) \cdot 2</me>
+				</p>
+			</solution>
 		</task>
 		<task workspace="2in">
 			<statement>
@@ -117,6 +132,11 @@
 					<m>r(x)=\displaystyle\sqrt{2x-3}</m>
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<me>r'(x)=\frac{1}{2}(2 x-3)^{-1 / 2} \cdot 2</me>
+				</p>
+			</solution>
 		</task>
 		<task workspace="2in">
 			<statement>
@@ -124,6 +144,11 @@
 					<m>f(x)=(x^2+2x)^8</m>
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<me>f'(x)=8\left(x^2+2 x\right)^7 \cdot(2 x+2)</me>
+				</p>
+			</solution>
 		</task>
 	</exercise>
 	<exercise>
@@ -138,6 +163,11 @@
 					<m>\displaystyle\lim_{x\to 3} \dfrac{ x^2-x-6}{x^2+2x-15}</m>
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<me>\lim _{x \rightarrow 3} \frac{(x+2)(x-3)}{(x+5)(x-3)}=\lim _{x \rightarrow 3} \frac{x+2}{x+5} = \frac{5}{8}</me>
+				</p>
+			</solution>
 		</task>
 		<task>
 			<statement>
@@ -145,6 +175,11 @@
 					<m>\displaystyle \lim_{x\to 0}\dfrac{3x-5}{x^2+3}</m>
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<me>\lim _{x \rightarrow 0} \frac{3 x-5}{x^2+3}=\frac{-5}{3}</me>
+				</p>
+			</solution>
 		</task>
 	</exercise>
 	<exercise>
@@ -153,6 +188,19 @@
 				Find an equation for the tangent line of <m>f(x)=x^3-5x^2+2</m> at <m>x=1</m>. Show all work.
 			</p>
 		</introduction>
+		<solution>
+			<p>
+				<me>
+					\begin{array}{ll}
+					f'(x)=3 x^2-10 x \amp f(1)=1^3-5 \cdot 1^2+2=-2 \\
+					f'(1)=3 \cdot 1^2-10 \cdot 1=-7 . \amp
+					\end{array}
+				</me>
+				The line has slope -7 and contains the point <m>(1,-2)</m>.
+				The equation of the tangent line is
+				<me>y+2=-7(x-1)</me>
+			</p>
+		</solution>
 	</exercise>
 	<exercise>
 		<introduction>
@@ -160,6 +208,16 @@
 				Find <m>f''(x)</m> of <m>f(x)=4x(x+1)</m>. You do not need to simplify your final answer. Show all work.
 			</p>
 		</introduction>
+		<solution>
+			<p>
+				<me>
+					\begin{aligned}
+					\amp f'(x)=4 \cdot(x+1)+4 x \cdot 1=4 x+4+4 x=8 x+4 \\
+					\amp f''(x)=8 .
+					\end{aligned}
+				</me>
+			</p>
+		</solution>
 	</exercise>
 	<exercise>
 		<introduction>
@@ -173,6 +231,19 @@
 					Find all <m>x</m> value(s) where <m>R(x)=C(x)</m>. Show your work.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<me>
+						\begin{aligned}
+						\amp 28 x-2 x^2=40+10 x \\
+						\amp 2 x^2-18 x+40=0 \\
+						\amp 2\left(x^2-9 x+20\right)=0 \\
+						\amp 2(x-4)(x-5)=0 \\
+						\amp \text { At } x=4 \text { and } x=5 \text { we have } R(x)=C(x)
+						\end{aligned}
+					</me>
+				</p>
+			</solution>
 		</task>
 		<task workspace="2in">
 			<statement>
@@ -180,6 +251,16 @@
 					Find the <term>marginal revenue function</term> <m>MR(x)</m> and evaluate <m>MR(2)</m>. You do not need to simplify your final numerical answer.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<me>
+						\begin{aligned}
+						\amp M R(x)=R'(x)=28-4 x \\
+						\amp R'(2)=28-4 \cdot 2=20
+						\end{aligned}
+					</me>
+				</p>
+			</solution>
 		</task>
 		<task workspace="1in">
 			<statement>
@@ -187,6 +268,11 @@
 					Find the <term>average cost function</term> <m>AC(x)</m>.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<me>A C(x)=\frac{C(x)}{x}=\frac{40+10 x}{x}=10+\frac{40}{x} .</me>
+				</p>
+			</solution>
 		</task>
 		<task>
 			<statement>
@@ -194,6 +280,16 @@
 					Find the <term>marginal average cost function</term> <m>MAC(x)</m> and evaluate <m>MAC(2)</m>. You do not need to simplify your final numerical answer.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<me>
+						\begin{aligned}
+						\amp M A C(x)=\left(10+40 x^{-1}\right)'=-40 x^{-2} \\
+						\amp M A C(2)=-40 \cdot 2^{-2}
+						\end{aligned}
+					</me>
+				</p>
+			</solution>
 		</task>
 	</exercise>
 	<exercise>
@@ -208,6 +304,11 @@
 					For which <m>x</m>-value(s) is <m>f'(x)=0</m>? Briefly (one sentence) explain your answer.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					At <m>x=-2, x=1</m> and <m>x=3</m> the derivative is 0, since the tangent line is horizontal.
+				</p>
+			</solution>
 		</task>
 		<task workspace="1in">
 			<statement>
@@ -215,6 +316,11 @@
 					Is <m>f'(-1)</m> positive, negative, or zero? Briefly (one sentence) explain your answer.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<m>f'(-1)</m> is positive because the tangent line has a positive slope.
+				</p>
+			</solution>
 		</task>
 		<task workspace="1in">
 			<statement>
@@ -222,6 +328,11 @@
 					Is <m>f'(2)</m> positive, negative, or zero? Briefly (one sentence) explain your answer.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<m>f'(2)</m> is negative since the tangent line has a negative slope.
+				</p>
+			</solution>
 		</task>
 	</exercise>
 	<exercise>
@@ -230,6 +341,20 @@
 				Use the (limit) definition of the derivative, <me>\displaystyle f'(x)=\lim_{h\to 0}\frac{f(x+h)-f(x)}{h},</me> to compute <m>f'(x)</m> for <m>f(x)=3x^2-4</m>.
 			</p>
 		</introduction>
+		<solution>
+			<p>
+				<me>
+					\begin{aligned}
+					f'(x) \amp =\lim _{h \rightarrow 0} \frac{f(x+h)-f(x)}{h} \\
+					\amp =\lim _{h \rightarrow 0} \frac{3(x+h)^2-4-\left(3 x^2-4\right)}{h} \\
+					\amp =\lim _{h \rightarrow 0} \frac{3\left(x^2+2 x h+h^2\right)-4-3 x^2+4}{h} \\
+					\amp =\lim _{h \rightarrow 0} \frac{3 x^2+6 x h+3 h^2-3 x^2}{h} \\
+					\amp =\lim _{h \rightarrow 0} \frac{h(6 x+3 h)}{h} \\
+					\amp =\lim _{h \rightarrow 0}(6 x+3 h)=6 x .
+					\end{aligned}
+				</me>
+			</p>
+		</solution>
 	</exercise>
 	<exercise>
 		<introduction>
@@ -243,6 +368,11 @@
 					Give all <m>x</m>-values where <m>f(x)</m> is discontinuous.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<m>x=1</m> and <m>x=3</m>.
+				</p>
+			</solution>
 		</task>
 		<task workspace="0.5in">
 			<statement>
@@ -262,6 +392,20 @@
 					(d) <m>\displaystyle \lim_{x\to 3} f(x)=</m>
 				</p>
 			</statement>
+			<solution>
+				<p>
+					(a) <m>\lim _{x \rightarrow 1^{-}} f(x)=-\infty</m>
+				</p>
+				<p>
+					(b) <m>\lim _{x \rightarrow 1^{+}} f(x)=\infty</m>
+				</p>
+				<p>
+					(c) <m>\lim _{x \rightarrow 1} f(x)=</m> DNE
+				</p>
+				<p>
+					(d) <m>\lim _{x \rightarrow 3} f(x)=1</m>
+				</p>
+			</solution>
 		</task>
 	</exercise>
 	<exercise>
@@ -277,6 +421,12 @@
 					Range:
 				</p>
 			</statement>
+			<solution>
+				<p>
+					Domain: <m>[-2,5]</m>
+					Range: <m>(-1,5]</m>
+				</p>
+			</solution>
 		</task>
 		<task workspace="1.5in">
 			<statement>
@@ -284,6 +434,16 @@
 					Simplify <m>\dfrac{x^2}{4\sqrt{x}}</m> to the form <m>ax^b</m>, where <m>a</m> and <m>b</m> are both numbers.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<me>
+						\begin{aligned}
+						\frac{x^2}{4 \sqrt{x}}=\frac{x^{2-1 / 2}}{4}= \amp \frac{x^{3 / 2}}{4}=\frac{1}{4} x^{3 / 2} \\
+						\amp (a=1 / 4, b=3 / 2) .
+						\end{aligned}
+					</me>
+				</p>
+			</solution>
 		</task>
 		<task workspace="0.5in">
 			<statement>
@@ -300,6 +460,17 @@
 					<m>f(f(x))=</m>
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<me>
+						\begin{aligned}
+						\amp f(g(x))=2 \sqrt{x+3}-1 \\
+						\amp g(f(x))=\sqrt{(2 x-1)+3} \\
+						\amp f(f(x))=2(2 x-1)-1
+						\end{aligned}
+					</me>
+				</p>
+			</solution>
 		</task>
 	</exercise>
 </worksheet>
