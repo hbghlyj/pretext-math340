@@ -390,8 +390,8 @@
 			<p>
 				<me>
 					\begin{gathered}
-					A=x y=\left(40-\frac{8}{10} x\right) x \\
-					\text { cost: } C= \underbrace{2(4 x)+2(4 y)+2 y=400}_{=8 x+10 y=400 \Rightarrow y=\frac{400-8 x}{10}} \Rightarrow y=40-\frac{4}{5} x
+					\text{Cost: } 8x+10y=400 \implies y = 40-\frac{4}{5}x \\
+					\text{Area: } A(x) = xy = x\left(40-\frac{4}{5}x\right)
 					\end{gathered}
 				</me>
 				<me>
