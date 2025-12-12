@@ -500,7 +500,7 @@
 				<me>
 					\begin{aligned}
 					g'(x) \amp =12 x-3 x^2=3 x(4-x) \\
-					\amp \quad \text { C.N. } x=0,2 \\
+					\amp \quad \text { C.N. } x=0,4\\
 					g(-1) \amp =6(-1)^2-(-1)^3-6=1 \\
 					g(0) \amp =-6 \leftarrow \text { absolute min } \\
 					g(3) \amp =6 \cdot 3^2-3^3-6 \\
