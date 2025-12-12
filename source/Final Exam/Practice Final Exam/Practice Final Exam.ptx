@@ -489,7 +489,7 @@
 			<solution>
 				<p>
 					<me>
-						\lim _{h \rightarrow 0} \frac{f(3+h)-f(3)}{n}=f'(3)=4 .
+						\lim _{h \rightarrow 0} \frac{f(3+h)-f(3)}{h}=f'(3)=4 .
 					</me>
 				</p>
 			</solution>
