@@ -474,7 +474,7 @@
 				let <m>x=</m> number of people in excess of 30.
 				<me>
 					\begin{aligned}
-					\text { Rev }=R(x) \amp =(x+30)(80-2 x) \quad 30 \leq x \leq 50 \\
+					\text { Rev }=R(x) \amp =(x+30)(80-2 x) \quad 0 \leq x \leq 20
 					\amp =80 x-2 x^2+2400-60 x \\
 					\amp =-2 x^2+20 x+2400
 					\end{aligned}
