@@ -13,6 +13,19 @@
 					Find the tangent plane to <m>f</m> at <m>(3,-2).</m>
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<me>
+						\begin{aligned}
+f_x \amp = 2e^{2x+3y} + \frac{xy^3}{6} \implies f_x(3,-2) = 2e^0 + \frac{6(-8)}{12} = 2 - 4 = -2
+f_y \amp = 3e^{2x+3y} + \frac{x^2y^2}{4} \implies f_y(3,-2) = 3e^0 + \frac{3(9)(4)}{12} = 3 + 9 = 12
+						f(3,-2) \amp = e^0 + \frac{9(-8)}{12} + 6 = 1 - 6 + 6 = 1
+						\end{aligned}
+					</me>
+					The equation of the tangent plane is:
+					<me>z = -2(x-3) + 12(y+2) + 1.</me>
+				</p>
+			</solution>
 		</task>
 		<task>
 			<statement>
@@ -20,6 +33,17 @@
 					Use the tangent plane to <m>f</m> at <m>(3,-2)</m> to approximate the value of <m>f(2.9, -2.1).</m>
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<me>
+						\begin{aligned}
+						f(2.9, -2.1) \amp \approx -2(2.9-3) + 12(-2.1+2) + 1 \\
+						\amp = -2(-0.1) + 12(-0.1) + 1 \\
+						\amp = 0.2 - 1.2 + 1 = 0.
+						\end{aligned}
+					</me>
+				</p>
+			</solution>
 		</task>
 	</exercise>
 	<exercise>
@@ -28,6 +52,19 @@
 				Let <m>z(x,y)</m> be defined implicitly by <me>x^2 z^2 + 2yz^3 = x^2e^y +2z</me> Compute <m>\dfrac{\partial z}{\partial x}.</m>
 			</p>
 		</introduction>
+		<solution>
+			<p>
+				Let <m>F(x,y,z) = x^2z^2 + 2yz^3 - x^2e^y - 2z = 0</m>.
+				<me>
+					\begin{aligned}
+					\frac{\partial z}{\partial x} \amp = -\frac{F_x}{F_z} \\
+					F_x \amp = 2xz^2 - 2xe^y \\
+					F_z \amp = 2x^2z + 6yz^2 - 2 \\
+\frac{\partial z}{\partial x} \amp = -\frac{x(z^2 - e^y)}{x^2z + 3yz^2 - 1}
+					\end{aligned}
+				</me>
+			</p>
+		</solution>
 	</exercise>
 	<exercise>
 		<task workspace="1.5in">
@@ -36,6 +73,11 @@
 					Suppose <m>z=f( s, t)</m> where <m>s</m> and <m>t</m> are functions of <m>x,</m> <m>y</m> and <m>u</m>. Write an expression for  <m>\dfrac{\partial z}{\partial u}</m> using the Chain Rule.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<me>\frac{\partial z}{\partial u} = \frac{\partial z}{\partial s} \frac{\partial s}{\partial u} + \frac{\partial z}{\partial t} \frac{\partial t}{\partial u}.</me>
+				</p>
+			</solution>
 		</task>
 		<task>
 			<statement>
@@ -44,6 +86,23 @@
 											3s^2+2t,</m> and <m>\dfrac{\partial z}{\partial t} = 2t+2s.</m> Compute <m>\dfrac{\partial z}{\partial u}</m> when <m>x= 1,</m> <m>y = -1</m> and <m>u=2</m>.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					First compute <m>s</m> and <m>t</m> at <m>(1,-1,2)</m>:
+					<me>s = 1 + 2(-1) + 3(2) = 5, \quad t = 4(1)(-1)^2(2^3) = 32.</me>
+					Compute the partial derivatives of <m>s</m> and <m>t</m> with respect to <m>u</m>:
+					<me>\frac{\partial s}{\partial u} = 3, \quad \frac{\partial t}{\partial u} = 12xy^2u^2 \implies \frac{\partial t}{\partial u}(1,-1,2) = 12(1)(1)(4) = 48.</me>
+					Now use the chain rule:
+					<me>
+						\begin{aligned}
+						\frac{\partial z}{\partial u} \amp = (3s^2 + 2t) \frac{\partial s}{\partial u} + (2t + 2s) \frac{\partial t}{\partial u} \\
+						\amp = (3(25) + 2(32))(3) + (2(32) + 2(5))(48) \\
+						\amp = (75 + 64)(3) + (64 + 10)(48) \\
+\amp = (139)(3) + (74)(48) = 417 + 3552 = 3969
+						\end{aligned}
+					</me>
+				</p>
+			</solution>
 		</task>
 	</exercise>
 	<exercise>
@@ -52,6 +111,19 @@
 				Let <m>f(x,y) = x^2y + \cos( \pi xy)</m>. Find the directional derivative of the function <m>f(x,y)</m> at the point <m>(1,2)</m> in the direction of the point <m>(4,-3).</m> That is, find the directional derivative at <m>(1,2)</m> as a particle is moving from <m>(1,2)</m> to <m>(4,-3).</m>
 			</p>
 		</introduction>
+		<solution>
+			<p>
+				The direction vector is <m>\vec{v} = \langle 4-1, -3-2 \rangle = \langle 3, -5 \rangle</m>.
+				The unit vector is <m>\vec{u} = \frac{\vec{v}}{|\vec{v}|} = \langle \frac{3}{\sqrt{34}}, -\frac{5}{\sqrt{34}} \rangle</m>.
+				<me>
+					\begin{aligned}
+					\nabla f \amp = \langle 2xy - \pi y \sin(\pi xy), x^2 - \pi x \sin(\pi xy) \rangle \\
+					\nabla f(1,2) \amp = \langle 4 - 2\pi \sin(2\pi), 1 - \pi \sin(2\pi) \rangle = \langle 4, 1 \rangle \\
+					D_{\vec{u}} f(1,2) \amp = \nabla f(1,2) \cdot \vec{u} = \langle 4, 1 \rangle \cdot \langle \frac{3}{\sqrt{34}}, -\frac{5}{\sqrt{34}} \rangle = \frac{12 - 5}{\sqrt{34}} = \frac{7}{\sqrt{34}}
+					\end{aligned}
+				</me>
+			</p>
+		</solution>
 	</exercise>
 	<exercise>
 		<introduction>
@@ -65,6 +137,20 @@
 					Find all critical point(s) of <m>f(x,y)</m>.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<me>
+						\begin{aligned}
+						f_x \amp = 4x - 8y = 0 \implies x = 2y \\
+						f_y \amp = -8x + 4y^3 - 12y^2 = 0 \\
+						\amp \implies -8(2y) + 4y^3 - 12y^2 = 0 \\
+						\amp \implies 4y^3 - 12y^2 - 16y = 0 \\
+						\amp \implies 4y(y^2 - 3y - 4) = 0 \implies 4y(y-4)(y+1) = 0
+						\end{aligned}
+					</me>
+					The <m>y</m>-coordinates are <m>y=0, 4, -1</m>. Using <m>x=2y</m>, the critical points are <m>(0,0), (8,4), (-2,-1)</m>.
+				</p>
+			</solution>
 		</task>
 		<task>
 			<statement>
@@ -72,6 +158,21 @@
 					Classify each critical point you found in (a) as a local maximum, local minimum, or saddle point.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<me>
+						\begin{aligned}
+						f_{xx} \amp = 4, \quad f_{xy} = -8, \quad f_{yy} = 12y^2 - 24y \\
+						D \amp = f_{xx}f_{yy} - (f_{xy})^2 = 4(12y^2 - 24y) - 64
+						\end{aligned}
+					</me>
+					<ul>
+						<li>At <m>(0,0)</m>: <m>D = 4(0) - 64 = -64 \lt 0 \implies</m> saddle point.</li>
+						<li>At <m>(8,4)</m>: <m>D = 4(12(16) - 24(4)) - 64 = 4(192 - 96) - 64 = 384 - 64 = 320 \gt 0</m>. Since <m>f_{xx} = 4 \gt 0 \implies</m> local minimum.</li>
+						<li>At <m>(-2,-1)</m>: <m>D = 4(12(1) - 24(-1)) - 64 = 4(12 + 24) - 64 = 144 - 64 = 80 \gt 0</m>. Since <m>f_{xx} = 4 \gt 0 \implies</m> local minimum.</li>
+					</ul>
+				</p>
+			</solution>
 		</task>
 	</exercise>
 	<exercise>
@@ -81,6 +182,32 @@
 							y^2-4x^2</m> subject to the constraint <m>x^2+2y^2=4</m>.
 			</p>
 		</introduction>
+		<solution>
+			<p>
+				Let <m>g(x,y) = x^2 + 2y^2 = 4</m>.
+				<me>
+					\begin{aligned}
+					\nabla f \amp = \lambda \nabla g \\
+					\langle -8x, 2y \rangle \amp = \lambda \langle 2x, 4y \rangle
+					\end{aligned}
+				</me>
+				This gives:
+				<ol>
+					<li><m>-8x = 2\lambda x \implies 2x(\lambda + 4) = 0 \implies x=0</m> or <m>\lambda = -4</m>.</li>
+					<li><m>2y = 4\lambda y \implies 2y(1 - 2\lambda) = 0 \implies y=0</m> or <m>\lambda = 1/2</m>.</li>
+				</ol>
+				Case 1: <m>x=0</m>. From constraint, <m>2y^2 = 4 \implies y^2 = 2 \implies y = \pm \sqrt{2}</m>. Points: <m>(0, \pm\sqrt{2})</m>.
+				Case 2: <m>\lambda = -4</m>. From (2), <m>2y = -16y \implies y=0</m>. From constraint, <m>x^2 = 4 \implies x = \pm 2</m>. Points: <m>(\pm 2, 0)</m>.
+				Compare values:
+				<me>
+					\begin{aligned}
+					f(0, \pm\sqrt{2}) \amp = (\pm\sqrt{2})^2 - 0 = 2 \\
+					f(\pm 2, 0) \amp = 0 - 4(\pm 2)^2 = -16
+					\end{aligned}
+				</me>
+				The absolute maximum is 2, and the absolute minimum is -16.
+			</p>
+		</solution>
 	</exercise>
 	<exercise>
 		<introduction>
@@ -94,6 +221,17 @@
 					<m>\displaystyle\int_0^{4}\int_{\sqrt{y}}^{2} e^{x^3}\, dx\, dy</m>
 				</p>
 			</statement>
+			<solution>
+				<p>
+					Change order of integration: <m>0 \le y \le 4, \sqrt{y} \le x \le 2</m> becomes <m>0 \le x \le 2, 0 \le y \le x^2</m>.
+					<me>
+						\begin{aligned}
+						\int_0^2 \int_0^{x^2} e^{x^3} \, dy \, dx \amp = \int_0^2 x^2 e^{x^3} \, dx \\
+						\amp = \left[ \frac{1}{3} e^{x^3} \right]_0^2 = \frac{1}{3}(e^8 - 1)
+						\end{aligned}
+					</me>
+				</p>
+			</solution>
 		</task>
 		<task>
 			<statement>
@@ -101,6 +239,19 @@
 					Compute <m>\displaystyle\int_{-4}^{0}\int_{-\sqrt{16-x^2}}^{0} \cos(2x^2+2y^2) \, dy \, dx</m>
 				</p>
 			</statement>
+			<solution>
+				<p>
+					The region is the third quadrant of the disk <m>x^2 + y^2 \le 16</m>.
+					In polar coordinates: <m>0 \le r \le 4, \pi \le \theta \le 3\pi/2</m>.
+					<me>
+						\begin{aligned}
+						\int_\pi^{3\pi/2} \int_0^4 \cos(2r^2) r \, dr \, d\theta \amp = \int_\pi^{3\pi/2} \left[ \frac{1}{4} \sin(2r^2) \right]_0^4 \, d\theta \\
+						\amp = \int_\pi^{3\pi/2} \frac{1}{4} \sin(32) \, d\theta \\
+						\amp = \frac{\pi}{8} \sin(32)
+						\end{aligned}
+					</me>
+				</p>
+			</solution>
 		</task>
 	</exercise>
 	<exercise>
@@ -117,6 +268,12 @@
 											z^2 = 7</m>.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					Using spherical coordinates: <m>1 \le \rho \le \sqrt{7}</m>, <m>0 \le \theta \le 2\pi</m>, and <m>\pi/4 \le \phi \le 3\pi/4</m>.
+					<me>V = \int_0^{2\pi} \int_{\pi/4}^{3\pi/4} \int_1^{\sqrt{7}} \rho^2 \sin \phi \, d\rho \, d\phi \, d\theta.</me>
+				</p>
+			</solution>
 		</task>
 		<task>
 			<statement>
@@ -124,6 +281,12 @@
 					The solid in the first octant that lies within the cylinder <m>x^2+y^2 =4,</m> above the paraboloid <m>z = x^2+y^2 +1,</m> and below the plane <m>z = 9.</m>
 				</p>
 			</statement>
+			<solution>
+				<p>
+					Using cylindrical coordinates in the first octant: <m>0 \le \theta \le \pi/2</m>, <m>0 \le r \le 2</m>, and <m>r^2+1 \le z \le 9</m>.
+					<me>V = \int_0^{\pi/2} \int_0^2 \int_{r^2+1}^9 r \, dz \, dr \, d\theta.</me>
+				</p>
+			</solution>
 		</task>
 	</exercise>
 	<exercise>
@@ -138,6 +301,13 @@
 					Write down an integral that represents the volume of the solid.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					The plane equation is <m>4x + 2y + 6z = 12 \implies 2x + y + 3z = 6</m>.
+					In the first octant: <m>0 \le x \le 3</m>, <m>0 \le y \le 6 - 2x</m>, <m>0 \le z \le \frac{6-2x-y}{3}</m>.
+					<me>V = \int_0^3 \int_0^{6-2x} \int_0^{\frac{6-2x-y}{3}} dz \, dy \, dx.</me>
+				</p>
+			</solution>
 		</task>
 		<task>
 			<statement>
@@ -145,6 +315,19 @@
 					Compute the volume of the solid by computing the triple integral found in part (a).
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<me>
+						\begin{aligned}
+						V \amp = \int_0^3 \int_0^{6-2x} \frac{6-2x-y}{3} \, dy \, dx \\
+						\amp = \frac{1}{3} \int_0^3 \left[ (6-2x)y - \frac{y^2}{2} \right]_0^{6-2x} \, dx \\
+						\amp = \frac{1}{3} \int_0^3 \left( (6-2x)^2 - \frac{(6-2x)^2}{2} \right) \, dx \\
+						\amp = \frac{1}{3} \int_0^3 \frac{(6-2x)^2}{2} \, dx = \frac{1}{6} \int_0^3 (6-2x)^2 \, dx \\
+\amp = \frac{1}{6} \left[ -\frac{(6-2x)^3}{36} \right]_0^3 = \frac{1}{6} \left( 0 - (-\frac{216}{36}) \right) = \frac{1}{6}(6) = 1.
+						\end{aligned}
+					</me>
+				</p>
+			</solution>
 		</task>
 	</exercise>
 </worksheet>
