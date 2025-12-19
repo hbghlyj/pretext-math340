@@ -65,7 +65,7 @@ From the first equation, <m>y=x.</m> Substituting into the second equation gives
 						\end{aligned}
 					</me>
 					At <m>(0,0),</m>
-					<me>D=f_{x x} f_{y y}-f_{x y}^2=2 \cdot 8-4=12 \gt 0.</me>
+<me>D=f_{x x} f_{y y}-f_{x y}^2=2 \cdot 8-(-2)^2=16-4=12 \gt 0.</me>
 					Since <m>f_{x x}(0,0)=2 \gt 0,</m> there is a local min at <m>(0,0).</m>
 				</p>
 			</solution>
