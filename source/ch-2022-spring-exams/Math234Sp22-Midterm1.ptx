@@ -33,7 +33,7 @@
 		<statement>
 			<p>
 				An object's acceleration is given by
-				<me>\vec{a}(t)=\langle t+2, \cos (t), t^2+1\rangle.</me>
+<me>\vec{a}(t)=\langle t+2,\cos (t),t^2+1\rangle.</me>
 				Find a vector equation <m>\vec{r}(t)</m> for the position of the object at time <m>t</m> if its initial velocity is <m>\vec{v}(0)=\langle 0,1,2 \rangle</m> and its initial position is <m>\vec{r}(0)=\langle 1,0,0 \rangle</m>.
 			</p>
 		</statement>
