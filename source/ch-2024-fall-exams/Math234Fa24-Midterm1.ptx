@@ -167,7 +167,7 @@
 			</statement>
 			<solution>
 				<p>
-					<me>1(x-2) + 4(y-4) + 14(z-12) = 0 \implies x + 4y + 14z = 186.</me>
+					<me>1(x-2) + 4(y-4) + 14(z-12) = 0 \implies x + 4y + 14z = 186</me>.
 				</p>
 			</solution>
 		</task>
