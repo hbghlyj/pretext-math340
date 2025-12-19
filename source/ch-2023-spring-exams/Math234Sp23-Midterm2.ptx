@@ -271,7 +271,8 @@
 			<solution>
 				<p>
 					Use cylindrical coordinates:
-					<me>V = \int_{0}^{2\pi} \int_{0}^{\sqrt{8}} \int_{0}^{\sqrt{2r^2}} r \, dz \, dr \, d\theta.</me>
+					Using cylindrical coordinates:
+					<me>V = \int_{0}^{2\pi} \int_{0}^{\sqrt{8}} \int_{0}^{\sqrt{2}r} r \, dz \, dr \, d\theta.</me>
 				</p>
 			</solution>
 		</task>
