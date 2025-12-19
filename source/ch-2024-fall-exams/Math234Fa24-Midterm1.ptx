@@ -233,7 +233,7 @@
 			</statement>
 			<solution>
 				<p>
-					<me>\kappa(t) = \frac{|\vec{T}\,'(t)|}{|\vec{r}\,'(t)|} = \frac{1/\sqrt{2}}{2\sqrt{2}} = \frac{1}{4}.</me>
+					<me>\kappa(t) = \frac{|\vec{T}\,'(t)|}{|\vec{r}\,'(t)|} = \frac{1/\sqrt{2}}{2\sqrt{2}} = \frac{1}{4}</me>.
 				</p>
 			</solution>
 		</task>
