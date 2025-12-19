@@ -170,7 +170,7 @@
 					<me>= \int_0^{\pi/2} \int_9^{25} \ln(a) \frac{1}{2} \, da \, d\theta.</me>
 					Using integration by parts for <m>\int \ln(a) \, da</m> (<m>u = \ln(a), dv = da</m>):
 					<me>\int \ln(a) \, da = a \ln(a) - a.</me>
-					So, <m>\int_9^{25} \ln(a) \, da = [25\ln(25) - 25] - [9\ln(9) - 9] = 25\ln(25) - 9\ln(9) - 16.</me>
+					So, <m>\int_9^{25} \ln(a) \, da = [25\ln(25) - 25] - [9\ln(9) - 9] = 25\ln(25) - 9\ln(9) - 16.</m>
 					The total integral is:
 <me>= \frac{1}{2} \cdot \frac{\pi}{2} (25\ln(25) - 9\ln(9) - 16) = \frac{\pi}{4}(50\ln(5) - 18\ln(3) - 16).</me>
 				</p>
