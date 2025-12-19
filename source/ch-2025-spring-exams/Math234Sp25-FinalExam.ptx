@@ -1,178 +1,414 @@
 <?xml version="1.0" encoding="utf-8"?>
 <worksheet xml:id="Math234Sp25-FinalExam" xmlns:xi="http://www.w3.org/2001/XInclude">
-	<title>Math234Sp25-FinalExam</title>
-	<exercise>
+	<title>Math 234 - Final Exam - Spring 2025</title>
+
+	<exercise points="21">
 		<introduction>
 			<p>
 				Compute the following integrals. If you use a theorem, clearly state which theorem you are using.
 			</p>
 		</introduction>
-		<task>
+		<task points="5">
 			<statement>
 				<p>
-					<m>\displaystyle\int_{\mathcal{C}} xy \, dy,</m> where <m>\mathcal{C}</m> is the portion of the parabola <m>y = x^2+1</m> with <m>0\le x \le 1,</m> traversed starting at <m>(0,1)</m> and ending at <m>(1,2).</m>
+					<m>\displaystyle\int_{\mathcal{C}} xy \, dy</m>, where <m>\mathcal{C}</m> is the portion of the parabola <m>y = x^2 + 1</m> with <m>0 \le x \le 1</m>, traversed starting at <m>(0, 1)</m> and ending at <m>(1, 2)</m>.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					Parametrize <m>\mathcal{C}</m>: <m>\vec{r}(t) = \langle t, t^2 + 1 \rangle</m> for <m>0 \le t \le 1</m>.
+					Then <m>x(t) = t</m>, <m>y(t) = t^2 + 1</m>, and <m>dy = 2t \, dt</m>.
+					<me>
+						\int_{\mathcal{C}} xy \, dy = \int_0^1 t(t^2 + 1) \cdot 2t \, dt = \int_0^1 (2t^4 + 2t^2) \, dt
+					</me>
+					<me>
+						= \left. \frac{2t^5}{5} + \frac{2t^3}{3} \right|_0^1 = \frac{2}{5} + \frac{2}{3} = \frac{6+10}{15} = \frac{16}{15}.
+					</me>
+				</p>
+			</solution>
 		</task>
-		<task>
+		<task points="6">
 			<statement>
 				<p>
-					<m>\displaystyle\int_{\mathcal{C}}(x^3 +3y)\, dx + (6x - \sin(y^2))\, dy</m> where <m>C</m> is the rectangle with corners at <m>(0,0),</m> <m>(2,0),</m> <m>(2,1)</m> and <m>(0,1)</m> traversed counterclockwise.
+					<m>\displaystyle\int_{\mathcal{C}} (x^3 + 3y) \, dx + (6x - \sin(y^2)) \, dy</m> where <m>\mathcal{C}</m> is the rectangle with corners at <m>(0, 0), (2, 0), (2, 1)</m> and <m>(0, 1)</m> traversed counterclockwise.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					Use Green's Theorem: <m>\oint_{\mathcal{C}} P \, dx + Q \, dy = \iint_D \left( \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} \right) dA</m>.
+					Here <m>P = x^3 + 3y \implies \frac{\partial P}{\partial y} = 3</m>.
+					And <m>Q = 6x - \sin(y^2) \implies \frac{\partial Q}{\partial x} = 6</m>.
+					The integral becomes:
+					<me>
+						\iint_D (6 - 3) \, dA = 3 \cdot \text{Area}(\text{Rectangle}) = 3 \cdot (2 \cdot 1) = 6.
+					</me>
+				</p>
+			</solution>
 		</task>
-		<task>
+		<task points="4">
 			<statement>
 				<p>
-					<m>\displaystyle\int_{\mathcal{C}}
-											\vec{F} \cdot d\vec{r},</m> where <m>\vec{F}</m> is the conservative vector field given by <m>\vec{F}(x) =
-											\langle 2xy, x^2 \rangle,</m> and <m>\mathcal{C}</m> is the circle of radius 3 centered at the point <m>(-1,
-											0),</m> traversed counterclockwise.
+					<m>\displaystyle\int_{\mathcal{C}} \vec{F} \cdot d\vec{r}</m>, where <m>\vec{F}</m> is the conservative vector field given by <m>\vec{F}(x, y) = \langle 2xy, x^2 \rangle</m>, and <m>\mathcal{C}</m> is the circle of radius 3 centered at the point <m>(-1, 0)</m>, traversed counterclockwise.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					Since <m>\vec{F}</m> is conservative and <m>\mathcal{C}</m> is a closed curve, the line integral is zero:
+					<me>\int_{\mathcal{C}} \vec{F} \cdot d\vec{r} = 0.</me>
+				</p>
+			</solution>
 		</task>
-		<task>
+		<task points="6">
 			<statement>
 				<p>
-					<m>\displaystyle\int_0^8 \int_{y^{1/3}}^2\sin(x^4)\, dx \, dy</m>
+					<m>\displaystyle\int_0^8 \int_{y^{1/3}}^2 \sin(x^4) \, dx \, dy</m>
 				</p>
 			</statement>
+			<solution>
+				<p>
+					Change order of integration. Inner limits: <m>y^{1/3} \le x \le 2</m>. Outer limits: <m>0 \le y \le 8</m>.
+					The region is bounded by <m>x = y^{1/3} \implies y = x^3</m>, <m>x = 2</m>, and <m>y = 0</m>.
+					In the new order: <m>0 \le y \le x^3</m> and <m>0 \le x \le 2</m>.
+					<me>
+						\int_0^2 \int_0^{x^3} \sin(x^4) \, dy \, dx = \int_0^2 x^3 \sin(x^4) \, dx.
+					</me>
+					Let <m>u = x^4 \implies du = 4x^3 \, dx</m>.
+					<me>
+						= \int_0^{16} \frac{1}{4} \sin(u) \, du = \left. -\frac{1}{4} \cos(u) \right|_0^{16} = -\frac{1}{4} \cos(16) + \frac{1}{4}.
+					</me>
+				</p>
+			</solution>
 		</task>
 	</exercise>
-	<exercise>
-		<introduction>
+
+	<exercise points="4">
+		<statement>
 			<p>
-				An object’s acceleration is given by <me>\vec{a}(t) = \langle e^{3t}-2, t+\sin(t) , t^2 \rangle.</me> Its initial velocity is <m>\vec{v}(0) = \langle 3,4,2 \rangle.</m> Find a vector equation <m>\vec{v}(t)</m> for the velocity of the object at time <m>t.</m>
+				An object's acceleration is given by <me>\vec{a}(t) = \langle e^{3t} - 2, t + \sin(t), t^2 \rangle.</me>
+				Its initial velocity is <m>\vec{v}(0) = \langle 3, 4, 2 \rangle</m>. Find a vector equation <m>\vec{v}(t)</m> for the velocity of the object at time <m>t</m>.
 			</p>
-		</introduction>
+		</statement>
+		<solution>
+			<p>
+				<me>
+					\vec{v}(1) = \int \vec{a}(t) dt = \left\langle \frac{e^{3t}}{3} - 2t + C_1, \frac{t^2}{2} - \cos(t) + C_2, \frac{t^3}{3} + C_3 \right\rangle.
+				</me>
+				Using <m>\vec{v}(0) = \langle 1/3 + C_1, -1 + C_2, C_3 \rangle = \langle 3, 4, 2 \rangle</m>:
+				<me>C_1 = 3 - 1/3 = 8/3, \quad C_2 = 4 + 1 = 5, \quad C_3 = 2.</me>
+				The velocity vector is:
+				<me>
+					\vec{v}(t) = \left\langle \frac{e^{3t}}{3} - 2t + \frac{8}{3}, \frac{t^2}{2} - \cos(t) + 5, \frac{t^3}{3} + 2 \right\rangle.
+				</me>
+			</p>
+		</solution>
 	</exercise>
-	<exercise>
-		<introduction>
+
+	<exercise points="4">
+		<statement>
 			<p>
-				Let <m>z(x,y)</m> be defined implicitly by <me>4x^3y^2 +3z^2 x = \cos(z^2) + 4yz^3</me> Compute <m>\dfrac{\partial z}{\partial y}.</m>
+				Let <m>z(x, y)</m> be defined implicitly by <me>4x^3 y^2 + 3z^2 x = \cos(z^2) + 4yz^3.</me>
+				Compute <m>\displaystyle\frac{\partial z}{\partial y}</m>.
 			</p>
-		</introduction>
+		</statement>
+		<solution>
+			<p>
+				Let <m>F(x, y, z) = 4x^3 y^2 + 3z^2 x - \cos(z^2) - 4yz^3 = 0</m>.
+				By the implicit function theorem: <m>\frac{\partial z}{\partial y} = -\frac{F_y}{F_z}</m>.
+				<me>F_y = 8x^3 y - 4z^3.</me>
+				<me>F_z = 6zx + \sin(z^2) \cdot 2z - 12yz^2.</me>
+				Thus, 
+				<me>
+					\frac{\partial z}{\partial y} = -\frac{8x^3 y - 4z^3}{6zx + 2z \sin(z^2) - 12yz^2}.
+				</me>
+			</p>
+		</solution>
 	</exercise>
-	<exercise>
-		<introduction>
+
+	<exercise points="8">
+		<statement>
 			<p>
-				Use Stoke’s Theorem to compute <m>\displaystyle\int_C \vec{F} \cdot d\vec{r},</m> where <me>\vec{F}(x, y, z) = \langle e^{x^8}+4y, \sqrt{y^4+1} +2x, 2y + \sin(z^4) \rangle,</me> and <m>C</m> is the boundary of the plane <m>4x + 3y + z = 12</m> in the first octant, oriented counterclockwise when viewed from above.
+				Use Stoke's Theorem to compute <m>\oint_{\mathcal{C}} \vec{F} \cdot d\vec{r}</m>, where 
+				<me>\vec{F}(x, y, z) = \langle e^{x^8} + 4y, \sqrt{y^4 + 1} + 2x, 2y + \sin(z^4) \rangle,</me>
+				and <m>\mathcal{C}</m> is the boundary of the plane <m>4x + 3y + z = 12</m> in the first octant, oriented counterclockwise when viewed from above.
 			</p>
-		</introduction>
+		</statement>
+		<solution>
+			<p>
+				By Stoke's Theorem, <m>\oint_{\mathcal{C}} \vec{F} \cdot d\vec{r} = \iint_{\mathcal{S}} \text{curl}(\vec{F}) \cdot d\vec{S}</m>.
+				Compute the curl:
+				<me>
+					\text{curl}(\vec{F}) = \begin{vmatrix} \hat{i} \amp \hat{j} \amp \hat{k} \\ \partial_x \amp \partial_y \amp \partial_z \\ e^{x^8} + 4y \amp \sqrt{y^4+1}+2x \amp 2y + \sin(z^4) \end{vmatrix} = \langle 2-0, -(0-0), 2-4 \rangle = \langle 2, 0, -2 \rangle.
+				</me>
+				Parametrize the surface <m>\mathcal{S}</m>: <m>z = 12 - 4x - 3y</m>, so <m>\vec{r}(x, y) = \langle x, y, 12 - 4x - 3y \rangle</m>.
+				Normal vector: <m>\vec{r}_x \times \vec{r}_y = \langle 1, 0, -4 \rangle \times \langle 0, 1, -3 \rangle = \langle 4, 3, 1 \rangle</m>.
+				The integral is:
+				<me>
+					\iint_D \langle 2, 0, -2 \rangle \cdot \langle 4, 3, 1 \rangle \, dA = \iint_D (8 - 2) \, dA = 6 \cdot \text{Area}(\text{Triangle}).
+				</me>
+				The triangle in the xy-plane has vertices <m>(0, 0), (3, 0), (0, 4)</m>.
+				<me>
+					6 \cdot \left( \frac{1}{2} \cdot 3 \cdot 4 \right) = 6 \cdot 6 = 36.
+				</me>
+			</p>
+		</solution>
 	</exercise>
-	<exercise>
+
+	<exercise points="7">
 		<introduction>
 			<p>
-				Consider the vector field <m>\vec{F}(x,y) = \langle 2xe^{x^2-y} + 2y +4, -e^{x^2-y} + 2x-3
-							\rangle.</m>
+				Consider the vector field <m>\vec{F}(x, y) = \langle 2xe^{x^2-y} + 2y + 4, -e^{x^2-y} + 2x - 3 \rangle</m>.
 			</p>
 		</introduction>
-		<task>
+		<task points="2">
 			<statement>
 				<p>
 					Show that <m>\vec{F}</m> is conservative.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					Let <m>P = 2xe^{x^2-y} + 2y + 4</m> and <m>Q = -e^{x^2-y} + 2x - 3</m>.
+					We check if <m>\frac{\partial P}{\partial y} = \frac{\partial Q}{\partial x}</m>:
+					<me>\frac{\partial P}{\partial y} = -2xe^{x^2-y} + 2.</me>
+					<me>\frac{\partial Q}{\partial x} = -e^{x^2-y}(2x) + 2 = -2xe^{x^2-y} + 2.</me>
+					Since the partial derivatives are equal and the domain is simply-connected (all of <m>\mathbb{R}^2</m>), <m>\vec{F}</m> is conservative.
+				</p>
+			</solution>
 		</task>
-		<task>
+		<task points="5">
 			<statement>
 				<p>
-					Find a potential function for <m>\vec{F}.</m>
+					Find a potential function for <m>\vec{F}</m>.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					We need a function <m>f(x, y)</m> such that <m>\nabla f = \vec{F}</m>.
+					Integrating <m>f_x = 2xe^{x^2-y} + 2y + 4</m> with respect to <m>x</m>:
+					<me>f(x, y) = e^{x^2-y} + 2xy + 4x + g(y).</me>
+					Differentiating with respect to <m>y</m>:
+					<me>f_y = -e^{x^2-y} + 2x + g'(y).</me>
+					Setting this equal to <m>Q</m>:
+					<me>-e^{x^2-y} + 2x + g'(y) = -e^{x^2-y} + 2x - 3 \implies g'(y) = -3 \implies g(y) = -3y + C.</me>
+					A potential function is:
+					<me>f(x, y) = e^{x^2-y} + 2xy + 4x - 3y + C.</me>
+				</p>
+			</solution>
 		</task>
 	</exercise>
-	<exercise>
-		<introduction>
+
+	<exercise points="8">
+		<statement>
 			<p>
-				Compute <m>\displaystyle\iint_{S} \vec{F} \cdot d{\vec{S}},</m> for the vector field <me>\vec{F}(x,y,z) = \langle 2x + 3y+ 4\cos(z) , -x +y + e^{xz}, \sin(x^2) + e^{3y} - 2z \rangle,</me> outward through the surface <m>S</m> of the box <me>E = \{(x,y,z) | -3 \le x \le 0, -2\le y \le 1, 1\le z \le 6 \}.</me> If you use a theorem, clearly state which theorem you are using.
+				Compute <m>\iint_{\mathcal{S}} \vec{F} \cdot d\vec{S}</m> for the vector field
+				<me>\vec{F}(x, y, z) = \langle 2x + 3y + 4\cos(z), -x + y + e^{xz}, \sin(x^2) + e^{3y} - 2z \rangle,</me>
+				outward through the surface <m>\mathcal{S}</m> of the box
+				<me>E = \{ (x, y, z) \mid -3 \le x \le 0, -2 \le y \le 1, 1 \le z \le 6 \}.</me>
+				If you use a theorem, clearly state which theorem you are using.
 			</p>
-		</introduction>
+		</statement>
+		<solution>
+			<p>
+				Use the Divergence Theorem: <m>\iint_{\mathcal{S}} \vec{F} \cdot d\vec{S} = \iiint_E \text{div}(\vec{F}) \, dV</m>.
+				Compute the divergence:
+				<me>\text{div}(\vec{F}) = \frac{\partial}{\partial x}(2x + 3y + 4\cos z) + \frac{\partial}{\partial y}(-x + y + e^{xz}) + \frac{\partial}{\partial z}(\sin(x^2) + e^{3y} - 2z)</me>
+				<me>= 2 + 1 + (-2) = 1.</me>
+				The integral is:
+				<me>\iiint_E 1 \, dV = \text{Volume}(E) = (0 - (-3))(1 - (-2))(6 - 1) = 3 \cdot 3 \cdot 5 = 45.</me>
+			</p>
+		</solution>
 	</exercise>
-	<exercise>
+
+	<exercise points="10">
 		<introduction>
 			<p>
-				Let <m>\vec{r}(t) = \langle 5\cos(t), 2+ 3\sin(t), 4\sin(t)+1 \rangle.</m>
+				Let <m>\vec{r}(t) = \langle 5\cos(t), 2 + 3\sin(t), 4\sin(t) + 1 \rangle</m>.
 			</p>
 		</introduction>
-		<task>
+		<task points="4">
 			<statement>
 				<p>
-					Compute the unit tangent vector at <m>t=\pi,</m> that is, <m>\vec{T}(\pi)</m>.
+					Compute the unit tangent vector at <m>t = \pi</m>, that is, <m>\vec{T}(\pi)</m>.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					First, compute the velocity vector <m>\vec{r}'(t)</m>:
+					<me>\vec{r}'(t) = \langle -5\sin t, 3\cos t, 4\cos t \rangle.</me>
+					Find the speed <m>|\vec{r}'(t)|</m>:
+					<me>|\vec{r}'(t)| = \sqrt{(-5\sin t)^2 + (3\cos t)^2 + (4\cos t)^2} = \sqrt{25\sin^2 t + 9\cos^2 t + 16\cos^2 t} = 5.</me>
+					The unit tangent vector is:
+					<me>\vec{T}(t) = \frac{\vec{r}'(t)}{|\vec{r}'(t)|} = \left\langle -\sin t, \frac{3}{5}\cos t, \frac{4}{5}\cos t \right\rangle.</me>
+					At <m>t = \pi</m>:
+					<me>\vec{T}(\pi) = \langle 0, -3/5, -4/5 \rangle.</me>
+				</p>
+			</solution>
 		</task>
-		<task>
+		<task points="4">
 			<statement>
 				<p>
-					Compute the unit normal vector at <m>t=\pi,</m> that is, <m>\vec{N}(\pi)</m>.
+					Compute the unit normal vector at <m>t = \pi</m>, that is, <m>\vec{N}(\pi)</m>.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					The unit normal vector is <m>\vec{N}(t) = \frac{\vec{T}'(t)}{|\vec{T}'(t)|}</m>.
+					<me>\vec{T}'(t) = \left\langle -\cos t, -\frac{3}{5}\sin t, -\frac{4}{5}\sin t \right\rangle.</me>
+					<me>|\vec{T}'(t)| = \sqrt{(-\cos t)^2 + \left(-\frac{3}{5}\sin t\right)^2 + \left(-\frac{4}{5}\sin t\right)^2} = \sqrt{\cos^2 t + \frac{9+16}{25}\sin^2 t} = 1.</me>
+					So <m>\vec{N}(t) = \vec{T}'(t)</m>. At <m>t = \pi</m>:
+					<me>\vec{N}(\pi) = \langle 1, 0, 0 \rangle.</me>
+				</p>
+			</solution>
 		</task>
-		<task>
+		<task points="2">
 			<statement>
 				<p>
-					Compute the curvature at <m>t=1,</m> that is, <m>\kappa(\pi)</m>.
+					Compute the curvature at <m>t = \pi</m>, that is, <m>\kappa(\pi)</m>.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					Using the formula <m>\kappa(t) = \frac{|\vec{T}'(t)|}{|\vec{r}'(t)|}</m>:
+					<me>\kappa(\pi) = \frac{1}{5}.</me>
+				</p>
+			</solution>
 		</task>
 	</exercise>
-	<exercise>
+
+	<exercise points="10">
 		<introduction>
 			<p>
-				Consider the function <me>f(x,y) = x^3 -12xy +8y^3.</me>
+				Consider the function <m>f(x, y) = x^3 - 12xy + 8y^3</m>.
 			</p>
 		</introduction>
-		<task>
+		<task points="4">
 			<statement>
 				<p>
-					Find all critical point(s) of <m>f(x,y)</m>.
+					Find all critical point(s) of <m>f(x, y)</m>.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					Solve the system <m>\nabla f = 0</m>:
+					<me>f_x = 3x^2 - 12y = 0 \implies y = x^2/4.</me>
+					<me>f_y = -12x + 24y^2 = 0 \implies x = 2y^2.</me>
+					Substituting <m>y = x^2/4</m> into the second equation:
+					<me>x = 2(x^2/4)^2 = x^4/8 \implies x^4 - 8x = 0 \implies x(x^3 - 8) = 0.</me>
+					So <m>x = 0</m> or <m>x = 2</m>.
+					<ul>
+						<li>If <m>x = 0</m>, then <m>y = 0</m>. Point: <m>(0, 0)</m>.</li>
+						<li>If <m>x = 2</m>, then <m>y = 2^2/4 = 1</m>. Point: <m>(2, 1)</m>.</li>
+					</ul>
+					The critical points are <m>(0, 0)</m> and <m>(2, 1)</m>.
+				</p>
+			</solution>
 		</task>
-		<task>
+		<task points="2">
 			<statement>
 				<p>
-					Compute the second derivatives of the function and use them to write down a formula for <m>D(x,y).</m> You do NOT need to evaluate <m>D</m> at the points found on part (a) for this part.
+					Compute the second derivatives of the function and use them to write down a formula for <m>D(x, y)</m>. You do NOT need to evaluate <m>D</m> at the points found on part (a) for this part.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<me>f_{xx} = 6x, \quad f_{yy} = 48y, \quad f_{xy} = -12.</me>
+					<me>D(x, y) = f_{xx}f_{yy} - (f_{xy})^2 = (6x)(48y) - (-12)^2 = 288xy - 144.</me>
+				</p>
+			</solution>
 		</task>
-		<task>
+		<task points="4">
 			<statement>
 				<p>
 					Classify each critical point you found in (a) as a local maximum, local minimum, or saddle point.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<ul>
+						<li>At <m>(0, 0)</m>: <m>D(0, 0) = -144 \lt 0</m>. This is a <strong>saddle point</strong>.</li>
+						<li>At <m>(2, 1)</m>: <m>D(2, 1) = 288(2)(1) - 144 = 576 - 144 = 432 \gt 0</m>. Since <m>f_{xx}(2, 1) = 12 \gt 0</m>, it is a <strong>local minimum</strong>.</li>
+					</ul>
+				</p>
+			</solution>
 		</task>
 	</exercise>
-	<exercise>
-		<introduction>
+
+	<exercise points="10">
+		<statement>
 			<p>
-				Compute <me>\displaystyle\iint_{R}(x-y)^2\, dA,</me> where <m>R</m> is the region in the <m>xy</m>-plane bounded by the lines <me>x - y = 0, \quad x - y = 2, \quad x + y = 2, \quad x + y = 4,</me> by applying the transformation <m>u = x-y</m> and <m>v = x+y</m>.
+				Compute <m>\displaystyle\iint_{\mathcal{R}} (x - y)^2 \, dA</m>, where <m>\mathcal{R}</m> is the region in the xy-plane bounded by the lines <m>x-y=0, x-y=2, x+y=2, x+y=4</m>, by applying the transformation <m>u = x - y</m> and <m>v = x + y</m>.
 			</p>
-		</introduction>
+		</statement>
+		<solution>
+			<p>
+				The transformation is given by <m>u = x - y, v = x + y</m>. The boundaries in the uv-plane are <m>u=0, u=2, v=2, v=4</m>.
+				We compute the Jacobian determinant <m>J = \frac{\partial(x,y)}{\partial(u,v)}</m>.
+				Solving for <m>x, y</m>: <m>x = \frac{u+v}{2}, y = \frac{v-u}{2}</m>.
+				<me>J = \begin{vmatrix} 1/2 \amp 1/2 \\ -1/2 \amp 1/2 \end{vmatrix} = \frac{1}{4} + \frac{1}{4} = \frac{1}{2} \implies |J| = 1/2.</me>
+				The integral becomes:
+				<me>\int_2^4 \int_0^2 u^2 \cdot \frac{1}{2} \, du \, dv = \frac{1}{2} \int_2^4 \left. \frac{u^3}{3} \right|_0^2 \, dv = \frac{1}{2} \cdot \frac{8}{3} \int_2^4 \, dv = \frac{4}{3} (4 - 2) = \frac{8}{3}.</me>
+			</p>
+		</solution>
 	</exercise>
-	<exercise>
-		<task>
+
+	<exercise points="10">
+		<task points="4">
 			<statement>
 				<p>
-					Find an equation for the cone <m>z = \sqrt{\frac{x^2}{3}+ \frac{y^2}{3}}</m> in spherical coordinates.
+					Find an equation for the cone <m>z = \sqrt{\frac{x^2}{3} + \frac{y^2}{3}}</m> in spherical coordinates.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					Substitute spherical coordinates: <m>x = \rho \sin \phi \cos \theta</m>, <m>y = \rho \sin \phi \sin \theta</m>, <m>z = \rho \cos \phi</m>.
+					<me>x^2 + y^2 = \rho^2 \sin^2 \phi (\cos^2 \theta + \sin^2 \theta) = \rho^2 \sin^2 \phi.</me>
+					The equation becomes:
+					<me>\rho \cos \phi = \sqrt{\frac{1}{3} \rho^2 \sin^2 \phi} = \frac{1}{\sqrt{3}} \rho \sin \phi.</me>
+					Dividing by <m>\rho \cos \phi</m> (assuming <m>\rho \neq 0, \phi \neq \pi/2</m>):
+					<me>1 = \frac{1}{\sqrt{3}} \tan \phi \implies \tan \phi = \sqrt{3} \implies \phi = \frac{\pi}{3}.</me>
+					So the equation is <m>\phi = \pi/3</m>.
+				</p>
+			</solution>
 		</task>
-		<task>
+		<task points="6">
 			<statement>
 				<p>
-					Write <me>\displaystyle\iiint_{E} (2y+3z) dV</me> as an integral in spherical coordinates. Here, <m>E</m> represents the solid that lies below the cone <m>z= \sqrt{x^2+y^2},</m> above the cone <m>z = \sqrt{\frac{x^2}{3}+ \frac{y^2}{3}},</m> and within the sphere <m>x^2+y^2+z^2 = 4.</m> You do <term>NOT</term> need to evaluate the integrals.
+					Write <me>\iiint_E (2y + 3z) \, dV</me> as an integral in spherical coordinates. Here, <m>E</m> represents the solid that lies below the cone <m>z = \sqrt{x^2 + y^2}</m>, above the cone <m>z = \sqrt{\frac{x^2}{3} + \frac{y^2}{3}}</m>, and within the sphere <m>x^2 + y^2 + z^2 = 4</m>. You do NOT need to evaluate the integrals.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					The sphere <m>x^2 + y^2 + z^2 = 4</m> is <m>\rho = 2</m>.
+					The cone <m>z = \sqrt{x^2 + y^2}</m> corresponds to <m>\phi = \pi/4</m>.
+					The cone <m>z = \sqrt{\frac{x^2}{3} + \frac{y^2}{3}}</m> corresponds to <m>\phi = \pi/3</m>.
+					Since <m>E</m> lies "below" the first cone and "above" the second (as per the user's sketch showing the region between <m>\pi/4</m> and <m>\pi/3</m>), the limits for <m>\phi</m> are <m>\pi/4 \le \phi \le \pi/3</m>.
+					The integrand is <m>2y + 3z = 2\rho\sin\phi\sin\theta + 3\rho\cos\phi</m>.
+					The volume element is <m>dV = \rho^2 \sin \phi \, d\rho \, d\phi \, d\theta</m>.
+					The integral is:
+					<me>V = \int_0^{2\pi} \int_{\pi/4}^{\pi/3} \int_0^2 (2\rho\sin\theta\sin\phi + 3\rho\cos\phi) \rho^2\sin\phi \, d\rho \, d\phi \, d\theta.</me>
+				</p>
+			</solution>
 		</task>
 	</exercise>
-	<exercise>
-		<introduction>
+
+	<exercise points="8">
+		<statement>
 			<p>
-				Evaluate <me>\iint_S (x^2 + y^2)\, dS,</me> where <m>S</m> is the portion of the cylinder <m>x^2 + y^2 = 4</m> bounded between the planes <m>z = 0</m> and <m>z = 5</m>.
+				Evaluate <me>\iint_{\mathcal{S}} (x^2 + y^2) \, dS,</me> where <m>\mathcal{S}</m> is the portion of the cylinder <m>x^2 + y^2 = 4</m> bounded between the planes <m>z = 0</m> and <m>z = 5</m>.
 			</p>
-		</introduction>
+		</statement>
+		<solution>
+			<p>
+				Parametrize the surface <m>\mathcal{S}</m>: <m>\vec{r}(\theta, z) = \langle 2\cos\theta, 2\sin\theta, z \rangle</m> for <m>0 \le \theta \le 2\pi</m> and <m>0 \le z \le 5</m>.
+				Compute the normal vector:
+				<me>\vec{r}_\theta = \langle -2\sin\theta, 2\cos\theta, 0 \rangle, \quad \vec{r}_z = \langle 0, 0, 1 \rangle.</me>
+				<me>\vec{r}_\theta \times \vec{r}_z = \begin{vmatrix} \hat{i} \amp \hat{j} \amp \hat{k} \\ -2\sin\theta \amp 2\cos\theta \amp 0 \\ 0 \amp 0 \amp 1 \end{vmatrix} = \langle 2\cos\theta, 2\sin\theta, 0 \rangle.</me>
+				The magnitude is <m>|\vec{r}_\theta \times \vec{r}_z| = \sqrt{4\cos^2\theta + 4\sin^2\theta} = 2</m>.
+				The density function is <m>x^2 + y^2 = 4\cos^2\theta + 4\sin^2\theta = 4</m>.
+				The integral is:
+				<me>\iint_{\mathcal{S}} (x^2 + y^2) \, dS = \int_0^{2\pi} \int_0^5 (4) \cdot 2 \, dz \, d\theta = \int_0^{2\pi} \int_0^5 8 \, dz \, d\theta.</me>
+				<me>= \int_0^{2\pi} [8z]_0^5 \, d\theta = \int_0^{2\pi} 40 \, d\theta = 40(2\pi) = 80\pi.</me>
+			</p>
+		</solution>
 	</exercise>
 </worksheet>
