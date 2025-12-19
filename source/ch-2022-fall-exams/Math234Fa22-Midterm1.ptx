@@ -83,7 +83,7 @@ Let <m>\vec{a}=\left\langle 2,4,0\right\rangle</m> and <m>\vec{b}=\left\langle 3
 	<exercise>
 		<introduction>
 			<p>
-				Let <m>\vec{r}(t)=\langle 2 \sin (t), 2 \cos (t), 3 t\rangle</m>.
+Let <m>\vec{r}(t)=\left\langle 2 \sin (t), 2 \cos (t), 3 t\right\rangle</m>.
 			</p>
 		</introduction>
 		<task>
