@@ -71,7 +71,8 @@ Area of parallelogram = <m>|\langle -5, -8, -6 \rangle| = \sqrt{(-5)^2+(-8)^2+(-
 					\overrightarrow{AC} \amp = \begin{pmatrix} 0 \\ 4 \\ 3 \end{pmatrix} - \begin{pmatrix} 2 \\ -1 \\ 3 \end{pmatrix} = \begin{pmatrix} -2 \\ 5 \\ 0 \end{pmatrix} \\
 					\vec{n} \amp = \overrightarrow{AB} \times \overrightarrow{AC} = \begin{vmatrix} \hat{\imath} \amp \hat{\jmath} \amp \hat{k} \\ -1 \amp 3 \amp -4 \\ -2 \amp 5 \amp 0 \end{vmatrix} \\
 					\amp = \hat{\imath} \begin{vmatrix} 3 \amp -4 \\ 5 \amp 0 \end{vmatrix} - \hat{\jmath} \begin{vmatrix} -1 \amp -4 \\ -2 \amp 0 \end{vmatrix} + \hat{k} \begin{vmatrix} -1 \amp 3 \\ -2 \amp 5 \end{vmatrix} \\
-					\amp = \langle 20, 8, 1 \rangle
+\amp = \hat{\imath}(20) - \hat{\jmath}(-8) + \hat{k}(1) \\
+\amp = \langle 20, 8, 1 \rangle
 					\end{aligned}
 				</me>
 				Equation of plane: <m>20(x-2)+8(y+1)+z-3=0</m>
