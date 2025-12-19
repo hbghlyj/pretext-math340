@@ -13,6 +13,13 @@
 					Find a vector of length <m>2</m> that points in the opposite direction of <m>\vec{a}.</m>
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<me>|\vec{a}|=\sqrt{4+1+9}=\sqrt{14}</me>
+					The vector <m>\vec{u}=\frac{-2}{\sqrt{14}}\langle 2,1,-3\rangle=\left\langle-\frac{4}{\sqrt{14}}, \frac{-2}{\sqrt{14}}, \frac{6}{\sqrt{14}}\right\rangle</m>
+					has length 2 and points in the opposite direction to <m>\vec{a}.</m>
+				</p>
+			</solution>
 		</task>
 		<task>
 			<statement>
@@ -20,6 +27,20 @@
 					Find the area of the parallelogram spanned by <m>\vec{a}</m> and <m>\vec{b}.</m>
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<me>
+						\begin{aligned}
+						\text{area} \amp = |\vec{a} \times \vec{b}| \\
+						\vec{a} \times \vec{b} \amp = \begin{vmatrix} \hat{\imath} \amp \hat{\jmath} \amp \hat{k} \\ 2 \amp 1 \amp -3 \\ 4 \amp -1 \amp -2 \end{vmatrix} \\
+						\amp = \hat{\imath} \begin{vmatrix} 1 \amp -3 \\ -1 \amp -2 \end{vmatrix} - \hat{\jmath} \begin{vmatrix} 2 \amp -3 \\ 4 \amp -2 \end{vmatrix} + \hat{k} \begin{vmatrix} 2 \amp 1 \\ 4 \amp -1 \end{vmatrix} \\
+						\amp = \hat{\imath} (1(-2)-(-3)(-1)) - \hat{\jmath} (2(-2)-(-3) \cdot 4) + \hat{k} (-2-4) \\
+						\amp = \hat{\imath}(-5) - \hat{\jmath}(8) - 6\hat{k} = \langle -5, -8, -6 \rangle
+						\end{aligned}
+					</me>
+					Area of parallelogram = <m>\sqrt{5^2+8^2+6^2}</m>
+				</p>
+			</solution>
 		</task>
 	</exercise>
 	<exercise>
@@ -28,6 +49,12 @@
 				Find the equation of a line that is perpendicular to the plane <m>2x -3y+7z = 12</m> and that contains the point <m>(8, 9, -2).</m>
 			</p>
 		</introduction>
+		<solution>
+			<p>
+				Equation of line:
+				<me>\begin{pmatrix} x \\ y \\ z \end{pmatrix} = \begin{pmatrix} 8 \\ 9 \\ -2 \end{pmatrix} + t \begin{pmatrix} 2 \\ -3 \\ 7 \end{pmatrix}</me>
+			</p>
+		</solution>
 	</exercise>
 	<exercise>
 		<introduction>
@@ -36,6 +63,20 @@
 							-1)</m> and <m>C = (0, 4, 3).</m>
 			</p>
 		</introduction>
+		<solution>
+			<p>
+				<me>
+					\begin{aligned}
+					\overrightarrow{AB} \amp = \begin{pmatrix} 1 \\ 2 \\ -1 \end{pmatrix} - \begin{pmatrix} 2 \\ -1 \\ 3 \end{pmatrix} = \begin{pmatrix} -1 \\ 3 \\ -4 \end{pmatrix} \\
+					\overrightarrow{AC} \amp = \begin{pmatrix} 0 \\ 4 \\ 3 \end{pmatrix} - \begin{pmatrix} 2 \\ -1 \\ 3 \end{pmatrix} = \begin{pmatrix} -2 \\ 5 \\ 0 \end{pmatrix} \\
+					\vec{n} \amp = \overrightarrow{AB} \times \overrightarrow{AC} = \begin{vmatrix} \hat{\imath} \amp \hat{\jmath} \amp \hat{k} \\ -1 \amp 3 \amp -4 \\ -2 \amp 5 \amp 0 \end{vmatrix} \\
+					\amp = \hat{\imath} \begin{vmatrix} 3 \amp -4 \\ 5 \amp 0 \end{vmatrix} - \hat{\jmath} \begin{vmatrix} -1 \amp -4 \\ -2 \amp 0 \end{vmatrix} + \hat{k} \begin{vmatrix} -1 \amp 3 \\ -2 \amp 5 \end{vmatrix} \\
+					\amp = \langle 20, 8, 1 \rangle
+					\end{aligned}
+				</me>
+				Equation of plane: <m>20(x-2)+8(y+1)+z-3=0</m>
+			</p>
+		</solution>
 	</exercise>
 	<exercise>
 		<introduction>
@@ -50,6 +91,11 @@
 					Compute the vector <m>\overrightarrow{PR}</m>. Write your answer in the provided answer box.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<me>\overrightarrow{PR} = \begin{pmatrix} 2 \\ 4 \\ 3 \end{pmatrix} - \begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix} = \langle 1, 4, 3 \rangle</me>
+				</p>
+			</solution>
 		</task>
 		<task>
 			<statement>
@@ -57,6 +103,11 @@
 					Compute the vector <m>\overrightarrow{PQ}</m>. Write your answer in the provided answer box.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<me>\overrightarrow{PQ} = \begin{pmatrix} 1 \\ 6 \\ 0 \end{pmatrix} - \begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix} = \langle 0, 6, 0 \rangle</me>
+				</p>
+			</solution>
 		</task>
 		<task workspace="0.1in">
 			<statement>
@@ -64,6 +115,19 @@
 					Compute the vector <m>\overrightarrow{PM}</m> (that is, compute the projection of the vector <m>\overrightarrow{PR}</m> onto the vector <m>\overrightarrow{PQ}</m>). Write your answer in the provided answer box. You WILL be graded for your work, so make sure to justify your answer.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					Let <m>\vec{b} = \overrightarrow{PR}</m> and <m>\vec{a} = \overrightarrow{PQ}.</m> Need <me>\text{proj}_{\vec{a}} \vec{b} = \frac{\vec{a} \cdot \vec{b}}{|\vec{a}|^2} \vec{a}</me>
+					<me>
+						\begin{aligned}
+						\vec{a} \cdot \vec{b} \amp = \begin{pmatrix} 1 \\ 4 \\ 3 \end{pmatrix} \cdot \begin{pmatrix} 0 \\ 6 \\ 0 \end{pmatrix} = 24 \\
+						|\vec{a}|^2 \amp = 6^2 = 36 \\
+						\text{proj}_{\vec{a}} \vec{b} \amp = \frac{24}{36}\langle 0, 6, 0 \rangle = \frac{2}{3}\langle 0, 6, 0 \rangle
+						\end{aligned}
+					</me>
+					Thus <m>\overrightarrow{PM} = \langle 0, 4, 0 \rangle.</m>
+				</p>
+			</solution>
 		</task>
 		<task workspace="0.1in">
 			<statement>
@@ -71,6 +135,12 @@
 					Compute the vector <m>\overrightarrow{MR}</m>. Write your answer in the provided answer box. You WILL be graded for your work, so make sure to justify your answer.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<me>\overrightarrow{PM} + \overrightarrow{MR} = \overrightarrow{PR}</me>
+					<me>\overrightarrow{MR} = \overrightarrow{PR} - \overrightarrow{PM} = \begin{pmatrix} 1 \\ 4 \\ 3 \end{pmatrix} - \begin{pmatrix} 0 \\ 4 \\ 0 \end{pmatrix} = \langle 1, 0, 3 \rangle</me>
+				</p>
+			</solution>
 		</task>
 	</exercise>
 	<exercise>
@@ -85,6 +155,14 @@
 					Sketch the traces in the vertical planes <m>x = k</m>, with <m>k =0, 1</m>. Label your traces.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					For <m>k=0</m>, <m>x=0</m>, the trace is <m>y = 9z^2</m> (a parabola).
+				</p>
+				<p>
+					For <m>k=1</m>, <m>x=1</m>, the trace is <m>y = 1 + 9z^2</m> (a parabola shifted up).
+				</p>
+			</solution>
 		</task>
 		<task>
 			<statement>
@@ -92,6 +170,14 @@
 					Sketch the traces in the vertical planes <m>y = k</m>, with <m>k =0, 1</m>. Label your traces.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					For <m>k=0</m>, <m>y=0</m>, the trace is <m>x^2 + 9z^2 = 0</m> (just the point <m>(0,0,0)</m>).
+				</p>
+				<p>
+					For <m>k=1</m>, <m>y=1</m>, the trace is <m>1 = x^2 + 9z^2</m> (an ellipse).
+				</p>
+			</solution>
 		</task>
 	</exercise>
 	<exercise>
@@ -106,6 +192,14 @@
 					Write down an integral that represents the length of the curve from the point <m>(4, 1, 5)</m> to the point <m>(7, -1, 10).</m> You do NOT need to compute the integral.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					We have <m>\vec{r}(2) = \langle 4, 1, 5 \rangle</m> and <m>\vec{r}(3) = \langle 7, -1, 10 \rangle.</m>
+					The derivative is <m>\vec{r}'(t) = \langle 3, -\pi\sin(\pi t), 2t \rangle.</m>
+					The speed is <m>|\vec{r}'(t)| = \sqrt{9 + \pi^2\sin^2(\pi t) + 4t^2}.</m>
+					The arc length is <me>L = \int_2^3 \sqrt{9 + \pi^2\sin^2(\pi t) + 4t^2} \, dt</me>
+				</p>
+			</solution>
 		</task>
 		<task>
 			<statement>
@@ -113,6 +207,13 @@
 					Find an equation for the tangent line to the curve at the point <m>(4, 1, 5).</m>
 				</p>
 			</statement>
+			<solution>
+				<p>
+					Direction vector is <m>\vec{r}'(2) = \langle 3, 0, 4 \rangle.</m>
+					The equation of the tangent line is:
+					<me>\begin{pmatrix} x \\ y \\ z \end{pmatrix} = \begin{pmatrix} 4 \\ 1 \\ 5 \end{pmatrix} + t \begin{pmatrix} 3 \\ 0 \\ 4 \end{pmatrix}</me>
+				</p>
+			</solution>
 		</task>
 	</exercise>
 	<exercise>
@@ -121,6 +222,21 @@
 				Consider the surfaces <m>z = 2x+2</m> and <m>z = x^2+y^2-1.</m> Find a vector function that represents the curve of intersection of the given surfaces.
 			</p>
 		</introduction>
+		<solution>
+			<p>
+				Setting the expressions for <m>z</m> equal:
+				<me>
+					\begin{aligned}
+					2x + 2 \amp = x^2 + y^2 - 1 \\
+					x^2 - 2x + y^2 - 3 \amp = 0 \\
+					(x-1)^2 + y^2 \amp = 4
+					\end{aligned}
+				</me>
+				We can parameterize this circle as <m>x = 2\cos(t)+1, y = 2\sin(t).</m>
+				Then <m>z = 2(2\cos(t)+1)+2 = 4\cos(t)+4.</m>
+				So the curve is <m>\vec{r}(t) = \langle 2\cos(t)+1, 2\sin(t), 4\cos(t)+4 \rangle.</m>
+			</p>
+		</solution>
 	</exercise>
 	<exercise>
 		<introduction>
@@ -134,6 +250,17 @@
 					Find the unit tangent vector, <m>\vec{T}(t).</m>
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<me>
+						\begin{aligned}
+						\vec{r}'(t) \amp = \langle -3\sin(t), 4, -3\cos(t) \rangle \\
+						|\vec{r}'(t)| \amp = \sqrt{9\sin^2(t) + 16 + 9\cos^2(t)} = \sqrt{25} = 5 \\
+						\vec{T}(t) \amp = \frac{\vec{r}'(t)}{|\vec{r}'(t)|} = \langle -\frac{3}{5}\sin(t), \frac{4}{5}, -\frac{3}{5}\cos(t) \rangle
+						\end{aligned}
+					</me>
+				</p>
+			</solution>
 		</task>
 		<task>
 			<statement>
@@ -141,6 +268,17 @@
 					Find the unit normal vector, <m>\vec{N}(t).</m>
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<me>
+						\begin{aligned}
+						\vec{T}'(t) \amp = \langle -\frac{3}{5}\cos(t), 0, \frac{3}{5}\sin(t) \rangle \\
+						|\vec{T}'(t)| \amp = \sqrt{\frac{9}{25}\cos^2(t) + \frac{9}{25}\sin^2(t)} = \frac{3}{5} \\
+						\vec{N}(t) \amp = \frac{\vec{T}'(t)}{|\vec{T}'(t)|} = \langle -\cos(t), 0, \sin(t) \rangle
+						\end{aligned}
+					</me>
+				</p>
+			</solution>
 		</task>
 		<task>
 			<statement>
@@ -148,6 +286,11 @@
 					Find the curvature, <m>\kappa(t).</m>
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<me>\kappa(t) = \frac{|\vec{T}'(t)|}{|\vec{r}'(t)|} = \frac{3/5}{5} = \frac{3}{25}</me>
+				</p>
+			</solution>
 		</task>
 	</exercise>
 	<exercise>
@@ -156,6 +299,25 @@
 				An object’s velocity is given by <me>\vec{v}(t) = \langle 6t^2+5, 2+ 3\sqrt{t} , 4e^{2t} \rangle.</me> Its initial position is <m>\vec{r}(0) = \langle 2,\pi,0 \rangle.</m> Find a vector equation <m>\vec{r}(t)</m> for the position of the object at time <m>t.</m>
 			</p>
 		</introduction>
+		<solution>
+			<p>
+				<me>
+					\begin{aligned}
+					\vec{r}(t) \amp = \int \vec{v}(t) \, dt \\
+					\amp = \langle 2t^3 + 5t + c_1, 2t + 2t^{3/2} + c_2, 2e^{2t} + c_3 \rangle
+					\end{aligned}
+				</me>
+				Using <m>\vec{r}(0) = \langle 2, \pi, 0 \rangle</m>:
+				<me>
+					\begin{aligned}
+					c_1 \amp = 2 \\
+					c_2 \amp = \pi \\
+					2 + c_3 \amp = 0 \implies c_3 = -2
+					\end{aligned}
+				</me>
+				So <m>\vec{r}(t) = \langle 2t^3 + 5t + 2, 2t + 2t^{3/2} + \pi, 2e^{2t} - 2 \rangle.</m>
+			</p>
+		</solution>
 	</exercise>
 	<exercise>
 		<introduction>
@@ -169,6 +331,12 @@
 					Find the domain of the function.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					We need <m>x-y \ge 0 \implies y \le x</m>.
+					Domain is <m>\{ (x,y) \mid y \le x \}</m>.
+				</p>
+			</solution>
 		</task>
 		<task>
 			<statement>
@@ -184,5 +352,14 @@
 				If the limit exists, compute it (making sure to justify your answer). If the limit does not exist, justify why it doesn’t exist. If you use a theorem, state clearly which theorem you are using. Make sure to use correct limit notation. <me>\displaystyle\lim_{(x,y) \to (0,0)} \dfrac{4xy^3}{2x^4 + 3y^4}</me>
 			</p>
 		</introduction>
+		<solution>
+			<p>
+				Path 1: Along <m>y=x</m>.
+				<me>\lim_{x \to 0} \frac{4x^4}{2x^4 + 3x^4} = \lim_{x \to 0} \frac{4x^4}{5x^4} = \frac{4}{5}</me>
+				Path 2: Along <m>y=2x</m>.
+				<me>\lim_{x \to 0} \frac{4x \cdot 8x^3}{2x^4 + 3 \cdot 16x^4} = \lim_{x \to 0} \frac{32x^4}{50x^4} = \frac{32}{50} = \frac{16}{25}</me>
+				Since <m>\frac{4}{5} \neq \frac{16}{25}</m>, the limit does not exist.
+			</p>
+		</solution>
 	</exercise>
 </worksheet>
