@@ -150,7 +150,7 @@ From the first equation, <m>y=x.</m> Substituting into the second equation gives
 			</statement>
 			<solution>
 				<p>
-					From (1), we know <m>\lambda \neq 0.</m> We can write <m>x=\frac{1}{2 \lambda}, y=\frac{1}{\lambda}, z=\frac{2}{\lambda}.</m> Plugging into the constraint, we get
+From the first Lagrange equation, we know <m>\lambda \neq 0.</m> We can write <m>x=\frac{1}{2 \lambda}, y=\frac{1}{\lambda}, z=\frac{2}{\lambda}.</m> Plugging into the constraint, we get
 					<me>\frac{1}{4 \lambda^2}+\frac{1}{\lambda^2}+\frac{4}{\lambda^2}=21.</me>
 					<me>
 						\begin{aligned}
