@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<worksheet xml:id="Math234Fa23-Midterm2" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Math 234 - Midterm 2 - Fall 2023</title>
+	<exercise points="12">
+		<statement>
+			<p>
+				Find the equation of the tangent plane to the surface <m>z=e^{x y}+x^3 y</m> at the point <m>(0,3,1).</m>
+			</p>
+		</statement>
+		<solution>
+			<p>
+				Let <m>f(x,y) = e^{xy} + x^3y.</m> We find the partial derivatives:
+				<me>f_x = y e^{xy} + 3x^2y \implies f_x(0,3) = 3 e^0 + 0 = 3</me>
+				<me>f_y = x e^{xy} + x^3 \implies f_y(0,3) = 0 e^0 + 0 = 0</me>
+				The equation of the tangent plane at <m>(0,3,1)</m> is:
+				<me>z - 1 = 3(x-0) + 0(y-3) \implies z = 3x+1.</me>
+			</p>
+		</solution>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Consider the function <me>f(x, y)=x^2+4 y^2-2 x y+4</me>
+			</p>
+		</introduction>
+		<task points="7">
+			<statement>
+				<p>
+					Find all critical point(s) of <m>f(x, y).</m>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					We set the partial derivatives to zero:
+					<me>f_x = 2x - 2y = 0 \implies x=y</me>
+					<me>f_y = 8y - 2x = 0 \implies 8y - 2y = 6y = 0 \implies y=0</me>
+					If <m>y=0,</m> then <m>x=0.</m> The only critical point is <m>(0,0).</m>
+				</p>
+			</solution>
+		</task>
+		<task points="7">
+			<statement>
+				<p>
+					Classify each critical point you found in (a) as a local maximum, local minimum, or saddle point.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					We use the second derivative test:
+					<me>f_{xx} = 2, \quad f_{yy} = 8, \quad f_{xy} = -2</me>
+					<me>D = f_{xx}f_{yy} - (f_{xy})^2 = (2)(8) - (-2)^2 = 16 - 4 = 12 \gt 0.</me>
+					Since <m>D \gt 0</m> and <m>f_{xx} = 2 \gt 0,</m> the point <m>(0,0)</m> is a local minimum.
+				</p>
+			</solution>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Consider the function <m>f(x, y)=\sin \left(x^2-y\right).</m>
+			</p>
+		</introduction>
+		<task points="6">
+			<statement>
+				<p>
+					Compute <m>\nabla f(2,4).</m>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<me>\nabla f = \langle 2x \cos(x^2-y), -\cos(x^2-y) \rangle</me>
+					At <m>(2,4),</m> <m>\cos(4-4) = \cos(0) = 1.</m>
+					<me>\nabla f(2,4) = \langle 4(1), -1 \rangle = \langle 4, -1 \rangle.</me>
+				</p>
+			</solution>
+		</task>
+		<task points="6">
+			<statement>
+				<p>
+					Find the directional derivative of <m>f</m> at the point <m>(2,4)</m> in the direction of the vector <m>\vec{v}=\langle 1,-2\rangle.</m>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					The unit vector in the direction of <m>\vec{v}</m> is <m>\vec{u} = \frac{\langle 1, -2 \rangle}{\sqrt{1^2 + (-2)^2}} = \frac{1}{\sqrt{5}} \langle 1, -2 \rangle.</m>
+					The directional derivative is:
+					<me>
+						\begin{aligned}
+						D_{\vec{u}} f(2,4) \amp = \nabla f(2,4) \cdot \vec{u} \\
+						\amp = \langle 4, -1 \rangle \cdot \frac{1}{\sqrt{5}} \langle 1, -2 \rangle \\
+						\amp = \frac{4 + 2}{\sqrt{5}} = \frac{6}{\sqrt{5}}.
+						\end{aligned}
+					</me>
+				</p>
+			</solution>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				In this problem, we want to find the (absolute) maximum and minimum values of the function <m>f(x, y, z)=x+2 y+4 z</m> subject to the constraint <m>x^2+y^2+z^2=21.</m>
+			</p>
+		</introduction>
+		<task points="4">
+			<statement>
+				<p>
+					Set up the system of equations that you need to solve to find the maximum and minimum values using the method of Lagrange multipliers, using <m>\lambda</m> as the parameter.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Let <m>g(x,y,z) = x^2+y^2+z^2 - 21 = 0.</m> The system is:
+					<me>
+						\begin{cases}
+						1 = 2\lambda x \\
+						2 = 2\lambda y \\
+						4 = 2\lambda z \\
+						x^2+y^2+z^2 = 21
+						\end{cases}
+					</me>
+				</p>
+			</solution>
+		</task>
+		<task points="4">
+			<statement>
+				<p>
+					There are two values of <m>\lambda</m> (let's call them <m>\lambda_1</m> and <m>\lambda_2</m>) that satisfy your system of equations. Find them.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					From the first three equations, <m>x = \frac{1}{2\lambda}, y = \frac{1}{\lambda}, z = \frac{2}{\lambda}.</m> Substituting into the constraint:
+					<me>\frac{1}{4\lambda^2} + \frac{1}{\lambda^2} + \frac{4}{\lambda^2} = 21 \implies \frac{1+4+16}{4\lambda^2} = 21 \implies \frac{21}{4\lambda^2} = 21.</me>
+					Thus <m>4\lambda^2 = 1 \implies \lambda = \pm 1/2.</m>
+					So <m>\lambda_1 = 1/2</m> and <m>\lambda_2 = -1/2.</m>
+				</p>
+			</solution>
+		</task>
+		<task points="4">
+			<statement>
+				<p>
+					The two values <m>\lambda_1</m> and <m>\lambda_2</m> you found in part (b) give corresponding points (<m>x_1, y_1, z_1</m>) and (<m>x_2, y_2, z_2</m>). Find them.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					For <m>\lambda_1 = 1/2:</m> <m>x_1 = 1, y_1 = 2, z_1 = 4.</m> Point: <m>(1,2,4).</m>
+				</p>
+				<p>
+					For <m>\lambda_2 = -1/2:</m> <m>x_2 = -1, y_2 = -2, z_2 = -4.</m> Point: <m>(-1,-2,-4).</m>
+				</p>
+			</solution>
+		</task>
+		<task points="2">
+			<statement>
+				<p>
+					Identify the absolute maximum and minimum values.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Evaluating <m>f(x,y,z) = x+2y+4z</m> at the points:
+					<me>f(1,2,4) = 1 + 2(2) + 4(4) = 21.</me>
+					<me>f(-1,-2,-4) = -1 + 2(-2) + 4(-4) = -21.</me>
+					The absolute maximum value is 21, and the absolute minimum value is -21.
+				</p>
+			</solution>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Compute the following integrals.
+			</p>
+		</introduction>
+		<task points="8">
+			<statement>
+				<p>
+					<m>\displaystyle\int_0^1 \int_0^y 2 x y^2 d x d y</m>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<me>
+						\begin{aligned}
+						\int_0^1 \int_0^y 2 x y^2 \, d x \, d y \amp = \int_0^1 [x^2 y^2]_0^y \, d y \\
+						\amp = \int_0^1 y^4 \, d y \\
+						\amp = \left[ \frac{y^5}{5} \right]_0^1 = 1/5.
+						\end{aligned}
+					</me>
+				</p>
+			</solution>
+		</task>
+		<task points="8">
+			<statement>
+				<p>
+					<m>\displaystyle\int_0^1 \int_{3 y}^3 e^{x^2} d x d y</m>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					The region of integration is <m>0 \le y \le 1, 3y \le x \le 3.</m> Reversing the order of integration gives <m>0 \le x \le 3, 0 \le y \le x/3:</m>
+					<me>
+						\begin{aligned}
+						\int_0^3 \int_0^{x/3} e^{x^2} \, d y \, d x \amp = \int_0^3 \frac{x}{3} e^{x^2} \, d x \\
+						\amp = \left[ \frac{1}{6} e^{x^2} \right]_0^3 = \frac{e^9 - 1}{6}.
+						\end{aligned}
+					</me>
+				</p>
+			</solution>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Sketch the region <m>\mathcal{R}</m> and then write down the double integral of <m>f(x, y)</m> over the region <m>\mathcal{R}.</m> You do NOT need to evaluate the integrals.
+			</p>
+		</introduction>
+		<task points="8">
+			<statement>
+				<p>
+					The region <m>\mathcal{R}</m> is the region in the first-quadrant bounded by <m>y=x,</m> the <m>y</m>-axis, <m>y=\sqrt{4-x^2},</m> and <m>y=\sqrt{25-x^2}</m> and <m>f(x, y)=\left(x^2+y^2\right)^8.</m>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					The boundaries are circles <m>r=2</m> and <m>r=5,</m> the line <m>\theta = \pi/4</m> (which is <m>y=x</m>), and the <m>y</m>-axis which is <m>\theta = \pi/2.</m>
+					Using polar coordinates:
+					<me>\int_{\pi/4}^{\pi/2} \int_2^5 (r^2)^8 r \, d r \, d \theta = \int_{\pi/4}^{\pi/2} \int_2^5 r^{17} \, d r \, d \theta.</me>
+				</p>
+			</solution>
+		</task>
+		<task points="8">
+			<statement>
+				<p>
+					The region <m>\mathcal{R}</m> is the region in the <m>xy</m>-plane bounded by the three curves <m>x=2, y=x^3-1,</m> and <m>y=\frac{3}{4} x-\frac{10}{8}</m> and <m>f(x, y)=x^2-y^2.</m> (Hint: Observe that <m>y=\frac{3}{4} x-\frac{10}{8}</m> is the tangent line to <m>y=x^3-1</m> at the point <m>\left(\frac{1}{2}, \frac{-7}{8}\right)</m>)
+				</p>
+			</statement>
+			<solution>
+				<p>
+					The intersection point of <m>y=x^3-1</m> and the tangent line is given in the hint as <m>x=1/2.</m> The other boundary is <m>x=2.</m> Over the interval <m>[1/2, 2],</m> <m>x^3-1 \ge \frac{3}{4}x - \frac{10}{8}.</m>
+					<me>\int_{1/2}^2 \int_{\frac{3x}{4} - \frac{10}{8}}^{x^3-1} (x^2-y^2) \, d y \, d x.</me>
+				</p>
+			</solution>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Write down triple integrals that represent the volume of the following solids. You do NOT need to evaluate the integrals.
+			</p>
+		</introduction>
+		<task points="8">
+			<statement>
+				<p>
+					The solid that lies above the cone <m>z=\sqrt{x^2+y^2}</m> and below the hemisphere <m>z=\sqrt{1-\left(x^2+y^2\right)}</m> (the non-negative square root).
+				</p>
+			</statement>
+			<solution>
+				<p>
+					In spherical coordinates, the cone <m>z = r</m> corresponds to <m>\phi = \pi/4.</m> The hemisphere is <m>\rho = 1.</m>
+					<me>V = \int_0^{2\pi} \int_0^{\pi/4} \int_0^1 \rho^2 \sin \phi \, d\rho \, d\phi \, d\theta.</me>
+				</p>
+			</solution>
+		</task>
+		<task points="8">
+			<statement>
+				<p>
+					The solid that lies between the cylinders <m>x^2+y^2=1</m> and <m>x^2+y^2=4,</m> above the plane <m>z=0,</m> and below the plane <m>3 x+2 y+z=12.</m>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Using cylindrical coordinates, the cylinders are <m>r=1</m> and <m>r=2.</m> The height is <m>z = 12 - 3x - 2y = 12 - 3r\cos\theta - 2r\sin\theta.</m>
+					<me>V = \int_0^{2\pi} \int_1^2 \int_0^{12 - 3r\cos\theta - 2r\sin\theta} r \, dz \, dr \, d\theta.</me>
+				</p>
+			</solution>
+		</task>
+	</exercise>
+</worksheet>
