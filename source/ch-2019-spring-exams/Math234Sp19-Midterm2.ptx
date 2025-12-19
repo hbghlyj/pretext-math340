@@ -133,7 +133,6 @@
 				Points: <m>(1, \sqrt{3})</m> and <m>(-1, -\sqrt{3})</m>. Both give <m>f = \sqrt{3}</m> (MAX).
 				If <m>\lambda = -\frac{1}{\sqrt{12}}</m>, then <m>y = -\sqrt{3}x.</m>
 				Points: <m>(1, -\sqrt{3})</m> and <m>(-1, \sqrt{3})</m>. Both give <m>f = -\sqrt{3}</m> (MIN).
-				Evaluate: <m>f(1, 6/\sqrt{12}) = 6/\sqrt{12} = \sqrt{3}</m> (MAX). <m>f(1, -6/\sqrt{12}) = -\sqrt{3}</m> (MIN).
 			</p>
 		</solution>
 	</exercise>
