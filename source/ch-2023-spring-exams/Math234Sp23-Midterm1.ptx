@@ -1,1 +1,299 @@
-
+<?xml version="1.0" encoding="utf-8"?>
+<worksheet xml:id="Math234Sp23-Midterm1" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Math 234 - Midterm 1 - Spring 2023</title>
+	<exercise>
+		<introduction>
+			<p>
+				Consider the line
+				<me>
+					\begin{pmatrix} x \\ y \\ z \end{pmatrix} = \begin{pmatrix} -1 \\ 4 \\ 5 \end{pmatrix} + t \begin{pmatrix} 8 \\ -3 \\ 4 \end{pmatrix}
+				</me>
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					Find the equation of the plane through the point <m>(2,3,1)</m> and perpendicular to the given line.
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Find the equation of the line that contains the point <m>(2,3,1)</m>, is perpendicular to the given line, and is perpendicular to the vector <m>\langle-1,2,4\rangle</m>.
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<statement>
+			<p>
+				Let <m>\vec{r}(t)=\langle 3\sin(t), 4\sin(t), 5\cos(t)\rangle</m>. Find the equation of the tangent line to the curve <m>\vec{r}(t)</m> at the point <m>(3,4,0)</m>.
+			</p>
+		</statement>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Consider the surface <m>x^2+3 y^2-z=1</m>.
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					Sketch the traces of the form <m>x=k</m>, with <m>k=0,1,2</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Sketch the traces of the form <m>y=k</m>, with <m>k=0,1,2</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Sketch the traces of the form <m>z=k</m>, with <m>k=0,1,2</m>
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				An object's acceleration is given by
+				<me>\vec{a}(t)=\left\langle\sin(t), 4e^t, 2t+3\right\rangle.</me>
+				Its initial velocity is <m>\vec{v}(0)=\langle 1,0,2\rangle</m> and its initial position is <m>\vec{r}(0)=\langle 0,3,5\rangle</m>.
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					Find a vector equation <m>\vec{v}(t)</m> for the velocity of the object at time <m>t</m>.
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Find a vector equation <m>\vec{r}(t)</m> for the position of the object at time <m>t</m>.
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Consider the surfaces <m>y^2+z^2=4</m> and <m>2 x+3 y-z=6</m>.
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					Find a vector function that represents the curve of intersection of the given surfaces.
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Write down an integral that represents the length of the curve of intersection that you found in part (a). You do NOT need to evaluate the integral.
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Consider the curve given by <m>\vec{r}(t)=\langle\sqrt{2}\cos(t), \sin(t), \sin(t)\rangle</m>
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					Find the unit tangent vector, <m>\vec{T}(t)</m>.
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Find the unit normal vector, <m>\vec{N}(t)</m>.
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Find the curvature, <m>\kappa(t)</m>.
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Consider the function <m>f(x, y)=\ln \left(2 x^3-y+2\right)</m>.
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					Find the domain of the function.
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Sketch the domain of the function. Shade the region(s) that are part of the domain. Use dotted lines when sketching a curve that is NOT in the domain, and solid lines when sketching curves that are.
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				If the limit exists, compute it (making sure to justify your answer). If the limit does not exist, justify why it doesn't exist. If you use a theorem, state clearly which theorem you are using. Make sure to use correct limit notation.
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					<me>\lim _{(x, y) \rightarrow(0,0)} \frac{4 x y}{x^2+6 y^2}</me>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<me>\lim _{(x, y) \rightarrow(0,0)} x^2 y^2 \sin \left(\frac{1}{x^2+4 y^2}\right)</me>
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Clearly mark each of the following as True or False by completely filling in the appropriate bubble. No justification is needed.
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					The unit vector in the direction of <m>\vec{v}</m> is always shorter than <m>\vec{v}</m>.
+				</p>
+			</statement>
+			<choices>
+				<choice>
+					<statement>
+						<p>
+							True
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							False
+						</p>
+					</statement>
+				</choice>
+			</choices>
+		</task>
+		<task>
+			<statement>
+				<p>
+					We can compute <m>\vec{u} \times(\vec{v} \cdot \vec{w})</m>.
+				</p>
+			</statement>
+			<choices>
+				<choice>
+					<statement>
+						<p>
+							True
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							False
+						</p>
+					</statement>
+				</choice>
+			</choices>
+		</task>
+		<task>
+			<statement>
+				<p>
+					There exists a vector <m>\vec{w}</m> such that <m>\langle 1,1,1\rangle \times \vec{w}=\langle 1,1,1\rangle</m>.
+				</p>
+			</statement>
+			<choices>
+				<choice>
+					<statement>
+						<p>
+							True
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							False
+						</p>
+					</statement>
+				</choice>
+			</choices>
+		</task>
+		<task>
+			<statement>
+				<p>
+					The planes <m>3 x+4 y+4 z=0</m> and <m>-4 x-2 y+5 z=-7</m> are orthogonal.
+				</p>
+			</statement>
+			<choices>
+				<choice>
+					<statement>
+						<p>
+							True
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							False
+						</p>
+					</statement>
+				</choice>
+			</choices>
+		</task>
+		<task>
+			<statement>
+				<p>
+					If <m>\vec{r}(t)</m> is a straight line, then <m>\vec{T}(t)</m> is a constant vector (that is, it does not depend on <m>t</m>).
+				</p>
+			</statement>
+			<choices>
+				<choice>
+					<statement>
+						<p>
+							True
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							False
+						</p>
+					</statement>
+				</choice>
+			</choices>
+		</task>
+	</exercise>
+</worksheet>
