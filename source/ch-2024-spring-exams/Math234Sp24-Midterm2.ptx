@@ -109,7 +109,7 @@
 			</statement>
 			<solution>
 				<p>
-					Critical points in the interior: <m>(0,0)</m> is on the boundary.
+There are no critical points in the interior of the region, as all critical points from part (a) lie on the boundary.
 					Check boundaries:
 					<ul>
 						<li>Along <m>y=0</m>: <m>f(x,0) = 2x^2 + 6</m>. Max at <m>x=\pm 1</m> is 8, min at <m>x=0</m> is 6.</li>
