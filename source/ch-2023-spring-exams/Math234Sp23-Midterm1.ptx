@@ -16,6 +16,14 @@
 					Find the equation of the plane through the point <m>(2,3,1)</m> and perpendicular to the given line.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					The direction vector of the given line is <m>\langle 8, -3, 4 \rangle</m>.
+					We can choose the normal vector of the plane to be <m>\vec{n} = \langle 8, -3, 4 \rangle</m>.
+					The equation of the plane is:
+					<me>8(x-2) - 3(y-3) + 4(z-1) = 0.</me>
+				</p>
+			</solution>
 		</task>
 		<task>
 			<statement>
@@ -23,6 +31,18 @@
 					Find the equation of the line that contains the point <m>(2,3,1)</m>, is perpendicular to the given line, and is perpendicular to the vector <m>\langle-1,2,4\rangle</m>.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					The direction vector of the line needs to be perpendicular to both <m>\langle 8, -3, 4 \rangle</m> and <m>\langle -1, 2, 4 \rangle</m>.
+					<me>
+						\vec{v} = \begin{vmatrix} \hat{\imath} \amp \hat{\jmath} \amp \hat{k} \\ 8 \amp -3 \amp 4 \\ -1 \amp 2 \amp 4 \end{vmatrix} = \langle -20, -36, 13 \rangle
+					</me>
+					The equation of the line is:
+					<me>
+						\begin{pmatrix} x \\ y \\ z \end{pmatrix} = \begin{pmatrix} 2 \\ 3 \\ 1 \end{pmatrix} + t \begin{pmatrix} -20 \\ -36 \\ 13 \end{pmatrix}
+					</me>
+				</p>
+			</solution>
 		</task>
 	</exercise>
 	<exercise>
@@ -31,6 +51,22 @@
 				Let <m>\vec{r}(t)=\langle 3\sin(t), 4\sin(t), 5\cos(t)\rangle</m>. Find the equation of the tangent line to the curve <m>\vec{r}(t)</m> at the point <m>(3,4,0)</m>.
 			</p>
 		</statement>
+		<solution>
+			<p>
+				<me>
+					\begin{aligned}
+					\vec{r}(t) \amp = \langle 3 \sin t, 4 \sin t, 5 \cos t \rangle \\
+					\vec{r}\,'(t) \amp = \langle 3 \cos t, 4 \cos t, -5 \sin t \rangle
+					\end{aligned}
+				</me>
+				We want the equation of the tangent line at <m>t = \pi/2</m>, since <m>\vec{r}(\pi/2) = \langle 3, 4, 0 \rangle</m>.
+				<me>\vec{r}\,'(\pi/2) = \langle 0, 0, -5 \rangle.</me>
+				The equation of the tangent line is:
+				<me>
+					\begin{pmatrix} x \\ y \\ z \end{pmatrix} = \begin{pmatrix} 3 \\ 4 \\ 0 \end{pmatrix} + t \begin{pmatrix} 0 \\ 0 \\ -5 \end{pmatrix}
+				</me>
+			</p>
+		</solution>
 	</exercise>
 	<exercise>
 		<introduction>
@@ -44,6 +80,17 @@
 					Sketch the traces of the form <m>x=k</m>, with <m>k=0,1,2</m>
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<me>
+						\begin{aligned}
+						k \amp = 0 \implies z = 3y^2 - 1 \\
+						k \amp = 1 \implies z = 3y^2 \\
+						k \amp = 2 \implies z = 3y^2 + 3
+						\end{aligned}
+					</me>
+				</p>
+			</solution>
 		</task>
 		<task>
 			<statement>
@@ -51,6 +98,17 @@
 					Sketch the traces of the form <m>y=k</m>, with <m>k=0,1,2</m>
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<me>
+						\begin{aligned}
+						k \amp = 0 \implies z = x^2 - 1 \\
+						k \amp = 1 \implies z = x^2 + 2 \\
+						k \amp = 2 \implies z = x^2 + 11
+						\end{aligned}
+					</me>
+				</p>
+			</solution>
 		</task>
 		<task>
 			<statement>
@@ -58,6 +116,17 @@
 					Sketch the traces of the form <m>z=k</m>, with <m>k=0,1,2</m>
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<me>
+						\begin{aligned}
+						k \amp = 0 \implies x^2 + 3y^2 = 1 \\
+						k \amp = 1 \implies x^2 + 3y^2 = 2 \\
+						k \amp = 2 \implies x^2 + 3y^2 = 3
+						\end{aligned}
+					</me>
+				</p>
+			</solution>
 		</task>
 	</exercise>
 	<exercise>
@@ -74,6 +143,18 @@
 					Find a vector equation <m>\vec{v}(t)</m> for the velocity of the object at time <m>t</m>.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<me>
+						\begin{aligned}
+						\vec{v}(t) \amp = \int \vec{a}(t) \, dt = \langle -\cos t + c_1, 4e^t + c_2, t^2 + 3t + c_3 \rangle \\
+						\vec{v}(0) \amp = \langle 1, 0, 2 \rangle = \langle -1 + c_1, 4 + c_2, c_3 \rangle \\
+						\implies c_1 \amp = 2, c_2 = -4, c_3 = 2 \\
+						\vec{v}(t) \amp = \langle -\cos t + 2, 4e^t - 4, t^2 + 3t + 2 \rangle
+						\end{aligned}
+					</me>
+				</p>
+			</solution>
 		</task>
 		<task>
 			<statement>
@@ -81,6 +162,18 @@
 					Find a vector equation <m>\vec{r}(t)</m> for the position of the object at time <m>t</m>.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<me>
+						\begin{aligned}
+						\vec{r}(t) \amp = \int \vec{v}(t) \, dt = \langle -\sin t + 2t + D_1, 4e^t - 4t + D_2, \frac{t^3}{3} + \frac{3t^2}{2} + 2t + D_3 \rangle \\
+						\vec{r}(0) \amp = \langle 0, 3, 5 \rangle = \langle D_1, 4 + D_2, D_3 \rangle \\
+						\implies D_1 \amp = 0, D_2 = -1, D_3 = 5 \\
+						\vec{r}(t) \amp = \langle -\sin t + 2t, 4e^t - 4t - 1, \frac{t^3}{3} + \frac{3t^2}{2} + 2t + 5 \rangle
+						\end{aligned}
+					</me>
+				</p>
+			</solution>
 		</task>
 	</exercise>
 	<exercise>
@@ -95,6 +188,13 @@
 					Find a vector function that represents the curve of intersection of the given surfaces.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					Let <m>y = 2 \sin t</m> and <m>z = 2 \cos t</m>. Then <m>y^2 + z^2 = 4</m>.
+					From the plane equation: <m>2x = 6 + z - 3y \implies x = \frac{6 + 2 \cos t - 6 \sin t}{2} = 3 + \cos t - 3 \sin t</m>.
+					<me>\vec{r}(t) = \langle 3 + \cos t - 3 \sin t, 2 \sin t, 2 \cos t \rangle.</me>
+				</p>
+			</solution>
 		</task>
 		<task>
 			<statement>
@@ -102,6 +202,17 @@
 					Write down an integral that represents the length of the curve of intersection that you found in part (a). You do NOT need to evaluate the integral.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<me>
+						\begin{aligned}
+						\vec{r}\,'(t) \amp = \langle -\sin t - 3 \cos t, 2 \cos t, -2 \sin t \rangle \\
+						|\vec{r}\,'(t)| \amp = \sqrt{(-\sin t - 3 \cos t)^2 + 4 \cos^2 t + 4 \sin^2 t} \\
+						L \amp = \int_0^{2\pi} \sqrt{(-\sin t - 3 \cos t)^2 + 4} \, dt
+						\end{aligned}
+					</me>
+				</p>
+			</solution>
 		</task>
 	</exercise>
 	<exercise>
@@ -116,6 +227,17 @@
 					Find the unit tangent vector, <m>\vec{T}(t)</m>.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<me>
+						\begin{aligned}
+						\vec{r}\,'(t) \amp = \langle -\sqrt{2} \sin t, \cos t, \cos t \rangle \\
+						|\vec{r}\,'(t)| \amp = \sqrt{2 \sin^2 t + \cos^2 t + \cos^2 t} = \sqrt{2} \\
+						\vec{T}(t) \amp = \langle -\sin t, \frac{\cos t}{\sqrt{2}}, \frac{\cos t}{\sqrt{2}} \rangle
+						\end{aligned}
+					</me>
+				</p>
+			</solution>
 		</task>
 		<task>
 			<statement>
@@ -123,6 +245,17 @@
 					Find the unit normal vector, <m>\vec{N}(t)</m>.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<me>
+						\begin{aligned}
+						\vec{T}\,'(t) \amp = \langle -\cos t, -\frac{\sin t}{\sqrt{2}}, -\frac{\sin t}{\sqrt{2}} \rangle \\
+						|\vec{T}\,'(t)| \amp = \sqrt{\cos^2 t + \frac{\sin^2 t}{2} + \frac{\sin^2 t}{2}} = 1 \\
+						\vec{N}(t) \amp = \langle -\cos t, -\frac{\sin t}{\sqrt{2}}, -\frac{\sin t}{\sqrt{2}} \rangle
+						\end{aligned}
+					</me>
+				</p>
+			</solution>
 		</task>
 		<task>
 			<statement>
@@ -130,6 +263,11 @@
 					Find the curvature, <m>\kappa(t)</m>.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<me>\kappa = \frac{|\vec{T}\,'(t)|}{|\vec{r}\,'(t)|} = \frac{1}{\sqrt{2}}.</me>
+				</p>
+			</solution>
 		</task>
 	</exercise>
 	<exercise>
@@ -144,6 +282,12 @@
 					Find the domain of the function.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					We need <m>2x^3 - y + 2 > 0 \implies y &lt; 2x^3 + 2</m>.
+					Domain: <m>\{(x, y) \mid y &lt; 2x^3 + 2\}</m>.
+				</p>
+			</solution>
 		</task>
 		<task>
 			<statement>
@@ -151,6 +295,11 @@
 					Sketch the domain of the function. Shade the region(s) that are part of the domain. Use dotted lines when sketching a curve that is NOT in the domain, and solid lines when sketching curves that are.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					The domain is the region below the curve <m>y = 2x^3 + 2</m>, with the curve being dotted (not included).
+				</p>
+			</solution>
 		</task>
 	</exercise>
 	<exercise>
@@ -165,6 +314,15 @@
 					<me>\lim _{(x, y) \rightarrow(0,0)} \frac{4 x y}{x^2+6 y^2}</me>
 				</p>
 			</statement>
+			<solution>
+				<p>
+					Along Path 1 <m>y = x</m>:
+					<me>\lim_{x \to 0} \frac{4x^2}{x^2+6x^2} = \frac{4}{7}.</me>
+					Along Path 2 <m>y = 2x</m>:
+					<me>\lim_{x \to 0} \frac{4x(2x)}{x^2+6(4x^2)} = \frac{8}{25}.</me>
+					Since limits are different, the limit does not exist.
+				</p>
+			</solution>
 		</task>
 		<task>
 			<statement>
@@ -172,6 +330,13 @@
 					<me>\lim _{(x, y) \rightarrow(0,0)} x^2 y^2 \sin \left(\frac{1}{x^2+4 y^2}\right)</me>
 				</p>
 			</statement>
+			<solution>
+				<p>
+					Using Squeeze Theorem:
+					<me>-x^2 y^2 \le x^2 y^2 \sin \left(\frac{1}{x^2+4 y^2}\right) \le x^2 y^2.</me>
+					Since <m>\lim_{(x,y) \to (0,0)} (-x^2y^2) = 0</m> and <m>\lim_{(x,y) \to (0,0)} (x^2y^2) = 0</m>, the given limit is 0.
+				</p>
+			</solution>
 		</task>
 	</exercise>
 	<exercise>
@@ -194,7 +359,7 @@
 						</p>
 					</statement>
 				</choice>
-				<choice>
+				<choice correct="yes">
 					<statement>
 						<p>
 							False
@@ -217,7 +382,7 @@
 						</p>
 					</statement>
 				</choice>
-				<choice>
+				<choice correct="yes">
 					<statement>
 						<p>
 							False
@@ -240,7 +405,7 @@
 						</p>
 					</statement>
 				</choice>
-				<choice>
+				<choice correct="yes">
 					<statement>
 						<p>
 							False
@@ -256,7 +421,7 @@
 				</p>
 			</statement>
 			<choices>
-				<choice>
+				<choice correct="yes">
 					<statement>
 						<p>
 							True
@@ -279,7 +444,7 @@
 				</p>
 			</statement>
 			<choices>
-				<choice>
+				<choice correct="yes">
 					<statement>
 						<p>
 							True
