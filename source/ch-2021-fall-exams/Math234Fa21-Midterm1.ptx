@@ -7,6 +7,20 @@
 				Find the equation of the plane that passes through the points <m>(2,1,2), (3,0,4)</m> and <m>(-1,1,2)</m>.
 			</p>
 		</statement>
+		<solution>
+			<p>
+				Let <m>A=(2,1,2), B=(3,0,4), C=(-1,1,2)</m>.
+				<me>
+					\begin{aligned}
+					\overrightarrow{AB} \amp = \langle 3-2, 0-1, 4-2 \rangle = \langle 1, -1, 2 \rangle \\
+					\overrightarrow{AC} \amp = \langle -1-2, 1-1, 2-2 \rangle = \langle -3, 0, 0 \rangle \\
+					\vec{n} \amp = \overrightarrow{AB} \times \overrightarrow{AC} = \begin{vmatrix} \hat{\imath} \amp \hat{\jmath} \amp \hat{k} \\ 1 \amp -1 \amp 2 \\ -3 \amp 0 \amp 0 \end{vmatrix} = \langle 0, -6, -3 \rangle
+					\end{aligned}
+				</me>
+				The equation of the plane is:
+<me>0(x-2) - 6(y-1) - 3(z-2) = 0, \text{ which simplifies to } 2y+z=4.</me>
+			</p>
+		</solution>
 	</exercise>
 	<exercise>
 		<introduction>
@@ -20,6 +34,16 @@
 					Find <m>\vec{r}\,'(t)</m> and <m>\vec{r}\,''(t)</m>.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<me>
+						\begin{aligned}
+						\vec{r}\,'(t) \amp = \langle -\sin t, -\cos t, e^{3t} + 3t e^{3t} \rangle \\
+						\vec{r}\,''(t) \amp = \langle -\cos t, \sin t, 3e^{3t} + 3e^{3t} + 9t e^{3t} \rangle = \langle -\cos t, \sin t, 6e^{3t} + 9t e^{3t} \rangle
+						\end{aligned}
+					</me>
+				</p>
+			</solution>
 		</task>
 		<task>
 			<statement>
@@ -27,6 +51,16 @@
 					Find <m>\vec{r}\,'(0)</m> and <m>\vec{r}\,''(0)</m>.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<me>
+						\begin{aligned}
+						\vec{r}\,'(0) \amp = \langle -\sin(0), -\cos(0), e^0 + 0 \rangle = \langle 0, -1, 1 \rangle \\
+						\vec{r}\,''(0) \amp = \langle -\cos(0), \sin(0), 6e^0 + 0 \rangle = \langle -1, 0, 6 \rangle
+						\end{aligned}
+					</me>
+				</p>
+			</solution>
 		</task>
 	</exercise>
 	<exercise>
@@ -36,6 +70,15 @@
 					Find a vector function that parametrizes the curve of intersection of the surfaces <m>x=-y z</m> and <m>y^2+z^2=9</m>.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					Let <m>y = 3 \sin \theta</m> and <m>z = 3 \cos \theta</m>. Then <m>y^2 + z^2 = 9 \sin^2 \theta + 9 \cos^2 \theta = 9</m>.
+					Substitute into the first surface:
+					<me>x = -yz = -(3 \sin \theta)(3 \cos \theta) = -9 \sin \theta \cos \theta.</me>
+					The parametrization is:
+					<me>\vec{r}(\theta) = \langle -9 \sin \theta \cos \theta, 3 \sin \theta, 3 \cos \theta \rangle, \quad 0 \le \theta \le 2\pi.</me>
+				</p>
+			</solution>
 		</task>
 		<task>
 			<statement>
@@ -43,6 +86,13 @@
 					Find a vector function that parametrizes the line segment that joins the points <m>(4,1,2)</m> and <m>(-1,0,3)</m>.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					The direction vector is <m>\vec{v} = \langle -1-4, 0-1, 3-2 \rangle = \langle -5, -1, 1 \rangle</m>.
+					The parametrization is:
+					<me>\vec{r}(t) = \langle 4, 1, 2 \rangle + t \langle -5, -1, 1 \rangle, \quad 0 \le t \le 1.</me>
+				</p>
+			</solution>
 		</task>
 	</exercise>
 	<exercise>
@@ -53,6 +103,26 @@
 				Find a vector equation <m>\vec{r}(t)</m> for the position of the object at time <m>t</m> if its initial velocity is <m>\vec{v}(0)=\langle 1, \frac{1}{2}, 1\rangle</m> and its initial position is <m>\vec{r}(0)=\langle 0,0,2\rangle</m>.
 			</p>
 		</statement>
+		<solution>
+			<p>
+				<me>
+					\begin{aligned}
+					\vec{v}(t) \amp = \int \vec{a}(t) \, dt = \langle -\cos t + c_1, \frac{e^{2t}}{2} + c_2, -\frac{t^2}{2} + c_3 \rangle \\
+					\vec{v}(0) \amp = \langle -1+c_1, 1/2+c_2, c_3 \rangle = \langle 1, 1/2, 1 \rangle \\
+					\implies c_1 \amp = 2, c_2 = 0, c_3 = 1 \\
+					\vec{v}(t) \amp = \langle -\cos t + 2, \frac{e^{2t}}{2}, -\frac{t^2}{2} + 1 \rangle
+					\end{aligned}
+				</me>
+				<me>
+					\begin{aligned}
+					\vec{r}(t) \amp = \int \vec{v}(t) \, dt = \langle -\sin t + 2t + D_1, \frac{e^{2t}}{4} + D_2, -\frac{t^3}{6} + t + D_3 \rangle \\
+					\vec{r}(0) \amp = \langle D_1, 1/4 + D_2, D_3 \rangle = \langle 0, 0, 2 \rangle \\
+					\implies D_1 \amp = 0, D_2 = -1/4, D_3 = 2 \\
+					\vec{r}(t) \amp = \langle -\sin t + 2t, \frac{e^{2t}-1}{4}, -\frac{t^3}{6} + t + 2 \rangle
+					\end{aligned}
+				</me>
+			</p>
+		</solution>
 	</exercise>
 	<exercise>
 		<introduction>
@@ -66,6 +136,17 @@
 					Find the unit tangent vector <m>\vec{T}(t)</m>.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<me>
+						\begin{aligned}
+						\vec{r}\,'(t) \amp = \langle 1, 0, 2t \rangle \\
+						|\vec{r}\,'(t)| \amp = \sqrt{1 + 4t^2} \\
+						\vec{T}(t) \amp = \langle \frac{1}{\sqrt{1+4t^2}}, 0, \frac{2t}{\sqrt{1+4t^2}} \rangle
+						\end{aligned}
+					</me>
+				</p>
+			</solution>
 		</task>
 		<task>
 			<statement>
@@ -73,6 +154,19 @@
 					Find the curvature at the point <m>(0,1,0)</m>.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					The point <m>(0,1,0)</m> corresponds to <m>t=0</m>.
+					<me>
+						\begin{aligned}
+						\vec{r}\,'(t) \amp = \langle 1, 0, 2t \rangle, \quad \vec{r}\,'(0) = \langle 1, 0, 0 \rangle, \quad |\vec{r}\,'(0)| = 1 \\
+						\vec{r}\,''(t) \amp = \langle 0, 0, 2 \rangle, \quad \vec{r}\,''(0) = \langle 0, 0, 2 \rangle \\
+						\vec{r}\,'(0) \times \vec{r}\,''(0) \amp = \begin{vmatrix} \hat{\imath} \amp \hat{\jmath} \amp \hat{k} \\ 1 \amp 0 \amp 0 \\ 0 \amp 0 \amp 2 \end{vmatrix} = \langle 0, -2, 0 \rangle \\
+						\kappa(0) \amp = \frac{|\vec{r}\,'(0) \times \vec{r}\,''(0)|}{|\vec{r}\,'(0)|^3} = \frac{2}{1^3} = 2
+						\end{aligned}
+					</me>
+				</p>
+			</solution>
 		</task>
 		<task>
 			<statement>
@@ -80,6 +174,11 @@
 					Write down an integral that represents the length of the curve, with <m>0 \leq t \leq 2</m>. You do NOT need to compute the integral.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<me>L = \int_0^2 \sqrt{1+4t^2} \, dt.</me>
+				</p>
+			</solution>
 		</task>
 	</exercise>
 	<exercise>
@@ -89,6 +188,20 @@
 					Let <m>|\vec{r}(t)|=1</m> for every <m>t</m>. Show <m>\vec{r}\,'(t) \cdot \vec{r}(t)=0</m> for every <m>t</m>.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					Since <m>|\vec{r}(t)| = 1</m>, we have <m>\vec{r}(t) \cdot \vec{r}(t) = |\vec{r}(t)|^2 = 1</m>.
+					Differentiating both sides:
+					<me>
+						\begin{aligned}
+						\frac{d}{dt} (\vec{r}(t) \cdot \vec{r}(t)) \amp = \frac{d}{dt} (1) \\
+						\vec{r}\,'(t) \cdot \vec{r}(t) + \vec{r}(t) \cdot \vec{r}\,'(t) \amp = 0 \\
+						2 \vec{r}\,'(t) \cdot \vec{r}(t) \amp = 0 \\
+						\vec{r}\,'(t) \cdot \vec{r}(t) \amp = 0
+						\end{aligned}
+					</me>
+				</p>
+			</solution>
 		</task>
 		<task>
 			<statement>
@@ -96,6 +209,14 @@
 					Explain why <m>\vec{T}(t)</m> is orthogonal to <m>\vec{N}(t)</m> for every <m>t</m>.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					By definition, <m>\vec{N}(t) = \frac{\vec{T}\,'(t)}{|\vec{T}\,'(t)|}</m>, so <m>\vec{N}(t)</m> has the same direction as <m>\vec{T}\,'(t)</m>.
+					Since <m>\vec{T}(t)</m> is a unit vector, <m>|\vec{T}(t)| = 1</m>.
+					Applying the result from the previous task, <m>\vec{T}\,'(t) \cdot \vec{T}(t) = 0</m>.
+					Therefore, <m>\vec{T}(t)</m> is orthogonal to <m>\vec{T}\,'(t)</m>, which implies <m>\vec{T}(t)</m> is orthogonal to <m>\vec{N}(t)</m>.
+				</p>
+			</solution>
 		</task>
 	</exercise>
 </worksheet>
