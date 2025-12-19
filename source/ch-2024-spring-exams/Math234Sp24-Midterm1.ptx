@@ -356,7 +356,7 @@
 			</statement>
 			<solution>
 				<p>
-					(No analytical solution provided in prompt for sketching, but the description describes the domain).
+					The domain is the region below the curve <m>y=x^3</m>, excluding the line <m>y=x</m>. The boundaries <m>y=x^3</m> and <m>y=x</m> should be drawn with dotted lines as they are not part of the domain. The region below <m>y=x^3</m> should be shaded.
 				</p>
 			</solution>
 		</task>
