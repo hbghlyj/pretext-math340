@@ -143,7 +143,7 @@
 			</statement>
 			<solution>
 				<p>
-					<me>L = \int_1^2 \sqrt{1^2 + (2t)^2 + (2+3t^2)^2} \, dt.</me>
+					<me>L = \int_1^2 \sqrt{1^2 + (2t)^2 + (2+3t^2)^2} \, dt</me>.
 				</p>
 			</solution>
 		</task>
