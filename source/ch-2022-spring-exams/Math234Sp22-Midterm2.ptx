@@ -56,7 +56,7 @@
 		<solution>
 			<p>
 				By the Chain Rule:
-				<me>\frac{dz}{dt} = \frac{\partial z}{\partial x} \frac{\partial x}{\partial t} + \frac{\partial z}{\partial y} \frac{\partial y}{\partial t}.</me>
+				<me>\frac{\partial z}{\partial t} = \frac{\partial z}{\partial x} \frac{\partial x}{\partial t} + \frac{\partial z}{\partial y} \frac{\partial y}{\partial t}.</me>
 				Compute partials of <m>z</m>:
 				<me>\frac{\partial z}{\partial x} = \frac{1}{2}(x^2+6y^2)^{-1/2} \cdot 2x, \quad \frac{\partial z}{\partial y} = \frac{1}{2}(x^2+6y^2)^{-1/2} \cdot 12y.</me>
 				When <m>s=2</m> and <m>t=1</m>, we have <m>x = f(2, 1) = 1</m> and <m>y = g(2, 1) = 2</m>.
