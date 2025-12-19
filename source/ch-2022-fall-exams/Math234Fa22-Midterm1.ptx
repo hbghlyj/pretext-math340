@@ -4,7 +4,7 @@
 	<exercise>
 		<statement>
 			<p>
-				Let <m>\vec{a}=\langle 2,4,0\rangle</m> and <m>\vec{b}=\langle 3,4,1\rangle</m>. Find the vector projection of <m>\vec{b}</m> onto <m>\vec{a}</m>.
+Let <m>\vec{a}=\left\langle 2,4,0\right\rangle</m> and <m>\vec{b}=\left\langle 3,4,1\right\rangle</m>. Find the vector projection of <m>\vec{b}</m> onto <m>\vec{a}</m>.
 			</p>
 		</statement>
 	</exercise>
