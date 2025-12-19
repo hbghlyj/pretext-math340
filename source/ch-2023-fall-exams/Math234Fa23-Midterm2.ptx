@@ -9,11 +9,19 @@
 		</statement>
 		<solution>
 			<p>
-				Let <m>f(x,y) = e^{xy} + x^3y.</m> We find the partial derivatives:
-				<me>f_x = y e^{xy} + 3x^2y \implies f_x(0,3) = 3 e^0 + 0 = 3</me>
-				<me>f_y = x e^{xy} + x^3 \implies f_y(0,3) = 0 e^0 + 0 = 0</me>
-				The equation of the tangent plane at <m>(0,3,1)</m> is:
-				<me>z - 1 = 3(x-0) + 0(y-3) \implies z = 3x+1.</me>
+				The equation of the tangent plane to <m>z=f(x, y)</m> at <m>(0,3,1)</m> is given by
+				<me>z-1=f_x(0,3) \cdot x+f_y(0,3)(y-3).</me>
+				Here,
+				<me>
+					\begin{aligned}
+					f_x \amp = y e^{x y}+3 x^2 y \\
+					f_y \amp = x e^{x y}+x^3 \\
+					f_x(0,3) \amp = 3 \\
+					f_y(0,3) \amp = 0
+					\end{aligned}
+				</me>
+				The equation of the tangent plane is
+				<me>z-1=3 x.</me>
 			</p>
 		</solution>
 	</exercise>
@@ -31,10 +39,13 @@
 			</statement>
 			<solution>
 				<p>
-					We set the partial derivatives to zero:
-					<me>f_x = 2x - 2y = 0 \implies x=y</me>
-					<me>f_y = 8y - 2x = 0 \implies 8y - 2y = 6y = 0 \implies y=0</me>
-					If <m>y=0,</m> then <m>x=0.</m> The only critical point is <m>(0,0).</m>
+					<me>
+						\begin{cases}
+						f_x=2 x-2 y=0 \\
+						f_y=8 y-2 x=0
+						\end{cases}
+					</me>
+					From (1), <m>y=x.</m> From (2), <m>8 x-2 x=0 \implies x=0.</m> The only critical point is <m>(0,0).</m>
 				</p>
 			</solution>
 		</task>
@@ -46,10 +57,16 @@
 			</statement>
 			<solution>
 				<p>
-					We use the second derivative test:
-					<me>f_{xx} = 2, \quad f_{yy} = 8, \quad f_{xy} = -2</me>
-					<me>D = f_{xx}f_{yy} - (f_{xy})^2 = (2)(8) - (-2)^2 = 16 - 4 = 12 \gt 0.</me>
-					Since <m>D \gt 0</m> and <m>f_{xx} = 2 \gt 0,</m> the point <m>(0,0)</m> is a local minimum.
+					<me>
+						\begin{aligned}
+						f_{x x} \amp = 2 \\
+						f_{y y} \amp = 8 \\
+						f_{x y} \amp = -2.
+						\end{aligned}
+					</me>
+					At <m>(0,0),</m>
+					<me>D=f_{x x} f_{y y}-f_{x y}^2=2 \cdot 8-4=12 \gt 0.</me>
+					Since <m>f_{x x}(0,0)=2 \gt 0,</m> there is a local min at <m>(0,0).</m>
 				</p>
 			</solution>
 		</task>
@@ -68,9 +85,15 @@
 			</statement>
 			<solution>
 				<p>
-					<me>\nabla f = \langle 2x \cos(x^2-y), -\cos(x^2-y) \rangle</me>
-					At <m>(2,4),</m> <m>\cos(4-4) = \cos(0) = 1.</m>
-					<me>\nabla f(2,4) = \langle 4(1), -1 \rangle = \langle 4, -1 \rangle.</me>
+					<me>
+						\begin{aligned}
+						f_x \amp = \cos \left(x^2-y\right) \cdot 2 x \\
+						f_y \amp = \cos \left(x^2-y\right)(-1) \\
+						f_x(2,4) \amp = \cos (0) \cdot 4=4 \\
+						f_y(2,4) \amp = \cos (0)(-1)=-1.
+						\end{aligned}
+					</me>
+					Then, <me>\nabla f(2,4)=\langle 4,-1\rangle.</me>
 				</p>
 			</solution>
 		</task>
@@ -82,13 +105,11 @@
 			</statement>
 			<solution>
 				<p>
-					The unit vector in the direction of <m>\vec{v}</m> is <m>\vec{u} = \frac{\langle 1, -2 \rangle}{\sqrt{1^2 + (-2)^2}} = \frac{1}{\sqrt{5}} \langle 1, -2 \rangle.</m>
-					The directional derivative is:
 					<me>
 						\begin{aligned}
-						D_{\vec{u}} f(2,4) \amp = \nabla f(2,4) \cdot \vec{u} \\
-						\amp = \langle 4, -1 \rangle \cdot \frac{1}{\sqrt{5}} \langle 1, -2 \rangle \\
-						\amp = \frac{4 + 2}{\sqrt{5}} = \frac{6}{\sqrt{5}}.
+						\vec{v} \amp = \langle 1,-2\rangle \\
+						|\vec{v}| \amp = \sqrt{1+4}=\sqrt{5} \\
+						D_{\vec{u}} f(2,4) \amp = \langle 4, -1 \rangle \cdot \langle 1 / \sqrt{5}, -2 / \sqrt{5} \rangle = \frac{4}{\sqrt{5}} + \frac{2}{\sqrt{5}} = \frac{6}{\sqrt{5}}.
 						\end{aligned}
 					</me>
 				</p>
@@ -109,13 +130,13 @@
 			</statement>
 			<solution>
 				<p>
-					Let <m>g(x,y,z) = x^2+y^2+z^2 - 21 = 0.</m> The system is:
+					We need <m>\nabla f=\lambda \nabla g,</m> and <m>g(x, y, z)=21,</m> where <m>g(x, y, z)=x^2+y^2+z^2.</m> That is, we need to solve
 					<me>
 						\begin{cases}
-						1 = 2\lambda x \\
-						2 = 2\lambda y \\
-						4 = 2\lambda z \\
-						x^2+y^2+z^2 = 21
+						1=2 \lambda x \\
+						2=2 \lambda y \\
+						4=2 \lambda z \\
+						x^2+y^2+z^2=21
 						\end{cases}
 					</me>
 				</p>
@@ -129,10 +150,15 @@
 			</statement>
 			<solution>
 				<p>
-					From the first three equations, <m>x = \frac{1}{2\lambda}, y = \frac{1}{\lambda}, z = \frac{2}{\lambda}.</m> Substituting into the constraint:
-					<me>\frac{1}{4\lambda^2} + \frac{1}{\lambda^2} + \frac{4}{\lambda^2} = 21 \implies \frac{1+4+16}{4\lambda^2} = 21 \implies \frac{21}{4\lambda^2} = 21.</me>
-					Thus <m>4\lambda^2 = 1 \implies \lambda = \pm 1/2.</m>
-					So <m>\lambda_1 = 1/2</m> and <m>\lambda_2 = -1/2.</m>
+					From (1), we know <m>\lambda \neq 0.</m> We can write <m>x=\frac{1}{2 \lambda}, y=\frac{1}{\lambda}, z=\frac{2}{\lambda}.</m> Plugging into the constraint, we get
+					<me>\frac{1}{4 \lambda^2}+\frac{1}{\lambda^2}+\frac{4}{\lambda^2}=21.</me>
+					<me>
+						\begin{aligned}
+						\frac{1+4+16}{4 \lambda^2} \amp = 21 \\
+						\frac{21}{4 \lambda^2} \amp = 21 \implies \lambda^2 = \frac{1}{4}
+						\end{aligned}
+					</me>
+					<me>\lambda_1=1 / 2, \quad \lambda_2=-1 / 2.</me>
 				</p>
 			</solution>
 		</task>
@@ -144,10 +170,11 @@
 			</statement>
 			<solution>
 				<p>
-					For <m>\lambda_1 = 1/2:</m> <m>x_1 = 1, y_1 = 2, z_1 = 4.</m> Point: <m>(1,2,4).</m>
+					When <m>\lambda=1 / 2,</m> we have <m>x=\frac{1}{2 \lambda}=1, y=\frac{1}{\lambda}=2, z=\frac{2}{\lambda}=4.</m>
 				</p>
 				<p>
-					For <m>\lambda_2 = -1/2:</m> <m>x_2 = -1, y_2 = -2, z_2 = -4.</m> Point: <m>(-1,-2,-4).</m>
+					When <m>\lambda=-1 / 2,</m> we have <m>x=\frac{1}{2 \lambda}=-1, y=\frac{1}{\lambda}=-2, z=\frac{2}{\lambda}=-4.</m>
+					<me>\left(x_1, y_1, z_1\right)=(1,2,4), \quad \left(x_2, y_2, z_2\right)=(-1,-2,-4).</me>
 				</p>
 			</solution>
 		</task>
@@ -159,10 +186,13 @@
 			</statement>
 			<solution>
 				<p>
-					Evaluating <m>f(x,y,z) = x+2y+4z</m> at the points:
-					<me>f(1,2,4) = 1 + 2(2) + 4(4) = 21.</me>
-					<me>f(-1,-2,-4) = -1 + 2(-2) + 4(-4) = -21.</me>
-					The absolute maximum value is 21, and the absolute minimum value is -21.
+					<me>
+						\begin{aligned}
+						f(1,2,4) \amp = 1+4+16=21 \\
+						f(-1,-2,-4) \amp = -1-4-16=-21
+						\end{aligned}
+					</me>
+					The absolute max is 21 and the absolute min is -21.
 				</p>
 			</solution>
 		</task>
@@ -183,9 +213,9 @@
 				<p>
 					<me>
 						\begin{aligned}
-						\int_0^1 \int_0^y 2 x y^2 \, d x \, d y \amp = \int_0^1 [x^2 y^2]_0^y \, d y \\
-						\amp = \int_0^1 y^4 \, d y \\
-						\amp = \left[ \frac{y^5}{5} \right]_0^1 = 1/5.
+						\int_0^1 \int_0^y 2 x y^2 \, d x \, d y \amp = \int_0^1 \left(\left.x^2 y^2\right|_0^y\right) d y \\
+						\amp = \int_0^1\left(y^2 y^2-0\right) d y = \int_0^1 y^4 d y \\
+						\amp = \left.\frac{y^5}{5}\right|_0^1 = \frac{1}{5}.
 						\end{aligned}
 					</me>
 				</p>
@@ -199,11 +229,19 @@
 			</statement>
 			<solution>
 				<p>
-					The region of integration is <m>0 \le y \le 1, 3y \le x \le 3.</m> Reversing the order of integration gives <m>0 \le x \le 3, 0 \le y \le x/3:</m>
+					We need to change the order of integration:
 					<me>
 						\begin{aligned}
-						\int_0^3 \int_0^{x/3} e^{x^2} \, d y \, d x \amp = \int_0^3 \frac{x}{3} e^{x^2} \, d x \\
-						\amp = \left[ \frac{1}{6} e^{x^2} \right]_0^3 = \frac{e^9 - 1}{6}.
+						3 y \amp \le x \le 3 \\
+						0 \amp \le y \le 1
+						\end{aligned}
+					</me>
+					<me>
+						\begin{aligned}
+						\int_0^1 \int_{3 y}^3 e^{x^2} d x d y \amp = \int_0^3 \int_0^{x / 3} e^{x^2} d y d x \\
+						\amp = \int_0^3\left(\left.y e^{x^2}\right|_{y=0}^{y=x / 3}\right) d x = \int_0^3 \frac{1}{3} x e^{x^2} d x \\
+						\amp = \int_0^9 \frac{1}{3} \cdot \frac{1}{2} e^u d u \\
+						\amp = \left.\frac{1}{6} e^u\right|_0^9=\frac{1}{6} e^9-\frac{1}{6}.
 						\end{aligned}
 					</me>
 				</p>
@@ -224,9 +262,8 @@
 			</statement>
 			<solution>
 				<p>
-					The boundaries are circles <m>r=2</m> and <m>r=5,</m> the line <m>\theta = \pi/4</m> (which is <m>y=x</m>), and the <m>y</m>-axis which is <m>\theta = \pi/2.</m>
-					Using polar coordinates:
-					<me>\int_{\pi/4}^{\pi/2} \int_2^5 (r^2)^8 r \, d r \, d \theta = \int_{\pi/4}^{\pi/2} \int_2^5 r^{17} \, d r \, d \theta.</me>
+					Use polar coordinates. <m>f(r \cos \theta, r \sin \theta)=\left(r^2\right)^8=r^{16}.</m> Then,
+					<me>\iint_{\mathcal{R}} f(x, y) d x d y = \int_{\pi / 4}^{\pi / 2} \int_2^5 r^{16} \cdot r d r d \theta.</me>
 				</p>
 			</solution>
 		</task>
@@ -238,8 +275,7 @@
 			</statement>
 			<solution>
 				<p>
-					The intersection point of <m>y=x^3-1</m> and the tangent line is given in the hint as <m>x=1/2.</m> The other boundary is <m>x=2.</m> Over the interval <m>[1/2, 2],</m> <m>x^3-1 \ge \frac{3}{4}x - \frac{10}{8}.</m>
-					<me>\int_{1/2}^2 \int_{\frac{3x}{4} - \frac{10}{8}}^{x^3-1} (x^2-y^2) \, d y \, d x.</me>
+					<me>\iint_{\mathcal{R}} f(x, y) d x d y = \int_{1 / 2}^2 \int_{3x/4 - 10/8}^{x^3-1} (x^2-y^2) d y d x.</me>
 				</p>
 			</solution>
 		</task>
@@ -258,8 +294,8 @@
 			</statement>
 			<solution>
 				<p>
-					In spherical coordinates, the cone <m>z = r</m> corresponds to <m>\phi = \pi/4.</m> The hemisphere is <m>\rho = 1.</m>
-					<me>V = \int_0^{2\pi} \int_0^{\pi/4} \int_0^1 \rho^2 \sin \phi \, d\rho \, d\phi \, d\theta.</me>
+					Using spherical coordinates, we have
+					<me>V=\int_0^{2 \pi} \int_0^{\pi / 4} \int_0^1 \rho^2 \sin \phi d \rho d \phi d \theta.</me>
 				</p>
 			</solution>
 		</task>
@@ -271,8 +307,8 @@
 			</statement>
 			<solution>
 				<p>
-					Using cylindrical coordinates, the cylinders are <m>r=1</m> and <m>r=2.</m> The height is <m>z = 12 - 3x - 2y = 12 - 3r\cos\theta - 2r\sin\theta.</m>
-					<me>V = \int_0^{2\pi} \int_1^2 \int_0^{12 - 3r\cos\theta - 2r\sin\theta} r \, dz \, dr \, d\theta.</me>
+					Using Cylindrical coordinates, we can write
+					<me>V=\int_0^{2 \pi} \int_1^2 \int_0^{12-3 r \cos \theta-2 r \sin \theta} r d z d r d \theta.</me>
 				</p>
 			</solution>
 		</task>
