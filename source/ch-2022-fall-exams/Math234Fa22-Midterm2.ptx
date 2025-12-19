@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet xml:id="Math234Fa22-Midterm2" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Math 234 Fall 2022 Midterm 2</title>
+
+	<exercise points="12">
+		<statement>
+			<p>
+				Let <m>z = f(x, y)</m>, where <m>x = s^2t</m> and <m>y = s + 4t^5</m>. Suppose <m>\frac{\partial z}{\partial x} = 3x^2y^2 + 4</m> and <m>\frac{\partial z}{\partial y} = 2x^3y</m>. Use the Chain Rule to compute <m>\frac{\partial z}{\partial s}</m> when <m>s = 3</m> and <m>t = -1</m>.
+			</p>
+		</statement>
+		<solution>
+			<p>
+				By the Chain Rule:
+				<me>\frac{\partial z}{\partial s} = \frac{\partial z}{\partial x} \frac{\partial x}{\partial s} + \frac{\partial z}{\partial y} \frac{\partial y}{\partial s}.</me>
+				The partial derivatives of <m>x</m> and <m>y</m> with respect to <m>s</m> are:
+				<me>\frac{\partial x}{\partial s} = 2st, \quad \frac{\partial y}{\partial s} = 1.</me>
+				Substituting the given expressions:
+				<me>\frac{\partial z}{\partial s} = (3x^2y^2+4) \cdot 2st + (2x^3y) \cdot 1.</me>
+				When <m>s=3</m> and <m>t=-1</m>:
+				<me>x = (3^2)(-1) = -9, \quad y = 3 + 4(-1)^5 = 3 - 4 = -1.</me>
+				Substituting these values into the expression for <m>\frac{\partial z}{\partial s}</m>:
+				<me>\frac{\partial z}{\partial s} = (3(-9)^2(-1)^2 + 4) \cdot 2(3)(-1) + 2(-9)^3(-1).</me>
+				Working this out:
+				<me>= (3(81)(1) + 4) \cdot (-6) + 2(-729)(-1) = (243+4)(-6) + 1458 = (247)(-6) + 1458 = -1482 + 1458 = -24.</me>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise points="12">
+		<statement>
+			<p>
+				Find the equation of the tangent plane to the surface <m>z = xy^3 + \sin(\pi x)</m> at the point <m>(1, 2, 8)</m>.
+			</p>
+		</statement>
+		<solution>
+			<p>
+				Let <m>f(x, y) = xy^3 + \sin(\pi x)</m>. The equation of the tangent plane at <m>(1, 2, 8)</m> is:
+				<me>z - 8 = f_x(1, 2)(x - 1) + f_y(1, 2)(y - 2).</me>
+				First, we compute the partial derivatives:
+				<me>f_x = y^3 + \pi \cos(\pi x), \quad f_y = 3xy^2.</me>
+				Evaluating at <m>(1, 2)</m>:
+				<me>f_x(1, 2) = 2^3 + \pi \cos(\pi \cdot 1) = 8 + \pi(-1) = 8 - \pi.</me>
+				<me>f_y(1, 2) = 3(1)(2^2) = 12.</me>
+				The equation of the tangent plane is:
+				<me>z - 8 = (8 - \pi)(x - 1) + 12(y - 2).</me>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise points="14">
+		<statement>
+			<p>
+				Find the points <m>(x, y)</m> where the local maxima, minima and saddle points of the function <m>f(x, y) = x^2 + 2y^2 - x^2y</m> occur, and label them as local maxima, local minima or saddle points.
+			</p>
+		</statement>
+		<solution>
+			<p>
+				To find critical points, we solve the system:
+				<me>
+					\begin{cases}
+					f_x = 2x - 2xy = 0 \amp (1) \\
+					f_y = 4y - x^2 = 0 \amp (2)
+					\end{cases}
+				</me>
+				From (2), we have <m>4y = x^2 \implies y = \frac{1}{4}x^2</m>.
+				Substituting this into (1):
+				<me>2x - 2x \left(\frac{x^2}{4}\right) = 0 \implies 2x \left(1 - \frac{x^2}{4}\right) = 0.</me>
+				This gives <m>x = 0</m> or <m>x^2 = 4</m> (so <m>x = \pm 2</m>).
+				<ul>
+					<li>If <m>x=0</m>, then <m>y = 0</m>. Point: <m>(0, 0)</m>.</li>
+					<li>If <m>x=2</m>, then <m>y = \frac{2^2}{4} = 1</m>. Point: <m>(2, 1)</m>.</li>
+					<li>If <m>x=-2</m>, then <m>y = \frac{(-2)^2}{4} = 1</m>. Point: <m>(-2, 1)</m>.</li>
+				</ul>
+				Now we classify the critical points using the second derivative test:
+				<me>f_{xx} = 2 - 2y, \quad f_{yy} = 4, \quad f_{xy} = -2x.</me>
+				The discriminant is <m>D = f_{xx}f_{yy} - (f_{xy})^2 = (2 - 2y)(4) - (-2x)^2 = 8 - 8y - 4x^2</m>.
+				<ul>
+					<li>Point <m>(0, 0)</m>: <m>D = 8 - 0 - 0 = 8 > 0</m>. Since <m>f_{xx}(0, 0) = 2 > 0</m>, it is a <strong>local minimum</strong>.</li>
+					<li>Point <m>(2, 1)</m>: <m>D = 8 - 8(1) - 4(2)^2 = -16 \lt 0</m>, so it is a <strong>saddle point</strong>.</li>
+					<li>Point <m>(-2, 1)</m>: <m>D = 8 - 8(1) - 4(-2)^2 = -16 \lt 0</m>, so it is a <strong>saddle point</strong>.</li>
+				</ul>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise points="14">
+		<statement>
+			<p>
+				Find the maximum and minimum values of the function <m>f(x, y) = xy + 14</m> subject to the constraint <m>x^2 + y^2 = 18</m>.
+			</p>
+		</statement>
+		<solution>
+			<p>
+				Let <m>g(x, y) = x^2 + y^2 = 18</m>. We solve <m>\nabla f = \lambda \nabla g</m>:
+				<me>\nabla f = \langle y, x \rangle, \quad \nabla g = \langle 2x, 2y \rangle.</me>
+				The system is:
+				<me>
+					\begin{cases}
+					y = 2\lambda x \amp (1) \\
+					x = 2\lambda y \amp (2) \\
+					x^2 + y^2 = 18 \amp (3)
+					\end{cases}
+				</me>
+				Notice that if <m>x=0</m>, then by (1) <m>y=0</m>, but <m>(0,0)</m> does not satisfy (3). So <m>x, y \neq 0</m>.
+				From (1) and (2):
+				<me>\lambda = \frac{y}{2x} = \frac{x}{2y} \implies 2y^2 = 2x^2 \implies y^2 = x^2.</me>
+				Substituting into the constraint (3):
+				<me>x^2 + x^2 = 18 \implies 2x^2 = 18 \implies x^2 = 9 \implies x = \pm 3.</me>
+				This gives four points: <m>(3, 3), (3, -3), (-3, 3)</m>, and <m>(-3, -3)</m>.
+				Values of <m>f</m>:
+				<ul>
+					<li><m>f(3, 3) = 3(3) + 14 = 23</m></li>
+					<li><m>f(3, -3) = 3(-3) + 14 = 5</m></li>
+					<li><m>f(-3, 3) = (-3)(3) + 14 = 5</m></li>
+					<li><m>f(-3, -3) = (-3)(-3) + 14 = 23</m></li>
+				</ul>
+				The <strong>maximum value is 23</strong> and the <strong>minimum value is 5</strong>.
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise points="24">
+		<introduction>
+			<p>
+				Compute the following integrals.
+			</p>
+		</introduction>
+		<task points="6">
+			<statement>
+				<p>
+					<m>\displaystyle\int_0^4 \int_x^{x^3} 4x + 6 \, dy \, dx</m>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<me>\int_0^4 \left[ \int_x^{x^3} (4x+6) \, dy \right] \, dx = \int_0^4 (4x+6)y |_{y=x}^{y=x^3} \, dx.</me>
+					<me>= \int_0^4 (4x+6)(x^3-x) \, dx = \int_0^4 (4x^4 - 4x^2 + 6x^3 - 6x) \, dx.</me>
+					<me>= \left[ \frac{4x^5}{5} - \frac{4x^3}{3} + \frac{6x^4}{4} - \frac{6x^2}{2} \right]_0^4 = \frac{4 \cdot 4^5}{5} - \frac{4 \cdot 4^3}{3} + \frac{6 \cdot 4^4}{4} - \frac{6 \cdot 4^2}{2}.</me>
+                    <me>=\frac{4096}{5} - \frac{256}{3} + 336 = \frac{12288 - 1280 + 5040}{15} = \frac{16048}{15}.</me>
+				</p>
+			</solution>
+		</task>
+		<task points="9">
+			<statement>
+				<p>
+					<m>\displaystyle\int_0^1 \int_x^1 e^{y^2} \, dy \, dx</m>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Change order of integration. The region is <m>0 \le x \le 1, x \le y \le 1</m>, which is the same as <m>0 \le y \le 1, 0 \le x \le y</m>.
+					<me>\int_0^1 \int_0^y e^{y^2} \, dx \, dy = \int_0^1 (e^{y^2} x) |_0^y \, dy = \int_0^1 y e^{y^2} \, dy.</me>
+					Let <m>u = y^2</m>, then <m>du = 2y \, dy</m>.
+					<me>= \int_0^1 e^u \frac{1}{2} \, du = \left[ \frac{1}{2} e^u \right]_0^1 = \frac{1}{2}e - \frac{1}{2}.</me>
+				</p>
+			</solution>
+		</task>
+		<task points="9">
+			<statement>
+				<p>
+					<m>\displaystyle\iint_{\mathcal{R}} \ln(x^2 + y^2) \, dA</m>, where <m>\mathcal{R}</m> is the region on the first quadrant between the curves <m>y = \sqrt{25-x^2}</m> and <m>y = \sqrt{9-x^2}</m>.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Use polar coordinates. The region is a quarter-annulus with <m>3 \le r \le 5</m> and <m>0 \le \theta \le \pi/2</m>.
+					<me>\iint_{\mathcal{R}} \ln(x^2+y^2) \, dA = \int_0^{\pi/2} \int_3^5 \ln(r^2) r \, dr \, d\theta.</me>
+					Let <m>a = r^2</m>, then <m>da = 2r \, dr</m>.
+					<me>= \int_0^{\pi/2} \int_9^{25} \ln(a) \frac{1}{2} \, da \, d\theta.</me>
+					Using integration by parts for <m>\int \ln(a) \, da</m> (<m>u = \ln(a), dv = da</m>):
+					<me>\int \ln(a) \, da = a \ln(a) - a.</me>
+					So, <m>\int_9^{25} \ln(a) \, da = [25\ln(25) - 25] - [9\ln(9) - 9] = 25\ln(25) - 9\ln(9) - 16.</me>
+					The total integral is:
+<me>= \frac{1}{2} \cdot \frac{\pi}{2} (25\ln(25) - 9\ln(9) - 16) = \frac{\pi}{4}(50\ln(5) - 18\ln(3) - 16).</me>
+				</p>
+			</solution>
+		</task>
+	</exercise>
+
+	<exercise points="24">
+		<introduction>
+			<p>
+				Write down integrals that represent the volume of the following three solids. You do NOT need to solve the integrals.
+			</p>
+		</introduction>
+		<task points="8">
+			<statement>
+				<p>
+					The solid that lies above the cone <m>z = \sqrt{x^2+y^2}</m> and between the spheres <m>x^2+y^2+z^2=4</m> and <m>x^2+y^2+z^2=16</m>.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Use spherical coordinates. The cone <m>z = \sqrt{x^2+y^2}</m> is <m>\phi = \pi/4</m>. "Above" the cone means <m>0 \le \phi \le \pi/4</m>. The spheres have radii 2 and 4.
+					<me>V = \int_0^{2\pi} \int_0^{\pi/4} \int_2^4 \rho^2 \sin \phi \, d\rho \, d\phi \, d\theta.</me>
+				</p>
+			</solution>
+		</task>
+		<task points="8">
+			<statement>
+				<p>
+					The solid above the plane <m>z = 0</m>, below the plane <m>z = x + y + 6</m>, and between the cylinders <m>x^2 + y^2 = 1</m> and <m>x^2 + y^2 = 9</m>.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Using cylindrical coordinates:
+					<me>V = \int_0^{2\pi} \int_1^3 \int_0^{r\cos\theta+r\sin\theta+6} r \, dz \, dr \, d\theta.</me>
+				</p>
+			</solution>
+		</task>
+		<task points="8">
+			<statement>
+				<p>
+					The solid that is a portion of the ball <m>x^2 + y^2 + z^2 \le 4</m> between the planes <m>z=0</m> and <m>z=1</m>.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Use spherical coordinates. The plane <m>z=1</m> is <m>\rho \cos \phi = 1 \implies \rho = 1/\cos\phi</m>. The plane <m>z=0</m> is <m>\phi = \pi/2</m>. The sphere radius is 2. The intersection of <m>z=1</m> and <m>x^2+y^2+z^2=4</m> is at <m>\cos \phi = 1/2 \implies \phi = \pi/3</m>.
+				</p>
+				<p>
+					To set up the integral in spherical coordinates, we split the volume into two regions at <m>\phi=\pi/3</m>, where the plane <m>z=1</m> intersects the sphere <m>\rho=2</m>. The total volume is the sum of the integrals over these two regions:
+					<me>V = \int_0^{2\pi} \int_0^{\pi/3} \int_0^{1/\cos\phi} \rho^2 \sin \phi \, d\rho \, d\phi \, d\theta + \int_0^{2\pi} \int_{\pi/3}^{\pi/2} \int_0^2 \rho^2 \sin \phi \, d\rho \, d\phi \, d\theta.</me>
+				</p>
+			</solution>
+		</task>
+	</exercise>
+</worksheet>
