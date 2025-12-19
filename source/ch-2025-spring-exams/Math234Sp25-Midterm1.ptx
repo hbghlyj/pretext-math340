@@ -38,7 +38,7 @@
 						\amp = \hat{\imath}(-5) - \hat{\jmath}(8) - 6\hat{k} = \langle -5, -8, -6 \rangle
 						\end{aligned}
 					</me>
-					Area of parallelogram = <m>\sqrt{5^2+8^2+6^2}</m>
+Area of parallelogram = <m>|\langle -5, -8, -6 \rangle| = \sqrt{(-5)^2+(-8)^2+(-6)^2} = \sqrt{125} = 5\sqrt{5}</m>
 				</p>
 			</solution>
 		</task>
