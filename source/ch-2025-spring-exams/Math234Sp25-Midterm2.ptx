@@ -60,7 +60,7 @@
 					\frac{\partial z}{\partial x} \amp = -\frac{F_x}{F_z} \\
 					F_x \amp = 2xz^2 - 2xe^y \\
 					F_z \amp = 2x^2z + 6yz^2 - 2 \\
-					\frac{\partial z}{\partial x} \amp = -\frac{2xz^2 - 2xe^y}{2x^2z + 6yz^2 - 2}
+\frac{\partial z}{\partial x} \amp = -\frac{x(z^2 - e^y)}{x^2z + 3yz^2 - 1}
 					\end{aligned}
 				</me>
 			</p>
