@@ -2,4 +2,5 @@
 <chapter xml:id="ch-2019-spring-exams" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>2019 Spring Exams</title>
   <xi:include href="./ch-2019-spring-exams/Math234Sp19-Midterm1.ptx"/>
+  <xi:include href="./ch-2019-spring-exams/Math234Sp19-Midterm2.ptx"/>
 </chapter>
