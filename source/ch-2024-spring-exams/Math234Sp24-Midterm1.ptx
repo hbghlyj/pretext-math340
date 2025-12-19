@@ -167,22 +167,9 @@
 				<me>
 					\lim_{x \to 0} \frac{x^2(x)}{2x^6+x^2} = \lim_{x \to 0} \frac{x^3}{x^2(2x^4+1)} = \lim_{x \to 0} \frac{x}{2x^4+1} = \frac{0}{1} = 0
 				</me>
-				Along Path 2 <m>y=x^3</m>: (Wait, user prompt says <m>y=x^2</m> but the math shows <m>x^4/x^4...=1</m>, which means <m>y=x^2 \implies x^2(x^2)=x^4</m> and <m>y^2=(x^2)^2=x^4</m>. Let's use <m>y=x^3</m> for the example if it fits the <m>x^6</m> term, but the user calculation says <m>y=x^2</m> and <m>x^4</m> simplification. I will follow user's <m>y=x^2</m>).
-				Along Path 2 <m>y=x^3</m>:
+				Along Path 2 <m>y=x^2</m>:
 				<me>
-					\lim_{x \to 0} \frac{x^2(x^3)}{2x^6+(x^3)^2} = \lim_{x \to 0} \frac{x^5}{3x^6} \text{ (no wait)}
-				</me>
-				User prompt math:
-				Along Path 2 <m>y=x^3</m> (their text says <m>x^4</m> for <m>y=x^2</m>):
-				<me>
-					\lim_{x \to 0} \frac{x^2(x^3)}{2x^6+(x^3)^2} = \lim_{x \to 0} \frac{x^5}{3x^6} \text{ - no, user's math is for } y=x^3.
-				</me>
-				Let's look at user prompt again:
-				`Path 2 y=x^2`
-				`\lim_{x \to 0} \frac{x^4}{2x^6+x^4} = 1`
-				This is correct for <m>y=x^2</m>.
-				<me>
-					\lim_{x \to 0} \frac{x^2(x^2)}{2x^6+(x^2)^2} = \lim_{x \to 0} \frac{x^4}{2x^6+x^4} = \lim_{x \to 0} \frac{x^4}{x^4(2x^2+1)} = \frac{1}{1} = 1
+					\lim_{x \to 0} \frac{x^2(x^2)}{2x^6+(x^2)^2} = \lim_{x \to 0} \frac{x^4}{2x^6+x^4} = \lim_{x \to 0} \frac{x^4}{x^4(2x^2+1)} = \lim_{x \to 0} \frac{1}{2x^2+1} = 1
 				</me>
 				Since the limits along these two paths are different, the given limit does not exist.
 			</p>
