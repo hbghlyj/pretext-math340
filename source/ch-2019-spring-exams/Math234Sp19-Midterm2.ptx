@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<worksheet xml:id="Math234Sp19-Midterm2" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Math 234 - Midterm 2 - Spring 2019</title>
+
+	<exercise points="14">
+		<introduction>
+			<p>
+				Decide whether the following limits exist. If the limit does not exist, justify why. If the limit exists, compute it.
+			</p>
+		</introduction>
+		<task points="7">
+			<statement>
+				<p>
+					<m>\displaystyle\lim_{(x,y) \to (0,0)} \frac{x^4 - 9y^2}{x^2 + 3y^2}</m>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					We test approach paths:
+					<ul>
+						<li>Along <m>x = 0</m>:
+							<me>\lim_{y \to 0} \frac{-9y^2}{3y^2} = -3.</me>
+						</li>
+						<li>Along <m>y = 0</m>:
+							<me>\lim_{x \to 0} \frac{x^4}{x^2} = \lim_{x \to 0} x^2 = 0.</me>
+						</li>
+					</ul>
+					Since different paths yield different limits (<m>-3 \neq 0</m>), the <strong>limit does not exist</strong>.
+				</p>
+			</solution>
+		</task>
+		<task points="7">
+			<statement>
+				<p>
+					<m>\displaystyle\lim_{(x,y) \to (0,0)} \frac{2x^2 y^2}{x^2 + y^2}</m>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Trying different paths, we seem to always get 0. We will use the Sandwich Theorem.
+					Notice that <m>0 \le \frac{x^2}{x^2+y^2} \le 1</m>.
+					So <m>0 \le \frac{x^2}{x^2+y^2} (2y^2) \le 2y^2</m>.
+					Since <m>\lim_{(x,y) \to (0,0)} 2y^2 = 0</m>, by the Sandwich Theorem, <m>\displaystyle\lim_{(x,y) \to (0,0)} \frac{2x^2 y^2}{x^2 + y^2} = 0.</m>
+				</p>
+			</solution>
+		</task>
+	</exercise>
+
+	<exercise points="21">
+		<task points="7">
+			<statement>
+				<p>
+					Find the directional derivative of <m>f(x, y) = 2x^3 - 4yx</m> at the point <m>(2, 0)</m> in the direction of <m>\langle 1, 2 \rangle</m>.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					First, compute the unit vector <m>\hat{u}</m> in the direction of <m>\vec{u} = \langle 1, 2 \rangle</m>:
+					<me>|\vec{u}| = \sqrt{1^2 + 2^2} = \sqrt{5}, \quad \hat{u} = \left\langle \frac{1}{\sqrt{5}}, \frac{2}{\sqrt{5}} \right\rangle.</me>
+					Now, compute the gradient <m>\nabla f(x, y)</m>:
+					<me>\nabla f = \langle 6x^2 - 4y, -4x \rangle.</me>
+					At <m>(2, 0)</m>:
+					<me>\nabla f(2, 0) = \langle 24, -8 \rangle.</me>
+					The directional derivative is:
+					<me>D_{\hat{u}} f = \langle 24, -8 \rangle \cdot \left\langle \frac{1}{\sqrt{5}}, \frac{2}{\sqrt{5}} \right\rangle = \frac{24}{\sqrt{5}} - \frac{16}{\sqrt{5}} = \frac{8}{\sqrt{5}}.</me>
+				</p>
+			</solution>
+		</task>
+		<task points="7">
+			<statement>
+				<p>
+					Let <m>f(x, y) = 2xy</m>. Let <m>g(s, t) = f(s + 3t, 2s^2 t)</m>. Find <m>\frac{\partial g}{\partial s}(s, t)</m>.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Let <m>x = s + 3t</m> and <m>y = 2s^2 t</m>. By the Chain Rule:
+					<me>\frac{\partial g}{\partial s} = \frac{\partial g}{\partial x} \frac{\partial x}{\partial s} + \frac{\partial g}{\partial y} \frac{\partial y}{\partial s}.</me>
+					Compute the parts:
+					<me>\frac{\partial f}{\partial x} = 2y, \quad \frac{\partial f}{\partial y} = 2x.</me>
+					<me>\frac{\partial x}{\partial s} = 1, \quad \frac{\partial y}{\partial s} = 4st.</me>
+					Substituting back:
+					<me>\frac{\partial g}{\partial s} = 2y(1) + 2x(4st) = 2(2s^2 t) + 2(s + 3t)(4st).</me>
+				</p>
+			</solution>
+		</task>
+		<task points="7">
+			<statement>
+				<p>
+					Find an equation of the tangent plane to <m>z = 2x^2 - y^2 - 4y</m> at the point <m>(1, 2, -10)</m>.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Let <m>f(x, y) = 2x^2 - y^2 - 4y</m>. The equation of the tangent plane is:
+					<me>f_x(x - x_0) + f_y(y - y_0) - (z - z_0) = 0.</me>
+					Compute partials:
+					<me>f_x = 4x, \quad f_y = -2y - 4.</me>
+					Evaluate at <m>(1, 2)</m>:
+					<me>f_x(1, 2) = 4, \quad f_y(1, 2) = -2(2) - 4 = -8.</me>
+					The equation is:
+					<me>4(x - 1) - 8(y - 2) - (z + 10) = 0.</me>
+				</p>
+			</solution>
+		</task>
+	</exercise>
+
+	<exercise points="14">
+		<statement>
+			<p>
+				Find the maxima and minima of <m>f(x, y) = xy</m> subject to the constraint <m>3x^2 + y^2 = 6</m>.
+			</p>
+		</statement>
+		<solution>
+			<p>
+				Let <m>g(x, y) = 3x^2 + y^2 - 6 = 0</m>. We solve <m>\nabla f = \lambda \nabla g</m>:
+				<me>\langle y, x \rangle = \lambda \langle 6x, 2y \rangle.</me>
+				System:
+				<me>
+					\begin{cases}
+					y = 6\lambda x \amp (1) \\
+					x = 2\lambda y \amp (2) \\
+					3x^2 + y^2 = 6 \amp (3)
+					\end{cases}
+				</me>
+				From (1) and (2): <m>x = 2\lambda(6\lambda x) \implies x = 12\lambda^2 x \implies x(1 - 12\lambda^2) = 0.</m>
+				<ul>
+					<li>Case 1: <m>x = 0</m>. Then by (1), <m>y = 0</m>, but (3) is not satisfied.</li>
+					<li>Case 2: <m>12\lambda^2 = 1 \implies \lambda = \pm \frac{1}{\sqrt{12}}.</m></li>
+				</ul>
+				If <m>\lambda = \frac{1}{\sqrt{12}}</m>, then <m>y = \frac{6}{\sqrt{12}}x \implies y^2 = \frac{36}{12}x^2 = 3x^2.</m>
+				Plugging into (3): <m>3x^2 + 3x^2 = 6 \implies 6x^2 = 6 \implies x = \pm 1.</m>
+				Points: <m>(1, \sqrt{3})</m> and <m>(-1, -\sqrt{3})</m>. Both give <m>f = \sqrt{3}</m> (MAX).
+				If <m>\lambda = -\frac{1}{\sqrt{12}}</m>, then <m>y = -\sqrt{3}x.</m>
+				Points: <m>(1, -\sqrt{3})</m> and <m>(-1, \sqrt{3})</m>. Both give <m>f = -\sqrt{3}</m> (MIN).
+				Evaluate: <m>f(1, 6/\sqrt{12}) = 6/\sqrt{12} = \sqrt{3}</m> (MAX). <m>f(1, -6/\sqrt{12}) = -\sqrt{3}</m> (MIN).
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise points="24">
+		<task points="12">
+			<statement>
+				<p>
+					Let <m>\mathcal{D}</m> be the solid enclosed by the paraboloids <m>z = x^2 + y^2</m> and <m>z = 8 - x^2 - y^2</m>. Write <m>\iiint_{\mathcal{D}} xyz \, dV</m> as a triple integral in cylindrical coordinates. Do NOT evaluate the integral.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					The intersection occurs at <m>x^2 + y^2 = 8 - x^2 - y^2 \implies 2(x^2 + y^2) = 8 \implies x^2 + y^2 = 4</m>, which is <m>r = 2</m>.
+					Projection onto xy-plane is a disk of radius 2.
+					<me>\int_0^{2\pi} \int_0^2 \int_{r^2}^{8-r^2} (r\cos\theta)(r\sin\theta)z \cdot r \, dz \, dr \, d\theta.</me>
+				</p>
+			</solution>
+		</task>
+		<task points="12">
+			<statement>
+				<p>
+					Write an integral that represents the volume of the solid bounded below by <m>z = \sqrt{3x^2 + 3y^2}</m> and above by <m>x^2 + y^2 + z^2 = 4</m>. Do NOT evaluate the integral.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Use spherical coordinates. The sphere is <m>\rho^2 = 4 \implies \rho = 2</m>.
+					The cone is <m>z = \sqrt{3}\sqrt{x^2+y^2} \implies \rho\cos\phi = \sqrt{3}\rho\sin\phi \implies \tan\phi = 1/\sqrt{3} \implies \phi = \pi/6.</m>
+					The volume integral is:
+					<me>V = \int_0^{2\pi} \int_0^{\pi/6} \int_0^2 \rho^2 \sin \phi \, d\rho \, d\phi \, d\theta.</me>
+				</p>
+			</solution>
+		</task>
+		<task points="8">
+			<statement>
+				<p>
+					Compute <m>\displaystyle\int_0^3 \int_{x^2}^9 x^3 e^{y^3} \, dy \, dx</m>.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Change order of integration. The region is <m>0 \le x \le 3, x^2 \le y \le 9</m>, which is the same as <m>0 \le y \le 9, 0 \le x \le \sqrt{y}</m>.
+					<me>\int_0^9 \int_0^{\sqrt{y}} x^3 e^{y^3} \, dx \, dy = \int_0^9 \left. \frac{x^4}{4} e^{y^3} \right|_0^{\sqrt{y}} \, dy.</me>
+					<me>= \int_0^9 \frac{y^2}{4} e^{y^3} \, dy.</me>
+					Let <m>u = y^3</m>, then <m>du = 3y^2 \, dy</m>.
+					<me>= \int_0^{9^3} \frac{1}{3 \cdot 4} e^u \, du = \left. \frac{1}{12} e^u \right|_0^{9^3} = \frac{1}{12} e^{9^3} - \frac{1}{12}.</me>
+				</p>
+			</solution>
+		</task>
+	</exercise>
+
+	<exercise points="12">
+		<statement>
+			<p>
+				Find the critical points of <m>f(x, y) = x^2 + y^2 + x^2y + 4</m> and classify them as maxima, minima or saddle points.
+			</p>
+		</statement>
+		<solution>
+			<p>
+				To find critical points:
+				<me>f_x = 2x + 2xy = 2x(1 + y) = 0 \implies x = 0 \text{ or } y = -1.</me>
+				<me>f_y = 2y + x^2 = 0.</me>
+				<ul>
+					<li>If <m>x = 0</m>, then <m>2y = 0 \implies y = 0</m>. Point: <m>(0, 0)</m>.</li>
+					<li>If <m>y = -1</m>, then <m>-2 + x^2 = 0 \implies x = \pm \sqrt{2}</m>. Points: <m>(\sqrt{2}, -1), (-\sqrt{2}, -1)</m>.</li>
+				</ul>
+				Now compute second derivatives:
+				<me>f_{xx} = 2 + 2y, \quad f_{yy} = 2, \quad f_{xy} = 2x.</me>
+				Discriminant <m>D = f_{xx}f_{yy} - (f_{xy})^2 = (2 + 2y)(2) - (2x)^2 = 4 + 4y - 4x^2.</m>
+				<ul>
+					<li>At <m>(0, 0)</m>: <m>D = 4 \gt 0</m>. Since <m>f_{xx} = 2 \gt 0</m>, it is a <strong>local minimum</strong>.</li>
+					<li>At <m>(\sqrt{2}, -1)</m>: <m>D = 4 - 4 - 4(2) = -8 \lt 0</m>. This is a <strong>saddle point</strong>.</li>
+					<li>At <m>(-\sqrt{2}, -1)</m>: <m>D = 4 - 4 - 4(2) = -8 \lt 0</m>. This is a <strong>saddle point</strong>.</li>
+				</ul>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise points="15">
+		<statement>
+			<p>
+				Evaluate <m>\displaystyle\iint_{\mathcal{D}} \left( \frac{x-y}{x+y+2} \right)^2 \, dA</m> over the region <m>\mathcal{D}</m> bounded by the lines <m>y+x=1, y+x=-1, x-y=-1</m> and <m>x-y=1</m> by making a change of variables.
+			</p>
+		</statement>
+		<solution>
+			<p>
+				Let <m>u = x + y</m> and <m>v = x - y</m>. The boundaries become <m>u = 1, u = -1, v = -1, v = 1</m>.
+				We find the Jacobian <m>J = \frac{\partial(x,y)}{\partial(u,v)}</m>:
+				<me>x = \frac{u+v}{2}, \quad y = \frac{u-v}{2} \implies J = \begin{vmatrix} 1/2 \amp 1/2 \\ 1/2 \amp -1/2 \end{vmatrix} = -1/4 - 1/4 = -1/2 \implies |J| = 1/2.</me>
+				The integral becomes:
+				<me>\int_{-1}^1 \int_{-1}^1 \frac{v^2}{(u+2)^2} \frac{1}{2} \, dv \, du = \frac{1}{2} \left[ \int_{-1}^1 \frac{1}{(u+2)^2} \, du \right] \left[ \int_{-1}^1 v^2 \, dv \right].</me>
+				<me>= \frac{1}{2} \left[ -\frac{1}{u+2} \right]_{-1}^1 \left[ \frac{v^3}{3} \right]_{-1}^1 = \frac{1}{2} \left( -\frac{1}{3} + 1 \right) \left( \frac{1}{3} + \frac{1}{3} \right) = \frac{1}{2} \cdot \frac{2}{3} \cdot \frac{2}{3} = \frac{2}{9}.</me>
+			</p>
+		</solution>
+	</exercise>
+</worksheet>
