@@ -221,13 +221,7 @@
 					Use spherical coordinates. The plane <m>z=1</m> is <m>\rho \cos \phi = 1 \implies \rho = 1/\cos\phi</m>. The plane <m>z=0</m> is <m>\phi = \pi/2</m>. The sphere radius is 2. The intersection of <m>z=1</m> and <m>x^2+y^2+z^2=4</m> is at <m>\cos \phi = 1/2 \implies \phi = \pi/3</m>.
 				</p>
 				<p>
-					We separate the volume into two regions:
-					<ul>
-						<li>Region I: <m>0 \le \theta \le 2\pi, 0 \le \phi \le \pi/3</m>, with <m>0 \le \rho \le 1/\cos\phi</m>. (Wait, the user's sketch shows Region I as the part above the cone? No, let's look at the drawing).</li>
-					</ul>
-					Actually, let's follow the user's "Region I" and "Region II" in the last image.
-					Region I is <m>0 \le \phi \le \pi/3</m> with <m>\rho</m> from 0 to <m>1/\cos\phi</m>.
-					Region II is <m>\pi/3 \le \phi \le \pi/2</m> with <m>\rho</m> from 0 to 2.
+					To set up the integral in spherical coordinates, we split the volume into two regions at <m>\phi=\pi/3</m>, where the plane <m>z=1</m> intersects the sphere <m>\rho=2</m>. The total volume is the sum of the integrals over these two regions:
 					<me>V = \int_0^{2\pi} \int_0^{\pi/3} \int_0^{1/\cos\phi} \rho^2 \sin \phi \, d\rho \, d\phi \, d\theta + \int_0^{2\pi} \int_{\pi/3}^{\pi/2} \int_0^2 \rho^2 \sin \phi \, d\rho \, d\phi \, d\theta.</me>
 				</p>
 			</solution>
