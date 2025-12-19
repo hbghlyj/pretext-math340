@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<worksheet xml:id="Math234Fa21-Midterm2" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Math 234 - Midterm 2 - Fall 2021</title>
+
+	<exercise points="12">
+		<statement>
+			<p>
+				Find the equation of the tangent plane to the surface <m>z = x^2 - 4y + e^{x+2y}</m> at the point <m>(-2, 1, 1)</m>.
+			</p>
+		</statement>
+		<solution>
+			<p>
+				Let <m>f(x, y) = x^2 - 4y + e^{x+2y}</m>. We compute the partial derivatives:
+				<me>f_x = 2x + e^{x+2y}</me>
+				<me>f_y = -4 + 2e^{x+2y}</me>
+				Evaluating at <m>(-2, 1)</m>:
+				<me>f_x(-2, 1) = 2(-2) + e^{-2+2} = -4 + e^0 = -3</me>
+				<me>f_y(-2, 1) = -4 + 2e^{-2+2} = -4 + 2e^0 = -2</me>
+				The equation of the tangent plane is given by:
+				<me>z - z_0 = f_x(x_0, y_0)(x - x_0) + f_y(x_0, y_0)(y - y_0)</me>
+				Substituting the values:
+				<me>z - 1 = -3(x + 2) - 2(y - 1)</me>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise points="15">
+		<statement>
+			<p>
+				Find the points <m>(x, y)</m> where the local maxima, minima and saddle points of the function <m>f(x, y) = x^3 + 3x^2 + y^3 - 3y^2</m> occur, and label them as local maxima, local minima or saddle points.
+			</p>
+		</statement>
+		<solution>
+			<p>
+				To find critical points, we solve the system:
+				<me>
+					\begin{cases}
+					f_x = 3x^2 + 6x = 3x(x + 2) = 0 \amp (1) \\
+					f_y = 3y^2 - 6y = 3y(y - 2) = 0 \amp (2)
+					\end{cases}
+				</me>
+				From (1), we have <m>x = 0</m> or <m>x = -2</m>.
+				From (2), we have <m>y = 0</m> or <m>y = 2</m>.
+				This gives four critical points: <m>(0, 0), (0, 2), (-2, 0)</m>, and <m>(-2, 2)</m>.
+				Now we classify them using the discriminant <m>D = f_{xx}f_{yy} - (f_{xy})^2</m>:
+				<me>f_{xx} = 6x + 6, \quad f_{yy} = 6y - 6, \quad f_{xy} = 0.</me>
+				<me>D(x, y) = (6x + 6)(6y - 6) - 0^2.</me>
+				<ul>
+					<li>Point <m>(0, 0)</m>: <m>D(0, 0) = (6)(-6) = -36 \lt 0</m>. This is a <strong>saddle point</strong>.</li>
+					<li>Point <m>(0, 2)</m>: <m>D(0, 2) = (6)(6) = 36 \gt 0</m>. Since <m>f_{xx}(0, 2) = 6 \gt 0</m>, it is a <strong>local minimum</strong>.</li>
+					<li>Point <m>(-2, 0)</m>: <m>D(-2, 0) = (-6)(-6) = 36 \gt 0</m>. Since <m>f_{xx}(-2, 0) = -6 \lt 0</m>, it is a <strong>local maximum</strong>.</li>
+					<li>Point <m>(-2, 2)</m>: <m>D(-2, 2) = (-6)(6) = -36 \lt 0</m>. This is a <strong>saddle point</strong>.</li>
+				</ul>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise points="20">
+		<introduction>
+			<p>
+				Compute the following integrals.
+			</p>
+		</introduction>
+		<task points="10">
+			<statement>
+				<p>
+					<m>\displaystyle\int_0^1 \int_{\sqrt{y}}^1 \sqrt{x^3 + 4} \, d x \, d y</m>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Change order of integration. The region is <m>0 \le y \le 1, \sqrt{y} \le x \le 1</m>, which is the same as <m>0 \le x \le 1, 0 \le y \le x^2</m>.
+					<me>\int_0^1 \int_0^{x^2} \sqrt{x^3 + 4} \, dy \, dx = \int_0^1 \left( y \sqrt{x^3 + 4} \right) |_0^{x^2} \, dx = \int_0^1 x^2 \sqrt{x^3 + 4} \, dx.</me>
+					Let <m>u = x^3 + 4</m>, then <m>du = 3x^2 \, dx</m>.
+					<me>= \int_4^5 \frac{1}{3} \sqrt{u} \, du = \left. \frac{1}{3} \frac{u^{3/2}}{3/2} \right|_4^5 = \left. \frac{2}{9} u^{3/2} \right|_4^5 = \frac{2}{9}(5^{3/2} - 4^{3/2}).</me>
+				</p>
+			</solution>
+		</task>
+		<task points="10">
+			<statement>
+				<p>
+					<m>\displaystyle\iint_{\mathcal{R}} \cos(x^2 + y^2) \, dA</m>, where <m>\mathcal{R}</m> is the region bounded by the curve <m>y = \sqrt{4 - x^2}</m> and the x-axis.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Use polar coordinates. The region is the upper half-disk of radius 2: <m>0 \le r \le 2, 0 \le \theta \le \pi</m>.
+					<me>\iint_{\mathcal{R}} \cos(x^2 + y^2) \, dA = \int_0^{\pi} \int_0^2 \cos(r^2) r \, dr \, d\theta.</me>
+					Let <m>u = r^2</m>, then <m>du = 2r \, dr</m>.
+					<me>= \int_0^{\pi} \left[ \frac{1}{2}\sin(u) \right]_0^4 \, d\theta = \int_0^{\pi} \frac{1}{2}\sin(4) \, d\theta = \frac{\pi}{2}\sin(4).</me>
+				</p>
+			</solution>
+		</task>
+	</exercise>
+
+	<exercise points="15">
+		<statement>
+			<p>
+				Find the maximum and minimum values of <m>f(x, y) = y^2 - 4x^2</m> subject to the constraint <m>x^2 + 2y^2 = 4</m>.
+			</p>
+		</statement>
+		<solution>
+			<p>
+				Let <m>g(x, y) = x^2 + 2y^2 - 4 = 0</m>. We solve <m>\nabla f = \lambda \nabla g</m>:
+				<me>\nabla f = \langle -8x, 2y \rangle, \quad \nabla g = \langle 2x, 4y \rangle.</me>
+				The system is:
+				<me>
+					\begin{cases}
+					-8x = 2\lambda x \amp (1) \\
+					2y = 4\lambda y \amp (2) \\
+					x^2 + 2y^2 = 4 \amp (3)
+					\end{cases}
+				</me>
+				From (1), <m>2x(\lambda + 4) = 0</m>, so <m>x = 0</m> or <m>\lambda = -4</m>.
+				<ul>
+					<li>If <m>x = 0</m>, then by (3), <m>2y^2 = 4 \implies y = \pm \sqrt{2}</m>. Points: <m>(0, \sqrt{2}), (0, -\sqrt{2})</m>.</li>
+					<li>If <m>\lambda = -4</m>, then by (2), <m>2y = -16y \implies y = 0</m>. By (3), <m>x^2 = 4 \implies x = \pm 2</m>. Points: <m>(2, 0), (-2, 0)</m>.</li>
+				</ul>
+				Values:
+				<ul>
+					<li><m>f(0, \pm \sqrt{2}) = 2 - 0 = 2</m> (MAX)</li>
+					<li><m>f(\pm 2, 0) = 0 - 4(4) = -16</m> (MIN)</li>
+				</ul>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise points="10">
+		<statement>
+			<p>
+				Let <m>f(x, y) = \frac{x^3 y}{2x^4 + y^4}</m>. Find <m>\lim_{(x,y) \to (0,0)} f(x, y)</m>, if it exists, or show that the limit does not exist.
+			</p>
+		</statement>
+		<solution>
+			<p>
+				We consider approach paths:
+				<ul>
+					<li>Along <m>y = x</m>:
+						<me>\lim_{x \to 0} \frac{x^3(x)}{2x^4 + x^4} = \lim_{x \to 0} \frac{x^4}{3x^4} = \frac{1}{3}.</me>
+					</li>
+					<li>Along <m>y = 2x</m>:
+						<me>\lim_{x \to 0} \frac{x^3(2x)}{2x^4 + (2x)^4} = \lim_{x \to 0} \frac{2x^4}{2x^4 + 16x^4} = \frac{1}{9}.</me>
+					</li>
+				</ul>
+				Since <m>1/3 \neq 1/9</m>, the limit <strong>does not exist</strong>.
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise points="18">
+		<introduction>
+			<p>
+				Write an integral that represents the volume of the following solids. You do NOT need to compute the integral.
+			</p>
+		</introduction>
+		<task points="9">
+			<statement>
+				<p>
+					The tetrahedron enclosed by the coordinate planes and the plane <m>3x + 4y + 2z = 12</m>.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					The plane intersects the axes at <m>(4, 0, 0), (0, 3, 0), (0, 0, 6)</m>. We can set up the integral in Cartesian coordinates:
+					<me>V = \int_0^4 \int_0^{-3/4 x + 3} \int_0^{\frac{12-3x-4y}{2}} 1 \, dz \, dy \, dx.</me>
+				</p>
+			</solution>
+		</task>
+		<task points="9">
+			<statement>
+				<p>
+					The solid enclosed by the surfaces <m>x^2 + y^2 = 9</m>, <m>z = x^2 + y^2</m> and <m>z = 10</m>. Use cylindrical coordinates.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Using cylindrical coordinates, the cylinder is <m>r = 3</m>, the paraboloid is <m>z = r^2</m>, and the top plane is <m>z = 10</m>.
+					<me>V = \int_0^{2\pi} \int_0^3 \int_{r^2}^{10} r \, dz \, dr \, d\theta.</me>
+				</p>
+			</solution>
+		</task>
+	</exercise>
+
+	<exercise points="10">
+		<statement>
+			<p>
+				Let <m>z = \ln(2x + y)</m>, where <m>x = 4 + st</m> and <m>y = s^3 + 2t</m>. Use the Chain Rule to compute <m>\frac{\partial z}{\partial s}</m> and <m>\frac{\partial z}{\partial t}</m> when <m>s = 1</m> and <m>t = 2</m>.
+			</p>
+		</statement>
+		<solution>
+			<p>
+				At <m>s = 1</m> and <m>t = 2</m>:
+				<me>x = 4 + (1)(2) = 6, \quad y = 1^3 + 2(2) = 5, \quad 2x + y = 17.</me>
+				By the Chain Rule:
+				<ul>
+					<li>
+						<me>\frac{\partial z}{\partial s} = \frac{\partial z}{\partial x}\frac{\partial x}{\partial s} + \frac{\partial z}{\partial y}\frac{\partial y}{\partial s} = \frac{1}{2x+y} \cdot 2 \cdot t + \frac{1}{2x+y} \cdot 3s^2.</me>
+						<me> = \frac{1}{17} \cdot 2 \cdot 2 + \frac{1}{17} \cdot 3 \cdot 1^2 = \frac{4 + 3}{17} = \frac{7}{17}.</me>
+					</li>
+					<li>
+						<me>\frac{\partial z}{\partial t} = \frac{\partial z}{\partial x}\frac{\partial x}{\partial t} + \frac{\partial z}{\partial y}\frac{\partial y}{\partial t} = \frac{1}{2x+y} \cdot 2 \cdot s + \frac{1}{2x+y} \cdot 2.</me>
+						<me> = \frac{1}{17} \cdot 2 \cdot 1 + \frac{2}{17} = \frac{4}{17}.</me>
+					</li>
+				</ul>
+			</p>
+		</solution>
+	</exercise>
+</worksheet>
