@@ -107,7 +107,7 @@
 	<exercise>
 		<introduction>
 			<p>
-				Consider the curve given by <m>\vec{r}(t)=\langle\sqrt{2} \cos (t), \sin (t), \sin (t)\rangle</m>
+				Consider the curve given by <m>\vec{r}(t)=\langle\sqrt{2}\cos(t), \sin(t), \sin(t)\rangle</m>
 			</p>
 		</introduction>
 		<task>
