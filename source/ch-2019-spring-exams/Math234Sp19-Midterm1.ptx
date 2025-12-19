@@ -1,1 +1,145 @@
-
+<?xml version="1.0" encoding="utf-8"?>
+<worksheet xml:id="Math234Sp19-Midterm1" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Math 234 - Midterm 1 - Spring 2019</title>
+	<exercise>
+		<task>
+			<statement>
+				<p>
+					Find the equation of the line through the point <m>(1,2,3)</m> with direction vector <m>\langle 4,0,-2\rangle</m>.
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Use traces to sketch the surface <m>z=x^2+9 y^2</m>.
+				</p>
+				<p>
+					Note: Your 3D sketch can be a rough sketch, as long as the general shape is recognizable. Your trace sketches, though, should be clear.
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<task>
+			<statement>
+				<p>
+					Write down an integral that represents the length of the curve <m>\vec{r}(t)=\langle 2 t, \sin (t), e^t\rangle</m> from the point <m>(0,0,1)</m> to the point <m>(2 \pi, 0, e^\pi)</m>. You do NOT need to compute the integral.
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Show that if <m>|\vec{r}(t)|=4</m>, then <m>\vec{r}\,'(t)</m> is orthogonal to <m>\vec{r}(t)</m>. (Hint: recall that <m>|\vec{r}(t)|^2=\vec{r}(t) \cdot \vec{r}(t)</m>).
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				An astronaut travels to the purple planet, where the acceleration due to gravity is <m>4 \mathrm{~m} / \mathrm{s}</m>. He kicks a soccer ball at a speed of <m>14 \mathrm{~m} / \mathrm{s}</m> at an angle of 30 degrees (the ball is on the ground when he kicks it). Note: <m>\cos \left(30^{\circ}\right)=\sqrt{3} / 2</m> and <m>\sin \left(30^{\circ}\right)=1 / 2</m>.
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					Write vector-valued functions to describe the velocity and position of the soccer ball as it flies.
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					At what time does it land?
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<statement>
+			<p>
+				Find and sketch the domain of the function
+				<me>f(x, y)=\frac{\sqrt{y-x^2}}{x^2+4}</me>
+			</p>
+		</statement>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Match the graph that corresponds to each of the following functions.
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					<m>f(x, y)=\sqrt{x^2+y^2-4}</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>f(x, y)=y</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>f(x, y)=|x-y|</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>f(x, y)=\frac{1}{x^2+y^2}</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>f(x, y)=\ln \left(x^2+y^2-1\right)</m>
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					<m>f(x, y)=9-x^2-y^2</m>
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Consider the curve <m>\vec{r}(t)=\langle t, 2 \sin (t), 2 \cos (t)\rangle</m>.
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					Compute the tangential, normal and binormal vectors when <m>t=\frac{\pi}{2}</m>. That is, <m>\vec{T}\left(\frac{\pi}{2}\right), \vec{N}\left(\frac{\pi}{2}\right)</m> and <m>\vec{B}\left(\frac{\pi}{2}\right)</m>.
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Compute the curvature <m>\kappa</m> when <m>t=\frac{\pi}{2}</m>.
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Find the equations of the osculating plane, normal plane and rectifying plane when <m>t=\frac{\pi}{2}</m>.
+				</p>
+			</statement>
+		</task>
+	</exercise>
+</worksheet>
