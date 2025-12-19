@@ -97,7 +97,7 @@
 						|\vec{a} \times \vec{b}| \amp = \sqrt{4+16+4} = \sqrt{24} = 2\sqrt{6}
 						\end{aligned}
 					</me>
-					The area of the parallelogram is <m>\sqrt{24}</m>.
+					The area of the parallelogram is <m>2\sqrt{6}</m>.
 				</p>
 			</solution>
 		</task>
