@@ -26,11 +26,11 @@
 		</task>
 	</exercise>
 	<exercise>
-		<introduction>
+		<statement>
 			<p>
-				Let <m>\vec{r}(t)=\langle 3 \sin t, 4 \sin t, 5 \cos t\rangle</m>. Find the equation of the tangent line to the curve <m>\vec{r}(t)</m> at the point <m>(3,4,0)</m>.
+				Let <m>\vec{r}(t)=\langle 3\sin(t), 4\sin(t), 5\cos(t)\rangle</m>. Find the equation of the tangent line to the curve <m>\vec{r}(t)</m> at the point <m>(3,4,0)</m>.
 			</p>
-		</introduction>
+		</statement>
 	</exercise>
 	<exercise>
 		<introduction>
