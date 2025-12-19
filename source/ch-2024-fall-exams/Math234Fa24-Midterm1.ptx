@@ -27,7 +27,7 @@
 			</statement>
 			<solution>
 				<p>
-					<me>\text{proj}_{\vec{a}}\vec{b} = \frac{\vec{a} \cdot \vec{b}}{|\vec{a}|^2}\vec{a} = \frac{2(1) - 3(4) + 1(-2)}{14}\langle 2, -3, 1 \rangle = \frac{-12}{14}\langle 2, -3, 1 \rangle = -\frac{6}{7}\langle 2, -3, 1 \rangle.</me>
+					<me>\text{proj}_{\vec{a}}\vec{b} = \frac{\vec{a} \cdot \vec{b}}{|\vec{a}|^2}\vec{a} = \frac{2(1) - 3(4) + 1(-2)}{14}\langle 2, -3, 1 \rangle = \frac{-12}{14}\langle 2, -3, 1 \rangle = -\frac{6}{7}\langle 2, -3, 1 \rangle</me>.
 				</p>
 			</solution>
 		</task>
