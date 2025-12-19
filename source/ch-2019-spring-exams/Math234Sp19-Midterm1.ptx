@@ -31,7 +31,7 @@
 		<task>
 			<statement>
 				<p>
-					Show that if <m>|\vec{r}(t)|=4</m>, then <m>\vec{r}\,'(t)</m> is orthogonal to <m>\vec{r}(t)</m>. (Hint: recall that <m>|\vec{r}(t)|^2=\vec{r}(t) \cdot \vec{r}(t)</m>).
+					Show that if <m>|\vec{r}(t)|=4</m>, then <m>\vec{r}'(t)</m> is orthogonal to <m>\vec{r}(t)</m>. (Hint: recall that <m>|\vec{r}(t)|^2=\vec{r}(t) \cdot \vec{r}(t)</m>).
 				</p>
 			</statement>
 		</task>
