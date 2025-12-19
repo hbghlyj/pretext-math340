@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <worksheet xml:id="Math234Sp24-Midterm2" xmlns:xi="http://www.w3.org/2001/XInclude">
 	<title>Math 234 - Midterm 2 - Spring 2024</title>
-	<exercise>
+	<exercise points="12">
 		<statement>
 			<p>
-				(12 points) Find the equation of the tangent plane to the surface <m>z=\sin (x+y)-x^3 y^4+6 x</m> at the point <m>(1,-1,5)</m>.
+				Find the equation of the tangent plane to the surface <m>z=\sin (x+y)-x^3 y^4+6 x</m> at the point <m>(1,-1,5).</m>
 			</p>
 		</statement>
 		<solution>
@@ -26,10 +26,10 @@
 				This problem concerns the Chain Rule for multivariable functions.
 			</p>
 		</introduction>
-		<task>
+		<task points="3">
 			<statement>
 				<p>
-					(3 points) Suppose <m>z=f(r, u, v)</m> where <m>r, u</m> and <m>v</m> are functions of <m>s</m> and <m>t</m>. Write an expression for <m>\frac{\partial z}{\partial t}</m> using the Chain Rule.
+					Suppose <m>z=f(r, u, v)</m> where <m>r, u</m> and <m>v</m> are functions of <m>s</m> and <m>t</m>. Write an expression for <m>\frac{\partial z}{\partial t}</m> using the Chain Rule.
 				</p>
 			</statement>
 			<solution>
@@ -38,10 +38,10 @@
 				</p>
 			</solution>
 		</task>
-		<task>
+		<task points="7">
 			<statement>
 				<p>
-					(7 points) Let <m>z=f(r, u, v)</m>, where <m>r=2 s+t^2, u=t s</m>, and <m>v=s^2 t</m>. Suppose <m>\frac{\partial z}{\partial r}= 2 r+u v</m>, <m>\frac{\partial z}{\partial u}=r v</m>, and <m>\frac{\partial z}{\partial v}=r u+2</m>. Compute <m>\frac{\partial z}{\partial t}</m> when <m>s=0</m> and <m>t=1</m>.
+					Let <m>z=f(r, u, v)</m>, where <m>r=2 s+t^2, u=t s</m>, and <m>v=s^2 t</m>. Suppose <m>\frac{\partial z}{\partial r}= 2 r+u v</m>, <m>\frac{\partial z}{\partial u}=r v</m>, and <m>\frac{\partial z}{\partial v}=r u+2</m>. Compute <m>\frac{\partial z}{\partial t}</m> when <m>s=0</m> and <m>t=1.</m>
 				</p>
 			</statement>
 			<solution>
@@ -68,10 +68,10 @@
 				Consider the function <me>f(x, y)=2 x^2+y^2-2 x^2 y+6</me>
 			</p>
 		</introduction>
-		<task>
+		<task points="7">
 			<statement>
 				<p>
-					(7 points) Find all critical point(s) of <m>f(x, y)</m>.
+					Find all critical point(s) of <m>f(x, y).</m>
 				</p>
 			</statement>
 			<solution>
@@ -88,10 +88,10 @@
 				</p>
 			</solution>
 		</task>
-		<task>
+		<task points="7">
 			<statement>
 				<p>
-					(7 points) Classify each critical point you found in (a) as a local maximum, local minimum, or saddle point.
+					Classify each critical point you found in (a) as a local maximum, local minimum, or saddle point.
 				</p>
 			</statement>
 			<solution>
@@ -106,10 +106,10 @@
 				</p>
 			</solution>
 		</task>
-		<task>
+		<task points="6">
 			<statement>
 				<p>
-					(6 points) Find the absolute minimum and absolute maximum of <me>f(x, y)</me> on the rectangular region given by <m>R=\{(x, y) \mid-1 \leq x \leq 1,0 \leq y \leq 1\}</m>.
+					Find the absolute minimum and absolute maximum of <me>f(x, y)</me> on the rectangular region given by <m>R=\{(x, y) \mid-1 \leq x \leq 1,0 \leq y \leq 1\}.</m>
 				</p>
 			</statement>
 			<solution>
@@ -132,10 +132,10 @@ There are no critical points in the interior of the region, as all critical poin
 				Consider the function <m>f(x, y)=e^{x^2 y}</m>.
 			</p>
 		</introduction>
-		<task>
+		<task points="6">
 			<statement>
 				<p>
-					(6 points) Compute <m>\nabla f(1,2)</m>.
+					Compute <m>\nabla f(1,2).</m>
 				</p>
 			</statement>
 			<solution>
@@ -149,10 +149,10 @@ There are no critical points in the interior of the region, as all critical poin
 				</p>
 			</solution>
 		</task>
-		<task>
+		<task points="6">
 			<statement>
 				<p>
-					(6 points) Find the directional derivative of <m>f</m> at the point <m>(1,2)</m> in the direction of the vector <m>\vec{v}=\langle-1,3\rangle</m>.
+					Find the directional derivative of <m>f</m> at the point <m>(1,2)</m> in the direction of the vector <m>\vec{v}=\langle-1,3\rangle.</m>
 				</p>
 			</statement>
 			<solution>
@@ -167,10 +167,10 @@ There are no critical points in the interior of the region, as all critical poin
 				</p>
 			</solution>
 		</task>
-		<task>
+		<task points="4">
 			<statement>
 				<p>
-					(4 points) Find the direction of fastest decrease of <m>f</m> at <m>(1,2)</m>. Write your answer as a unit vector.
+					Find the direction of fastest decrease of <m>f</m> at <m>(1,2).</m> Write your answer as a unit vector.
 				</p>
 			</statement>
 			<solution>
@@ -188,10 +188,10 @@ There are no critical points in the interior of the region, as all critical poin
 				In this problem, we want to find the (absolute) maximum and minimum values of the function <m>f(x, y)=x y</m> subject to the constraint <m>4 x^2+9 y^2=36</m>.
 			</p>
 		</introduction>
-		<task>
+		<task points="5">
 			<statement>
 				<p>
-					(5 points) Set up the system of equations that you need to solve to find the maximum and minimum values using the method of Lagrange multipliers.
+					Set up the system of equations that you need to solve to find the maximum and minimum values using the method of Lagrange multipliers.
 				</p>
 			</statement>
 			<solution>
@@ -214,10 +214,10 @@ There are no critical points in the interior of the region, as all critical poin
 				</p>
 			</solution>
 		</task>
-		<task>
+		<task points="7">
 			<statement>
 				<p>
-					(7 points) Find the absolute maximum and minimum values.
+					Find the absolute maximum and minimum values.
 				</p>
 			</statement>
 			<solution>
@@ -239,10 +239,10 @@ There are no critical points in the interior of the region, as all critical poin
 				Compute the following integrals.
 			</p>
 		</introduction>
-		<task>
+		<task points="5">
 			<statement>
 				<p>
-					(5 points) <m>\int_0^2 \int_0^t(2 s+4 t) d s d t</m>
+					<m>\int_0^2 \int_0^t(2 s+4 t) d s d t</m>
 				</p>
 			</statement>
 			<solution>
@@ -257,10 +257,10 @@ There are no critical points in the interior of the region, as all critical poin
 				</p>
 			</solution>
 		</task>
-		<task>
+		<task points="7">
 			<statement>
 				<p>
-					(7 points) <m>\int_0^4 \int_{\sqrt{y}}^2 \sin \left(x^3\right) d x d y</m>
+					<m>\int_0^4 \int_{\sqrt{y}}^2 \sin \left(x^3\right) d x d y</m>
 				</p>
 			</statement>
 			<solution>
@@ -282,10 +282,10 @@ There are no critical points in the interior of the region, as all critical poin
 				Write down triple integrals that represent the volume of the following solids. You do NOT need to evaluate the integrals.
 			</p>
 		</introduction>
-		<task>
+		<task points="6">
 			<statement>
 				<p>
-					(6 points) The solid that lies within the cylinder <m>x^2+y^2=9</m>, above the plane <m>z=-2</m>, and below the paraboloid <m>z=16-x^2-y^2</m>.
+					The solid that lies within the cylinder <m>x^2+y^2=9</m>, above the plane <m>z=-2</m>, and below the paraboloid <m>z=16-x^2-y^2.</m>
 				</p>
 			</statement>
 			<solution>
@@ -295,10 +295,10 @@ There are no critical points in the interior of the region, as all critical poin
 				</p>
 			</solution>
 		</task>
-		<task>
+		<task points="6">
 			<statement>
 				<p>
-					(6 points) The tetrahedron enclosed by the planes <m>2 x+4 y+z=8, z=0, y=0</m>, and <m>x=y</m>.
+					The tetrahedron enclosed by the planes <m>2 x+4 y+z=8, z=0, y=0</m>, and <m>x=y.</m>
 				</p>
 			</statement>
 			<solution>
@@ -310,10 +310,10 @@ There are no critical points in the interior of the region, as all critical poin
 				</p>
 			</solution>
 		</task>
-		<task>
+		<task points="6">
 			<statement>
 				<p>
-					(6 points) The solid that lies below the cone <m>z=\sqrt{x^2+y^2}</m>, above the cone <m>z=-\sqrt{x^2+y^2}</m>, and within the sphere <m>x^2+y^2+z^2=25</m>.
+					The solid that lies below the cone <m>z=\sqrt{x^2+y^2}</m>, above the cone <m>z=-\sqrt{x^2+y^2}</m>, and within the sphere <m>x^2+y^2+z^2=25.</m>
 				</p>
 			</statement>
 			<solution>
