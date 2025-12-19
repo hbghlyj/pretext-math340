@@ -45,7 +45,7 @@
 						f_y=8 y-2 x=0
 						\end{cases}
 					</me>
-					From (1), <m>y=x.</m> From (2), <m>8 x-2 x=0 \implies x=0.</m> The only critical point is <m>(0,0).</m>
+From the first equation, <m>y=x.</m> Substituting into the second equation gives <m>8 x-2 x=0 \implies x=0.</m> The only critical point is <m>(0,0).</m>
 				</p>
 			</solution>
 		</task>
