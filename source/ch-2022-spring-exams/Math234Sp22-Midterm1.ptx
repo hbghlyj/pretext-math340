@@ -320,10 +320,13 @@
 		</statement>
 		<solution>
 			<p>
+For <m>y \neq 0</m>, we can simplify the function:
+				<me>f(x, y) = \frac{4 x y^3}{2 x^2 y^2+5 y^4} = \frac{y^2(4xy)}{y^2(2x^2+5y^2)} = \frac{4xy}{2x^2+5y^2}.</me>
+				Now we check different paths to <m>(0,0)</m>.
 				Along Path 1 <m>y = x</m>:
-				<me>\lim_{x \to 0} \frac{4x^4}{2x^4 + 5x^4} = \frac{4}{7}.</me>
+				<me>\lim_{x \to 0} \frac{4x(x)}{2x^2 + 5x^2} = \lim_{x \to 0} \frac{4x^2}{7x^2} = \frac{4}{7}.</me>
 				Along Path 2 <m>y = 2x</m>:
-				<me>\lim_{x \to 0} \frac{4x(8x^3)}{2x^2(4x^2) + 5(16x^4)} = \frac{32x^4}{88x^4} = \frac{4}{11}.</me>
+				<me>\lim_{x \to 0} \frac{4x(2x)}{2x^2 + 5(2x)^2} = \lim_{x \to 0} \frac{8x^2}{22x^2} = \frac{4}{11}.</me>
 				Since limits are different, the limit does not exist.
 			</p>
 		</solution>
