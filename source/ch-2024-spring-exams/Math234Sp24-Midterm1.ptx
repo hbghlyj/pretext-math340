@@ -1,1 +1,468 @@
-
+<?xml version="1.0" encoding="utf-8"?>
+<worksheet xml:id="Math234Sp24-Midterm1" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Math 234 - Midterm 1 - Spring 2024</title>
+	<exercise>
+		<introduction>
+			<p>
+				Let <m>\vec{a}=\langle 1,2,3\rangle</m> and <m>\vec{b}=\langle 1,0,-1\rangle</m>.
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					Are the two given vectors perpendicular? Select the correct answer by completely filling in the appropriate bubble.
+				</p>
+			</statement>
+			<choices>
+				<choice>
+					<statement>
+						<p>
+							Yes
+						</p>
+					</statement>
+				</choice>
+				<choice correct="yes">
+					<statement>
+						<p>
+							No
+						</p>
+					</statement>
+				</choice>
+			</choices>
+			<solution>
+				<p>
+					No
+				</p>
+			</solution>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Are the two given vectors parallel? Select the correct answer by completely filling in the appropriate bubble.
+				</p>
+			</statement>
+			<choices>
+				<choice>
+					<statement>
+						<p>
+							Yes
+						</p>
+					</statement>
+				</choice>
+				<choice correct="yes">
+					<statement>
+						<p>
+							No
+						</p>
+					</statement>
+				</choice>
+			</choices>
+			<solution>
+				<p>
+					No
+				</p>
+			</solution>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Find the vector projection of <m>\vec{b}</m> onto <m>\vec{a}</m>.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<me>
+						\begin{aligned}
+						\text{proj}_{\vec{a}}\vec{b} \amp = \frac{\vec{a} \cdot \vec{b}}{|\vec{a}|^2}\vec{a} \\
+						\vec{a} \cdot \vec{b} \amp = \langle 1, 2, 3 \rangle \cdot \langle 1, 0, -1 \rangle = 1 - 3 = -2 \\
+						|\vec{a}|^2 \amp = 1 + 4 + 9 = 14 \\
+						\text{proj}_{\vec{a}}\vec{b} \amp = -\frac{2}{14}\langle 1, 2, 3 \rangle = \langle -\frac{1}{7}, -\frac{2}{7}, -\frac{3}{7} \rangle
+						\end{aligned}
+					</me>
+				</p>
+			</solution>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Find the area of the parallelogram spanned by the vectors <m>\vec{a}</m> and <m>\vec{b}</m>.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					The area of the parallelogram is <m>|\vec{a} \times \vec{b}|</m>.
+					<me>
+						\begin{aligned}
+						\vec{a} \times \vec{b} \amp = \begin{vmatrix} \hat{\imath} \amp \hat{\jmath} \amp \hat{k} \\ 1 \amp 2 \amp 3 \\ 1 \amp 0 \amp -1 \end{vmatrix} = \langle -2, 4, -2 \rangle \\
+						|\vec{a} \times \vec{b}| \amp = \sqrt{4+16+4} = \sqrt{24} = 2\sqrt{6}
+						\end{aligned}
+					</me>
+					The area of the parallelogram is <m>2\sqrt{6}</m>.
+				</p>
+			</solution>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Consider the line
+				<me>
+					\begin{cases}
+					x(t) = 4-t \\
+					y(t) = 1+3t \\
+					z(t) = -2+2t
+					\end{cases}
+				</me>
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					Find the equation of the plane through the point <m>(5,8,-2)</m> and perpendicular to the given line.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					The direction vector of the line is <m>\langle -1, 3, 2 \rangle</m>.
+					The equation of the plane is given by
+					<me>
+						\begin{aligned}
+						\langle -1, 3, 2 \rangle \cdot \langle x-5, y-8, z+2 \rangle \amp = 0 \\
+						-(x-5) + 3(y-8) + 2(z+2) \amp = 0
+						\end{aligned}
+					</me>
+				</p>
+			</solution>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Find the equation of the line that contains the point <m>(5,8,-2)</m>, is perpendicular to the given line, and is perpendicular to the vector <m>\langle 0,1,-2\rangle</m>.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					The direction vector of the line has to be orthogonal to both <m>\langle -1, 3, 2 \rangle</m> and <m>\langle 0, 1, -2 \rangle</m>.
+					<me>
+						\vec{v} = \begin{vmatrix} \hat{\imath} \amp \hat{\jmath} \amp \hat{k} \\ -1 \amp 3 \amp 2 \\ 0 \amp 1 \amp -2 \end{vmatrix} = \langle -8, -2, -1 \rangle
+					</me>
+					Equation of the line:
+					<me>
+						\begin{pmatrix} x \\ y \\ z \end{pmatrix} = \begin{pmatrix} 5 \\ 8 \\ -2 \end{pmatrix} + t \begin{pmatrix} -8 \\ -2 \\ -1 \end{pmatrix}
+					</me>
+				</p>
+			</solution>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				If the limit exists, compute it (making sure to justify your answer). If the limit does not exist, justify why it doesn't exist. If you use a theorem, state clearly which theorem you are using. Make sure to use correct limit notation.
+				<me>\lim_{(x,y) \to (0,0)} \frac{x^2 y}{2x^6+y^2}</me>
+			</p>
+		</introduction>
+		<solution>
+			<p>
+				Along Path 1 <m>y=x</m>:
+				<me>
+					\lim_{x \to 0} \frac{x^2(x)}{2x^6+x^2} = \lim_{x \to 0} \frac{x^3}{x^2(2x^4+1)} = \lim_{x \to 0} \frac{x}{2x^4+1} = \frac{0}{1} = 0
+				</me>
+				Along Path 2 <m>y=x^2</m>:
+				<me>
+					\lim_{x \to 0} \frac{x^2(x^2)}{2x^6+(x^2)^2} = \lim_{x \to 0} \frac{x^4}{2x^6+x^4} = \lim_{x \to 0} \frac{x^4}{x^4(2x^2+1)} = \lim_{x \to 0} \frac{1}{2x^2+1} = 1
+				</me>
+				Since the limits along these two paths are different, the given limit does not exist.
+			</p>
+		</solution>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Consider the surface <m>x^2+y^2-z^2=9</m>.
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					Sketch the traces of the form <m>x=k</m>, with <m>k = 0, 1</m> in the <m>yz</m>-plane where the <m>y</m> axis is horizontal. Label your traces.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					For <m>k=0</m>: <m>y^2-z^2=9</m>.
+				</p>
+				<p>
+					For <m>k = 1</m>: <m>1+y^2-z^2 = 9 \implies y^2-z^2 = 8</m>.
+				</p>
+			</solution>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Sketch the traces of the form <m>y=k</m>, with <m>k = 0, 1</m> in the <m>xz</m>-plane where the <m>x</m> axis is horizontal. Label your traces.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					For <m>k=0</m>: <m>x^2-z^2=9</m>.
+				</p>
+				<p>
+					For <m>k = 1</m>: <m>x^2-z^2 = 8</m>.
+				</p>
+			</solution>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Sketch the traces of the form <m>z=k</m>, with <m>k = 0, 1</m> in the <m>xy</m>-plane where the <m>x</m> axis is horizontal. Label your traces.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					For <m>k=0</m>: <m>x^2+y^2=9</m>.
+				</p>
+				<p>
+					For <m>k = 1</m>: <m>x^2+y^2-1=9 \implies x^2+y^2 = 10</m>.
+				</p>
+			</solution>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Select the choice that corresponds to the given surface by completely filling in the appropriate bubble.
+				</p>
+			</statement>
+			<choices>
+				<choice>
+					<statement>
+						<p>
+							A
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							B
+						</p>
+					</statement>
+				</choice>
+				<choice correct="yes">
+					<statement>
+						<p>
+							C
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							D
+						</p>
+					</statement>
+				</choice>
+			</choices>
+			<solution>
+				<p>
+					C
+				</p>
+			</solution>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				An object's acceleration is given by
+				<me>\vec{a}(t) = \langle e^{4t}, 6t, t^3+2 \rangle.</me>
+				Its initial velocity is <m>\vec{v}(0) = \langle 2,3,0 \rangle</m> and its initial position is <m>\vec{r}(0) = \langle 4,1,3 \rangle</m>.
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					Find a vector equation <m>\vec{v}(t)</m> for the velocity of the object at time <m>t</m>.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<me>
+						\begin{aligned}
+						\vec{v}(t) \amp = \int \vec{a}(t) \, dt = \left\langle \frac{e^{4t}}{4}+c_1, 3t^2+c_2, \frac{t^4}{4}+2t+c_3 \right\rangle \\
+						\vec{v}(0) \amp = \langle 2, 3, 0 \rangle = \left\langle \frac{1}{4}+c_1, c_2, c_3 \right\rangle \\
+						\implies c_1 \amp = 2 - \frac{1}{4} = \frac{7}{4}, \, c_2 = 3, \, c_3 = 0 \\
+						\vec{v}(t) \amp = \left\langle \frac{e^{4t}}{4} + \frac{7}{4}, 3t^2+3, \frac{t^4}{4}+2t \right\rangle
+						\end{aligned}
+					</me>
+				</p>
+			</solution>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Find a vector equation <m>\vec{r}(t)</m> for the position of the object at time <m>t</m>.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<me>
+						\begin{aligned}
+						\vec{r}(t) \amp = \int \vec{v}(t) \, dt = \left\langle \frac{e^{4t}}{16} + \frac{7}{4}t + D_1, t^3 + 3t + D_2, \frac{t^5}{20} + t^2 + D_3 \right\rangle \\
+						\vec{r}(0) \amp = \langle 4, 1, 3 \rangle = \left\langle \frac{1}{16} + D_1, D_2, D_3 \right\rangle \\
+						\implies D_1 \amp = 4 - \frac{1}{16} = \frac{63}{16}, \, D_2 = 1, \, D_3 = 3 \\
+						\vec{r}(t) \amp = \left\langle \frac{e^{4t}}{16} + \frac{7}{4}t + \frac{63}{16}, t^3 + 3t + 1, \frac{t^5}{20} + t^2 + 3 \right\rangle
+						\end{aligned}
+					</me>
+				</p>
+			</solution>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Consider the function <m>f(x, y) = \frac{\ln(x^3-y)}{(x-y)^2}</m>.
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					Find the domain of the function.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					We need <m>x^3-y > 0</m> and <m>x-y \neq 0</m>.
+					Domain: <m>\{(x, y) \mid y &lt; x^3 \text{ and } y \neq x\}</m>.
+				</p>
+			</solution>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Sketch the domain of the function. Shade the region(s) that are part of the domain. Use dotted lines when sketching a curve that is NOT in the domain, and solid lines when sketching curves that are.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					The domain is the region below the curve <m>y=x^3</m>, excluding the line <m>y=x</m>. The boundaries <m>y=x^3</m> and <m>y=x</m> should be drawn with dotted lines as they are not part of the domain. The region below <m>y=x^3</m> should be shaded.
+				</p>
+			</solution>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Consider the surfaces <m>-2x+y+z=4</m> and <m>x^2+y^2=9</m>. Find a vector function that represents the curve of intersection of the given surfaces.
+			</p>
+		</introduction>
+		<solution>
+			<p>
+				We need <m>x^2+y^2=9</m>. Let <m>x=3\cos(t), y=3\sin(t)</m>.
+				Then <m>z = 4+2x-y = 4+6\cos(t)-3\sin(t)</m>.
+				<me>\vec{r}(t) = \langle 3\cos t, 3\sin t, 4+6\cos t - 3\sin t \rangle.</me>
+			</p>
+		</solution>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Consider the curve given by <m>\vec{r}(t) = \langle 2\sin(e^t), \sqrt{5}\cos(e^t), \sin(e^t) \rangle</m>.
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					Find the unit tangent vector, <m>\vec{T}(t)</m>.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<me>
+						\begin{aligned}
+						\vec{r}\,'(t) \amp = \langle 2\cos(e^t) e^t, -\sqrt{5}\sin(e^t) e^t, \cos(e^t) e^t \rangle \\
+						|\vec{r}\,'(t)| \amp = \sqrt{4\cos^2(e^t) e^{2t} + 5\sin^2(e^t) e^{2t} + \cos^2(e^t) e^{2t}} = \sqrt{5}e^t \\
+						\vec{T}(t) \amp = \langle \frac{2}{\sqrt{5}}\cos(e^t), -\sin(e^t), \frac{1}{\sqrt{5}}\cos(e^t) \rangle
+						\end{aligned}
+					</me>
+				</p>
+			</solution>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Find the unit normal vector, <m>\vec{N}(t)</m>.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<me>
+						\begin{aligned}
+						\vec{T}\,'(t) \amp = \langle -\frac{2}{\sqrt{5}}\sin(e^t) e^t, -\cos(e^t) e^t, -\frac{1}{\sqrt{5}}\sin(e^t) e^t \rangle \\
+						|\vec{T}\,'(t)| \amp = \sqrt{\frac{4}{5}\sin^2(e^t)e^{2t} + \cos^2(e^t)e^{2t} + \frac{1}{5}\sin^2(e^t)e^{2t}} = \sqrt{e^{2t}} = e^t \\
+						\vec{N}(t) \amp = \frac{\vec{T}\,'(t)}{|\vec{T}\,'(t)|} = \langle -\frac{2}{\sqrt{5}}\sin(e^t), -\cos(e^t), -\frac{1}{\sqrt{5}}\sin(e^t) \rangle
+						\end{aligned}
+					</me>
+				</p>
+			</solution>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Find the curvature at <m>t = \ln(2\pi)</m>, that is, <m>\kappa(\ln(2\pi))</m>.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<me>
+						\begin{aligned}
+						\kappa(\ln(2\pi)) \amp = \frac{|\vec{T}\,'(\ln(2\pi))|}{|\vec{r}\,'(\ln(2\pi))|} \\
+						|\vec{T}\,'(\ln(2\pi))| \amp = e^{\ln(2\pi)} = 2\pi \\
+						|\vec{r}\,'(\ln(2\pi))| \amp = \sqrt{5}e^{\ln(2\pi)} = 2\pi\sqrt{5} \\
+						\kappa(\ln(2\pi)) \amp = \frac{2\pi}{2\pi\sqrt{5}} = \frac{1}{\sqrt{5}}
+						\end{aligned}
+					</me>
+				</p>
+			</solution>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Consider the curve given by <m>\vec{r}(t) = \langle e^t, (t+1)^2, t^3-2 \rangle</m>.
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					Write down an integral that represents the length of the curve, with <m>1 \le t \le 5</m>. You do NOT need to evaluate the integral.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<me>
+						\begin{aligned}
+						\vec{r}\,'(t) \amp = \langle e^t, 2(t+1), 3t^2 \rangle \\
+						|\vec{r}\,'(t)| \amp = \sqrt{e^{2t} + 4(t+1)^2 + 9t^4} \\
+						L \amp = \int_1^5 \sqrt{e^{2t} + 4(t+1)^2 + 9t^4} \, dt
+						\end{aligned}
+					</me>
+				</p>
+			</solution>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Find a vector equation for the tangent line to the curve at the point <m>(1,1,-2)</m>.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Notice that <m>\vec{r}(0) = \langle 1, 1, -2 \rangle</m> and <m>\vec{r}\,'(0) = \langle 1, 2, 0 \rangle</m>.
+					The tangent line at <m>t=0</m> is
+					<me>
+						\begin{pmatrix} x \\ y \\ z \end{pmatrix} = \begin{pmatrix} 1 \\ 1 \\ -2 \end{pmatrix} + t \begin{pmatrix} 1 \\ 2 \\ 0 \end{pmatrix}
+					</me>
+				</p>
+			</solution>
+		</task>
+	</exercise>
+</worksheet>
