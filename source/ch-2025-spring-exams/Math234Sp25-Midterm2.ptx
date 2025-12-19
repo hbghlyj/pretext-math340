@@ -98,7 +98,7 @@ f_y \amp = 3e^{2x+3y} + \frac{x^2y^2}{4} \implies f_y(3,-2) = 3e^0 + \frac{3(9)(
 						\frac{\partial z}{\partial u} \amp = (3s^2 + 2t) \frac{\partial s}{\partial u} + (2t + 2s) \frac{\partial t}{\partial u} \\
 						\amp = (3(25) + 2(32))(3) + (2(32) + 2(5))(48) \\
 						\amp = (75 + 64)(3) + (64 + 10)(48) \\
-						\amp = (139)(3) + (74)(48)
+\amp = (139)(3) + (74)(48) = 417 + 3552 = 3969
 						\end{aligned}
 					</me>
 				</p>
