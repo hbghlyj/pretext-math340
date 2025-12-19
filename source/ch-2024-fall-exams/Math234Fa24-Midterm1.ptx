@@ -252,7 +252,7 @@
 			</statement>
 			<solution>
 				<p>
-					<me>y^3 - x > 0 \implies y^3 > x \implies y > \sqrt[3]{x}.</me>
+					<me>y^3 - x > 0 \implies y^3 > x \implies y > \sqrt[3]{x}</me>.
 				</p>
 			</solution>
 		</task>
