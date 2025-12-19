@@ -157,9 +157,9 @@ Its initial velocity is <m>\vec{v}(0)=\left\langle 0,1,0 \right\rangle</m> and i
 					The parametric equations are:
 					<me>
 						\begin{aligned}
-						x \amp = 4 + 4t \\
-						y \amp = 0 + \pi t \\
-						z \amp = 4 + t
+x \amp = 4 + 4s \\
+y \amp = 0 + \pi s \\
+z \amp = 4 + s
 						\end{aligned}
 					</me>
 				</p>
