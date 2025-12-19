@@ -75,12 +75,12 @@
 			<solution>
 				<p>
 					Let <m>x = s + 3t</m> and <m>y = 2s^2 t</m>. By the Chain Rule:
-					<me>\frac{\partial g}{\partial s} = \frac{\partial f}{\partial x} \frac{\partial x}{\partial s} + \frac{\partial f}{\partial y} \frac{\partial y}{\partial s}.</me>
+					<me>\frac{\partial g}{\partial s} = \frac{\partial g}{\partial x} \frac{\partial x}{\partial s} + \frac{\partial g}{\partial y} \frac{\partial y}{\partial s}.</me>
 					Compute the parts:
 					<me>\frac{\partial f}{\partial x} = 2y, \quad \frac{\partial f}{\partial y} = 2x.</me>
 					<me>\frac{\partial x}{\partial s} = 1, \quad \frac{\partial y}{\partial s} = 4st.</me>
 					Substituting back:
-					<me>\frac{\partial g}{\partial s} = 2y(1) + 2x(4st) = 2(2s^2 t) + 2(s + 3t)(4st) = 12s^2t + 24st^2.</me>
+					<me>\frac{\partial g}{\partial s} = 2y(1) + 2x(4st) = 2(2s^2 t) + 2(s + 3t)(4st).</me>
 				</p>
 			</solution>
 		</task>
@@ -133,6 +133,7 @@
 				Points: <m>(1, \sqrt{3})</m> and <m>(-1, -\sqrt{3})</m>. Both give <m>f = \sqrt{3}</m> (MAX).
 				If <m>\lambda = -\frac{1}{\sqrt{12}}</m>, then <m>y = -\sqrt{3}x.</m>
 				Points: <m>(1, -\sqrt{3})</m> and <m>(-1, \sqrt{3})</m>. Both give <m>f = -\sqrt{3}</m> (MIN).
+				Evaluate: <m>f(1, 6/\sqrt{12}) = 6/\sqrt{12} = \sqrt{3}</m> (MAX). <m>f(1, -6/\sqrt{12}) = -\sqrt{3}</m> (MIN).
 			</p>
 		</solution>
 	</exercise>
