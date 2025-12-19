@@ -172,7 +172,7 @@
 					<me>\int \ln(a) \, da = a \ln(a) - a.</me>
 					So, <m>\int_9^{25} \ln(a) \, da = [25\ln(25) - 25] - [9\ln(9) - 9] = 25\ln(25) - 9\ln(9) - 16.</me>
 					The total integral is:
-					<me>= \frac{1}{2} \cdot \frac{\pi}{2} (25\ln(25) - 9\ln(9) - 16) = \frac{\pi}{4}(25\ln(25) - 9\ln(9) - 16).</me>
+<me>= \frac{1}{2} \cdot \frac{\pi}{2} (25\ln(25) - 9\ln(9) - 16) = \frac{\pi}{4}(50\ln(5) - 18\ln(3) - 16).</me>
 				</p>
 			</solution>
 		</task>
