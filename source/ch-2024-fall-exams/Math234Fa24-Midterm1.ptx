@@ -131,7 +131,7 @@
 			</statement>
 			<solution>
 				<p>
-					<me>\vec{r}\,'(t) = \langle 1, 2t, 2+3t^2 \rangle \implies \vec{r}\,'(2) = \langle 1, 4, 14 \rangle.</me>
+					<me>\vec{r}\,'(t) = \langle 1, 2t, 2+3t^2 \rangle \implies \vec{r}\,'(2) = \langle 1, 4, 14 \rangle</me>.
 				</p>
 			</solution>
 		</task>
