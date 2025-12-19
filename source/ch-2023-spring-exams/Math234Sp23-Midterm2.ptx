@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<worksheet xml:id="Math234Sp23-Midterm2" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Math 234 - Midterm 2 - Spring 2023</title>
+	<exercise>
+		<introduction>
+			<p>
+				Multivariable Chain Rule.
+			</p>
+		</introduction>
+		<task points="3">
+			<statement>
+				<p>
+					Suppose <m>z=f(x, y)</m> where <m>x</m> and <m>y</m> are both functions of <m>s</m> and <m>t</m>. Write an expression for <m>\frac{\partial z}{\partial t}</m> using the Chain Rule.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					The chain rule expression is:
+					<me>\frac{\partial z}{\partial t} = \frac{\partial f}{\partial x} \frac{\partial x}{\partial t} + \frac{\partial f}{\partial y} \frac{\partial y}{\partial t}.</me>
+				</p>
+			</solution>
+		</task>
+		<task points="7">
+			<statement>
+				<p>
+					Let <m>z=f(x, y)</m>, where <m>x=t^2+s</m> and <m>y=s t+1</m>. Suppose <m>\frac{\partial z}{\partial x}=x^2 y+y^2</m> and <m>\frac{\partial z}{\partial y}=\frac{1}{3} x^3+2 x y</m>. Use your answer for (a) to compute <m>\frac{\partial z}{\partial t}</m> when <m>s=3</m> and <m>t=0</m>.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					First, we find the values of <m>x</m> and <m>y</m> when <m>s=3</m> and <m>t=0</m>:
+					<me>x = 0^2 + 3 = 3, \quad y = 3(0) + 1 = 1.</me>
+					Next, we find the partial derivatives of <m>x</m> and <m>y</m> with respect to <m>t</m>:
+					<me>\frac{\partial x}{\partial t} = 2t, \quad \frac{\partial y}{\partial t} = s.</me>
+					At <m>s=3, t=0</m>, these are:
+					<me>\frac{\partial x}{\partial t} = 0, \quad \frac{\partial y}{\partial t} = 3.</me>
+					Now we evaluate the partials of <m>z</m> at <m>(x,y) = (3,1)</m>:
+					<me>f_x(3,1) = 3^2(1) + 1^2 = 10, \quad f_y(3,1) = \frac{1}{3}(3^3) + 2(3)(1) = 9 + 6 = 15.</me>
+					Using the chain rule from part (a):
+					<me>\frac{\partial z}{\partial t} = (10)(0) + (15)(3) = 45.</me>
+				</p>
+			</solution>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Consider the function
+				<me>f(x, y)=\frac{1}{3} y^3-y+x^2 y</me>
+			</p>
+		</introduction>
+		<task points="6">
+			<statement>
+				<p>
+					Find all critical points of <m>f(x, y)</m>.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					To find critical points, we set the partial derivatives equal to zero:
+					<me>f_x = 2xy = 0 \implies x=0 \text{ or } y=0.</me>
+					<me>f_y = y^2 - 1 + x^2 = 0.</me>
+					Case 1: <m>x=0</m>. Substituting into <m>f_y</m> gives <m>y^2 - 1 = 0 \implies y = \pm 1</m>. Points: <m>(0, 1), (0, -1)</m>.
+					Case 2: <m>y=0</m>. Substituting into <m>f_y</m> gives <m>0 - 1 + x^2 = 0 \implies x^2 = 1 \implies x = \pm 1</m>. Points: <m>(1, 0), (-1, 0)</m>.
+					The critical points are <m>(0,1), (0,-1), (1,0)</m>, and <m>(-1,0)</m>.
+				</p>
+			</solution>
+		</task>
+		<task points="6">
+			<statement>
+				<p>
+					Classify each critical point you found in (a) as a local maximum, local minimum, or saddle point.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					We use the Second Derivative Test. The second partials are:
+					<me>f_{xx} = 2y, \quad f_{yy} = 2y, \quad f_{xy} = 2x.</me>
+					The discriminant is <m>D = f_{xx}f_{yy} - f_{xy}^2 = (2y)(2y) - (2x)^2 = 4y^2 - 4x^2</m>.
+					<ul>
+						<li>At <m>(0, 1)</m>: <m>D = 4 - 0 = 4 > 0</m> and <m>f_{xx} = 2 > 0 \implies</m> Local Minimum.</li>
+						<li>At <m>(0, -1)</m>: <m>D = 4 - 0 = 4 > 0</m> and <m>f_{xx} = -2 < 0 \implies</m> Local Maximum.</li>
+						<li>At <m>(1, 0)</m>: <m>D = 0 - 4 = -4 &lt; 0 \implies</m> Saddle Point.</li>
+						<li>At <m>(-1, 0)</m>: <m>D = 0 - 4 = -4 &lt; 0 \implies</m> Saddle Point.</li>
+					</ul>
+				</p>
+			</solution>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Consider the function <m>f(x, y)=y e^x+x^2+3</m>.
+			</p>
+		</introduction>
+		<task points="6">
+			<statement>
+				<p>
+					Find a unit vector that points in the direction of maximum increase at the point <m>(0,2)</m>.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					The direction of maximum increase is given by the gradient <m>\nabla f</m>.
+					<me>\nabla f = \langle y e^x + 2x, e^x \rangle.</me>
+					Evaluating at <m>(0, 2)</m>:
+					<me>\nabla f(0, 2) = \langle 2e^0 + 2(0), e^0 \rangle = \langle 2, 1 \rangle.</me>
+					The unit vector is:
+					<me>\vec{u} = \frac{\langle 2, 1 \rangle}{\sqrt{2^2 + 1^2}} = \left\langle \frac{2}{\sqrt{5}}, \frac{1}{\sqrt{5}} \right\rangle.</me>
+				</p>
+			</solution>
+		</task>
+		<task points="4">
+			<statement>
+				<p>
+					Find the directional derivative of <m>f</m> at the point <m>(0,2)</m> in the direction of the vector <m>\vec{v}=\langle-1,3\rangle</m>.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					First, we find the unit vector in the direction of <m>\vec{v}</m>:
+					<me>\vec{w} = \frac{\langle -1, 3 \rangle}{\sqrt{(-1)^2 + 3^2}} = \left\langle -\frac{1}{\sqrt{10}}, \frac{3}{\sqrt{10}} \right\rangle.</me>
+					Using the gradient found in part (a), <m>\nabla f(0, 2) = \langle 2, 1 \rangle</m>:
+					<me>D_{\vec{w}} f(0, 2) = \nabla f(0, 2) \cdot \vec{w} = (2)\left(-\frac{1}{\sqrt{10}}\right) + (1)\left(\frac{3}{\sqrt{10}}\right) = \frac{1}{\sqrt{10}}.</me>
+				</p>
+			</solution>
+		</task>
+		<task points="4">
+			<statement>
+				<p>
+					Find the equation of the tangent plane to the surface <m>z=f(x, y)</m> at the point where <m>x=0</m> and <m>y=2</m>.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					The value of the function at <m>(0, 2)</m> is <m>f(0, 2) = 2e^0 + 0^2 + 3 = 5</m>.
+					The partial derivatives at <m>(0, 2)</m> are <m>f_x = 2</m> and <m>f_y = 1</m>.
+					The equation of the tangent plane is:
+					<me>z - 5 = 2(x - 0) + 1(y - 2) \implies z = 2x + y + 3.</me>
+				</p>
+			</solution>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				In this problem, we want to find the (absolute) maximum and minimum values of the function <m>f(x, y, z)=x y z</m> subject to the constraint <m>2 x+y+4 z=1</m>.
+			</p>
+		</introduction>
+		<task points="5">
+			<statement>
+				<p>
+					Set up the system of equations that you need to solve to find the maximum and minimum values using the method of Lagrange multipliers.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Let <m>g(x,y,z) = 2x + y + 4z = 1</m>. We need to solve <m>\nabla f = \lambda \nabla g</m> along with the constraint:
+					<me>
+						\begin{cases}
+						yz = 2\lambda \\
+						xz = \lambda \\
+						xy = 4\lambda \\
+						2x + y + 4z = 1
+						\end{cases}
+					</me>
+				</p>
+			</solution>
+		</task>
+		<task points="7">
+			<statement>
+				<p>
+					Solve the system of equations you wrote in (a) and identify the absolute maximums and minimums.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					From the first two equations, <m>yz = 2(xz)</m>. If <m>z \neq 0</m>, then <m>y = 2x</m>.
+					From the second and third equations, <m>xy = 4(xz)</m>. If <m>x \neq 0</m>, then <m>y = 4z</m>.
+					Thus <m>2x = y = 4z \implies x = y/2, z = y/4</m>.
+					Substituting these into the constraint <m>2(y/2) + y + 4(y/4) = 1 \implies y + y + y = 1 \implies 3y = 1</m>.
+					We find <m>y = 1/3</m>, which implies <m>x = 1/6</m> and <m>z = 1/12</m>.
+					The value of the function at this stationary point is <m>f(1/6, 1/3, 1/12) = 1/216</m>.
+					If any of <m>x, y, z</m> are zero, <m>f=0</m>.
+					Note: On the entire plane <m>2x+y+4z=1</m>, the function <m>xyz</m> is not bounded from above or below. However, if restricted to the first octant (<m>x, y, z \ge 0</m>), the point found is the absolute maximum, and the minimum value is 0 (occurring on the boundaries).
+				</p>
+			</solution>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Compute the following integrals.
+			</p>
+		</introduction>
+		<task points="4">
+			<statement>
+				<p>
+					<m>\displaystyle\int_0^2 \int_0^1 y e^{x y} d x d y</m>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Evaluate the inner integral first:
+					<me>\int_0^1 y e^{xy} \, dx = [e^{xy}]_0^1 = e^y - 1.</me>
+					Now evaluate the outer integral:
+					<me>\int_0^2 (e^y - 1) \, dy = [e^y - y]_0^2 = (e^2 - 2) - (e^0 - 0) = e^2 - 3.</me>
+				</p>
+			</solution>
+		</task>
+		<task points="7">
+			<statement>
+				<p>
+					<m>\displaystyle\int_0^3 \int_0^{\sqrt{9-x^2}} \cos \left(x^2+y^2\right) d y d x</m>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					The region of integration is the first quadrant of the disk <m>x^2 + y^2 \le 9</m>. We convert to polar coordinates:
+					<me>\int_0^{\pi/2} \int_0^3 \cos(r^2) r \, dr \, d\theta.</me>
+					Inner integral:
+					<me>\int_0^3 r \cos(r^2) \, dr = \left[ \frac{1}{2} \sin(r^2) \right]_0^3 = \frac{1}{2} \sin(9).</me>
+					Total integral:
+					<me>\frac{\pi}{2} \cdot \frac{1}{2} \sin(9) = \frac{\pi}{4} \sin(9).</me>
+				</p>
+			</solution>
+		</task>
+		<task points="7">
+			<statement>
+				<p>
+					<m>\displaystyle\int_0^2 \int_{\frac{x}{2}}^1 \sqrt{y^2+1} d y d x</m>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					The region of integration is <m>0 \le x \le 2, x/2 \le y \le 1</m>. We change the order of integration to <m>0 \le y \le 1, 0 \le x \le 2y</m>:
+					<me>\int_0^1 \int_0^{2y} \sqrt{y^2+1} \, dx \, dy = \int_0^1 2y \sqrt{y^2+1} \, dy.</me>
+					Using the substitution <m>u = y^2 + 1</m>, <m>du = 2y \, dy</m>:
+					<me>\int_1^2 \sqrt{u} \, du = \left[ \frac{2}{3} u^{3/2} \right]_1^2 = \frac{2}{3}(2\sqrt{2} - 1).</me>
+				</p>
+			</solution>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Write down integrals that represent the volume of the following solids. You do NOT need to evaluate the integrals.
+			</p>
+		</introduction>
+		<task points="6">
+			<statement>
+				<p>
+					The solid that lies within the cylinder <m>x^2+y^2=8</m>, above the plane <m>z=0</m>, and below the cone <m>z=\sqrt{2 x^2+2 y^2}</m>.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Using cylindrical coordinates:
+					<me>V = \int_{0}^{2\pi} \int_{0}^{\sqrt{8}} \int_{0}^{\sqrt{2}r} r \, dz \, dr \, d\theta.</me>
+				</p>
+			</solution>
+		</task>
+		<task points="6">
+			<statement>
+				<p>
+					The solid in the first octant that lies between the spheres <m>x^2+y^2+z^2=1</m> and <m>x^2+y^2+z^2=9</m>, and below the cone <m>z=\sqrt{x^2+y^2}</m>.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					In spherical coordinates, the first octant implies <m>0 \le \theta \le \pi/2</m>. The cone <m>z = \sqrt{x^2+y^2}</m> corresponds to <m>\phi = \pi/4</m>. "Below" the cone means <m>\pi/4 \le \phi \le \pi/2</m>.
+					<me>V = \int_{0}^{\pi/2} \int_{\pi/4}^{\pi/2} \int_{1}^{3} \rho^2 \sin \phi \, d\rho \, d\phi \, d\theta.</me>
+				</p>
+			</solution>
+		</task>
+	</exercise>
+	<exercise>
+		<task points="6">
+			<statement>
+				<p>
+					Consider the double integral <me>\int_0^1 \int_{x^3}^{\sqrt{x}} f(x, y) d y d x</me> Write down a double integral with order of integration <m>d x d y</m> that is equal to the given double integral.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					The region is bounded by <m>y = x^3 \implies x = y^{1/3}</m> and <m>y = \sqrt{x} \implies x = y^2</m>.
+					<me>\int_0^1 \int_{y^2}^{\sqrt[3]{y}} f(x, y) d x d y.</me>
+				</p>
+			</solution>
+		</task>
+		<task points="6">
+			<statement>
+				<p>
+					Consider the triple integral <me>\int_{-4}^4 \int_{-\sqrt{16-x^2}}^{\sqrt{16-x^2}} \int_{x^2+y^2}^{16} f(x, y, z) d z d y d x</me> Write down a triple integral with order of integration <m>d x d z d y</m> that is equal to the given triple integral.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					The region <m>E</m> is defined by <m>x^2 + y^2 \le z \le 16</m> and <m>x^2 + y^2 \le 16</m>. For a fixed <m>y</m> and <m>z</m>, we have <m>x^2 \le z - y^2</m>.
+					<me>\int_{-4}^4 \int_{y^2}^{16} \int_{-\sqrt{z-y^2}}^{\sqrt{z-y^2}} f(x, y, z) \, d x \, d z \, d y.</me>
+				</p>
+			</solution>
+		</task>
+	</exercise>
+	<exercise points="10">
+		<statement>
+			<p>
+				Clearly mark each of the following as True or False. No justification is needed.
+			</p>
+		</statement>
+		<task>
+			<statement>
+				<p>
+					The surface with equation <m>\phi=\frac{\pi}{2}</m> is a cone.
+				</p>
+			</statement>
+			<choices>
+				<choice>
+					<statement>
+						<p>
+							True
+						</p>
+					</statement>
+				</choice>
+				<choice correct="yes">
+					<statement>
+						<p>
+							False
+						</p>
+					</statement>
+				</choice>
+			</choices>
+			<solution>
+				<p>
+					False. <m>\phi = \pi/2</m> is the <m>xy</m>-plane.
+				</p>
+			</solution>
+		</task>
+		<task>
+			<statement>
+				<p>
+					If <m>\vec{u} \neq\langle 0,0\rangle</m> and <m>D_{\vec{u}} f=0</m> then <m>\nabla f=\langle 0,0\rangle</m>.
+				</p>
+			</statement>
+			<choices>
+				<choice>
+					<statement>
+						<p>
+							True
+						</p>
+					</statement>
+				</choice>
+				<choice correct="yes">
+					<statement>
+						<p>
+							False
+						</p>
+					</statement>
+				</choice>
+			</choices>
+			<solution>
+				<p>
+					False. The directional derivative is zero if the direction is perpendicular to the gradient.
+				</p>
+			</solution>
+		</task>
+		<task>
+			<statement>
+				<p>
+					The integral <m>\int_0^1 \int_0^1 \int_0^1 z d z d y d x</m> represents the volume of a cube with side length 1 .
+				</p>
+			</statement>
+			<choices>
+				<choice>
+					<statement>
+						<p>
+							True
+						</p>
+					</statement>
+				</choice>
+				<choice correct="yes">
+					<statement>
+						<p>
+							False
+						</p>
+					</statement>
+				</choice>
+			</choices>
+			<solution>
+				<p>
+					False. The volume is <m>\int_0^1 \int_0^1 \int_0^1 1 \, dz \, dy \, dx</m>.
+				</p>
+			</solution>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Let the region <m>E</m> be the half of a sphere centered at the origin where <m>x \leq 0</m>. Then <m>\iiint_E x^2 d V</m> is positive.
+				</p>
+			</statement>
+			<choices>
+				<choice correct="yes">
+					<statement>
+						<p>
+							True
+						</p>
+					</statement>
+				</choice>
+				<choice>
+					<statement>
+						<p>
+							False
+						</p>
+					</statement>
+				</choice>
+			</choices>
+			<solution>
+				<p>
+					True. The integrand is non-negative and positive on almost the entire region.
+				</p>
+			</solution>
+		</task>
+		<task>
+			<statement>
+				<p>
+					There exists a continuous function <m>f(x, y)</m> such that <m>f_x=2 x \sin (y)-3 x y</m> and <m>f_y= x^2 \cos (y)-x^3 y^2+5</m>
+				</p>
+			</statement>
+			<choices>
+				<choice>
+					<statement>
+						<p>
+							True
+						</p>
+					</statement>
+				</choice>
+				<choice correct="yes">
+					<statement>
+						<p>
+							False
+						</p>
+					</statement>
+				</choice>
+			</choices>
+			<solution>
+				<p>
+					False. By Clairaut's Theorem, we should have <m>f_{xy} = f_{yx}</m>. Here, <m>f_{xy} = 2x \cos(y) - 3x</m> while <m>f_{yx} = 2x \cos(y) - 3x^2 y^2</m>.
+				</p>
+			</solution>
+		</task>
+	</exercise>
+</worksheet>
