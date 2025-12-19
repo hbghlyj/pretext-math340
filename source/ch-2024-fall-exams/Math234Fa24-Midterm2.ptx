@@ -248,7 +248,8 @@
 			<solution>
 				<p>
 					The region is a sector of a disk of radius <m>\sqrt{2}</m> from <m>\theta = 0</m> to <m>\theta = \pi/4</m>.
-					Wait, the provided solution says <m>0 \le r \le \sqrt{2}</m> and <m>0 \le \theta \le \pi/4</m>.
+                <p>
+                    The region is a sector of a disk of radius <m>\sqrt{2}</m> from <m>\theta = 0</m> to <m>\theta = \pi/4</m>.
 					<me>
 						\begin{aligned}
 						\int_0^{\pi/4} \int_0^{\sqrt{2}} r \cdot r \, dr \, d\theta \amp = \int_0^{\pi/4} \left[ \frac{r^3}{3} \right]_0^{\sqrt{2}} \, d\theta \\
