@@ -235,7 +235,7 @@
 					<me>\int_0^{\pi/2} \int_0^3 \cos(r^2) r \, dr \, d\theta.</me>
 					Let <m>u = r^2</m>, then <m>du = 2r \, dr</m>.
 					<me> = \int_0^{\pi/2} \left( \int_0^9 \cos(u) \frac{1}{2} \, du \right) \, d\theta = \int_0^{\pi/2} \left. \frac{1}{2} \sin(u) \right|_0^9 \, d\theta.</me>
-					<me>= \frac{\pi}{2} \cdot \frac{1}{2} \sin(9).</me>
+					<me>= \frac{\pi}{2} \cdot \frac{1}{2} \sin(9) = \frac{\pi}{4}\sin(9).</me>
 				</p>
 			</solution>
 		</task>
