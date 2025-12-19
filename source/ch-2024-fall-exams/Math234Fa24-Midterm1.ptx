@@ -155,7 +155,7 @@
 			</statement>
 			<solution>
 				<p>
-					<me>\vec{L}(s) = \langle 2, 4, 12 \rangle + s\langle 1, 4, 14 \rangle.</me>
+					<me>\vec{L}(s) = \langle 2, 4, 12 \rangle + s\langle 1, 4, 14 \rangle</me>.
 				</p>
 			</solution>
 		</task>
