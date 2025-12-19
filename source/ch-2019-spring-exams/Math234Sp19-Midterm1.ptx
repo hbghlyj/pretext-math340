@@ -38,8 +38,8 @@
 					The point <m>(0,0,1)</m> corresponds to <m>t=0</m> and <m>(2\pi, 0, e^\pi)</m> corresponds to <m>t=\pi</m>.
 					<me>
 						\begin{aligned}
-						\vec{r}\,'(t) \amp = \langle 2, \cos t, e^t \rangle \\
-						|\vec{r}\,'(t)| \amp = \sqrt{4 + \cos^2 t + e^{2t}} \\
+						\vec{r}'(t) \amp = \langle 2, \cos t, e^t \rangle \\
+						|\vec{r}'(t)| \amp = \sqrt{4 + \cos^2 t + e^{2t}} \\
 						L \amp = \int_0^\pi \sqrt{4 + \cos^2 t + e^{2t}} \, dt
 						\end{aligned}
 					</me>
@@ -49,7 +49,7 @@
 		<task>
 			<statement>
 				<p>
-					Show that if <m>|\vec{r}(t)|=4</m>, then <m>\vec{r}\,'(t)</m> is orthogonal to <m>\vec{r}(t)</m>. (Hint: recall that <m>|\vec{r}(t)|^2=\vec{r}(t) \cdot \vec{r}(t)</m>).
+					Show that if <m>|\vec{r}(t)|=4</m>, then <m>\vec{r}'(t)</m> is orthogonal to <m>\vec{r}(t)</m>. (Hint: recall that <m>|\vec{r}(t)|^2=\vec{r}(t) \cdot \vec{r}(t)</m>).
 				</p>
 			</statement>
 			<solution>
@@ -59,12 +59,12 @@
 					<me>
 						\begin{aligned}
 						\frac{d}{dt} (\vec{r}(t) \cdot \vec{r}(t)) \amp = \frac{d}{dt} (16) \\
-						\vec{r}\,'(t) \cdot \vec{r}(t) + \vec{r}(t) \cdot \vec{r}\,'(t) \amp = 0 \\
-						2 \vec{r}\,'(t) \cdot \vec{r}(t) \amp = 0 \\
-						\vec{r}\,'(t) \cdot \vec{r}(t) \amp = 0
+						\vec{r}'(t) \cdot \vec{r}(t) + \vec{r}(t) \cdot \vec{r}'(t) \amp = 0 \\
+						2 \vec{r}'(t) \cdot \vec{r}(t) \amp = 0 \\
+						\vec{r}'(t) \cdot \vec{r}(t) \amp = 0
 						\end{aligned}
 					</me>
-					Thus, <m>\vec{r}\,'(t)</m> is orthogonal to <m>\vec{r}(t)</m>.
+					Thus, <m>\vec{r}'(t)</m> is orthogonal to <m>\vec{r}(t)</m>.
 				</p>
 			</solution>
 		</task>
@@ -219,10 +219,10 @@
 				<p>
 					<me>
 						\begin{aligned}
-						\vec{r}\,'(t) \amp = \langle 1, 2 \cos t, -2 \sin t \rangle \\
-						|\vec{r}\,'(t)| \amp = \sqrt{1 + 4 \cos^2 t + 4 \sin^2 t} = \sqrt{5} \\
+						\vec{r}'(t) \amp = \langle 1, 2 \cos t, -2 \sin t \rangle \\
+						|\vec{r}'(t)| \amp = \sqrt{1 + 4 \cos^2 t + 4 \sin^2 t} = \sqrt{5} \\
 						\vec{T}(t) \amp = \langle \frac{1}{\sqrt{5}}, \frac{2}{\sqrt{5}} \cos t, -\frac{2}{\sqrt{5}} \sin t \rangle \implies \vec{T}(\frac{\pi}{2}) = \langle \frac{1}{\sqrt{5}}, 0, -\frac{2}{\sqrt{5}} \rangle \\
-						\vec{T}\,'(t) \amp = \langle 0, -\frac{2}{\sqrt{5}} \sin t, -\frac{2}{\sqrt{5}} \cos t \rangle \implies \vec{T}\,'(\frac{\pi}{2}) = \langle 0, -\frac{2}{\sqrt{5}}, 0 \rangle \\
+						\vec{T}'(t) \amp = \langle 0, -\frac{2}{\sqrt{5}} \sin t, -\frac{2}{\sqrt{5}} \cos t \rangle \implies \vec{T}\,'(\frac{\pi}{2}) = \langle 0, -\frac{2}{\sqrt{5}}, 0 \rangle \\
 						|\vec{T}\,'(\frac{\pi}{2})| \amp = \frac{2}{\sqrt{5}} \\
 						\vec{N}(\frac{\pi}{2}) \amp = \langle 0, -1, 0 \rangle \\
 						\vec{B}(\frac{\pi}{2}) \amp = \vec{T}(\frac{\pi}{2}) \times \vec{N}(\frac{\pi}{2}) = \begin{vmatrix} \hat{\imath} \amp \hat{\jmath} \amp \hat{k} \\ 1/\sqrt{5} \amp 0 \amp -2/\sqrt{5} \\ 0 \amp -1 \amp 0 \end{vmatrix} = \langle -\frac{2}{\sqrt{5}}, 0, -\frac{1}{\sqrt{5}} \rangle
