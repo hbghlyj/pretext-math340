@@ -24,7 +24,7 @@
 					The magnitude is:
 					<me>|\nabla f(1, 2)| = \sqrt{4e^{18} + 16e^{18}} = \sqrt{20e^{18}} = \sqrt{20}e^9.</me>
 					The unit vector is:
-					<me>\hat{u} = \left\langle \frac{2}{\sqrt{20}}, \frac{4}{\sqrt{20}} \right\rangle.</me>
+					<me>\hat{u} = \left\langle \frac{1}{\sqrt{5}}, \frac{2}{\sqrt{5}} \right\rangle.</me>
 				</p>
 			</solution>
 		</task>
