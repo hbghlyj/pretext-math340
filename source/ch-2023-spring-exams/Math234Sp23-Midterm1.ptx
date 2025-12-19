@@ -229,7 +229,7 @@
 		<task>
 			<statement>
 				<p>
-					There exists a vector <m>\mathbf{w}</m> such that <m>\langle 1,1,1\rangle \times \mathbf{w}=\langle 1,1,1\rangle</m>.
+					There exists a vector <m>\vec{w}</m> such that <m>\langle 1,1,1\rangle \times \vec{w}=\langle 1,1,1\rangle</m>.
 				</p>
 			</statement>
 			<choices>
