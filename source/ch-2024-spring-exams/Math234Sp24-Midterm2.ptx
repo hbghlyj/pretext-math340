@@ -21,6 +21,11 @@
 		</solution>
 	</exercise>
 	<exercise>
+		<introduction>
+			<p>
+				This problem concerns the Chain Rule for multivariable functions.
+			</p>
+		</introduction>
 		<task>
 			<statement>
 				<p>
@@ -104,7 +109,7 @@
 		<task>
 			<statement>
 				<p>
-					(6 points) Find the absolute minimum and absolute maximum of <me>f(x, y)=2 x^2+y^2-2 x^2 y+6</me> on the rectangular region given by <m>R=\{(x, y) \mid-1 \leq x \leq 1,0 \leq y \leq 1\}</m>.
+					(6 points) Find the absolute minimum and absolute maximum of <me>f(x, y)</me> on the rectangular region given by <m>R=\{(x, y) \mid-1 \leq x \leq 1,0 \leq y \leq 1\}</m>.
 				</p>
 			</statement>
 			<solution>
