@@ -246,8 +246,6 @@
 				</p>
 			</statement>
 			<solution>
-				<p>
-					The region is a sector of a disk of radius <m>\sqrt{2}</m> from <m>\theta = 0</m> to <m>\theta = \pi/4</m>.
                 <p>
                     The region is a sector of a disk of radius <m>\sqrt{2}</m> from <m>\theta = 0</m> to <m>\theta = \pi/4</m>.
 					<me>
