@@ -84,7 +84,7 @@
 					The discriminant is <m>D = f_{xx}f_{yy} - f_{xy}^2 = (2y)(2y) - (2x)^2 = 4y^2 - 4x^2</m>.
 					<ul>
 						<li>At <m>(0, 1)</m>: <m>D = 4 - 0 = 4 > 0</m> and <m>f_{xx} = 2 > 0 \implies</m> Local Minimum.</li>
-						<li>At <m>(0, -1)</m>: <m>D = 4 - 0 = 4 > 0</m> and <m>f_{xx} = -2 < 0 \implies</m> Local Maximum.</li>
+						<li>At <m>(0, -1)</m>: <m>D = 4 - 0 = 4 > 0</m> and <m>f_{xx} = -2 &lt; 0 \implies</m> Local Maximum.</li>
 						<li>At <m>(1, 0)</m>: <m>D = 0 - 4 = -4 &lt; 0 \implies</m> Saddle Point.</li>
 						<li>At <m>(-1, 0)</m>: <m>D = 0 - 4 = -4 &lt; 0 \implies</m> Saddle Point.</li>
 					</ul>
