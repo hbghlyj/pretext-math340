@@ -17,7 +17,7 @@
 				<p>
 					<me>
 						\begin{aligned}
-						f_x \amp = 2e^{2x+3y} + \frac{2xy^3}{12} \implies f_x(3,-2) = 2e^0 + \frac{6(-8)}{12} = 2 - 4 = -2 \\
+f_x \amp = 2e^{2x+3y} + \frac{xy^3}{6} \implies f_x(3,-2) = 2e^0 + \frac{6(-8)}{12} = 2 - 4 = -2
 f_y \amp = 3e^{2x+3y} + \frac{x^2y^2}{4} \implies f_y(3,-2) = 3e^0 + \frac{3(9)(4)}{12} = 3 + 9 = 12
 						f(3,-2) \amp = e^0 + \frac{9(-8)}{12} + 6 = 1 - 6 + 6 = 1
 						\end{aligned}
