@@ -183,7 +183,7 @@
 		<task>
 			<statement>
 				<p>
-					The unit vector in the direction of <m>\mathbf{v}</m> is always shorter than <m>\mathbf{v}</m>.
+					The unit vector in the direction of <m>\vec{v}</m> is always shorter than <m>\vec{v}</m>.
 				</p>
 			</statement>
 			<choices>
