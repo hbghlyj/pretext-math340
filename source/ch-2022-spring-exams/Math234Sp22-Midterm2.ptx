@@ -64,7 +64,7 @@
 				<me>\frac{\partial z}{\partial x} = \frac{1}{2}(1+24)^{-1/2} \cdot 2 = \frac{1}{5}.</me>
 				<me>\frac{\partial z}{\partial y} = \frac{1}{2}(1+24)^{-1/2} \cdot 24 = \frac{12}{5}.</me>
 				Using <m>f_t(2,1) = -2</m> and <m>g_t(2,1) = 1</m>:
-				<me>\frac{dz}{dt} = \frac{1}{5}(-2) + \frac{12}{5}(1) = \frac{10}{5} = 2.</me>
+				<me>\frac{\partial z}{\partial t} = \frac{1}{5}(-2) + \frac{12}{5}(1) = \frac{10}{5} = 2.</me>
 			</p>
 		</solution>
 	</exercise>
