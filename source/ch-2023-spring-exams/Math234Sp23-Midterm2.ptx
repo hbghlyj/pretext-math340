@@ -33,9 +33,9 @@
 					The partial derivatives of <m>x</m> and <m>y</m> are:
 					<me>\frac{\partial x}{\partial t} = 2t, \quad \frac{\partial y}{\partial t} = s.</me>
 					Using the expression from part (a):
-					<me>\frac{dz}{dt} = (x^2y+y^2)\cdot 2t + \left(\frac{1}{3}x^3+2xy\right)\cdot s.</me>
+					<me>\frac{\partial z}{\partial t} = (x^2y+y^2)\cdot 2t + \left(\frac{1}{3}x^3+2xy\right)\cdot s.</me>
 					When <m>s=3</m> and <m>t=0</m>, we have <m>x=3, y=1</m>, so:
-					<me>\frac{dz}{dt} = (9+1)\cdot 0 + \left(\frac{1}{3} \cdot 3^3 + 6\right) \cdot 3 = (10)\cdot 0 + (9+6)\cdot 3 = 45.</me>
+					<me>\frac{\partial z}{\partial t} = (9+1)\cdot 0 + \left(\frac{1}{3} \cdot 3^3 + 6\right) \cdot 3 = (10)\cdot 0 + (9+6)\cdot 3 = 45.</me>
 				</p>
 			</solution>
 		</task>
