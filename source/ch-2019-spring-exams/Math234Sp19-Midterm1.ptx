@@ -104,8 +104,8 @@
 			<solution>
 				<p>
 					The ball lands when the vertical component of the position is zero:
-					<me>7t - 2t^2 = 0 \implies t(7 - 2t) = 0.</me>
-					The ball lands at <m>t = 3.5</m> seconds.
+					<me>7t - 2t^2 = 0 \implies t(7 - 2t) = 0 \implies t=0 \text{ or } t=3.5.</me>
+					Since <m>t=0</m> is the launch time, the ball lands at <m>t = 3.5</m> seconds.
 				</p>
 			</solution>
 		</task>
