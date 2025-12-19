@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<worksheet xml:id="Math234Sp24-Midterm2" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Math 234 - Midterm 2 - Spring 2024</title>
+	<exercise>
+		<statement>
+			<p>
+				(12 points) Find the equation of the tangent plane to the surface <m>z=\sin (x+y)-x^3 y^4+6 x</m> at the point <m>(1,-1,5)</m>.
+			</p>
+		</statement>
+		<solution>
+			<p>
+				<me>
+					\begin{aligned}
+					f_x \amp = \cos(x+y) - 3x^2y^4 + 6 \implies f_x(1,-1) = \cos(0) - 3(1)(1) + 6 = 4 \\
+					f_y \amp = \cos(x+y) - 4x^3y^3 \implies f_y(1,-1) = \cos(0) - 4(1)(-1) = 5
+					\end{aligned}
+				</me>
+				The equation of the tangent plane at <m>(1,-1,5)</m> is:
+				<me>z - 5 = 4(x-1) + 5(y+1).</me>
+			</p>
+		</solution>
+	</exercise>
+	<exercise>
+		<task>
+			<statement>
+				<p>
+					(3 points) Suppose <m>z=f(r, u, v)</m> where <m>r, u</m> and <m>v</m> are functions of <m>s</m> and <m>t</m>. Write an expression for <m>\frac{\partial z}{\partial t}</m> using the Chain Rule.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<me>\frac{\partial z}{\partial t} = \frac{\partial z}{\partial r} \frac{\partial r}{\partial t} + \frac{\partial z}{\partial u} \frac{\partial u}{\partial t} + \frac{\partial z}{\partial v} \frac{\partial v}{\partial t}.</me>
+				</p>
+			</solution>
+		</task>
+		<task>
+			<statement>
+				<p>
+					(7 points) Let <m>z=f(r, u, v)</m>, where <m>r=2 s+t^2, u=t s</m>, and <m>v=s^2 t</m>. Suppose <m>\frac{\partial z}{\partial r}= 2 r+u v</m>, <m>\frac{\partial z}{\partial u}=r v</m>, and <m>\frac{\partial z}{\partial v}=r u+2</m>. Compute <m>\frac{\partial z}{\partial t}</m> when <m>s=0</m> and <m>t=1</m>.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					First find <m>r, u, v</m> at <m>(s,t) = (0,1)</m>:
+					<me>r = 2(0) + 1^2 = 1, \quad u = (1)(0) = 0, \quad v = (0^2)(1) = 0.</me>
+					Find the partial derivatives of <m>r, u, v</m> with respect to <m>t</m> at <m>(0,1)</m>:
+					<me>\frac{\partial r}{\partial t} = 2t = 2, \quad \frac{\partial u}{\partial t} = s = 0, \quad \frac{\partial v}{\partial t} = s^2 = 0.</me>
+					Now use the Chain Rule:
+					<me>
+						\begin{aligned}
+						\frac{\partial z}{\partial t} \amp = \frac{\partial z}{\partial r} \frac{\partial r}{\partial t} + \frac{\partial z}{\partial u} \frac{\partial u}{\partial t} + \frac{\partial z}{\partial v} \frac{\partial v}{\partial t} \\
+						\amp = (2r + uv)(2) + (rv)(0) + (ru + 2)(0) \\
+						\amp = (2(1) + 0)(2) = 4.
+						\end{aligned}
+					</me>
+				</p>
+			</solution>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Consider the function <me>f(x, y)=2 x^2+y^2-2 x^2 y+6</me>
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					(7 points) Find all critical point(s) of <m>f(x, y)</m>.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<me>
+						\begin{aligned}
+						f_x \amp = 4x - 4xy = 4x(1-y) = 0 \implies x=0 \text{ or } y=1 \\
+						f_y \amp = 2y - 2x^2 = 2(y-x^2) = 0 \implies y=x^2
+						\end{aligned}
+					</me>
+					If <m>x=0</m>, then <m>y=0</m>. Point <m>(0,0)</m>.
+					If <m>y=1</m>, then <m>x^2=1 \implies x=\pm 1</m>. Points <m>(1,1), (-1,1)</m>.
+					Critical points are: <m>(0,0), (1,1), (-1,1)</m>.
+				</p>
+			</solution>
+		</task>
+		<task>
+			<statement>
+				<p>
+					(7 points) Classify each critical point you found in (a) as a local maximum, local minimum, or saddle point.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<me>f_{xx} = 4-4y, \quad f_{xy} = -4x, \quad f_{yy} = 2</me>
+					<me>D = f_{xx}f_{yy} - (f_{xy})^2 = (4-4y)(2) - (-4x)^2 = 8 - 8y - 16x^2</me>
+					<ul>
+						<li>At <m>(0,0)</m>: <m>D = 8 \gt 0</m>. Since <m>f_{xx} = 4 \gt 0 \implies</m> local minimum.</li>
+						<li>At <m>(1,1)</m>: <m>D = 8 - 8 - 16 = -16 \lt 0 \implies</m> saddle point.</li>
+						<li>At <m>(-1,1)</m>: <m>D = 8 - 8 - 16 = -16 \lt 0 \implies</m> saddle point.</li>
+					</ul>
+				</p>
+			</solution>
+		</task>
+		<task>
+			<statement>
+				<p>
+					(6 points) Find the absolute minimum and absolute maximum of <me>f(x, y)=2 x^2+y^2-2 x^2 y+6</me> on the rectangular region given by <m>R=\{(x, y) \mid-1 \leq x \leq 1,0 \leq y \leq 1\}</m>.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Critical points in the interior: <m>(0,0)</m> is on the boundary.
+					Check boundaries:
+					<ul>
+						<li>Along <m>y=0</m>: <m>f(x,0) = 2x^2 + 6</m>. Max at <m>x=\pm 1</m> is 8, min at <m>x=0</m> is 6.</li>
+						<li>Along <m>y=1</m>: <m>f(x,1) = 2x^2 + 1 - 2x^2 + 6 = 7</m>. Value is constant 7.</li>
+						<li>Along <m>x=\pm 1</m>: <m>f(\pm 1, y) = 2 + y^2 - 2y + 6 = y^2 - 2y + 8</m>. This parabola has its vertex at <m>y=1</m> where it is 7, and at <m>y=0</m> it is 8.</li>
+					</ul>
+					The absolute maximum is 8 (at <m>(\pm 1, 0)</m>), and the absolute minimum is 6 (at <m>(0,0)</m>).
+				</p>
+			</solution>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Consider the function <m>f(x, y)=e^{x^2 y}</m>.
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					(6 points) Compute <m>\nabla f(1,2)</m>.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<me>
+						\begin{aligned}
+						\nabla f \amp = \langle 2xy e^{x^2y}, x^2 e^{x^2y} \rangle \\
+						\nabla f(1,2) \amp = \langle 4e^2, e^2 \rangle = e^2 \langle 4, 1 \rangle.
+						\end{aligned}
+					</me>
+				</p>
+			</solution>
+		</task>
+		<task>
+			<statement>
+				<p>
+					(6 points) Find the directional derivative of <m>f</m> at the point <m>(1,2)</m> in the direction of the vector <m>\vec{v}=\langle-1,3\rangle</m>.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					The unit vector is <m>\vec{u} = \frac{\langle -1, 3 \rangle}{\sqrt{10}}</m>.
+					<me>
+						\begin{aligned}
+						D_{\vec{u}} f(1,2) \amp = \nabla f(1,2) \cdot \vec{u} \\
+						\amp = e^2 \langle 4, 1 \rangle \cdot \frac{\langle -1, 3 \rangle}{\sqrt{10}} = e^2 \frac{-4 + 3}{\sqrt{10}} = -\frac{e^2}{\sqrt{10}}.
+						\end{aligned}
+					</me>
+				</p>
+			</solution>
+		</task>
+		<task>
+			<statement>
+				<p>
+					(4 points) Find the direction of fastest decrease of <m>f</m> at <m>(1,2)</m>. Write your answer as a unit vector.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					The direction of fastest decrease is <m>-\nabla f(1,2) = -e^2 \langle 4, 1 \rangle</m>.
+					The unit vector is:
+					<me>\vec{u} = -\frac{\nabla f}{|\nabla f|} = \frac{-\langle 4, 1 \rangle}{\sqrt{16+1}} = \langle -\frac{4}{\sqrt{17}}, -\frac{1}{\sqrt{17}} \rangle.</me>
+				</p>
+			</solution>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				In this problem, we want to find the (absolute) maximum and minimum values of the function <m>f(x, y)=x y</m> subject to the constraint <m>4 x^2+9 y^2=36</m>.
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					(5 points) Set up the system of equations that you need to solve to find the maximum and minimum values using the method of Lagrange multipliers.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Let <m>g(x,y) = 4x^2 + 9y^2 = 36</m>.
+					<me>
+						\begin{aligned}
+						\nabla f \amp = \lambda \nabla g \\
+						\langle y, x \rangle \amp = \lambda \langle 8x, 18y \rangle
+						\end{aligned}
+					</me>
+					The system is:
+					<me>
+						\begin{cases}
+						y = 8\lambda x \\
+						x = 18\lambda y \\
+						4x^2 + 9y^2 = 36
+						\end{cases}
+					</me>
+				</p>
+			</solution>
+		</task>
+		<task>
+			<statement>
+				<p>
+					(7 points) Find the absolute maximum and minimum values.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					From the first two equations, <m>\lambda = \frac{y}{8x} = \frac{x}{18y} \implies 18y^2 = 8x^2 \implies 9y^2 = 4x^2</m>.
+					Substitute into constraint: <m>4x^2 + 4x^2 = 36 \implies 8x^2 = 36 \implies x^2 = 4.5</m>.
+					Then <m>9y^2 = 18 \implies y^2 = 2</m>.
+					The coordinates are <m>x = \pm \frac{3}{\sqrt{2}}</m> and <m>y = \pm \sqrt{2}</m>.
+					Possible values of <m>f(x,y) = xy</m>:
+					<me>f( \pm \frac{3}{\sqrt{2}}, \pm \sqrt{2} ) = \pm 3.</me>
+					The absolute maximum is 3, and the absolute minimum is -3.
+				</p>
+			</solution>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Compute the following integrals.
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					(5 points) <m>\int_0^2 \int_0^t(2 s+4 t) d s d t</m>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<me>
+						\begin{aligned}
+						\int_0^2 [s^2 + 4ts]_0^t \, dt \amp = \int_0^2 (t^2 + 4t^2) \, dt \\
+						\amp = \int_0^2 5t^2 \, dt \\
+						\amp = \left[ \frac{5t^3}{3} \right]_0^2 = \frac{40}{3}.
+						\end{aligned}
+					</me>
+				</p>
+			</solution>
+		</task>
+		<task>
+			<statement>
+				<p>
+					(7 points) <m>\int_0^4 \int_{\sqrt{y}}^2 \sin \left(x^3\right) d x d y</m>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Change order: <m>0 \le y \le 4, \sqrt{y} \le x \le 2</m> becomes <m>0 \le x \le 2, 0 \le y \le x^2</m>.
+					<me>
+						\begin{aligned}
+						\int_0^2 \int_0^{x^2} \sin(x^3) \, dy \, dx \amp = \int_0^2 x^2 \sin(x^3) \, dx \\
+						\amp = \left[ -\frac{1}{3} \cos(x^3) \right]_0^2 = -\frac{1}{3}(\cos 8 - \cos 0) = \frac{1 - \cos 8}{3}.
+						\end{aligned}
+					</me>
+				</p>
+			</solution>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Write down triple integrals that represent the volume of the following solids. You do NOT need to evaluate the integrals.
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					(6 points) The solid that lies within the cylinder <m>x^2+y^2=9</m>, above the plane <m>z=-2</m>, and below the paraboloid <m>z=16-x^2-y^2</m>.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Using cylindrical coordinates: <m>0 \le r \le 3</m>, <m>0 \le \theta \le 2\pi</m>, and <m>-2 \le z \le 16 - r^2</m>.
+					<me>V = \int_0^{2\pi} \int_0^3 \int_{-2}^{16-r^2} r \, dz \, dr \, d\theta.</me>
+				</p>
+			</solution>
+		</task>
+		<task>
+			<statement>
+				<p>
+					(6 points) The tetrahedron enclosed by the planes <m>2 x+4 y+z=8, z=0, y=0</m>, and <m>x=y</m>.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					The region in the <m>xy</m>-plane is bounded by <m>y=0</m>, <m>x=y</m>, and <m>2x+4y=8 \implies x+2y=4</m>.
+					The intersection of <m>x=y</m> and <m>x+2y=4</m> is <m>3y=4 \implies y=4/3</m>.
+					So <m>0 \le y \le 4/3</m> and <m>y \le x \le 4-2y</m>. The height is <m>z = 8-2x-4y</m>.
+					<me>V = \int_0^{4/3} \int_y^{4-2y} \int_0^{8-2x-4y} 1 \, dz \, dx \, dy.</me>
+				</p>
+			</solution>
+		</task>
+		<task>
+			<statement>
+				<p>
+					(6 points) The solid that lies below the cone <m>z=\sqrt{x^2+y^2}</m>, above the cone <m>z=-\sqrt{x^2+y^2}</m>, and within the sphere <m>x^2+y^2+z^2=25</m>.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Using spherical coordinates: <m>0 \le \rho \le 5</m>, <m>0 \le \theta \le 2\pi</m>, and <m>\pi/4 \le \phi \le 3\pi/4</m>.
+					<me>V = \int_0^{2\pi} \int_{\pi/4}^{3\pi/4} \int_0^5 \rho^2 \sin \phi \, d\rho \, d\phi \, d\theta.</me>
+				</p>
+			</solution>
+		</task>
+	</exercise>
+</worksheet>
