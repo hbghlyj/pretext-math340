@@ -1,1 +1,158 @@
-
+<?xml version="1.0" encoding="utf-8"?>
+<worksheet xml:id="Math234Fa23-Midterm1" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Math 234 - Midterm 1 - Fall 2023</title>
+	<exercise>
+		<introduction>
+			<p>
+				Consider the lines given by
+				<me>
+					\begin{pmatrix} x \\ y \\ z \end{pmatrix} = \begin{pmatrix} 4 \\ 3 \\ 1 \end{pmatrix} + t \begin{pmatrix} 0 \\ 1 \\ -1 \end{pmatrix}
+				</me>
+				and
+				<me>
+					\begin{pmatrix} x \\ y \\ z \end{pmatrix} = \begin{pmatrix} 4 \\ 3 \\ 1 \end{pmatrix} + t \begin{pmatrix} 2 \\ 1 \\ 3 \end{pmatrix}
+				</me>
+				Find the equation of the plane that contains both lines.
+			</p>
+		</introduction>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Consider the surface <m>x+y^2=z^2</m>.
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					Sketch the traces of the form <m>x=k</m>, with <m>k=0,1</m> in the <m>yz</m>-plane where the <m>y</m> axis is horizontal. Label your traces.
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Sketch the traces of the form <m>y=k</m>, with <m>k=0,1</m> in the <m>xz</m>-plane where the <m>x</m> axis is horizontal. Label your traces.
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Sketch the traces of the form <m>z=k</m>, with <m>k=0,1</m> in the <m>xy</m>-plane where the <m>x</m> axis is horizontal. Label your traces.
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Consider the surfaces <m>z=\sqrt{x^2+y^2}</m> and <m>z=y+1</m>. Find a vector function that represents the curve of intersection of the given surfaces.
+			</p>
+		</introduction>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Consider the curve given by <m>\vec{r}(t)=\langle\sin (\pi t), t^2, 5 t\rangle</m>.
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					Write down an integral that represents the length of the curve, with <m>0 \leq t \leq 2 \pi</m>. You do NOT need to evaluate the integral.
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Find a vector equation for the tangent line to the curve at the point <m>(0,4,10)</m>.
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Let <m>\vec{r}(t)</m> be a vector function in <m>\mathbb{R}^3</m>.
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					Assume that <m>\vec{r}(0)=\langle 1,0,0\rangle</m>. Show that if
+					<me>\vec{r}(t) \cdot \vec{r}\,'(t)=0 \text{ for all } t,</me>
+					then <m>\vec{r}(t)</m> lies on a sphere of radius 1.
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Show that if <m>\vec{r}(t)</m> lies on a sphere of radius <m>a</m> for all <m>t</m>, then
+					<me>\vec{r}(t) \cdot \vec{r}\,'(t)=0 \text{ for all } t.</me>
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Consider the curve given by <m>\vec{r}(t)=\langle\sqrt{3} t, \cos (t), \sin (t)\rangle</m>
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					Find the unit tangent vector, <m>\vec{T}(t)</m>.
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Find the unit normal vector, <m>\vec{N}(t)</m>.
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					By using the formula
+					<me>\kappa(t)=\frac{|\vec{T}\,'(t)|}{|\vec{r}\,'(t)|}</me>
+					find the curvature at <m>t=\pi</m>, that is, <m>\kappa(\pi)</m>.
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				Consider the function <m>f(x, y)=\frac{e^{x-y}}{\sqrt{y-x^2+4}}</m>.
+			</p>
+		</introduction>
+		<task>
+			<statement>
+				<p>
+					Find the domain of the function.
+				</p>
+			</statement>
+		</task>
+		<task>
+			<statement>
+				<p>
+					Sketch the domain of the function. Shade the region(s) that are part of the domain. Use dotted lines when sketching a curve that is NOT in the domain, and solid lines when sketching curves that are.
+				</p>
+			</statement>
+		</task>
+	</exercise>
+	<exercise>
+		<introduction>
+			<p>
+				If the limit exists, compute it (making sure to justify your answer). If the limit does not exist, justify why it doesn't exist. If you use a theorem, state clearly which theorem you are using. Make sure to use correct limit notation.
+				<me>\lim_{(x, y) \rightarrow (0,0)} \frac{2 x^2 y}{x^4+3 y^2}</me>
+			</p>
+		</introduction>
+	</exercise>
+</worksheet>
