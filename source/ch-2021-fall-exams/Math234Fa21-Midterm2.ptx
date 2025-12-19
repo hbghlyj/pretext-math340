@@ -87,7 +87,7 @@
 					Use polar coordinates. The region is the upper half-disk of radius 2: <m>0 \le r \le 2, 0 \le \theta \le \pi</m>.
 					<me>\iint_{\mathcal{R}} \cos(x^2 + y^2) \, dA = \int_0^{\pi} \int_0^2 \cos(r^2) r \, dr \, d\theta.</me>
 					Let <m>u = r^2</m>, then <m>du = 2r \, dr</m>.
-					<me>= \int_0^{\pi} \int_0^4 \cos(u) \frac{1}{2} \, du \, d\theta = \frac{\pi}{2} \sin(u) |_0^4 = \frac{\pi}{2} \sin(4).</me>
+					<me>= \int_0^{\pi} \left[ \frac{1}{2}\sin(u) \right]_0^4 \, d\theta = \int_0^{\pi} \frac{1}{2}\sin(4) \, d\theta = \frac{\pi}{2}\sin(4).</me>
 				</p>
 			</solution>
 		</task>
