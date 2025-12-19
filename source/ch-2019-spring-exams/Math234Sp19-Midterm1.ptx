@@ -8,6 +8,12 @@
 					Find the equation of the line through the point <m>(1,2,3)</m> with direction vector <m>\langle 4,0,-2\rangle</m>.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					The equation of the line in vector form is:
+					<me>\vec{r}(t) = \langle 1, 2, 3 \rangle + t \langle 4, 0, -2 \rangle.</me>
+				</p>
+			</solution>
 		</task>
 		<task>
 			<statement>
@@ -27,6 +33,18 @@
 					Write down an integral that represents the length of the curve <m>\vec{r}(t)=\langle 2 t, \sin (t), e^t\rangle</m> from the point <m>(0,0,1)</m> to the point <m>(2 \pi, 0, e^\pi)</m>. You do NOT need to compute the integral.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					The point <m>(0,0,1)</m> corresponds to <m>t=0</m> and <m>(2\pi, 0, e^\pi)</m> corresponds to <m>t=\pi</m>.
+					<me>
+						\begin{aligned}
+						\vec{r}'(t) \amp = \langle 2, \cos t, e^t \rangle \\
+						|\vec{r}'(t)| \amp = \sqrt{4 + \cos^2 t + e^{2t}} \\
+						L \amp = \int_0^\pi \sqrt{4 + \cos^2 t + e^{2t}} \, dt
+						\end{aligned}
+					</me>
+				</p>
+			</solution>
 		</task>
 		<task>
 			<statement>
@@ -34,6 +52,21 @@
 					Show that if <m>|\vec{r}(t)|=4</m>, then <m>\vec{r}'(t)</m> is orthogonal to <m>\vec{r}(t)</m>. (Hint: recall that <m>|\vec{r}(t)|^2=\vec{r}(t) \cdot \vec{r}(t)</m>).
 				</p>
 			</statement>
+			<solution>
+				<p>
+					Since <m>|\vec{r}(t)| = 4</m>, we have <m>\vec{r}(t) \cdot \vec{r}(t) = 16</m>.
+					Differentiating both sides:
+					<me>
+						\begin{aligned}
+						\frac{d}{dt} (\vec{r}(t) \cdot \vec{r}(t)) \amp = \frac{d}{dt} (16) \\
+						\vec{r}'(t) \cdot \vec{r}(t) + \vec{r}(t) \cdot \vec{r}'(t) \amp = 0 \\
+						2 \vec{r}'(t) \cdot \vec{r}(t) \amp = 0 \\
+						\vec{r}'(t) \cdot \vec{r}(t) \amp = 0
+						\end{aligned}
+					</me>
+					Thus, <m>\vec{r}'(t)</m> is orthogonal to <m>\vec{r}(t)</m>.
+				</p>
+			</solution>
 		</task>
 	</exercise>
 	<exercise>
@@ -48,6 +81,19 @@
 					Write vector-valued functions to describe the velocity and position of the soccer ball as it flies.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					The acceleration is <m>\vec{a}(t) = \langle 0, -4 \rangle</m>.
+					The initial velocity is <m>\vec{v}(0) = \langle 14 \cos 30^\circ, 14 \sin 30^\circ \rangle = \langle 7\sqrt{3}, 7 \rangle</m>.
+					The initial position is <m>\vec{r}(0) = \langle 0, 0 \rangle</m>.
+					<me>
+						\begin{aligned}
+						\vec{v}(t) \amp = \int \vec{a}(t) \, dt = \langle 7\sqrt{3}, 7 - 4t \rangle \\
+						\vec{r}(t) \amp = \int \vec{v}(t) \, dt = \langle 7\sqrt{3}t, 7t - 2t^2 \rangle
+						\end{aligned}
+					</me>
+				</p>
+			</solution>
 		</task>
 		<task>
 			<statement>
@@ -55,6 +101,13 @@
 					At what time does it land?
 				</p>
 			</statement>
+			<solution>
+				<p>
+					The ball lands when the vertical component of the position is zero:
+					<me>7t - 2t^2 = 0 \implies t(7 - 2t) = 0 \implies t=0 \text{ or } t=3.5.</me>
+					Since <m>t=0</m> is the launch time, the ball lands at <m>t = 3.5</m> seconds.
+				</p>
+			</solution>
 		</task>
 	</exercise>
 	<exercise>
@@ -64,6 +117,12 @@
 				<me>f(x, y)=\frac{\sqrt{y-x^2}}{x^2+4}</me>
 			</p>
 		</statement>
+		<solution>
+			<p>
+				We need <m>y - x^2 \ge 0 \implies y \ge x^2</m>. The denominator <m>x^2 + 4</m> is never zero.
+				The domain is <m>\{(x, y) \mid y \ge x^2\}</m>, which is the region on and above the parabola <m>y = x^2</m>.
+			</p>
+		</solution>
 	</exercise>
 	<exercise>
 		<introduction>
@@ -77,6 +136,11 @@
 					<m>f(x, y)=\sqrt{x^2+y^2-4}</m>
 				</p>
 			</statement>
+			<solution>
+				<p>
+					Graph 2.
+				</p>
+			</solution>
 		</task>
 		<task>
 			<statement>
@@ -84,6 +148,11 @@
 					<m>f(x, y)=y</m>
 				</p>
 			</statement>
+			<solution>
+				<p>
+					Graph 1.
+				</p>
+			</solution>
 		</task>
 		<task>
 			<statement>
@@ -91,6 +160,11 @@
 					<m>f(x, y)=|x-y|</m>
 				</p>
 			</statement>
+			<solution>
+				<p>
+					Graph 5.
+				</p>
+			</solution>
 		</task>
 		<task>
 			<statement>
@@ -98,6 +172,11 @@
 					<m>f(x, y)=\frac{1}{x^2+y^2}</m>
 				</p>
 			</statement>
+			<solution>
+				<p>
+					Graph 6.
+				</p>
+			</solution>
 		</task>
 		<task>
 			<statement>
@@ -105,6 +184,11 @@
 					<m>f(x, y)=\ln \left(x^2+y^2-1\right)</m>
 				</p>
 			</statement>
+			<solution>
+				<p>
+					Graph 3.
+				</p>
+			</solution>
 		</task>
 		<task>
 			<statement>
@@ -112,6 +196,11 @@
 					<m>f(x, y)=9-x^2-y^2</m>
 				</p>
 			</statement>
+			<solution>
+				<p>
+					Graph 4.
+				</p>
+			</solution>
 		</task>
 	</exercise>
 	<exercise>
@@ -126,6 +215,21 @@
 					Compute the tangential, normal and binormal vectors when <m>t=\frac{\pi}{2}</m>. That is, <m>\vec{T}\left(\frac{\pi}{2}\right), \vec{N}\left(\frac{\pi}{2}\right)</m> and <m>\vec{B}\left(\frac{\pi}{2}\right)</m>.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<me>
+						\begin{aligned}
+						\vec{r}'(t) \amp = \langle 1, 2 \cos t, -2 \sin t \rangle \\
+						|\vec{r}'(t)| \amp = \sqrt{1 + 4 \cos^2 t + 4 \sin^2 t} = \sqrt{5} \\
+						\vec{T}(t) \amp = \langle \frac{1}{\sqrt{5}}, \frac{2}{\sqrt{5}} \cos t, -\frac{2}{\sqrt{5}} \sin t \rangle \implies \vec{T}(\frac{\pi}{2}) = \langle \frac{1}{\sqrt{5}}, 0, -\frac{2}{\sqrt{5}} \rangle \\
+						\vec{T}'(t) \amp = \langle 0, -\frac{2}{\sqrt{5}} \sin t, -\frac{2}{\sqrt{5}} \cos t \rangle \implies \vec{T}\,'(\frac{\pi}{2}) = \langle 0, -\frac{2}{\sqrt{5}}, 0 \rangle \\
+						|\vec{T}\,'(\frac{\pi}{2})| \amp = \frac{2}{\sqrt{5}} \\
+						\vec{N}(\frac{\pi}{2}) \amp = \langle 0, -1, 0 \rangle \\
+						\vec{B}(\frac{\pi}{2}) \amp = \vec{T}(\frac{\pi}{2}) \times \vec{N}(\frac{\pi}{2}) = \begin{vmatrix} \hat{\imath} \amp \hat{\jmath} \amp \hat{k} \\ 1/\sqrt{5} \amp 0 \amp -2/\sqrt{5} \\ 0 \amp -1 \amp 0 \end{vmatrix} = \langle -\frac{2}{\sqrt{5}}, 0, -\frac{1}{\sqrt{5}} \rangle
+						\end{aligned}
+					</me>
+				</p>
+			</solution>
 		</task>
 		<task>
 			<statement>
@@ -133,6 +237,13 @@
 					Compute the curvature <m>\kappa</m> when <m>t=\frac{\pi}{2}</m>.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					<me>
+						\kappa(\frac{\pi}{2}) = \frac{|\vec{T}\,'(\frac{\pi}{2})|}{|\vec{r}\,'(\frac{\pi}{2})|} = \frac{2/\sqrt{5}}{\sqrt{5}} = \frac{2}{5}.
+					</me>
+				</p>
+			</solution>
 		</task>
 		<task>
 			<statement>
@@ -140,6 +251,18 @@
 					Find the equations of the osculating plane, normal plane and rectifying plane when <m>t=\frac{\pi}{2}</m>.
 				</p>
 			</statement>
+			<solution>
+				<p>
+					The point is <m>\vec{r}(\frac{\pi}{2}) = \langle \frac{\pi}{2}, 2, 0 \rangle</m>.
+					<me>
+						\begin{aligned}
+						\text{Osculating Plane: } \amp - \frac{2}{\sqrt{5}}(x - \frac{\pi}{2}) - \frac{1}{\sqrt{5}}(z - 0) = 0 \implies 2x + z = \pi \\
+						\text{Normal Plane: } \amp \frac{1}{\sqrt{5}}(x - \frac{\pi}{2}) - \frac{2}{\sqrt{5}}(z - 0) = 0 \implies x - 2z = \frac{\pi}{2} \\
+						\text{Rectifying Plane: } \amp -1(y - 2) = 0 \implies y = 2
+						\end{aligned}
+					</me>
+				</p>
+			</solution>
 		</task>
 	</exercise>
 </worksheet>
