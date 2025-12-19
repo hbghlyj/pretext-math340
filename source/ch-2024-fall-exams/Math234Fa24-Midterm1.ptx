@@ -15,7 +15,7 @@
 			</statement>
 			<solution>
 				<p>
-					<me>|\vec{a}| = \sqrt{2^2 + (-3)^2 + 1^2} = \sqrt{4+9+1} = \sqrt{14}.</me> Unit vector <me>\vec{u} = \frac{\vec{a}}{|\vec{a}|} = \langle 2/\sqrt{14}, -3/\sqrt{14}, 1/\sqrt{14} \rangle.</me>
+					<me>|\vec{a}| = \sqrt{2^2 + (-3)^2 + 1^2} = \sqrt{4+9+1} = \sqrt{14}</me>. Unit vector <me>\vec{u} = \frac{\vec{a}}{|\vec{a}|} = \langle 2/\sqrt{14}, -3/\sqrt{14}, 1/\sqrt{14} \rangle</me>.
 				</p>
 			</solution>
 		</task>
